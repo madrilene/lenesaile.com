@@ -1,0 +1,32 @@
+/* Global variables */
+:root {
+  --gutter: var(--space-s-m);
+  --border-radius: var(--size-step-min);
+  --transition-base: 250ms ease;
+  --transition-movement: 200ms linear;
+  --transition-fade: 200ms ease;
+  --transition-bounce: 500ms cubic-bezier(0.5, 0.05, 0.2, 1.5);
+  --tracking: -0.05ch;
+  --tracking-s: -0.075ch;
+}
+
+/* Light Color Scheme (Default + Override) */
+:root,
+:root[data-theme='light'] {
+  color-scheme: light dark;
+  --color-bg: var(--color-light);
+  --color-text: var(--color-dark);
+}
+
+/* Dark Color Scheme (System Preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--color-dark);
+    --color-text: var(--color-light);
+  }
+}
+/* Dark Color Scheme (Override) */
+:root[data-theme='dark'] {
+  --color-bg: var(--color-dark);
+  --color-text: var(--color-light);
+}

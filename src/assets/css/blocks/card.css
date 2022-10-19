@@ -1,0 +1,29 @@
+.card {
+  background: var(--color-text);
+  border: 3px solid var(--color-text);
+  color: var(--color-bg);
+  padding: var(--space-m-l);
+  border-radius: var(--border-radius);
+  max-width: unset;
+  transform: rotate(0deg) scale(1, 1);
+  transition: var(--transition-bounce);
+}
+
+.card ::selection {
+  color: var(--color-bg);
+  background: var(--color-secondary);
+}
+
+.card:hover,
+.card:focus-within {
+  transform: rotate(1deg) scale(1.01, 1.01);
+  border: 3px solid var(--color-quaternary);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card:focus-within a:focus {
+  outline: none;
+}

@@ -1,0 +1,142 @@
+@import 'https://unpkg.com/open-props/easings.min.css';
+
+@custom-media --motionOK (prefers-reduced-motion: no-preference);
+
+.sun-and-moon {
+  & > :is(.moon, .sun, .sun-beams) {
+    transform-origin: center center;
+  }
+
+  & > :is(.moon, .sun) {
+    fill: var(--icon-fill);
+
+    @nest .theme-toggle:is(:hover, :focus-visible) > & {
+      fill: var(--icon-fill-hover);
+    }
+  }
+
+  & > .sun-beams {
+    stroke: var(--icon-fill);
+    stroke-width: 2px;
+
+    @nest .theme-toggle:is(:hover, :focus-visible) & {
+      stroke: var(--icon-fill-hover);
+    }
+  }
+
+  @nest [data-theme='dark'] & {
+    & > .sun {
+      transform: scale(1.75);
+    }
+
+    & > .sun-beams {
+      opacity: 0;
+    }
+
+    & > .moon > circle {
+      transform: translateX(-7px);
+
+      @supports (cx: 1) {
+        transform: translateX(0);
+        cx: 17;
+      }
+    }
+  }
+
+  @media (--motionOK) {
+    & > .sun {
+      transition: transform 0.5s var(--ease-elastic-3);
+    }
+
+    & > .sun-beams {
+      transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+    }
+
+    & .moon > circle {
+      transition: transform 0.25s var(--ease-out-5);
+
+      @supports (cx: 1) {
+        transition: cx 0.25s var(--ease-out-5);
+      }
+    }
+
+    @nest [data-theme='dark'] & {
+      & > .sun {
+        transform: scale(1.75);
+        transition-timing-function: var(--ease-3);
+        transition-duration: 0.25s;
+      }
+
+      & > .sun-beams {
+        transform: rotateZ(-25deg);
+        transition-duration: 0.15s;
+      }
+
+      & > .moon > circle {
+        transition-delay: 0.25s;
+        transition-duration: 0.5s;
+      }
+    }
+  }
+}
+
+.theme-toggle {
+  --size: 2rem;
+  --icon-fill: var(--color-dark);
+  --icon-fill-hover: var(--color-dark);
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  inline-size: var(--size);
+  block-size: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+
+  outline-offset: 5px;
+
+  & > svg {
+    inline-size: 100%;
+    block-size: 100%;
+    stroke-linecap: round;
+  }
+
+  @nest [data-theme='dark'] & {
+    --icon-fill: var(--color-light);
+    --icon-fill-hover: var(--color-light);
+  }
+
+  /* @media (hover: none) {
+    --size: 48px;
+  } */
+}
+
+.sun-and-moon {
+  @media (--motionOK) {
+    & > .sun {
+      transition: transform 0.5s var(--ease-elastic-3);
+    }
+
+    & > .sun-beams {
+      transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+    }
+
+    @nest [data-theme='dark'] & {
+      & > .sun {
+        transform: scale(1.75);
+        transition-timing-function: var(--ease-3);
+        transition-duration: 0.25s;
+      }
+
+      & > .sun-beams {
+        transform: rotateZ(-25deg);
+        transition-duration: 0.15s;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<a href="#main" class="skip-link">{{ meta[locale].skipText }}</a>
+
+<header class="wrapper | relative" role="banner">
+  <div class="absolute-menu">
+    <div class="sidebar | ontop spot-color-primary" style="--sidebar-target-width: 16rem">
+      <div class="logo | wrapper">
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="auto"
+          aria-live="polite"
+        >
+          {% include "icons/sun-moon.svg" %}
+        </button>
+
+        <a href="/{{ locale }}/" class="no-underline">
+          {{ meta[locale].siteName }}
+        </a>
+      </div>
+
+      {% include "partials/menu.njk" %}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,26 @@
+<ul class="languages">
+  <!-- languages -->
+  {% for language in meta.languages %} {% if loop.first %} {% endif %}
+
+  <!-- set translatedUrl to the homepage of that language by default  -->
+  {% set translatedUrl = "/" + language.code + "/" %}
+
+  <!-- set general identifier class -->
+  {% set langClass = "lang-" + language.code %}
+
+  <!-- set current language class  -->
+  {% set activeClass = "active" if language.code == locale else "inac" %}
+
+  <!--  loop through all the content of the site. for each item check if its locale matches the code of the language  -->
+  {% for item in collections.all %} {% if item.data.key == key and item.data.locale ==
+  language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
+
+  <li class="fade-in {{ langClass }}">
+    <a class=" {{ activeClass }} large-button" href="{{ translatedUrl }}">
+      <span class="sr-only">{{ language.long }}</span>
+      {{ language.label }}</a
+    >
+  </li>
+
+  {% if loop.last %} {% endif %} {% endfor %}
+</ul>

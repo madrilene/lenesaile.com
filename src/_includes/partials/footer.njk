@@ -1,0 +1,38 @@
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper prose">
+    <div class="grid">
+      <nav id="footernav" class="site-foot__inner">
+        <a href="/{{ locale }}/">&copy; {% year %} {{ meta[locale].siteName }}</a>
+
+        {% for item in navigation[locale].bottom %}
+
+        <a
+          href="{{ item.url }}"
+          {{
+          helpers.getLinkActiveState(item.url,
+          page.url)
+          |
+          safe
+          }}
+          >{{ item.text }}</a
+        >
+
+        {% endfor %}
+      </nav>
+
+      <!-- TODO better social icons integration -->
+
+      <div id="social" class="site-foot__inner">
+        <a href="https://github.com/madrilene"
+          ><span class="sr-only">Github</span>{% include "icons/github.svg" %}</a
+        >
+        <a href="https://twitter.com/lenesaile"
+          ><span class="sr-only">Twitter</span>{% include "icons/twitter.svg" %}</a
+        >
+        <a href="https://www.linkedin.com/in/lenesaile/"
+          ><span class="sr-only">Linkedin</span>{% include "icons/linkedin.svg" %}</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>

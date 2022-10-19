@@ -1,0 +1,10 @@
+.column {
+  column-count: 1;
+}
+
+@media (min-width: 45em) {
+  .column {
+    column-count: 2;
+    gap: var(--gutter, var(--space-l-xl));
+  }
+}

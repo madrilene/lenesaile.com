@@ -1,0 +1,222 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(1rem);
+  animation-name: fadeIn;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.45, 0.05, 0.22, 1.3);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.wobble {
+  animation: wobble 1s ease;
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    -webkit-transform: translateX(-32px) rotate(-10deg);
+    transform: translateX(-32px) rotate(-10deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
+    transform: translateX(calc(32px / 2)) rotate(10deg);
+  }
+
+  45% {
+    -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+    transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+  }
+
+  60% {
+    -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+    transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+  }
+
+  75% {
+    -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+  }
+}
+
+/* avatar animations */
+
+#home-augen {
+  animation: augen2 3.5s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+#blog-brauen {
+  animation: brauen 1s ease-in-out infinite alternate;
+  transform-origin: top;
+}
+
+#comic1-augen {
+  animation: augen 1.5s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+#portatil-augen {
+  animation: augen3 2s ease-in infinite alternate;
+  transform-origin: bottom;
+}
+
+#portatil-brauen {
+  animation: brauen 4s ease-out infinite alternate;
+  transform-origin: top;
+}
+
+#lene-cta-kopf {
+  transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+  animation: kopfshake 1s infinite linear alternate-reverse;
+  transform-origin: bottom;
+}
+
+#lene-ball-cuerpo {
+  animation: huepfen 2s ease-in infinite alternate;
+  transform-origin: bottom;
+}
+
+#lene-ball {
+  transform-origin: bottom;
+  animation: ball 2s ease-in infinite alternate;
+}
+
+#blog-smile {
+  display: none;
+}
+
+@keyframes ball {
+  0% {
+    transform: skew(0deg) rotate(0deg);
+  }
+
+  /* Finish changes by here */
+  30% {
+    transform: skew(1deg) rotate(1deg);
+  }
+
+  /* Finish changes by here */
+  70% {
+    transform: skew(0deg) rotate(0deg);
+  }
+
+  /* Between 20% and 100%, nothing changes */
+  100% {
+    transform: skew(1deg) rotate(1deg);
+  }
+}
+
+@keyframes augen {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  /* Finish changes by here */
+  40% {
+    transform: rotateZ(-0.8deg);
+  }
+
+  /* Finish changes by here */
+  80% {
+    transform: rotateZ(-0.8deg);
+  }
+
+  /* Between 20% and 100%, nothing changes */
+  100% {
+    transform: rotateZ(-0.8deg);
+  }
+}
+
+@keyframes augen2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  10% {
+    transform: rotateZ(0.5deg);
+  }
+  80% {
+    transform: rotateZ(0.5deg);
+  }
+  90% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes augen3 {
+  0% {
+    transform: rotateX(3deg);
+  }
+
+  /* Finish changes by here */
+  40% {
+    transform: rotateX(7deg);
+  }
+
+  /* Finish changes by here */
+  80% {
+    transform: rotateX(5deg);
+  }
+
+  /* Between 20% and 100%, nothing changes */
+  100% {
+    transform: rotateX(4deg);
+  }
+}
+
+@keyframes huepfen {
+  0% {
+    transform: rotateX(3deg);
+  }
+
+  /* Finish changes by here */
+  30% {
+    transform: rotateX(7deg);
+  }
+
+  /* Finish changes by here */
+  70% {
+    transform: rotateX(3deg);
+  }
+
+  /* Between 20% and 100%, nothing changes */
+  100% {
+    transform: rotateX(6deg);
+  }
+}
+
+@keyframes brauen {
+  from {
+    transform: rotateX(-3deg);
+  }
+  to {
+    transform: rotateX(13deg);
+  }
+}
+
+@keyframes kopfshake {
+  from {
+    transform: rotateZ(-1deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}

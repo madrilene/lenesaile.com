@@ -1,0 +1,18 @@
+.site-foot {
+  padding: var(--space-m-l);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: var(--size-step-0);
+}
+
+.site-foot__inner {
+  display: flex;
+  gap: var(--space-xs-s);
+  align-items: center;
+  justify-content: center;
+}
+
+.site-foot svg {
+  width: 1em;
+  height: 1em;
+}

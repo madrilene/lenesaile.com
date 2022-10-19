@@ -1,0 +1,199 @@
+/*
+  Global styles
+
+  Low-specificity, global styles that apply to the whole
+  project: https://cube.fyi/css.html
+*/
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-size: var(--size-step-1);
+  font-family: var(--font-base);
+  line-height: 1.4;
+  letter-spacing: var(--tracking);
+  transition: background calc(1s / 4) cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Base typesetting */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  letter-spacing: var(--tracking-s);
+}
+
+h1 {
+  font-size: var(--custom-size-step, var(--size-step-5));
+}
+
+h2 {
+  font-size: var(--size-step-4);
+}
+
+h3 {
+  font-size: var(--size-step-3);
+}
+
+/* Set line lengths */
+p,
+li,
+blockquote:not([class]) {
+  max-width: 50ch;
+}
+
+h1,
+h2,
+h3 {
+  max-width: 20ch;
+}
+
+/* More generic elements */
+blockquote:not([class]) {
+  font-family: var(--font-serif);
+  font-size: var(--size-step-2);
+}
+
+/* Markdown blockquuote:not([class])s aren't ideal, so we're presuming the person quoted is the last p */
+blockquote:not([class]) p:last-of-type {
+  font-family: var(--font-base);
+  font-size: var(--size-step-1);
+  font-weight: normal;
+}
+
+svg {
+  height: 2.2ex;
+  width: auto;
+  flex: none;
+}
+
+[role='list'] {
+  padding: 0;
+}
+
+/* Base interactive elements */
+
+a {
+  color: currentcolor;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: 2px solid;
+  outline-offset: 0.3ch;
+}
+
+:target {
+  scroll-margin-top: 2ex;
+}
+
+main:focus {
+  outline: none;
+}
+
+article [href^='http']:not([href*='lenesaile.com'])::after {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('/assets/images/icn-external.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60% auto;
+  /* alternative text rules */
+  content: '(external link)';
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 1em; /* the width of the icon */
+}
+
+/* Base selection styles that invert whatever colours are rendered */
+::selection {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.preload-transitions * {
+  transition: none !important;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+blockquote {
+  border-inline-start: 10px solid var(--color-secondary);
+  padding: var(--space-m-l);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: var(--size-step-2);
+}
+
+blockquote > * + * {
+  margin-top: var(--space-m-l);
+}
+
+blockquote :last-child {
+  font-family: var(--font-base);
+  font-style: normal;
+  font-size: var(--size-step-1);
+}
+
+.heading-anchor:is(:hover, :focus) {
+  text-decoration: underline;
+}
+.heading-anchor {
+  text-decoration: none;
+}
+
+/* .prose mark {
+  background: var(--color-quaternary);
+  border-radius: 0.2em 0;
+  padding: 0.1rem;
+} */
+
+mark {
+  all: unset;
+}
+
+.gsap-highlight {
+  --duration: 1s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: color calc(var(--duration) / 4) var(--ease),
+    background-color calc(var(--duration) / 4) var(--ease),
+    background-size var(--duration) var(--ease);
+
+  &.active {
+    color: var(--color-dark);
+    background-size: 100% 100%;
+  }
+
+  & {
+    background-image: linear-gradient(var(--color-quaternary), var(--color-quaternary));
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  &::before {
+    content: ' [highlight start] ';
+  }
+
+  &::after {
+    content: ' [highlight end] ';
+  }
+}

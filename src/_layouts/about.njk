@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<header class="section spot-color-primary">
+  <div class="section__inner">
+    <div class="wrapper region prose" style="--region-space-top: var(--space-3xl)">
+      <h1>{{ title }}</h1>
+      <p>{{ description | md | safe }}</p>
+    </div>
+  </div>
+  {% include 'svg/divider-pixels.svg' %}
+</header>
+
+<article class="region">
+  <div class="wrapper flow content">
+    {{ content | safe }}
+  </div>
+</article>

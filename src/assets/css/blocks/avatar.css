@@ -1,0 +1,5 @@
+svg.avatar-start {
+  width: var(--space-xl);
+  height: auto;
+  transform: translateY(6px);
+}

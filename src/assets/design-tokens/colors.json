@@ -1,0 +1,46 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "items": [
+    {
+      "name": "bg",
+      "value": "#FFFDF5"
+    },
+    {
+      "name": "text",
+      "value": "#404040"
+    },
+    {
+      "name": "light",
+      "value": "#FFFDF5"
+    },
+    {
+      "name": "dark",
+      "value": "#404040"
+    },
+    {
+      "name": "Primary",
+      "value": "#ff5656"
+    },
+    {
+      "name": "Primary Glare",
+      "value": "#F4D0DF"
+    },
+    {
+      "name": "Secondary",
+      "value": "#5656ff"
+    },
+    {
+      "name": "Secondary Glare",
+      "value": "#D8E2F4"
+    },
+    {
+      "name": "Tertiary",
+      "value": "#FF5678"
+    },
+    {
+      "name": "Quaternary",
+      "value": "#ffdd56"
+    }
+  ]
+}
