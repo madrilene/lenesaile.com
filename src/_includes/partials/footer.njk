@@ -20,19 +20,19 @@
         {% endfor %}
       </nav>
 
-      <!-- TODO better social icons integration -->
-
       <div id="social" class="site-foot__inner">
-        <a href="https://github.com/madrilene"
-          ><span class="sr-only">Github</span>{% include "icons/github.svg" %}</a
+        {% for item in social %}
+        <a href="{{ item.url }}">
+          <span class="sr-only">{{ item.platform }}</span>
+          <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div></a
         >
-        <a href="https://twitter.com/lenesaile"
-          ><span class="sr-only">Twitter</span>{% include "icons/twitter.svg" %}</a
-        >
-        <a href="https://www.linkedin.com/in/lenesaile/"
-          ><span class="sr-only">Linkedin</span>{% include "icons/linkedin.svg" %}</a
-        >
+
+        {% endfor %}
       </div>
     </div>
   </div>
+
+  <!-- lang menu -->
 </footer>
+
+{% include "partials/lang-switch.njk" %}

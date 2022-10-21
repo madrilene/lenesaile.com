@@ -1,0 +1,6 @@
+.cta a {
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 0 0.3rem;
+  border-radius: var(--border-radius);
+}

@@ -66,3 +66,16 @@ document.querySelectorAll('img').forEach(img => {
 // ------------------- gsap marker
 
 gsapHighlight();
+
+// ----- exploding  --------------------------------
+
+const languageNav = document.querySelector('.language-nav');
+const languageNavButton = document.querySelector('.language-nav-button');
+const clickSound = new Audio('/assets/sounds/mouse.wav');
+
+function toggleNavOpen(event) {
+  event.preventDefault();
+  languageNav.classList.toggle('active');
+  clickSound.play();
+}
+languageNavButton.addEventListener('click', toggleNavOpen);

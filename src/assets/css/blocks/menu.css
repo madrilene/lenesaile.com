@@ -7,6 +7,12 @@
   gap: var(--space-xs);
 }
 
+@media (min-width: 85em) {
+  .logo {
+    transform: translateX(var(--gutter));
+  }
+}
+
 @media (min-width: 48em) {
   nav.navbar {
     --nav-button-display: none;

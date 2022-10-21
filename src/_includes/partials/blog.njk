@@ -1,0 +1,11 @@
+<ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  {% set postslist = collections["blog_" + locale] %} {% for post in postslist %}
+
+  <li class="card flow">
+    <h3>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h3>
+    <p>{{ post.data.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

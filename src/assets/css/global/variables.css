@@ -16,6 +16,11 @@
   color-scheme: light dark;
   --color-bg: var(--color-light);
   --color-text: var(--color-dark);
+  --color-primary: var(--color-primary-light);
+  --color-secondary: var(--color-secondary-light);
+  --color-tertiary: var(--color-tertiary-light);
+  --color-quaternary: var(--color-quaternary-light);
+  --color-quinary: var(--color-quinary-light);
 }
 
 /* Dark Color Scheme (System Preference) */
@@ -23,10 +28,20 @@
   :root {
     --color-bg: var(--color-dark);
     --color-text: var(--color-light);
+    --color-primary: var(--color-primary-dark);
+    --color-secondary: var(--color-secondary-dark);
+    --color-tertiary: var(--color-tertiary-dark);
+    --color-quaternary: var(--color-quaternary-dark);
+    --color-quinary: var(--color-quinary-dark);
   }
 }
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
   --color-bg: var(--color-dark);
   --color-text: var(--color-light);
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --color-tertiary: var(--color-tertiary-dark);
+  --color-quaternary: var(--color-quaternary-dark);
+  --color-quinary: var(--color-quinary-dark);
 }

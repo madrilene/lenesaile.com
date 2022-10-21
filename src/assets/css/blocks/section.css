@@ -3,8 +3,8 @@
 }
 
 .section__inner {
-  background: var(--spot-color, var(--color-text));
-  color: var(--color-bg);
+  background: var(--spot-color, var(--color-primary));
+  color: var(--section-color, var(--color-light));
 }
 
 .section blockquote {

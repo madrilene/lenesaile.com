@@ -47,15 +47,13 @@
     {%- include "schemas/base-schema.njk" %}
   </head>
 
-  <body>
+  <body class="relative">
     <!-- header -->
     {% include "partials/header.njk" %}
 
     <!-- content slot -->
     <main id="main" class="flow relative">{{ content | safe }}</main>
 
-    <!-- lang menu -->
-    {% include "partials/lang-switch.njk" %}
     <!-- footer -->
     {% include "partials/footer.njk" %}
 

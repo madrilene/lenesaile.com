@@ -34,6 +34,12 @@ h3 {
   font-size: var(--size-step-3);
 }
 
+.lead {
+  font-size: var(--size-step-2);
+  font-weight: bold;
+  line-height: 1.1;
+}
+
 /* Set line lengths */
 p,
 li,

@@ -1,5 +1,36 @@
+svg.skyline {
+  height: auto;
+  transform: translateY(6px);
+  width: var(--space-xl);
+}
+
 svg.avatar-start {
   width: var(--space-xl);
   height: auto;
   transform: translateY(6px);
+}
+
+svg.avatar-cta {
+  width: var(--space-xl);
+  height: auto;
+  transform: translateY(1.3rem);
+}
+
+svg.avatar-portatil {
+  display: none;
+}
+
+@media (min-width: 43em) {
+  svg.avatar-portatil {
+    display: block;
+    width: var(--space-l-xl);
+    height: auto;
+    transform: translateY(5.4rem);
+  }
+}
+
+svg.avatar-blog {
+  width: var(--space-l-xl);
+  height: auto;
+  transform: translateY(6rem);
 }

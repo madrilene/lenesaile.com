@@ -2,7 +2,7 @@
 layout: base
 ---
 
-<header class="wrapper hero spot-color-primary">
+<header class="hero" style="--spot-color: var(--color-primary)">
   <div class="gridwrap relative">
     <div class="welcome">
       <div class="wrapper region" style="--region-space-top: var(--space-3xl)">
@@ -37,8 +37,8 @@ layout: base
 </article>
 
 <article
-  class="section spot-color-secondary"
-  style="--button-color: var(--color-quaternary)"
+  class="section"
+  style="--button-color: var(--color-quaternary); --spot-color: var(--color-secondary)"
 >
   {% include 'svg/divider-curve.svg' %}
 
@@ -69,15 +69,7 @@ layout: base
     <h2>{{ blog.title }}</h2>
     <p>{{ blog.intro }}</p>
   </div>
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog-" + locale] %} {% for post in postslist %}
-
-    <li class="card flow">
-      <h3>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-      </h3>
-      <p>{{ post.data.description }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  {% include "partials/blog.njk" %}
 </article>
+
+{% include 'partials/cta.njk' %}

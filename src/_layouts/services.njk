@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+<header class="section overflow-hidden" style="--spot-color: var(--color-secondary)">
+  <div
+    class="section__inner region"
+    style="--region-space-bottom: 0; --region-space-top: var(--space-xl)"
+  >
+    <div
+      class="wrapper flow sidebar"
+      style="
+        --sidebar-wrap: no-wrap;
+        --sidebar-target-width: 70%;
+        --sidebar-content-min-width: 16rem;
+      "
+    >
+      <section class="region content" style="--region-space-bottom: 0">
+        <h1>{{ title }}</h1>
+        <p>{{ lead }}</p>
+      </section>
+
+      {% include "svg/lene-portatil.svg" %}
+    </div>
+  </div>
+
+  {% include 'svg/divider-curve.svg' %}
+</header>
+
+<article class="">
+  <article class="region">
+    <div class="wrapper flow">
+      <ul class="features grid mt-l-xl" role="list">
+        {% for item in tools.items %}
+        <li class="flow">
+          <div aria-hidden="true">{% include 'icons/tool-' + item.icon %}</div>
+          <h3>
+            {{ item.title }}
+          </h3>
+          <p>{{ item.summary | md | safe }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </article>
+</article>

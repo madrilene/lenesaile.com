@@ -1,15 +1,14 @@
 /* A blank block because there is *always* a button */
 
 .button {
-  color: #000;
+  color: var(--color-text);
   text-decoration: none;
   position: relative;
-  text-transform: lowercase;
   display: inline-block;
   border: 3px solid var(--color-text);
+  border-radius: var(--border-radius);
   margin-right: 0.5em;
-  text-transform: uppercase;
-  padding: 0.2em 1.3em;
+  padding: 0.4em 2em;
   transform-style: preserve-3d;
   background: var(--color-bg);
   transition: var(--transition-bounce);

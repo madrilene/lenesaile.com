@@ -4,40 +4,22 @@ seo:
   title: About me
 permalink: /{{ locale }}/about/index.html
 key: 'about'
-description: 'Together with my partner I work in our home/studio in the center of Madrid.'
+description: "I'm a developer and designer in Madrid who has been building for the web professionally since 2008."
 layout: about
-hero:
-  title: I make accessible, highly optimized custom websites.
-  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have developed and designed countless websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and Wordpress.
-  image: './src/assets/images/lene2022.jpg'
-  hi: 'Hi, this is me.'
-projects:
-  title: Have a look at some of the projects I built!
-  teaser: "There's a bit of everything: law firms, an ENT clinic, a public school, a cultural foundation, music groups..."
-  goal: '#'
-  button: 'Projects'
-about:
-  title: About the way I work
-blog:
-  title: 'Blog'
-  intro: "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important."
+lead: "I'm a developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites with accessibility and performance in mind."
+breakout:
+  title: 'I live and work in Madrid'
+  intro: 'Since 2010, I have been living and working in Madrid, La Latina. A lot of my clients are based in Spain, but I also work for international clients.'
 ---
 
-I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people== regardless of any disability.
+I have always enjoyed experimenting with computers. In 2004, I tried building my first websites with HTML and CSS. Four years later, I started earning a living with my hobby.
 
-I do not create websites based on pre-programmed templates and I do not use visual website builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
+After reaching my limits with static websites, I started working with Wordpress and learned PHP to broaden the possibilities.
 
-This approach has various advantages:
+In 2018 I discovered the ideas of Jamstack and soon after changed all my workflows. I started integrating Git by default for all projects, tested new bundlers, CSS and Javscript frameworks and discovered the world of Continuous deployments via GitHub and Netlify.
 
-1.  No image is too big, no code is too much - and the website runs error-free and fast.
-2.  I am independent of third parties, I react to problems and necessary updates myself.
-3.  The websites of my clients achieve a very good positioning in the search engines.
-4.  All ideas can be fulfilled in terms of form, structure and function.
+I enjoy building performant sites with minimal vanilla Javascript and all the possibilities of modern CSS.
 
-<div class="breakout">
+I take accessibility and performance very seriously, testing and re-testing until the result is what I want it to be. Which is (as close as I can get to) perfect.
 
-    nd the website should be ==accessible and usable for all people== regardless of any disability.
-
-I do not create websites based on pre-programmed templates and I do not use visual website builders. All websites are designed and developed from the ground up so that they work exactly as I and my clie
-
-</div>
+I'm constantly reading and learning, and ==I'm especially enthusiastic about everything that's happening in the areas of Jamstack, accessibility and performance==. I don't consider myself an expert anywhere, as I'm constantly optimising and every field is incredibly large. But I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques.

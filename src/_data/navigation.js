@@ -6,20 +6,16 @@ module.exports = {
         url: '/en/about/'
       },
       {
-        text: 'Services',
-        url: '/en/github/'
+        text: 'What I do',
+        url: '/en/services/'
       },
       {
         text: 'Projects',
-        url: '/en/buildexcellent/'
+        url: '/en/projects/'
       },
       {
         text: 'Blog',
-        url: '/en/markdown/'
-      },
-      {
-        text: 'Contact',
-        url: '#'
+        url: '/en/blog/'
       }
     ],
     bottom: [

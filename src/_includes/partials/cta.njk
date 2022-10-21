@@ -1,0 +1,31 @@
+{% if cta %}
+
+<section class="section cta" style="--spot-color: var(--color-primary)">
+  {% include 'svg/divider-tilt.svg' %}
+
+  <div class="section__inner overflow-hidden">
+    <div
+      class="wrapper flow sidebar"
+      style="
+        --sidebar-wrap: no-wrap;
+        --sidebar-target-width: 70%;
+        --sidebar-content-min-width: 16rem;
+        --sidebar-align: flex-end;
+      "
+    >
+      <section class="region flow">
+        <h2>{{ cta.title }}</h2>
+        <p>{{ cta.lead | md | safe }}</p>
+      </section>
+
+      {% include "svg/lene-cta.svg" %}
+    </div>
+
+    <!-- <div class="wrapper region prose" style="--region-space-top: var(--space-3xl)">
+      <h1>{{ title }}</h1>
+      <p>{{ lead | md | safe }}</p>
+    </div> -->
+  </div>
+</section>
+
+{% endif %}

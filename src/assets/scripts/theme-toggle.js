@@ -1,11 +1,11 @@
 // ------------------- dark mode
 
 const storageKey = 'theme-preference';
-const clickSound = new Audio('/assets/sounds/light-on.wav');
+const switchSound = new Audio('/assets/sounds/light-on.wav');
 
 const onClick = () => {
   // play whimsical sound
-  clickSound.play();
+  switchSound.play();
 
   // flip current value
   theme.value = theme.value === 'light' ? 'dark' : 'light';

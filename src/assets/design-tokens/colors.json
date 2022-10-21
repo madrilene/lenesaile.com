@@ -3,44 +3,52 @@
   "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
   "items": [
     {
-      "name": "bg",
-      "value": "#FFFDF5"
-    },
-    {
-      "name": "text",
-      "value": "#404040"
-    },
-    {
       "name": "light",
-      "value": "#FFFDF5"
+      "value": "hsl(48, 100%, 98%)"
     },
     {
       "name": "dark",
-      "value": "#404040"
+      "value": "hsl(0, 0%, 25%)"
     },
     {
-      "name": "Primary",
-      "value": "#ff5656"
+      "name": "Primary Light",
+      "value": "hsl(0, 100%, 67%)"
     },
     {
-      "name": "Primary Glare",
-      "value": "#F4D0DF"
+      "name": "Primary Dark",
+      "value": "hsl(0, 80%, 67%)"
     },
     {
-      "name": "Secondary",
-      "value": "#5656ff"
+      "name": "Secondary Light",
+      "value": "hsl(230, 100%, 67%)"
     },
     {
-      "name": "Secondary Glare",
-      "value": "#D8E2F4"
+      "name": "Secondary Dark",
+      "value": "hsl(230, 80%, 67%)"
     },
     {
-      "name": "Tertiary",
-      "value": "#FF5678"
+      "name": "Tertiary Light",
+      "value": "hsl(348, 100%, 67%)"
     },
     {
-      "name": "Quaternary",
-      "value": "#ffdd56"
+      "name": "Tertiary Dark",
+      "value": "hsl(348, 80%, 67%)"
+    },
+    {
+      "name": "Quaternary Light",
+      "value": "hsl(48, 100%, 67%)"
+    },
+    {
+      "name": "Quaternary Dark",
+      "value": "hsl(48, 80%, 67%)"
+    },
+    {
+      "name": "Quinary Light",
+      "value": "hsl(144, 100%, 67%)"
+    },
+    {
+      "name": "Quinary Dark",
+      "value": "hsl(144, 80%, 67%)"
     }
   ]
 }

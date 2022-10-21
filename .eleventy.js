@@ -63,6 +63,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('page', 'page.njk');
   eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('about', 'about.njk');
+  eleventyConfig.addLayoutAlias('services', 'services.njk');
+  eleventyConfig.addLayoutAlias('projects', 'projects.njk');
+  eleventyConfig.addLayoutAlias('blog', 'blog.njk');
+  eleventyConfig.addLayoutAlias('contact', 'contact.njk');
   eleventyConfig.addLayoutAlias('excellent', 'excellent.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
 
@@ -101,8 +105,8 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom transforms ---------------------
 
   // 	--------------------- Custom collections -----------------------
-  eleventyConfig.addCollection('projects-en', getProjectsEN);
-  eleventyConfig.addCollection('blog-en', getBlogsEN);
+  eleventyConfig.addCollection('projects_en', getProjectsEN);
+  eleventyConfig.addCollection('blog_en', getBlogsEN);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
