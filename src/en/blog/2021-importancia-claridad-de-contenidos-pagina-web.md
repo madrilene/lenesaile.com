@@ -1,28 +1,24 @@
 ---
-title: 'La claridad en los contenidos una página web'
-description: 'La claridad en los contenidos es una de las características más importantes. De poco sirve un bonito diseño si luego el visitante no entiende nada y abandona la página frustrado.'
+title: 'The clarity of contents'
+description: 'The clarity of the contents is one of the most important characteristics. A nice design is of little use if the visitor does not understand anything and leaves the page frustrated.'
 date: 2022-01-22
-featured_image: importancia-claridad-de-contenidos-pagina-web.jpg
-tags:
-  - Contenidos
-# dump_photos: true
+image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'
+alt: 'screenshot of some typography on a website'
 ---
 
-Es sin duda una de las características más importantes que debe tener una página web.
-De poco sirve un bonito diseño si luego el visitante no entiende nada y abandona la página frustrado y jurando no volver más.
+It is undoubtedly one of the most important features that a web page must have.
+A nice design is of little use if the visitor does not understand anything and leaves the page frustrated and vowing not to come back.
 
-**A todos nos ha pasado:**
+It has happened to all of us:
 
-- Buscas información sobre los servicios de una empresa de reformas que alguien te ha recomendado y no consigues entender qué hacen o dejan de hacer.
-- Necesitas descargar un documento en la web del colegio de tus hijos y no hay manera de encontrarlo.
-- Quieres comprar un artículo en concreto de un shop de ropa, te cuesta horrores encontrarlo y luego no hay manera de entender cómo hay que realizar la compra.
+- You are looking for information about the services of a renovation company that someone has recommended and you can't understand what they do or don't do.
+- You need to download a document from your children's school website and can't find it.
+- You want to buy a specific item from a clothing store, you have a hard time finding it and then there is no way to understand how to make the purchase.
 
-Y luego están las páginas de las administraciones públicas, esas son las peores, están pensadas para matarte poco a poco a disgustos, mandándote de un lado para otro sin sentido, en una nueva versión de "El Proceso" de Kafka.
+And then there are the pages of the public administrations, those are the worst, they are designed to kill you little by little, sending you from one place to another without sense, in a new version of "The Process" by Kafka.
 
-El tiempo es una de las cosas más importantes para las personas, y el sentirse bien tratado y respetado también es fundamental. De ahí la necesidad de tener muy en cuenta a la hora de realizar una web, la calidad de los textos y la disposición de los contenidos.
+Time is one of the most important things for people, and feeling well treated and respected is also fundamental. Hence the need to take into account when creating a website, the quality of the texts and the layout of the contents.
 
-Es sencillo, si no te entienden no van a confiar, no te van a contratar, no te van a comprar, y no van a volver por tu web.
+It is simple, if they do not understand you, they will not trust you, they will not hire you, they will not buy from you, and they will not come back to your website.
 
-Todos estos aspectos los tenemos muy en cuenta en las páginas que realizamos. En cuestión de segundos, la persona que visita la web ha de saber quién somos, qué hacemos y por qué debe confiar en nosotros, para a continuación ponerse en contacto o realizar la compra.
-
-[Estaremos encantados de contarte más cosas!](/contacto/)
+We take all these aspects into account in the pages we create. In a matter of seconds, the person who visits the web has to know who we are, what we do and why they should trust us, and then contact us or make a purchase.

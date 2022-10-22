@@ -1,5 +1,7 @@
 const lodash = require('lodash');
 const dayjs = require('dayjs');
+const locale_de = require('dayjs/locale/de');
+const locale_es = require('dayjs/locale/es');
 const CleanCSS = require('clean-css');
 const markdownLib = require('../plugins/markdown');
 const site = require('../../src/_data/meta');
@@ -78,8 +80,11 @@ const toAbsoluteUrl = url => {
 /** Converts the given date string to ISO8610 format. */
 const toISOString = dateString => dayjs(dateString).toISOString();
 
-/** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
+/** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format, https://day.js.org/docs/en/i18n/loading-into-nodejs */
+// TODO: find a less verbose way to do this
 const formatDate = (date, format) => dayjs(date).format(format);
+const formatDateES = (date, format) => dayjs(date).locale(locale_es).format(format);
+const formatDateDE = (date, format) => dayjs(date).locale(locale_de).format(format);
 
 /**
  * @param {*} collection - an array of collection items that are assumed to have either data.lastUpdated or a date property
@@ -141,6 +146,8 @@ module.exports = {
   toHtml,
   toISOString,
   formatDate,
+  formatDateES,
+  formatDateDE,
   dividedBy,
   newlineToBr,
   stripNewlines,

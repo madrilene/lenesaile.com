@@ -5,7 +5,7 @@ layout: base
 <header class="section spot-color-primary" style="--spot-color: var(--color-primary)">
   <div class="section__inner">
     <div class="wrapper region prose" style="--region-space-top: var(--space-3xl)">
-      <h1>{{ title }}</h1>
+      <h1 class="fade-in">{{ title }}</h1>
       <p>{{ lead | md | safe }}</p>
     </div>
   </div>
@@ -16,7 +16,19 @@ layout: base
   <div class="wrapper flow content">
     {{ content | safe }}
 
-    <section class="breakout">
+    <section class="breakout relative">
+      <div class="sidebar my-l-xl">
+        <header class="flow">
+          <h2>{{ breakout.title }}</h2>
+          <p>{{ breakout.intro }}</p>
+        </header>
+        {% image image, "object-fit-cover", "Elemento decorativo", "eager" %}
+      </div>
+    </section>
+
+    {{ finalWords | md | safe }}
+
+    <!-- <section class="breakout">
       <div class="sidebar" style="--sidebar-align: flex-end">
         {% include 'svg/madrid.svg' %}
         <header class="flow">
@@ -24,6 +36,8 @@ layout: base
           <p>{{ breakout.intro }}</p>
         </header>
       </div>
-    </section>
+    </section> -->
   </div>
 </article>
+
+{% include 'partials/cta.njk' %}

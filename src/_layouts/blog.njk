@@ -6,23 +6,22 @@ layout: base
   class="section region overflow-hidden"
   style="
     --region-space-bottom: 0;
-    --region-space-top: var(--space-2xl);
+    --region-space-top: 0;
     --spot-color: var(--color-quaternary);
     --section-color: var(--color-dark);
   "
 >
-  {% include 'svg/divider-curve.svg' %}
   <div class="section__inner region" style="--region-space-top: 0">
     <div
       class="wrapper flow sidebar"
       style="
         --sidebar-wrap: no-wrap;
-        --sidebar-target-width: 70%;
+        --sidebar-target-width: 75%;
         --sidebar-content-min-width: 16rem;
       "
     >
       <section class="region content" style="--region-space-bottom: 0">
-        <h1>{{ title }}</h1>
+        <h1 class="fade-in">{{ title }}</h1>
         <p>{{ description }}</p>
       </section>
 

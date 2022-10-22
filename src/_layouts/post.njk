@@ -1,6 +1,19 @@
 ---
-layout: page
+layout: base
 ---
+
+<article class="region blog" style="--region-space-top: var(--space-3xl)">
+  <div class="wrapper flow content">
+    <h1 class="gradient-text">{{ title }}</h1>
+
+    {% include "partials/date.njk" %} {% if image %}
+
+    <div class="decoration">{% image image, "object-fit-cover", alt, "eager" %}</div>
+    {% endif %}
+
+    {{ content | safe }}
+  </div>
+</article>
 
 <!-- include blogpost schema  -->
 {%- include "schemas/blogpost-schema.njk" %}

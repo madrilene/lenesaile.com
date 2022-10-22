@@ -13,7 +13,7 @@ layout: base
       "
     >
       <section class="region content" style="--region-space-bottom: 0">
-        <h1>{{ title }}</h1>
+        <h1 class="fade-in">{{ title }}</h1>
         <p>{{ lead }}</p>
       </section>
 
@@ -28,16 +28,20 @@ layout: base
   {% include 'svg/divider-tilt.svg' %}
 </header>
 
-<article class="wrapper region" style="--region-space-top: var(--space-2xl)">
+<article class="wrapper region projects" style="--region-space-top: var(--space-2xl)">
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set projectlist = collections["projects_" + locale] %} {% for project in
     projectlist %}
 
-    <li class="card flow">
+    <li class="flow">
       <h3>
         {{ project.data.title }}
       </h3>
-      <p>{{ content | safe }}</p>
+
+      {% if project.data.image %} {% image project.data.image, "object-fit-cover",
+      project.data.alt, "eager" %} {% endif %}
+
+      <p>{{ project.data.lead | md | safe }}</p>
     </li>
     {% endfor %}
   </ul>

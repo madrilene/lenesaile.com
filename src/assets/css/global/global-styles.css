@@ -203,3 +203,8 @@ mark {
     content: ' [highlight end] ';
   }
 }
+
+.post-aside {
+  border: 3px solid var(--color-text);
+  padding: var(--space-m-l);
+}

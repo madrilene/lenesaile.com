@@ -19,6 +19,8 @@ const {
   where,
   toISOString,
   formatDate,
+  formatDateES,
+  formatDateDE,
   dividedBy,
   newlineToBr,
   toAbsoluteUrl,
@@ -34,6 +36,7 @@ const {getProjectsEN, getBlogsEN} = require('./config/collections/index.js');
 
 const {
   asideShortcode,
+  breakoutShortcode,
   insertionShortcode,
   imageShortcode,
   imageShortcodePlaceholder,
@@ -79,6 +82,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);
   eleventyConfig.addFilter('formatDate', formatDate);
+  eleventyConfig.addFilter('formatDateES', formatDateES);
+  eleventyConfig.addFilter('formatDateDE', formatDateDE);
   eleventyConfig.addFilter('dividedBy', dividedBy);
   eleventyConfig.addFilter('newlineToBr', newlineToBr);
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
@@ -96,6 +101,7 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addPairedShortcode('aside', asideShortcode);
+  eleventyConfig.addPairedShortcode('breakout', breakoutShortcode);
   eleventyConfig.addPairedShortcode('insertion', insertionShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);

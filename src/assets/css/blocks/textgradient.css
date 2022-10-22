@@ -6,15 +6,15 @@
     var(--color-quaternary) 33%,
     var(--color-secondary) 33%,
     var(--color-secondary) 55%,
-    var(--color-secondary) 55%,
-    var(--color-secondary) 70%,
+    var(--color-secondary) 45%,
     var(--color-tertiary) 70%,
     var(--color-tertiary) 87%,
     var(--color-primary) 87%
   );
-  background-size: 70%;
+  background-size: 50%;
   background-clip: text;
   -webkit-background-clip: text;
+  padding: 0.3rem 0;
 }
 
 .gradient-block {

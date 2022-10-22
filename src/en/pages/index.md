@@ -10,6 +10,7 @@ hero:
   title: I make accessible, highly optimized custom websites.
   intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have developed and designed countless websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and Wordpress.
   image: './src/assets/images/lene2022.jpg'
+  alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
 projects:
   title: Have a look at some of the projects I built!
@@ -23,8 +24,8 @@ blog:
   intro: "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important."
 cta:
   title: 'Get in touch!'
-  lead: "Have you just opened a restaurant? Do you design clothes and need a shop? Are you a coach? An actress, actor, singer? Have you set up a renovation company? A cousin made you a website 10 years ago and it's going badly?...
-\n\n Send me an e-mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, or whatever you have in mind! I'm always up for a chat."
+  lead: "Have you opened a restaurant? Do you design clothes and need a shop? Are you a coach? An actress, actor, singer? Have you set A cousin made you a website 10 years ago and it's going badly?...
+\n\n Send me an e-mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
 I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people== regardless of any disability.
