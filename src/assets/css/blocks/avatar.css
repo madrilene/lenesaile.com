@@ -24,18 +24,32 @@ svg.avatar-start {
   width: 50%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 25em) {
+  svg.avatar-start {
+    width: 40%;
+    transform: translateY(1.8rem) translateX(-5rem);
+  }
+}
+
+@media (min-width: 35em) {
+  svg.avatar-start {
+    transform: translateY(1.8rem) translateX(-8rem);
+  }
+}
+
+@media (min-width: 42em) {
   svg.avatar-start {
     transform: translateY(5.4rem) translateX(-10rem);
+    width: 35%;
   }
 }
 
 @media (min-width: 50em) {
   svg.avatar-start {
     transform: translateY(5.4rem) translateX(-15rem);
+    width: 36%;
   }
 }
-
 .avatar-content-reverse__inner {
   padding-left: var(--space-3xl);
 }

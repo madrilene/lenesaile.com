@@ -1,7 +1,5 @@
 @import 'https://unpkg.com/open-props/easings.min.css';
 
-@custom-media --motionOK (prefers-reduced-motion: no-preference);
-
 .sun-and-moon {
   & > :is(.moon, .sun, .sun-beams) {
     transform-origin: center center;

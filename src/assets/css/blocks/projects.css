@@ -1,11 +1,43 @@
-.projects .visual {
-  aspect-ratio: 2 / 1;
+.projects {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
 }
 
-.projects h3 {
+.projects > * {
+  flex-grow: 1;
+  flex-basis: calc((30rem - 100%) * 999);
+}
+
+.projects .visual {
+  aspect-ratio: 2 / 2;
+  transform: rotate(2.5deg);
+}
+
+.projects h2 {
   font-size: var(--size-step-1);
 }
 
-.projects p {
+.projects ul {
   font-size: var(--size-step-0);
+}
+
+.projects .description::before {
+  content: '';
+  float: left;
+  min-height: 100%;
+  width: 100%;
+  shape-outside: polygon(1.3rem 0.1rem, 0 0, 0 100%);
+  shape-margin: 1em;
+}
+
+.projects .details {
+  position: absolute;
+  bottom: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-s-m);
+  border-radius: var(--border-radius);
+  max-width: unset;
 }

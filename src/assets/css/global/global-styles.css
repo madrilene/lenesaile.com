@@ -5,8 +5,8 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-text);
-  background-color: var(--color-bg);
+  color: var(--custom-color-text, var(--color-text));
+  background-color: var(--custom-color-bg, var(--color-bg));
   font-size: var(--size-step-1);
   font-family: var(--font-base);
   line-height: 1.4;
@@ -155,52 +155,48 @@ blockquote :last-child {
   text-decoration: none;
 }
 
-/* .prose mark {
-  background: var(--color-quaternary);
-  border-radius: 0.2em 0;
-  padding: 0.1rem;
-} */
-
 mark {
   all: unset;
 }
 
-.gsap-highlight {
-  --duration: 1s;
-  --ease: cubic-bezier(0.25, 1, 0.5, 1);
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: color calc(var(--duration) / 4) var(--ease),
-    background-color calc(var(--duration) / 4) var(--ease),
-    background-size var(--duration) var(--ease);
+@media (--motionOK) {
+  .gsap-highlight {
+    --duration: 1s;
+    --ease: cubic-bezier(0.25, 1, 0.5, 1);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: color calc(var(--duration) / 4) var(--ease),
+      background-color calc(var(--duration) / 4) var(--ease),
+      background-size var(--duration) var(--ease);
 
-  &.active {
-    color: var(--color-dark);
-    background-size: 100% 100%;
-  }
+    &.active {
+      color: var(--color-dark);
+      background-size: 100% 100%;
+    }
 
-  & {
-    background-image: linear-gradient(var(--color-quaternary), var(--color-quaternary));
-  }
+    & {
+      background-image: linear-gradient(var(--color-quaternary), var(--color-quaternary));
+    }
 
-  &::before,
-  &::after {
-    position: absolute;
-    clip-path: inset(100%);
-    clip: rect(1px, 1px, 1px, 1px);
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    white-space: nowrap;
-    user-select: none;
-  }
+    &::before,
+    &::after {
+      position: absolute;
+      clip-path: inset(100%);
+      clip: rect(1px, 1px, 1px, 1px);
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+      user-select: none;
+    }
 
-  &::before {
-    content: ' [highlight start] ';
-  }
+    &::before {
+      content: ' [highlight start] ';
+    }
 
-  &::after {
-    content: ' [highlight end] ';
+    &::after {
+      content: ' [highlight end] ';
+    }
   }
 }
 

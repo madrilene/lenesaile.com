@@ -122,7 +122,12 @@
   top: 0;
   transform: translateX(calc(var(--offset) * 4px))
     rotate(calc(-0.01turn * var(--offset) + 0.02turn)) scale(1);
-  transition-delay: calc(var(--offset) * 50ms + 100ms);
+}
+
+@media (--motionOK) {
+  .active .language-item {
+    transition-delay: calc(var(--offset) * 50ms + 100ms);
+  }
 }
 
 .active .language-item:hover {

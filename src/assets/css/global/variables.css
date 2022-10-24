@@ -51,3 +51,5 @@
   --color-quaternary: var(--color-quaternary-dark);
   --color-quinary: var(--color-quinary-dark);
 }
+
+@custom-media --motionOK (prefers-reduced-motion: no-preference);

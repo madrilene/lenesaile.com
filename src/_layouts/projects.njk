@@ -19,69 +19,26 @@ layout: base
   {% include 'svg/divider-tilt.svg' %}
 </header>
 
-<!--
-<header class="section spot-color-primary" style="--spot-color: var(--color-tertiary)">
-  <div class="section__inner">
-    <div
-      class="wrapper flow sidebar"
-      style="
-        --sidebar-wrap: no-wrap;
-        --sidebar-target-width: 70%;
-        --sidebar-content-min-width: 16rem;
-      "
-    >
-      <section class="region content" style="--region-space-bottom: 0">
-        <h1 class="fade-in">{{ title }}</h1>
-        <p>{{ lead }}</p>
-      </section>
-
-      {% include "svg/lene-ball.svg" %}
-    </div>
-
-
+{% set projectlist = collections["projects_" + locale] %} {% for project in projectlist %}
+<div class="wrapper projects region">
+  <div class="visual">
+    {% if project.data.image %} {% image project.data.image, "object-fit-cover",
+    "object-fit-cover", project.data.alt, "eager" %} {% endif %}
   </div>
-  {% include 'svg/divider-tilt.svg' %}
-</header> -->
 
-<article class="wrapper region projects" style="--region-space-top: var(--space-2xl)">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry">
-    {% set projectlist = collections["projects_" + locale] %} {% for project in
-    projectlist %}
+  <div class="details">
+    <h2>{{ project.data.title }}</h2>
 
-    <li class="flow clickable-card">
-      <h3>
-        {{ project.data.title }}
-      </h3>
+    <ul>
+      {% for item in project.data.technologies %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 
-      <div class="visual">
-        {% if project.data.image %} {% image project.data.image, "object-fit-cover",
-        "object-fit-cover", project.data.alt, "eager" %} {% endif %}
-      </div>
-
-      <p>{{ project.data.lead }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-</article>
-
-<!-- <article class="wrapper region container" style="--region-space-top: var(--space-2xl)">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry">
-    {% set projectlist = collections["projects_" + locale] %} {% for project in
-    projectlist %}
-
-    <li class="container-card clickable-card">
-      <div class="visual">
-        {% if project.data.image %} {% image project.data.image, "object-fit-cover",
-        "object-fit-cover", project.data.alt, "eager" %} {% endif %}
-      </div>
-      <div class="meta">
-        <h3>
-          {{ project.data.title }}
-        </h3>
-      </div>
-
-      <p>{{ project.data.lead | md | safe }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-</article> -->
+  <div class="description wrapper prose flow">
+    <p>{{ project.data.lead }}</p>
+    <button class="button">I'm a button</button>
+  </div>
+</div>
+{% endfor %}
