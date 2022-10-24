@@ -40,8 +40,27 @@ const imageShortcodePlaceholder = async (
   }
 
   return htmlmin.minify(
-    `<figure class="${fcls}">
+    `
+     ${
+       fcls
+         ? `
+     <figure class="${fcls} flow">
+     `
+         : `
+     <figure class="flow">
+     `
+     }
+     ${
+       pcls
+         ? `
      <picture class="${pcls}">
+     `
+         : `
+     <picture>
+     `
+     }
+
+
     ${Object.values(metadata)
       .map(imageFormat => {
         return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
@@ -52,7 +71,7 @@ const imageShortcodePlaceholder = async (
       <img
         src="/assets/images/image-placeholder.png"
         data-src="${lowsrc.url}"
-        class="${cls}"
+        class="${cls} innerimage"
         width="${lowsrc.width}"
         height="${lowsrc.height}"
         alt="${alt}"
@@ -61,8 +80,7 @@ const imageShortcodePlaceholder = async (
     </picture>
     ${
       caption
-        ? `<figcaption class="cluster"><p>${caption}</p> <img
-        src="/assets/svg/arrow.svg" alt="Arrow icon" width="78" height="75" aria-hidden="true" />
+        ? `<figcaption>${caption}
 	</figcaption>`
         : ``
     }

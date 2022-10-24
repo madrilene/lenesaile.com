@@ -2,6 +2,24 @@
 layout: base
 ---
 
+<header class="section overflow-hidden" style="--spot-color: var(--color-tertiary)">
+  <div
+    class="section__inner region"
+    style="--region-space-bottom: var(--space-2xl); --region-space-top: var(--space-3xl)"
+  >
+    <div class="wrapper flow | content relative avatar-content">
+      <section class="prose | avatar-content__inner">
+        <h1 class="fade-in">{{ title }}</h1>
+        <p>{{ lead }}</p>
+      </section>
+      {% include "svg/lene-ball.svg" %}
+    </div>
+  </div>
+
+  {% include 'svg/divider-tilt.svg' %}
+</header>
+
+<!--
 <header class="section spot-color-primary" style="--spot-color: var(--color-tertiary)">
   <div class="section__inner">
     <div
@@ -20,29 +38,50 @@ layout: base
       {% include "svg/lene-ball.svg" %}
     </div>
 
-    <!-- <div class="wrapper region prose" style="--region-space-top: var(--space-3xl)">
-      <h1>{{ title }}</h1>
-      <p>{{ lead | md | safe }}</p>
-    </div> -->
+
   </div>
   {% include 'svg/divider-tilt.svg' %}
-</header>
+</header> -->
 
 <article class="wrapper region projects" style="--region-space-top: var(--space-2xl)">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry">
     {% set projectlist = collections["projects_" + locale] %} {% for project in
     projectlist %}
 
-    <li class="flow">
+    <li class="flow clickable-card">
       <h3>
         {{ project.data.title }}
       </h3>
 
-      {% if project.data.image %} {% image project.data.image, "object-fit-cover",
-      project.data.alt, "eager" %} {% endif %}
+      <div class="visual">
+        {% if project.data.image %} {% image project.data.image, "object-fit-cover",
+        "object-fit-cover", project.data.alt, "eager" %} {% endif %}
+      </div>
+
+      <p>{{ project.data.lead }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+
+<!-- <article class="wrapper region container" style="--region-space-top: var(--space-2xl)">
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry">
+    {% set projectlist = collections["projects_" + locale] %} {% for project in
+    projectlist %}
+
+    <li class="container-card clickable-card">
+      <div class="visual">
+        {% if project.data.image %} {% image project.data.image, "object-fit-cover",
+        "object-fit-cover", project.data.alt, "eager" %} {% endif %}
+      </div>
+      <div class="meta">
+        <h3>
+          {{ project.data.title }}
+        </h3>
+      </div>
 
       <p>{{ project.data.lead | md | safe }}</p>
     </li>
     {% endfor %}
   </ul>
-</article>
+</article> -->

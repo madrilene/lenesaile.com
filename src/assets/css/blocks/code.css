@@ -2,9 +2,10 @@ code,
 pre {
   padding: 0.125em 0.4em;
   font-family: var(--font-mono);
-  background: var(--color-primary);
+  background: var(--color-bg);
   border-radius: var(--border-radius);
-  color: var(--color-light);
+  border-color: var(--color-text);
+  color: var(--color-text);
   font-size: var(--size-step-0);
 }
 
@@ -23,11 +24,10 @@ pre[class*='language-'] {
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  color: var(--color-bg);
-  background: var(--color-bg);
+  color: var(--color-light);
+  background: var(--color-bg-code);
   line-height: 1.5;
   border-radius: var(--border-radius);
-
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
@@ -42,14 +42,14 @@ code[class*='language-']::-moz-selection,
 pre[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection,
 pre[class*='language-'] ::-moz-selection {
-  background: var(--color-text);
+  background: var(--color-light);
 }
 
 code[class*='language-']::selection,
 pre[class*='language-']::selection,
 code[class*='language-'] ::selection,
 pre[class*='language-'] ::selection {
-  background: var(--color-text);
+  background: var(--color-light);
 }
 
 :not(pre) > code[class*='language-'] {
@@ -74,47 +74,47 @@ pre[class*='language-'] {
 }
 
 .token.atrule {
-  color: #c792ea;
+  color: var(--color-primary);
 }
 
 .token.attr-name {
-  color: #ffcb6b;
+  color: var(--color-tertiary);
 }
 
 .token.attr-value {
-  color: #c3e88d;
+  color: var(--color-quinary);
 }
 
 .token.attribute {
-  color: #c3e88d;
+  color: var(--color-quinary);
 }
 
 .token.boolean {
-  color: #c792ea;
+  color: var(--color-primary);
 }
 
 .token.builtin {
-  color: #ffcb6b;
+  color: var(--color-secondary);
 }
 
 .token.cdata {
-  color: #80cbc4;
+  color: var(--color-quaternary);
 }
 
 .token.char {
-  color: #80cbc4;
+  color: var(--color-quaternary);
 }
 
 .token.class {
-  color: #ffcb6b;
+  color: var(--color-secondary);
 }
 
 .token.class-name {
-  color: #f2ff00;
+  color: var(--color-tertiary);
 }
 
 .token.color {
-  color: #f2ff00;
+  color: var(--color-tertiary);
 }
 
 .token.comment {
@@ -122,7 +122,7 @@ pre[class*='language-'] {
 }
 
 .token.constant {
-  color: #c792ea;
+  color: var(--color-primary);
 }
 
 .token.deleted {
@@ -138,96 +138,96 @@ pre[class*='language-'] {
 }
 
 .token.function {
-  color: #c792ea;
+  color: var(--color-primary);
 }
 
 .token.hexcode {
-  color: #f2ff00;
+  color: var(--color-tertiary);
 }
 
 .token.id {
-  color: #c792ea;
+  color: var(--color-primary);
   font-weight: bold;
 }
 
 .token.important {
-  color: #c792ea;
+  color: var(--color-primary);
   font-weight: bold;
 }
 
 .token.inserted {
-  color: #80cbc4;
+  color: var(--color-quaternary);
 }
 
 .token.keyword {
-  color: #c792ea;
+  color: var(--color-primary);
   font-style: italic;
 }
 
 .token.number {
-  color: #fd9170;
+  color: var(--color-quaternary);
 }
 
 .token.operator {
-  color: #89ddff;
+  color: var(--color-light);
 }
 
 .token.prolog {
-  color: #546e7a;
+  color: var(--color-quaternary);
 }
 
 .token.property {
-  color: #80cbc4;
+  color: var(--color-quaternary);
 }
 
 .token.pseudo-class {
-  color: #c3e88d;
+  color: var(--color-quinary);
 }
 
 .token.pseudo-element {
-  color: #c3e88d;
+  color: var(--color-quinary);
 }
 
 .token.punctuation {
-  color: #89ddff;
+  color: var(--color-light);
 }
 
 .token.regex {
-  color: #f2ff00;
+  color: var(--color-tertiary);
 }
 
 .token.selector {
-  color: #f07178;
+  color: var(--color-quaternary);
 }
 
 .token.string {
-  color: #c3e88d;
+  color: var(--color-quinary);
 }
 
 .token.symbol {
-  color: #c792ea;
+  color: var(--color-primary);
 }
 
 .token.tag {
-  color: #f07178;
+  color: var(--color-quaternary);
 }
 
 .token.unit {
-  color: #f07178;
+  color: var(--color-quaternary);
 }
 
 .token.url {
-  color: #fd9170;
+  color: var(--color-quaternary);
 }
 
 .token.variable {
-  color: #f07178;
+  color: var(--color-quaternary);
 }
 
 .codepen {
   padding: var(--space-sm);
-  color: var(--color-text-accent);
-  border: 2px dashed var(--color-bg-accent);
+  color: var(--color-light);
+  border: 2px dashed var(--color-dark);
 }
 
 .cp_embed_wrapper {

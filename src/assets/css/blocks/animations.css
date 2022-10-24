@@ -18,42 +18,20 @@
   }
 }
 
-.wobble {
-  animation: wobble 1s ease;
+.appear {
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.45, 0.05, 0.22, 1.3);
 }
 
-@keyframes wobble {
-  0%,
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
   100% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-  }
-
-  15% {
-    -webkit-transform: translateX(-32px) rotate(-10deg);
-    transform: translateX(-32px) rotate(-10deg);
-  }
-
-  30% {
-    -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
-    transform: translateX(calc(32px / 2)) rotate(10deg);
-  }
-
-  45% {
-    -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
-    transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
-  }
-
-  60% {
-    -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
-    transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
-  }
-
-  75% {
-    -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
-    transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    opacity: 1;
   }
 }
 
@@ -67,11 +45,6 @@
 #blog-brauen {
   animation: brauen 1s ease-in-out infinite alternate;
   transform-origin: top;
-}
-
-#comic1-augen {
-  animation: augen 1.5s ease-in-out infinite alternate;
-  transform-origin: bottom;
 }
 
 #portatil-augen {

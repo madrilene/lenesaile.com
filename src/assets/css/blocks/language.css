@@ -64,9 +64,9 @@
 
 .language-nav {
   --offset: 1;
-  position: fixed;
-  bottom: 0;
-  right: var(--space-xs);
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -76,7 +76,7 @@
   z-index: 1;
   display: inline-grid;
   place-items: center;
-  margin: var(--space-m-l);
+  margin: var(--space-xs);
   border-radius: 50%;
   border-color: transparent;
   aspect-ratio: 1;
@@ -84,15 +84,11 @@
   cursor: pointer;
 }
 
-.language-nav-button:focus {
-  border-color: var(--color-text);
-}
-
 .language-select-nav {
   margin-top: 0;
   right: 30px;
   position: absolute;
-  bottom: 100px;
+  top: 100px;
   visibility: hidden;
   width: 220px;
   z-index: 90;

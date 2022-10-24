@@ -1,5 +1,3 @@
-<!-- https://web.dev/website-navigation/ -->
-
 <nav id="mainnav" class="navbar">
   <ul>
     {% for item in navigation[locale].top %}
@@ -19,12 +17,3 @@
     {% endfor %}
   </ul>
 </nav>
-
-<!--  template element holding a button that needs to be injected when JavaScript is finally available. Source: https://web.dev/website-navigation/ -->
-
-<template id="burger-template">
-  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
-    <span>Menu</span>
-    {% include "icons/menu.svg" %}
-  </button>
-</template>

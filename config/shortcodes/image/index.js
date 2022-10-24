@@ -1,7 +1,7 @@
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
 
-const imageShortcode = async (src, cls, alt, loading, sizes = '100vw') => {
+const imageShortcode = async (src, pcls, cls, alt, loading, sizes = '100vw') => {
   if (!alt) {
     throw new Error(`Missing \`alt\` on Image from: ${src}`);
   }
@@ -22,7 +22,18 @@ const imageShortcode = async (src, cls, alt, loading, sizes = '100vw') => {
 
   let lowsrc = metadata.jpeg[0];
 
-  return `<picture>
+  // check if there its a picture class
+
+  return `
+  ${
+    pcls
+      ? `
+  <picture class="${pcls}">
+  `
+      : `
+  <picture>
+  `
+  }
     ${Object.values(metadata)
       .map(imageFormat => {
         return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
@@ -32,7 +43,7 @@ const imageShortcode = async (src, cls, alt, loading, sizes = '100vw') => {
       .join('\n')}
       <img
         src="${lowsrc.url}"
-        class="${cls}"
+        class="${cls} innerimage"
         width="${lowsrc.width}"
         height="${lowsrc.height}"
         alt="${alt}"

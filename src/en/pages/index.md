@@ -24,8 +24,8 @@ blog:
   intro: "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important."
 cta:
   title: 'Get in touch!'
-  lead: "Have you opened a restaurant? Do you design clothes and need a shop? Are you a coach? An actress, actor, singer? Have you set A cousin made you a website 10 years ago and it's going badly?...
-\n\n Send me an e-mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
+  desktop: "Have you opened a restaurant? Do you design clothes and need a shop? Are you a coach? An actress, actor, singer? Have you set A cousin made you a website 10 years ago and it's going badly?..."
+  lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
 I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people== regardless of any disability.

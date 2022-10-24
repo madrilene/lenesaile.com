@@ -1,7 +1,12 @@
-<ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+<ul
+  class="grid mt-l-xl overflow-hidden"
+  role="list"
+  data-rows="masonry"
+  data-layout="50-50"
+>
   {% set postslist = collections["blog_" + locale] %} {% for post in postslist %}
 
-  <li class="card flow">
+  <li class="card flow clickable-card">
     <h3>
       <a href="{{ post.url | url }}">{{ post.data.title }}</a>
     </h3>

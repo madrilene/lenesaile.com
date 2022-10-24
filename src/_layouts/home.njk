@@ -19,7 +19,7 @@ layout: base
     </div>
 
     <div class="snapshot">
-      {% image hero.image, "object-fit-cover", hero.alt, "eager" %} {% include
+      {% image hero.image, "", "object-fit-cover", hero.alt, "eager" %} {% include
       'svg/arrow.svg' %}
       <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
     </div>
@@ -36,23 +36,19 @@ layout: base
   </div>
 </article>
 
+<!--  -->
+
 <article
-  class="section"
-  style="--button-color: var(--color-quaternary); --spot-color: var(--color-secondary)"
+  class="section overflow-hidden"
+  style="--button-color: var(--color-tertiary); --spot-color: var(--color-secondary)"
 >
   {% include 'svg/divider-curve.svg' %}
 
-  <div
-    class="section__inner region"
-    style="--region-space-bottom: 0; --region-space-top: 0"
-  >
-    <div
-      class="wrapper flow sidebar overflow-hidden"
-      style="--sidebar-align: flex-end; --sidebar-wrap: no-wrap"
-    >
+  <div class="section__inner region" style="--region-space-top: 0">
+    <div class="wrapper flow | content relative">
       {% include "svg/lene-startcta.svg" %}
 
-      <section class="flow region" style="--region-space-bottom: var(--space-2xl)">
+      <section class="flow region | avatar-content-reverse__inner">
         <h2>{{ projects.title }}</h2>
         <p>{{ projects.teaser }}</p>
 
@@ -69,7 +65,21 @@ layout: base
     <h2>{{ blog.title }}</h2>
     <p>{{ blog.intro }}</p>
   </div>
-  {% include "partials/blog.njk" %}
+  <!-- TODO: duplicate of partials/blog.njk -->
+
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections["blog_" + locale] %} {% for post in postslist.slice(0,
+    4) %}
+
+    <li class="card flow clickable-card overflow-hidden">
+      <h3>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h3>
+      {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </article>
 
 {% include 'partials/cta.njk' %}

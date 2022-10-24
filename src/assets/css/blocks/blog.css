@@ -1,5 +1,24 @@
 .blog .decoration {
-  aspect-ratio: 16 / 2;
   border: 1px solid var(--color-text);
   border-radius: var(--border-radius);
+}
+
+.blog h1 {
+  font-size: var(--size-step-4);
+}
+
+.blog h2 {
+  font-size: var(--size-step-3);
+}
+
+.blog .innerimage {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-text);
+  border-radius: var(--border-radius);
+}
+
+.blog .post-aside {
+  border: 3px solid var(--color-text);
+  padding: var(--space-m-l);
 }

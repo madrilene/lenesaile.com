@@ -15,7 +15,9 @@
 :root[data-theme='light'] {
   color-scheme: light dark;
   --color-bg: var(--color-light);
+  --color-bg-code: var(--color-light-code);
   --color-text: var(--color-dark);
+  --color-text-code: var(--color-dark-code);
   --color-primary: var(--color-primary-light);
   --color-secondary: var(--color-secondary-light);
   --color-tertiary: var(--color-tertiary-light);
@@ -27,7 +29,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: var(--color-dark);
+    --color-bg-code: var(--color-dark-code);
     --color-text: var(--color-light);
+    --color-text-code: var(--color-light-code);
     --color-primary: var(--color-primary-dark);
     --color-secondary: var(--color-secondary-dark);
     --color-tertiary: var(--color-tertiary-dark);
@@ -38,7 +42,9 @@
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
   --color-bg: var(--color-dark);
+  --color-bg-code: var(--color-dark-code);
   --color-text: var(--color-light);
+  --color-text-code: var(--color-light-code);
   --color-primary: var(--color-primary-dark);
   --color-secondary: var(--color-secondary-dark);
   --color-tertiary: var(--color-tertiary-dark);

@@ -15,16 +15,12 @@
     >
       <section class="region flow">
         <h2>{{ cta.title }}</h2>
+        <p class="visible-desktop">{{ cta.desktop | md | safe }}</p>
         <p>{{ cta.lead | md | safe }}</p>
       </section>
 
       {% include "svg/lene-cta.svg" %}
     </div>
-
-    <!-- <div class="wrapper region prose" style="--region-space-top: var(--space-3xl)">
-      <h1>{{ title }}</h1>
-      <p>{{ lead | md | safe }}</p>
-    </div> -->
   </div>
 </section>
 

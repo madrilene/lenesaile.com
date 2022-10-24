@@ -1,0 +1,11 @@
+.projects .visual {
+  aspect-ratio: 2 / 1;
+}
+
+.projects h3 {
+  font-size: var(--size-step-1);
+}
+
+.projects p {
+  font-size: var(--size-step-0);
+}
