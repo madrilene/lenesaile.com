@@ -6,7 +6,7 @@ layout: base
   <div class="wrapper flow content">
     <h1 class="gradient-text">{{ title }}</h1>
 
-    {% include "partials/date.njk" %} {% if image %}
+    {% set definedDate = date %} {% include "partials/date.njk" %} {% if image %}
 
     <div class="decoration">{% image image, "", "object-fit-cover", alt, "eager" %}</div>
     {% endif %}
@@ -15,5 +15,6 @@ layout: base
   </div>
 </article>
 
+{% include 'partials/cta.njk' %}
 <!-- include blogpost schema  -->
 {%- include "schemas/blogpost-schema.njk" %}

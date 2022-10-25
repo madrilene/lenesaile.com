@@ -32,7 +32,14 @@ const {
 } = require('./config/filters/index.js');
 
 // module import shortcodes
-const {getProjectsEN, getBlogsEN} = require('./config/collections/index.js');
+const {
+  getProjectsEN,
+  getBlogsEN,
+  getProjectsES,
+  getBlogsES,
+  getProjectsDE,
+  getBlogsDE
+} = require('./config/collections/index.js');
 
 const {
   asideShortcode,
@@ -70,7 +77,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('projects', 'projects.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('contact', 'contact.njk');
-  eleventyConfig.addLayoutAlias('excellent', 'excellent.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
@@ -114,6 +120,10 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('projects_en', getProjectsEN);
   eleventyConfig.addCollection('blog_en', getBlogsEN);
+  eleventyConfig.addCollection('projects_es', getProjectsES);
+  eleventyConfig.addCollection('blog_es', getBlogsES);
+  eleventyConfig.addCollection('projects_de', getProjectsDE);
+  eleventyConfig.addCollection('blog_de', getBlogsDE);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

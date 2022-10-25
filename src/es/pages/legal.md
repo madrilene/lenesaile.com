@@ -1,14 +1,14 @@
 ---
-title: Legal notice
+title: Aviso legal – Lene Saile
 seo:
-  title: Legal notice | Lene Saile. Designer and Full Stack developer
-permalink: /{{ locale }}/imprint/index.html
+  title: Aviso legal
+permalink: /{{ locale }}/aviso-legal/index.html
 key: 'legal'
 description: Emisor, titular y responsable de la página web y información sobre las técnicas usadas en desarrollo y producción
 layout: page
 ---
 
-In accordance with article 10 of spanish Law 34/2002 on information society services and electronic commerce, the owner and party responsible for this website is:
+De conformidad con el artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico advertimos que el emisor, titular y responsable de la presente página web es la empresa:
 
 {{ meta.address.firma }}
 {{ meta.address.street }}

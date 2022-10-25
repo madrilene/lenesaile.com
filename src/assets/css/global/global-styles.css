@@ -103,7 +103,7 @@ article [href^='http']:not([href*='lenesaile.com'])::after {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background-image: url('/assets/images/icn-external.svg');
+  background-image: url('/assets/images/svg/icn-external.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60% auto;
@@ -131,10 +131,10 @@ article [href^='http']:not([href*='lenesaile.com'])::after {
 }
 
 blockquote {
-  border-inline-start: 10px solid var(--color-secondary);
+  border-inline-start: 0.8rem solid var(--color-quaternary);
   padding: var(--space-m-l);
   font-family: var(--font-serif);
-  font-style: italic;
+
   font-size: var(--size-step-2);
 }
 

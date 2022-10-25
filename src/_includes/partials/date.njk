@@ -1,19 +1,19 @@
-<time datetime="{{ post.date | toIsoString }}">
+<time datetime="{{ definedDate | toIsoString }}">
   <!-- TODO: less verbose -->
   <!-- if DE -->
   {% if locale == "de" %}
   {{
-    post.date | formatDateDE('dddd, MMMM D, YYYY')
+    definedDate | formatDateDE('dddd, MMMM D, YYYY')
   }}
   <!-- if ES -->
   {% elif locale == "es" %}
   {{
-  post.date | formatDateES('dddd, D, MMMM YYYY')
+    definedDate | formatDateES('dddd, D, MMMM YYYY')
   }}
   <!-- else default: EN -->
   {% else %}
   {{
-  post.date | formatDate('MMMM D, YYYY')
+    definedDate | formatDate('MMMM D, YYYY')
   }}
   {% endif %}
 </time>

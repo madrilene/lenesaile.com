@@ -33,34 +33,30 @@ module.exports = {
   es: {
     top: [
       {
-        text: 'Nosotros',
-        url: '/es/markdown/'
+        text: 'Sobre mi',
+        url: '/es/sobre/'
       },
       {
-        text: 'Servicios',
-        url: '/es/github/'
+        text: 'Lo que hago',
+        url: '/es/servicios/'
       },
       {
         text: 'Proyectos',
-        url: '/es/buildexcellent/'
+        url: '/es/proyectos/'
       },
       {
         text: 'Blog',
-        url: '#'
-      },
-      {
-        text: 'Contacto',
-        url: '#'
+        url: '/es/blog/'
       }
     ],
     bottom: [
       {
-        text: 'Imprint',
-        url: '/es/imprint/'
+        text: 'Aviso legal',
+        url: '/es/aviso-legal/'
       },
       {
-        text: 'Privacy',
-        url: '/es/privacy/'
+        text: 'Política de privacidad',
+        url: '/es/privacidad/'
       }
     ]
   },
@@ -68,33 +64,29 @@ module.exports = {
   de: {
     top: [
       {
-        text: 'Über uns',
-        url: '/de/markdown/'
+        text: 'Über mich',
+        url: '/de/about/'
       },
       {
-        text: 'Leistungen',
-        url: '/de/github/'
+        text: 'Was ich mache',
+        url: '/de/services/'
       },
       {
         text: 'Projekte',
-        url: '/de/buildexcellent/'
+        url: '/de/projects/'
       },
       {
         text: 'Blog',
-        url: '#'
-      },
-      {
-        text: 'Kontakt',
-        url: '#'
+        url: '/de/blog/'
       }
     ],
     bottom: [
       {
-        text: 'Imprint',
+        text: 'Impressum',
         url: '/de/imprint/'
       },
       {
-        text: 'Privacy',
+        text: 'Datenschutz',
         url: '/de/privacy/'
       }
     ]

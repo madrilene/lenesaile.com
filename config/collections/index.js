@@ -10,7 +10,35 @@ const getBlogsEN = collection => {
   return blogs.reverse();
 };
 
+// projects spanish
+const getProjectsES = collection => {
+  const projects = collection.getFilteredByGlob('./src/es/projects/*.md');
+  return projects.reverse();
+};
+
+// blog spanish
+const getBlogsES = collection => {
+  const blogs = collection.getFilteredByGlob('./src/es/blog/*.md');
+  return blogs.reverse();
+};
+
+// projects german
+const getProjectsDE = collection => {
+  const projects = collection.getFilteredByGlob('./src/de/projects/*.md');
+  return projects.reverse();
+};
+
+// blog german
+const getBlogsDE = collection => {
+  const blogs = collection.getFilteredByGlob('./src/de/blog/*.md');
+  return blogs.reverse();
+};
+
 module.exports = {
   getProjectsEN,
-  getBlogsEN
+  getBlogsEN,
+  getProjectsES,
+  getBlogsES,
+  getProjectsDE,
+  getBlogsDE
 };

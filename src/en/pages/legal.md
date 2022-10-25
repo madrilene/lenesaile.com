@@ -1,10 +1,10 @@
 ---
 title: Legal notice
 seo:
-  title: Legal notice | Lene Saile. Designer and Full Stack developer
+  title: Legal notice
 permalink: /{{ locale }}/imprint/index.html
 key: 'legal'
-description: Emisor, titular y responsable de la página web y información sobre las técnicas usadas en desarrollo y producción
+description: I am issuer, owner and responsible for the web site
 layout: page
 ---
 
