@@ -12,11 +12,11 @@
     },
     {
       "name": "dark",
-      "value": "hsl(0, 0%, 25%)"
+      "value": "hsl(0, 0%, 20%)"
     },
     {
       "name": "dark code",
-      "value": "hsl(0, 0%, 20%)"
+      "value": "hsl(0, 0%, 25%)"
     },
     {
       "name": "Primary Light",

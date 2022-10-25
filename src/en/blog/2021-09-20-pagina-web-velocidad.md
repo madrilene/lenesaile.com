@@ -1,6 +1,7 @@
 ---
 title: 'La importancia del rendimiento de una página web'
 description: 'El rendimiento de la web consiste en que todo el mundo pueda acceder rápidamente a una página web sin tener que superar obstáculos innecesarios.'
+key: 'speedmatters'
 date: 2021-09-20
 featured_image: pagina-web-velocidad.jpg
 tags:

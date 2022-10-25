@@ -19,6 +19,11 @@ svg.avatar-start {
   width: 40%;
 }
 
+svg.avatar-404 {
+  width: 100%;
+  height: auto;
+}
+
 svg.avatar-start {
   transform: translateY(1.6rem) translateX(-5rem);
   width: 50%;

@@ -2,10 +2,10 @@ code,
 pre {
   padding: 0.125em 0.4em;
   font-family: var(--font-mono);
-  background: var(--color-bg);
+  background: var(--color-bg-code);
   border-radius: var(--border-radius);
   border-color: var(--color-text);
-  color: var(--color-text);
+  color: var(--color-light);
   font-size: var(--size-step-0);
 }
 

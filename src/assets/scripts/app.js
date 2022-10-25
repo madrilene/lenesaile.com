@@ -38,6 +38,8 @@ const clickSound = new Audio('/assets/sounds/mouse.wav');
 function toggleNavOpen(event) {
   event.preventDefault();
   languageNav.classList.toggle('active');
+  const isOpen = languageNavButton.getAttribute('aria-expanded') === 'false';
+  languageNavButton.setAttribute('aria-expanded', isOpen);
   clickSound.play();
 }
 languageNavButton.addEventListener('click', toggleNavOpen);

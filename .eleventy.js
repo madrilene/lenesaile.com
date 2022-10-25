@@ -72,6 +72,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('contact', 'contact.njk');
   eleventyConfig.addLayoutAlias('excellent', 'excellent.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('wordCount', wordCount);
@@ -125,17 +126,17 @@ module.exports = eleventyConfig => {
   // 	--------------------- Passthrough File Copy -----------------------
 
   // webc js and css dependencies
-  eleventyConfig.addPassthroughCopy({
-    'src/_includes/webc/*.css': `assets/components/`,
-    'src/_includes/webc/*.js': `assets/components/`
-  });
+  // eleventyConfig.addPassthroughCopy({
+  //   'src/_includes/webc/*.css': `assets/components/`,
+  //   'src/_includes/webc/*.js': `assets/components/`
+  // });
 
   // node modules
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/speedlify-score/speedlify-score.css': `assets/components/speedlify-score.css`,
-    'node_modules/speedlify-score/speedlify-score.js': `assets/components/speedlify-score.js`,
-    'node_modules/@11ty/is-land/is-land.js': `assets/components/is-land.js`
-  });
+  // eleventyConfig.addPassthroughCopy({
+  //   'node_modules/speedlify-score/speedlify-score.css': `assets/components/speedlify-score.css`,
+  //   'node_modules/speedlify-score/speedlify-score.js': `assets/components/speedlify-score.js`,
+  //   'node_modules/@11ty/is-land/is-land.js': `assets/components/is-land.js`
+  // });
 
   eleventyConfig.addPassthroughCopy('src/assets/fonts/');
   eleventyConfig.addPassthroughCopy('src/assets/images/');

@@ -7,37 +7,61 @@
 
 .projects > * {
   flex-grow: 1;
-  flex-basis: calc((30rem - 100%) * 999);
+  flex-basis: calc((45rem - 100%) * 999);
 }
 
 .projects .visual {
-  aspect-ratio: 2 / 2;
-  transform: rotate(2.5deg);
+  transition: var(--transition-bounce);
+  background: var(--color-tertiary);
+}
+.projects .visual,
+.projects .visual img {
+  aspect-ratio: 2 / 1.4;
+  width: clamp(45ch, 50%, 75ch);
+  border-radius: var(--border-radius);
+}
+
+.projects .visual img {
+  border: 3px solid var(--color-text);
+}
+
+@media (min-width: 48rem) {
+  .projects .visual img {
+    transform: rotate(-2deg);
+  }
+
+  .projects .description::before {
+    content: '';
+    float: left;
+    min-height: 100%;
+    width: 100%;
+    shape-outside: polygon(0 0, 0 0.1rem, 1.1rem 100%);
+    shape-margin: 1em;
+  }
+}
+
+.projects .visual img {
+  object-position: left;
 }
 
 .projects h2 {
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-2);
+  font-weight: normal;
 }
 
-.projects ul {
+.projects .details ul {
   font-size: var(--size-step-0);
-}
-
-.projects .description::before {
-  content: '';
-  float: left;
-  min-height: 100%;
-  width: 100%;
-  shape-outside: polygon(1.3rem 0.1rem, 0 0, 0 100%);
-  shape-margin: 1em;
+  list-style: none;
+  padding: 0;
 }
 
 .projects .details {
   position: absolute;
   bottom: 0;
-  background: var(--color-bg);
-  color: var(--color-text);
-  padding: var(--space-s-m);
+  background: var(--color-bg-code);
+  color: var(--color-light);
+  padding: 0 var(--space-m-l);
   border-radius: var(--border-radius);
   max-width: unset;
+  transform: translateX(-2rem) translateY(var(--space-xs-s));
 }

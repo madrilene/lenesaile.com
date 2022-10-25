@@ -20,25 +20,33 @@ layout: base
 </header>
 
 {% set projectlist = collections["projects_" + locale] %} {% for project in projectlist %}
-<div class="wrapper projects region">
-  <div class="visual">
-    {% if project.data.image %} {% image project.data.image, "object-fit-cover",
+
+<div class="wrapper projects region flow" style="--region-space-top: var(--space-3xl)">
+  <div class="visual relative">
+    {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
     "object-fit-cover", project.data.alt, "eager" %} {% endif %}
+
+    <div class="details">
+      <ul>
+        {% for item in project.data.technologies %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 
-  <div class="details">
+  <div
+    class="description wrapper prose flow"
+    style="--button-color: var(--color-tertiary)"
+  >
     <h2>{{ project.data.title }}</h2>
 
-    <ul>
-      {% for item in project.data.technologies %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="description wrapper prose flow">
     <p>{{ project.data.lead }}</p>
-    <button class="button">I'm a button</button>
+    <a
+      class="button"
+      href="{{ project.data.clientURL }}"
+      >{{ project.data.clientURL | replace("https://", "") }}</a
+    >
   </div>
 </div>
 {% endfor %}

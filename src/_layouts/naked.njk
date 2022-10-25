@@ -24,9 +24,6 @@
       crossorigin
     />
 
-    <!-- load theme toggle first to avoid color flashing on page load.  -->
-    <script src="/assets/theme-toggle.js"></script>
-
     <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
 
     <!-- defer js  -->
@@ -53,21 +50,6 @@
   </head>
 
   <body class="relative">
-    <!-- header -->
-    {% include "partials/header.njk" %} {% include "partials/lang-switch.njk" %}
-
-    <!-- content slot -->
-    <main id="main" class="relative">{{ content | safe }}</main>
-
-    <!-- footer -->
-    {% include "partials/footer.njk" %}
-
-    <!-- yt script if active-->
-    {% if youtube %}
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
-    ></script>
-    {% endif %}
+    {{ content | safe }}
   </body>
 </html>

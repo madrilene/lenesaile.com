@@ -1,6 +1,7 @@
 ---
 title: 'The clarity of contents'
 description: 'The clarity of the contents is one of the most important characteristics. A nice design is of little use if the visitor does not understand anything and leaves the page frustrated.'
+key: 'contentsclarity'
 date: 2022-01-22
 image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'
 alt: 'screenshot of some typography on a website'

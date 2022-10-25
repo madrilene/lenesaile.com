@@ -8,14 +8,15 @@ description: "I'm a developer and designer in Madrid who has been building for t
 layout: about
 lead: "I'm a developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites with accessibility and performance in mind."
 image: './src/assets/images/lene-sobre-mi-2021.jpg'
+alt: 'Lene sitting on a gym ball in front of her desk, apparently working'
 breakout:
   title: 'I live and work in Madrid'
   intro: 'Since 2010, I have been living and working in Madrid, La Latina. A lot of my clients are based in Spain, but I also work for international clients.'
 finalWords: "I'm constantly reading and learning, and I'm especially enthusiastic about everything that's happening in the areas of Jamstack, accessibility and performance. I don't consider myself an expert anywhere, as I'm constantly optimising and every field is incredibly large. I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques."
 cta:
   title: "Let's talk!"
-  lead: "A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.
-\n\n Send me an e-mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
+  desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'
+  lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
 I have always enjoyed experimenting with computers. In 2004, I tried building my first websites with HTML and CSS. Four years later, I started earning a living with my hobby.

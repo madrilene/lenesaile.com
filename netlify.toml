@@ -1,3 +1,26 @@
+# redirect to english, spanish or german landing. system parses redirect rules from top to bottom (cascading), the second redirect rule doesn’t have to have the Language conditions since any ‘fr’ requests will never reach that redirect.
+
+[[redirects]]
+from = "/"
+to = "/de"
+status = 302
+force = true
+conditions = {Language = ["de"]}
+
+[[redirects]]
+from = "/"
+to = "/es"
+status = 302
+force = true
+conditions = {Language = ["es"]}
+
+[[redirects]]
+from = "/"
+to = "/en"
+status = 302
+force = true
+
+
 [[plugins]]
 package = "netlify-plugin-cache"
   [plugins.inputs]

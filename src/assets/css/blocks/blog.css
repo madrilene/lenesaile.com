@@ -18,7 +18,30 @@
   border-radius: var(--border-radius);
 }
 
-.blog .post-aside {
-  border: 3px solid var(--color-text);
+.blog aside {
+  --border-width: 0.2rem;
+  --border: var(--border-width) solid var(--color-primary);
+  background-color: var(--color-light);
+  border: var(--border);
+  border-radius: var(--border-radius);
   padding: var(--space-m-l);
+  padding-inline-start: 2em;
+  position: relative;
+}
+.blog aside:before {
+  --size: 2.25em;
+  border-radius: 100%;
+  color: var(--color-primary);
+  content: '';
+  background-image: url('../images/svg/info.svg');
+  display: flex;
+  font-size: 1.15em;
+  height: 2.15em;
+  left: calc(var(--size) / -2 - var(--border-width) / 2);
+  line-height: 1;
+  position: absolute;
+  top: 1em;
+  width: var(--size);
+  color: var(--color-primary);
+  background-color: var(--color-bg);
 }

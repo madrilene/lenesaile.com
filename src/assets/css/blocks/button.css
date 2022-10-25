@@ -17,6 +17,7 @@
 .button::before {
   background: var(--button-color, var(--color-primary));
   border: 3px solid var(--button-color, var(--color-primary));
+  border-radius: var(--border-radius);
 }
 
 .button:hover::before {
