@@ -88,7 +88,7 @@ nav.navbar a {
 
   nav.navbar a {
     background: transparent;
-    border-radius: none;
+    border-radius: 0;
   }
 }
 

@@ -5,7 +5,7 @@
     animation-name: fadeIn;
     animation-duration: 0.8s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.45, 0.05, 0.22, 1.3);
+    animation-timing-function: cubic-bezier(0.4, 0.05, 0.22, 1.2);
   }
 
   @keyframes fadeIn {
