@@ -1,34 +1,36 @@
 ---
-title: Privacy Policy
+title: Datenschutzerklärung
 seo:
-  title: Privacy Policy | Lene Saile. Designer and Full Stack developer
-permalink: /{{ locale }}/privacy/index.html
+  title: Datenschutzerklärung | Lene Saile. Designer und Full Stack Entwickler
+permalink: /{{ locale }}/datenschutz/index.html
 key: 'privacy'
-description: I respect the EU General Data Protection Regulation (GDPR). This policy document explains how I collect and handle any information you provide to me.
+description: Ich respektiere die EU-Datenschutzgrundverordnung (GDPR). Dieses Dokument erklärt, wie ich alle Informationen, die du mir zur Verfügung stellst, sammle und behandle.
 layout: page
 ---
 
-I respect the EU General Data Protection Regulation (GDPR) and this policy document explains how I collect and handle any information you provide to me.
+Ich respektiere die EU-Datenschutzgrundverordnung (GDPR) und dieses Dokument erklärt, wie ich die von dir zur Verfügung gestellten Informationen sammle und behandle.
 
-## What background data is collected?
+## Welche Hintergrunddaten werden gesammelt?
 
-This website does not collect any personal data. It does not set any cookies and does not use any third-party tracking scripts.
+Diese Website sammelt keine persönlichen Daten. Es werden keine Cookies gesetzt und keine Tracking-Skripte von Dritten verwendet.
 
-For visitor statistics I use Plausible Analytics, a privacy-first web analytics tool. It is built to comply with the different privacy regulations, such as GDPR and CCPA. Plausible does not use cookies and does not collect any personal data.
+Für die Besucherstatistiken verwende ich Plausible Analytics, ein Webanalysetool, bei dem der Datenschutz im Vordergrund steht. Es wurde entwickelt, um die verschiedenen Datenschutzbestimmungen wie GDPR und CCPA zu erfüllen. Plausible verwendet keine Cookies und sammelt keine persönlichen Daten.
 
-## How do I use the data you provide?
+## Wie verwende ich die von Ihnen bereitgestellten Daten?
 
-This website does not collect any further information.
+Diese Website sammelt keine weiteren Informationen.
 
-## How secure is your data?
+## Wie sicher sind deine Daten?
 
-Very secure, as this website does not collect any information.
+Sehr sicher, da diese Website keine Informationen sammelt.
 
-## How secure is this website?
+## Wie sicher ist diese Website?
 
-This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider can still see that you are downloading assets from this site, but not its content. This also protects you from third parties intercepting data, for example, while browsing on public WiFi, or from network providers injecting advertisements on this site. All relevant response HTTP headers are set for your protection and the Content Security Policy is adjusted to this websites requirements.
+Diese Website wird über HTTPS übertragen, wodurch alle Daten zwischen dem Browser und dem Server verschlüsselt werden. Dein Netzbetreiber kann zwar sehen, dass du Daten von dieser Website herunterlädst, aber nicht deren Inhalt. Dies schützt dich auch vor dem Abfangen von Daten durch Dritte, z. B. beim Surfen in öffentlichen WiFi-Netzen, oder vor Netzbetreibern, die Werbung auf dieser Website einblenden.
 
-## Data controller
+Alle relevanten Antwort-HTTP-Header werden zu deinem Schutz gesetzt und die "Content Security Policy" wurde speziell an die Anforderungen dieser Website angepasst.
+
+## Datenkontrolleur
 
 {{ meta.address.firma }}
 {{ meta.address.street }}
@@ -37,14 +39,12 @@ This website transmits itself using HTTPS, encrypting all data between the brows
 Tel: <a href="tel:{{ meta.address.mobileCall }}">{{ meta.address.mobileDisplay }}</a>
 Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
 
-If you have any questions or doubts, please contact me: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
+## Änderungen an der Richtlinie
 
-## Changes to the policy
+Wenn ich den Inhalt dieser Richtlinie ändere, treten diese Änderungen zu dem Zeitpunkt in Kraft, an dem ich sie hier bekannt gebe.
 
-If I change the content of this policy, those changes will be effective at the time I post them here.
+## Reklamationen
 
-## Complaints
+Hast du Fragen oder Beschwerden? Wende dich gerne per E-Mail an mich: [hola@lenesaile.com](mailto:hello@hola@lenesaile.com).
 
-If you have any reason to complain about the way I handle your privacy, please contact me by email: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>.
-
-Last updated: October 25, 2022
+Zuletzt aktualisiert am: 25. Oktober 2022

@@ -2,8 +2,8 @@
   <button
     type="button"
     aria-expanded="false"
-    aria-label="Menu"
-    aria-controls="mainnav"
+    aria-label="Select language"
+    aria-controls="languagenav"
     class="language-nav-button"
   >
     {% include "icons/settings.svg" %}
@@ -26,6 +26,8 @@
       class="language-item {{ activeClass }} "
       href="{{ translatedUrl }}"
       style="--offset: {{ loop.index }}"
+      aria-selected="false"
+      aria-controls="lang-{{ language.code }}"
     >
       {{ language.long }}
     </a>

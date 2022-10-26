@@ -1,6 +1,6 @@
 ---
 title: 'Why speed matters. Thoughts about web performance'
-description: 'Web performance is about everyone being able to access a web page quickly without having to overcome unnecessary obstacles.'
+description: 'Web performance is about everyone being able to access a website quickly, no matter what the internet conditions are or what device is being used.'
 key: 'speedmatters'
 date: 2021-09-20
 image: './src/assets/images/blog/pagina-web-velocidad.jpg'
@@ -13,7 +13,7 @@ cta:
 
 ## What is website speed?
 
-Web performance is about everyone being able to access a web page quickly without having to overcome unnecessary obstacles.
+Web performance is about everyone being able to access a website quickly, no matter what the internet conditions are or what device is being used.
 
 When a customer goes to eat at a restaurant, slow service often leads to bad reviews and, consequently, fewer future customers. Similarly, a slow website speed can lead to poor Google rankings and less traffic to the website. The so-called "user experience" also suffers.
 
@@ -59,8 +59,8 @@ Both elements, images and fonts, are individually optimized so that they are no 
 
 The following is a very basic list of measures that should always be followed:
 
-1. Use a good quality host.
-2. Program a lightweight single page
-3. Optimize all components such as scripts, fonts and images.
+1. Use a good quality host
+2. Develop a lightweight page
+3. Optimize all components such as scripts, fonts and images
 4. Use caching
-5. Use a content delivery network (CDN).
+5. Use a content delivery network (CDN)

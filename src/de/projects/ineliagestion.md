@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.ineliagestion.com
 image: './src/assets/images/projects/proyecto-inelia.jpg'
-alt: 'screenshot of the website'
-lead: 'A tax, labor and commercial consultancy in Madrid. They did not have a website before. They wanted to be represented as an experienced and professional agency but far from the traditional serious tone. '
+alt: 'Screenshot der Website'
+lead: 'Ein Büro für Steuerberatung in Madrid. Die Kunden hatten vorher keine Website. Sie wollten als erfahrene und professionelle Agentur dargestellt werden, aber keinen traditionell seriösen und langweiligen Unterton anschlagen. Das Ergebnis ist eine moderne und frische Seite, die die professionellen Fotos in den Vordergrund hebt.'
 ---

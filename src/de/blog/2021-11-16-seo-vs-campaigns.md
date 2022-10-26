@@ -1,86 +1,86 @@
 ---
-title: 'SEO positioning vs. advertising campaigns'
-description: 'More than 90% of interactions start with Google. If your company does not appear in the search results, how are users going to find you?'
+title: 'SEO-Positionierung vs. Werbekampagnen'
+description: 'Mehr als 90 % der Interaktionen beginnen mit Google. Wenn dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann finden?'
 key: 'seovscampaigns'
 date: 2021-11-16
 image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'
-alt: 'A photo of my mechanical keyboard and a string of lights'
+alt: 'Ein Foto von meiner mechanischen Tastatur und einer Lichterkette'
 ---
 
-A few days ago a client friend told us about his doubts regarding the choice between SEO and an advertising campaign to improve customer acquisition.
+Vor ein paar Tagen erzählte uns ein befreundeter Kunde von seinen Zweifeln bezüglich der Wahl zwischen SEO und einer Werbekampagne zur Verbesserung der Kundengewinnung.
 
-There are many factors to take into account, such as the type of product you want to sell or the service you are offering. But let's start with the basics.
+Es gibt viele Faktoren, die zu berücksichtigen sind, wie z. B. die Art des Produkts, das du verkaufen willst, oder die Dienstleistung, die du anbietest. Aber fangen wir mit den Grundlagen an.
 
-## How to be found on the Internet?
+## Wie wird man im Internet gefunden?
 
-More than 90% of interactions with the Internet start with a search engine (Google, Bing, etc.). Now, if you or your company does not appear in search results, how are users going to find you? In most cases, they will not.
+Mehr als 90 % der Interaktionen mit dem Internet beginnen mit einer Suchmaschine (Google, Bing usw.). Wenn du oder dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann finden? In den meisten Fällen werden sie es nicht tun.
 
-Of course, that can be solved immediately! **Being found is something you can buy.**
+Aber das lässt sich natürlich sofort ändern! **Gefunden zu werden ist etwas, das man kaufen kann.**
 
-{% imagePlaceholder "./src/assets/images/blog/campana-twitter.jpg", "", "", "", "Screenshot of Twitter, a Mahou campaign is shown", "A custom Mahou PPC campaign among regular Twitter posts. The visually small 'Promoted' information indicates that this is a promotional post leading to an external website." %}
+{% imagePlaceholder "./src/assets/images/blog/campana-twitter.jpg", "", "", "", "Screenshot von Twitter, zu sehen ist die Kampagne einer spanischen Brauerei", "Eine benutzerdefinierte PPC-Kampagne zwischen regulären Twitter-Posts. Die visuell kleine 'Promoted'-Information zeigt an, dass es sich um einen Werbepost handelt, der zu einer externen Website führt." %}
 
-### Paid search: What are advertising campaigns?
+### Bezahlte Suche: Was sind Werbekampagnen?
 
-Paid search, also known as PPC (pay per click), is a marketing tactic in which we pay for the placement of ads on the Google results page or among "normal" social media posts. These ads work on a "pay-per-click" basis, meaning we only pay when the ads are clicked.
+Die bezahlte Suche, auch bekannt als PPC (Pay-per-Click), ist eine Marketingtaktik, bei der wir für die Platzierung von Anzeigen auf der Google-Ergebnisseite oder zwischen "normalen" Social-Media-Posts bezahlen. Diese Anzeigen funktionieren auf einer "Pay-per-Click"-Basis, d. h. wir zahlen nur, wenn die Anzeigen angeklickt werden.
 
-That promises a fast response. You can set up a campaign and monitor the results to find out what's working and what's not. And immediately, you'll see what visitors are coming to your page.
+Das verspricht eine schnelle Reaktion. Du kannst eine Kampagne einrichten und die Ergebnisse überwachen, um herauszufinden, was funktioniert und was nicht. Und du siehst sofort, welche Besucher auf deine Seite kommen.
 
-Sound good? It is, but there are some drawbacks. First of all: costs. If you're in a competitive industry, it can be very expensive. A price of 40 euros per click is not uncommon for very competitive keywords.
+Klingt gut? Ist es auch, aber es gibt auch einige Nachteile. Zunächst einmal: die Kosten. Wenn du in einer wettbewerbsintensiven Branche tätig bist, kann das sehr teuer werden. Ein Preis von 40 Euro pro Klick ist bei sehr wettbewerbsfähigen Suchbegriffen keine Seltenheit.
 
-You have to look very carefully:
-**How many hits (products sold, new customers acquired...) do you get with a campaign? Do you lose money in the end?**
+Du müssen sehr genau hinschauen:
+**Wie viele Treffer (verkaufte Produkte, neu gewonnene Kunden...) erzielst du mit einer Kampagne? Verlierst du am Ende Geld?**
 
-> Paid search is like a light switch. If you turn it on, the traffic will come. But as soon as you turn the light off (i.e. when you run out of money), the traffic will stop immediately.
+> Bezahlte Suche ist wie ein Lichtschalter. Wenn du das Licht anschaltst, kommt der Verkehr. Aber sobald du das Licht ausschaltest (d. h. wenn du nicht mehr bezahlst), hört der Verkehr sofort auf.
 >
 > 😐
 
-The same goes for social networks. If you refuse to pay, interaction with your content is likely to decrease.
+Das Gleiche gilt für soziale Netzwerke. Wenn du dich weigerst dafür zu bezahlen, wird die Interaktion mit deinen Inhalten wahrscheinlich abnehmen.
 
-SEO on the other hand means free, recurring traffic. Unlike Twitter, where a tweet can get you traffic for a day or two, or paid search, where every click costs money, SEO can bring you constant traffic months or years after you've posted something on your website.
+SEO hingegen bedeutet kostenlosen, wiederkehrenden Traffic. Anders als bei Twitter, wo ein Tweet für ein oder zwei Tage Traffic bringt, oder bei der bezahlten Suche, wo jeder Klick Geld kostet, kann SEO dir konstanten Traffic bringen, Monate oder Jahre nachdem du etwas auf deiner Website veröffentlicht hast.
 
-{% imagePlaceholder "./src/assets/images/blog/bing-results.jpg", "", "", "", "Screenshot of Bing search engine organic results", "Bing search engine organic results for fundaciongoethe.org. Additional subpages are shown according to the search engine criteria." %}
+{% imagePlaceholder "./src/assets/images/blog/bing-results.jpg", "", "", "", "Screenshot der organischen Ergebnisse der Bing Suchmaschine", "Organische Ergebnisse der Bing Suchmaschine für fundaciongoethe.org. Zusätzliche Unterseiten werden entsprechend den Suchmaschinenkriterien angezeigt." %}
 
-### SEO: Optimizing a web page so that it appears naturally in search results
+### SEO: Optimierung einer Webseite, damit sie in den Suchergebnissen natürlich erscheint
 
-Search Engine Optimization (SEO) is the process of optimizing your website so that it appears in the organic results of Google and Bing.
+Bei der Suchmaschinenoptimierung (SEO) geht es darum, deine Website so zu optimieren, dass sie in den organischen Ergebnissen von Google oder Bing erscheint.
 
-The tricky part of SEO is that you can't pay to show up. Google and the others have algorithms that calculate the quality and relevance of your page and rank it accordingly.
+Das Tückische an SEO ist, dass man nicht dafür bezahlen kann, um aufzutauchen. Google und die anderen Suchmaschinen haben Algorithmen, die die Qualität und Relevanz Ihrer Seite berechnen und sie entsprechend einstufen.
 
-So a big part of SEO is figuring out what the search engines consider important, and then optimizing your website accordingly.
+Ein großer Teil der Suchmaschinenoptimierung besteht also darin, herauszufinden, was die Suchmaschinen für wichtig halten, und deine Website dann entsprechend zu optimieren. Und somit: Eine rundherum gut Webseite zu haben.
 
-## Advantages and disadvantages of SEO
+## Vorteile und Nachteile von SEO
 
-What are the advantages and disadvantages of SEO? First of all: **SEO is much cheaper in the long run!** Which brings us directly to the biggest drawback: SEO takes time. There is a lot of refined technical SEO that we carefully include on all our websites, but at some point what matters most is the content.
+Was sind die Vor- und Nachteile von SEO? Zunächst einmal: **SEO ist auf lange Sicht viel billiger!** Was uns direkt zum größten Nachteil bringt: SEO braucht Zeit. Es gibt viel ausgefeiltes technisches SEO, das wir sorgfältig in alle unsere Websites einbauen, aber irgendwann ist der Inhalt das Wichtigste.
 
-Google's algorithm focuses on the richness of your content. SEO is a way to make sure that search engines can understand what your page is about, that it contains quality up-to-date information and that it will answer the question the search engine had in mind.
+Der Algorithmus von Google konzentriert sich auf die Reichhaltigkeit Ihrer Inhalte. SEO ist ein Weg, um sicherzustellen, dass Suchmaschinen verstehen können, worum es auf Ihrer Seite geht, dass sie hochwertige, aktuelle Informationen enthält und dass sie die Frage beantwortet, die die Suchmaschine im Sinn hat.
 
-**First of all, your website must be flawless**.
+**Zuallererst muss Ihre Website einwandfrei sein**.
 
-Attractive, fast, accessible, of course optimized for all devices, and secure. We won't go into more details about what all this implies, just this: we know all about it and if you trust us, your website will be much better than all your competitors.
+Attraktiv, schnell, zugänglich, natürlich für alle Geräte optimiert und sicher. Wir werden nicht näher darauf eingehen, was das alles bedeutet, nur so viel: Wir kennen uns damit aus, und wenn du uns vertraust, wird deine Website viel besser sein als die deiner Mitbewerber.
 
-Then you have to write the first contents. Once this base is created, the next step is to prove to the search engine that our website meets their high criteria. That takes time. In very simple words: Google and other search engines will now visit us repeatedly and take a look at our website, and also observe how their users interact with our website. Do they seem to find what they are looking for?
+Dann musst du die ersten Inhalte schreiben. Sobald diese Grundlage geschaffen ist, besteht der nächste Schritt darin, der Suchmaschine zu beweisen, dass unsere Website hohe Kriterien erfüllt. Das braucht Zeit. In sehr einfachen Worten: Google und andere Suchmaschinen werden uns jetzt immer wieder besuchen und sich unsere Website ansehen und auch beobachten, wie ihre Nutzer mit unserer Website umgehen. Finden sie was sie suchen? Fühlen sie sich wohl?
 
-Roughly speaking, we can assume that an initial positioning takes two to six months. But once we are in the search engine's favor, it will recommend future content much faster to its users.
+Grob gesagt, können wir davon ausgehen, dass eine erste Positionierung zwei bis sechs Monate dauert. Aber wenn wir einmal in der Gunst der Suchmaschine stehen, wird sie ihren Nutzern künftige Inhalte viel schneller empfehlen.
 
-That brings us to the next advantage: **You can learn to do some of the necessary work**.
-To do well in search, you'll need specialized content.
+Das bringt uns zum nächsten Vorteil: **Du kannst lernen, einen großen Teil der notwendigen Arbeit selbst zu erledigen**.
+Um bei der Suche gut abzuschneiden, brauchst du spezialisierte Inhalte.
 
-> You know better than anyone else what you are talking about, because you are an expert in your profession.
+> Duu weißt besser als jeder andere, wovon du sprichst, denn du bist ein Experte in deinem Fachgebiet.
 >
 > 😎
 
-We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it easy for you to publish your articles at any time.
+Wir können dir erklären, wie du Inhalte im Internet am besten strukturierst und formulierst. Eine einfache Benutzeroberfläche macht es dir leicht, deine Artikel jederzeit selbst zu veröffentlichen.
 
-We will be happy to make regular suggestions for new articles or, if you lack the time, we will take care of the content creation.
+Wir machen dir gerne regelmäßig Vorschläge für neue Artikel.
 
-## Combine both worlds: SEO and pay-per-click in tandem
+## Kombiniere beide Welten: SEO und Pay-per-Click im Tandem
 
-Many companies use both SEO _and_ PPC at the same time because they really complement each other.
+Viele Unternehmen nutzen SEO _und_ PPC gleichzeitig, weil sie sich hervorragend ergänzen.
 
-Did you just publish a post? Do you have a compelling, short product or event coming up? Launch ads on Facebook, Instagram or Twitter to reach as many interested people as possible.
+Hast du gerade einen Beitrag veröffentlicht? Haben du ein interessantes, kurzes Produkt oder eine Veranstaltung in Aussicht? Schalte Anzeigen auf Facebook, Instagram oder Twitter, um so viele Interessenten wie möglich zu erreichen.
 
-We don't usually recommend campaigns on Google itself, as we put all our effort into natural positioning factors.
+Wir empfehlen in der Regel keine Kampagnen auf Google selbst, da wir unsere ganze Aufmerksamkeit auf die natürlichen Positionierungsfaktoren richten.
 
-The important thing is to study each project in detail because there are no fixed rules as each client is different.
+Wichtig ist, dass man sich jedes Projekt genau ansieht, denn es gibt keine festen Regeln, da jeder Kunde anders ist.
 
-In the case of our friend, we ended up recommending just that: betting on SEO and complementing it with specific ads on the networks. We are going to monitor the results and we hope to improve his success considerably.
+Im Fall unseres Freundes haben wir genau das empfohlen: auf SEO zu setzen und es mit spezifischen Anzeigen in den Netzwerken zu ergänzen. Wir werden die Ergebnisse beobachten und hoffen, dass sich sein Erfolg deutlich verbessern wird.

@@ -1,48 +1,48 @@
 ---
-title: 'New store for albertoballesteros.com: Eleventy and Snipcart'
-description: 'A fast and secure website - and a look and feel that reflects that! - is crucial for a shop. albertoballesteros.com is a static website based on the Jamstack method.'
+title: 'Neuer Shop für albertoballesteros.com: Eleventy und Snipcart'
+description: 'Eine schnelle und sichere Website - und ein Look and Feel, das dies widerspiegelt - ist entscheidend für einen Shop.'
 key: 'storealberto'
 date: 2022-02-15
 image: './src/assets/images/blog/shop.jpg'
-alt: "Screenshot of albertoballesteros.com's shop."
+alt: 'Screenshot vom Shop auf albertoballesteros.com.'
 cta:
-  title: 'Need a shop?'
+  title: 'Brauchst du einen Shop?'
   desktop: ''
-  lead: "Do you have a project in mind and don't know how to carry it out? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your ideas."
+  lead: 'Hast du eine Idee für ein Projekt und weißt nicht, wie du es umsetzen sollst? Lassen uns darüber reden! Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com).'
 ---
 
-Visitors to a store are about to decide if they want a product and if they are willing to pay money for it. Loading times and concerns about store security can cause them to abandon that plan.
+Die Besucher eines Shops sind dabei zu entscheiden, ob sie ein Produkt wollen und ob sie bereit sind, dafür Geld zu bezahlen. Ladezeiten und Bedenken über die Sicherheit des Ladens können dazu führen, dass sie diesen Plan aufgeben.
 
-Put yourself in your customers' shoes: Would you give personal data and payment information to a dubious-looking website? To a website that doesn't exude trust all around? Probably not.
+Versetze dich in die Lage deiner Kunden: Würdest du persönliche Daten und Zahlungsinformationen an eine dubios aussehende Website weitergeben? Einer Website, die nicht rundum Vertrauen ausstrahlt? Wahrscheinlich nicht.
 
-That's why a fast and secure website - and a look and feel that reflects that! - is crucial for a shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a static website based on the Jamstack method. If everything is done right, Jamstack pages are inherently very secure, reliable, flexible and, above all, fast.
+Deshalb ist eine schnelle und sichere Website - und ein Look and Feel, das dies widerspiegelt! - von entscheidender Bedeutung für einen Shop. [albertoballesteros.com] (https://www.albertoballesteros.com/shop) ist eine statische Website, die auf der Jamstack-Methode basiert. Wenn alles richtig gemacht wird, sind Jamstack-Seiten von Natur aus sehr sicher, zuverlässig, flexibel und vor allem schnell.
 
-## How can a store be integrated into a Jamstack website?
+## Wie kann ein Shop in eine Jamstack-Website integriert werden?
 
-One of the many advantages of the Jamstack method is the wide range of applications and platforms that can be implemented. Depending on what a project needs, I can choose a provider that offers exactly that.
+Einer der vielen Vorteile der Jamstack-Methode ist die breite Palette von Anwendungen und Plattformen, die implementiert werden können. Je nachdem, was ein Projekt braucht, kann ich einen Anbieter wählen, der genau das bietet.
 
-In the case of an online store, I can choose from many providers that allow users to have a modern, personal and fast shopping experience.
+Im Falle eines Online-Shops kann ich aus vielen Anbietern wählen, die den Benutzern ein modernes, persönliches und schnelles Einkaufserlebnis bieten.
 
-One of the most popular providers is [Shopify](https://www.shopify.com/). You pay a small monthly fee to use it. In return, we receive a secure and easy-to-use store system with easy connections to common payment providers, marketing tools and modular scalability. The administration area where we can enter company data, add products and process orders is something that all similar providers have in common.
+Einer der beliebtesten Anbieter ist [Shopify](https://www.shopify.com/). Man zahlt eine geringe monatliche Gebühr für die Nutzung. Im Gegenzug erhält man ein sicheres und einfach zu bedienendes Shopsystem mit einfachen Anbindungen an gängige Zahlungsanbieter, Marketingtools und modularer Skalierbarkeit. Allen ähnlichen Anbietern gemeinsam ist der Administrationsbereich, in dem wir Unternehmensdaten eingeben, Produkte hinzufügen und Bestellungen abwickeln können.
 
-For albertoballesteros.com, Shopify is too powerful. We have a manageable number of products, and the store is more of an add-on to the website.
+Für albertoballesteros.com ist Shopify zu mächtig. Wir haben eine überschaubare Anzahl von Produkten, und der Shop ist eher ein Add-on zur Website.
 
-So far, we have maintained a direct connection to Stripe for a shop function. [Stripe Checkout](https://stripe.com/es/payments/checkout) is a secure and immediate method for completing one-off purchases or subscriptions, for example. If we can assume that our visitor will only buy one product (for example, because there are no more products available or because she chooses a specific paid subscription), Stripe Checkout is ideal. Stripe keeps about 3% per completed purchase and offers in return a variety of currencies, invoice support, data security and encryption, etc., similar to Shopify.
+Bisher haben wir für eine Shop-Funktion eine direkte Verbindung zu Stripe unterhalten. [Stripe Checkout] (https://stripe.com/es/payments/checkout) ist eine sichere und unmittelbare Methode, um z.B. einmalige Käufe oder Abonnements abzuschließen. Wenn wir davon ausgehen können, dass unser Besucher nur ein Produkt kauft (z.B. weil keine weiteren Produkte verfügbar sind oder weil er sich für ein bestimmtes kostenpflichtiges Abonnement entscheidet), ist Stripe Checkout ideal. Stripe behält etwa 3 % pro abgeschlossenem Kauf und bietet im Gegenzug eine Vielzahl von Währungen, Rechnungsunterstützung, Datensicherheit und Verschlüsselung usw., ähnlich wie Shopify.
 
-On our end, however, we're going to expand the product range a bit and a shopper may want to buy more than one item at a time. And so a third vendor comes into play: [Snipcart](https://snipcart.com/).
+In unserem Fall werden wir jedoch die Produktpalette etwas erweitern, und ein Kunde möchte vielleicht mehr als einen Artikel auf einmal kaufen. Und so kommt ein dritter Anbieter ins Spiel: [Snipcart](https://snipcart.com/).
 
-## Technical integration of Snipcart with Eleventy
+## Technische Integration von Snipcart mit Eleventy
 
-Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page and turn it into a store. Snipcart offers a fully customizable shopping cart, webhooks and APIs, and an intuitive administration panel. They keep 2% per transaction + payment gateway fees.
+Snipcart ist eine E-Commerce-Lösung, die es uns ermöglicht, einen Warenkorb zu einer Webseite hinzuzufügen und diese in einen Shop zu verwandeln. Snipcart bietet einen vollständig anpassbaren Einkaufswagen, Webhooks und APIs sowie ein intuitives Administrationspanel. Sie behalten 2% pro Transaktion + Gebühren für das Zahlungsgateway.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Snipcart admin panel screenshot", "Snipcart has an attractive and clear admin panel. Among other things, I can find useful information about the phenomenon of abandoned shopping carts." %}
+{% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Snipcart admin panel screenshot", "Snipcart hat ein attraktives und übersichtliches Adminpanel. Hier finde ich unter anderem nützliche Informationen über das Phänomen der abgebrochenen Warenkörbe." %}
 
-For Snipcart, it doesn't matter what platform the website is built on. However, it works especially well with a Jamstack website. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a Jamstack page, built with the [Eleventy](https://www.11ty.dev/) static web generator.
+Für Snipcart spielt es keine Rolle, auf welcher Plattform die Website aufgebaut ist. Es funktioniert jedoch besonders gut mit einer Jamstack-Website. [albertoballesteros.com](https://www.albertoballesteros.com/shop) ist eine Jamstack-Seite, die mit dem [Eleventy](https://www.11ty.dev/) Static Web Generator erstellt wurde.
 
-The best thing is that the configuration of the products is done directly in the code of the web.
-To do this, we first have to include a Javascript file and a CSS file.
+Das Beste daran ist, dass die Konfiguration der Produkte direkt im Code des Webs erfolgt.
+Dazu müssen wir zunächst eine Javascript-Datei und eine CSS-Datei einfügen.
 
-In my project folder I have the following structure (simplified):
+In meinem Projektordner habe ich die folgende Struktur (vereinfacht):
 
 {% raw %}
 
@@ -68,7 +68,7 @@ proyecto
 
 {% endraw %}
 
-To prevent JavaScript and CSS from being unnecessarily loaded by other pages, I specify in my base template that it will only be included on the store page:
+Um zu verhindern, dass JavaScript und CSS unnötigerweise von anderen Unterseiten geladen werden, lege ich in meinem base template fest, dass sie nur auf der Shop-Seite eingebunden werden:
 
 _base.njk:_
 
@@ -87,9 +87,9 @@ _base.njk:_
 
 {% endraw %}
 
-The store does not need product sub-pages, but lists the items directly with a short description.
+Der Shop benötigt keine Unterseiten für die Produkte, sondern listet die Artikel direkt mit einer kurzen Beschreibung auf.
 
-Therefore, I only activate the integration in my <code>Nunjucks</code>-file for the store:
+Daher aktiviere ich die Integration nur in meiner <code>Nunjucks</code>-Datei für den Shop:
 
 _shop.njk:_
 {% raw %}
@@ -103,7 +103,7 @@ snipcart: true
 
 {% endraw %}
 
-We obtain the products and their properties by means of a <code>json</code> file:
+Wir erhalten die Produkte und ihre Eigenschaften mit Hilfe einer <code>json</code> Datei:
 
 _shop.json:_
 
@@ -125,8 +125,8 @@ _shop.json:_
 }
 ```
 
-Snipcart needs some data to create the products and process the purchase.
-We get this data from our <code>shop.json</code> file using a loop:
+Snipcart benötigt einige Daten, um die Produkte zu erstellen und den Kauf zu bearbeiten.
+Wir holen diese Daten aus unserer <code>shop.json</code> Datei mit Hilfe eines loops:
 
 {% raw %}
 
@@ -149,58 +149,58 @@ We get this data from our <code>shop.json</code> file using a loop:
 
 {% endraw %}
 
-This <code>button</code> is enough to activate Snipcart. It requires the product name, a unique product ID, the product price, the product URL (where the "add to cart" <code>button</code>, used by your tracker when checking order completeness, is located), the product description and the product image URL.
+Dieser <code>button</code> reicht aus, um Snipcart zu aktivieren. Snipcart benötigt den Produktnamen, eine eindeutige Produkt-ID, den Produktpreis, die Produkt-URL (wo sich der <code>button</code> "In den Warenkorb" befindet, die von deinem Tracker bei der Überprüfung der Vollständigkeit der Bestellung verwendet wird), die Produktbeschreibung und die URL des Produktbildes.
 
-The CSS class <code>snipcart-add-item</code> is also required for this to work.
-Inside the loop I use this data to display the products in the user interface.
+Die CSS-Klasse <code>snipcart-add-item</code> ist ebenfalls erforderlich.
+Innerhalb des loops verwende ich diese Daten, um die Produkte auf der Benutzeroberfläche anzuzeigen.
 
-For the shopping cart toggle we have the following code:
+Für den Warenkorb-Toggle haben wir den folgenden Code:
 
 ```html
 <button class="snipcart-checkout">see cart</button>
 ```
 
-This allows us to check the status of our shopping cart without adding anything new to it.
+So können wir den Status unseres Warenkorbs überprüfen, ohne ihm etwas Neues hinzuzufügen.
 
-We also provide visitors with a concise overview of the shopping cart in the product overview:
+Außerdem bieten wir den Besuchern in der Produktübersicht einen kompakten Überblick über den Warenkorb:
 
 ```html
 Selected products: <span class="snipcart-items-count"></span> Total:
 <span class="snipcart-total-price"></span>
 ```
 
-Here you can always see how many products are in the basket and what the total price would be at the moment. This works with a Javascript injection.
+Hier kannst du sehen, wie viele Produkte sich im Warenkorb befinden und wie hoch der Gesamtpreis ist. Dies funktioniert mit einer Javascript-Injektion.
 
-Snipcart also looks for our language attribute in the HTML to automatically adjust the displayed language:
+Snipcart sucht auch nach unserem Sprachattribut im HTML, um die angezeigte Sprache automatisch anzupassen:
 
 ```html
 <html lang="es"></html>
 ```
 
-For the highest possible security of our websites, we set up HTTP response headers. The Content Security Policy (CSP) header is an additional layer of security that helps detect and mitigate certain types of attacks such as cross-site scripting (XSS) and data injection attacks. We do this by specifying exactly which resources the browser can load.
+Um die größtmögliche Sicherheit unserer Websites zu gewährleisten, richten wir HTTP-Antwort-Header ein. Die Kopfzeile "Content Security Policy" (CSP) ist eine zusätzliche Sicherheitsebene, die dazu beiträgt, bestimmte Arten von Angriffen wie Cross-Site-Scripting (XSS) und Data-Injection-Angriffe zu erkennen und zu entschärfen. Wir tun dies, indem wir genau festlegen, welche Ressourcen der Browser laden kann.
 
-For Snipcart to work, we have to enable script retrieval through Snipcart in the Content Security Policy header.
+Damit Snipcart funktioniert, müssen wir den Skriptabruf durch Snipcart in der Kopfzeile der Inhaltssicherheitsrichtlinie aktivieren.
 
-As we have achieved our first sale, it lists the item automatically within the products section. The buyer is listed in the customer section and in the order section the transaction appears with the customer details.
+Da wir unseren ersten Verkauf getätigt haben, wird der Artikel automatisch im Abschnitt Produkte aufgeführt. Der Käufer wird im Kundenbereich aufgeführt und im Bestellbereich erscheint die Transaktion mit den Kundendaten.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
+{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "Wir haben das erste Exemplar des Buches über die Website verkauft! Das Produkt erscheint nun im Snipcart-Verwaltungspanel." %}
 
-## Conclusion and recommendations: How to choose the best solution for an online store?
+## Schlussfolgerung und Empfehlungen: Wie wählt man die beste Lösung für einen Online-Shop?
 
-In this case, I directly handle the creation of the products in the <code>json</code> file. However, for customers, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that I can use directly.
+In Fall von albertoballesteros.com übernehme ich direkt die Erstellung der Produkte in der json-Datei. Für meine Kunden wäre dies jedoch recht mühsam. Stattdessen können sie die Produkte und ihre Eigenschaften in ein Google-Sheet (Excel) eingeben und ich konvertiere dieses Format dann in eine json-Datei, die ich direkt verwenden kann.
 
-Each customer has individual needs. Shopify is the first choice for many because of its flexibility, ease of use and good value for money. Some large companies also use Shopify.
+Jeder Kunde hat individuelle Bedürfnisse. Shopify ist für viele die erste Wahl, weil es flexibel und einfach zu bedienen ist und ein gutes Preis-Leistungs-Verhältnis bietet. Auch einige große Unternehmen nutzen Shopify.
 
-For jamstack websites where the store is more of an add-on, Snipcart is a perfect solution with its combination of easy setup and deep customization.
+Für Jamstack-Websites, bei denen der Shop eher ein Add-on ist, ist Snipcart mit seiner Kombination aus einfacher Einrichtung und tiefer Anpassung eine perfekte Lösung.
 
-For a Wordpress site, the CMS's own Woocommerce plugin is a classic. It is also possible to combine Wordpress with other store solutions.
+Für eine Wordpress-Website ist das CMS-eigene Woocommerce-Plugin ein Klassiker. Es ist auch möglich, Wordpress mit anderen Shop-Lösungen zu kombinieren.
 
-**When making a decision, the following questions need to be answered:**
+**Bei der Entscheidungsfindung müssen folgende Fragen beantwortet werden:**
 
-- How much do you want to pay for a shop solution? Development costs and running costs (such as Shopify's monthly contribution) should be included.
-- What are your technical skills and those of your team: how much do you want and can you set up yourself?
-- What do you envision for the functionality and usability of the store?
-- How big is or will your store be? You have to consider that for the scalability and adaptability of the platform.
+- Wie viel willst dufür eine Shop-Lösung bezahlen? Entwicklungskosten und laufende Kosten (z.B. der monatliche Beitrag von Shopify) sollten einbezogen werden.
+- Was sind die technischen Fähigkeiten deines Teams: Wie viel willst und kannst du selbst einrichten?
+- Welche Vorstellungen hast du von der Funktionalität und Benutzerfreundlichkeit des Shops?
+- Wie groß ist oder wird dein Shop sein? Das musst du im Hinblick auf die Skalierbarkeit und Anpassungsfähigkeit der Plattform berücksichtigen.
 
-In the end, the work and money invested in a fast, attractive and secure store website is always worth it.
-It will be reflected in sales, and the costs incurred at the beginning will soon be recovered.
+Letztendlich lohnt sich die Arbeit und das Geld, das in eine schnelle, attraktive und sichere Shop-Website investiert wird, immer.
+Es wird sich in den Verkäufen widerspiegeln, und die zu Beginn angefallenen Kosten werden sich bald wieder bezahlt machen.

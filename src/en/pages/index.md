@@ -15,7 +15,7 @@ hero:
 projects:
   title: Have a look at some of the projects I built!
   teaser: "There's a bit of everything: law firms, an ENT clinic, a public school, a cultural foundation, music groups..."
-  goal: '#'
+  goal: '/en/projects/'
   button: 'Projects'
 about:
   title: About the way I work

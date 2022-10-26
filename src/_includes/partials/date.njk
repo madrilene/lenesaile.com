@@ -3,12 +3,12 @@
   <!-- if DE -->
   {% if locale == "de" %}
   {{
-    definedDate | formatDateDE('dddd, MMMM D, YYYY')
+    definedDate | formatDateDE('dddd, D. MMMM YYYY')
   }}
   <!-- if ES -->
   {% elif locale == "es" %}
   {{
-    definedDate | formatDateES('dddd, D, MMMM YYYY')
+    definedDate | formatDateES('dddd, D MMMM, YYYY')
   }}
   <!-- else default: EN -->
   {% else %}

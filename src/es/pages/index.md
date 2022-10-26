@@ -15,7 +15,7 @@ hero:
 projects:
   title: ¡Mira algunas de las páginas web que he hecho!
   teaser: 'Hay un poco de todo: bufetes de abogados, una clínica de otorrinolaringología, un colegio público, una fundación cultural, grupos musicales...'
-  goal: '#'
+  goal: '/es/proyectos/'
   button: 'Proyectos'
 about:
   title: Sobre mi manera de trabajar

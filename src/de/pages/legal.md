@@ -1,18 +1,18 @@
 ---
-title: Legal notice
+title: Impressum
 seo:
-  title: Legal notice | Lene Saile. Designer and Full Stack developer
-permalink: /{{ locale }}/imprint/index.html
+  title: Impressum
+permalink: /{{ locale }}/impressum/index.html
 key: 'legal'
-description: Emisor, titular y responsable de la página web y información sobre las técnicas usadas en desarrollo y producción
+description: Verpflichtende Infos zu Eigentümer und Verantworktlichkeit für meine Website
 layout: page
 ---
 
-In accordance with article 10 of spanish Law 34/2002 on information society services and electronic commerce, the owner and party responsible for this website is:
+Gemäß Artikel 10 des spanischen Gesetzes 34/2002 über die Dienste der Informationsgesellschaft und den elektronischen Handel ist der Eigentümer und Verantwortliche für diese Website:
 
 {{ meta.address.firma }}
 {{ meta.address.street }}
 {{ meta.address.zip }}, {{ meta.address.city }}
 
 Tel: <a href="tel:{{ meta.address.mobileCall }}">{{ meta.address.mobileDisplay }}</a>
-Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
+E-Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>

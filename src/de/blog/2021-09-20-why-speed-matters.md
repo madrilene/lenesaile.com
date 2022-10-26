@@ -1,66 +1,66 @@
 ---
-title: 'Why speed matters. Thoughts about web performance'
-description: 'Web performance is about everyone being able to access a web page quickly without having to overcome unnecessary obstacles.'
+title: 'Web-Performance: Warum Geschwindigkeit wichtig ist'
+description: 'Bei der web performance geht es darum, dass jeder schnell auf eine Webseite zugreifen kann, egal welche Internetverhältnissse herrschen oder welches Gerät benutzt wird.'
 key: 'speedmatters'
 date: 2021-09-20
 image: './src/assets/images/blog/pagina-web-velocidad.jpg'
-alt: 'Lighthouse audit results for a website. Lighthouse provides information about the performance, SEO, usability and accessibility of a site.'
+alt: 'Lighthouse-Audit-Ergebnisse für eine Website. Lighthouse liefert Informationen über die Leistung, SEO und Benutzerfreundlichkeit einer Website.'
 cta:
-  title: 'Fast websites are my specialty'
+  title: 'Schnelle Websites sind meine Spezialität'
   desktop: 'A truly fast website is not an automated process. I achieve efficient websites with strategy, experience and detailed work.'
   lead: "Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com). I'll be happy to tell you more!"
 ---
 
-## What is website speed?
+## Was ist Website Performance?
 
-Web performance is about everyone being able to access a web page quickly without having to overcome unnecessary obstacles.
+Bei der Website Performance geht es darum, dass jeder schnell auf eine Webseite zugreifen kann, egal welche Internetverhältnissse herrschen oder welches Gerät benutzt wird.
 
-When a customer goes to eat at a restaurant, slow service often leads to bad reviews and, consequently, fewer future customers. Similarly, a slow website speed can lead to poor Google rankings and less traffic to the website. The so-called "user experience" also suffers.
+Wenn ein Kunde in einem Restaurant essen geht, führt ein langsamer Service oft zu schlechten Bewertungen und folglich zu weniger zukünftigen Kunden. In ähnlicher Weise kann eine langsame Website-Geschwindigkeit zu schlechten Google-Rankings und weniger Besuchern auf der Website führen. Auch das so genannte "Benutzererlebnis" leidet darunter.
 
-## The website as an "experience
+## Die Website als "Erlebnis
 
-Visitors are more demanding than ever. Visiting a website is no longer about simply finding the desired information.
+Die Besucher sind anspruchsvoller als je zuvor. Beim Besuch einer Website geht es nicht mehr nur darum, die gewünschten Informationen zu finden.
 
-It's about helping the visitor get to their destination as easily and quickly as possible. It is about the quality of the user's interaction with a website and also about their perception of it.
+Es geht darum, dem Besucher zu helfen, so einfach und schnell wie möglich an sein Ziel zu gelangen. Es geht um die Qualität der Interaktion des Nutzers mit einer Website und auch darum, wie er sie wahrnimmt.
 
-The time a visitor spends on your website should be a pleasant "experience", something that is perceived positively during the visit and, ideally, remembered as such.
+Die Zeit, die ein Besucher auf Ihrer Website verbringt, sollte ein angenehmes "Erlebnis" sein, etwas, das während des Besuchs positiv wahrgenommen wird und im Idealfall auch als solches in Erinnerung bleibt.
 
-## Why are fast web pages so important?
+## Warum sind schnelle Webseiten so wichtig?
 
-Speed plays a very important role in this. High-performing websites retain users better than low-performing ones. User retention, in turn, is critical to improving conversion rates (the percentage of users who complete a desired action).
+Die Geschwindigkeit spielt dabei eine sehr wichtige Rolle. Leistungsstarke Webseiten binden die Nutzer besser an sich als solche mit geringer Leistung. Die Benutzerbindung wiederum ist entscheidend für die Verbesserung der Konversionsrate (der Prozentsatz der Benutzer, die eine gewünschte Aktion ausführen).
 
-Therefore, the better the performance, the more likely users are to stay on a page, read content, make purchases or dial your phone number.
+Je besser also die Leistung ist, desto wahrscheinlicher ist es, dass die Nutzer auf einer Seite bleiben, Inhalte lesen, etwas kaufen oder Ihre Telefonnummer wählen.
 
-Google's search engine also wants users to have a good "experience" on the web, so fast web pages also rank better in search results. A slow website can cause you to end up on page 312 in search results, regardless of any other metric.
+Auch die Suchmaschine von Google möchte, dass die Nutzer ein gutes "Erlebnis" im Internet haben, daher werden schnelle Webseiten auch in den Suchergebnissen besser platziert. Eine langsame Website kann dazu führen, dass du in den Suchergebnissen auf Seite 312 landest, unabhängig von anderen Metriken.
 
-A 2017 study by Akamai (a corporation that provides a content delivery network, "CDN") claimed that as little as a 100ms delay in loading a page can mean a 7% drop in conversions and that 1% of revenue is lost for every 100ms of load time, which at the time of the study equated to $1.6 billion if the page was just one second slower.
+Eine Studie von Akamai (ein Unternehmen, das ein Content Delivery Network, "CDN", bereitstellt) aus dem Jahr 2017 hat ergeben, dass bereits eine Verzögerung von 100 ms beim Laden einer Seite zu einem Rückgang der Konversionen um 7 % führen kann und dass pro 100 ms Ladezeit 1 % des Umsatzes verloren geht, was zum Zeitpunkt der Studie 1,6 Milliarden US-Dollar entsprach, wenn die Seite nur eine Sekunde langsamer war.
 
-Akamai also found that 75% of potential shoppers abandon a shop if it takes too long to load or because the checkout process is too complicated.
+Akamai fand auch heraus, dass 75 % der potenziellen Käufer einen Shop verlassen, wenn er zu lange zum Laden braucht oder weil der Bezahlvorgang zu kompliziert ist.
 
-## Especially on cell phones, the site has to be fast
+## Vor allem auf Handys muss die Seite schnell sein
 
-People are increasingly using their cell phones to access digital content and services. When I look at our clients' website analytics, I see this trend reflected in the data. A typical split is 60% mobile (with a small proportion of tablets) and 40% desktop and laptop.
+Immer mehr Menschen nutzen ihre Mobiltelefone, um auf digitale Inhalte und Dienste zuzugreifen. Wenn ich mir die Website-Analysen unserer Kunden anschaue, sehe ich, dass sich dieser Trend in den Daten widerspiegelt. Eine typische Aufteilung ist 60 % Handy (mit einem kleinen Anteil an Tablets) und 40 % Desktop und Laptop.
 
-The performance of a website can vary greatly depending on the user's device, network conditions or other processes running on the device. If you find your website fast enough on a computer with fiber-optic Internet, a user with an older cell phone with mobile data may experience it very differently.
+Die Leistung einer Website kann je nach dem Gerät des Nutzers, den Netzwerkbedingungen oder anderen auf dem Gerät laufenden Prozessen stark variieren. Auch wenn du deine Website auf einem Computer mit Glasfaserinternet schnell genug findest, kann ein Nutzer mit einem älteren Mobiltelefon mit mobilen Daten die Website ganz anders erleben.
 
-Therefore, it is important to optimize websites especially for cell phones, especially in the speed category.
+Deshalb ist es wichtig, Websites speziell für Mobiltelefone zu optimieren, vor allem in der Kategorie Geschwindigkeit.
 
-## How do you make the page fast?
+## Wie macht man die Seite schnell?
 
-Some developers and operators often do not consider performance important. Performance is then a sort of add-on feature that can be taken care of later instead of including it from the beginning.
+Einige Entwickler und Betreiber halten die Leistung oft nicht für wichtig. Leistung ist dann eine Art Zusatzfunktion, um die man sich später kümmern kann, anstatt sie von Anfang an einzubeziehen.
 
-This is often seen with Wordpress templates: first the complete multifunctional theme and lots of plugins are loaded on the server, and then another plugin is installed that is supposed to automatically minimize and optimize all of the above. However, there are only a very limited number of possibilities that can lead to a speed increase with little effort.
+Das sieht man oft bei Wordpress-Templates: Erst werden das komplette multifunktionale Theme und jede Menge Plugins auf den Server geladen, und dann wird noch ein Plugin installiert, das alles automatisch minimieren und optimieren soll. Es gibt jedoch nur eine sehr begrenzte Anzahl von Möglichkeiten, die mit wenig Aufwand zu einer Geschwindigkeitssteigerung führen können.
 
-## Measures to speed up your website
+## Maßnahmen zur Beschleunigung Ihrer Website
 
-The list of methods and best practices to achieve optimal speed is long. At the end of the day, the visual experience should not suffer, i.e. we want images that showcase your facilities or products, and we want a web font that reflects the character of your company.
+Die Liste der Methoden und Best Practices zur Erreichung einer optimalen Geschwindigkeit ist lang. Letztendlich sollte das visuelle Erlebnis nicht darunter leiden, d. h. wir wollen Bilder, die Ihre Einrichtungen oder Produkte zeigen, und wir wollen eine Webschrift, die den Charakter Ihres Unternehmens widerspiegelt.
 
-Both elements, images and fonts, are individually optimized so that they are no longer a hindrance to speed.
+Beide Elemente, Bilder und Schriftarten, werden individuell optimiert, so dass sie die Geschwindigkeit nicht mehr beeinträchtigen.
 
-The following is a very basic list of measures that should always be followed:
+Nachfolgend findest du eine sehr grundlegende Liste von Maßnahmen, die immer befolgt werden sollten:
 
-1. Use a good quality host.
-2. Program a lightweight single page
-3. Optimize all components such as scripts, fonts and images.
-4. Use caching
-5. Use a content delivery network (CDN).
+1. Verwende einen hochwertigen Hoster
+2. Programmiere eine optimierte Seite
+3. Optimiere alle Komponenten wie Skripte, Schriftarten und Bilder
+4. Caching verwenden
+5. Verwende ein Content Delivery Network (CDN)

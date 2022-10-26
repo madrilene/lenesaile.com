@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.hno-marienplatz.de
 image: './src/assets/images/projects/proyecto-hno-marienplatz.jpg'
-alt: 'screenshot of the website'
-lead: 'The website of the Munich ENT clinic of Dr. Kothe was redesigned to achieve a clear, confidence-inspiring feel. The site was previously running Wordpress. The relaunch went smoothly and without any loss of rankings. Thanks to the optimization, the website now performs much better in search engines.'
+alt: 'Screenshot der Website'
+lead: 'Die Website der Münchner HNO-Klinik von Dr. Kothe wurde neu gestaltet, um ein klares, vertrauenserweckendes Auftreten  zu bieten. Die Seite lief zuvor mit Wordpress. Der Relaunch verlief reibungslos und ohne Ranking-Verluste. Dank der Optimierung wird die Website nun in den Suchmaschinen deutlich besser gefunden.'
 ---

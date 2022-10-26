@@ -1,25 +1,23 @@
 ---
-title: 'The importance of content clarity'
-description: 'The clarity of the contents is one of the most important characteristics. A nice design is of little use if the visitor does not understand anything and leaves the page frustrated.'
+title: 'Gedanken über klar strukturierte Inhalte'
+description: 'Die Übersichtlichkeit des Inhalts ist eines der wichtigsten Merkmale. Ein schönes Design nützt wenig, wenn der Besucher nichts versteht und die Seite frustriert verlässt.'
 key: 'contentsclarity'
-date: 2022-01-22
+date: 2021-01-27
 image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'
-alt: 'screenshot of some typography on a website'
+alt: 'Screenshot von Typografie auf einer Website'
 ---
 
-It is undoubtedly one of the most important features that a web page must have.
-A nice design is of little use if the visitor does not understand anything and leaves the page frustrated and vowing not to come back.
+Klarheit ist zweifellos eine der wichtigsten Eigenschaften, die eine Webseite haben muss.
+Ein schönes Design nützt wenig, wenn der Besucher nichts versteht und die Seite frustriert verlässt und sich schwört, nicht wiederzukommen.
 
-It has happened to all of us:
+Das ist uns allen schon passiert:
 
-- You are looking for information about the services of a renovation company that someone has recommended and you can't understand what they do or don't do.
-- You need to download a document from your children's school website and can't find it.
-- You want to buy a specific item from a clothing store, you have a hard time finding it and then there is no way to understand how to make the purchase.
+- Du suchst nach Informationen über die Dienstleistungen eines Renovierungsunternehmens, das dir jemand empfohlen hat, und du verstehst nicht, was dieses Unternehmen eigentlich anbietet.
+- Du musst ein Dokument von der Website der Schule deiner Kinder herunterladen und kannst es nicht finden.
+- Du möchtest ein bestimmtes Kleidungsstück in einem Shop kaufen, doch es fehlen Infos oder du findest deinen Einkaufswagen nicht. Am Ende brichst du den Vorgang ab.
 
-And then there are the pages of the public administrations, those are the worst, they are designed to kill you little by little, sending you from one place to another without sense, in a new version of "The Process" by Kafka.
+Zeit ist eines der wichtigsten Dinge für die Menschen, und das Gefühl, gut behandelt und respektiert zu werden, ist ebenfalls von grundlegender Bedeutung. Daher ist es notwendig, bei der Erstellung einer Website auf die Qualität der Texte und die Gestaltung der Inhalte zu achten.
 
-Time is one of the most important things for people, and feeling well treated and respected is also fundamental. Hence the need to take into account when creating a website, the quality of the texts and the layout of the contents.
+Es ist ganz einfach: Wenn deine Kunden dich nicht verstehen, werden sie dir nicht vertrauen, sie werden dich nicht engagieren, sie werden nicht bei dir einkaufen und sie werden nicht auf deine Website zurückkehren.
 
-It is simple, if they do not understand you, they will not trust you, they will not hire you, they will not buy from you, and they will not come back to your website.
-
-We take all these aspects into account in the pages we create. In a matter of seconds, the person who visits the web has to know who we are, what we do and why they should trust us, and then contact us or make a purchase.
+In wenigen Sekunden muss die Person, die die Website besucht, wissen, wer wir sind, was wir tun und warum sie uns vertrauen sollte, um dann mit uns Kontakt aufzunehmen oder einen Kauf zu tätigen.

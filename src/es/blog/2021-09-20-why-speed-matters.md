@@ -60,7 +60,7 @@ Ambos elementos, las imágenes y los tipos de letra, se optimizan individualment
 La siguiente es una lista muy básica de medidas que deben seguirse siempre:
 
 1. Usar un anfitrión de buena calidad
-2. Programar una página individual liviana
+2. Programar una página web liviana
 3. Optimizar todos los componentes como los scripts, tipos de letra y las imágenes
 4. Utilizar caching
 5. Usar una red de entrega de contenido (CDN)

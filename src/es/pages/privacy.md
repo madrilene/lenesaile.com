@@ -22,7 +22,9 @@ Muy seguro, ya que este sitio web no recoge ninguna información.
 
 ## ¿Qué tan seguro es este sitio web?
 
-Este sitio web se transmite a sí mismo usando HTTPS, encriptando todos los datos entre el navegador y el servidor. Tu proveedor de red puede seguir viendo que está cargando archivos de este sitio, pero no su contenido. Esto también te protege de que terceros intercepten datos, por ejemplo, mientras navega en una WiFi pública, o de que los proveedores de red inyecten anuncios en este sitio.
+Este sitio web se transmite a sí mismo usando HTTPS, encriptando todos los datos entre el navegador y el servidor. Tu proveedor de red puede seguir viendo que estás cargando archivos de este sitio, pero no su contenido. Esto también te protege de que terceros intercepten datos, por ejemplo, mientras navega en una WiFi pública, o de que los proveedores de red inyecten anuncios en este sitio.
+
+Todas las cabeceras HTTP de respuesta relevantes se establecen para su protección y la "Política de Seguridad de Contenidos" se ha adaptado especialmente a los requisitos de este sitio web.
 
 ## Cambios en la política
 

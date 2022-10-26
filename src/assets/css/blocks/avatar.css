@@ -10,51 +10,63 @@ svg.avatar-cta {
   transform: translateY(1.3rem);
 }
 
-svg.avatar-start {
-  display: block;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  left: 0;
-  width: 40%;
-}
-
 svg.avatar-404 {
   width: 100%;
   height: auto;
 }
 
 svg.avatar-start {
-  transform: translateY(1.6rem) translateX(-5rem);
+  display: block;
+  position: absolute;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+svg.avatar-start {
+  transform: translateY(1.6rem) translateX(-6rem);
   width: 50%;
 }
 
 @media (min-width: 25em) {
   svg.avatar-start {
-    width: 40%;
-    transform: translateY(1.8rem) translateX(-5rem);
+    transform: translateY(2rem) translateX(-7.2rem);
   }
 }
 
-@media (min-width: 35em) {
+@media (min-width: 30em) {
   svg.avatar-start {
-    transform: translateY(1.8rem) translateX(-8rem);
+    width: 40%;
+    transform: translateY(2rem) translateX(-7rem);
+  }
+}
+
+@media (min-width: 37em) {
+  svg.avatar-start {
+    transform: translateY(2.2rem) translateX(-9rem);
   }
 }
 
 @media (min-width: 42em) {
   svg.avatar-start {
-    transform: translateY(5.4rem) translateX(-10rem);
+    transform: translateY(3rem) translateX(-10rem);
     width: 35%;
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 55em) {
   svg.avatar-start {
-    transform: translateY(5.4rem) translateX(-15rem);
+    transform: translateY(3.4rem) translateX(-15rem);
     width: 36%;
   }
 }
+
+@media (min-width: 70em) {
+  svg.avatar-start {
+    transform: translateY(3rem) translateX(-18rem);
+  }
+}
+
 .avatar-content-reverse__inner {
   padding-left: var(--space-3xl);
 }

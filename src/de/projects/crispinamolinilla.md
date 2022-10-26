@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.crispinaymolinilla.com
 image: './src/assets/images/projects/proyecto-crispinaymolinilla.jpg'
-alt: 'screenshot of the website'
-lead: 'Crispina and Molinilla is a multidisciplinary project aimed at children. Entertain, amuse and educate is their philosophy. With their website I tried to represent all the vitality and dynamism of the project, creating an image that would be attractive both for children and for people interested in finding out about hiring them.'
+alt: 'Screenshot der Website'
+lead: 'Crispina und Molinilla ist ein multidisziplinäres Projekt, das sich an Kinder richtet. Mit ihrer Website habe ich versucht, die ganze Vitalität und Dynamik des Projekts darzustellen und ein Bild zu schaffen, das sowohl für Kinder als auch für Menschen, die sich für eine Anstellung interessieren, attraktiv ist.'
 ---

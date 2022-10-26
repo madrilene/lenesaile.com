@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.lamprecht-rechtsanwaelte.de
 image: './src/assets/images/projects/proyecto-lamprecht.jpg'
-alt: 'screenshot of the website'
-lead: 'This Law firm wanted to keep the design of the website that I had programmed for them back in 2015 with the CMS Wordpress, but implemented with Jamstack. The old design was only polished and improved in details, so that site visitors hardly noticed a difference - except in the better user experience. All routes were kept or correctly redirected so that the positioning in Google is not damaged. The website is now blazing fast and remains very successful.'
+alt: 'Screenshot der Website'
+lead: 'Die Anwaltskanzlei wollte das Design der Website beibehalten, das ich 2015 mit dem CMS Wordpress für sie programmiert hatte - aber mit Umsetzung über Jamstack. Das alte Design wurde darum nur aufpoliert und in Details verbessert, so dass die Seitenbesucher kaum einen Unterschied bemerken - außer in der besseren User Experience. Alle URLs wurden beibehalten oder korrekt umgeleitet, so dass die Positionierung in Google nicht beschädigt wurde. Die Website ist nun rasend schnell und weiterhin sehr erfolgreich.'
 ---

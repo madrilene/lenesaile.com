@@ -1,37 +1,37 @@
 ---
-title: What I do
+title: Was ich mache
 seo:
-  title: What I do
-permalink: /{{ locale }}/services/index.html
+  title: Was ich mache
+permalink: /{{ locale }}/leistungen/index.html
 key: 'services'
-description: 'I mainly concentrate on developing things for the web.  I place value on performance, accessibility, simplicity and long term support.'
+description: 'Ich konzentriere mich hauptsächlich auf Web-Entwicklung. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice.'
 layout: services
-lead: 'I mainly concentrate on developing things for the web. My approach is mostly static HTML, some CSS, and a dash of JavaScript for flavor. I place value on performance, accessibility, simplicity and long term support.'
+lead: 'Ich konzentriere mich hauptsächlich auf Web-Entwicklung. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Zugänglichkeit, Einfachheit und langfristigen Support. Und: Webseiten sollen Spaß machen!'
 
 tools:
   items:
     - title: 'Jamstack'
       icon: 'jamstack.svg'
-      summary: 'Jamstack makes the web faster, more secure, and easier to scale. It gives me as a developer unlimited freedom and I can work with the best tools for the project.'
+      summary: 'Jamstack macht das Web schneller, sicherer und einfacher zu skalieren. Es gibt mir als Entwickler unbegrenzte Freiheit und ich kann mit den besten Tools für das Projekt arbeiten.'
       link: ''
     - title: 'Wordpress'
       icon: 'wordpress.svg'
-      summary: 'I have built native Wordpress themes for over a decade. I also offer transfering existing Wordpress environments to the Jamstack, optionally using Wordpress as a headless CMS.'
+      summary: 'Ich entwickle seit über einem Jahrzehnt native Wordpress-Themes. Ich biete auch die Übertragung bestehender Wordpress-Umgebungen zur Jamstack-Architektur an, optional mit Wordpress als Headless CMS.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'
-      summary: 'I create visually stunning experiences, websites that are fun and easy to use. '
+      summary: 'Ich gestalte visuell spannende Erlebnisse, Websites, die Spaß machen und einfach zu bedienen sind.'
       link:
-    - title: 'Maintenance'
+    - title: 'Wartung'
       icon: 'maintenance.svg'
-      summary: 'The internet constantly evolves and so do the tools we use to build websites. I take care of the optimal functioning, security and performance of the websites I build for my clients.'
+      summary: 'Das Internet entwickelt sich ständig weiter und damit auch die Tools, die wir zur Erstellung von Websites verwenden. Ich kümmere mich um die optimale Funktionsweise, Sicherheit und Leistung der Websites, die ich für meine Kunden erstelle.'
       link: ''
     - title: 'SEO'
       icon: 'seo.svg'
-      summary: 'The secret for a good positioning is to have a website that is great in every way: Technically perfect, fast and secure, clear in terms of structure, with genuinly interesting copy. I can help you with that.'
+      summary: 'Das Geheimnis für eine gute Positionierung ist eine Website, die in jeder Hinsicht gut ist: Technisch perfekt, schnell und sicher, klar strukturiert, mit wirklich spannenden Texten. Dabei kann ich dir helfen.'
       link: ''
     - title: 'Contents'
       icon: 'content.svg'
-      summary: "Let's try to find what it is that differentiates you. Something personal, that refers to the essence or philosophy of the project or product. "
+      summary: 'Versuchen wir herauszufinden, was dich von anderen unterscheidet. Etwas Persönliches, das sich auf die Essenz oder die Philosophie des Projekts oder Produkts bezieht.'
       link: ''
 ---

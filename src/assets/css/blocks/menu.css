@@ -32,6 +32,7 @@ nav.navbar ul {
 .absolute-menu {
   position: absolute;
   width: 95%;
+  color: var(--nav-list-color, var(--color-text));
 }
 
 /* set on parent div to get the right z-index context */
@@ -78,7 +79,7 @@ nav.navbar ul {
 /* Basic link styling */
 nav.navbar a {
   border-block-end: 3px solid var(--border-color, transparent);
-  color: var(--color-text);
+  color: var(--nav-list-color, var(--color-text));
   padding: 0.1rem;
   text-decoration: none;
 }

@@ -1,30 +1,30 @@
 ---
-title: About me
+title: Über mich
 seo:
-  title: About me
-permalink: /{{ locale }}/about/index.html
+  title: Über mich
+permalink: /{{ locale }}/ueber/index.html
 key: 'about'
-description: "I'm a developer and designer in Madrid who has been building for the web professionally since 2008."
+description: 'Ich arbeite als freie Webentwicklerin und Designerin in Madrid'
 layout: about
-lead: "I'm a developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites with accessibility and performance in mind."
+lead: 'Ich bin eine Entwicklerin und Designerin. Seit 2008 erstelle ich Websites und Webapps in Vollzeit. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.'
 image: './src/assets/images/lene-sobre-mi-2021.jpg'
-alt: 'Lene sitting on a gym ball in front of her desk, apparently working'
+alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu arbeiten'
 breakout:
-  title: 'I live and work in Madrid'
-  intro: 'Since 2010, I have been living and working in Madrid, La Latina. A lot of my clients are based in Spain, but I also work for international clients.'
-finalWords: "I'm constantly reading and learning, and I'm especially enthusiastic about everything that's happening in the areas of Jamstack, accessibility and performance. I don't consider myself an expert anywhere, as I'm constantly optimising and every field is incredibly large. I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques."
+  title: 'Ich lebe und arbeite in Madrid'
+  intro: 'Seit 2010 lebe und arbeite ich in Madrid, im Stadtteil La Latina. Viele meiner Kunden sind in Spanien ansässig, aber ich arbeite auch für internationale Kunden.'
+finalWords: 'Ich lese und lerne ständig. Besonders antegtan bin ich von allem, was in den Bereichen Jamstack, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Experte, da ich ständig optimiere und jeder Bereich unglaublich groß ist. Ich lerne schnell und flexivel und habe kein Problem, mich in neue Methoden und Techniken einzuarbeiten.'
 cta:
-  title: "Let's talk!"
-  desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'
-  lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
+  title: 'Lass uns reden!'
+  desktop: 'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.'
+  lead: 'Schick mir eine Mail an [hola@lenesaile.com] (mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-I have always enjoyed experimenting with computers. In 2004, I tried building my first websites with HTML and CSS. Four years later, I started earning a living with my hobby.
+Ich habe schon immer gerne mit Computern experimentiert. Ca. 2004 habe ich dann versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, mit meinem Hobby meinen Lebensunterhalt zu verdienen.
 
-After reaching my limits with static websites, I started working with Wordpress and learned PHP to broaden the possibilities.
+Nachdem ich mit statischen Websites an meine Grenzen stieß, begann ich mit Wordpress zu arbeiten und lernte PHP, um die Möglichkeiten zu erweitern.
 
-In 2018 I discovered the idea of Jamstack and soon after changed all my workflows. I started integrating Git by default for all projects, tested new bundlers, CSS and Javscript frameworks and discovered the world of Continuous deployments via GitHub and Netlify.
+2018 entdeckte ich Jamstack und änderte kurz darauf alle meine Arbeitsabläufe. Ich begann, Git standardmäßig für alle Projekte zu integrieren, testete neue Bundler, CSS- und Javscript-Frameworks und entdeckte die Welt der "Continuous Deployments" über GitHub und Netlify.
 
-==I enjoy building performant sites with minimal vanilla Javascript and all the possibilities of modern CSS.==
+==Ich liebe es, schnelle Websites mit minimalem Einsatz von Javascript sowie allen Möglichkeiten des modernen CSS zu erstellen.==
 
-I take accessibility and performance very seriously, testing and re-testing until the result is what I want it to be. Which is (as close as I can get to) perfect.
+Ich lege großen Wert auf Barrierefreiheit und Performance und teste so lange, bis das Ergebnis so ist, wie ich es haben möchte. Und das ist nahezu perfekt.

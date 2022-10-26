@@ -187,7 +187,7 @@ As we have achieved our first sale, it lists the item automatically within the p
 
 ## Conclusion and recommendations: How to choose the best solution for an online store?
 
-In this case, I directly handle the creation of the products in the <code>json</code> file. However, for customers, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that I can use directly.
+In case of albertoballesteros.com, I directly handle the creation of the products in the <code>json</code> file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that I can use directly.
 
 Each customer has individual needs. Shopify is the first choice for many because of its flexibility, ease of use and good value for money. Some large companies also use Shopify.
 

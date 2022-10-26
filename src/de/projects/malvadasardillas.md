@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.malvadasardillas.com
 image: './src/assets/images/projects/proyecto-malvadas.jpg'
-alt: 'screenshot of the website'
-lead: 'A record label from Madrid that required a space in which to show the activity of their artists as a cultural magazine. Both the label and their musical projects have a lot of personality and their own style, so the web design had to adapt to them and capture their essence.'
+alt: 'Screenshot der Website'
+lead: 'Ein Plattenlabel aus Madrid, das einen Raum benötigte, in dem es die Aktivitäten seiner Künstler als Kulturmagazin präsentieren konnte. Sowohl das Label als auch seine musikalischen Projekte haben viel Persönlichkeit und einen eigenen Stil, so dass sich das Webdesign an sie anpassen und ihr Wesen einfangen sollte.'
 ---

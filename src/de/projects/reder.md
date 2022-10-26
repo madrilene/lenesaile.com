@@ -9,6 +9,6 @@ technologies:
   - Custom vanilla JS
 clientURL: https://www.reder162012.org
 image: './src/assets/images/projects/proyecto-reder.jpg'
-alt: 'screenshot of the website'
-lead: 'Reder is a coalition of NGOs, collectives, movements, organisations and individuals that campaigns for universal access to healthcare in Spain and denounces exclusion in the healthcare system. This site is all about performance and accessibility, helping visitors - in many cases socially excluded people such as refugees - to find their way around quickly. The system font stack is used to contribute to performance. Only five plugins are activated on the site: Advanced Custom Fields PRO, Akismet Anti-Spam, SiteGround Security, WP Rocket Pro and Yoast SEO.'
+alt: 'Screenshot der Website'
+lead: 'Reder ist ein Zusammenschluss von NRO, Kollektiven, Bewegungen, Organisationen und Einzelpersonen, der sich für den allgemeinen Zugang zur Gesundheitsversorgung in Spanien einsetzt und die Ausgrenzung im Gesundheitssystem anprangert. Bei der Entwicklungstanden Leistung und Barrierefreiheit im Vordergrund, damit sich die Besucher - in vielen Fällen sozial ausgegrenzte Menschen wie Flüchtlinge - schnell zurechtfinden. Nur fünf Plugins sind auf der Website aktiviert: Advanced Custom Fields PRO, Akismet Anti-Spam, SiteGround Security, WP Rocket Pro und Yoast SEO.'
 ---

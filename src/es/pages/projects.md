@@ -1,10 +1,10 @@
 ---
-title: Projects
+title: Proyectos
 seo:
-  title: Projects
-permalink: /{{ locale }}/projects/index.html
+  title: Proyectos
+permalink: /{{ locale }}/proyectos/index.html
 key: 'projects'
-description: 'Showcase of recent projects. Knowing that the websites I build for my clients are helping them grow and become more successful is amazing.'
+description: 'Escaparate de proyectos recientes. Saber que los sitios web que construyo para mis clientes les ayudan a crecer y tener más éxito es increíble.'
 layout: projects
-lead: 'Showcase of recent projects. Knowing that the websites I build for my clients are helping them grow and become more successful is amazing.'
+lead: 'Escaparate de proyectos recientes. Saber que los sitios web que construyo para mis clientes les ayudan a crecer y a tener más éxito es increíble.'
 ---

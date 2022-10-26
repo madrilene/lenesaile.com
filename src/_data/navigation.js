@@ -65,15 +65,15 @@ module.exports = {
     top: [
       {
         text: 'Über mich',
-        url: '/de/about/'
+        url: '/de/ueber/'
       },
       {
         text: 'Was ich mache',
-        url: '/de/services/'
+        url: '/de/leistungen/'
       },
       {
         text: 'Projekte',
-        url: '/de/projects/'
+        url: '/de/projekte/'
       },
       {
         text: 'Blog',
@@ -83,11 +83,11 @@ module.exports = {
     bottom: [
       {
         text: 'Impressum',
-        url: '/de/imprint/'
+        url: '/de/impressum/'
       },
       {
         text: 'Datenschutz',
-        url: '/de/privacy/'
+        url: '/de/datenschutz/'
       }
     ]
   }
