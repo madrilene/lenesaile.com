@@ -3,15 +3,7 @@
 My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.
 
 - [lenesaile.com](#lenesailecom)
-  - [Logbook](#logbook)
-    - [22-10-17](#22-10-17)
   - [Credits and Thank yous](#credits-and-thank-yous)
-
-## Logbook
-
-### 22-10-17
-
-- first commit. Updated
 
 ## Credits and Thank yous
 
@@ -51,9 +43,8 @@ I love order and structure. Aleksandr Hovhannisyan does this in an exemplary way
 
 - https://github.com/AleksandrHovhannisyan
 
-**Josh Comeau**
+**Ekrem Elmas**
 
-He created a fantastic CSS course that I am currently working through. Also, his in-depth tutorials are a great resource.
+I'm using his hand drawn icon set.
 
-- https://www.joshwcomeau.com/tutorials/
-- https://courses.joshwcomeau.com/css-for-js
+- http://ekremelmas.com/hand-drawn-icons/

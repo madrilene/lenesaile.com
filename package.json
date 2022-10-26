@@ -1,10 +1,10 @@
 {
-  "name": "eleventy-excellent",
-  "version": "1.0.1",
+  "name": "lenesaile.com",
+  "version": "1.0.2",
   "engines": {
     "node": "16.x"
   },
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's https://buildexcellentwebsit.es/.",
+  "description": "My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.",
   "main": ".eleventy.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -20,7 +20,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/madrilene/lenesaile.com.git"
   },
   "author": "Lene Saile",
   "license": "ISC",
