@@ -20,43 +20,43 @@
     },
     {
       "name": "Primary Light",
-      "value": "hsl(0, 100%, 67%)"
+      "value": "hsl(0, 75%, 59%)"
     },
     {
       "name": "Primary Dark",
-      "value": "hsl(0, 80%, 67%)"
+      "value": "hsl(0, 55%, 59%)"
     },
     {
       "name": "Secondary Light",
-      "value": "hsl(230, 100%, 67%)"
+      "value": "hsl(230, 75%, 59%)"
     },
     {
       "name": "Secondary Dark",
-      "value": "hsl(230, 80%, 67%)"
+      "value": "hsl(230, 55%, 59%)"
     },
     {
       "name": "Tertiary Light",
-      "value": "hsl(348, 100%, 67%)"
+      "value": "hsl(348, 75%, 59%)"
     },
     {
       "name": "Tertiary Dark",
-      "value": "hsl(348, 80%, 67%)"
+      "value": "hsl(348, 55%, 59%)"
     },
     {
       "name": "Quaternary Light",
-      "value": "hsl(48, 100%, 67%)"
+      "value": "hsl(48, 90%, 59%)"
     },
     {
       "name": "Quaternary Dark",
-      "value": "hsl(48, 80%, 67%)"
+      "value": "hsl(48, 70%, 59%)"
     },
     {
       "name": "Quinary Light",
-      "value": "hsl(144, 100%, 67%)"
+      "value": "hsl(144, 80%, 59%)"
     },
     {
       "name": "Quinary Dark",
-      "value": "hsl(144, 80%, 67%)"
+      "value": "hsl(144, 60%, 59%)"
     }
   ]
 }

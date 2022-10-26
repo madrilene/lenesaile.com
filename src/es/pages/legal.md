@@ -3,6 +3,7 @@ title: Aviso legal – Lene Saile
 seo:
   title: Aviso legal
 permalink: /{{ locale }}/aviso-legal/index.html
+redirectFrom: [/aviso-legal/]
 key: 'legal'
 description: Emisor, titular y responsable de la página web y información sobre las técnicas usadas en desarrollo y producción
 layout: page

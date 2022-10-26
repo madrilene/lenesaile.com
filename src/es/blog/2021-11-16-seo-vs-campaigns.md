@@ -5,6 +5,7 @@ key: 'seovscampaigns'
 date: 2021-11-16
 image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'
 alt: 'Una foto de mi teclado mecánico y una cadena de luces'
+redirectFrom: ['/blog/2021/posicionamiento-seo-vs-campanas-publicidad/']
 ---
 
 Hace unos días un cliente amigo nos transmitió sus dudas en relación a elegir entre el SEO y una campaña de publicidad para mejorar la captación de clientes.

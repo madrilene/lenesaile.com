@@ -3,6 +3,7 @@ title: Lo que hago
 seo:
   title: Lo que hago
 permalink: /{{ locale }}/servicios/index.html
+redirectFrom: [/servicios/]
 key: 'services'
 description: 'Me dedico principalmente a desarrollar cosas para la web. Doy valor al rendimiento, la accesibilidad, la simplicidad y el soporte a largo plazo.'
 layout: services

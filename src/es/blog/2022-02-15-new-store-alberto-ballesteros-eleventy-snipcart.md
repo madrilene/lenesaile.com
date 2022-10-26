@@ -9,6 +9,7 @@ cta:
   title: '¿Necesitas una tienda?'
   desktop: 'El trabajo y el dinero invertidos en un sitio web de tienda rápido, atractivo y seguro siempre merecen la pena. Se reflejará en las ventas, y los costes incurridos al principio se recuperarán pronto.'
   lead: '¿Tienes un proyecto en mente y no sabes cómo llevarlo a cabo? ¡Hablemos de ello! Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tus ideas.'
+redirectFrom: ['/blog/2022/nueva-tienda-alberto-ballesteros-eleventy-snipcart/']
 ---
 
 L@s visitantes de una tienda están a punto de decidir si quieren un producto y si están dispuestos a pagar dinero por él. Los tiempos de carga y la preocupación por la seguridad de la tienda pueden hacer que abandonen ese plan.

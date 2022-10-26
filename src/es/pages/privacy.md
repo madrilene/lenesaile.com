@@ -3,6 +3,7 @@ title: Política de privacidad
 seo:
   title: Política de privacidad
 permalink: /{{ locale }}/privacidad/index.html
+redirectFrom: [/privacidad/]
 key: 'privacy'
 description: Respeto la Regulación General de Protección de Datos de la UE (RGPD) y este documento de política explica cómo recopilar y manejar cualquier información que me proporcione.
 layout: page

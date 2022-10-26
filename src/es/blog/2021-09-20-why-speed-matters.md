@@ -9,6 +9,7 @@ cta:
   title: 'Las webs rápidas son mi especialidad'
   desktop: 'Un website verdaderamente rápido no es un proceso automatizado. Consigo sitios web eficientes con estrategia, experiencia y trabajo detallado.'
   lead: '¿Quieres saber más? Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com).'
+redirectFrom: ['/blog/2021/pagina-web-velocidad/']
 ---
 
 ## ¿Qué es la velocidad de un sitio web?

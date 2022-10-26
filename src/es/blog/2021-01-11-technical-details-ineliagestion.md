@@ -9,6 +9,11 @@ cta:
   title: '¿Interesad@ en Jamstack?'
   desktop: 'El método Jamstack funciona increíblemente bien para los sitios web de pequeñas empresas. Me apasiona esta filosofía de desarrollo, ¡así que estoy encantado de contártelo todo!'
   lead: '¿Tienes un proyecto en mente? ¡Hablemos de él! Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com).'
+redirectFrom:
+  [
+    '/blog/2021/proyecto-inelia-gestion/',
+    '/blog/2021/detalles-tecnicos-desarrollo-ineliagestion/'
+  ]
 ---
 
 Acabamos de incorporar a nuestra [sección de proyectos](/es/proyectos) una de las páginas que realizamos el pasado otoño.

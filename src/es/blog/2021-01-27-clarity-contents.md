@@ -5,6 +5,7 @@ key: 'contentsclarity'
 date: 2021-01-27
 image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'
 alt: 'captura de pantalla de tipografía en una web'
+redirectFrom: ['/blog/2021/importancia-claridad-de-contenidos-pagina-web/']
 ---
 
 Es sin duda una de las características más importantes que debe tener una página web.
