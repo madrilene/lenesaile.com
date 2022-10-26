@@ -90,7 +90,7 @@
   position: absolute;
   top: 100px;
   visibility: hidden;
-  width: 220px;
+  width: 120px;
   z-index: 90;
 }
 .language-item {
@@ -117,7 +117,7 @@
   background: var(--color-bg);
   border: 3px solid var(--color-text);
   display: grid;
-  height: 65px;
+  height: 45px;
   opacity: 1;
   top: 0;
   transform: translateX(calc(var(--offset) * 4px))
@@ -138,4 +138,14 @@
   border: 3px solid var(--color-text);
   background: var(--color-primary);
   color: var(--color-light);
+}
+
+@media (min-width: 50em) {
+  .language-select-nav {
+    width: 220px;
+  }
+
+  .active .language-item {
+    height: 65px;
+  }
 }
