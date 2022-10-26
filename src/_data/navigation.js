@@ -33,7 +33,7 @@ module.exports = {
   es: {
     top: [
       {
-        text: 'Sobre mi',
+        text: 'Sobre',
         url: '/es/sobre/'
       },
       {
@@ -64,11 +64,11 @@ module.exports = {
   de: {
     top: [
       {
-        text: 'Über mich',
+        text: 'Über',
         url: '/de/ueber/'
       },
       {
-        text: 'Was ich mache',
+        text: 'Leistungen',
         url: '/de/leistungen/'
       },
       {

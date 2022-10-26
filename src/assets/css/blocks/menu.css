@@ -54,7 +54,7 @@ nav.navbar ul {
   justify-content: flex-start;
   flex-direction: var(--nav-list-layout);
   flex-wrap: wrap;
-  gap: var(--space-xs);
+  gap: 0.2rem;
   height: var(--nav-list-height);
   list-style: none;
   margin: 0;
@@ -66,22 +66,29 @@ nav.navbar ul {
   visibility: var(--nav-list-visibility, visible);
 }
 
-@media (min-width: 41em) {
-  nav.navbar ul {
-    justify-content: flex-end;
-  }
-
-  nav.navbar {
-    margin-right: var(--space-l);
-  }
-}
-
 /* Basic link styling */
 nav.navbar a {
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--nav-list-color, var(--color-text));
   padding: 0.1rem;
   text-decoration: none;
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+}
+
+@media (min-width: 41em) {
+  nav.navbar ul {
+    justify-content: flex-end;
+    gap: var(--space-xs);
+  }
+
+  nav.navbar {
+    margin-right: var(--space-l);
+  }
+
+  nav.navbar a {
+    background: transparent;
+  }
 }
 
 /* Change the border-color on :hover and :focus */
