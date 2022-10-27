@@ -29,8 +29,7 @@
   background-color: var(--color-light);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding: var(--space-m-l);
-  padding-inline-start: 2em;
+  padding-inline-start: 1em;
   position: relative;
   color: var(--color-text);
   background-color: var(--color-bg);

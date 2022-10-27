@@ -66,7 +66,8 @@ module.exports = {
       'Desarrolladora Frontend en Madrid. Me gusta trabajar con Jamstack, Javascript vainilla y CSS moderno.  Es muy importante que las webs sean rápidas y accesibles.',
     back: 'Atrás',
     skipText: 'Saltar al contenido principal',
-    toc: 'Saltar el índice de contenidos'
+    toc: 'índice de contenidos',
+    skipToc: 'Saltar el índice de contenidos'
   },
   de: {
     localeCode: 'de_DE',
