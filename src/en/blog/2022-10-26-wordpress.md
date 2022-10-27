@@ -11,7 +11,7 @@ cta:
   lead: "Do you have a project in mind and don't know how to carry it out? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your ideas."
 ---
 
-Back in 20107, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation. I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Still, some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I still like using it.
+Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation. I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Still, some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I still like using it.
 
 {% include "partials/toc.njk" %}
 
