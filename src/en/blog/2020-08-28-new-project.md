@@ -1,22 +1,23 @@
 ---
-title: 'Ein neues Projekt: Von der Planung bis zur Fertigstellung'
-description: 'Jedes Projekt beginnt mit der Planung. Auf diese Weise kann ich ein konkreteres Gefühl für das Projekt bekommen. Ich studiere Websites aus der gleichen Branche und suche nach Inspiration.'
+title: 'A new project: from planning to publication'
+description: 'Every project starts with planning. This way I can get a more concrete feel for the project. I study websites from the same industry and look for inspiration.'
 key: 'newproject'
 date: 2020-08-28
 ---
 
-## Planung und Entwurf
+## Planning and design
 
-Jedes Projekt beginnt mit der Planung. Auf diese Weise kann ich ein konkreteres Gefühl für das Projekt bekommen. Ich studiere Websites aus der gleichen Branche und suche nach Inspiration. Ich mache mir Gedanken über Typografie und Farbgebung und erstelle einen Projektordner, in dem das Material des Kunden gespeichert wird.
+Every project starts with planning. This way I can get a more concrete feel for the project. I study websites from the same industry and look for inspiration. I start thinking about typography and color scheme and create a project folder where the client's material is stored.
 
-Der nächste Schritt ist die Erstellung eines Menüs, und ich skizziere das Design und die Elemente der Website. Meine Skizzen sind weder sehr detailliert, noch beschreiben sie jeden Teil der Website. Der Hauptzweck besteht darin, eine allgemeine Vorstellung von dem Projekt zu bekommen.
+The next step is to create a menu and I sketch out the design and elements of the website. My sketches are not very detailed, nor do they describe every part of the website. The main purpose is to have a general idea of the project.
 
-Mit den Programmen Photoshop und Figma setze ich meine Ideen und Skizzen in Entwürfe um. Manchmal löse ich jede Unterseite komplett, manchmal setze ich die Idee in meinem Kopf direkt in Code um.
+With Photoshop and Figma programs I convert my ideas and sketches into designs. Sometimes I solve each subpage completely, sometimes I convert the idea in my head directly into code.
 
-## Code und Freigabe
+## Code and release
 
-Wenn das Design mit meinem Kunden abgestimmt ist, verwende ich den Code-Editor "Visual Studio Code", um das Design in modernen und effizienten Code umzuwandeln, der HTML, CSS und Javascript verwendet. Wenn Sie ein lesbares CMS wünschen, erstelle ich das Design direkt als neues Wordpress-Theme. Ich arbeite auch mit der neuen Technik für statische Websites "Jamstack", die besonders für kleine Websites nützlich ist.
+When the design is agreed with my client, I use the code editor "Visual Studio Code" to convert the design into modern and efficient code, using HTML, CSS and Javascript. If you want a readable CMS, I build the design directly as a new Wordpress theme. I also work with the new technique for static websites "Jamstack", which is especially useful for small websites.
 
-In der Testphase prüfe ich, ob alles richtig funktioniert: Läuft die Website auf allen gängigen Browsern und Betriebssystemen, kommen die Kontaktformulare an, funktionieren das DSGVO-Modul und die Besucheranalyse richtig?
+In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the DSGVO module and visitor analysis work correctly?
 
-Nun ist alles auf dem Server geladen. Auf meinem lokalen Server läuft die Seite fehlerfrei - jetzt prüfe ich, ob das auch auf dem Live-Server der Fall ist. Schließlich veröffentliche ich die Website.
+Everything is now loaded on the server. The site is running without errors on my local server - now I check that this is also the case on the live server. Finally I publish the website.
+

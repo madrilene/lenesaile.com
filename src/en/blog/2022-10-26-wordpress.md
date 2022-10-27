@@ -45,9 +45,9 @@ Not always, but often, it is a mess. I saw a theme loading more than 100 differe
 
 Transforming WordPress Sites to Jamstack or using WordPress as a headless CMS is what I most concentrated on recently.
 
-When working natively with WordPress, I’m making sure it as fast as possible by using custom made vanilla JS only where necessary. Also, I’m using a build pipeline to only use optimized assets in the final theme structure.
+When working natively with WordPress, I’m making sure it is as fast as possible by using custom made vanilla JS only where necessary. Also, I’m using a build pipeline to only push optimized assets to production.
 
-==I try to make everything as easy and obvious as possible.== I leave clues and I instructions in the editable sections and I make introduction videos where I explain every important detail of the website.
+==I try to make everything as easy and obvious as possible.== I leave clues and instructions in the editable sections and I make introduction videos where I explain every important detail of the website.
 
 Also, I value structure and order. I want to be able to understand my own themes in the future, but I also want subsequent developers to get along with the code I wrote.
 
@@ -91,7 +91,7 @@ It certainly is something you have to get used to. It’s like writing code with
 
 As I said, I haven't quite gotten into it yet. But my impression after a few hours of playing around with the new system is that it rather limits me as a developer who is used to a great freedom of choice.
 
-I also think it is too complex and fiddly for the common client who just wants to publish a blog post. It most fits the capabilities of professional web designers who until now made complete websites only in site builders, without touching code.
+I also think it is too complex and fiddly for the common client who just wants to publish a blog post. I guess, it most fits the needs and interests of professional web designers who until now made complete websites only in site builders, without touching code.
 
 ### So what's the right technique to build a theme nowadays?
 
