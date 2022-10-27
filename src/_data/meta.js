@@ -54,7 +54,8 @@ module.exports = {
     siteDescription:
       'Frontend developer based in Madrid. I enjoy working with Jamstack, vanilla Javascript and modern CSS. I do my very best to improve in terms of accessibility and performance.',
     back: 'Back',
-    skipText: 'Jump to main content'
+    skipText: 'Jump to main content',
+    toc: 'Table of contents'
   },
 
   es: {
@@ -64,7 +65,8 @@ module.exports = {
     siteDescription:
       'Desarrolladora Frontend en Madrid. Me gusta trabajar con Jamstack, Javascript vainilla y CSS moderno.  Es muy importante que las webs sean rápidas y accesibles.',
     back: 'Atrás',
-    skipText: 'Saltar al contenido principal'
+    skipText: 'Saltar al contenido principal',
+    toc: 'Saltar el índice de contenidos'
   },
   de: {
     localeCode: 'de_DE',
@@ -73,7 +75,9 @@ module.exports = {
     siteDescription:
       'Frontend-Developer in Madrid. Ich arbeite gerne mit Jamstack, Vanilla Javascript und modernem CSS. Ich tue alles, um die Barrierefreiheit und Leistung zu optimieren.',
     back: 'Zurück',
-    skipText: 'Zum Hauptinhalt springen'
+    skipText: 'Zum Hauptinhalt springen',
+    toc: 'Inhaltsverzeichnis',
+    skipToc: 'Inhaltsverzeichnis überspringen'
   },
 
   env: process.env.ELEVENTY_ENV === 'production',

@@ -24,7 +24,8 @@ layout: base
 <div class="wrapper projects region flow" style="--region-space-top: var(--space-3xl)">
   <div class="visual relative">
     {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
-    "object-fit-cover", project.data.alt, "eager" %} {% endif %}
+    "object-fit-cover", project.data.alt, "lazy", "(min-width: 764px) 50vw, (min-width:
+    1750px) 30vw, 100vw" %} {% endif %}
 
     <div class="details">
       <ul>
