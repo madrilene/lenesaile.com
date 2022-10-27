@@ -21,9 +21,9 @@ cta:
 
 Ich habe schon immer gerne mit Computern experimentiert. Ca. 2004 habe ich dann versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, mit meinem Hobby meinen Lebensunterhalt zu verdienen.
 
-Nachdem ich mit statischen Websites an meine Grenzen stieß, begann ich mit Wordpress zu arbeiten und lernte PHP, um die Möglichkeiten zu erweitern.
+Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [Wordpress](https://www.lenesaile.com/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um die Möglichkeiten zu erweitern.
 
-2018 entdeckte ich Jamstack und änderte kurz darauf alle meine Arbeitsabläufe. Ich begann, Git standardmäßig für alle Projekte zu integrieren, testete neue Bundler, CSS- und Javscript-Frameworks und entdeckte die Welt der "Continuous Deployments" über GitHub und Netlify.
+2018 stieß ich auf den Begriff Jamstack und änderte kurz darauf alle meine Arbeitsabläufe. Ich begann, Git standardmäßig für alle Projekte zu integrieren, testete neue Bundler, CSS- und Javscript-Frameworks und entdeckte die Welt der "Continuous Deployments" über GitHub und Netlify.
 
 ==Ich liebe es, schnelle Websites mit minimalem Einsatz von Javascript sowie allen Möglichkeiten des modernen CSS zu erstellen.==
 

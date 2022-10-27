@@ -30,11 +30,11 @@ cta:
 
 Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass der Besucher sich sofort zurechtfindet und dass die Website ==zugänglich und nutzbar für alle Menschen== ist, unabhängig von einer möglichen Behinderung.
 
-Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf so konzipiert und entwickelt, sodass sie genau so funktionieren und aussehen wie wir uns das vorstellen.
+Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf so konzipiert und entwickelt, sodass sie genau so funktionieren und aussehen wie meine Kunden und ich uns das vorstellen.
 
-Dieser Ansatz hat verschiedene Vorteile:
+Das hat viele Vorteile:
 
 1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
 2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
 3. Die Websites meiner Kunden erreichen eine sehr gute Positionierung in den Suchmaschinen.
-4. Alle Vorstellungen können in Bezug auf Form, Struktur und Funktion erfüllt werden.
+4. Alle Vorstellungen können in Bezug auf Form, Struktur und Funktion erfüllt werden!

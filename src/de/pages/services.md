@@ -12,7 +12,7 @@ tools:
   items:
     - title: 'Jamstack'
       icon: 'jamstack.svg'
-      summary: 'Jamstack macht das Web schneller, sicherer und einfacher zu skalieren. Es gibt mir als Entwickler unbegrenzte Freiheit und ich kann mit den besten Tools für das Projekt arbeiten.'
+      summary: 'Jamstack macht das Web schneller, sicherer und einfacher zu skalieren. Es gibt mir als Entwicklerin unbegrenzte Freiheit und ich kann mit den besten Tools für das Projekt arbeiten.'
       link: ''
     - title: 'Wordpress'
       icon: 'wordpress.svg'
