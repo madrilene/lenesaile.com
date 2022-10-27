@@ -4,9 +4,9 @@ seo:
   title: Was ich mache
 permalink: /{{ locale }}/leistungen/index.html
 key: 'services'
-description: 'Ich konzentriere mich hauptsächlich auf Web-Entwicklung. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice.'
+description: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Und: Webseiten sollen Spaß machen!'
 layout: services
-lead: 'Ich konzentriere mich hauptsächlich auf Web-Entwicklung. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Zugänglichkeit, Einfachheit und langfristigen Support. Und: Webseiten sollen Spaß machen!'
+lead: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Und: Webseiten sollen Spaß machen!'
 
 tools:
   items:

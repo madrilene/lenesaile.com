@@ -21,7 +21,7 @@ cta:
 
 I have always enjoyed experimenting with computers. In 2004, I tried building my first websites with HTML and CSS. Four years later, I started earning a living with my hobby.
 
-After reaching my limits with static websites, I started working with Wordpress and learned PHP to broaden the possibilities.
+After reaching my limits with static websites, I started working with [Wordpress](/en/blog/some-random-personal-notes-on-using-wordpress-in-2022/) and learned PHP to broaden the possibilities.
 
 In 2018 I discovered the idea of Jamstack and soon after changed all my workflows. I started integrating Git by default for all projects, tested new bundlers, CSS and Javscript frameworks and discovered the world of Continuous deployments via GitHub and Netlify.
 

@@ -6,7 +6,7 @@ permalink: /{{ locale }}/ueber/index.html
 key: 'about'
 description: 'Ich arbeite als freie Webentwicklerin und Designerin in Madrid'
 layout: about
-lead: 'Ich bin eine Entwicklerin und Designerin. Seit 2008 erstelle ich Websites und Webapps in Vollzeit. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.'
+lead: 'Ich bin Webentwicklerin und Designerin. Seit 2008 erstelle ich Websites und Webapps in Vollzeit. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.'
 image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu arbeiten'
 breakout:
@@ -21,7 +21,7 @@ cta:
 
 Ich habe schon immer gerne mit Computern experimentiert. Ca. 2004 habe ich dann versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, mit meinem Hobby meinen Lebensunterhalt zu verdienen.
 
-Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [Wordpress](https://www.lenesaile.com/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um die Möglichkeiten zu erweitern.
+Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [Wordpress](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um die Möglichkeiten zu erweitern.
 
 2018 stieß ich auf den Begriff Jamstack und änderte kurz darauf alle meine Arbeitsabläufe. Ich begann, Git standardmäßig für alle Projekte zu integrieren, testete neue Bundler, CSS- und Javscript-Frameworks und entdeckte die Welt der "Continuous Deployments" über GitHub und Netlify.
 

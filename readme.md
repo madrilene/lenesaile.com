@@ -45,7 +45,7 @@ Oliver is a type expert. He writes the Pimp my Type Newsletter where I dscovered
 
 **Pablo Stanley**
 
-Pablos is the creator of the avatars of this website. His hand-drawn illustration library Open Peeps is just great.
+Pablo is the creator of the avatars of this website. His hand-drawn illustration library Open Peeps is just great.
 
 - https://www.openpeeps.com/
 
@@ -64,7 +64,7 @@ Stephanie provides a lot of resources for Eleventy and modern CSS.
 
 **Aleksandr Hovhannisyan**
 
-I love order and structure. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his online resume and blog. Also, he writes great tutorials in his blog.
+I love order and structure. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his personal site. Also, he writes great tutorials in his blog.
 
 - https://github.com/AleksandrHovhannisyan
 
