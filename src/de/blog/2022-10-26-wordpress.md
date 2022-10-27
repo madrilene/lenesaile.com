@@ -11,7 +11,7 @@ cta:
   lead: 'Hast du eine Idee für ein Projekt und weißt nicht, wie du es umsetzen kannst? Lass uns darüber reden! Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähle mir mehr davon.'
 ---
 
-2007 war ich auf der Suche nach einem CMS, das für mich Sinn machte. Nachdem ich [Joomla](https://www.joomla.org/) und [TYPO](https://typo3.org/) ausprobiert hatte (und es hasste), entdeckte ich [WordPress](https://wordpress.org/). Das war eine Offenbarung. Ich denke immer noch, dass es eine großartige Lösung für komplexe benutzerdefinierte Websites ist. Es ist extrem leistungsfähig und anpassbar, und ich fühle mich als Entwickler nicht zu sehr eingeschränkt, um das zu schaffen, was mir vorschwebt. Dennoch gibt es einige, die auf das CMS herabschauen und sagen, es sei unsicher und aufgebläht. Ich möchte kurz meine Gedanken zum aktuellen Stand von WordPress darlegen und erklären, warum ich es immer noch gerne benutze.
+2007 war ich auf der Suche nach einem CMS, das ich verstehen konnte, um mit ihm eigene Webseiten zu erstellen. Nachdem ich [Joomla](https://www.joomla.org/) und [TYPO](https://typo3.org/) ausprobiert hatte (und es hasste), entdeckte ich [WordPress](https://wordpress.org/). Es war eine Offenbarung. Ich denke immer noch, dass es eine großartige Lösung für komplexe benutzerdefinierte Websites ist. Es ist extrem leistungsfähig und anpassbar, und ich fühle mich als Entwickler nicht zu sehr eingeschränkt, um das zu schaffen, was mir vorschwebt. Dennoch gibt es einige, die auf das CMS herabschauen und sagen, es sei unsicher und aufgebläht. Ich möchte kurz meine Gedanken zum aktuellen Stand von WordPress darlegen und erklären, warum ich es immer noch gerne benutze.
 
 {% include "partials/toc.njk" %}
 

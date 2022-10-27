@@ -11,7 +11,7 @@ cta:
   lead: "Do you have a project in mind and don't know how to carry it out? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your ideas."
 ---
 
-Back in 2007 I was looking for a CMS that made sense to me. After trying [Joomla](https://www.joomla.org/) and [TYPO](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation. I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Still, some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I still like using it.
+Back in 2017, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation. I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Still, some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I still like using it.
 
 {% include "partials/toc.njk" %}
 
@@ -31,7 +31,7 @@ Also, a lot of clients have worked with the WordPress backend before and they ar
 
 ### You have to do it their way
 
-With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With Wordpress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are given to me, and I also have to opt out of scripts like the <code>wp-block-navigation-view</code> if I want to implement my own behavior.
+With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With Wordpress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are given to me, and I also have to opt out of scripts like the <code>wp-block-navigation-view</code> (responsible for the behavior of menus) if I want to implement my own behavior.
 
 ### Site builders, no thanks
 
