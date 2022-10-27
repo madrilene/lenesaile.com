@@ -4,7 +4,7 @@ seo:
   title: Home
 permalink: /{{ locale }}/index.html
 key: 'home'
-description:
+description: I'm a developer and designer based in Madrid who has been building for the web professionally since 2008.
 layout: home
 hero:
   title: I make accessible, highly optimized custom websites.
