@@ -6,7 +6,7 @@ date: 2021-09-20
 cta:
   title: 'Fast websites are my specialty'
   desktop: 'A truly fast website is not an automated process. I achieve efficient websites with strategy, experience and detailed work.'
-  lead: 'Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com)! I'm always up for a chat.'
+  lead: "Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com)! I'm always up for a chat."
 ---
 
 Web performance is about everyone being able to access a website quickly, no matter what the internet conditions are or what device is being used.
