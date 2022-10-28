@@ -19,7 +19,7 @@ En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https:
 
 ### WordPress es gratuito, seguro y rápido
 
-WordPress es de uso gratuito y, si no la lías, es seguro y rápido. El otro día leí que ==El núcleo de WordPress es responsable de sólo el 0,5% de las vulnerabilidades, el otro 99,5% son hechas por plugins y temas==.
+WordPress es de uso gratuito y, si no la lías, es seguro y rápido. El otro día leí que ==El núcleo de WordPress es responsable de sólo el 0,6% de las vulnerabilidades, el otro 99,4% son hechas por plugins y temas==. [^1]
 
 WordPress es fácil de optimizar para SEO, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
 
@@ -28,6 +28,8 @@ La comunidad es enorme, y todavía no me he encontrado con un problema que no es
 Además, muchos clientes han trabajado antes con el backend de WordPress y se sienten cómodos con él.
 
 ## ¿Qué es lo que no me gusta?
+
+Las siguientes reflexiones se refieren al trabajo con Wordpress en el backend y el frontend, es decir, no a una solución como CMS sin cabeza.
 
 ### Tienes que hacerlo a su manera
 
@@ -112,3 +114,5 @@ Para mí, WordPress es una cosa por encima de todo: Un CMS gratuito y muy flexib
 Desarrollo un sitio web especialmente para las necesidades del cliente. Debe ser rápido, accesible y seguro, e idealmente durar unos cuantos años si se mantiene bien.
 
 Esta página web a medida puede o no utilizar WordPress como CMS. Eso depende del proyecto y es algo que mis clientes y yo decidimos juntos.
+
+[^1]: https://patchstack.com/whitepaper/the-state-of-wordpress-security-in-2021/

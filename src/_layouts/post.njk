@@ -8,7 +8,10 @@ layout: base
 
     {% set definedDate = date %} {% include "partials/date.njk" %} {% if image %}
 
-    <div class="decoration">{% image image, "", "object-fit-cover", alt, "eager" %}</div>
+    <div class="decoration">
+      {% image image, "", "object-fit-cover", alt, "eager", "(min-width: 1690px) 50vw,
+      100vw" %}
+    </div>
     {% endif %}
 
     {{ content | safe }}

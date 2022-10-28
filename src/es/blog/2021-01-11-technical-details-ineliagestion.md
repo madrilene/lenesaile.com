@@ -24,7 +24,7 @@ Es nuestra primera web relacionada con este sector y hemos aprendido mucho en to
 
 El objetivo era que desde Inelia vieran reflejada su imagen y su filosofía de trabajo en su nueva página. Son una gestoría con un trato muy cercano y una política de comunicación muy directa y clara con el cliente.
 
-Ha sido genial contar con las fotografías de Gabriel Monsalve que captó toda la esencia de la asesoría.
+Ha sido genial contar con las fotografías de Gabriel Monsalve que captó toda la esencia de la asesoría. Las fotos originales de las personas y las instalaciones reales tienen un valor incalculable y contribuyen en gran medida a infundir confianza a los visitantes.
 
 Queremos agradecer a Carlos Recio, director de Inelia Gestión por confiar en nosotros para desarrollar su página web.
 
@@ -48,9 +48,9 @@ En resumen el cliente tiene las siguientes ventajas:
 
 ## Pero, ¿cómo resolver el problema del mantenimiento desproporcionadamente complicado de los sitios web estáticos?
 
-Nos ayudan los llamados generadores de sitios estáticos, que crean el sitio web estático como parte de un llamado proceso de construcción. Utilizan fuentes de datos y plantillas para generar los archivos HTML individuales.
+Nos ayudan los llamados generadores de sitios estáticos, que crean el sitio web estático como parte de un proceso de construcción. Utilizan fuentes de datos y plantillas para generar los archivos HTML individuales.
 
-ineliagestion.com utiliza el generador de sitios estáticos Eleventy, los archivos estáticos están en un repositorio privado en GitHub (un portal creado para alojar código de aplicaciones) y Netlify (un servicio de hosting para sitios estáticos) se encarga del alojamiento en sus CDN. Los cambios se envían directamente a GitHub y Netlify a través de mi editor de código.
+ineliagestion.com utiliza [Eleventy](https://www.11ty.dev/), los archivos estáticos están en un repositorio privado en [GitHub](https://github.com/) (un portal creado para alojar código de aplicaciones) y [Netlify](https://www.netlify.com/) (un servicio de hosting para sitios estáticos) se encarga del alojamiento en sus CDN. Los cambios se envían directamente a GitHub y Netlify a través de mi editor de código.
 
 Para el diseño de este sitio web, utilicé Figma, una herramienta de diseño y prototipado para proyectos digitales. Implementé el diseño acordado con el cliente usando el framework CSS Tailwind.
 

@@ -5,6 +5,10 @@ key: 'contentsclarity'
 date: 2021-01-27
 image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'
 alt: 'captura de pantalla de tipografía en una web'
+cta:
+  title: 'Trabajo con contenidos'
+  desktop: 'En cuestión de segundos, la persona que visita la web ha de saber quién somos, qué hacemos y por qué debe confiar en nosotros, para a continuación ponerse en contacto o realizar la compra.'
+  lead: '[Cuentame mIch arebás sobre tu proyecto](mailto:hola@lenesaile.com), ¡y vamos a averiguar qué tono debemos dar a su sitio web!'
 redirectFrom: ['/blog/2021/importancia-claridad-de-contenidos-pagina-web/']
 ---
 
@@ -21,6 +25,6 @@ Y luego están las páginas de las administraciones públicas, esas son las peor
 
 El tiempo es una de las cosas más importantes para las personas, y el sentirse bien tratado y respetado también es fundamental. De ahí la necesidad de tener muy en cuenta a la hora de realizar una web, la calidad de los textos y la disposición de los contenidos.
 
-Es sencillo, si no te entienden no van a confiar, no te van a contratar, no te van a comprar, y no van a volver por tu web.
+Es sencillo, ==si no te entienden no van a confiar, no te van a contratar, no te van a comprar, y no van a volver por tu web==.
 
-Todos estos aspectos los tenemos muy en cuenta en las páginas que realizamos. En cuestión de segundos, la persona que visita la web ha de saber quién somos, qué hacemos y por qué debe confiar en nosotros, para a continuación ponerse en contacto o realizar la compra.
+Todos estos aspectos los tenemos muy en cuenta en las páginas que realizamos.

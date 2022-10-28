@@ -29,11 +29,17 @@
   background-color: var(--color-light);
   border: var(--border);
   border-radius: var(--border-radius);
-  padding-inline-start: 1em;
+  padding-inline: var(--space-s-m);
   position: relative;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
+
+.blog aside {
+  padding-inline-start: var(--space-l-xl);
+  padding-block: var(--space-s-m);
+}
+
 .blog aside:before,
 .blog .table-of-contents:before {
   --size: 2.25em;
@@ -51,7 +57,7 @@
 }
 
 .blog aside:before {
-  background-image: url('../images/svg/cursor.svg');
+  background-image: url('../images/svg/info.svg');
 }
 
 .blog .table-of-contents:before {
@@ -60,4 +66,24 @@
 
 .blog .toc-list {
   line-height: 1.5em;
+}
+
+.blog hr.footnotes-sep {
+  border-top: 1px var(--color-text);
+  width: 100%;
+}
+
+.blog .footnotes {
+  font-size: var(--size-step-0);
+}
+
+.blog .footnote-backref,
+.blog .footnote-ref a {
+  text-decoration: none;
+}
+
+.blog .footnote-ref {
+  opacity: 0.9;
+  font-family: var(--font-mono);
+  color: var(--color-primary);
 }

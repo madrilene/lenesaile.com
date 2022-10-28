@@ -11,12 +11,12 @@ Jedes Projekt beginnt mit der Planung. Auf diese Weise kann ich ein konkreteres 
 
 Der nächste Schritt ist die Erstellung eines Menüs, und ich skizziere das Design und die Elemente der Website. Meine Skizzen sind weder sehr detailliert, noch beschreiben sie jeden Teil der Website. Der Hauptzweck besteht darin, eine allgemeine Vorstellung von dem Projekt zu bekommen.
 
-Mit den Programmen Photoshop und Figma setze ich meine Ideen und Skizzen in Entwürfe um. Manchmal löse ich jede Unterseite komplett, manchmal setze ich die Idee in meinem Kopf direkt in Code um.
+Mit [Figma](https://www.figma.com/) setze ich meine Ideen und Skizzen in Entwürfe um. Manchmal gestalte ich so jede relevante Unterseite im Voraus, manchmal setze ich die Idee direkt in Code um.
 
 ## Code und Freigabe
 
-Wenn das Design mit meinem Kunden abgestimmt ist, verwende ich den Code-Editor "Visual Studio Code", um das Design in modernen und effizienten Code umzuwandeln, der HTML, CSS und Javascript verwendet. Wenn Sie ein lesbares CMS wünschen, erstelle ich das Design direkt als neues Wordpress-Theme. Ich arbeite auch mit der neuen Technik für statische Websites "Jamstack", die besonders für kleine Websites nützlich ist.
+Wenn das Design mit meinem Kunden abgestimmt ist, verwende ich "[Visual Studio Code](https://code.visualstudio.com/)", um das Design in modernen und effizienten Code umzuwandeln, der HTML, CSS und Javascript verwendet.
 
-In der Testphase prüfe ich, ob alles richtig funktioniert: Läuft die Website auf allen gängigen Browsern und Betriebssystemen, kommen die Kontaktformulare an, funktionieren das DSGVO-Modul und die Besucheranalyse richtig?
+In der Testphase prüfe ich, ob alles richtig funktioniert: Läuft die Website auf allen gängigen Browsern und Betriebssystemen, kommen die Kontaktformulare an, funktioniert das DSGVO-Modal korrekt (im besten Fall ist natürlich keines nötig!), ist die Seite vollständig barrierefrei?
 
-Nun ist alles auf dem Server geladen. Auf meinem lokalen Server läuft die Seite fehlerfrei - jetzt prüfe ich, ob das auch auf dem Live-Server der Fall ist. Schließlich veröffentliche ich die Website.
+Auf meinem lokalen Server läuft die Seite fehlerfrei - jetzt prüfe ich, ob das auch auf dem Live-Server der Fall ist. Schließlich veröffentliche ich die Website.

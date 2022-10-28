@@ -19,7 +19,7 @@ cta:
 
 ## WordPress ist kostenlos, sicher und schnell
 
-WordPress ist kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,5% der Sicherheitslücken verantwortlich ist, die anderen 99,5% werden von Plugins und Themes verursacht==.
+WordPress ist kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
 
 WordPress ist leicht für SEO zu optimieren, hat eCommerce-Möglichkeiten und dank des Plugins "Advanced Custom Fields" flexible Inhaltsfelder.
 
@@ -28,6 +28,8 @@ Die Community ist riesig, und mir ist noch kein Problem begegnet, das nicht entw
 Außerdem haben viele Kunden bereits mit dem WordPress-Backend gearbeitet und sind damit vertraut.
 
 ## Was mir nicht an WordPress gefällt
+
+Die folgenden Überlegungen beziehen sich auf das Arbeiten mit Wordpress im Backend _und_ Frontend, also nicht auf eine Lösung als headless CMS.
 
 ### Man muss sich anpassen
 
@@ -112,3 +114,5 @@ Für mich ist WordPress vor allem eines: Ein kostenloses, sehr flexibles CMS, da
 Ich entwickle eine Website speziell für die Bedürfnisse des Kunden. Sie soll schnell, barrierefrei und sicher sein und am besten bei guter Pflege ein paar Jahre halten.
 
 Diese maßgeschneiderte Website kann WordPress als CMS verwenden, muss es aber nicht. Das hängt vom Projekt ab und ist etwas, was meine Kunden und ich gemeinsam entscheiden.
+
+[^1]: https://patchstack.com/whitepaper/the-state-of-wordpress-security-in-2021/

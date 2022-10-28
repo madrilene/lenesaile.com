@@ -17,7 +17,7 @@ I have just added to the [projects section](/en/projects/) one of the pages I ma
 
 The objective was to reflect Inelia's image and work philosophy in their new website. They are an agency with a very close relationship and a very direct and clear communication policy with the client.
 
-It has been great to have the photographs of Gabriel Monsalve who captured the essence of the consultancy.
+It was great to have Gabriel Monsalve's photos available! Original photos of the real people and facilities are invaluable and do an incredible amount to instill confidence in visitors.
 
 ## Developed with a relatively new method: Jamstack.
 
@@ -25,7 +25,7 @@ Jamstack is geared towards the early days of web development, when all web pages
 
 So today we just want to take advantage of the benefits of this classic technique.
 
-In summary the customer has the following advantages:
+In summary the customer has the following benefits:
 
 1. **Very fast loading times**, because everything is loaded via a CDN. Excurso: A CDN (Content Delivery Network) is a network of servers that store caches of static content of a website in various locations around the world. When a user visits the website, the content is delivered to them from the nearest server.
 
@@ -39,9 +39,9 @@ In summary the customer has the following advantages:
 
 ## But how to solve the problem of disproportionately complicated maintenance of static websites?
 
-We are helped by so-called static site generators, which create the static Web site as part of a so-called build process. They use data sources and templates to generate the individual HTML files.
+We are helped by static site generators, which create the static Web site as part of a build process. They use data sources and templates to generate the individual HTML files.
 
-ineliagestion.com uses the Eleventy static site generator, the static files are in a private repository on GitHub (a portal created for hosting application code) and Netlify (a hosting service for static sites) takes care of the hosting on their CDNs. Changes are submitted directly to GitHub and Netlify through my code editor.
+ineliagestion.com uses the static site generator [Eleventy](https://www.11ty.dev/), the static files are in a private repository on [GitHub](https://github.com/) (a portal created for hosting application code) and Netlify (a hosting service for static sites) takes care of the hosting on their CDNs. Changes are submitted directly to GitHub and [Netlify](https://www.netlify.com/) through my code editor.
 
 For the design of this website, I used Figma, a design and prototyping tool for digital projects. I implemented the design agreed with the client using the CSS framework Tailwind.
 

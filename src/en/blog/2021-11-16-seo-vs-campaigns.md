@@ -7,7 +7,9 @@ image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'
 alt: 'A photo of my mechanical keyboard and a string of lights'
 ---
 
-A few days ago a client friend told us about his doubts regarding the choice between SEO and an advertising campaign to improve customer acquisition.
+{% include "partials/toc.njk" %}
+
+A few days ago a client friend told me about his doubts regarding the choice between SEO and an advertising campaign to improve customer acquisition.
 
 There are many factors to take into account, such as the type of product you want to sell or the service you are offering. But let's start with the basics.
 
@@ -71,8 +73,6 @@ To do well in search, you'll need specialized content.
 
 We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it easy for you to publish your articles at any time by yourself.
 
-We will be happy to make regular suggestions for new articles.
-
 ## Combine both worlds: SEO and pay-per-click in tandem
 
 Many companies use both SEO _and_ PPC at the same time because they really complement each other.
@@ -82,5 +82,3 @@ Did you just publish a post? Do you have a compelling, short product or event co
 We don't usually recommend campaigns on Google itself, as we put all our effort into natural positioning factors.
 
 The important thing is to study each project in detail because there are no fixed rules as each client is different.
-
-In the case of our friend, we ended up recommending just that: betting on SEO and complementing it with specific ads on the networks. We are going to monitor the results and we hope to improve his success considerably.

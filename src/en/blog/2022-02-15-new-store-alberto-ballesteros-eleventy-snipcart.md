@@ -6,16 +6,16 @@ date: 2022-02-15
 image: './src/assets/images/blog/shop.jpg'
 alt: "Screenshot of albertoballesteros.com's shop."
 cta:
-  title: 'Need a shop?'
-  desktop: ''
-  lead: "Do you have a project in mind and don't know how to carry it out? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your ideas."
+  title: 'Need a fast shop?'
+  desktop: 'Visitors to a shop are about to decide if they want a product and if they are willing to pay money for it. Loading times and concerns about store security can cause them to abandon that plan.'
+  lead: "I'll make your store fast and secure with the Jamstack method! Send me an email to [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project."
 ---
 
-Visitors to a store are about to decide if they want a product and if they are willing to pay money for it. Loading times and concerns about store security can cause them to abandon that plan.
+{% aside %}**Disclaimer:** We have returned to the Stripe solution a few months after publishing this text. Not because Snipcart is not good, on the contrary. It's a great solution, especially for stores with reliable monthly sales. But if you only sell a product once in a while, [it's not really worth it](https://snipcart.com/faq#Pricing): If you sell more than $500 a month, Snipcart keeps 2% commission. If you sell less than $500 per month, Snipcart charges a flat fee of $10 per month. This also applies if you don't sell anything at all. I will also describe the Stripe integration soon on the blog.{% endaside %}
 
-Put yourself in your customers' shoes: Would you give personal data and payment information to a dubious-looking website? To a website that doesn't exude trust all around? Probably not.
+A fast and secure website - and a look and feel that reflects that! - is crucial for a shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a static website based on the Jamstack method. If everything is done right, Jamstack pages are inherently very secure, reliable, flexible and, above all, fast.
 
-That's why a fast and secure website - and a look and feel that reflects that! - is crucial for a shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a static website based on the Jamstack method. If everything is done right, Jamstack pages are inherently very secure, reliable, flexible and, above all, fast.
+{% include "partials/toc.njk" %}
 
 ## How can a store be integrated into a Jamstack website?
 
@@ -177,30 +177,36 @@ Snipcart also looks for our language attribute in the HTML to automatically adju
 <html lang="es"></html>
 ```
 
-For the highest possible security of our websites, we set up HTTP response headers. The Content Security Policy (CSP) header is an additional layer of security that helps detect and mitigate certain types of attacks such as cross-site scripting (XSS) and data injection attacks. We do this by specifying exactly which resources the browser can load.
+For the highest possible security of our websites, we set up <code>HTTP response header</code>. The Content Security Policy (CSP) header is an additional layer of security that helps detect and mitigate certain types of attacks such as cross-site scripting (XSS) and data injection attacks. We do this by specifying exactly which resources the browser can load.
 
 For Snipcart to work, we have to enable script retrieval through Snipcart in the Content Security Policy header.
 
-As we have achieved our first sale, it lists the item automatically within the products section. The buyer is listed in the customer section and in the order section the transaction appears with the customer details.
+## Successful sale!
+
+When we have achieve our first sale, the item is listed automatically within the products section. The buyer details are stored in the customer section and in the order section the transaction appears with the customer details.
 
 {% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
 
 ## Conclusion and recommendations: How to choose the best solution for an online store?
 
-In case of albertoballesteros.com, I directly handle the creation of the products in the <code>json</code> file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that I can use directly.
+In case of albertoballesteros.com, I directly handle the creation of the products in the <code>json</code> file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that Eleventy can process.
 
 Each customer has individual needs. Shopify is the first choice for many because of its flexibility, ease of use and good value for money. Some large companies also use Shopify.
 
-For jamstack websites where the store is more of an add-on, Snipcart is a perfect solution with its combination of easy setup and deep customization.
+For Jamstack websites where the store is more of an add-on, Snipcart and Stripe are great solutions with their combination of easy setup and deep customization.
 
-For a Wordpress site, the CMS's own Woocommerce plugin is a classic. It is also possible to combine Wordpress with other store solutions.
+For a Wordpress site, the CMS's own Woocommerce plugin is a classic. It is also possible to combine Wordpress with the other store solutions.
 
-**When making a decision, the following questions need to be answered:**
+## What is the best solution for an online store?
+
+When making a decision, the following questions need to be answered:
 
 - How much do you want to pay for a shop solution? Development costs and running costs (such as Shopify's monthly contribution) should be included.
 - What are your technical skills and those of your team: how much do you want and can you set up yourself?
 - What do you envision for the functionality and usability of the store?
 - How big is or will your store be? You have to consider that for the scalability and adaptability of the platform.
+
+Put yourself in your customers' shoes: Would you give personal data and payment information to a dubious-looking website? To a website that doesn't exude trust all around?
 
 In the end, the work and money invested in a fast, attractive and secure store website is always worth it.
 It will be reflected in sales, and the costs incurred at the beginning will soon be recovered.

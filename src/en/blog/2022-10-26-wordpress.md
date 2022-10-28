@@ -19,7 +19,7 @@ Back in 2007, I was looking for a CMS that I could understand so I could use it 
 
 ### WordPress is free, secure and fast
 
-WordPress is free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.5% of vulnerabilities, the other 99.5% are custom made by plugins and themes==.
+WordPress is free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
 
 WordPress is easy to optimize for SEO, has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
 
@@ -28,6 +28,8 @@ The community is huge, and I have yet to encounter a problem that wasn't either 
 Also, a lot of clients have worked with the WordPress backend before and they are comfortable with it.
 
 ## What’s there to dislike?
+
+The following thoughts refer to working with Wordpress in the backend _and_ frontend, not to a solution as headless CMS.
 
 ### You have to do it their way
 
@@ -112,3 +114,5 @@ For me, WordPress is one thing above all: A free, very flexible CMS that many of
 I develop a website especially for the needs of the customer. It should be fast, accessible and secure, and ideally last a few years if well maintained.
 
 This custom made website might or might not use WordPress as a CMS. That depends on the project and is something my clients and I decide together.
+
+[^1]: https://patchstack.com/whitepaper/the-state-of-wordpress-security-in-2021/

@@ -11,13 +11,12 @@ Every project starts with planning. This way I can get a more concrete feel for 
 
 The next step is to create a menu and I sketch out the design and elements of the website. My sketches are not very detailed, nor do they describe every part of the website. The main purpose is to have a general idea of the project.
 
-With Photoshop and Figma programs I convert my ideas and sketches into designs. Sometimes I solve each subpage completely, sometimes I convert the idea in my head directly into code.
+With Photoshop and [Figma](https://www.figma.com/) I convert my ideas and sketches into designs. Sometimes I design each relevant subpage this way in advance, sometimes I convert the idea directly into code.
 
 ## Code and release
 
-When the design is agreed with my client, I use the code editor "Visual Studio Code" to convert the design into modern and efficient code, using HTML, CSS and Javascript. If you want a readable CMS, I build the design directly as a new Wordpress theme. I also work with the new technique for static websites "Jamstack", which is especially useful for small websites.
+When the design is agreed with my client, I switch to "[Visual Studio Code](https://code.visualstudio.com/)" to convert the design into modern and efficient code, using HTML, CSS and Javascript.
 
-In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the DSGVO module and visitor analysis work correctly?
+In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the GDPR modal work correctly (in the best case, of course, none is necessary!), is the site fully accessible?
 
-Everything is now loaded on the server. The site is running without errors on my local server - now I check that this is also the case on the live server. Finally I publish the website.
-
+The site is running without errors on my local server - now I check that this is also the case on the production server. Finally I push the website live.

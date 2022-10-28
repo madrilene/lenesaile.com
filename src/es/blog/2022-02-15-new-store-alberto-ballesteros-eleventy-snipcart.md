@@ -1,22 +1,22 @@
 ---
-title: 'Nueva tienda para albertoballesteros.com: Eleventy y Snipcart'
+title: 'Nuevo shop para albertoballesteros.com: Eleventy y Snipcart'
 description: 'Un sitio web rápido y seguro - ¡y con una apariencia que lo refleja! - es crucial para un shop. albertoballesteros.com es un sitio web estático basado en el método de Jamstack.'
 key: 'storealberto'
 date: 2022-02-15
 image: './src/assets/images/blog/shop.jpg'
 alt: 'Pantallazo del shop de albertoballesteros.com'
 cta:
-  title: '¿Necesitas una tienda?'
-  desktop: 'El trabajo y el dinero invertidos en un sitio web de tienda rápido, atractivo y seguro siempre merecen la pena. Se reflejará en las ventas, y los costes incurridos al principio se recuperarán pronto.'
-  lead: '¿Tienes un proyecto en mente y no sabes cómo llevarlo a cabo? ¡Hablemos de ello! Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tus ideas.'
+  title: '¿Necesitas un shop rapido?'
+  desktop: 'Los visitantes de una tienda online están a punto de decidir si quieren un producto y si están dispuestos a pagar dinero por él. Los tiempos de carga y la preocupación por la seguridad de la tienda pueden hacer que abandonen ese plan.'
+  lead: '¡Haré que tu tienda sea rápida y segura con el método Jamstack! Envíame un correo electrónico a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto.'
 redirectFrom: ['/blog/2022/nueva-tienda-alberto-ballesteros-eleventy-snipcart/']
 ---
 
-L@s visitantes de una tienda están a punto de decidir si quieren un producto y si están dispuestos a pagar dinero por él. Los tiempos de carga y la preocupación por la seguridad de la tienda pueden hacer que abandonen ese plan.
+{% aside %}**Nota:** Hemos vuelto a la solución de Stripe unos meses después de publicar este texto. No porque Snipcart no sea bueno, al contrario. Es una gran solución, especialmente para las tiendas con ventas mensuales fiables. Pero si sólo vendes un producto de vez en cuando, [no merece la pena](https://snipcart.com/faq#Pricing): Si vendes más de 500 dólares al mes, Snipcart cuesta un 2% de comisión. Si vendes menos de 500 dólares al mes, Snipcart cobra una tarifa fija de 10 dólares al mes. Esto también se aplica si no vendes nada durante un mes. También describiré la solución con Stripe pronto en el blog.{% endaside %}
 
-Ponte en el lugar de tus clientes: ¿Darías datos personales e información de pago a una página web de aspecto dudoso? ¿A un sitio web que no desprende confianza por todas partes? Probablemente no.
+Una web rápida y segura - ¡y con una apariencia que lo refleja! - es crucial para un shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) es una página web estática basado en el método de Jamstack. Si se hace todo bien, las páginas de Jamstack son intrínsecamente muy seguras, fiables, flexibles y, sobre todo, rápidas.
 
-Por eso, una web rápida y segura - ¡y con una apariencia que lo refleja! - es crucial para un shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) es una página web estática basado en el método de Jamstack. Si se hace todo bien, las páginas de Jamstack son intrínsecamente muy seguras, fiables, flexibles y, sobre todo, rápidas.
+{% include "partials/toc.njk" %}
 
 ## ¿Cómo se puede integrar una tienda en una página web de Jamstack?
 
@@ -177,29 +177,37 @@ Snipcart también busca nuestro atributo de idioma en el HTML para ajustar autom
 <html lang="es"></html>
 ```
 
-Para la mayor seguridad posible de nuestras webs, establecemos cabeceras de respuesta HTTP. La cabecera de la Política de Seguridad de Contenidos (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques como el cross-site scripting (XSS) y los ataques de inyección de datos. Lo hacemos especificando exactamente qué recursos puede cargar el navegador.
+### Para más seguridad: HTTP response header
+
+Para la mayor seguridad posible de nuestras webs, establecemos <code>HTTP response header</code> (cabeceras de respuesta HTTP). La cabecera de la Política de Seguridad de Contenidos (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques como el cross-site scripting (XSS) y los ataques de inyección de datos. Lo hacemos especificando exactamente qué recursos puede cargar el navegador.
 
 Para que Snipcart funcione, tenemos que habilitar la recuperación de scripts a través de Snipcart en la cabecera de la Política de Seguridad de Contenidos.
+
+## ¡Venta lograda!
 
 Según hemos conseguido nuestra primera venta, consta el artículo automáticamente dentro de la sección de productos. El comprador está listado en la sección de clientes y en la sección de pedidos aparece la transacción con los detalles del cliente.
 
 {% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "¡Hemos vendido el primer ejemplar del libro por medio de la página web! Ahora aparece el producto en el  panel de administración de Snipcart." %}
 
-## Conclusion and recommendations: How to choose the best solution for an online store?
+## Conclusión y recomendaciones
 
-## Conclusión y recomendaciones: ¿Cómo elegir la mejor solución para una tienda online?
-
-En este caso, manejo directamente la creación de los productos en el archivo <code>json</code>. Sin embargo, para clientes, esto sería bastante engorroso. En su lugar, pueden introducir los productos y sus propiedades en una hoja de Google (Excel) y luego convierto este formato en un archivo <code>json</code> que puedo utilizar directamente.
+En caso de albertoballesteros.com, manejo directamente la creación de los productos en el archivo <code>json</code>. Sin embargo, para clientes, esto sería bastante engorroso. En su lugar, pueden introducir los productos y sus propiedades en una hoja de Google (Excel) y luego convierto este formato en un archivo <code>json</code> que Eleventy puede procesar.
 
 Cada cliente tiene necesidades individuales. Shopify es la primera opción para muchos por su flexibilidad, facilidad de uso y buena relación calidad-precio. Algunas grandes empresas también utilizan Shopify.
 
-Para las páginas web de jamstack en las que la tienda es más bien un accesorio, Snipcart es una solución perfecta con su combinación de fácil configuración y profunda personalización.
+Para los páginas web de Jamstack en los que la tienda es más bien un complemento, Snipcart y Stripe son grandes soluciones con su combinación de fácil configuración y profunda personalización.
 
-Para una página de Wordpress, el propio plugin Woocommerce del CMS es un clásico. También es posible combinar Wordpress con otros soluciones de tiendas.
+Para una web de Wordpress, el propio plugin Woocommerce del CMS es un clásico. También es posible combinar Wordpress con otros soluciones de tiendas.
 
-**En el momento de hacer una decisión hay que responder a las siguientes preguntas:**
+## ¿Cuál es la mejor solución para una tienda online?
+
+En el momento de hacer una decisión hay que responder a las siguientes preguntas:
 
 - ¿Cuánto quieres pagar por una solución de shop? Deben incluirse los costes de desarrollo y los costes de funcionamiento (como la contribución mensual de Shopify.
 - ¿Cuáles son tus conocimientos técnicos y los de tu equipo: ¿cuánto quieres y puedes montar tú mismo?
 - ¿Qué te imaginas para la funcionalidad y la facilidad de uso de la tienda?
 - ¿Qué tamaño tiene o tendrá tu tienda? Hay que considerar eso para la escalabilidad y adaptabilidad de la plataforma.
+
+Ponte en el lugar de tus clientes: ¿Darías datos personales e información de pago a una página web de aspecto dudoso? ¿A un sitio web que no desprende confianza por todas partes?
+
+El trabajo y el dinero invertidos en un sitio web de tienda rápido, atractivo y seguro siempre merecen la pena. Se reflejará en las ventas, y los costes incurridos al principio se recuperarán pronto.

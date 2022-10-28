@@ -7,10 +7,6 @@
       "value": "hsl(48, 100%, 98%)"
     },
     {
-      "name": "light code",
-      "value": "hsl(0, 0%, 25%)"
-    },
-    {
       "name": "dark",
       "value": "hsl(0, 0%, 20%)"
     },

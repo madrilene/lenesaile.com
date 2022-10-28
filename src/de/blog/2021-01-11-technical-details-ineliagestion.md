@@ -17,15 +17,15 @@ Ich habe soeben eine der Seiten, die ich im letzten Herbst erstellt habe, in den
 
 Ziel war es, das Image und die Arbeitsphilosophie von Inelia in ihrer neuen Website widerzuspiegeln. Es handelt sich um eine Agentur mit einer sehr engen Beziehung und einer sehr direkten und klaren Kommunikationspolitik mit dem Kunden.
 
-Es war großartig, die Fotos von Gabriel Monsalve zu haben, der die Essenz des Beratungsunternehmens eingefangen hat.
+Es war großartig, die Fotos von Gabriel Monsalve zur Verfügung zu haben! Originale Fotos von den echten Menschen und Einrichtungen sind von unschätzbarem Wert und tragen unheimlich viel dazu bei, dass die Besucher Vertrauen fassen.
 
 ## Entwickelt mit einer relativ neuen Methode: Jamstack.
 
 Jamstack orientiert sich an den Anfängen der Webentwicklung, als alle Webseiten statisch waren - reine HTML-Dateien, die in einer Ordnerstruktur lagen. Damals konnte man keine dynamischen Websites erstellen, und die Gestaltungsfreiheit ließ zu wünschen übrig. Wenn man etwas anpassen wollte, das sich auf andere Dateien bezog, z. B. ein neues Menüelement hinzufügen wollte, musste man es manuell in allen Dateien anpassen. Dafür waren diese Webseiten, die sich mit dem Nötigsten begnügten, unglaublich schnell und sicher.
 
-Deshalb wollen wir uns heute die Vorteile dieser klassischen Technik zunutze machen.
+Deshalb wollen wir uns heute nur die Vorzüge dieser klassischen Technik zunutze machen.
 
-Zusammengefasst hat der Kunde die folgenden Vorteile:
+Zusammengefasst sind das:
 
 1. **Sehr schnelle Ladezeiten**, da alles über ein CDN geladen wird. Exkurs: Ein CDN (Content Delivery Network) ist ein Netzwerk von Servern, die den statischen Inhalt einer Website an verschiedenen Orten auf der ganzen Welt zwischenlagern. Wenn ein Nutzer die Website besucht, wird ihm der Inhalt vom nächstgelegenen Server geliefert.
 
@@ -39,9 +39,9 @@ Zusammengefasst hat der Kunde die folgenden Vorteile:
 
 ## Doch wie lässt sich das Problem der unverhältnismäßig komplizierten Wartung statischer Websites lösen?
 
-Hier helfen uns so genannte Static Site Generators, die die statische Website im Rahmen eines so genannten Build-Prozesses erstellen. Sie verwenden Datenquellen und Vorlagen, um die einzelnen HTML-Dateien zu generieren.
+Hier helfen uns so genannte Static Site Generators, die die statische Website im Rahmen eines Build-Prozesses erstellen. Sie verwenden Datenquellen und Vorlagen, um die einzelnen HTML-Dateien zu generieren.
 
-ineliagestion.com verwendet den Eleventy Static Site Generator, die statischen Dateien befinden sich in einem privaten Repository auf GitHub (ein Portal, das für das Hosting von Anwendungscode geschaffen wurde) und Netlify (ein Hosting-Service für statische Websites) kümmert sich um das Hosting auf seinen CDNs. Änderungen werden über meinen Code-Editor direkt an GitHub und Netlify übermittelt.
+ineliagestion.com verwendet den Static Site Generator [Eleventy](https://www.11ty.dev/), die statischen Dateien befinden sich in einem privaten Repository auf [GitHub](https://github.com/) (ein Portal, das für das Hosting von Anwendungscode geschaffen wurde) und [Netlify](https://www.netlify.com/) (ein Hosting-Service für statische Websites) kümmert sich um das Hosting auf seinen CDNs. Änderungen werden über meinen Code-Editor direkt an GitHub und Netlify übermittelt.
 
 Für das Design dieser Website habe ich Figma verwendet, ein Design- und Prototyping-Tool für digitale Projekte. Das mit dem Kunden vereinbarte Design habe ich mit dem CSS-Framework Tailwind umgesetzt.
 

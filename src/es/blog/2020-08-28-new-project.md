@@ -6,18 +6,19 @@ date: 2020-08-28
 redirectFrom: ['/blog/2020/nuevo-proyecto-web/']
 ---
 
-## Planning and design
+## Planificación y diseño
 
-Every project starts with planning. This way I can get a more concrete feel for the project. I study websites from the same industry and look for inspiration. I start thinking about typography and color scheme and create a project folder where the client's material is stored.
+Cada proyecto comienza con la planificación. Así puedo tener una sensación más concreta del proyecto. Estudio sitios web de la misma industria y busco inspiración. Empiezo a pensar en la tipografía y el esquema de color y creo una carpeta de proyecto en la que se almacena el material del cliente.
 
-The next step is to create a menu and I sketch out the design and elements of the website. My sketches are not very detailed, nor do they describe every part of the website. The main purpose is to have a general idea of the project.
+El siguiente paso es crear un menú y dibujo a grandes rasgos el diseño y los elementos del sitio web. Mis bosquejos no son muy detallados, ni describen cada parte del sitio web. El propósito principal es tener una idea general del proyecto.
 
-With Photoshop and Figma programs I convert my ideas and sketches into designs. Sometimes I solve each subpage completely, sometimes I convert the idea in my head directly into code.
+Con los programas Photoshop y Figma convierto mis ideas y bocetos en diseños. A veces resuelvo cada subpágina completamente, otras veces convierto la idea en mi cabeza directamente en código.
 
-## Code and release
+## Código y lanzamineto
 
-When the design is agreed with my client, I use the code editor "Visual Studio Code" to convert the design into modern and efficient code, using HTML, CSS and Javascript. If you want a readable CMS, I build the design directly as a new Wordpress theme. I also work with the new technique for static websites "Jamstack", which is especially useful for small websites.
+Cuando el diseño está acordado con mi cliente, utilizo el editor de código "[Visual Studio Code](https://code.visualstudio.com/)" para convertir el diseño en un código moderno y eficiente, utilizando HTML, CSS y Javascript.
 
-In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the DSGVO module and visitor analysis work correctly?
+En la fase de prueba compruebo que todo funciona correctamente. ¿El sitio web se ejecuta en todos los navegadores y sistemas operativos comunes? ¿Llegan los formularios de contacto? ¿Funcionan correctamente el módulo GDPR y el análisis de visitantes, es la página totalmente accesible?
 
-Everything is now loaded on the server. The site is running without errors on my local server - now I check that this is also the case on the live server. Finally I publish the website.
+La web está funcionando sin errores en mi servidor local - ahora compruebo que esto también es así en el servidor de producción.
+Finalmente publico la página web.

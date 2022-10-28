@@ -64,9 +64,16 @@ Stephanie provides a lot of resources for Eleventy and modern CSS.
 
 **Aleksandr Hovhannisyan**
 
-I love order and structure. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his personal site. Also, he writes great tutorials in his blog.
+I love order and structure. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his personal site. The 301 redirect solution I'm using is from his blog.
 
 - https://github.com/AleksandrHovhannisyan
+- https://www.aleksandrhovhannisyan.com/blog/eleventy-netlify-redirects/
+
+**Adam Argyle**
+
+The theme switch is from one of his GUI Challenges.
+
+- https://github.com/argyleink/gui-challenges
 
 **Tailwind**
 
