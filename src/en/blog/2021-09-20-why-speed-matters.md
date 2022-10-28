@@ -6,7 +6,7 @@ date: 2021-09-20
 cta:
   title: 'Fast websites are my specialty'
   desktop: 'A truly fast website is not an automated process. I achieve efficient websites with strategy, experience and detailed work.'
-  lead: "Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com). I'll be happy to tell you more!"
+  lead: 'Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com)! I'm always up for a chat.'
 ---
 
 Web performance is about everyone being able to access a website quickly, no matter what the internet conditions are or what device is being used.
@@ -40,7 +40,7 @@ The performance of a website can vary greatly depending on the user's device, ne
 
 Therefore, it is important to optimize websites especially for cell phones, especially in the speed category.
 
-## Is it possible to make an existing website fast
+## Is it possible to make an existing website fast?
 
 ==Performance is not an add-on function that can be taken care of later. Instead, it must be included in every step of the development process.==
 
@@ -48,7 +48,7 @@ This is often seen with Wordpress themes: first lots of plugins, a site builder 
 
 However, there are only a very limited number of possibilities that can lead to a speed increase with little effort.
 
-## Measures to speed up your website
+## How to speed up your website
 
 The list of methods and best practices to achieve optimal speed is long. At the end of the day, the visual experience should not suffer, i.e. we want images that showcase your facilities or products, and we want a web font that reflects the character of your company.
 
