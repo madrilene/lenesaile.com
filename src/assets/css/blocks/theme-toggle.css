@@ -1,5 +1,3 @@
-@import 'https://unpkg.com/open-props/easings.min.css';
-
 .sun-and-moon {
   & > :is(.moon, .sun, .sun-beams) {
     transform-origin: center center;
@@ -43,25 +41,26 @@
 
   @media (--motionOK) {
     & > .sun {
-      transition: transform 0.5s var(--ease-elastic-3);
+      transition: transform 0.5s cubic-bezier(0.5, 1.25, 0.75, 1.25);
     }
 
     & > .sun-beams {
-      transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+      transition: transform 0.5s cubic-bezier(0.5, 1.5, 0.75, 1.25),
+        opacity 0.5s cubic-bezier(0.25, 0, 0.3, 1);
     }
 
     & .moon > circle {
-      transition: transform 0.25s var(--ease-out-5);
+      transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
 
       @supports (cx: 1) {
-        transition: cx 0.25s var(--ease-out-5);
+        transition: cx 0.25s cubic-bezier(0, 0, 0, 1);
       }
     }
 
     @nest [data-theme='dark'] & {
       & > .sun {
         transform: scale(1.75);
-        transition-timing-function: var(--ease-3);
+        transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
         transition-duration: 0.25s;
       }
 
@@ -117,17 +116,18 @@
 .sun-and-moon {
   @media (--motionOK) {
     & > .sun {
-      transition: transform 0.5s var(--ease-elastic-3);
+      transition: transform 0.5s cubic-bezier(0.5, 1.25, 0.75, 1.25);
     }
 
     & > .sun-beams {
-      transition: transform 0.5s var(--ease-elastic-4), opacity 0.5s var(--ease-3);
+      transition: transform 0.5s cubic-bezier(0.5, 1.5, 0.75, 1.25),
+        opacity 0.5s cubic-bezier(0.25, 0, 0.3, 1);
     }
 
     @nest [data-theme='dark'] & {
       & > .sun {
         transform: scale(1.75);
-        transition-timing-function: var(--ease-3);
+        transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
         transition-duration: 0.25s;
       }
 
