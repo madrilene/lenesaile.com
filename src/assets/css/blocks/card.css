@@ -12,6 +12,10 @@
   background: var(--color-secondary);
 }
 
+.card h2 {
+  font-size: var(--size-step-3);
+}
+
 .card:hover,
 .card:focus-within {
   border: 3px solid var(--color-quaternary);

@@ -26,9 +26,9 @@ layout: base
         {% for item in tools.items %}
         <li class="flow">
           <div aria-hidden="true">{% include 'icons/tool-' + item.icon %}</div>
-          <h3>
+          <h2 style="font-size: var(--size-step-3)">
             {{ item.title }}
-          </h3>
+          </h2>
           <p>{{ item.summary | md | safe }}</p>
         </li>
         {% endfor %}

@@ -21,19 +21,21 @@ A fast and secure website - and a look and feel that reflects that! - is crucial
 
 One of the many advantages of the Jamstack method is the wide range of applications and platforms that can be implemented. Depending on what a project needs, I can choose a provider that offers exactly that.
 
-In the case of an online store, I can choose from many providers that allow users to have a modern, personal and fast shopping experience.
+If I want to create a shop, I can choose from handful of providers that allow users to have a modern, personal and fast shopping experience.
 
-One of the most popular providers is [Shopify](https://www.shopify.com/). You pay a small monthly fee to use it. In return, we receive a secure and easy-to-use store system with easy connections to common payment providers, marketing tools and modular scalability. The administration area where we can enter company data, add products and process orders is something that all similar providers have in common.
+One of the most popular providers is [Shopify](https://www.shopify.com/). You pay a small monthly fee to use it. In return, you receive a secure and easy-to-use store system with easy connections to common payment providers, marketing tools and modular scalability. The administration area where you can enter company data, add products and process orders, is something that all similar providers have in common.
 
 For albertoballesteros.com, Shopify is too powerful. We have a manageable number of products, and the store is more of an add-on to the website.
 
-So far, we have maintained a direct connection to Stripe for a shop function. [Stripe Checkout](https://stripe.com/es/payments/checkout) is a secure and immediate method for completing one-off purchases or subscriptions, for example. If we can assume that our visitor will only buy one product (for example, because there are no more products available or because she chooses a specific paid subscription), Stripe Checkout is ideal. Stripe keeps about 3% per completed purchase and offers in return a variety of currencies, invoice support, data security and encryption, etc., similar to Shopify.
+So far, we have maintained a direct connection to Stripe for a shop function.
+
+[Stripe Checkout](https://stripe.com/es/payments/checkout) is a secure and immediate method for completing one-off purchases or subscriptions. If we can assume that our visitor will only buy one product (for example, because there are no more products available or because she chooses a specific paid subscription), Stripe Checkout is ideal. Stripe keeps about 3% per completed purchase and offers in return a variety of currencies, invoice support, data security and encryption, etc., similar to Shopify.
 
 On our end, however, we're going to expand the product range a bit and a shopper may want to buy more than one item at a time. And so a third vendor comes into play: [Snipcart](https://snipcart.com/).
 
 ## Technical integration of Snipcart with Eleventy
 
-Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page and turn it into a store. Snipcart offers a fully customizable shopping cart, webhooks and APIs, and an intuitive administration panel. They keep 2% per transaction + payment gateway fees.
+Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page and turn it into a store. Snipcart offers a fully customizable shopping cart, webhooks and APIs, and an intuitive administration panel.
 
 {% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Snipcart admin panel screenshot", "Snipcart has an attractive and clear admin panel. Among other things, I can find useful information about the phenomenon of abandoned shopping carts." %}
 
@@ -187,7 +189,7 @@ When we have achieve our first sale, the item is listed automatically within the
 
 {% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
 
-## Conclusion and recommendations: How to choose the best solution for an online store?
+## Conclusion and recommendations
 
 In case of albertoballesteros.com, I directly handle the creation of the products in the <code>json</code> file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that Eleventy can process.
 

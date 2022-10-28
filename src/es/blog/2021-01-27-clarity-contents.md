@@ -8,7 +8,7 @@ alt: 'captura de pantalla de tipografía en una web'
 cta:
   title: 'Trabajo con contenidos'
   desktop: 'En cuestión de segundos, la persona que visita la web ha de saber quién somos, qué hacemos y por qué debe confiar en nosotros, para a continuación ponerse en contacto o realizar la compra.'
-  lead: '[Cuentame mIch arebás sobre tu proyecto](mailto:hola@lenesaile.com), ¡y vamos a averiguar qué tono debemos dar a su sitio web!'
+  lead: '[Cuentame mIch arebás sobre tu proyecto](mailto:hola@lenesaile.com), ¡y vamos a averiguar qué tono debemos dar a tu página web!'
 redirectFrom: ['/blog/2021/importancia-claridad-de-contenidos-pagina-web/']
 ---
 

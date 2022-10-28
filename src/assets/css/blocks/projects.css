@@ -11,7 +11,6 @@
 }
 
 .projects .visual {
-  transition: var(--transition-bounce);
   background: var(--color-tertiary);
 }
 .projects .visual,

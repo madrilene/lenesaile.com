@@ -34,7 +34,7 @@ Por nuestra parte, sin embargo, vamos a ampliar la gama de productos un poco y e
 
 ## Integración técnica de Snipcart con Eleventy
 
-Snipcart es una solución de comercio electrónico que nos permite añadir un carrito de la compra a una página web y convertirlo en una tienda. Snipcart ofrece un carrito de la compra totalmente personalizable, webhooks y APIs, y un panel de administración intuitivo. Se quedan con un 2 % por transaccion + gastos de la pasarela de pago.
+Snipcart es una solución de comercio electrónico que nos permite añadir un carrito de la compra a una página web y convertirlo en una tienda. Snipcart ofrece un carrito de la compra totalmente personalizable, webhooks y APIs, y un panel de administración intuitivo.
 
 {% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "Snipcart tiene un panel de administración atractivo y claro. Entre otras cosas, puedo encontrar información útil sobre el fenómeno de las cestas de la compra abandonadas." %}
 
