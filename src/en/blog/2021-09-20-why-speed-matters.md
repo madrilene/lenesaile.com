@@ -50,7 +50,7 @@ However, there are only a very limited number of possibilities that can lead to 
 
 ## How to speed up your website
 
-The list of methods and best practices to achieve optimal speed is long. At the end of the day, the visual experience should not suffer, i.e. we want images that showcase your facilities or products, and we want a web font that reflects the character of your company.
+The list of methods and best practices to achieve optimal speed is long. At the end of the day, the visual experience should not suffer, i.e. we want great images that showcase your facilities or products, and we want a nice web font that reflects the character of your company.
 
 Both elements, images and fonts, are individually optimized so that they are no longer a hindrance to speed.
 

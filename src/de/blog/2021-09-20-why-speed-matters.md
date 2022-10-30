@@ -5,8 +5,8 @@ key: 'speedmatters'
 date: 2021-09-20
 cta:
   title: 'Schnelle Websites sind meine Spezialität'
-  desktop: 'A truly fast website is not an automated process. I achieve efficient websites with strategy, experience and detailed work.'
-  lead: "Do you want to know more? Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com). I'll be happy to tell you more!"
+  desktop: 'Eine schnelle Website ist kein automatisierter Prozess. Ich erstelle hocheffiziente Websites mit Strategie, Erfahrung und Detailarbeit.'
+  lead: 'Willst du mehr darüber erfahren? Schreib mir an [hola@lenesaile.com](mailto:hola@lenesaile.com). Ich erkläre dir das gerne persönlich!'
 ---
 
 Bei der Website Performance geht es darum, dass jeder schnell auf eine Webseite zugreifen kann, egal welche Internetverhältnissse herrschen oder welches Gerät benutzt wird.
@@ -49,9 +49,7 @@ Es gibt jedoch nur eine sehr begrenzte Anzahl von Möglichkeiten, die mit wenig 
 
 ## Maßnahmen zur Beschleunigung der Website
 
-Die Liste der Methoden und "Best Practices" für eine optimale Performance ist lang. Letztendlich sollte das visuelle Erlebnis nicht darunter leiden, d. h. wir wollen Bilder, die dein Geschäft oder Produkte zeigen, und wir wollen eine web font, die den Charakter deines Unternehmens widerspiegelt.
-
-Beide Elemente, Bilder und Schriftarten, werden individuell optimiert, so dass sie die Geschwindigkeit nicht mehr beeinträchtigen.
+Die Liste der Methoden und "Best Practices" für eine optimale Performance ist lang. Letztendlich sollte das visuelle Erlebnis nicht darunter leiden, d. h. wir wollen großartige Bilder, die dein Geschäft oder Produkte zeigen, und wir wollen eine Webfont, die den Charakter deines Unternehmens widerspiegelt.
 
 Nachfolgend findest du eine sehr grundlegende Liste von Maßnahmen, die immer befolgt werden sollten:
 

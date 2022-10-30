@@ -50,7 +50,7 @@ Sin embargo, sólo hay un número muy limitado de posibilidades que pueden condu
 
 ## Medidas para acelerar tu página web
 
-La lista de métodos y mejores prácticas para lograr una velocidad óptima es larga. Al fin y al cabo, la experiencia visual no debe resentirse, es decir, queremos imágenes que muestren tus instalaciones o productos, y queremos una fuente web que refleje el carácter de tu empresa.
+La lista de métodos y mejores prácticas para lograr una velocidad óptima es larga. Al fin y al cabo, la experiencia visual no debe resentirse, es decir, queremos imágenes fantasticas que muestren tus instalaciones o productos, y queremos una tipografía que refleje el carácter de tu empresa.
 
 Ambos elementos, las imágenes y los tipos de letra, se optimizan individualmente para que dejen de ser un obstáculo para la velocidad.
 
