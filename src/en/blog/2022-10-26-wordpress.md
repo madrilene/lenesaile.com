@@ -95,7 +95,7 @@ As I said, I haven't quite gotten into it yet. But my impression after a few hou
 
 I also think it is too complex and fiddly for the common client who just wants to publish a blog post. I guess, it most fits the needs and interests of professional web designers who until now made complete websites only in site builders, without touching code.
 
-### So what's the right technique to build a theme nowadays?
+## So what's the right technique to build a theme nowadays?
 
 It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a JavaScript frontend via its REST API or WPGraphQL.
 

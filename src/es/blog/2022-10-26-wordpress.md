@@ -95,7 +95,7 @@ Como he dicho, todavía no me he acostumbrado. Pero mi impresión después de un
 
 También creo que es todavía demasiado complejo y engorroso para el cliente común que sólo quiere publicar una entrada de blog. Se ajusta más a las capacidades de los diseñadores web profesionales que hasta ahora hacían sitios web completos sólo en constructores de sitios, sin tocar el código.
 
-### Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
+## Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
 
 Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: temas en bloque, la clásica plantilla impulsada por PHP o WordPress como un CMS sin cabeza que alimenta un frontend de JavaScript a través de su REST API o WPGraphQL.
 

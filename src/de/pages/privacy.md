@@ -1,5 +1,5 @@
 ---
-title: Datenschutzerklärung
+title: Datenschutz
 seo:
   title: Datenschutzerklärung | Lene Saile. Designer und Full Stack Entwickler
 permalink: /{{ locale }}/datenschutz/index.html
@@ -16,7 +16,7 @@ Diese Website sammelt keine persönlichen Daten. Es werden keine Cookies gesetzt
 
 Für die Besucherstatistiken verwende ich Plausible Analytics, ein Webanalysetool, bei dem der Datenschutz im Vordergrund steht. Es wurde entwickelt, um die verschiedenen Datenschutzbestimmungen wie GDPR und CCPA zu erfüllen. Plausible verwendet keine Cookies und sammelt keine persönlichen Daten.
 
-## Wie verwende ich die von Ihnen bereitgestellten Daten?
+## Wie verwende ich die bereitgestellten Daten?
 
 Diese Website sammelt keine weiteren Informationen.
 

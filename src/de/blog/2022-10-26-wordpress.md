@@ -95,7 +95,7 @@ Wie ich schon sagte, habe ich mich noch nicht wirklich eingearbeitet. Aber nachd
 
 Ich denke auch, dass es für den normalen Kunden, der nur mal einen Blogbeitrag veröffentlichen möchte, zu komplex und umständlich ist. Es entspricht am ehesten den Fähigkeiten professioneller Webdesigner, die bisher komplette Websites nur in Website-Buildern erstellt haben, ohne direkt code zu schreiben.
 
-### Was ist die richtige Technik, um heutzutage ein WordPress Theme zu erstellen?
+## Was ist die richtige Technik, um heutzutage ein WordPress Theme zu erstellen?
 
 Es scheint, als würden alte und neue Techniken aufeinanderprallen. Es gibt viele Möglichkeiten, etwas mit WordPress zu bauen: Block-Themes, das klassische PHP-gesteuerte Templating oder WordPress als Headless-CMS, das ein JavaScript-Frontend über seine REST-API oder WPGraphQL speist.
 

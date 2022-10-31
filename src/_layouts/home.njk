@@ -59,14 +59,14 @@ layout: base
   </div>
 </article>
 
-<article class="wrapper region" style="--region-space-top: var(--space-2xl)">
+<article class="region" style="--region-space-top: var(--space-2xl)">
   <div class="wrapper flow prose">
     <h2>{{ blog.title }}</h2>
     <p>{{ blog.intro }}</p>
   </div>
   <!-- TODO: duplicate of partials/blog.njk -->
 
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections["blog_" + locale] %} {% for post in postslist.slice(0,
     4) %}
 

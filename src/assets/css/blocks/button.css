@@ -8,7 +8,7 @@
   border: 3px solid var(--color-text);
   border-radius: var(--border-radius);
   margin-right: 0.5em;
-  padding: 0.4em 2em;
+  padding: var(--space-xs) var(--space-m-l);
   transform-style: preserve-3d;
   background: var(--color-bg);
 }

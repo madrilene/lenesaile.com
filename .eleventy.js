@@ -12,21 +12,15 @@ const pkg = require('./package.json');
 
 // module import filters
 const {
-  wordCount,
   limit,
-  sortByKey,
   toHtml,
   where,
   toISOString,
   formatDate,
   formatDateES,
   formatDateDE,
-  dividedBy,
-  newlineToBr,
   toAbsoluteUrl,
-  stripNewlines,
   stripHtml,
-  getLatestCollectionItemDate,
   minifyCss,
   mdInline
 } = require('./config/filters/index.js');
@@ -58,7 +52,6 @@ const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
-const pluginWebc = require('@11ty/eleventy-plugin-webc');
 
 module.exports = eleventyConfig => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
@@ -81,9 +74,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
   // 	---------------------  Custom filters -----------------------
-  eleventyConfig.addFilter('wordCount', wordCount);
   eleventyConfig.addFilter('limit', limit);
-  eleventyConfig.addFilter('sortByKey', sortByKey);
   eleventyConfig.addFilter('where', where);
   eleventyConfig.addFilter('escape', escape);
   eleventyConfig.addFilter('toHtml', toHtml);
@@ -91,15 +82,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('formatDate', formatDate);
   eleventyConfig.addFilter('formatDateES', formatDateES);
   eleventyConfig.addFilter('formatDateDE', formatDateDE);
-  eleventyConfig.addFilter('dividedBy', dividedBy);
-  eleventyConfig.addFilter('newlineToBr', newlineToBr);
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
-  eleventyConfig.addFilter('stripNewlines', stripNewlines);
   eleventyConfig.addFilter('stripHtml', stripHtml);
   eleventyConfig.addFilter('slugify', slugifyString);
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
-  eleventyConfig.addFilter('getLatestCollectionItemDate', getLatestCollectionItemDate);
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addFilter('md', mdInline);
   eleventyConfig.addFilter('keys', Object.keys);
@@ -115,8 +102,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
 
-  // 	--------------------- Custom transforms ---------------------
-
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('projects_en', getProjectsEN);
   eleventyConfig.addCollection('blog_en', getBlogsEN);
@@ -129,24 +114,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
-  eleventyConfig.addPlugin(pluginWebc, {
-    components: 'src/_includes/webc/*.webc'
-  });
 
-  // 	--------------------- Passthrough File Copy -----------------------
-
-  // webc js and css dependencies
-  // eleventyConfig.addPassthroughCopy({
-  //   'src/_includes/webc/*.css': `assets/components/`,
-  //   'src/_includes/webc/*.js': `assets/components/`
-  // });
-
-  // node modules
-  // eleventyConfig.addPassthroughCopy({
-  //   'node_modules/speedlify-score/speedlify-score.css': `assets/components/speedlify-score.css`,
-  //   'node_modules/speedlify-score/speedlify-score.js': `assets/components/speedlify-score.js`,
-  //   'node_modules/@11ty/is-land/is-land.js': `assets/components/is-land.js`
-  // });
+  // 	--------------------- Passthrough copies ---------------------
 
   eleventyConfig.addPassthroughCopy('src/assets/fonts/');
   eleventyConfig.addPassthroughCopy('src/assets/images/');
