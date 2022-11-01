@@ -11,12 +11,12 @@ image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu arbeiten'
 breakout:
   title: 'Ich lebe und arbeite in Madrid'
-  intro: 'Seit 2010 lebe und arbeite ich in Madrid, im Stadtteil La Latina. Viele meiner Kunden sind in Spanien ansässig, aber ich arbeite auch für internationale Kunden.'
-finalWords: 'Ich lese und lerne ständig. Besonders antegtan bin ich von allem, was in den Bereichen Jamstack, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Experte, da ich ständig optimiere und jeder Bereich unglaublich groß ist. Ich lerne schnell und flexivel und habe kein Problem, mich in neue Methoden und Techniken einzuarbeiten.'
+  intro: 'Seit 2010 lebe und arbeite ich in Madrid, im Stadtteil La Latina. Ich mache Projekte für Kunden aus aller Welt.'
+finalWords: 'Ich lese und lerne permanent. Besonders antegtan bin ich von allem, was in den Bereichen Jamstack, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Expertin, da ich ständig optimiere und jeder Bereich unglaublich groß ist. Ich lerne schnell und flexibel und habe kein Problem damit, mich in neue Methoden und Techniken einzuarbeiten.'
 cta:
   title: 'Lass uns reden!'
   desktop: 'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.'
-  lead: 'Schick mir eine Mail an [hola@lenesaile.com] (mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
+  lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
 Ich habe schon immer gerne mit Computern experimentiert. Ca. 2004 habe ich dann versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, mit meinem Hobby meinen Lebensunterhalt zu verdienen.
