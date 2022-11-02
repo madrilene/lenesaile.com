@@ -5,15 +5,15 @@ seo:
 permalink: /{{ locale }}/sobre/index.html
 redirectFrom: [/sobre/]
 key: 'about'
-description: 'Soy desarrolladora web y diseñadora basada en Madrid que lleva desarrollando para la web de forma profesional desde 2008'
+description: 'Soy desarrolladora web y diseñadora nacida en Berlín, viviendo en Madrid. Llevo desarrollando para la web profesionalmente desde 2008.'
 layout: about
-lead: 'Soy un desarrolladora y diseñadora que lleva desarrollando para la web profesionalmente desde 2008. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.'
+lead: 'Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.'
 image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sentada en una pelota de gimnasia frente a su escritorio, aparentemente trabajando'
 breakout:
   title: 'Vivo y trabajo en Madrid'
   intro: 'Desde 2010, vivo y trabajo en Madrid, La Latina. Muchos de mis clientes se encuentran en España, pero también trabajo para clientes internacionales.'
-palabras finales: 'Estoy constantemente leyendo y aprendiendo, y me entusiasma especialmente todo lo que está pasando en las áreas de Jamstack, accesibilidad y rendimiento. No me considero un experto en ninguna parte, ya que estoy optimizando constantemente y cada campo es increíblemente amplio. Aprendo con rapidez y flexibilidad y no me cuesta familiarizarme con nuevos métodos y técnicas.'
+finalWords: 'Estoy constantemente leyendo y aprendiendo, y me entusiasma especialmente todo lo que está pasando en las áreas de Jamstack, accesibilidad y rendimiento. No me considero una experta en ninguna parte, ya que estoy aprendiendo algo nuevo constantemente. No me cuesta familiarizarme con nuevos métodos y técnicas.'
 cta:
   title: '¡Hablemos!'
   desktop: 'Un proyecto tiene éxito en Internet cuando se ve bien, se siente bien y funciona con tecnología limpia y segura. Desde 2008 creo experiencias web atractivas con atención al detalle.'

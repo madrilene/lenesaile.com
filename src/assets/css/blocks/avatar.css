@@ -104,7 +104,7 @@ svg.avatar-blog {
 
   svg.avatar-blog {
     width: 35%;
-    transform: translateY(11rem) translateX(var(--space-m-l));
+    transform: translateY(11rem) translateX(var(--space-m-l)) rotate(-1deg);
   }
 
   .avatar-content__inner {
