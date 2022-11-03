@@ -12,9 +12,7 @@ cta:
 redirectFrom: ['/blog/2022/nueva-tienda-alberto-ballesteros-eleventy-snipcart/']
 ---
 
-{% aside %}**Nota:** Hemos vuelto a la solución de Stripe unos meses después de publicar este texto. No porque Snipcart no sea bueno, al contrario. Es una gran solución, especialmente para las tiendas con ventas mensuales fiables. Pero si sólo vendes un producto de vez en cuando, [no merece la pena](https://snipcart.com/faq#Pricing): Si vendes más de 500 dólares al mes, Snipcart cuesta un 2% de comisión. Si vendes menos de 500 dólares al mes, Snipcart cobra una tarifa fija de 10 dólares al mes. Esto también se aplica si no vendes nada durante un mes. También describiré la solución con Stripe pronto en el blog.{% endaside %}
-
-Una web rápida y segura - ¡y con una apariencia que lo refleja! - es crucial para un shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) es una página web estática basado en el método de Jamstack. Si se hace todo bien, las páginas de Jamstack son intrínsecamente muy seguras, fiables, flexibles y, sobre todo, rápidas.
+Una web rápida y segura - ¡y con una apariencia que lo refleja! - es crucial para un shop. albertoballesteros.com es una página web estática basado en el método de Jamstack. Si se hace todo bien, las páginas de Jamstack son intrínsecamente muy seguras, fiables, flexibles y, sobre todo, rápidas.
 
 {% include "partials/toc.njk" %}
 
@@ -32,6 +30,8 @@ Hasta ahora, hemos mantenido una conexión directa con Stripe para una función 
 
 Por nuestra parte, sin embargo, vamos a ampliar la gama de productos un poco y es posible que un comprador quiera comprar más de un artículo a la vez. Y así entra en juego un tercer proveedor: [Snipcart](https://snipcart.com/).
 
+{% aside %}**Nota:** Hemos vuelto a la solución de Stripe unos meses después de publicar este texto. No porque Snipcart no sea bueno, al contrario. Es una gran solución, especialmente para las tiendas con ventas mensuales fiables. Pero si sólo vendes un producto de vez en cuando, [no merece la pena](https://snipcart.com/faq#Pricing): Si vendes más de 500 dólares al mes, Snipcart cuesta un 2% de comisión. Si vendes menos de 500 dólares al mes, Snipcart cobra una tarifa fija de 10 dólares al mes. Esto también se aplica si no vendes nada durante un mes. También describiré la solución con Stripe pronto en el blog.{% endaside %}
+
 ## Integración técnica de Snipcart con Eleventy
 
 Snipcart es una solución de comercio electrónico que nos permite añadir un carrito de la compra a una página web y convertirlo en una tienda. Snipcart ofrece un carrito de la compra totalmente personalizable, webhooks y APIs, y un panel de administración intuitivo.
@@ -48,7 +48,6 @@ En mi carpeta del proyecto tengo la siguiente estructura (simplificada):
 {% raw %}
 
 ```md
-proyecto
 │
 └───src
 │ │
@@ -89,12 +88,12 @@ _En base.njk:_
 
 La tienda no necesita sub-páginas de productos, sino que lista los artículos directamente con una breve descripción.
 
-Por lo tanto, sólo activo la integración en mi archivo <code>Nunjucks</code> para la tienda:
+Por lo tanto, sólo activo la integración en mi archivo `Nunjucks` para la tienda:
 
 _En shop.njk:_
 {% raw %}
 
-```html
+```yaml
 ---
 title: Shop
 snipcart: true
@@ -103,7 +102,7 @@ snipcart: true
 
 {% endraw %}
 
-Obtenemos los productos y sus propiedades a través de un archivo <code>json</code>:
+Obtenemos los productos y sus propiedades a través de un archivo `json`:
 
 _En shop.json:_
 
@@ -126,7 +125,7 @@ _En shop.json:_
 ```
 
 Snipcart necesita algunos datos necesarios para crear los productos y procesar la compra.
-Obtenemos estos datos de nuestro archivo <code>shop.json</code> utilizando un "loop":
+Obtenemos estos datos de nuestro archivo `shop.json` utilizando un "loop":
 
 {% raw %}
 
@@ -149,9 +148,9 @@ Obtenemos estos datos de nuestro archivo <code>shop.json</code> utilizando un "l
 
 {% endraw %}
 
-Este <code>button</code> es suficiente para activar Snipcart. Se requiere el nombre del producto, un ID de producto único, el precio del producto, la URL del producto (donde se encuentra el <code>button</code> "añadir al carrito", utilizado por su rastreador cuando comprueba la integridad del pedido), la descripción del producto y la URL de la imagen del producto.
+Este `button` es suficiente para activar Snipcart. Se requiere el nombre del producto, un ID de producto único, el precio del producto, la URL del producto (donde se encuentra el `button` "añadir al carrito", utilizado por su rastreador cuando comprueba la integridad del pedido), la descripción del producto y la URL de la imagen del producto.
 
-La clase CSS <code>snipcart-add-item</code> también es necesaria para que funcione.
+La clase CSS `snipcart-add-item` también es necesaria para que funcione.
 Dentro del loop utilizo estos datos para mostrar los productos en la interfaz de usuario.
 
 Para el "toggle" del carrito de la compra tenemos el siguiente código:
@@ -179,7 +178,7 @@ Snipcart también busca nuestro atributo de idioma en el HTML para ajustar autom
 
 ### Para más seguridad: HTTP response header
 
-Para la mayor seguridad posible de nuestras webs, establecemos <code>HTTP response header</code> (cabeceras de respuesta HTTP). La cabecera de la Política de Seguridad de Contenidos (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques como el cross-site scripting (XSS) y los ataques de inyección de datos. Lo hacemos especificando exactamente qué recursos puede cargar el navegador.
+Para la mayor seguridad posible de nuestras webs, establecemos `HTTP response header` (cabeceras de respuesta HTTP). La cabecera de la Política de Seguridad de Contenidos (CSP) es una capa adicional de seguridad que ayuda a detectar y mitigar ciertos tipos de ataques como el cross-site scripting (XSS) y los ataques de inyección de datos. Lo hacemos especificando exactamente qué recursos puede cargar el navegador.
 
 Para que Snipcart funcione, tenemos que habilitar la recuperación de scripts a través de Snipcart en la cabecera de la Política de Seguridad de Contenidos.
 
@@ -191,7 +190,7 @@ Según hemos conseguido nuestra primera venta, consta el artículo automáticame
 
 ## Conclusión y recomendaciones
 
-En caso de albertoballesteros.com, manejo directamente la creación de los productos en el archivo <code>json</code>. Sin embargo, para clientes, esto sería bastante engorroso. En su lugar, pueden introducir los productos y sus propiedades en una hoja de Google (Excel) y luego convierto este formato en un archivo <code>json</code> que Eleventy puede procesar.
+En caso de albertoballesteros.com, manejo directamente la creación de los productos en el archivo `json`. Sin embargo, para clientes, esto sería bastante engorroso. En su lugar, pueden introducir los productos y sus propiedades en una hoja de Google (Excel) y luego convierto este formato en un archivo `json` que Eleventy puede procesar.
 
 Cada cliente tiene necesidades individuales. Shopify es la primera opción para muchos por su flexibilidad, facilidad de uso y buena relación calidad-precio. Algunas grandes empresas también utilizan Shopify.
 

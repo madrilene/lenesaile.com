@@ -33,7 +33,7 @@ Las siguientes reflexiones se refieren al trabajo con Wordpress en el backend y 
 
 ### Tienes que hacerlo a su manera
 
-Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con Wordpress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Tengo que trabajar con las clases CSS que me dan, y también tengo que eliminar los scripts como <code>wp-block-navigation-view</code> (responsable del comportamiento de los menús) si quiero implementar mi propia solución.
+Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con Wordpress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Tengo que trabajar con las clases CSS que me dan, y también tengo que eliminar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución.
 
 ### Site builders, no thanks
 
@@ -67,7 +67,7 @@ En pocas palabras, FSE es la extensión del [Editor Gutenberg](https://wordpress
 
 No puedo decir demasiado sobre esto, ya que todavía tengo que sumergirme realmente en el tema. Teniendo en cuenta que se basa en JavaScript y tiene un concepto similar al de los componentes, puede que al final me guste desarrollar con él. WordPress no volverá a las andadas y cada nueva versión reforzará los temas de bloque.
 
-Un "template part" para el <code>header.html</code> se ve así:
+Un "template part" para el `header.html` se ve así:
 
 {% raw %}
 

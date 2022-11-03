@@ -11,9 +11,7 @@ cta:
   lead: "I'll make your store fast and secure with the Jamstack method! Send me an email to [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project."
 ---
 
-{% aside %}**Disclaimer:** We have returned to the Stripe solution a few months after publishing this text. Not because Snipcart is not good, on the contrary. It's a great solution, especially for stores with reliable monthly sales. But if you only sell a product once in a while, [it's not really worth it](https://snipcart.com/faq#Pricing): If you sell more than $500 a month, Snipcart keeps 2% commission. If you sell less than $500 per month, Snipcart charges a flat fee of $10 per month. This also applies if you don't sell anything at all. I will also describe the Stripe integration soon on the blog.{% endaside %}
-
-A fast and secure website - and a look and feel that reflects that! - is crucial for a shop. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a static website based on the Jamstack method. If everything is done right, Jamstack pages are inherently very secure, reliable, flexible and, above all, fast.
+A fast and secure website - and a look and feel that reflects that! - is crucial for a shop. albertoballesteros.com is a static website based on the Jamstack method. If everything is done right, Jamstack pages are inherently very secure, reliable, flexible and, above all, fast.
 
 {% include "partials/toc.njk" %}
 
@@ -33,6 +31,8 @@ So far, we have maintained a direct connection to Stripe for a shop function.
 
 On our end, however, we're going to expand the product range a bit and a shopper may want to buy more than one item at a time. And so a third vendor comes into play: [Snipcart](https://snipcart.com/).
 
+{% aside %}**Disclaimer:** We have returned to the Stripe solution a few months after publishing this text. Not because Snipcart is not good, on the contrary. It's a great solution, especially for stores with reliable monthly sales. But if you only sell a product once in a while, [it's not really worth it](https://snipcart.com/faq#Pricing): If you sell more than $500 a month, Snipcart keeps 2% commission. If you sell less than $500 per month, Snipcart charges a flat fee of $10 per month. This also applies if you don't sell anything at all. I will also describe the Stripe integration soon on the blog.{% endaside %}
+
 ## Technical integration of Snipcart with Eleventy
 
 Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page and turn it into a store. Snipcart offers a fully customizable shopping cart, webhooks and APIs, and an intuitive administration panel.
@@ -49,7 +49,6 @@ In my project folder I have the following structure (simplified):
 {% raw %}
 
 ```md
-proyecto
 │
 └───src
 │ │
@@ -91,12 +90,12 @@ _base.njk:_
 
 The store does not need product sub-pages, but lists the items directly with a short description.
 
-Therefore, I only activate the integration in my <code>Nunjucks</code>-file for the store:
+Therefore, I only activate the integration in my `Nunjucks`-file for the store:
 
 _shop.njk:_
 {% raw %}
 
-```html
+```yaml
 ---
 title: Shop
 snipcart: true
@@ -105,7 +104,7 @@ snipcart: true
 
 {% endraw %}
 
-We obtain the products and their properties by means of a <code>json</code> file:
+We obtain the products and their properties by means of a `json` file:
 
 _shop.json:_
 
@@ -128,7 +127,7 @@ _shop.json:_
 ```
 
 Snipcart needs some data to create the products and process the purchase.
-We get this data from our <code>shop.json</code> file using a loop:
+We get this data from our `shop.json` file using a loop:
 
 {% raw %}
 
@@ -151,9 +150,9 @@ We get this data from our <code>shop.json</code> file using a loop:
 
 {% endraw %}
 
-This <code>button</code> is enough to activate Snipcart. It requires the product name, a unique product ID, the product price, the product URL (where the "add to cart" <code>button</code>, used by your tracker when checking order completeness, is located), the product description and the product image URL.
+This `button` is enough to activate Snipcart. It requires the product name, a unique product ID, the product price, the product URL (where the "add to cart" `button`, used by your tracker when checking order completeness, is located), the product description and the product image URL.
 
-The CSS class <code>snipcart-add-item</code> is also required for this to work.
+The CSS class `snipcart-add-item` is also required for this to work.
 Inside the loop I use this data to display the products in the user interface.
 
 For the shopping cart toggle we have the following code:
@@ -179,7 +178,7 @@ Snipcart also looks for our language attribute in the HTML to automatically adju
 <html lang="es"></html>
 ```
 
-For the highest possible security of our websites, we set up <code>HTTP response header</code>. The Content Security Policy (CSP) header is an additional layer of security that helps detect and mitigate certain types of attacks such as cross-site scripting (XSS) and data injection attacks. We do this by specifying exactly which resources the browser can load.
+For the highest possible security of our websites, we set up `HTTP response header`. The Content Security Policy (CSP) header is an additional layer of security that helps detect and mitigate certain types of attacks such as cross-site scripting (XSS) and data injection attacks. We do this by specifying exactly which resources the browser can load.
 
 For Snipcart to work, we have to enable script retrieval through Snipcart in the Content Security Policy header.
 
@@ -191,7 +190,7 @@ When we have achieve our first sale, the item is listed automatically within the
 
 ## Conclusion and recommendations
 
-In case of albertoballesteros.com, I directly handle the creation of the products in the <code>json</code> file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a <code>json</code> file that Eleventy can process.
+In case of albertoballesteros.com, I directly handle the creation of the products in the `json` file. However, for my clients, this would be quite cumbersome. Instead, they can enter the products and their properties in a Google sheet (Excel) and then I convert this format into a `json` file that Eleventy can process.
 
 Each customer has individual needs. Shopify is the first choice for many because of its flexibility, ease of use and good value for money. Some large companies also use Shopify.
 

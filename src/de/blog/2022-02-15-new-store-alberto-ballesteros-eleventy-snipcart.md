@@ -11,9 +11,7 @@ cta:
   lead: 'Ich mache deinen Shop schnell und sicher mit der Jamstack-Methode! Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt.'
 ---
 
-{% aside %}**Hinweis:** Wir sind einige Monate nach der Veröffentlichung dieses Textes wieder zur Stripe-Lösung gewechselt. Nicht, weil Snipcart nicht gut ist, im Gegenteil. Es ist eine großartige Lösung, vor allem für Shops mit zuverlässigen monatlichen Umsätzen. Aber wenn du nur hin und wieder ein Produkt verkaufst,[ lohnt es sich nicht](https://snipcart.com/faq#Pricing): Wenn du mehr als 500 $ im Monat verkaufst, kostet die Nutzung von Snipcart 2 % Provision. Bei weniger als 500 Dollar im Monat kostet Snipcart ein Fixpreis von 10 Dollar pro Monat. Das gilt auch wenn man einen Monat lang gar nichts verkauft. Ich werde demnächst hier auch die Lösung mit Stripe beschreiben.{% endaside %}
-
-Eine schnelle und sichere Website - und ein Look and Feel, das dies widerspiegelt! - sind von entscheidender Bedeutung für einen Shop. [albertoballesteros.com] (https://www.albertoballesteros.com/shop) ist eine statische Website, die auf der Jamstack-Methode basiert. Wenn alles richtig gemacht wird, sind Jamstack-Seiten von Natur aus sehr sicher, zuverlässig, flexibel und vor allem schnell.
+Eine schnelle und sichere Website - und ein Look and Feel, das dies widerspiegelt! - sind von entscheidender Bedeutung für einen Shop. albertoballesteros.com ist eine statische Website, die auf der Jamstack-Methode basiert. Wenn alles richtig gemacht wird, sind Jamstack-Seiten von Natur aus sehr sicher, zuverlässig, flexibel und vor allem schnell.
 
 {% include "partials/toc.njk" %}
 
@@ -27,9 +25,11 @@ Einer der beliebtesten Anbieter ist [Shopify](https://www.shopify.com/). Man zah
 
 Für albertoballesteros.com ist Shopify zu mächtig. Wir haben eine überschaubare Anzahl von Produkten, und der Shop ist eher ein beiläufiges Add-on zur Website.
 
-Bisher haben wir für die Shop-Funktion eine direkte Verbindung zu Stripe unterhalten. [Stripe Checkout] (https://stripe.com/es/payments/checkout) ist eine sichere und unmittelbare Methode, um z.B. einmalige Käufe oder Abonnements abzuschließen. Wenn wir davon ausgehen können, dass unsere Besucherin nur ein Produkt kauft (z.B. weil keine weiteren Produkte verfügbar sind oder weil sie sich für ein bestimmtes kostenpflichtiges Abonnement entscheidet), ist Stripe Checkout ideal. Stripe behält etwa 3% pro abgeschlossenem Kauf und bietet im Gegenzug eine Vielzahl von Währungen, Rechnungsunterstützung, Datensicherheit und Verschlüsselung usw., ähnlich wie Shopify.
+Bisher haben wir für die Shop-Funktion eine direkte Verbindung zu Stripe unterhalten. [Stripe Checkout](https://stripe.com/es/payments/checkout) ist eine sichere und unmittelbare Methode, um z.B. einmalige Käufe oder Abonnements abzuschließen. Wenn wir davon ausgehen können, dass unsere Besucherin nur ein Produkt kauft (z.B. weil keine weiteren Produkte verfügbar sind oder weil sie sich für ein bestimmtes kostenpflichtiges Abonnement entscheidet), ist Stripe Checkout ideal. Stripe behält etwa 3% pro abgeschlossenem Kauf und bietet im Gegenzug eine Vielzahl von Währungen, Rechnungsunterstützung, Datensicherheit und Verschlüsselung usw., ähnlich wie Shopify.
 
 In unserem Fall werden wir jedoch die Produktpalette etwas erweitern, und ein Kunde möchte vielleicht mehr als einen Artikel auf einmal kaufen. Und so kommt ein dritter Anbieter ins Spiel: [Snipcart](https://snipcart.com/).
+
+{% aside %}**Hinweis:** Wir sind einige Monate nach der Veröffentlichung dieses Textes wieder zur Stripe-Lösung gewechselt. Nicht, weil Snipcart nicht gut ist, im Gegenteil. Es ist eine großartige Lösung, vor allem für Shops mit zuverlässigen monatlichen Umsätzen. Aber wenn du nur hin und wieder ein Produkt verkaufst, [lohnt es sich nicht](https://snipcart.com/faq#Pricing): Wenn du mehr als 500 $ im Monat verkaufst, kostet die Nutzung von Snipcart 2 % Provision. Bei weniger als 500 Dollar im Monat kostet Snipcart ein Fixpreis von 10 Dollar pro Monat. Das gilt auch wenn man einen Monat lang gar nichts verkauft. Ich werde demnächst hier auch die Lösung mit Stripe beschreiben.{% endaside %}
 
 ## Technische Integration von Snipcart mit Eleventy
 
@@ -47,7 +47,6 @@ In meinem Projektordner habe ich die folgende Struktur (vereinfacht):
 {% raw %}
 
 ```md
-proyecto
 │
 └───src
 │ │
@@ -89,12 +88,12 @@ _base.njk:_
 
 Dieser Shop benötigt keine Unterseiten für die Produkte, sondern listet die Artikel direkt mit einer kurzen Beschreibung auf.
 
-Daher aktiviere ich die Integration nur in meiner <code>Nunjucks</code>-Datei für den Shop:
+Daher aktiviere ich die Integration nur in meiner `Nunjucks`-Datei für den Shop:
 
 _shop.njk:_
 {% raw %}
 
-```html
+```yaml
 ---
 title: Shop
 snipcart: true
@@ -103,7 +102,7 @@ snipcart: true
 
 {% endraw %}
 
-Wir erhalten die Produkte und ihre Eigenschaften mit Hilfe einer <code>json</code> Datei:
+Wir erhalten die Produkte und ihre Eigenschaften mit Hilfe einer `json` Datei:
 
 _shop.json:_
 
@@ -126,7 +125,7 @@ _shop.json:_
 ```
 
 Snipcart benötigt einige Daten, um die Produkte zu erstellen und den Kauf zu bearbeiten.
-Wir holen diese Daten aus unserer <code>shop.json</code> Datei mit Hilfe eines nunjucks-loops:
+Wir holen diese Daten aus unserer `shop.json` Datei mit Hilfe eines nunjucks-loops:
 
 {% raw %}
 
@@ -149,9 +148,9 @@ Wir holen diese Daten aus unserer <code>shop.json</code> Datei mit Hilfe eines n
 
 {% endraw %}
 
-Dieser <code>button</code> reicht aus, um Snipcart zu aktivieren. Snipcart benötigt den Produktnamen, eine eindeutige Produkt-ID, den Produktpreis, die Produkt-URL (wo sich der <code>button</code> "add to cart" befindet, die von deinem Tracker bei der Überprüfung der Vollständigkeit der Bestellung verwendet wird), die Produktbeschreibung und die URL des Produktbildes.
+Dieser `button` reicht aus, um Snipcart zu aktivieren. Snipcart benötigt den Produktnamen, eine eindeutige Produkt-ID, den Produktpreis, die Produkt-URL (wo sich der `button` "add to cart" befindet, die von deinem Tracker bei der Überprüfung der Vollständigkeit der Bestellung verwendet wird), die Produktbeschreibung und die URL des Produktbildes.
 
-Die CSS-Klasse <code>snipcart-add-item</code> ist ebenfalls erforderlich.
+Die CSS-Klasse `snipcart-add-item` ist ebenfalls erforderlich.
 
 Innerhalb des loops verwende ich diese Daten, um die Produkte auf der Benutzeroberfläche anzuzeigen.
 
@@ -180,7 +179,7 @@ Snipcart sucht auch nach unserem Sprachattribut im HTML, um die angezeigte Sprac
 
 ### Maßnahmen für eine erhöhte Sicherheit der Seite
 
-Um die größtmögliche Sicherheit unserer Websites zu gewährleisten, richten wir <code>HTTP response header</code> ein. Die Kopfzeile "Content Security Policy" (CSP) ist eine zusätzliche Sicherheitsebene, die dazu beiträgt, bestimmte Arten von Angriffen wie Cross-Site-Scripting (XSS) und Data-Injection-Angriffe zu erkennen und zu entschärfen. Wir tun dies, indem wir genau festlegen, welche Ressourcen der Browser laden kann.
+Um die größtmögliche Sicherheit unserer Websites zu gewährleisten, richten wir `HTTP response header` ein. Die Kopfzeile "Content Security Policy" (CSP) ist eine zusätzliche Sicherheitsebene, die dazu beiträgt, bestimmte Arten von Angriffen wie Cross-Site-Scripting (XSS) und Data-Injection-Angriffe zu erkennen und zu entschärfen. Wir tun dies, indem wir genau festlegen, welche Ressourcen der Browser laden kann.
 
 Damit Snipcart funktioniert, müssen wir den Skriptabruf durch Snipcart in der Kopfzeile der Inhaltssicherheitsrichtlinie aktivieren.
 
@@ -192,7 +191,7 @@ Da wir unseren ersten Verkauf getätigt haben, wird der Artikel automatisch im A
 
 ## Schlussfolgerung und Empfehlungen:
 
-In Fall von albertoballesteros.com übernehme ich direkt die Erstellung der Produkte in der <code>json</code>-Datei. Für meine Kunden wäre dies jedoch mühsam. Stattdessen können sie die Produkte und ihre Eigenschaften in ein Google-Sheet (Excel) eingeben und ich konvertiere dieses Format dann in eine <code>json</code>-Datei, die Eleventy weiterverarbeiten kann.
+In Fall von albertoballesteros.com übernehme ich direkt die Erstellung der Produkte in der `json`-Datei. Für meine Kunden wäre dies jedoch mühsam. Stattdessen können sie die Produkte und ihre Eigenschaften in ein Google-Sheet (Excel) eingeben und ich konvertiere dieses Format dann in eine `json`-Datei, die Eleventy weiterverarbeiten kann.
 
 Jeder Kunde hat individuelle Bedürfnisse. Shopify ist für viele die erste Wahl, weil es flexibel und einfach zu bedienen ist und ein gutes Preis-Leistungs-Verhältnis bietet. Auch einige große Unternehmen nutzen Shopify.
 
