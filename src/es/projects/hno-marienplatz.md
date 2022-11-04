@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy)
   - Diseño personalizado
   - Tailwind CSS
-  - JS "vainilla"
+  - Alpine.js & vanilla JS
 clientURL: https://www.hno-marienplatz.de
 image: './src/assets/images/projects/proyecto-hno-marienplatz.jpg'
 alt: 'captura de pantalla del sitio web hno-marienplatz.de'

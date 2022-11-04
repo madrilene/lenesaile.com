@@ -5,7 +5,7 @@ key: 'albertoballesteros'
 technologies:
   - Diseño personalizado
   - Tailwind CSS
-  - JS "vainilla"
+  - Alpine.js & vanilla JS
 clientURL: https://www.albertoballesteros.com
 image: './src/assets/images/projects/proyecto-alberto.jpg'
 alt: 'captura de pantalla del sitio web albertoballesteros.com'

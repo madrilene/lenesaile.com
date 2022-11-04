@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy)
   - Diseño personalizado
   - Tailwind CSS
-  - JS "vainilla"
+  - Alpine.js & vanilla JS
 clientURL: https://www.ineliagestion.com
 image: './src/assets/images/projects/proyecto-inelia.jpg'
 alt: 'captura de pantalla del sitio web ineliagestion.com'

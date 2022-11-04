@@ -109,7 +109,9 @@ Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Hay mucho qu
 
 ## Conclusión
 
-Cuando descubrí WordPress, me ofreció una idea de lo que iba a significar la "experiencia del desarrollador" en el futuro. Hoy en día, más del 40% de todos las páginas web dependen de WordPress[^2]. Es una construcción enorme con mucha responsabilidad que no puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/) (los pocos desarrolladores que lo usan se adaptan fácilmente). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos hoy.
+Cuando descubrí WordPress, me ofreció una idea de lo que iba a significar la "experiencia del desarrollador" en el futuro. Hoy en día, más del 40% de todos las páginas web dependen de WordPress[^2].
+
+Es enorme y tiene mucha responsabilidad. No puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos hoy.
 
 ### ¿Qué es Wordpress para mí?
 

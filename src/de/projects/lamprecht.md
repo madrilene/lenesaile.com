@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy)
   - Custom design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Alpine.js & vanilla JS
 clientURL: https://www.lamprecht-rechtsanwaelte.de
 image: './src/assets/images/projects/proyecto-lamprecht.jpg'
 alt: 'Screenshot der Website lamprecht-rechtsanwaelte.de'

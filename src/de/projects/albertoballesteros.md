@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy, Stripe)
   - Custom design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Alpine.js & vanilla JS
 clientURL: https://www.albertoballesteros.com
 image: './src/assets/images/projects/proyecto-alberto.jpg'
 alt: 'Screenshot der Website albertoballesteros.com'

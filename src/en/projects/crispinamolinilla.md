@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy)
   - Custom design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Alpine.js & vanilla JS
 clientURL: https://www.crispinaymolinilla.com
 image: './src/assets/images/projects/proyecto-crispinaymolinilla.jpg'
 alt: 'screenshot of the website crispinaymolinilla.com'

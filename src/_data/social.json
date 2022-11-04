@@ -10,6 +10,11 @@
     "icon": "twitter.svg"
   },
   {
+    "platform": "mastodon",
+    "url": "https://fosstodon.org/@Lene",
+    "icon": "mastodon.svg"
+  },
+  {
     "platform": "linkedin",
     "url": "https://www.linkedin.com/in/lenesaile/",
     "icon": "linkedin.svg"

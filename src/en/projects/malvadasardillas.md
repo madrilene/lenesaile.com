@@ -3,10 +3,10 @@ title: malvadasardillas.com
 date: 2021-08-01
 key: 'malvadasardillas'
 technologies:
-  - Wordpress
+  - Wordpress (Timber)
   - Custom design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Alpine.js & vanilla JS
 clientURL: https://www.malvadasardillas.com
 image: './src/assets/images/projects/proyecto-malvadas.jpg'
 alt: 'screenshot of the website malvadasardillas.com'

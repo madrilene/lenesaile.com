@@ -109,7 +109,9 @@ On the other hand, some clients are notoriously afraid of breaking things. There
 
 ## Conclusion
 
-Back when I discovered WordPress, it offered me an idea of what Developer Experience would mean in the future. Today, more than 40% of all websites depend on WordPress[^2]. It's a huge construct with a lot of responsibility that can't just do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/) (the few developers that use it adapt easily). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know today.
+Back when I discovered WordPress, it offered me an idea of what Developer Experience would mean in the future. Today, more than 40% of all websites depend on WordPress[^2].
+
+It's a huge construct with a lot of responsibility that can't just do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know today.
 
 ### What is WordPress to me?
 

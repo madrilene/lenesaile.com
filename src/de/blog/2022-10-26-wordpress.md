@@ -109,7 +109,9 @@ Andererseits haben manche Kunden notorische Angst, etwas kaputt zu machen. Mit d
 
 ## Fazit
 
-Damals, als ich WordPress entdeckte, bot es mir eine Idee davon was Developer Experience zukünftig bedeuten würde. Heute hängen mehr als 40% aller Webseiten von WordPress ab[^2]. Es ist ein riesiges Konstrukt mit großer Verantwortung, das nicht wie moderne meta-frameworks wie [Astro](https://astro.build/) in der nächsten Version einfach alles nochmal anders und besser machen kann (die paar Entwickler die es nutzen passen sich da problemlos an). Und weil WordPress sich so langsam bewegen muss, kommt es gerade erst in der modernen JavaScript- und React-Welt an (und das, wo die ersten Vordenker React bereits wieder hinter sich lassen wollen).
+Damals, als ich WordPress entdeckte, bot es mir eine Idee davon was Developer Experience zukünftig bedeuten würde. Heute hängen mehr als 40% aller Webseiten von WordPress ab[^2].
+
+Es ist ein riesiges Konstrukt mit großer Verantwortung, das nicht wie moderne meta-frameworks wie [Astro](https://astro.build/) in der nächsten Version einfach alles nochmal anders und besser machen kann. Und weil WordPress sich so langsam bewegen muss, ist ein kleiner Teil davon gerade erst in der JavaScript- und React-Welt angekommen, die wir heute kennen.
 
 ### Was ist WordPress für mich?
 
