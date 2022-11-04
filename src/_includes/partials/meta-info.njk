@@ -27,7 +27,7 @@
 <title>
   {% if seo.title %} {{ seo.title }}
   {% elif title %}
-  {{ title }}
+  {{ title }} | {{ meta[locale].siteName }}
   {% else %}
   {{ meta[locale].siteName }}
   {% endif %}

@@ -1,7 +1,5 @@
 ---
 title: Was ich mache
-seo:
-  title: Was ich mache
 permalink: /{{ locale }}/leistungen/index.html
 key: 'services'
 description: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Und: Webseiten sollen Spaß machen!'

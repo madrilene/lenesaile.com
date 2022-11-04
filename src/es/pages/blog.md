@@ -1,7 +1,5 @@
 ---
 title: Blog
-seo:
-  title: Blog
 permalink: /{{ locale }}/blog/index.html
 redirectFrom: [/blog/]
 key: 'blog'

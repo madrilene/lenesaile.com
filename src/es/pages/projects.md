@@ -1,7 +1,5 @@
 ---
 title: Proyectos
-seo:
-  title: Proyectos
 permalink: /{{ locale }}/proyectos/index.html
 redirectFrom: [/proyectos/]
 key: 'projects'

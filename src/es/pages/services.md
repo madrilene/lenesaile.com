@@ -1,7 +1,5 @@
 ---
 title: Lo que hago
-seo:
-  title: Lo que hago
 permalink: /{{ locale }}/servicios/index.html
 redirectFrom: [/servicios/]
 key: 'services'

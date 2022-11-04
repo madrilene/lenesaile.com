@@ -1,7 +1,5 @@
 ---
 title: Política de privacidad
-seo:
-  title: Política de privacidad
 permalink: /{{ locale }}/privacidad/index.html
 redirectFrom: [/privacidad/]
 key: 'privacy'

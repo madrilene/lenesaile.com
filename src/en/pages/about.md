@@ -1,7 +1,5 @@
 ---
 title: About me
-seo:
-  title: About me
 permalink: /{{ locale }}/about/index.html
 key: 'about'
 description: "I'm a developer and designer in Madrid who has been building for the web professionally since 2008."

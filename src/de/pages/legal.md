@@ -1,7 +1,5 @@
 ---
 title: Impressum
-seo:
-  title: Impressum
 permalink: /{{ locale }}/impressum/index.html
 key: 'legal'
 description: Verpflichtende Infos zu Eigentümer und Verantworktlichkeit für meine Website

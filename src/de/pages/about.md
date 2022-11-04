@@ -1,7 +1,5 @@
 ---
 title: Über mich
-seo:
-  title: Über mich
 permalink: /{{ locale }}/ueber/index.html
 key: 'about'
 description: 'Ich arbeite als freie Webentwicklerin und Designerin in Madrid. Seit 2008 erstelle ich Websites und Webapps.'

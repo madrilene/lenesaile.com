@@ -1,7 +1,5 @@
 ---
 title: Sobre mi
-seo:
-  title: 'Sobre mi: desarrolladora web y diseñadora basada en Madrid'
 permalink: /{{ locale }}/sobre/index.html
 redirectFrom: [/sobre/]
 key: 'about'

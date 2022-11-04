@@ -1,7 +1,5 @@
 ---
-title: Aviso legal – Lene Saile
-seo:
-  title: Aviso legal
+title: Aviso legal
 permalink: /{{ locale }}/aviso-legal/index.html
 redirectFrom: [/aviso-legal/]
 key: 'legal'
