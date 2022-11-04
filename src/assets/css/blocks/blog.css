@@ -68,6 +68,12 @@
   line-height: 1.5em;
 }
 
+.blog .toc-list .toc-list {
+  list-style: none;
+  opacity: 0.7;
+  padding-inline-start: 0;
+}
+
 .blog hr.footnotes-sep {
   border-top: 1px var(--color-text);
   width: 100%;

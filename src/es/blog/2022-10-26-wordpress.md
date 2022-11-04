@@ -109,6 +109,10 @@ Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Hay mucho qu
 
 ## Conclusión
 
+Cuando descubrí WordPress, me ofreció una idea de lo que iba a significar la "experiencia del desarrollador" en el futuro. Hoy en día, más del 40% de todos las páginas web dependen de WordPress[^2]. Es una construcción enorme con mucha responsabilidad que no puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/) (los pocos desarrolladores que lo usan se adaptan fácilmente). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos hoy.
+
+### ¿Qué es Wordpress para mí?
+
 Para mí, WordPress es una cosa por encima de todo: Un CMS gratuito y muy flexible que muchos de mis clientes ya conocen. Me interesa menos el hecho de que un tema pueda ser sustituido en cualquier momento por otro.
 
 Desarrollo un sitio web especialmente para las necesidades del cliente. Debe ser rápido, accesible y seguro, e idealmente durar unos cuantos años si se mantiene bien.
@@ -116,3 +120,4 @@ Desarrollo un sitio web especialmente para las necesidades del cliente. Debe ser
 Esta página web a medida puede o no utilizar WordPress como CMS. Eso depende del proyecto y es algo que mis clientes y yo decidimos juntos.
 
 [^1]: https://patchstack.com/whitepaper/the-state-of-wordpress-security-in-2021/
+[^2]: https://w3techs.com/technologies/details/cm-wordpress
