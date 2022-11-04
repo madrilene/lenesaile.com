@@ -24,7 +24,7 @@ blog:
   intro: 'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes.'
 cta:
   title: '¡Ponte en contacto!'
-  desktop: ' ¿Acabas de abrir un restaurante?, ¿Diseñas ropa y necesitas un shop?, ¿Eres coach?, ¿Actriz, actor, cantante?, ¿Has montado una empresa de reformas?, ¿Un primo te hizo una página hace 10 años y va fatal?...'
+  desktop: ' ¿Acabas de abrir un restaurante?, ¿Diseñas ropa y necesitas un shop?, ¿Eres coach?, ¿Actriz, actor, cantante?'
   lead: '¡Mándame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesta a charlar'
 ---
 

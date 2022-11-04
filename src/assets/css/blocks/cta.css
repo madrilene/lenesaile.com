@@ -8,3 +8,11 @@
 .cta section {
   font-size: var(--size-step-1);
 }
+
+.cta {
+  --spot-color: linear-gradient(5deg, rgb(178, 43, 59) 0, var(--color-primary) 71%);
+}
+
+.cta svg {
+  --spot-color: var(--color-primary);
+}

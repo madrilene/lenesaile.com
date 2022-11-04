@@ -7,7 +7,7 @@ image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'Das WordPress-Logo mit etwas php-Code im Hintergrund'
 cta:
   title: 'Brauchst du Hilfe mit WordPress?'
-  desktop: 'IIch arbeite schon seit vielen Jahren mit WordPress. Ich erstelle individuelle WordPress-Themes, die wirklich schnell und sicher sind. '
+  desktop: 'Ich arbeite schon seit vielen Jahren mit WordPress. Ich erstelle individuelle WordPress-Themes, die wirklich schnell und sicher sind. '
   lead: 'Hast du eine Idee für ein Projekt und weißt nicht, wie du es umsetzen kannst? Lass uns darüber reden! Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähle mir mehr davon.'
 ---
 
