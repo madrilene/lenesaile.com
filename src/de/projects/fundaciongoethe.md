@@ -6,7 +6,7 @@ technologies:
   - Jamstack (Eleventy)
   - Custom design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Vanilla JS
 clientURL: https://www.fundaciongoethe.org
 image: './src/assets/images/projects/proyecto-fundaciongoethe.jpg'
 alt: 'Screenshot der Website fundaciongoethe.org'

@@ -5,7 +5,7 @@ key: 'kk'
 technologies:
   - Wordpress with ACF, Gravity Forms, WPML
   - Tailwind CSS
-  - Custom minimal vanilla JS
+  - Custom JS
 clientURL: https://www.kanzlei-koenigstrasse.de
 image: './src/assets/images/projects/proyecto-koenigstrasse.jpg'
 alt: 'Screenshot der Website kanzlei-koenigstrasse.de'

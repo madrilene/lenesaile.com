@@ -4,3 +4,7 @@
   padding: 0 0.3rem;
   border-radius: var(--border-radius);
 }
+
+.cta section {
+  font-size: var(--size-step-1);
+}

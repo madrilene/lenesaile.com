@@ -19,9 +19,10 @@ layout: base
     </div>
 
     <div class="snapshot">
-      {% image hero.image, "", "object-fit-cover", hero.alt, "eager", " (max-width: 510px)
-      500px, (max-width: 639px) 900px, (max-width: 830px) 500px, 900px" %} {% include
-      'svg/arrow.svg' %}
+      {% image hero.image, "", "object-fit-cover", hero.alt, "eager", " (min-width: 43rem)
+      50vw, 100vw" %}
+      <!-- this is me -->
+      {% include 'svg/arrow.svg' %}
       <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
     </div>
   </div>

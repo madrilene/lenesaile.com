@@ -31,7 +31,7 @@
   grid-row: 2 / 4;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 43em) {
   .hero .welcome {
     grid-column: 1;
     grid-row: 1 / 5;

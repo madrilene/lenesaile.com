@@ -1,10 +1,10 @@
 ---
 title: Lene Saile
 seo:
-  title: Home
+  title: Lene Saile, Webentwicklerin und Designerin in Madrid
 permalink: /{{ locale }}/index.html
 key: 'home'
-description:
+description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.
 layout: home
 hero:
   title: Ich erstelle barrierefreie, optimierte Websites nach Maß.

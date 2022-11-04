@@ -54,7 +54,7 @@ nav.navbar ul {
   justify-content: flex-start;
   flex-direction: var(--nav-list-layout);
   flex-wrap: wrap;
-  gap: 0.3rem;
+  gap: 0.45rem 0.3rem;
   height: var(--nav-list-height);
   list-style: none;
   margin: 0;
@@ -76,7 +76,7 @@ nav.navbar a {
   border-radius: var(--border-radius);
 }
 
-@media (min-width: 41em) {
+@media (min-width: 50em) {
   nav.navbar ul {
     justify-content: flex-end;
     gap: var(--space-xs);

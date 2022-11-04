@@ -11,7 +11,7 @@ cta:
   lead: '¿Tienes un proyecto en mente y no sabes cómo llevarlo a cabo? ¡Hablemos de ello! Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tus ideas'
 ---
 
-En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https://www.joomla.org/) y [TYPO](https://typo3.org/) (y odiarlo), descubrí [WordPress](https://wordpress.org/). Fue una revelación. Sigo pensando que es una gran solución para páginas web complejas. Es extremadamente potente y personalizable, y no me siento demasiado limitada como desarrolladora para crear cualquier cosa que tenga en mente. Sin embargo, algunos desprecian el CMS, diciendo que es inseguro e hinchado. Me gustaría compartir brevemente mis pensamientos personales sobre el estado actual de WordPress, y por qué todavía me gusta usarlo.
+En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https://www.joomla.org/) y [TYPO3](https://typo3.org/) (y odiarlo), descubrí [WordPress](https://wordpress.org/). Fue una revelación. Sigo pensando que es una gran solución para páginas web complejas. Es extremadamente potente y personalizable, y no me siento demasiado limitada como desarrolladora para crear cualquier cosa que tenga en mente. Sin embargo, algunos desprecian el CMS, diciendo que es inseguro e hinchado. Me gustaría compartir brevemente mis pensamientos personales sobre el estado actual de WordPress, y por qué todavía me gusta usarlo.
 
 {% include "partials/toc.njk" %}
 

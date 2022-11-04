@@ -1,10 +1,10 @@
 ---
 title: Lene Saile
 seo:
-  title: Home
+  title: Lene Saile, developer and designer based in Madrid
 permalink: /{{ locale }}/index.html
 key: 'home'
-description: I'm a developer and designer based in Madrid who has been building for the web professionally since 2008.
+description: I'm a developer and designer based in Madrid who has been building for the web professionally since 2008. I make accessible, highly optimized custom websites.
 layout: home
 hero:
   title: I make accessible, highly optimized custom websites.

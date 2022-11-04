@@ -4,9 +4,9 @@ date: 2022-03-01
 key: 'inesalba'
 technologies:
   - Jamstack (Eleventy)
-  - Diseño personalizado
+  - Custom design
   - Tailwind CSS
-  - JS "vainilla"
+  - Vanilla JS
 clientURL: https://www.inesalba.es
 image: './src/assets/images/projects/proyecto-inesalba.jpg'
 alt: 'screenshot of the website  inesalba.es'
