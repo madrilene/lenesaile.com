@@ -69,7 +69,18 @@ layout: base
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections["blog_" + locale] %} {% for post in postslist.slice(0,
-    4) %} {% include "partials/blog-loop.njk" %} {% endfor %}
+    4) %} {% if post.data.type %} {% else %}
+
+    <li class="card flow clickable-card overflow-hidden blog">
+      <h2>
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+
+      {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <p>{{ post.data.description }}</p>
+    </li>
+
+    {% endif %} {% endfor %}
   </ul>
 </article>
 
