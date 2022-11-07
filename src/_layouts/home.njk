@@ -65,7 +65,7 @@ layout: base
     <h2>{{ blog.title }}</h2>
     <p>{{ blog.intro }}</p>
   </div>
-  <!-- TODO: duplicate of partials/blog-loop.njk -->
+  <!-- TODO: duplicate of partials/blog-loop.njk, Solution excluding notes ist not really good. -->
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
     {% set postslist = collections["blog_" + locale] %} {% for post in postslist.slice(0,
