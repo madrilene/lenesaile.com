@@ -20,6 +20,26 @@ const limit = (array, limit) => {
 const where = (arrayOfObjects, keyPath, value) =>
   arrayOfObjects.filter(object => lodash.get(object, keyPath) === value);
 
+/** must include all tags in each file's `tags` array front matter. */
+const every = (coll = [], propName = '', requiredProps = []) => {
+  if (requiredProps.length === 0) {
+    return coll;
+  }
+  return coll.filter(page =>
+    requiredProps.every(prop => lodash.get(page, propName)?.includes(prop))
+  );
+};
+
+/** can include some tags in each file's `tags` array front matter. */
+const some = (coll = [], propName = '', optionalProps = []) => {
+  if (optionalProps.length === 0) {
+    return coll;
+  }
+  return coll.filter(page =>
+    optionalProps.some(prop => lodash.get(page, propName)?.includes(prop))
+  );
+};
+
 /** Converts the given markdown string to HTML, returning it as a string. */
 const toHtml = markdownString => {
   return markdownLib.renderInline(markdownString);
@@ -84,6 +104,8 @@ const mdInline = (content, opts) => {
 module.exports = {
   limit,
   where,
+  every,
+  some,
   toHtml,
   toISOString,
   formatDate,

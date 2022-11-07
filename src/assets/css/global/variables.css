@@ -19,6 +19,7 @@
   --color-text: var(--color-dark);
   --color-text-code: var(--color-light);
   --color-primary: var(--color-primary-light);
+  --color-primary-shade: var(--color-primary-shade-light);
   --color-secondary: var(--color-secondary-light);
   --color-tertiary: var(--color-tertiary-light);
   --color-quaternary: var(--color-quaternary-light);
@@ -33,6 +34,7 @@
     --color-text: var(--color-light);
     --color-text-code: var(--color-light);
     --color-primary: var(--color-primary-dark);
+    --color-primary-shade: var(--color-primary-shade-dark);
     --color-secondary: var(--color-secondary-dark);
     --color-tertiary: var(--color-tertiary-dark);
     --color-quaternary: var(--color-quaternary-dark);
@@ -46,6 +48,7 @@
   --color-text: var(--color-light);
   --color-text-code: var(--color-light-code);
   --color-primary: var(--color-primary-dark);
+  --color-primary-shade: var(--color-primary-shade-dark);
   --color-secondary: var(--color-secondary-dark);
   --color-tertiary: var(--color-tertiary-dark);
   --color-quaternary: var(--color-quaternary-dark);

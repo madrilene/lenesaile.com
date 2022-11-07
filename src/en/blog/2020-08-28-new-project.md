@@ -3,6 +3,8 @@ title: 'A new project: from planning to publication'
 description: 'Every project starts with planning. This way I can get a more concrete feel for the project. I study websites from the same industry and look for inspiration.'
 key: 'newproject'
 date: 2020-08-28
+tags:
+  - blog
 ---
 
 ## Planning and design

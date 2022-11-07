@@ -15,6 +15,8 @@ const {
   limit,
   toHtml,
   where,
+  every,
+  some,
   toISOString,
   formatDate,
   formatDateES,
@@ -69,13 +71,14 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('services', 'services.njk');
   eleventyConfig.addLayoutAlias('projects', 'projects.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
-  eleventyConfig.addLayoutAlias('contact', 'contact.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('limit', limit);
   eleventyConfig.addFilter('where', where);
+  eleventyConfig.addFilter('every', every);
+  eleventyConfig.addFilter('some', some);
   eleventyConfig.addFilter('escape', escape);
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);

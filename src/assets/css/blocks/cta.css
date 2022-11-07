@@ -9,8 +9,23 @@
   font-size: var(--size-step-1);
 }
 
+/* .cta .section__inner {
+  --spot-color: conic-gradient(
+    var(--color-primary) 12%,
+    var(--color-primary) 28%,
+    var(--color-primary-shade) 28%,
+    var(--color-primary-shade) 78%,
+    var(--color-primary) 78%,
+    var(--color-primary) 100%
+  );
+} */
+
 .cta {
-  --spot-color: linear-gradient(5deg, rgb(178, 43, 59) 0, var(--color-primary) 71%);
+  --spot-color: linear-gradient(
+    5deg,
+    var(--color-primary-shade) 0,
+    var(--color-primary) 71%
+  );
 }
 
 .cta svg {

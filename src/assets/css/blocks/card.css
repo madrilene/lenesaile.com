@@ -7,21 +7,38 @@
   max-width: unset;
 }
 
+.card.note {
+  background: var(--color-dark);
+}
+
+.card.note span {
+  font-size: var(--size-step-0);
+  background: var(--color-quaternary);
+  border-radius: var(--border-radius);
+  padding: 0.1rem 0.4rem;
+  color: var(--color-dark);
+  margin-right: var(--gutter);
+}
+
+.card.note p {
+  font-size: var(--size-step-0);
+}
+
 .card ::selection {
   color: var(--color-bg);
   background: var(--color-secondary);
 }
 
-.card h2 {
+.card:not(.note) h2 {
   font-size: var(--size-step-3);
 }
 
-.card:hover,
+.card:not(.note):hover,
 .card:focus-within {
   border: 3px solid var(--color-quaternary);
 }
 
-.card a {
+.card:not(.note) a {
   text-decoration: none;
 }
 

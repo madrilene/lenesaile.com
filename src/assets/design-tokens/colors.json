@@ -23,6 +23,14 @@
       "value": "hsl(0, 55%, 59%)"
     },
     {
+      "name": "Primary Shade Light",
+      "value": "hsl(0, 61%, 48%)"
+    },
+    {
+      "name": "Primary Shade Dark",
+      "value": "hsl(0, 41%, 48%)"
+    },
+    {
       "name": "Secondary Light",
       "value": "hsl(230, 75%, 59%)"
     },

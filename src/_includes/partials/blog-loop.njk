@@ -1,0 +1,24 @@
+<ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+  {% set postslist = collections["blog_" + locale] %} {% for post in postslist %} {% if
+  post.data.type == "note" %}
+
+  <li class="card flow overflow-hidden note">
+    <span> Quick note</span>
+    {% set definedDate = post.date %} {% include "partials/date.njk" %}
+
+    {{ post.data.content | safe }}
+  </li>
+
+  {% else %}
+
+  <li class="card flow clickable-card overflow-hidden blog">
+    <h2>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h2>
+
+    {% set definedDate = post.date %} {% include "partials/date.njk" %}
+    <p>{{ post.data.description }}</p>
+  </li>
+
+  {% endif %} {% endfor %}
+</ul>

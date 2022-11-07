@@ -5,8 +5,11 @@ layout: base
 <article class="region blog" style="--region-space-top: var(--space-4xl)">
   <div class="wrapper flow content">
     <h1 class="gradient-text">{{ title }}</h1>
+    <!-- date -->
+    {% set definedDate = date %} {% include "partials/date.njk" %}
 
-    {% set definedDate = date %} {% include "partials/date.njk" %} {% if image %}
+    <!-- image -->
+    {% if image %}
 
     <div class="decoration">
       {% image image, "", "object-fit-cover", alt, "eager", "(min-width: 1690px) 50vw,

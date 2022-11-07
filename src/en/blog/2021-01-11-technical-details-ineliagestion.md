@@ -9,6 +9,8 @@ cta:
   title: 'Interested in Jamstack?'
   desktop: "The Jamstack method works incredibly well for small business websites. I am really passionate about this development philosophy, so I'm happy to tell you all about it!"
   lead: "Do you have a project in mind? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com)."
+tags:
+  - notes
 ---
 
 I have just added to the [projects section](/en/projects/) one of the pages I made last fall.
