@@ -22,4 +22,9 @@ layout: base
   {% include 'svg/divider-curve.svg' %}
 </header>
 
-<article class="wrapper region">{% include "partials/blog-loop.njk" %}</article>
+<article class="wrapper region">
+  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
+    {% set postslist = collections["blog_" + locale] %} {% for post in postslist %} {%
+    include "partials/blog-loop.njk" %} {% endfor %}
+  </ul>
+</article>

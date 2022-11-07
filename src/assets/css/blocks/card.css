@@ -34,7 +34,7 @@
 }
 
 .card:not(.note):hover,
-.card:focus-within {
+.card:not(.note):focus-within {
   border: 3px solid var(--color-quaternary);
 }
 
