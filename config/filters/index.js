@@ -40,6 +40,13 @@ const some = (coll = [], propName = '', optionalProps = []) => {
   );
 };
 
+/** filter by category. */
+const categoryFilter = (collection, category) => {
+  if (!category) return collection;
+  const filtered = collection.filter(item => item.data.category == category);
+  return filtered;
+};
+
 /** Converts the given markdown string to HTML, returning it as a string. */
 const toHtml = markdownString => {
   return markdownLib.renderInline(markdownString);
@@ -106,6 +113,7 @@ module.exports = {
   where,
   every,
   some,
+  categoryFilter,
   toHtml,
   toISOString,
   formatDate,

@@ -1,6 +1,7 @@
 ---
 title: 'SEO positioning vs. advertising campaigns'
 description: 'More than 90% of interactions start with Google. If your company does not appear in the search results, how are users going to find you?'
+category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
 image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'

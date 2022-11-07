@@ -1,6 +1,7 @@
 ---
 title: 'Nuevo shop para albertoballesteros.com: Eleventy y Snipcart'
 description: 'Un sitio web rápido y seguro - ¡y con una apariencia que lo refleja! - es crucial para un shop. albertoballesteros.com es un sitio web estático basado en el método de Jamstack.'
+category: blogpost
 key: 'storealberto'
 date: 2022-02-15
 image: './src/assets/images/blog/shop.jpg'

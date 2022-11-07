@@ -1,4 +1,4 @@
-{% if post.data.type %}
+{% if post.data.category == "note" %}
 
 <li class="card flow overflow-hidden note">
   <span> Quick note</span>
@@ -9,7 +9,7 @@
 
 {% else %}
 
-<li class="card flow clickable-card overflow-hidden blog">
+<li class="card flow clickable-card overflow-hidden">
   <h2>
     <a href="{{ post.url | url }}">{{ post.data.title }}</a>
   </h2>

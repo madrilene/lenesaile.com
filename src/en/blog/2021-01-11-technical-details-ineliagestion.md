@@ -1,6 +1,7 @@
 ---
 title: 'Technical details about the development of ineliagestion.com'
 description: 'ineliagestion.com was developed with a new method, the Jamstack. This technique is oriented to the early days of web development, when all web pages were static.'
+category: blogpost
 key: 'ineliadevelopment'
 date: 2021-01-11
 image: './src/assets/images/blog/proyecto-inelia-gestion.png'

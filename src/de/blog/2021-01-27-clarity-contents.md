@@ -1,6 +1,7 @@
 ---
 title: 'Gedanken über klar strukturierte Inhalte'
 description: 'Die Übersichtlichkeit des Inhalts ist eines der wichtigsten Merkmale. Ein schönes Design nützt wenig, wenn der Besucher nichts versteht und die Seite frustriert verlässt.'
+category: blogpost
 key: 'contentsclarity'
 date: 2021-01-27
 image: './src/assets/images/blog/importancia-claridad-de-contenidos-pagina-web.jpg'

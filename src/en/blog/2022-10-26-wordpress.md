@@ -1,6 +1,7 @@
 ---
 title: 'Some random personal notes on using WordPress in 2022'
 description: 'Back in 2007, I discovered WordPress. It never stopped being a great solution for complex custom websites, which is why I am still using it, 15 years later.'
+category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 image: './src/assets/images/blog/wordpress-notes.jpg'

@@ -1,6 +1,7 @@
 ---
 title: 'Einige Gedanken zu WordPress im Jahr 2022'
 description: '2007 entdeckte ich WordPress. Es war immer eine großartige Lösung für komplexe benutzerdefinierte Websites, weshalb ich es auch 15 Jahre später immer noch nutze.'
+category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 image: './src/assets/images/blog/wordpress-notes.jpg'

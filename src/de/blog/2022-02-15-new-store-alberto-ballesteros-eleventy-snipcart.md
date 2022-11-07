@@ -1,6 +1,7 @@
 ---
 title: 'Neuer Shop für albertoballesteros.com: Eleventy und Snipcart'
 description: 'Eine schnelle und sichere Website - und ein Look and Feel, das dies widerspiegelt - ist entscheidend für einen Shop.'
+category: blogpost
 key: 'storealberto'
 date: 2022-02-15
 image: './src/assets/images/blog/shop.jpg'

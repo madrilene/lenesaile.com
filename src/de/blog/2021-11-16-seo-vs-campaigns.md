@@ -1,6 +1,7 @@
 ---
 title: 'SEO-Positionierung vs. Werbekampagnen'
 description: 'Mehr als 90 % der Interaktionen beginnen mit Google. Wenn dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann finden?'
+category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
 image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'

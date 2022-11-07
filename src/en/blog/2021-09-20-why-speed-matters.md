@@ -1,6 +1,7 @@
 ---
 title: 'Why speed matters. Thoughts about web performance'
 description: 'Web performance is about everyone being able to access a website quickly, no matter what the internet conditions are or what device is being used.'
+category: blogpost
 key: 'speedmatters'
 date: 2021-09-20
 cta:

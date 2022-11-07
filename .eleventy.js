@@ -17,6 +17,7 @@ const {
   where,
   every,
   some,
+  categoryFilter,
   toISOString,
   formatDate,
   formatDateES,
@@ -79,6 +80,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('where', where);
   eleventyConfig.addFilter('every', every);
   eleventyConfig.addFilter('some', some);
+  eleventyConfig.addFilter('categoryFilter', categoryFilter);
   eleventyConfig.addFilter('escape', escape);
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);

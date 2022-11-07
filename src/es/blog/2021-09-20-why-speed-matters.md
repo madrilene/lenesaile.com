@@ -1,6 +1,7 @@
 ---
 title: 'Por qué la velocidad es importante'
 description: 'El rendimiento de la web consiste en que todo el mundo pueda acceder rápidamente a una página web sin tener que superar obstáculos innecesarios.'
+category: blogpost
 key: 'speedmatters'
 date: 2021-09-20
 cta:

@@ -1,6 +1,7 @@
 ---
 title: 'Algunas notas personales sobre WordPress en 2022'
 description: 'En 2007, descubrí WordPress. Nunca dejó de ser una gran solución para páginas web complejas y personalizadas, por lo que todavía lo estoy usando, 15 años después.'
+category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 image: './src/assets/images/blog/wordpress-notes.jpg'

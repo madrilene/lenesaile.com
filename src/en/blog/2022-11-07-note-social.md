@@ -1,8 +1,8 @@
 ---
 title: 'My Social Media by the end of 2022'
+category: note
 key: 'socialmedia2022'
 date: 2022-11-07
-type: note
 excludeFromSitemap: true
 ---
 

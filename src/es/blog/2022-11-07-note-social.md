@@ -1,8 +1,8 @@
 ---
 title: 'Mis redes sociales a finales de 2022'
 key: 'socialmedia2022'
+category: note
 date: 2022-11-07
-type: note
 excludeFromSitemap: true
 ---
 

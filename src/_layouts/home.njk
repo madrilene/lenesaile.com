@@ -68,10 +68,10 @@ layout: base
   <!-- TODO: duplicate of partials/blog-loop.njk, Solution excluding notes ist not really good. -->
 
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog_" + locale] %} {% for post in postslist.slice(0,
-    4) %} {% if post.data.type %} {% else %}
+    {% set postslist = collections["blog_" + locale] | categoryFilter("blogpost") %} {%
+    for post in postslist.slice(0, 4) %} {% if post.data.type %} {% else %}
 
-    <li class="card flow clickable-card overflow-hidden blog">
+    <li class="card flow clickable-card overflow-hidden">
       <h2>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </h2>
