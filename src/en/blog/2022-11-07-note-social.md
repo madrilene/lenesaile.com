@@ -6,4 +6,4 @@ type: note
 excludeFromSitemap: true
 ---
 
-Twitter is a bit weird right now. Too bad, because it was the only social platform I was actively using. [I am now on Mastodon](https://front-end.social/@lene)! I'm mainly interested in a rich timeline about web development, so I chose the server front-end.social. On Linkedin I still have a profile, but I don't link it on my site anymore. I don't use the platform, and to be honest, I don't understand it.
+Twitter is a bit weird right now. It was the only social platform I was actively using (mostly on the on the consuming side). [I am now on Mastodon](https://front-end.social/@lene). I'm mainly interested in a rich dev-related timeline, so I chose the server front-end.social. On Linkedin I still have a profile, but I chose to not link to it anymore. I don't use the platform, and to be honest, I don't understand it.

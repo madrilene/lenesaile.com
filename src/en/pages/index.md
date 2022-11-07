@@ -23,8 +23,8 @@ blog:
   title: 'Blog'
   intro: "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important."
 cta:
-  title: 'Get in touch!'
-  desktop: "Have you opened a restaurant? Do you design clothes and need a shop? Are you a coach? An actress, actor, singer? Have you set A cousin made you a website 10 years ago and it's going badly?..."
+  title: "Let's talk!"
+  desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 

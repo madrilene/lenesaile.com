@@ -23,9 +23,9 @@ blog:
   title: 'Blog'
   intro: 'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes.'
 cta:
-  title: '¡Ponte en contacto!'
-  desktop: ' ¿Acabas de abrir un restaurante?, ¿Diseñas ropa y necesitas un shop?, ¿Eres coach?, ¿Actriz, actor, cantante?'
-  lead: '¡Mándame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesta a charlar'
+  title: '¡Hablemos!'
+  desktop: 'Un proyecto tiene éxito en Internet cuando se ve bien, se siente bien y funciona con tecnología limpia y segura. Desde 2008 creo experiencias web atractivas con atención al detalle.'
+  lead: '¡Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesto a charlar.'
 ---
 
 Me aseguro de que un sitio web sea ==rápido y cargue sólo lo necesario==. El visitante debe poder orientarse inmediatamente y el sitio web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier discapacidad.

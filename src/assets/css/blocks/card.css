@@ -42,6 +42,6 @@
   text-decoration: none;
 }
 
-.card:focus-within a:focus {
+.card:not(.note):focus-within a:focus {
   outline: none;
 }

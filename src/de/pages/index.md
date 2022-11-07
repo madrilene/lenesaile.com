@@ -23,9 +23,9 @@ blog:
   title: 'Blog'
   intro: 'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte.'
 cta:
-  title: 'Nimm Kontakt auf!'
-  desktop: 'Hast du ein Restaurant eröffnet? Entwirfst du Kleidung und brauchst einen Shop? Bist du Coach, Schauspielerin, Sänger? '
-  lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt.'
+  title: 'Lass uns reden!'
+  desktop: 'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.'
+  lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
 Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass der Besucher sich sofort zurechtfindet und dass die Website ==zugänglich und nutzbar für alle Menschen== ist, unabhängig von einer möglichen Behinderung.
