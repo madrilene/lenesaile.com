@@ -7,20 +7,12 @@
   max-width: unset;
 }
 
-.card.note {
-  background: var(--color-quaternary);
-  color: var(--color-dark);
-  padding: var(--space-m-l);
-  border-color: var(--color-quaternary);
-  max-width: unset;
-}
-
 .card.note span {
   font-size: var(--size-step-0);
-  background: var(--color-dark);
+  background: var(--color-quaternary);
   border-radius: var(--border-radius);
   padding: 0.1rem 0.4rem;
-  color: var(--color-light);
+  color: var(--color-dark);
   margin-right: var(--gutter);
 }
 
