@@ -45,7 +45,7 @@ Por lo tanto, es importante optimizar los sitios web especialmente para los tel�
 
 ==El rendimiento no es una función adicional de la que se pueda encargar más tarde. Por el contrario, debe incluirse en cada paso del proceso de desarrollo.==
 
-Esto se ve a menudo con las plantillas de Wordpress: primero se carga el tema multifuncional completo y montones de plugins, y luego se instala otro plugin que se supone que minimiza y optimiza automáticamente todo lo anterior. ¡Y eso teniendo en cuenta que el propio [WordPress es realmente rápido](/es/blog/algunas-notas-personales-sobre-wordpress-en-2022/#wordpress-es-gratuito-seguro-y-rapido)!
+Esto se ve a menudo con las plantillas de WordPress: primero se carga el tema multifuncional completo y montones de plugins, y luego se instala otro plugin que se supone que minimiza y optimiza automáticamente todo lo anterior. ¡Y eso teniendo en cuenta que el propio [WordPress es realmente rápido](/es/blog/algunas-notas-personales-sobre-wordpress-en-2022/#wordpress-es-gratuito-seguro-y-rapido)!
 
 Sin embargo, sólo hay un número muy limitado de posibilidades que pueden conducir a un aumento de la velocidad con poco esfuerzo.
 

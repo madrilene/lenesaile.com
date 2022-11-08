@@ -44,7 +44,7 @@ Deshalb ist es wichtig, Websites speziell für Mobiltelefone zu optimieren, vor 
 
 ==Performance ist keine Zusatzfunktion, um die man sich später kümmern kann. Stattdessen muss sie in jeden Schritt des Entwicklungsprozesses einbezogen werden.==
 
-Das sehe ich oft bei WordPress-Themes: Erst werden jede Menge Plugins und das komplette multifunktionale Theme geladen, und dann wird noch ein Plugin installiert, das alles automatisch wieder minimieren und optimieren soll. Und das, obwohl [Wordpress selbst wirklich schnell ist](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/#wordpress-ist-kostenlos-sicher-und-schnell)!
+Das sehe ich oft bei WordPress-Themes: Erst werden jede Menge Plugins und das komplette multifunktionale Theme geladen, und dann wird noch ein Plugin installiert, das alles automatisch wieder minimieren und optimieren soll. Und das, obwohl [WordPress selbst wirklich schnell ist](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/#WordPress-ist-kostenlos-sicher-und-schnell)!
 
 Es gibt jedoch nur eine sehr begrenzte Anzahl von Möglichkeiten, die mit wenig Aufwand zu einer Geschwindigkeitssteigerung führen können.
 

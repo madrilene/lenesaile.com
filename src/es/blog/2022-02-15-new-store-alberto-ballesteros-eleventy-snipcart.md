@@ -197,7 +197,7 @@ Cada cliente tiene necesidades individuales. Shopify es la primera opción para 
 
 Para los páginas web de Jamstack en los que la tienda es más bien un complemento, Snipcart y Stripe son grandes soluciones con su combinación de fácil configuración y profunda personalización.
 
-Para una web de Wordpress, el propio plugin Woocommerce del CMS es un clásico. También es posible combinar Wordpress con otros soluciones de tiendas.
+Para una web de WordPress, el propio plugin Woocommerce del CMS es un clásico. También es posible combinar WordPress con otros soluciones de tiendas.
 
 ## ¿Cuál es la mejor solución para una tienda online?
 

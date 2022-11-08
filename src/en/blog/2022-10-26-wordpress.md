@@ -30,11 +30,11 @@ Also, a lot of clients have worked with the WordPress backend before and they ar
 
 ## What’s there to dislike?
 
-The following thoughts refer to working with Wordpress in the backend _and_ frontend, not to a solution as headless CMS.
+The following thoughts refer to working with WordPress in the backend _and_ frontend, not to a solution as headless CMS.
 
 ### You have to do it their way
 
-With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With Wordpress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are given to me, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior.
+With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With WordPress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are given to me, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior.
 
 ### Site builders, no thanks
 
@@ -66,7 +66,7 @@ For manual backups and migration between local development, staging and deployme
 
 In a nutshell, FSE is the extension of the [Gutenberg Editor](https://wordpress.org/gutenberg/) to the entire website. According to this principle, the entire theme is customizable directly in the backend using blocks. It's basically a built-in site builder.
 
-I can't say too much about it, since I have to still really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. Wordpress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there will be the possibility to opt in to fluid typography. That sounds great!
+I can't say too much about it, since I have to still really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. WordPress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there will be the possibility to opt in to fluid typography. That sounds great!
 
 A template part for the `header.html` looks like that:
 

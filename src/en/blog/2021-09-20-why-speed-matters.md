@@ -45,7 +45,7 @@ Therefore, it is important to optimize websites especially for cell phones, espe
 
 ==Performance is not an add-on function that can be taken care of later. Instead, it must be included in every step of the development process.==
 
-This is often seen with Wordpress themes: first lots of plugins, a site builder and a multifunctional theme are loaded, and then another plugin is installed on top, supposed to automatically minimize and optimize all of the above. And that's considering that [Wordpress itself is actually fast!](/en/blog/some-random-personal-notes-on-using-wordpress-in-2022/#wordpress-is-free-secure-and-fast)
+This is often seen with WordPress themes: first lots of plugins, a site builder and a multifunctional theme are loaded, and then another plugin is installed on top, supposed to automatically minimize and optimize all of the above. And that's considering that [WordPress itself is actually fast!](/en/blog/some-random-personal-notes-on-using-wordpress-in-2022/#wordpress-is-free-secure-and-fast)
 
 However, there are only a very limited number of possibilities that can lead to a speed increase with little effort.
 

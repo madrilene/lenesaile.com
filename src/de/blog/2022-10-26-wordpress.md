@@ -30,11 +30,11 @@ Außerdem haben viele Kunden bereits mit dem WordPress-Backend gearbeitet und si
 
 ## Was mir nicht an WordPress gefällt
 
-Die folgenden Überlegungen beziehen sich auf das Arbeiten mit Wordpress im Backend _und_ Frontend, also nicht auf eine Lösung als headless CMS.
+Die folgenden Überlegungen beziehen sich auf das Arbeiten mit WordPress im Backend _und_ Frontend, also nicht auf eine Lösung als headless CMS.
 
 ### Man muss sich anpassen
 
-Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Bei Wordpress ist es eher so, dass man sich für Dinge entscheiden muss, die man nicht will, und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung geht als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die mir zur Verfügung gestellt werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will.
+Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Bei WordPress ist es eher so, dass man sich für Dinge entscheiden muss, die man nicht will, und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung geht als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die mir zur Verfügung gestellt werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will.
 
 ### Website-Builder, nein danke
 
@@ -66,7 +66,7 @@ Für manuelle Backups und Migration zwischen lokaler Entwicklung, Staging und De
 
 Kurz gesagt, ist FSE die Erweiterung des [Gutenberg Editor](https://wordpress.org/gutenberg/) auf die gesamte Website. Nach diesem Prinzip ist das gesamte Theme direkt im Backend mit "blocks" anpassbar. Es ist im Grunde ein eingebauter Site-Builder.
 
-Ich kann nicht allzu viel darüber sagen, da ich mich erst noch richtig einarbeiten muss. In Anbetracht der Tatsache, dass es auf JavaScript basiert und ein komponentenähnliches Konzept hat, wird es mir vielleicht irgendwann gefallen, damit zu entwickeln. Wordpress wird nicht zu den alten PHP-templates zurückkehren und jede neue Version wird das Nutzen von block themes weiter vorantreiben.
+Ich kann nicht allzu viel darüber sagen, da ich mich erst noch richtig einarbeiten muss. In Anbetracht der Tatsache, dass es auf JavaScript basiert und ein komponentenähnliches Konzept hat, wird es mir vielleicht irgendwann gefallen, damit zu entwickeln. WordPress wird nicht zu den alten PHP-templates zurückkehren und jede neue Version wird das Nutzen von block themes weiter vorantreiben.
 
 Ein template part für die Datei `header.html` sieht so aus:
 

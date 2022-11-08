@@ -8,7 +8,7 @@ description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisier
 layout: home
 hero:
   title: Ich erstelle barrierefreie, optimierte Websites nach Maß.
-  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und Wordpress.
+  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und WordPress.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'

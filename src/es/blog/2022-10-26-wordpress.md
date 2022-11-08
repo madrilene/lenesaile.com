@@ -30,11 +30,11 @@ Además, muchos clientes han trabajado antes con el backend de WordPress y se si
 
 ## ¿Qué es lo que no me gusta?
 
-Las siguientes reflexiones se refieren al trabajo con Wordpress en el backend y el frontend, es decir, no a una solución como CMS sin cabeza.
+Las siguientes reflexiones se refieren al trabajo con WordPress en el backend y el frontend, es decir, no a una solución como CMS sin cabeza.
 
 ### Tienes que hacerlo a su manera
 
-Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con Wordpress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Tengo que trabajar con las clases CSS que me dan, y también tengo que eliminar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución.
+Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con WordPress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Tengo que trabajar con las clases CSS que me dan, y también tengo que eliminar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución.
 
 ### Site builders, no thanks
 
@@ -114,7 +114,7 @@ Cuando descubrí WordPress, me ofreció una idea de lo que iba a significar la "
 
 Es enorme y tiene mucha responsabilidad. No puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos hoy.
 
-### ¿Qué es Wordpress para mí?
+### ¿Qué es WordPress para mí?
 
 Para mí, WordPress es una cosa por encima de todo: Un CMS gratuito y muy flexible que muchos de mis clientes ya conocen. Me interesa menos el hecho de que un tema pueda ser sustituido en cualquier momento por otro.
 

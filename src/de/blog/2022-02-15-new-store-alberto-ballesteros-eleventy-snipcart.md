@@ -198,7 +198,7 @@ Jeder Kunde hat individuelle Bedürfnisse. Shopify ist für viele die erste Wahl
 
 Für Jamstack-Websites, bei denen der Shop eher ein Add-on ist, sind Snipcart und Stripe mit ihrer Kombination aus einfacher Einrichtung und großen Anpassungsmöglichkeiten eine perfekte Lösung.
 
-Für eine Wordpress-Website ist das CMS-eigene Woocommerce-Plugin ein Klassiker. Es ist auch möglich, Wordpress mit den anderen Shop-Lösungen zu kombinieren.
+Für eine WordPress-Website ist das CMS-eigene Woocommerce-Plugin ein Klassiker. Es ist auch möglich, WordPress mit den anderen Shop-Lösungen zu kombinieren.
 
 ## Was ist die beste Lösung für einen Online-Shop?
 

@@ -197,7 +197,7 @@ Each customer has individual needs. Shopify is the first choice for many because
 
 For Jamstack websites where the store is more of an add-on, Snipcart and Stripe are great solutions with their combination of easy setup and deep customization.
 
-For a Wordpress site, the CMS's own Woocommerce plugin is a classic. It is also possible to combine Wordpress with the other store solutions.
+For a WordPress site, the CMS's own Woocommerce plugin is a classic. It is also possible to combine WordPress with the other store solutions.
 
 ## What is the best solution for an online store?
 

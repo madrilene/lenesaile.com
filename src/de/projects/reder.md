@@ -3,7 +3,7 @@ title: reder162012.org
 date: 2022-01-01
 key: 'reder'
 technologies:
-  - Wordpress with ACF
+  - WordPress with ACF
   - Custom design
   - Tailwind CSS
   - Custom vanilla JS
