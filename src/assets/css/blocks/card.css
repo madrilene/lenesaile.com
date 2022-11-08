@@ -1,5 +1,5 @@
 .card {
-  background: var(--color-bg-code);
+  background-color: var(--color-bg-code);
   color: var(--color-light);
   padding: var(--space-m-l);
   border-radius: var(--border-radius);
@@ -9,7 +9,7 @@
 
 .card.note span {
   font-size: var(--size-step-0);
-  background: var(--color-quaternary);
+  background-color: var(--color-quaternary);
   border-radius: var(--border-radius);
   padding: 0.1rem 0.4rem;
   color: var(--color-dark);
@@ -22,7 +22,7 @@
 
 .card ::selection {
   color: var(--color-bg);
-  background: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 
 .card:not(.note) h2 {

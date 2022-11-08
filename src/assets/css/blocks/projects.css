@@ -11,7 +11,7 @@
 }
 
 .projects .visual {
-  background: var(--color-tertiary);
+  background-color: var(--color-tertiary);
 }
 .projects .visual,
 .projects .visual img {
@@ -57,7 +57,7 @@
 .projects .details {
   position: absolute;
   bottom: 0;
-  background: var(--color-bg-code);
+  background-color: var(--color-bg-code);
   color: var(--color-light);
   padding: 0 var(--space-m-l);
   border-radius: var(--border-radius);

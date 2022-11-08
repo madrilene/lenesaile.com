@@ -68,7 +68,7 @@ module.exports = {
         url: '/de/ueber/'
       },
       {
-        text: 'Leistungen',
+        text: 'Was ich mache',
         url: '/de/leistungen/'
       },
       {

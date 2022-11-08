@@ -49,7 +49,7 @@ nav.navbar {
 
 /* Remove default list styling and create layout for list */
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-bg));
+  background-color: var(--nav-list-background, var(--color-bg));
   display: flex;
   justify-content: flex-start;
   flex-direction: var(--nav-list-layout);
@@ -72,7 +72,7 @@ nav.navbar a {
   color: var(--nav-list-color, var(--color-text));
   padding: 0.1rem 0.3rem;
   text-decoration: none;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   border-radius: var(--border-radius);
 }
 
@@ -87,7 +87,7 @@ nav.navbar a {
   }
 
   nav.navbar a {
-    background: transparent;
+    background-color: transparent;
     border-radius: 0;
   }
 }

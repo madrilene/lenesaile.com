@@ -1,6 +1,6 @@
 .site-foot {
   padding: var(--space-m-l);
-  background: var(--color-bg);
+  background-color: var(--color-bg);
   color: var(--color-text);
   font-size: var(--size-step-0);
 }

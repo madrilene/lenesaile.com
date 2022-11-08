@@ -116,7 +116,7 @@ article [href^='http']:not([href*='lenesaile.com'])::after {
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-text);
+  background-color: var(--color-text);
   color: var(--color-bg);
 }
 

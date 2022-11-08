@@ -10,11 +10,11 @@
   margin-right: 0.5em;
   padding: var(--space-xs) var(--space-m-l);
   transform-style: preserve-3d;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
 }
 
 .button::before {
-  background: var(--button-color, var(--color-primary));
+  background-color: var(--button-color, var(--color-primary));
   border: 3px solid var(--button-color, var(--color-primary));
   border-radius: var(--border-radius);
 }
