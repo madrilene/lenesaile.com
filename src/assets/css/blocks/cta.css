@@ -20,8 +20,8 @@
   );
 } */
 
-.cta {
-  --spot-color: linear-gradient(
+.cta .section__inner {
+  background: linear-gradient(
     5deg,
     var(--color-primary-shade) 0,
     var(--color-primary) 71%
