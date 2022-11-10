@@ -34,7 +34,10 @@ The following thoughts refer to working with WordPress in the backend _and_ fron
 
 ### You have to do it their way
 
-With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With WordPress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior. I talk in more detail later in the text about my first impressions with this new model of WordPress.
+With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services, using programming languages and methods as you like. With WordPress, you're in a closed ecosystem, the "monolithic system", that Jamstack supporters use to refer to. I rather like the definition: formed from a single large block of stone. 😂
+In terms of WordPress, this means that it serves as a "one-size-fits-all" solution for the front-end and back-end of a website. This monolithic architecture limits the options for building a website and restricts us to the options that WordPress supports.
+
+Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior. I talk in more detail later in the text about my first impressions with this new model of WordPress.
 
 ### I'm not using page builders
 

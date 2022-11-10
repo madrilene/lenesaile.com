@@ -34,7 +34,10 @@ Las siguientes reflexiones se refieren al trabajo con WordPress en el backend y 
 
 ### Tienes que hacerlo a su manera
 
-Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con WordPress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución. Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
+Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios, utilizando lenguajes de programación y métodos a tu gusto. Con WordPress, estás en un ecosistema cerrado, el "sistema monolítico" que les gusta mencionar a los defensores de Jamstack. Me gusta la definición no técnica: "formado por un gran bloque de piedra". 😂
+En términos de WordPress, esto significa que sirve como una solución "única" para el front-end y el back-end de un sitio web. Esta arquitectura monolítica limita las posibilidades de construir una página web y nos restringe a las opciones que soporta WordPress.
+
+En lugar de añadir elementos de forma selectiva, a veces hay que excluir activamente lo que no se necesita. Y tengo la sensación, que los nuevos [Temas de bloque](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución. Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
 
 ### No uso page builders
 
