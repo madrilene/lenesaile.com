@@ -102,18 +102,18 @@ Como he dicho, todavía no me he acostumbrado. Mi primera impresión es que me l
 
 Sin embargo, me he propuesto aprenderlo, aunque sólo sea para entenderlo de verdad, y no para criticarlo sin justificación. El hecho de que no quiera trabajar profesionalmente con temas de bloque en este momento refleja simplemente mi nivel actual de conocimientos: no puedo en conciencia ofrecer servicios en un área que no controlo completamente.
 
+## ¿Qué pasa con Gutenberg?
+
+Creo que el editor Gutenberg es genial para los editores de contenido con experiencia, y para todos aquellos que quieran invertir algo de tiempo en aprenderlo. Puedes hacer un montón de diseños diferentes y crear entradas realmente interesantes (aunque no te excedas copiando cosas de la [biblioteca de patrones de WordPress](https://wordpress.org/patterns/), ya que esto añade peso a la página).
+
+Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Se puede hacer muchísimo con Gutenberg - y eso puede ser un poco abrumador. Algunos usuarios de WordPress sólo quieren el viejo editor de "Microsoft Word" de vuelta. Y tengo que decir que puedo entenderlo (por cierto, también hay maravillosos CMS en el mundo de Jamstack que tienen una experiencia de edición muy simple - estaré encantada de contarte más sobre ellos).
+
 ## Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
 
 Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como un CMS sin cabeza que alimenta un frontend de JavaScript a través de su REST API o WPGraphQL.
 
 Yo no me preocuparía demasiado por eso: ==Lo que sea adecuado para el proyecto.== A ningún usuario le importa con qué se construyó el sitio web, y a la mayoría de los clientes tampoco les importa. Por supuesto, comunico exactamente lo que recomiendo y por qué creo que es la mejor solución para el cliente según mi experiencia.
 Pero al final, lo que realmente importa es la calidad del producto.
-
-## ¿Qué pasa con Gutenberg?
-
-Creo que el editor Gutenberg es genial para los editores de contenido con experiencia, y para todos aquellos que quieran invertir algo de tiempo en aprenderlo. Puedes hacer un montón de diseños diferentes y crear entradas realmente interesantes (aunque no te excedas copiando cosas de la [biblioteca de patrones de WordPress](https://wordpress.org/patterns/), ya que esto añade peso a la página).
-
-Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Se puede hacer muchísimo con Gutenberg - y eso puede ser un poco abrumador. Algunos usuarios de WordPress sólo quieren el viejo editor de "Microsoft Word" de vuelta. Y tengo que decir que puedo entenderlo (por cierto, también hay maravillosos CMS en el mundo de Jamstack que tienen una experiencia de edición muy simple - estaré encantada de contarte más sobre ellos).
 
 ## Conclusión
 

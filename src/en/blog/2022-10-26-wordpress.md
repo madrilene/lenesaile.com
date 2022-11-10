@@ -102,18 +102,18 @@ As I mentioned, I haven't really got to grips with it yet. My first impression i
 
 Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticise it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
 
+## What about Gutenberg?
+
+I think the Gutenberg editor is great for experienced content editors, and for anyone who is willing to learn a bit about it. You can do a lot of different layouts and create really interesting posts (don't overdo copying stuff from the [WordPress pattern library](https://wordpress.org/patterns/) though, as this adds on to the page weight).
+
+On the other hand, some clients are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users just want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
+
 ## So what's the right technique to build a theme nowadays?
 
 It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a JavaScript frontend via its REST API or WPGraphQL.
 
 I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. Of course, I communicate exactly what I do and recommend and why I think this is the best solution for the customer.
 In the end, what really matters is the quality of the product.
-
-## What about Gutenberg?
-
-I think the Gutenberg editor is great for experienced content editors, and for anyone who is willing to learn a bit about it. You can do a lot of different layouts and create really interesting posts (don't overdo copying stuff from the [WordPress pattern library](https://wordpress.org/patterns/) though, as this adds on to the page weight).
-
-On the other hand, some clients are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users just want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
 
 ## Conclusion
 
