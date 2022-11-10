@@ -109,7 +109,7 @@ Pero al final, lo que realmente importa es la calidad del producto.
 
 Creo que el editor Gutenberg es genial para los editores de contenido con experiencia, y para todos aquellos que quieran invertir algo de tiempo en aprenderlo. Puedes hacer un montón de diseños diferentes y crear entradas realmente interesantes (aunque no te excedas copiando cosas de la [biblioteca de patrones de WordPress](https://wordpress.org/patterns/), ya que esto añade peso a la página).
 
-Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Hay mucho que puedes hacer con el editor Gutenberg - puede ser un poco abrumador. Algunos usuarios de WordPress sólo quieren el viejo editor de "Microsoft Word" de vuelta.
+Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Se puede hacer muchísimo con Gutenberg - y eso puede ser un poco abrumador. Algunos usuarios de WordPress sólo quieren el viejo editor de "Microsoft Word" de vuelta. Y tengo que decir que puedo entenderlo (por cierto, también hay maravillosos CMS en el mundo de Jamstack que tienen una experiencia de edición muy simple - estaré encantada de contarte más sobre ellos).
 
 ## Conclusión
 

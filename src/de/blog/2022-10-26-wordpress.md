@@ -109,11 +109,11 @@ Was am Ende aber wirklich zählt, ist die Qualität des Produkts.
 
 Ich denke, der Gutenberg-Editor ist großartig für erfahrene Content-Redakteure und für jeden, der bereit ist, ein wenig darüber zu lernen. Man kann viele verschiedene Layouts erstellen und wirklich interessante Beiträge verfassen (übertreibe es allerdings nicht mit dem Kopieren von Layouts aus der [[WordPress-Pattern-Bibliothek]](https://wordpress.org/patterns/), da das die Seite ziemlich langsam machen kann).
 
-Andererseits haben manche Kunden notorische Angst, etwas kaputt zu machen. Mit dem Gutenberg-Editor kann man eine Menge machen - er kann aber auch ein wenig überwältigend sein. Manche WordPress-Nutzer wünschen sich einfach den guten alten "Microsoft Word"-Editor zurück.
+Andererseits haben manche Kunden notorische Angst, etwas kaputt zu machen. Mit dem Gutenberg-Editor kann man eine Menge machen - er kann aber auch ein wenig überwältigend sein. Manche WordPress-Nutzer wünschen sich einfach den guten alten "Microsoft Word"-Editor zurück. Und ich muss sagen, dass ich das verstehen kann (übrigens gibt es in der Jamstack-Welt auch wunderbare CMS, die eine sehr einfache Benutzeroberfläche haben - ich erzähle dir gerne mehr darüber).
 
 ## Fazit
 
-Damals, als ich WordPress entdeckte, bot es mir eine Idee davon was Developer Experience zukünftig bedeuten würde. Heute hängen mehr als 40% aller Webseiten von WordPress ab[^2].
+Damals, als ich WordPress entdeckte, bot es mir eine Idee davon, was Developer Experience zukünftig bedeuten würde. Heute hängen mehr als 40% aller Webseiten von WordPress ab[^2].
 
 Es ist ein riesiges Konstrukt mit großer Verantwortung, das nicht wie moderne meta-frameworks wie [Astro](https://astro.build/) in der nächsten Version einfach alles nochmal anders und besser machen kann. Und weil WordPress sich so langsam bewegen muss, ist ein kleiner Teil davon gerade erst in der JavaScript- und React-Welt angekommen, die wir heute kennen.
 
