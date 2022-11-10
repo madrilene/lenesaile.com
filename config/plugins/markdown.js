@@ -33,7 +33,7 @@ const markdownLib = markdownIt({
     ul: 'list'
   })
   .use(markdownItTocDoneRight, {
-    placeholder: `{:toc}`, // same as Jekyll
+    placeholder: `{:toc}`,
     slugify: slugifyString,
     containerId: 'toc',
     listClass: 'toc-list',
@@ -41,14 +41,18 @@ const markdownLib = markdownIt({
     linkClass: 'toc-link',
     listType: 'ol'
   })
-  .use(markdownItLinkAttributes, {
-    // Only external links (explicit protocol; internal links use relative paths)
-    pattern: /^https?:/,
-    attrs: {
-      target: '_blank',
-      rel: 'noreferrer noopener'
+  .use(markdownItLinkAttributes, [
+    {
+      // match external links
+      matcher(href) {
+        return href.match(/^https?:\/\//);
+      },
+      attrs: {
+        target: '_blank',
+        rel: 'noreferrer noopener'
+      }
     }
-  })
+  ])
   .use(markdownItEmoji)
   .use(markdownItFootnote)
   .use(markdownitMark)

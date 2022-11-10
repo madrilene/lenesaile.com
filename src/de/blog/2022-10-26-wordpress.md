@@ -18,7 +18,7 @@ cta:
 
 ## Was ich an WordPress mag
 
-## WordPress ist kostenlos, sicher und schnell
+### WordPress ist kostenlos, sicher und schnell
 
 WordPress ist kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
 
