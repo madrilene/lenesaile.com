@@ -42,7 +42,7 @@ Instead of selectively adding elements, sometimes you have to actively exclude t
 
 ### I'm not using page builders
 
-I'm sure page builders (Elementor, Visual Composer...) make a lot of sense in some contexts, and most importantly, they allow many to enter the world of web development on their own, following the principle of "no code". However, as a developer with a particular focus on performance, I avoid them.
+I'm sure page builders (Elementor, Visual Composer...) make a lot of sense in some contexts, and most importantly, they allow many to enter the world of web development on their own, following the principle of "no code". However, as a developer with a particular focus on performance, I am not using them.
 
 Everything that adds an unnecessary weight to a web page is something I try to avoid. That brings me to the next thing I never really got friendly with: Themes that want to serve every possible use case.
 

@@ -42,7 +42,7 @@ Statt selektiv Elemente hinzuzufügen muss man stattdessen manchmal Dinge aktiv 
 
 ### Ich nutze keine Page-Builder
 
-Ich bin sicher, Page-Builder (Elementor, Visual Composer...) sind in einigen Zusammenhängen sehr sinnvoll und vor allem ermöglichen sie vielen den eigenständigen Zugang zur Welt der Webentwicklung, nach dem Prinzip "no code". Als Entwicklerin mit besonderem Augenmerk auf Performance vermeide ich sie allerdings.
+Ich bin sicher, Page-Builder (Elementor, Visual Composer...) sind in einigen Zusammenhängen sehr sinnvoll und vor allem ermöglichen sie vielen den eigenständigen Zugang zur Welt der Webentwicklung, nach dem Prinzip "no code". Als Entwicklerin mit besonderem Augenmerk auf Performance nutze ich sie nicht.
 
 Alles, was einer Webseite unnötiges Gewicht verleiht, versuche ich zu vermeiden. Das bringt mich zur nächsten Sache, mit der ich mich nie wirklich anfreunden konnte: Themes, die jeden möglichen Anwendungsfall bedienen wollen.
 
