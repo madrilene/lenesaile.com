@@ -34,7 +34,8 @@ Die folgenden Überlegungen beziehen sich auf das Arbeiten mit WordPress im Back
 
 ### Man muss sich anpassen
 
-Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Mit WordPress befindest du dich in einem geschlossenen Ökosystem, dem "monolithischen System", das die Befürworter von Jamstack gerne erwähnen. Mir gefällt die Definition: "aus einem einzigen großen Steinblock geformt". 😂
+Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Mit WordPress befindest du dich in einem geschlossenen Ökosystem, dem "monolithischen System", das die Befürworter von Jamstack gerne erwähnen. Mir gefällt die nicht-technische Definition: "aus einem einzigen großen Steinblock geformt". 😂
+
 In Bezug auf WordPress bedeutet dies, dass es als "One-size-fits-all"-Lösung für das Front-End und Back-End einer Website dient. Diese monolithische Architektur schränkt die Möglichkeiten für den Aufbau einer Website natürlich ein. Sie beschränkt uns auf die Optionen, die WordPress unterstützt.
 
 Statt selektiv Elemente hinzuzufügen muss man stattdessen manchmal Dinge aktiv ausklammern, die man nicht braucht. Und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung gehen als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die generiert werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will. Ich spreche später im Text noch etwas ausführlicher über meine ersten Eindrücke mit diesem neuen Modell.
