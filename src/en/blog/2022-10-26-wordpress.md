@@ -34,15 +34,17 @@ The following thoughts refer to working with WordPress in the backend _and_ fron
 
 ### You have to do it their way
 
-With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With WordPress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are given to me, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior.
+With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services and methods as you like. With WordPress it is more like having to opt out of stuff you don’t want, and I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior. I talk in more detail later in the text about my first impressions with this new model of WordPress.
 
-### Site builders, no thanks
+### I'm not using page builders
 
-I'm not a fan of site builders (Elementor, Visual Composer...). Everything that adds an unnecessary weight to a web page is something I try to avoid. That brings me to the next thing I never really got friendly with: Themes that want to serve every possible use case, available at theme marketplaces like ThemeForest.
+I'm sure page builders (Elementor, Visual Composer...) make a lot of sense in some contexts, and most importantly, they allow many to enter the world of web development on their own, following the principle of "no code". However, as a developer with a particular focus on performance, I avoid them.
 
-I have talked to a lot of people who bought a theme - they spent money and then they spent countless hours trying to configure everything. This then shall not be in vain. They want to save the broken, much too heavy theme.
+Everything that adds an unnecessary weight to a web page is something I try to avoid. That brings me to the next thing I never really got friendly with: Themes that want to serve every possible use case.
 
-Not always, but often, it is a mess. I saw a theme loading more than 100 different script files. I have not counted the stylesheets. It took the site more than 10 seconds to load on my fiber-optic internet connection.
+I have talked to a lot of people who bought a theme and then they spent countless hours trying to configure everything.
+
+Not always, but often, it is a mess. Not because they haven't done it right. But because some themes just try to solve every problem, to serve every industry. I have seen a theme that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection. Of course, you can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customised theme that only includes what you really need.
 
 ## How I am working with WordPress
 
@@ -92,15 +94,16 @@ A template part for the `header.html` looks like that:
 
 It certainly is something you have to get used to. It’s like writing code with comments.
 
-As I said, I haven't quite gotten into it yet. But my impression after a few hours of playing around with the new system is that it rather limits me as a developer who is used to a great freedom of choice.
+As I mentioned, I haven't really got to grips with it yet. My first impression is that it limits me somewhat as a developer.
 
-I also think it is too complex and fiddly for the common client who just wants to publish a blog post. I guess, it most fits the needs and interests of professional web designers who until now made complete websites only in site builders, without touching code.
+Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticise it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
 
 ## So what's the right technique to build a theme nowadays?
 
 It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a JavaScript frontend via its REST API or WPGraphQL.
 
-I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. What really matters is the quality of the product.
+I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. Of course, I communicate exactly what I do and recommend and why I think this is the best solution for the customer.
+In the end, what really matters is the quality of the product.
 
 ## What about Gutenberg?
 

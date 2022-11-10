@@ -34,15 +34,17 @@ Las siguientes reflexiones se refieren al trabajo con WordPress en el backend y 
 
 ### Tienes que hacerlo a su manera
 
-Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con WordPress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Tengo que trabajar con las clases CSS que me dan, y también tengo que eliminar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución.
+Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo depende de ti, añadiendo servicios y métodos a tu gusto. Con WordPress es más como tener desactivar cosas que no quieres, y siento que [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución. Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
 
-### Site builders, no thanks
+### No uso page builders
 
-No soy fan de los constructores de sitios (Elementor, Visual Composer...). Todo lo que añade un peso innecesario a una página web es algo que intento evitar. Eso me lleva a la siguiente cosa con la que nunca me he hecho amiga: Los temas que quieren servir para todos los casos de uso posibles, disponibles en los mercados de temas como ThemeForest.
+Estoy segura de que los page builders (Elementor, Visual Composer...) tienen mucho sentido en algunos contextos y, sobre todo, permiten a muchos entrar en el mundo del desarrollo web por su cuenta, siguiendo el principio de "no code". Sin embargo, como desarrolladora con un enfoque particular en el rendimiento, no uso page builders.
 
-He hablado con muchas personas que compraron un tema - gastaron dinero y luego pasaron incontables horas tratando de configurar todo.
+Todo lo que añade un peso innecesario a una página web es algo que intento evitar. Eso me lleva a la siguiente cosa con la que nunca me he hecho amigo: Los temas que quieren servir a todos los casos de uso posibles.
 
-No siempre, pero a menudo, es un desastre. He visto un tema que carga más de 100 archivos de script diferentes. No he contado las hojas de estilo CSS. La web tardó más de 10 segundos en cargar en mi conexión de internet de fibra óptica.
+He hablado con muchas personas que compraron un tema y luego pasaron incontables horas tratando de configurar todo.
+
+No siempre, pero a menudo, es un desastre. No porque no lo hayan hecho bien. Sino porque algunos temas tratan de resolver todos los problemas, de servir a todos los sectores. He visto un tema que cargaba más de 100 archivos de script diferentes. No he contado las hojas de estilo. La página tardó más de 10 segundos en cargarse en mi conexión de internet de fibra. Por supuesto, se puede sacar mucho más rendimiento a estas páginas utilizando un CDN, optimizando los imagenes, activando la caché y demás, pero es mucho mejor tener un tema personalizado que sólo incluya lo que realmente necesitas.
 
 ## Cómo estoy trabajando con WordPress
 
@@ -92,15 +94,16 @@ Un "template part" para el `header.html` se ve así:
 
 Sin duda es algo a lo que hay que acostumbrarse. Es como escribir código a base de comentarios.
 
-Como he dicho, todavía no me he acostumbrado. Pero mi impresión después de unas horas jugando con el nuevo sistema es que me limita bastante como desarrolladora acostumbrada a una gran libertad de elección.
+Como he dicho, todavía no me he acostumbrado. Mi primera impresión es que me limita un poco como desarrolladora.
 
-También creo que es todavía demasiado complejo y engorroso para el cliente común que sólo quiere publicar una entrada de blog. Se ajusta más a las capacidades de los diseñadores web profesionales que hasta ahora hacían sitios web completos sólo en constructores de sitios, sin tocar el código.
+Sin embargo, me he propuesto aprenderlo, aunque sólo sea para entenderlo de verdad, y no para criticarlo sin justificación. El hecho de que no quiera trabajar profesionalmente con temas de bloque en este momento refleja simplemente mi nivel actual de conocimientos: no puedo en conciencia ofrecer servicios en un área que no controlo completamente.
 
 ## Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
 
-Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: temas en bloque, la clásica plantilla impulsada por PHP o WordPress como un CMS sin cabeza que alimenta un frontend de JavaScript a través de su REST API o WPGraphQL.
+Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como un CMS sin cabeza que alimenta un frontend de JavaScript a través de su REST API o WPGraphQL.
 
-Yo no me preocuparía demasiado por eso: ==Lo que sea adecuado para el proyecto.== A ningún usuario le importa con qué se construyó el sitio web, y a la mayoría de los clientes tampoco les importa. Lo que realmente importa es la calidad del producto.
+Yo no me preocuparía demasiado por eso: ==Lo que sea adecuado para el proyecto.== A ningún usuario le importa con qué se construyó el sitio web, y a la mayoría de los clientes tampoco les importa. Por supuesto, comunico exactamente lo que recomiendo y por qué creo que es la mejor solución para el cliente según mi experiencia.
+Pero al final, lo que realmente importa es la calidad del producto.
 
 ## ¿Qué pasa con Gutenberg?
 

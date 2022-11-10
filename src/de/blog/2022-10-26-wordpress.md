@@ -34,15 +34,17 @@ Die folgenden Überlegungen beziehen sich auf das Arbeiten mit WordPress im Back
 
 ### Man muss sich anpassen
 
-Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Bei WordPress ist es eher so, dass man sich für Dinge entscheiden muss, die man nicht will, und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung geht als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die mir zur Verfügung gestellt werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will.
+Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alles selbst in die Hand nehmen kann und Dienste und Methoden nach Belieben hinzufügen kann. Bei WordPress ist es eher so, dass man Dinge aktiv ausklammern muss, die man nicht will, und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung gehen als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die generiert werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will. Ich spreche später im Text noch etwas ausführlicher über meine ersten Eindrücke mit diesem neuen Modell.
 
-### Website-Builder, nein danke
+### Ich nutze keine Page-Builder
 
-Ich bin kein Fan von Website-Buildern (Elementor, Visual Composer...). Alles, was einer Webseite unnötiges Gewicht verleiht, versuche ich zu vermeiden. Das bringt mich zur nächsten Sache, mit der ich mich nie wirklich anfreunden konnte: Themes, die jeden möglichen Anwendungsfall bedienen wollen, erhältlich auf Theme-Marktplätzen wie ThemeForest.
+Ich bin sicher, Page-Builder (Elementor, Visual Composer...) sind in einigen Zusammenhängen sehr sinnvoll und vor allem ermöglichen sie vielen den eigenständigen Zugang zur Welt der Webentwicklung, nach dem Prinzip "no code". Als Entwicklerin mit besonderem Augenmerk auf Performance vermeide ich sie allerdings.
 
-Ich habe mit vielen Leuten gesprochen, die ein Theme gekauft haben - sie haben Geld ausgegeben und dann unzählige Stunden damit verbracht, alles zu konfigurieren. Das soll dann nicht umsonst gewesen sein. Das soll dann nicht umsonst gewesen sein. Das kaputte, viel zu schewere Theme soll gerettet werden.
+Alles, was einer Webseite unnötiges Gewicht verleiht, versuche ich zu vermeiden. Das bringt mich zur nächsten Sache, mit der ich mich nie wirklich anfreunden konnte: Themes, die jeden möglichen Anwendungsfall bedienen wollen.
 
-Nicht immer, aber ziemlich oft, ist es ein Desaster. Ich habe ein Theme gesehen, das mehr als 100 verschiedene Skriptdateien geladen hat. Die Stylesheets habe ich nicht mitgezählt. Die Seite brauchte mehr als 10 Sekunden, um auf meiner Glasfaser-Internetverbindung zu laden.
+Ich habe mit vielen Leuten gesprochen, die ein Theme gekauft haben und dann unzählige Stunden damit verbracht haben, alles zu konfigurieren.
+
+Nicht immer, aber ziemlich oft, ist es ein Desaster. Nicht, weil sie es nicht richtig gemacht haben. Sondern weil manche Themes einfach versuchen jedes Problem zu lösen, jede Branche zu bedienen. Ich habe ein Theme gesehen, das mehr als 100 verschiedene Skriptdateien geladen hat. Die Stylesheets habe ich nicht mitgezählt. Die Seite brauchte mehr als 10 Sekunden, um auf meiner Glasfaser-Internetverbindung zu laden. Natürlich kann man mit viel nachträglicher Arbeit auch aus diesen Seiten einiges rausholen, aber viel besser ist ein zugeschnittenes Theme, das von sich aus nur das mitbringt was wirklich benötigt wird.
 
 ## Wie ich mit WordPress arbeite
 
@@ -92,15 +94,16 @@ Ein template part für die Datei `header.html` sieht so aus:
 
 Daran muss man sich erst einmal gewöhnen.
 
-Wie ich schon sagte, habe ich mich noch nicht wirklich eingearbeitet. Aber nachdem ich ein paar Stunden mit damit herumgespielt habe, habe ich den Eindruck, dass es mich als Entwicklerin etwas einschränkt.
+Wie ich bereits erwähnte, habe ich mich noch nicht wirklich eingearbeitet. Mein erster Eindruck ist, dass es mich als Entwicklerin etwas einschränkt.
 
-Ich denke auch, dass es für den normalen Kunden, der nur mal einen Blogbeitrag veröffentlichen möchte, zu komplex und umständlich ist. Es entspricht am ehesten den Fähigkeiten professioneller Webdesigner, die bisher komplette Websites nur in Website-Buildern erstellt haben, ohne direkt code zu schreiben.
+Nichtsdestotrotz - ich habe mir vorgenommen das zu lernen, und sei es nur um es wirklich zu verstehen, und nicht unberechtigt zu kritisieren. Dass ich im Moment noch nicht damit arbeiten möchte spiegelt einfach nur meinen derzeitigen Kenntnisstand wider - ich kann nicht guten Gewissens Leistungen in einem Bereich anbieten, den ich nicht komplett kontrolliere.
 
 ## Was ist die richtige Technik, um heutzutage ein WordPress Theme zu erstellen?
 
 Es scheint, als würden alte und neue Techniken aufeinanderprallen. Es gibt viele Möglichkeiten, etwas mit WordPress zu bauen: Block-Themes, das klassische PHP-gesteuerte Templating oder WordPress als Headless-CMS, das ein JavaScript-Frontend über seine REST-API oder WPGraphQL speist.
 
-Ich würde mir darüber nicht allzu viele Gedanken machen: ==Was auch immer für das Projekt das Richtige ist==. Kein Besucher interessiert sich dafür, womit die Website erstellt wurde, und den meisten Kunden ist es auch egal. Was wirklich zählt, ist die Qualität des Produkts.
+Ich würde mir darüber nicht allzu viele Gedanken machen: ==Was auch immer für das Projekt das Richtige ist==. Kein Besucher interessiert sich dafür, womit die Website erstellt wurde, und den meisten Kunden ist es auch egal. Natürlich kommuniziere ich genau was ich empfehle und wieso ich denke dass dies meiner Erfahrung nach die beste Lösung für den Kunden ist.
+Was am Ende aber wirklich zählt, ist die Qualität des Produkts.
 
 ## Was ist mit Gutenberg?
 
