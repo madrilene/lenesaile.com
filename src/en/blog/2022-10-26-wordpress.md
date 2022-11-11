@@ -45,11 +45,11 @@ The following thoughts refer to working with WordPress in the backend _and_ fron
 
 ### You have to do it their way
 
-With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services, using programming languages and methods as you like. With WordPress, you're in a closed ecosystem, the "monolithic system", that Jamstack supporters use to refer to. I rather like the non-technical definition: "formed from a single large block of stone". 😂
+With WordPress, you have to do it their way. It is not like Jamstack, where everything is up to you, adding services, using programming languages and methods as you like. With WordPress, you're in a closed ecosystem, the "monolithic system", that Jamstack supporters often refer to. I rather like the non-technical definition: "formed from a single large block of stone". 😂
 
 In terms of WordPress, this means that it serves as a "one-size-fits-all" solution for the front-end and back-end of a website. This monolithic architecture limits the options for building a website and restricts us to the options that WordPress supports.
 
-Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior. I talk in more detail later in the text about my first impressions with this new model of WordPress.
+Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior (without unnecessary extra scripts being loaded. Every kilobyte counts.). I talk in more detail later in the text about my first impressions with this new model of WordPress.
 
 ### I'm not using page builders
 
@@ -59,17 +59,17 @@ Everything that adds an unnecessary weight to a web page is something I try to a
 
 I have talked to a lot of people who bought a theme and then they spent countless hours trying to configure everything.
 
-Not always, but often, it is a mess. Not because they haven't done it right. But because some themes just try to solve every problem, to serve every industry. I have seen a theme that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection. Of course, you can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customised theme that only includes what you really need.
+Not always, but often, it is a mess. Not because they haven't done it right. But because some themes just try to solve every problem, to serve every industry. I have seen a theme/plugins combination that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection. Of course, you can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customized theme that only includes what you really need.
 
 ## How I am working with WordPress
 
 Transforming WordPress Sites to Jamstack or using WordPress as a headless CMS is what I most concentrated on recently.
 
-When working natively with WordPress, I’m making sure it is as fast as possible by using custom made vanilla JS only where necessary. Also, I’m using a build pipeline to only push optimized assets to production.
+When working natively with WordPress, I’m making sure it is as fast as possible by writing vanilla JS only where necessary - JavaScript is often required to guarantee accessibility. Also, I’m using a build pipeline to only push optimized assets to production.
 
-==I try to make everything as easy and obvious as possible.== I leave clues and instructions in the editable sections and I make introduction videos where I explain every important detail of the website.
+==I try to make everything as easy and obvious as possible.== I leave clues and instructions in the editable sections and, depending on the scope of the project, I also create introduction videos where I explain every important detail of the website.
 
-Also, I value structure and order. I want to be able to understand my own themes in the future, but I also want subsequent developers to get along with the code I wrote.
+I value structure and order. I want to be able to understand my own themes in the future, but I also want subsequent developers to get along with the code I wrote.
 
 ### Plugins I usually install
 
@@ -85,7 +85,7 @@ For manual backups and migration between local development, staging and deployme
 
 In a nutshell, FSE is the extension of the [Gutenberg Editor](https://wordpress.org/gutenberg/) to the entire website. According to this principle, the entire theme is customizable directly in the backend using blocks. It's basically a built-in site builder.
 
-I can't say too much about it, since I have to still really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. WordPress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there will be the possibility to opt in to fluid typography. That sounds great!
+I can't say too much about it, since I have to still really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. WordPress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there is the possibility to opt in to fluid typography. That sounds great!
 
 A template part for the `header.html` looks like that:
 
@@ -113,7 +113,7 @@ It certainly is something you have to get used to. It’s like writing code with
 
 As I mentioned, I haven't really got to grips with it yet. My first impression is that it limits me somewhat as a developer.
 
-Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticise it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
+Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticize it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
 
 ## What about Gutenberg?
 

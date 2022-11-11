@@ -49,7 +49,7 @@ Con WordPress, tienes que hacerlo a su manera. No es como Jamstack, donde todo d
 
 En términos de WordPress, esto significa que sirve como una solución "única" para el front-end y el back-end de un sitio web. Esta arquitectura monolítica limita las posibilidades de construir una página web y nos restringe a las opciones que soporta WordPress.
 
-En lugar de añadir elementos de forma selectiva, a veces hay que excluir activamente lo que no se necesita. Y tengo la sensación, que los nuevos [Temas de bloque](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución. Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
+En lugar de añadir elementos de forma selectiva, a veces hay que excluir activamente lo que no se necesita. Y tengo la sensación, que los nuevos [Temas de bloque](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución (sin cargar scripts adicionales innecesarios. Cada kilobyte cuenta). Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
 
 ### No uso page builders
 
@@ -59,17 +59,17 @@ Todo lo que añade un peso innecesario a una página web es algo que intento evi
 
 He hablado con muchas personas que compraron un tema y luego pasaron incontables horas tratando de configurar todo.
 
-No siempre, pero a menudo, es un desastre. No porque no lo hayan hecho bien. Sino porque algunos temas tratan de resolver todos los problemas, de servir a todos los sectores. He visto un tema que cargaba más de 100 archivos de script diferentes. No he contado las hojas de estilo. La página tardó más de 10 segundos en cargarse en mi conexión de internet de fibra. Por supuesto, se puede sacar mucho más rendimiento a estas páginas utilizando un CDN, optimizando los imagenes, activando la caché y demás, pero es mucho mejor tener un tema personalizado que sólo incluya lo que realmente necesitas.
+No siempre, pero a menudo, es un desastre. No porque no lo hayan hecho bien. Sino porque algunos temas tratan de resolver todos los problemas, de servir a todos los sectores. He visto una combinación de tema/plugins que cargaba más de 100 archivos de script diferentes. No he contado las hojas de estilo. La página tardó más de 10 segundos en cargarse en mi conexión de internet de fibra. Por supuesto, se puede sacar mucho más rendimiento a estas páginas utilizando un CDN, optimizando los imagenes, activando la caché y demás, pero es mucho mejor tener un tema personalizado que sólo incluya lo que realmente necesitas.
 
 ## Cómo estoy trabajando con WordPress
 
 Transformar sitios de WordPress a Jamstack o usar WordPress como un CMS sin cabeza es en lo que más me he hecho últimamente.
 
-Al trabajar de forma nativa con WordPress, me estoy asegurando de que sea lo más rápido posible mediante el uso de JS hecho a medida y sólo cuando sea necesario. Además, estoy trabajando con un "build pipeline" para utilizar sólo archivos optimizados en la estructura final del tema.
+Al trabajar de forma nativa con WordPress, me estoy asegurando de que sea lo más rápido posible mediante el uso de JavaSCript sólo cuando sea necesario - se necesita JavaScript por ejemplo para garantizar la accesibilidad. Además, estoy trabajando con un "build pipeline" para utilizar sólo archivos optimizados en la estructura final del tema.
 
-==Trato de hacer todo lo más fácil y obvio posible.== Dejo pistas e instrucciones en las secciones editables y hago videos de introducción donde explico cada detalle importante de la página.
+==Trato de hacer todo lo más fácil y obvio posible.== Dejo pistas e instrucciones en las secciones editables y, dependiendo del alcance del proyecto, también creo videos de introducción donde explico cada detalle importante de la página.
 
-Además, valoro la estructura y el orden. Quiero ser capaz de entender mis propios temas en el futuro, pero también quiero que los desarrolladores posteriores entiendan el código que escribí.
+Valoro la estructura y el orden. Quiero ser capaz de entender mis propios temas en el futuro, pero también quiero que los desarrolladores posteriores entiendan el código que escribí.
 
 ### Plugins que suelo instalar
 

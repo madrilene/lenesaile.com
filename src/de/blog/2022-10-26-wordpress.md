@@ -25,7 +25,7 @@ Ich denke immer noch, dass es eine großartige Lösung für komplexe benutzerdef
 
 WordPress ist komplett kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
 
-WordPress-Websites werden gern gehackt, das ist einfach eine Tatsache. Aber das gilt auch für andere Seiten im Internet. Nun ist es im Falle von WordPress so, dass sehr _sehr_ viele Websites das System nutzen. Hacker kennen das System und mögliche Schwachstellen. Und diese Schwachstellen schaffen wir normalerweise selbst, und nicht Wordpress.
+WordPress-Websites werden gern gehackt, das ist einfach eine Tatsache. Aber das gilt auch für andere Seiten im Internet. Nun ist es im Falle von WordPress so, dass sehr _sehr_ viele Websites das System nutzen. Hacker kennen das System und mögliche Schwachstellen. Und diese Schwachstellen schaffen wir normalerweise selbst, und nicht WordPress.
 
 Was wir effizient gegen hacking-Versuche unternehmen können ist ein eigener Blog-Post, aber hier einer der wichtigsten Tipps: suche dir eine gute Hosting-Plattform. Es lohnt sich in jedem Falle hier ein bisschen mehr Geld auszugeben! Ein gutes Hosting hat auch ein gutes Service-Team das dir schnell weiterhilft wenn es ein Problem gibt. Alles weitere ist, wie gesagt, außerhalb des Rahmens dessen was ich hier eigentlich schreiben möchte. Aber wisse: wenn man es richtig macht, ist es sehr schwer für Hacker an deine Daten zu kommen oder deine Website anzugreifen.
 
@@ -49,7 +49,7 @@ Bei WordPress muss man sich anpassen. Es ist nicht wie bei Jamstack, wo man alle
 
 In Bezug auf WordPress bedeutet dies, dass es als "One-size-fits-all"-Lösung für das Front-End und Back-End einer Website dient. Diese monolithische Architektur schränkt die Möglichkeiten für den Aufbau einer Website natürlich ein. Sie beschränkt uns auf die Optionen, die WordPress unterstützt.
 
-Statt selektiv Elemente hinzuzufügen muss man stattdessen manchmal Dinge aktiv ausklammern, die man nicht braucht. Und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung gehen als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die generiert werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will. Ich spreche später im Text noch etwas ausführlicher über meine ersten Eindrücke mit diesem neuen Modell.
+Statt selektiv Elemente hinzuzufügen muss man stattdessen manchmal Dinge aktiv ausklammern, die man nicht braucht. Und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung gehen als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die generiert werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will (ohne dass unnötige zusätzliche Skripte geladen werden - jedes Kilobyte zählt). Ich spreche später im Text noch etwas ausführlicher über meine ersten Eindrücke mit diesem neuen Modell.
 
 ### Ich nutze keine Page-Builder
 
@@ -59,15 +59,15 @@ Alles, was einer Webseite unnötiges Gewicht verleiht, versuche ich zu vermeiden
 
 Ich habe mit vielen Leuten gesprochen, die ein Theme gekauft haben und dann unzählige Stunden damit verbracht haben, alles zu konfigurieren.
 
-Nicht immer, aber ziemlich oft, ist es ein Desaster. Nicht, weil sie es nicht richtig gemacht haben. Sondern weil manche Themes einfach versuchen jedes Problem zu lösen, jede Branche zu bedienen. Ich habe ein Theme gesehen, das mehr als 100 verschiedene Skriptdateien geladen hat. Die Stylesheets habe ich nicht mitgezählt. Die Seite brauchte mehr als 10 Sekunden, um auf meiner Glasfaser-Internetverbindung zu laden. Natürlich kann man mit viel nachträglicher Arbeit auch aus diesen Seiten einiges rausholen, aber viel besser ist ein zugeschnittenes Theme, das von sich aus nur das mitbringt was wirklich benötigt wird.
+Nicht immer, aber ziemlich oft, ist es ein Desaster. Nicht, weil sie es nicht richtig gemacht haben. Sondern weil manche Themes einfach versuchen jedes Problem zu lösen, jede Branche zu bedienen. Ich habe eine Theme/Plugin-Kombination gesehen, die mehr als 100 verschiedene Skriptdateien geladen hat. Die Stylesheets habe ich gar nicht erst mitgezählt. Die Seite brauchte mehr als 10 Sekunden, um auf meiner Glasfaser-Internetverbindung zu laden. Natürlich kann man mit viel nachträglicher Arbeit auch aus diesen Seiten einiges rausholen, aber viel besser ist ein zugeschnittenes Theme, das von sich aus nur das mitbringt was wirklich benötigt wird.
 
 ## Wie ich mit WordPress arbeite
 
 Die Übertragung von WordPress-Sites in Jamstack oder die Verwendung von WordPress als Headless CMS ist das, worauf ich mich in letzter Zeit am meisten konzentriert habe.
 
-Wenn ich nativ mit WordPress arbeite, sorge ich dafür, dass es so schnell wie möglich ist, indem ich maßgeschneidertes Javascript nur dort einsetze, wo es nötig ist. Außerdem verwende ich eine "Build-Pipeline", um nur optimierte Assets in der endgültigen Theme-Struktur zu verwenden.
+Wenn ich nativ mit WordPress arbeite, sorge ich dafür, dass es so schnell wie möglich ist, indem ich (reines) Javascript nur einsetze, wo es nötig ist - JavaScript wird zum Beispiel benötigt um Barrierefreiheit zu garantieren. Außerdem verwende ich eine "Build-Pipeline", um nur optimierte Assets in der endgültigen Theme-Struktur zu verwenden.
 
-==Ich versuche, alles so einfach und offensichtlich wie möglich zu machen.== Ich hinterlasse Hinweise und Anleitungen in den bearbeitbaren Bereichen und mache Einführungsvideos, in denen ich jedes wichtige Detail der Website erkläre.
+==Ich versuche, alles so einfach und offensichtlich wie möglich zu machen.== Ich hinterlasse Hinweise und Anleitungen in den bearbeitbaren Bereichen und erstelle, je nach Projektumfang, auch Einführungsvideos, in denen ich jedes wichtige Detail der Website erkläre.
 
 Außerdem lege ich Wert auf Struktur und Ordnung. Ich möchte, dass Themes für mich selbst in Zukunft nachvollziehbar sind, aber ich möchte auch, dass nachfolgende Entwickler mit dem von mir geschriebenen Code zurechtkommen.
 
