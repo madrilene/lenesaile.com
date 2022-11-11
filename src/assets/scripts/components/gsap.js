@@ -3,8 +3,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 export const gsapHighlight = () => {
   const marks = document.querySelectorAll('mark');
-  console.log(marks);
-
   marks.forEach(element => {
     element.classList.add('gsap-highlight');
   });
