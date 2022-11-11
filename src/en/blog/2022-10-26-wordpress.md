@@ -25,7 +25,7 @@ I still think that it's a great solution for complex custom websites. It's extre
 
 WordPress is completely free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
 
-WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say websites get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core.
+WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say _websites_ get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core.
 
 What we can do efficiently against hacking attempts is a separate blog post, but here is one of the most important tips: look for a good hosting platform. It's worth spending a little more money here! A good hosting also has a good service team that will help you quickly if there is a problem. Everything else is, as I said, outside the scope of what I want to write here. But know: if you do it right, it is very hard for hackers to get to your data or to exploit your website.
 
@@ -49,7 +49,7 @@ With WordPress, you have to do it their way. It is not like Jamstack, where ever
 
 In terms of WordPress, this means that it serves as a "one-size-fits-all" solution for the front-end and back-end of a website. This monolithic architecture limits the options for building a website and restricts us to the options that WordPress supports.
 
-Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior (without unnecessary extra scripts being loaded. Every kilobyte counts.). I talk in more detail later in the text about my first impressions with this new model of WordPress.
+Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior (without unnecessary extra scripts being loaded. Every kilobyte counts). I talk in more detail later in the text about my first impressions with this new model of WordPress.
 
 ### I'm not using page builders
 
