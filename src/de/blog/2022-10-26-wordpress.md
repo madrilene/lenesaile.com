@@ -25,7 +25,9 @@ Ich denke immer noch, dass es eine großartige Lösung für komplexe benutzerdef
 
 WordPress ist komplett kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
 
-WordPress-Websites werden gern gehackt, das ist einfach eine Tatsache. Aber das gilt auch für andere Seiten im Internet. Nun ist es im Falle von WordPress so, dass sehr _sehr_ viele Websites das System nutzen. Hacker kennen das System und mögliche Schwachstellen. Und diese Schwachstellen schaffen wir normalerweise selbst, und nicht Wordpress. Was wir effizient gegen hacking-Versuche unternehmen können ist ein eigener Blog-Post, aber hier einer der wichtigsten Tipps: suche dir eine gute Hosting-Plattform. Es lohnt sich in jedem Falle hier ein bisschen mehr Geld auszugeben! Ein gutes Hosting hat auch ein gutes Service-Team das dir schnell weiterhilft wenn es ein Problem gibt. Alles weitere ist, wie gesagt, außerhalb des Rahmens dessen was ich hier eigentlich schreiben möchte. Aber wisse: wenn man es richtig macht, ist es sehr schwer für Hacker an deine Daten zu kommen oder deine Website anzugreifen.
+WordPress-Websites werden gern gehackt, das ist einfach eine Tatsache. Aber das gilt auch für andere Seiten im Internet. Nun ist es im Falle von WordPress so, dass sehr _sehr_ viele Websites das System nutzen. Hacker kennen das System und mögliche Schwachstellen. Und diese Schwachstellen schaffen wir normalerweise selbst, und nicht Wordpress.
+
+Was wir effizient gegen hacking-Versuche unternehmen können ist ein eigener Blog-Post, aber hier einer der wichtigsten Tipps: suche dir eine gute Hosting-Plattform. Es lohnt sich in jedem Falle hier ein bisschen mehr Geld auszugeben! Ein gutes Hosting hat auch ein gutes Service-Team das dir schnell weiterhilft wenn es ein Problem gibt. Alles weitere ist, wie gesagt, außerhalb des Rahmens dessen was ich hier eigentlich schreiben möchte. Aber wisse: wenn man es richtig macht, ist es sehr schwer für Hacker an deine Daten zu kommen oder deine Website anzugreifen.
 
 Was die Geschwindigkeit angeht, empfehle ich dieses etwas wütende Video von Alex Young.
 
@@ -70,6 +72,8 @@ Wenn ich nativ mit WordPress arbeite, sorge ich dafür, dass es so schnell wie m
 Außerdem lege ich Wert auf Struktur und Ordnung. Ich möchte, dass Themes für mich selbst in Zukunft nachvollziehbar sind, aber ich möchte auch, dass nachfolgende Entwickler mit dem von mir geschriebenen Code zurechtkommen.
 
 ### Plugins, die ich normalerweise installiere
+
+Ich installiere nur Plugins von großen, sicheren Unternehmen, die zuverlässig und unmittelbar Patches bereit stellen, sobald eine Sicherheitslücke oder eine Inkompatibilität mit der neusten WordPress-Version auftaucht. Alles andere regle ich am liebsten selbst, direkt im Theme oder als eigenes Plugin. Grundsätzlich soll die Website mit so wenig Plugins wie möglich auskommen.
 
 [ACF Pro](https://www.advancedcustomfields.com/pro/) ist auf jeder Website, die ich erstelle. Ebenso [Yoast SEO](https://yoast.com/wordpress/plugins/seo/), [WP Rocket Pro](https://wp-rocket.me/es/) und [Siteground Security](https://www.siteground.com/blog/sg-security/).
 

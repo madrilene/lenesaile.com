@@ -25,7 +25,9 @@ I still think that it's a great solution for complex custom websites. It's extre
 
 WordPress is completely free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
 
-WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say websites get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core. What we can do efficiently against hacking attempts is a separate blog post, but here is one of the most important tips: look for a good hosting platform. It's worth spending a little more money here! A good hosting also has a good service team that will help you quickly if there is a problem. Everything else is, as I said, outside the scope of what I want to write here. But know: if you do it right, it is very hard for hackers to get to your data or to exploit your website.
+WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say websites get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core.
+
+What we can do efficiently against hacking attempts is a separate blog post, but here is one of the most important tips: look for a good hosting platform. It's worth spending a little more money here! A good hosting also has a good service team that will help you quickly if there is a problem. Everything else is, as I said, outside the scope of what I want to write here. But know: if you do it right, it is very hard for hackers to get to your data or to exploit your website.
 
 When it comes to speed, I recommend this slightly angry video made by Alex Young. It pretty much says it all.
 
@@ -70,6 +72,8 @@ When working natively with WordPress, I’m making sure it is as fast as possibl
 Also, I value structure and order. I want to be able to understand my own themes in the future, but I also want subsequent developers to get along with the code I wrote.
 
 ### Plugins I usually install
+
+I only install plugins from large, secure companies that provide reliable and immediate patches as soon as a security vulnerability or an incompatibility with the latest WordPress version appears. Everything else I prefer to regulate myself, directly in the theme or as a custom made plugin. Basically, the website should get by with as few plugins as possible.
 
 [ACF Pro](https://www.advancedcustomfields.com/pro/) is on every Website I build. So is [Yoast SEO](https://yoast.com/wordpress/plugins/seo/), [WP Rocket Pro](https://wp-rocket.me/es/) and [Siteground Security](https://www.siteground.com/blog/sg-security/).
 
