@@ -6,6 +6,7 @@ key: 'wordpressblog'
 date: 2022-10-26
 image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'The WordPress logo with some php code in the background.'
+youtube: true
 cta:
   title: 'Need help with WordPress?'
   desktop: 'I have been working with WordPress for many years. I create custom WordPress Themes that are really fast and secure.'
@@ -20,13 +21,19 @@ Back in 2007, I was looking for a CMS that I could understand so I could use it 
 
 ### WordPress is free, secure and fast
 
-WordPress is free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
+WordPress is completely free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
 
-WordPress is easy to optimize for SEO, has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
+WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say websites get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core. What we can do efficiently against hacking attempts is a separate blog post, but here is one of the most important tips: look for a good hosting platform. It's worth spending a little more money here! A good hosting also has a good service team that will help you quickly if there is a problem. Everything else is, as I said, outside the scope of what I want to write here. But know: if you do it right, it is very hard for hackers to get to your data or to exploit your website.
+
+When it comes to speed, I recommend this slightly angry video made by Alex Young. It pretty much says it all.
+
+{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+
+Also, WordPress is easy to optimize for SEO, has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
 
 The community is huge, and I have yet to encounter a problem that wasn't either already solved before or that I wasn't helped with instantly.
 
-Also, a lot of clients have worked with the WordPress backend before and they are comfortable with it.
+Finally, a very important point: WordPress has been around for a long time, many customers have already worked with the WordPress backend and are familiar with it.
 
 ## What’s there to dislike?
 

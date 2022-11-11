@@ -20,13 +20,19 @@ En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https:
 
 ### WordPress es gratuito, seguro y rápido
 
-WordPress es de uso gratuito y, si no la lías, es seguro y rápido. El otro día leí que ==El núcleo de WordPress es responsable de sólo el 0,6% de las vulnerabilidades, el otro 99,4% son hechas por plugins y temas==. [^1]
+WordPress es de uso completamente gratuito y, si no la lías, es seguro y rápido. El otro día leí que ==El núcleo de WordPress es responsable de sólo el 0,6% de las vulnerabilidades, el otro 99,4% son hechas por plugins y temas==. [^1]
 
-WordPress es fácil de optimizar para SEO, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
+Las páginas web hechas con WordPress pueden ser hackeados. Eso es un hecho. Pero, también pueden ser hackeados páginas que usaon otros sístemas. Podemos decir igualmente que páginas web pueden ser hackeados. Lo que ocurre es que muchísimas páginas web utilizan WordPress. Los hackers conocen el sistema y las posibles vulnerabilidades. Y estas vulnerabilidades las solemos crear nosotros, y no el núcleo de WordPress. Lo que podemos hacer eficientemente contra los intentos de hackeo es una entrada de blog por sí misma, pero aquí va uno de los consejos más importantes: busca una buena plataforma de alojamiento. ¡Vale la pena gastar un poco más de dinero aquí! Un buen hosting también tiene un buen equipo de servicio que te ayudará rápidamente si hay un problema. Todo lo demás está, como he dicho, fuera del alcance de lo que quiero escribir aquí. Pero tienes que saber: Si lo haces bien, es muy difícil que los hackers lleguen a tus datos o exploten tu sitio web.
+
+En relación a la velocidad, recomiendo este vídeo un poco enfadado realizado por Alex Young. Lo dice todo.
+
+{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+
+Además, WordPress es fácil de optimizar para SEO, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
 
 La comunidad es enorme, y todavía no me he encontrado con un problema que no estuviera ya resuelto antes o con el que no me ayudaran al instante.
 
-Además, muchos clientes han trabajado antes con el backend de WordPress y se sienten cómodos con él.
+Por último, un punto muy importante: WordPress existe desde hace mucho tiempo, muchos clientes ya han trabajado con el backend de WordPress y están familiarizados con él.
 
 ## ¿Qué es lo que no me gusta?
 

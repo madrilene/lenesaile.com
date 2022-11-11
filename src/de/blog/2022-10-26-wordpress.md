@@ -20,13 +20,19 @@ cta:
 
 ### WordPress ist kostenlos, sicher und schnell
 
-WordPress ist kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
+WordPress ist komplett kostenlos, und wenn man keinen Mist baut, ist es sicher und schnell. Neulich habe ich gelesen, dass ==WP core für nur 0,6% der Sicherheitslücken verantwortlich ist, die anderen 99,4% werden von Plugins und Themes verursacht==. [^1]
 
-WordPress ist leicht für SEO zu optimieren, hat eCommerce-Möglichkeiten und dank des Plugins "Advanced Custom Fields" flexible Inhaltsfelder.
+WordPress-Websites werden gern gehackt, das ist einfach eine Tatsache. Aber das gilt auch für andere Seiten im Internet. Nun ist es im Falle von WordPress so, dass sehr _sehr_ viele Websites das System nutzen. Hacker kennen das System und mögliche Schwachstellen. Und diese Schwachstellen schaffen wir normalerweise selbst, und nicht Wordpress. Was wir effizient gegen hacking-Versuche unternehmen können ist ein eigener Blog-Post, aber hier einer der wichtigsten Tipps: suche dir eine gute Hosting-Plattform. Es lohnt sich in jedem Falle hier ein bisschen mehr Geld auszugeben! Ein gutes Hosting hat auch ein gutes Service-Team das dir schnell weiterhilft wenn es ein Problem gibt. Alles weitere ist, wie gesagt, außerhalb des Rahmens dessen was ich hier eigentlich schreiben möchte. Aber wisse: wenn man es richtig macht, ist es sehr schwer für Hacker an deine Daten zu kommen oder deine Website anzugreifen.
+
+Was die Geschwindigkeit angeht, empfehle ich dieses etwas wütende Video von Alex Young.
+
+{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+
+Außerdem ist es sehr leicht WordPress für SEO zu optimieren, hat eCommerce-Möglichkeiten und dank des Plugins "Advanced Custom Fields" flexible Inhaltsfelder.
 
 Die Community ist riesig, und mir ist noch kein Problem begegnet, das nicht entweder schon gelöst war oder bei dem mir nicht sofort geholfen wurde.
 
-Außerdem haben viele Kunden bereits mit dem WordPress-Backend gearbeitet und sind damit vertraut.
+Schließlich ein ganz wichtiger Punkt: WordPress ist schon lange da, viele Kunden haben bereits mit dem WordPress-Backend gearbeitet und sind damit vertraut.
 
 ## Was mir nicht an WordPress gefällt
 
@@ -104,7 +110,7 @@ Nichtsdestotrotz - ich habe mir vorgenommen das zu lernen, und sei es nur um es 
 
 ## Was ist mit Gutenberg?
 
-Ich denke, der Gutenberg-Editor ist großartig für erfahrene Content-Redakteure und für jeden, der bereit ist, ein wenig darüber zu lernen. Man kann viele verschiedene Layouts erstellen und wirklich interessante Beiträge verfassen (übertreibe es allerdings nicht mit dem Kopieren von Layouts aus der [[WordPress-Pattern-Bibliothek]](https://wordpress.org/patterns/), da das die Seite ziemlich langsam machen kann).
+Ich denke, der Gutenberg-Editor ist großartig für erfahrene Content-Redakteure und für jeden, der bereit ist, ein wenig darüber zu lernen. Man kann viele verschiedene Layouts erstellen und wirklich interessante Beiträge verfassen (übertreibe es allerdings nicht mit dem Kopieren von Layouts aus der [WordPress-Pattern-Bibliothek](https://wordpress.org/patterns/), da das die Seite ziemlich langsam machen kann).
 
 Andererseits haben manche Kunden notorische Angst, etwas kaputt zu machen. Mit dem Gutenberg-Editor kann man eine Menge machen - er kann aber auch ein wenig überwältigend sein. Manche WordPress-Nutzer wünschen sich einfach den guten alten "Microsoft Word"-Editor zurück. Und ich muss sagen, dass ich das verstehen kann (übrigens gibt es in der Jamstack-Welt auch wunderbare CMS, die eine sehr einfache Benutzeroberfläche haben - ich erzähle dir gerne mehr darüber).
 
