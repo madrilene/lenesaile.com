@@ -85,7 +85,7 @@ For manual backups and migration between local development, staging and deployme
 
 In a nutshell, FSE is the extension of the [Gutenberg Editor](https://wordpress.org/gutenberg/) to the entire website. According to this principle, the entire theme is customizable directly in the backend using blocks. It's basically a built-in site builder.
 
-I can't say too much about it, since I have to still really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. WordPress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there is the possibility to opt in to fluid typography. That sounds great!
+I can't say too much about it, since I still have to really dive into it. Considering it's based on JavaScript and has a component like concept, I might eventually like developing with it. WordPress won't go back to the old ways and every new version will enforce block themes. As of version 6.1 there is the possibility to opt in to fluid typography. That sounds great!
 
 A template part for the `header.html` looks like that:
 
