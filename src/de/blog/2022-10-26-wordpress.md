@@ -51,7 +51,7 @@ In Bezug auf WordPress bedeutet dies, dass es als "One-size-fits-all"-Lösung f�
 
 Statt selektiv Elemente hinzuzufügen muss man stattdessen manchmal Dinge aktiv ausklammern, die man nicht braucht. Und ich habe das Gefühl, dass [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) noch mehr in diese Richtung gehen als klassische PHP-Themes. Ich muss mit den CSS Klassen arbeiten, die generiert werden, und ich muss mich auch Skripte wie `wp-block-navigation-view` (für das Verhalten von Menüs zuständig) gezielt deaktivieren, wenn ich meine eigene Lösung implementieren will (ohne dass unnötige zusätzliche Skripte geladen werden - jedes Kilobyte zählt). Ich spreche später im Text noch etwas ausführlicher über meine ersten Eindrücke mit diesem neuen Modell.
 
-### Ich nutze keine Page-Builder
+### Page-Builder und überladene Themes
 
 Ich bin sicher, Page-Builder (Elementor, Visual Composer...) sind in einigen Zusammenhängen sehr sinnvoll und vor allem ermöglichen sie vielen den eigenständigen Zugang zur Welt der Webentwicklung, nach dem Prinzip "no code". Als Entwicklerin mit besonderem Augenmerk auf Performance nutze ich sie nicht.
 
@@ -60,6 +60,8 @@ Alles, was einer Webseite unnötiges Gewicht verleiht, versuche ich zu vermeiden
 Ich habe mit vielen Leuten gesprochen, die ein Theme gekauft haben und dann unzählige Stunden damit verbracht haben, alles zu konfigurieren.
 
 Nicht immer, aber ziemlich oft, ist es ein Desaster. Nicht, weil sie es nicht richtig gemacht haben. Sondern weil manche Themes einfach versuchen jedes Problem zu lösen, jede Branche zu bedienen. Ich habe eine Theme/Plugin-Kombination gesehen, die mehr als 100 verschiedene Skriptdateien geladen hat. Die Stylesheets habe ich gar nicht erst mitgezählt. Die Seite brauchte mehr als 10 Sekunden, um auf meiner Glasfaser-Internetverbindung zu laden. Natürlich kann man mit viel nachträglicher Arbeit auch aus diesen Seiten einiges rausholen, aber viel besser ist ein zugeschnittenes Theme, das von sich aus nur das mitbringt was wirklich benötigt wird.
+
+Hier muss man natürlich fair sein: weder Page-Builder noch Themes von Drittanbietern liegen in der Verantwortung von WordPress.
 
 ## Wie ich mit WordPress arbeite
 

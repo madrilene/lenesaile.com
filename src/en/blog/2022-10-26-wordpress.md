@@ -51,7 +51,7 @@ In terms of WordPress, this means that it serves as a "one-size-fits-all" soluti
 
 Instead of selectively adding elements, sometimes you have to actively exclude things you don't need. And I feel like [Block Themes](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) are going this way even more than classic PHP themes. I have to work with the classes that are being generated, and I also have to opt out of scripts like the `wp-block-navigation-view` (responsible for the behavior of menus) if I want to implement my own behavior (without unnecessary extra scripts being loaded. Every kilobyte counts). I talk in more detail later in the text about my first impressions with this new model of WordPress.
 
-### I'm not using page builders
+### Page builders and bloated themes
 
 I'm sure page builders (Elementor, Visual Composer...) make a lot of sense in some contexts, and most importantly, they allow many to enter the world of web development on their own, following the principle of "no code". However, as a developer with a particular focus on performance, I am not using them.
 
@@ -60,6 +60,8 @@ Everything that adds an unnecessary weight to a web page is something I try to a
 I have talked to a lot of people who bought a theme and then they spent countless hours trying to configure everything.
 
 Not always, but often, it is a mess. Not because they haven't done it right. But because some themes just try to solve every problem, to serve every industry. I have seen a theme/plugins combination that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection. Of course, you can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customized theme that only includes what you really need.
+
+Here, of course, you have to be fair: neither third-party page builders nor third-party themes are the responsibility of WordPress.
 
 ## How I am working with WordPress
 

@@ -51,7 +51,7 @@ En términos de WordPress, esto significa que sirve como una solución "única" 
 
 En lugar de añadir elementos de forma selectiva, a veces hay que excluir activamente lo que no se necesita. Y tengo la sensación, que los nuevos [Temas de bloque](https://developer.wordpress.org/block-editor/how-to-guides/themes/block-theme-overview/) van por este camino incluso más que los temas clásicos de PHP. Hay que trabajar con las clases CSS que se generan, y también tengo que desactivar los scripts como `wp-block-navigation-view` (responsable del comportamiento de los menús) si quiero implementar mi propia solución (sin cargar scripts adicionales innecesarios. Cada kilobyte cuenta). Más adelante hablo con más detalle de mis primeras impresiones con este nuevo modelo.
 
-### No uso page builders
+### Page builders y temas hinchados
 
 Estoy segura de que los page builders (Elementor, Visual Composer...) tienen mucho sentido en algunos contextos y, sobre todo, permiten a muchos entrar en el mundo del desarrollo web por su cuenta, siguiendo el principio de "no code". Sin embargo, como desarrolladora con un enfoque particular en el rendimiento, no uso page builders.
 
@@ -60,6 +60,8 @@ Todo lo que añade un peso innecesario a una página web es algo que intento evi
 He hablado con muchas personas que compraron un tema y luego pasaron incontables horas tratando de configurar todo.
 
 No siempre, pero a menudo, es un desastre. No porque no lo hayan hecho bien. Sino porque algunos temas tratan de resolver todos los problemas, de servir a todos los sectores. He visto una combinación de tema/plugins que cargaba más de 100 archivos de script diferentes. No he contado las hojas de estilo. La página tardó más de 10 segundos en cargarse en mi conexión de internet de fibra. Por supuesto, se puede sacar mucho más rendimiento a estas páginas utilizando un CDN, optimizando los imagenes, activando la caché y demás, pero es mucho mejor tener un tema personalizado que sólo incluya lo que realmente necesitas.
+
+Aquí, por supuesto, hay que ser justos: ni los page builders de terceros ni los temas de terceros son responsabilidad de WordPress.
 
 ## Cómo estoy trabajando con WordPress
 
