@@ -3,3 +3,4 @@ src/assets/helperfiles/humans.njk
 src/assets/helperfiles/sitemap.njk
 src/assets/helperfiles/google35901daa0ceb7399.html
 src/*/feed.njk
+src/social-preview.njk

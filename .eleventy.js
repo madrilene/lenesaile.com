@@ -25,7 +25,8 @@ const {
   toAbsoluteUrl,
   stripHtml,
   minifyCss,
-  mdInline
+  mdInline,
+  splitlines
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -35,7 +36,8 @@ const {
   getProjectsES,
   getBlogsES,
   getProjectsDE,
-  getBlogsDE
+  getBlogsDE,
+  getBlogsAllLang
 } = require('./config/collections/index.js');
 
 const {
@@ -48,6 +50,9 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import transforms
+// const {
+// ...
+// } = require('./config/transforms/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -56,6 +61,9 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+
+// module import events
+const {afterBuild} = require('./config/events/index.js');
 
 module.exports = eleventyConfig => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
@@ -96,6 +104,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('cssmin', minifyCss);
   eleventyConfig.addFilter('md', mdInline);
+  eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);
@@ -116,6 +125,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('blog_es', getBlogsES);
   eleventyConfig.addCollection('projects_de', getProjectsDE);
   eleventyConfig.addCollection('blog_de', getBlogsDE);
+
+  eleventyConfig.addCollection('blog_all', getBlogsAllLang);
+
+  // 	--------------------- Transforms ---------------------
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
@@ -157,6 +170,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/maskable.png': 'maskable.png'
   });
+
+  // 	--------------------- Events ---------------------
+  eleventyConfig.on('afterBuild', afterBuild);
 
   return {
     dir: {

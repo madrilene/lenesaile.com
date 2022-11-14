@@ -34,11 +34,18 @@ const getBlogsDE = collection => {
   return blogs.reverse();
 };
 
+const getBlogsAllLang = collection => {
+  return collection
+    .getFilteredByGlob('./src/*/blog/*.md')
+    .filter(post => post.data.category == 'blogpost');
+};
+
 module.exports = {
   getProjectsEN,
   getBlogsEN,
   getProjectsES,
   getBlogsES,
   getProjectsDE,
-  getBlogsDE
+  getBlogsDE,
+  getBlogsAllLang
 };

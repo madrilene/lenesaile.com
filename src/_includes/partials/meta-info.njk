@@ -56,11 +56,16 @@
 
 <meta
   property="og:image"
-  content="{% if meta.env == 'production' %}{{
-    meta.siteURL
-  }}{% endif %}{% if featured_image  %}{{ featured_image | replace('./src', '') }}{% else %}{{
-    meta.meta_data.opengraph_default
-  }}{% endif %}"
+  content="{% if meta.env == 'production' %}{{ meta.siteURL }}{% endif %}
+
+  {% if category == 'blogpost' %}
+  /assets/images/social-preview/{{ title | slugify }}-preview.jpeg
+
+  {% elif featured_image  %}
+
+  {{ featured_image | replace('./src', '') }}
+
+  {% else %}{{ meta.meta_data.opengraph_default }}{% endif %}"
 />
 
 <meta
