@@ -55,6 +55,7 @@ const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 module.exports = eleventyConfig => {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
@@ -73,6 +74,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('projects', 'projects.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
+  eleventyConfig.addLayoutAlias('feed', 'feed.njk');
   eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
   // 	---------------------  Custom filters -----------------------
@@ -119,6 +121,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
+  eleventyConfig.addPlugin(pluginRss);
 
   // 	--------------------- Passthrough copies ---------------------
 

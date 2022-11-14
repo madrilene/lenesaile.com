@@ -37,7 +37,7 @@ Además, WordPress es fácil de optimizar para SEO, tiene posibilidades de eComm
 
 La comunidad es enorme, y todavía no me he encontrado con un problema que no estuviera ya resuelto antes o con el que no me ayudaran al instante.
 
-Por último, un punto muy importante: WordPress existe desde hace mucho tiempo, muchos clientes ya han trabajado con el backend de WordPress y están familiarizados con él.
+Por último, un punto muy importante: WordPress existe desde hace mucho tiempo, muchos de mis clientes ya han trabajado con el backend de WordPress y están familiarizados con él.
 
 ## ¿Qué es lo que no me gusta?
 
@@ -123,7 +123,7 @@ Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Se puede hac
 
 ## Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
 
-Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como un CMS sin cabeza que alimenta un frontend de JavaScript a través de su REST API o WPGraphQL.
+Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como CMS sin cabeza alimentando un frontend que elegimos a través de su REST API o WPGraphQL.
 
 Yo no me preocuparía demasiado por eso: ==Lo que sea adecuado para el proyecto.== A ningún usuario le importa con qué se construyó el sitio web, y a la mayoría de los clientes tampoco les importa. Por supuesto, comunico exactamente lo que recomiendo y por qué creo que es la mejor solución para el cliente según mi experiencia.
 Pero al final, lo que realmente importa es la calidad del producto.

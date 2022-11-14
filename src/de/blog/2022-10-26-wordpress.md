@@ -37,7 +37,7 @@ Außerdem ist es sehr leicht WordPress für SEO zu optimieren, hat eCommerce-Mö
 
 Die Community ist riesig, und mir ist noch kein Problem begegnet, das nicht entweder schon gelöst war oder bei dem mir nicht sofort geholfen wurde.
 
-Schließlich ein ganz wichtiger Punkt: WordPress ist schon lange da, viele Kunden haben bereits mit dem WordPress-Backend gearbeitet und sind damit vertraut.
+Schließlich ein ganz wichtiger Punkt: WordPress ist schon lange da, viele meiner Kunden haben bereits mit dem WordPress-Backend gearbeitet und sind damit vertraut.
 
 ## Was mir nicht an WordPress gefällt
 
@@ -125,7 +125,7 @@ Andererseits haben manche Kunden notorische Angst, etwas kaputt zu machen. Mit d
 
 ## Was ist die richtige Technik, um heutzutage ein WordPress Theme zu erstellen?
 
-Es scheint, als würden alte und neue Techniken aufeinanderprallen. Es gibt viele Möglichkeiten, etwas mit WordPress zu bauen: Block-Themes, das klassische PHP-gesteuerte Templating oder WordPress als Headless-CMS, das ein JavaScript-Frontend über seine REST-API oder WPGraphQL speist.
+Es scheint, als würden alte und neue Techniken aufeinanderprallen. Es gibt viele Möglichkeiten, etwas mit WordPress zu bauen: Block-Themes, das klassische PHP-gesteuerte Templating oder WordPress als Headless-CMS, das ein Frontend unserer Wahl über seine REST-API oder WPGraphQL speist.
 
 Ich würde mir darüber nicht allzu viele Gedanken machen: ==Was auch immer für das Projekt das Richtige ist==. Kein Besucher interessiert sich dafür, womit die Website erstellt wurde, und den meisten Kunden ist es auch egal. Natürlich kommuniziere ich genau was ich empfehle und wieso ich denke dass dies meiner Erfahrung nach die beste Lösung für den Kunden ist.
 Was am Ende aber wirklich zählt, ist die Qualität des Produkts.

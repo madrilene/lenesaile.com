@@ -37,7 +37,7 @@ Also, WordPress is easy to optimize for SEO, has eCommerce possibilities, and th
 
 The community is huge, and I have yet to encounter a problem that wasn't either already solved before or that I wasn't helped with instantly.
 
-Finally, a very important point: WordPress has been around for a long time, many customers have already worked with the WordPress backend and are familiar with it.
+Finally, a very important point: WordPress has been around for a long time, many of my customers have already worked with the WordPress backend and are familiar with it.
 
 ## What’s there to dislike?
 
@@ -113,7 +113,7 @@ A template part for the `header.html` looks like that:
 
 It certainly is something you have to get used to. It’s like writing code with comments.
 
-As I mentioned, I haven't really got to grips with it yet. My first impression is that it limits me somewhat as a developer.
+As I mentioned, I haven't really got to grips with it yet. My first impression is that it rather limits me as a developer.
 
 Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticize it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
 
@@ -125,7 +125,7 @@ On the other hand, some clients are notoriously afraid of breaking things. There
 
 ## So what's the right technique to build a theme nowadays?
 
-It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a JavaScript frontend via its REST API or WPGraphQL.
+It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a frontend of our choice via its REST API or WPGraphQL.
 
 I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. Of course, I communicate exactly what I do and recommend and why I think this is the best solution for the customer.
 In the end, what really matters is the quality of the product.

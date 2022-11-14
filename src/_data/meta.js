@@ -55,7 +55,13 @@ module.exports = {
       'Frontend developer based in Madrid. I enjoy working with Jamstack, vanilla Javascript and modern CSS. I do my very best to improve in terms of accessibility and performance.',
     back: 'Back',
     skipText: 'Jump to main content',
-    toc: 'Table of contents'
+    toc: 'Table of contents',
+    blog: {
+      name: 'Blog',
+      description:
+        "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.",
+      url: 'https://www.lenesaile.com/en/feed.xml'
+    }
   },
 
   es: {
@@ -67,7 +73,13 @@ module.exports = {
     back: 'Atrás',
     skipText: 'Saltar al contenido principal',
     toc: 'índice de contenidos',
-    skipToc: 'Saltar el índice de contenidos'
+    skipToc: 'Saltar el índice de contenidos',
+    blog: {
+      name: 'Blog',
+      description:
+        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes.',
+      url: 'https://www.lenesaile.com/es/feed.xml'
+    }
   },
   de: {
     localeCode: 'de_DE',
@@ -78,7 +90,13 @@ module.exports = {
     back: 'Zurück',
     skipText: 'Zum Hauptinhalt springen',
     toc: 'Inhaltsverzeichnis',
-    skipToc: 'Inhaltsverzeichnis überspringen'
+    skipToc: 'Inhaltsverzeichnis überspringen',
+    blog: {
+      name: 'Blog',
+      description:
+        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte.',
+      url: 'https://www.lenesaile.com/de/feed.xml'
+    }
   },
 
   env: process.env.ELEVENTY_ENV === 'production',
