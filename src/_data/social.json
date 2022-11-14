@@ -13,5 +13,10 @@
     "platform": "twitter",
     "url": "https://twitter.com/lenesaile",
     "icon": "twitter.svg"
+  },
+  {
+    "platform": "rss",
+    "url": "feed.xml",
+    "icon": "rss.svg"
   }
 ]

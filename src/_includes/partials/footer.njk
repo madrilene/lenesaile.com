@@ -22,6 +22,7 @@
 
       <div id="social" class="site-foot__inner">
         {% for item in social %}
+
         <a href="{{ item.url }}" rel="me">
           <span class="sr-only">{{ item.platform }}</span>
           <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div></a
