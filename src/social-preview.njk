@@ -10,7 +10,6 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="1200" height="628" viewBox="0 0 1200 628" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   {% set titleInLines = preview.data.title | splitlines(16) %}
-  {{ titleInLines.length | log }}
   {% set numberOfLines = titleInLines.length %}
   {% if numberOfLines == 1 %}
     {% set verticalStartingPoint = 340 %}
@@ -25,16 +24,16 @@ eleventyExcludeFromCollections: true
   {% endif %}
   <rect width="100%" height="100%" fill="#FFFDF5"/>
 
-  <text font-family="'Outfit', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif'" font-size="24" font-weight="bold" fill="#E54848" letter-spacing="-0.075ch">
+  <text font-family="Outfit, Roboto', sans-serif" font-size="24" font-weight="bold" fill="#E54848" letter-spacing="-0.075ch">
     <tspan x="380" y="{{ verticalStartingPoint - 90 }}">{{ preview.date | formatDate('D / MM / YYYY') }}</tspan>
   </text>
-  <text id="text" font-family="'Outfit', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif'" font-size="82" font-weight="700" fill="#333333" letter-spacing="-0.075ch">
+  <text id="text" font-family="Outfit, Roboto', sans-serif" font-size="82" font-weight="700" fill="#333333" letter-spacing="-0.075ch">
     {% for line in titleInLines %}
       <tspan x="380" y="{{ verticalStartingPoint + loop.index0 * 80 }}">{{ line }}</tspan>
     {% endfor %}
   </text>
 
-  <text font-family="'Outfit', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'sans-serif'" font-size="24" font-weight="bold" fill="#333333">
+  <text font-family="Outfit, Roboto', sans-serif" font-size="24" font-weight="bold" fill="#333333">
     <tspan x="380" y="600">www.lenesaile.com</tspan>
   </text>
 

@@ -1,6 +1,8 @@
 const package = require('../../package.json');
 
 module.exports = {
+  pkv: package.version || 'v1',
+  url: process.env.URL || 'http://localhost:8080',
   siteType: 'Person', // schema
   siteURL: 'https://www.lenesaile.com',
   author: 'Lene Saile',
@@ -97,8 +99,5 @@ module.exports = {
         'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte.',
       url: 'https://www.lenesaile.com/de/feed.xml'
     }
-  },
-
-  env: process.env.ELEVENTY_ENV === 'production',
-  pkv: package.version || 'v1'
+  }
 };

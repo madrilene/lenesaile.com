@@ -22,7 +22,7 @@
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no" />
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="{{ meta.siteURL }}{{ page.url }}" />
+<link rel="canonical" href="{{ meta.url }}{{ page.url }}" />
 
 <title>
   {% if seo.title %} {{ seo.title }}
@@ -47,7 +47,7 @@
 <meta name="generator" content="Eleventy" />
 
 <!-- Facebook Open Graph meta -->
-<meta property="og:url" content="{{ meta.siteURL }}{{ page.url }}" />
+<meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
 <meta
   property="og:title"
@@ -56,10 +56,9 @@
 
 <meta
   property="og:image"
-  content="{% if meta.env == 'production' %}{{ meta.siteURL }}{% endif %}
-
-  {% if category == 'blogpost' %}
-  /assets/images/social-preview/{{ title | slugify }}-preview.jpeg
+  content="{{ meta.url }}{% if category == 'blogpost' %}/assets/images/social-preview/{{
+    title | slugify
+  }}-preview.jpeg
 
   {% elif featured_image  %}
 
