@@ -23,7 +23,11 @@
       <div id="social" class="site-foot__inner">
         {% for item in social %}
 
+        {% if item.platform == "rss" %}
+        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" target="_blank">
+        {% else %}
         <a href="{{ item.url }}" rel="me">
+          {% endif %}
           <span class="sr-only">{{ item.platform }}</span>
           <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div></a
         >

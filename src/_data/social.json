@@ -16,7 +16,7 @@
   },
   {
     "platform": "rss",
-    "url": "feed.xml",
+    "url": "/feed.xml",
     "icon": "rss.svg"
   }
 ]

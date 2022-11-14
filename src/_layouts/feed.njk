@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.siteURL }}/{{ locale }}/">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/{{ locale }}/">
   <title>{{ meta[locale].blog.name }}</title>
   <subtitle>{{ meta[locale].blog.description }}</subtitle>
   <link href="{{ meta[locale].blog.url }}" rel="self" />
-  <link href="{{ meta.siteURL }}/{{ locale }}/" />
+  <link href="{{ meta.url }}/{{ locale }}/" />
   {% set postslist = collections["blog_" + locale] %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ meta.siteURL }}/{{ locale }}/</id>
+  <id>{{ meta.url }}/{{ locale }}/</id>
   <author>
     <name>{{ meta.author }}</name>
     <email>{{ meta.authorEmail }}</email>
   </author>
   {%- for post in postslist %} {%- set absolutePostUrl = post.url |
-  absoluteUrl(meta.siteURL) %}
+  absoluteUrl(meta.url) %}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}" />

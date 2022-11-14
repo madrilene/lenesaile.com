@@ -4,7 +4,6 @@ module.exports = {
   pkv: package.version || 'v1',
   url: process.env.URL || 'http://localhost:8080',
   siteType: 'Person', // schema
-  siteURL: 'https://www.lenesaile.com',
   author: 'Lene Saile',
   authorEmail: 'hola@lenesaile.com',
   authorWebsite: 'https://www.lenesaile.com',
