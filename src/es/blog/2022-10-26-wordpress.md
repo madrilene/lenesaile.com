@@ -41,7 +41,7 @@ Por último, un punto muy importante: WordPress existe desde hace mucho tiempo, 
 
 ## ¿Qué es lo que no me gusta?
 
-Las siguientes reflexiones se refieren al trabajo con WordPress en el backend y el frontend, es decir, no a una solución como CMS sin cabeza.
+Las siguientes reflexiones se refieren al trabajo con WordPress en el back-end y el front-end, es decir, no a una solución como CMS sin cabeza.
 
 ### Tienes que hacerlo a su manera
 
@@ -123,7 +123,7 @@ Por otro lado, algunos clientes tienen mucho miedo de romper cosas. Se puede hac
 
 ## Entonces, ¿cuál es la técnica correcta para construir un tema hoy en día?
 
-Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como CMS sin cabeza alimentando un frontend que elegimos a través de su REST API o WPGraphQL.
+Parece que las técnicas antiguas y las nuevas chocan entre sí. Hay muchas maneras de construir con WordPress: Temas de bloque, la clásica plantilla impulsada por PHP o WordPress como CMS sin cabeza alimentando un front-end que elegimos a través de su REST API o WPGraphQL.
 
 Yo no me preocuparía demasiado por eso: ==Lo que sea adecuado para el proyecto.== A ningún usuario le importa con qué se construyó el sitio web, y a la mayoría de los clientes tampoco les importa. Por supuesto, comunico exactamente lo que recomiendo y por qué creo que es la mejor solución para el cliente según mi experiencia.
 Pero al final, lo que realmente importa es la calidad del producto.

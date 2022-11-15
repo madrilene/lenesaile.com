@@ -41,7 +41,7 @@ Finally, a very important point: WordPress has been around for a long time, many
 
 ## What’s there to dislike?
 
-The following thoughts refer to working with WordPress in the backend _and_ frontend, not to a solution as headless CMS.
+The following thoughts refer to working with WordPress in the back-end _and_ front-end, not to a solution as headless CMS.
 
 ### You have to do it their way
 
@@ -125,7 +125,7 @@ On the other hand, some clients are notoriously afraid of breaking things. There
 
 ## So what's the right technique to build a theme nowadays?
 
-It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a frontend of our choice via its REST API or WPGraphQL.
+It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a front-end of our choice via its REST API or WPGraphQL.
 
 I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. Of course, I communicate exactly what I do and recommend and why I think this is the best solution for the customer.
 In the end, what really matters is the quality of the product.

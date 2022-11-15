@@ -58,9 +58,9 @@ module.exports = {
     skipText: 'Jump to main content',
     toc: 'Table of contents',
     blog: {
-      name: 'Blog',
+      name: 'Lene Saile - Web Development Blog',
       description:
-        "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.",
+        "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.  I specialize in custom creative websites with accessibility and performance in mind.",
       url: 'https://www.lenesaile.com/en/feed.xml'
     }
   },
@@ -76,9 +76,9 @@ module.exports = {
     toc: 'índice de contenidos',
     skipToc: 'Saltar el índice de contenidos',
     blog: {
-      name: 'Blog',
+      name: 'Lene Saile - Blog de desarrollo web',
       description:
-        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes.',
+        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
       url: 'https://www.lenesaile.com/es/feed.xml'
     }
   },
@@ -93,9 +93,9 @@ module.exports = {
     toc: 'Inhaltsverzeichnis',
     skipToc: 'Inhaltsverzeichnis überspringen',
     blog: {
-      name: 'Blog',
+      name: 'Lene Saile - Web Development Blog',
       description:
-        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte.',
+        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
       url: 'https://www.lenesaile.com/de/feed.xml'
     }
   }
