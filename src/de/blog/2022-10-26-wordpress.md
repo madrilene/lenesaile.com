@@ -8,7 +8,7 @@ image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'Das WordPress-Logo mit etwas php-Code im Hintergrund'
 youtube: true
 cta:
-  title: 'Brauchst du Hilfe mit WordPress?'
+  title: 'Möchtest du eine WordPress-Seite?'
   desktop: 'Ich arbeite schon seit vielen Jahren mit WordPress. Bei Premium-Themes, Page-Buildern oder Plugin-Problemen kann ich dir aber wahrscheinlich nicht helfen. '
   lead: 'Ich bin [WordPress-Expertin bei Codeable](https://www.codeable.io/developers/lene-saile/). Wenn du eine handgemachte, barrierefreie und schnelle WordPress-Website möchtest, kannst du mich jederzeit anschreiben!'
 ---

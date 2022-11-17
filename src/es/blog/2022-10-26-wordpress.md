@@ -8,7 +8,7 @@ image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'El logo de WordPress con algo de código php en el fondo.'
 youtube: true
 cta:
-  title: '¿Necesitas ayuda con WordPress?'
+  title: '¿Quieres una página web con WordPress?'
   desktop: 'Llevo muchos años trabajando con WordPress. Sin embargo, probablemente no podré ayudarte con temas premium, constructores de páginas o problemas de plugins.'
   lead: 'Soy [experta de WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página web con WordPress hecho a medida, accesible y rápida, ponte en contacto conmigo.'
 ---

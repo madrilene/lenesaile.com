@@ -8,7 +8,7 @@ image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'The WordPress logo with some php code in the background.'
 youtube: true
 cta:
-  title: 'You want WordPress site?'
+  title: 'You want a WordPress site?'
   desktop: "I have been working with WordPress for many years. I probably won't be able to help you with premium themes, page builders or plugin issues though."
   lead: "I'm a (niche) [WordPress expert on Codeable](https://www.codeable.io/developers/lene-saile/). If you want a custom made, accessible and performant WordPress site, consider working with me."
 ---
