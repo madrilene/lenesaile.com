@@ -9,8 +9,8 @@ alt: 'El logo de WordPress con algo de código php en el fondo.'
 youtube: true
 cta:
   title: '¿Necesitas ayuda con WordPress?'
-  desktop: 'He estado trabajando con WordPress durante muchos años. Creo temas de WordPress personalizados que son realmente rápidos y seguros.'
-  lead: '¿Tienes un proyecto en mente y no sabes cómo llevarlo a cabo? ¡Hablemos de ello! Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tus ideas'
+  desktop: 'Llevo muchos años trabajando con WordPress. Sin embargo, probablemente no podré ayudarte con temas premium, constructores de páginas o problemas de plugins.'
+  lead: 'Soy [experta de WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página web con WordPress hecho a medida, accesible y rápida, ponte en contacto conmigo.'
 ---
 
 En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https://www.joomla.org/) y [TYPO3](https://typo3.org/) (y odiarlo), descubrí [WordPress](https://wordpress.org/). Fue una revelación.

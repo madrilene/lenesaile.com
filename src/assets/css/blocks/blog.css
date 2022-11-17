@@ -88,8 +88,17 @@
   text-decoration: none;
 }
 
+.blog .footnotes a {
+  word-wrap: break-word;
+}
+
 .blog .footnote-ref {
   opacity: 0.9;
   font-family: var(--font-mono);
   color: var(--color-primary);
+}
+
+.blog .footnote-backref {
+  font-size: var(--size-step-1);
+  font-weight: bold;
 }

@@ -8,9 +8,9 @@ image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'The WordPress logo with some php code in the background.'
 youtube: true
 cta:
-  title: 'Need help with WordPress?'
-  desktop: 'I have been working with WordPress for many years. I create custom WordPress Themes that are really fast and secure.'
-  lead: "Do you have a project in mind and don't know how to carry it out? Let's talk about it! Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your ideas."
+  title: 'You want WordPress site?'
+  desktop: "I have been working with WordPress for many years. I probably won't be able to help you with premium themes, page builders or plugin issues though."
+  lead: "I'm a (niche) [WordPress expert on Codeable](https://www.codeable.io/developers/lene-saile/). If you want a custom made, accessible and performant WordPress site, consider working with me."
 ---
 
 Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO3](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation.
