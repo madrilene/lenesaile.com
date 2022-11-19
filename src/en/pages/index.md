@@ -30,7 +30,7 @@ cta:
 
 I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people==. I am a humble learner in this field and adjust my knowledge on a daily basis.
 
-I do not create websites based on pre-programmed templates and I do not use visual website builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
+I do not create websites based on premade templates/themes and I do not use Website Builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
 
 This approach has various advantages:
 

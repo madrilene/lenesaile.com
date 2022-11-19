@@ -1,8 +1,8 @@
 .hero .gridwrap {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--gutter, var(--space-l-xl));
   grid-auto-rows: auto;
+  gap: 0.3rem;
 }
 
 .hero .welcome {
@@ -27,6 +27,10 @@
 }
 
 @media (min-width: 43em) {
+  .hero .gridwrap {
+    gap: var(--gutter, var(--space-l-xl));
+  }
+
   .hero .welcome {
     grid-column: 1;
     grid-row: 1 / 5;
