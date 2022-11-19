@@ -20,6 +20,6 @@ With Photoshop and [Figma](https://www.figma.com/) I convert my ideas and sketch
 
 When the design is agreed with my client, I switch to "[Visual Studio Code](https://code.visualstudio.com/)" to convert the design into modern and efficient code, using HTML, CSS and Javascript.
 
-In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the GDPR modal work correctly (in the best case, of course, none is necessary!), is the site fully accessible?
+In the testing phase I check that everything works correctly: Does the website run on all common browsers and operating systems, do the contact forms arrive, does the GDPR modal work correctly (in the best case, of course, none is necessary!), is the site accessible?
 
 The site is running without errors on my local server - now I check that this is also the case on the production server. Finally I push the website live.

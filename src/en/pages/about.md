@@ -25,4 +25,4 @@ In 2018 I discovered the idea of Jamstack and soon after changed all my workflow
 
 ==I enjoy building performant sites with minimal vanilla Javascript and all the possibilities of modern CSS.==
 
-I take accessibility and performance very seriously, testing and re-testing until the result is what I want it to be. Which is (as close as I can get to) perfect.
+I take accessibility and performance very seriously, testing and re-testing until the result is what I want it to be.

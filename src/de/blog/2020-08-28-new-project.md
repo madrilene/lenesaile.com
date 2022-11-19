@@ -18,6 +18,6 @@ Mit [Figma](https://www.figma.com/) setze ich meine Ideen und Skizzen in Entwür
 
 Wenn das Design mit meinem Kunden abgestimmt ist, verwende ich "[Visual Studio Code](https://code.visualstudio.com/)", um das Design in modernen und effizienten Code umzuwandeln, der HTML, CSS und Javascript verwendet.
 
-In der Testphase prüfe ich, ob alles richtig funktioniert: Läuft die Website auf allen gängigen Browsern und Betriebssystemen, kommen die Kontaktformulare an, funktioniert das DSGVO-Modal korrekt (im besten Fall ist natürlich keines nötig!), ist die Seite vollständig barrierefrei?
+In der Testphase prüfe ich, ob alles richtig funktioniert: Läuft die Website auf allen gängigen Browsern und Betriebssystemen, kommen die Kontaktformulare an, funktioniert das DSGVO-Modal korrekt (im besten Fall ist natürlich keines nötig!), ist die Seite barrierefrei?
 
 Auf meinem lokalen Server läuft die Seite fehlerfrei - jetzt prüfe ich, ob das auch auf dem Live-Server der Fall ist. Schließlich veröffentliche ich die Website.

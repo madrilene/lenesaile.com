@@ -50,6 +50,6 @@ For the design of this website, I used Figma, a design and prototyping tool for 
 
 We want to load only the most essential, like classic web pages. Therefore, all elements of the web page are cached, scaled down and cleaned. All images are loaded with delay and by the most modern image formats, and unused CSS and JavaScript are removed.
 
-Finally, I recheck the entire site for performance factors, accessibility, so-called best practices and search engine compatibility.
+Finally, I recheck the entire site for performance factors, accessibility issues, so-called best practices and search engine compatibility.
 
 {% imagePlaceholder "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "", "", "object-fit-cover", "Screenshot of Lighthouse audit results for ineliagestion.com, showing great results in all areas", "Lighthouse audit results for ineliagestion.com. Lighthouseis a tool that provides information about a page's performance, SEO, usability and accessibility.", "60vw" %}
