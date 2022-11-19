@@ -57,16 +57,6 @@ svg.avatar-blog {
     transform: translateY(2rem) translateX(-8.2rem);
   }
 
-  svg.avatar-portatil {
-    width: 45%;
-    transform: translateY(4.2rem) translateX(var(--space-2xl)) scaleX(-1);
-  }
-
-  svg.avatar-ball {
-    width: 45%;
-    transform: translateY(7rem) translateX(var(--space-xl));
-  }
-
   svg.avatar-blog {
     width: 42%;
     transform: translateY(7.4rem) translateX(var(--space-xl)) rotate(-1deg);
@@ -85,6 +75,16 @@ svg.avatar-blog {
   svg.avatar-start {
     width: 40%;
     transform: translateY(2rem) translateX(-7rem);
+  }
+
+  svg.avatar-portatil {
+    width: 45%;
+    transform: translateY(4.2rem) translateX(var(--space-2xl)) scaleX(-1);
+  }
+
+  svg.avatar-ball {
+    width: 45%;
+    transform: translateY(7rem) translateX(var(--space-xl));
   }
 }
 
