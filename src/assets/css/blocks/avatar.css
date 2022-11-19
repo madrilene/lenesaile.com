@@ -43,8 +43,6 @@ svg.avatar-blog {
 }
 
 @media (min-width: 24em) {
-  svg.avatar-portatil,
-  svg.avatar-ball,
   svg.avatar-blog {
     display: block;
     position: absolute;
@@ -68,6 +66,15 @@ svg.avatar-blog {
 }
 
 @media (min-width: 30em) {
+  svg.avatar-portatil,
+  svg.avatar-ball {
+    display: block;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    right: 0;
+  }
+
   .avatar-content__inner {
     padding-right: var(--space-4xl);
   }
