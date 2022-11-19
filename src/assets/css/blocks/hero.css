@@ -61,3 +61,7 @@
 .hero .snapshot img {
   filter: sepia(0.3) grayscale(0.7) brightness(1.2);
 }
+
+.hero .reverse {
+  color: var(--color-text);
+}

@@ -7,7 +7,7 @@ key: 'home'
 description: I'm a developer and designer based in Madrid who has been building for the web professionally since 2008. I make accessible, highly optimized custom websites.
 layout: home
 hero:
-  title: I make accessible, highly optimized custom websites.
+  title: I make highly optimized custom websites.
   intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have developed and designed countless websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and WordPress.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
@@ -28,7 +28,7 @@ cta:
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
-I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people== regardless of any disability.
+I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people==. I am a humble learner in this field and adjust my knowledge on a daily basis.
 
 I do not create websites based on pre-programmed templates and I do not use visual website builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
 
@@ -37,4 +37,4 @@ This approach has various advantages:
 1. No image is too big, no code is too much - and the website runs error-free and fast.
 2. I am independent of third parties, I react to problems and necessary updates myself.
 3. The websites of my clients achieve a very good positioning in the search engines.
-4. All ideas can be fulfilled in terms of form, structure and function.
+4. Almost all ideas can be fulfilled in terms of form, structure and function.

@@ -3,6 +3,12 @@
   color: var(--color-text);
   padding: 0 0.3rem;
   border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.cta a:hover {
+  outline: 1px solid;
+  outline-offset: 0.01ch;
 }
 
 .cta section {
