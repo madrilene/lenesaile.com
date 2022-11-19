@@ -58,8 +58,8 @@ svg.avatar-blog {
   }
 
   svg.avatar-portatil {
-    width: 40%;
-    transform: translateY(4.4rem) translateX(var(--space-l));
+    width: 45%;
+    transform: translateY(4.2rem) translateX(var(--space-2xl)) scaleX(-1);
   }
 
   svg.avatar-ball {
@@ -94,7 +94,7 @@ svg.avatar-blog {
   }
   svg.avatar-portatil {
     width: 35%;
-    transform: translateY(4.4rem) translateX(var(--space-l));
+    transform: translateY(4.4rem) translateX(var(--space-l)) rotate(-1deg);
   }
   svg.avatar-ball {
     width: 42%;
@@ -140,7 +140,7 @@ svg.avatar-blog {
 
   svg.avatar-portatil {
     width: 40%;
-    transform: translateY(5.5rem) translateX(var(--space-xl));
+    transform: translateY(5.6rem) translateX(var(--space-xl)) rotate(-1deg);
   }
 
   svg.avatar-ball {

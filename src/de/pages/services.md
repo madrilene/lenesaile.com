@@ -14,7 +14,7 @@ tools:
       link: ''
     - title: 'WordPress'
       icon: 'wordpress.svg'
-      summary: 'Ich entwickle seit über einem Jahrzehnt native WordPress-Themes. Ich biete auch die Übertragung bestehender WordPress-Umgebungen zur Jamstack-Architektur an, optional mit WordPress als Headless CMS.'
+      summary: 'Ich entwickle seit vielen Jahren WordPress-Themes. Ich biete auch die Übertragung bestehender WordPress-Umgebungen zur Jamstack-Architektur an, optional mit WordPress als Headless CMS.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'

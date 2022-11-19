@@ -13,7 +13,7 @@ tools:
       link: ''
     - title: 'WordPress'
       icon: 'wordpress.svg'
-      summary: 'I have built native WordPress themes for over a decade. I also offer transfering existing WordPress environments to the Jamstack, optionally using WordPress as a headless CMS.'
+      summary: 'I have been building WordPress themes for many years. I also offer transfering existing WordPress environments to the Jamstack, optionally using WordPress as a headless CMS.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'
