@@ -60,7 +60,7 @@ svg.avatar-blog {
     transform: translateY(7.4rem) translateX(var(--space-xl)) rotate(-1deg);
   }
 
-  .avatar-content__inner {
+  .avatar-content-blog__inner {
     padding-right: var(--space-3xl);
   }
 }
