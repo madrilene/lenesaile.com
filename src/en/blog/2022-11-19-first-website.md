@@ -23,13 +23,15 @@ Under what felt like 1 meter of PHP error messages, it then appeared, just as I 
 
 ## How it came to life
 
-It was 2008 and I had just recently registered my freelance business with the German authorities in the southern city Freiburg im Breisgau (You may be familiar with it as the home town of the [Smashing Magazine](https://www.smashingmagazine.com/)). One evening I was visiting a jazz cellar and got into a conversation with a musician. It turned out that they were looking for a logo, a flyer and a website for their regular jazz sessions. I, of course, offered myself immediately! And this is how I landed my first job, if I remember correctly, paid with 400 Euro for everything.
+It was 2008 and I had just recently registered my freelance business with the German authorities in the southern city Freiburg im Breisgau (You may be familiar with it as the home town of the [Smashing Magazine](https://www.smashingmagazine.com/)). One evening I was visiting a jazz cellar and got into a conversation with a musician. It turned out that they were looking for a logo, a flyer and a website for their regular jazz sessions. I, of course, offered myself immediately! And this is how I landed my first job, if I remember correctly, paid with 400 euros for everything.
 
-It became a WordPress site, because it hadt to be maintained regularly with pictures and news by non technical persons. We were somewhere between WordPress 2.5 and 2.7 and it had very little in common with what you may know today. The WordPress menus, for example, were introduced two years later with version 3.0.
+It became a WordPress site, because it had to be maintained regularly with pictures and news by non technical editors. We were somewhere between WordPress version 2.5 and 2.7 and it had very little in common with what you may know today. The WordPress menus, for example, were introduced two years later with version 3.0.
 
 ## A simple theme
 
 Back then, everything was done with "hacks". WordPress was a pure blogging platform, and if you wanted to make some kind of CMS out of it, you had to do a lot of fiddling around.
+
+There wasn't much semantics back then, but all those divs really were a big step up from the table layouts that were still ubiquitous back then.
 
 I had built the main menu like this at that time:
 
@@ -49,8 +51,6 @@ I had built the main menu like this at that time:
     </ul>
 </div>
 ```
-
-There wasn't much semantics back then, but all those divs really were a big step up from the table layouts that were still ubiquitous back then.
 
 I don't really know what I was doing. What is that `$homeActive` variable trying to achieve up there? The WordPress function `is_home()` has been around since version 1.5.0, and in that case it seems like it weirdly lets me add the class `current_page_item` to the active link, so I could show a visual indicator of where we are. And then I hardcoded the links to the pages with IDs 51, 53, 18 and 289 into it. Finished is the WordPress menu made in 2008!
 
