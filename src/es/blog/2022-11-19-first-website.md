@@ -9,6 +9,7 @@ cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son bastante sencillos y duraderos.'
   lead: 'Soy un (nicho) [experto en WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página de WordPress hecho a medida, seguro y con buen rendimiento, considera trabajar conmigo.'
+redirectFrom: ['/es/blog/mi-primer-pagina-web/']
 ---
 
 Hoy ha ocurrido algo curioso. La primera página web que hice como autónomo, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.
