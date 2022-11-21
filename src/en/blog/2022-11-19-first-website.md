@@ -53,7 +53,7 @@ I had built the main menu like this at that time:
 
 I don't really know what I was doing. What is that `$homeActive` variable trying to achieve up there? The WordPress function `is_home()` has been around since version 1.5.0, and in that case I obviously wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
 
-{% aside %}There are some counterintuitive quirks in WordPress which, similar to JavaScript, you can't easily fix in future versions, as this would break sites. `is_home()` doesn't actually refer to yout home page, but returns true if the site’s "Front page displays" Reading Settings are set to "blog posts" instead of a static page.{% endaside %}
+{% aside %}There are some counterintuitive quirks in WordPress which, similar to JavaScript, you can't easily fix in future versions, as this would break sites. `is_home()` doesn't actually refer inconditionally to your home page, but returns `true` if the site’s "Front page displays" Reading Settings are set to "blog posts" instead of a static page.{% endaside %}
 
 I then hardcoded the links to the pages with IDs 51, 53, 18 and 289 into it.
 Finished is the WordPress menu made in 2008!
@@ -64,7 +64,7 @@ Finished is the WordPress menu made in 2008!
 
 Look at that! No one understands that anymore. Nobody understood that back then either.
 
-I found some hardcoded elements, for example in the footer. I obviously didn't know how to show this info otherwise. Did we have widgets already?
+I found some more hardcoded elements, for example in the footer. I obviously didn't know how to show this info otherwise. Did we have widgets already?
 
 ```html
 <div id="footer">

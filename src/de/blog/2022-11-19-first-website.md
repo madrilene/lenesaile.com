@@ -12,9 +12,9 @@ cta:
 
 Heute ist etwas Lustiges passiert. Die allererste Website, die ich Ende 2008 als Selbstständige erstellt habe, hat mich wieder eingeholt. Seit 14 Jahren habe ich nichts mehr von ihr gesehen oder gehört, und nun ist sie wieder da.
 
-Der Grund, warum sie wieder in mein Leben getreten ist, war natürlich, dass ein Fehler aufgetreten ist. Ein sicherlich lange angekündigtes, aber geflissentlich ignoriertes, Update auf PHP 8.1 ihres Servers.
+Der Grund, warum sie wieder in mein Leben trat, war natürlich, dass ein Fehler auftrat. Ein "erzwungenes" Update auf PHP 8.1 auf dem Server führte dazu, dass die Website nicht mehr funktionierte, so dass man sich wieder an mich erinnerte.
 
-Das Bild kennt jeder WordPress-Develeoper:
+Das Bild kennt jeder WordPress-Entwickler:
 
 {% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot von vielen PHP-Fehlerzeilen, verursacht durch eine Inkompatibilität mit PHP 8.1", "Hello darkness my old friend." %}
 
@@ -29,6 +29,8 @@ Es wurde eine WordPress-Seite, denn sie musste regelmäßig mit Bildern und Neui
 ## Ein einfaches theme
 
 Damals machte man alles mit "hacks". WordPress war eine reine Blogging-Plattform, und wenn du eine Art CMS daraus machen wolltest, dann musstest du viel herumtricksen.
+
+Es gab damals noch nicht viel Semantik, aber all die divs waren schon ein großer Fortschritt zu den Tabellenlayouts die damals noch allgegenwärtig waren.
 
 Das Menü hatte ich damals so gebaut:
 
@@ -49,9 +51,12 @@ Das Menü hatte ich damals so gebaut:
 </div>
 ```
 
-Es gab damals noch nicht viel Semantik, aber all die divs waren schon ein großer Fortschritt zu den Tabellenlayouts die damals noch allgegenwärtig waren.
+So richtig weiß ich nicht was ich mir dabei gedacht habe. Was macht diese $homeActive-Variable da oben? Die WordPress-Funktion is_home() gibt es seit Version 1.5.0. In diesem Fall wollte ich, dass sie die Klasse `current_page_item` zu "Home" hinzufügt, wenn diese Seite aktiv ist. Das ruft einen visuellen Indikator auf, der anzeigt, wo wir uns befinden. Das hat nicht funktioniert! Sicherlich habe ich einige Stunden damit verbracht, herauszufinden, warum das so ist, bis ich schließlich aufgegeben habe.
 
-So richtig weiß ich nicht was ich mir dabei gedacht habe. Was macht diese $homeActive-Variable da oben? Das andere ist schon eindeutiger. Die WordPress-Funktion `is_home()` gibt es schon seit Version 1.5.0 und lässt mich in dem Fall die Klasse "current_page_item" zum Link hinzufügen. Für einen visuellen Indikator, wo wir uns befinden. Und dann hardcode ich die Links zu den Seiten mit den IDs 51, 53, 18 und 289 hinein. Fertig ist das WordPress-Menü made in 2008!
+{% aside %}Es gibt einige nicht intuitive Eigenarten in WordPress, die man, ähnlich wie bei JavaScript, nicht einfach in zukünftigen Versionen beheben kann, da das Fehler bei Websites hervorrufen würde, die die Funktion nutzen. `is_home()` bezieht sich nicht bedingungslos auf deine Startseite, sondern gibt `true` zurück, wenn die Leseeinstellungen im WordPress backend auf "blog posts" statt auf eine statische Seite gesetzt sind.{% endaside %}
+
+Dann habe ich die Links zu den Seiten mit den IDs 51, 53, 18 und 289 fest einprogrammiert.
+Fertig ist das WordPress-Menü made in 2008!
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -59,9 +64,7 @@ So richtig weiß ich nicht was ich mir dabei gedacht habe. Was macht diese $home
 
 Seht euch das an! Versteht heute kein Mensch mehr. Damals auch nicht.
 
-Ich fand einige hartkodierten Elemente, etwa im Footer.
-
-I found some hardcoded elements, for example in the footer. Ich wusste offensichtlich nicht, wie ich diese Informationen sonst anzeigen sollte. Hatten wir schon Widgets?
+Ich fand einige weitere hartkodierte Elemente, etwa im Footer. Ich wusste offensichtlich nicht, wie ich diese Informationen sonst anzeigen sollte. Hatten wir schon Widgets?
 
 ```html
 <div id="footer">
@@ -73,7 +76,9 @@ I found some hardcoded elements, for example in the footer. Ich wusste offensich
 </div>
 ```
 
-Alles in allem habe ich ein sehr sehr simples theme geschrieben. Es kommt mit wenigen Zeilen CSS aus, von denen mit Sicherheit die Hälfte gar nicht gebraucht wird, und das ich teilweise ahnungslos irgendwo kopiert habe. Nicht dass ich mich daran noch erinnern könnte, aber ich spreche kein Schwedisch.
+Ich habe sogar explizit die HTML 4-Entities für deutsche Umlaute genutzt!
+
+Alles in allem habe ich ein sehr simples theme geschrieben. Es kommt mit wenigen Zeilen CSS aus, von denen mit Sicherheit die Hälfte gar nicht gebraucht wird, und das ich teilweise ahnungslos irgendwo kopiert habe. Nicht dass ich mich daran noch erinnern könnte, aber ich spreche kein Schwedisch.
 
 ```css
 #sidebar .bloggy-meddelande {
@@ -92,24 +97,28 @@ JavaScript? Nicht existent. Konnte ich damals kein Stück, und wurde ja auch gar
 Das allerbeste: zwei Plugins. **Zwei!**
 
 Drei, wenn man das Hello Dolly Plugin mitzählt, das lange Zeit mit WordPress ausgeliefert wurde.
-Akismet und TinyMCE Advanced, welches offensichtlich noch bis vor kurzem genutzt wurde, um bestimmte Texte in mit der Farbe `#ff0004` (websafe!) zu hinterlegen.
+
+VEs verbleiben Akismet und TinyMCE Advanced, welches offensichtlich noch bis vor kurzem dazu genutzt wurde, bestimmte Texte mit der Farbe `#ff0004` (websafe!) zu hinterlegen.
 
 ## Was war in all diesen Jahren geschehen?
 
-Ich erinnere mich daran, dass ich zu Beginn noch ein paar Mal kostenlos WordPress aktualisert habe. Dann wollte ich dafür irgendwann eine winzige monatliche Pauschale, und das hat nicht geklappt, und so sind wir, die Webseite und ich, unserer unterschiedlicher Wege gegangen. Meiner von persönlicher Entwicklung, Schicksälen und Umbrüchen gezeichnet, der Weg der Webseite: absolut unbewegt. Der admin der Seite (der natürlich auch noch "admin" hieß!) hat die Startseite und die Seite für Fotos als Blogersatz genutzt und offenbar nichts vermisst.
+Ich erinnere mich daran, dass ich zu Beginn noch ein paar Mal kostenlos WordPress aktualisert habe. Es war mühsam, denn der Host verlangte für jede Aktualisierung eine manuelle Eingabe der FTP-Zugangsdaten im WordPress-Backend. Dann wollte ich dafür irgendwann eine winzige monatliche Pauschale. Das hat nicht geklappt, und so sind wir, die Webseite und ich, unserer unterschiedlicher Wege gegangen. Meiner von persönlicher Entwicklung, Schicksälen und Umbrüchen gezeichnet, der Weg der Webseite: absolut unbewegt. Der admin der Seite (der natürlich auch noch "admin" hieß!) hat die Startseite und die Seite für Fotos als Blogersatz genutzt und offenbar nichts vermisst.
 
 Es kam die große Welle des Responsive Webdesign, und während die allermeisten Seiten nach und nach media querys bekamen, scherte sich meine Seite nicht darum. Es war hilfreich, dass ich die Website so verdammt schmal gemacht habe!
 
-{% image "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "Screenshot der Website auf meinem Bildschirm. Sie nimmt nur etwa 30 % des Platzes ein.", "lazy" %}
+{% imagePlaceholder "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "", "Screenshot der Website auf meinem Bildschirm. Sie nimmt nur etwa 30 % des Platzes ein.", "Es ist ziemlich modern! Ich habe sogar den Inhalt gut lesbar auf maximal 45 bis 75 Zeichen pro Zeile gehalten!" %}
 
-Webseiten mit 600 bis 800 Pixel Breite war damals gar nicht so außergewöhnlich. Ich könnte schwören dass sie meinen Monitor damals ganz gut ausgefüllt hatte.
+Webseiten mit 600 bis 800 Pixel Breite war damals gar nicht so außergewöhnlich. Ich könnte schwören, dass sie meinen Monitor damals ganz gut ausgefüllt hat.
 
-Da ist sie also wieder. Es war die furchtbar veraltete WordPress-Version und _TinyMCE Advanced_, die die Seite schließlich zu Fall brachten. Weiß der Himmel seit wann das Plugin schon nicht mehr weiterentwicklet wurde.
+Da ist sie also wieder. Ich habe vergessen, die genaue Version von WordPress zu überprüfen, bevor ich sie gelöscht habe, aber sie war mit Sicherheit furchtbar veraltet. Das alte WordPress und _TinyMCE Advanced_ haben die Seite schließlich zum Absturz gebracht, als PHP 8.1 aktiviert wurde.
 
-Nun hat die Seite nur noch ein einziges Plugin: Akismet. Ich habe die docytpe-declaration durch `<!DOCTYPE> ersetzt, alles andere ist wie eh und je.
+Nun hat die Seite nur noch ein einziges Plugin: Akismet. Ich schätze es ist der Einfältigkeit meiner damaligen Programmierung und dem Fehlen von Plugins zu verdanken, dass sie so weit gekommen ist.
+
+Ich habe eine neue WordPress-Installation aufgesetzt, die alte docytpe-Deklaration durch `<!DOCTYPE>` ersetzt und die seltsame `$homeActive`-Logik gelöscht, da sie anscheinend nur für Verwirrung sorgte. Ich habe `is_home()` mit `is_front_page()` ersetzt, damit die visuelle Anzeige für "Home" nun tatsächlich funktioniert.
+Alles andere ist so, wie es immer war.
 
 Ihr könnt sie gerne besuchen, allerdings, _disclaimer_: Der Webhost lässt sich SSL-Zertifikate mit mindestens 2,99 Euro im Monat bezahlen. Also, kein SSL.
 
 👉👉👉 www.ruefettojazzsessions.de
 
-Wie viele können sagen, dass ihre erste "professionelle" Website immer noch existiert, in all ihrer fragwürdigen Pracht?
+Wie viele können sagen, dass ihre erste "professionelle" Website immer noch existiert, in all ihrer fragwürdigen Pracht? Es war wirklich eine schöne Begegnung.
