@@ -112,7 +112,7 @@ The big wave of Responsive Web Design came, and while the vast majority of sites
 
 Making websites limited to 600 to 800 pixels width was not so unusual around 2008. I could swear that it filled my monitor quite well back then.
 
-So here it is again, 14 years of error free work later. I forgot to check the exact version of WordPress running on there before deleting it, but it sure was terribly outdated. This, and _TinyMCE Advanced_, is what finally brought the site down when PHP 8.1 was activated.
+So here it is again, 14 years of apparently error free work later. I forgot to check the exact version of WordPress running on there before deleting it, but it sure was terribly outdated. This, and _TinyMCE Advanced_, is what finally brought the site down when PHP 8.1 was activated.
 
 I can't imagine nobody ever updated this website since 2008. Is this even possible? Were they running a compatible PHP version all that time?
 
@@ -125,4 +125,4 @@ You are welcome to visit it, but, disclaimer: Its web host makes you pay for SSL
 
 👉👉👉 www.ruefettojazzsessions.de
 
-How many can say that their first "profesional" website is still out there, in all its questionable glory? It sure was a nice encounter.
+How many can say that their first "professional" website is still out there, in all its questionable glory? It sure was a nice encounter.
