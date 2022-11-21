@@ -1,10 +1,10 @@
 ---
 title: 'Mi primer página web'
-descripción: 'Hoy ha ocurrido algo curioso. La primera página web que hice como autónoma, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.'
-categoría: blogpost
-clave: 'firstwebsite'
+description: 'Hoy ha ocurrido algo curioso. La primera página web que hice como autónoma, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.'
+category: blogpost
+key: 'firstwebsite'
+date: 2022-11-19
 fecha: 2022-11-19
-youtube: false
 cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son bastante sencillos y duraderos.'

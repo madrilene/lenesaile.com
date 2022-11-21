@@ -1,10 +1,9 @@
 ---
 title: 'Meine erste Website'
 description: 'Heute ist etwas Lustiges passiert. Die allererste Website, die ich Ende 2008 als Freiberufler erstellt habe, hat mich wieder eingeholt. Ich habe 14 Jahre lang nichts mehr von ihr gesehen oder gehört, und jetzt ist sie wieder da.'
-Kategorie: Blogpost
-Stichwort: 'firstwebsite'
-Datum: 2022-11-19
-youtube: falsch
+category: Blogpost
+key: 'firstwebsite'
+date: 2022-11-19
 cta:
   title: 'Willst du eine WordPress-Seite?'
   desktop: 'Ich habe seit 2008 einiges dazugelernt. Ich mache allerings immer noch WordPress-Seiten die recht simpel und langlebig sind.'

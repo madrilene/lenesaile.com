@@ -4,7 +4,6 @@ description: "A funny thing happened today. The very first website I made as a f
 category: blogpost
 key: 'firstwebsite'
 date: 2022-11-19
-youtube: false
 cta:
   title: 'You want a WordPress site?'
   desktop: "I've learned a thing or two since 2008. I still make them WordPress sites quite simple and long-lasting though."
@@ -13,9 +12,9 @@ cta:
 
 A funny thing happened today. The very first website I made as a freelancer, in late 2008, caught up with me again. I haven't seen or heard from it in 14 years, and now it's back.
 
-The reason it came back into my life was, of course, that there appeared an error. A certainly long announced, but studiously ignored, update to PHP 8.1 of its server.
+The reason it came back into my life was, of course, that there appeared an error. A "forced" update to PHP 8.1 on the server caused the website to fail, so they thaught of me, the creator, to fix it.
 
-The picture is very familiar to every WordPress developer:
+Tis picture is familiar to every WordPress developer:
 
 {% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot of many lines of PHP errors caused by a incompability with PHP 8.1", "Hello darkness my old friend." %}
 
@@ -52,7 +51,12 @@ I had built the main menu like this at that time:
 </div>
 ```
 
-I don't really know what I was doing. What is that `$homeActive` variable trying to achieve up there? The WordPress function `is_home()` has been around since version 1.5.0, and in that case it seems like it weirdly lets me add the class `current_page_item` to the active link, so I could show a visual indicator of where we are. And then I hardcoded the links to the pages with IDs 51, 53, 18 and 289 into it. Finished is the WordPress menu made in 2008!
+I don't really know what I was doing. What is that `$homeActive` variable trying to achieve up there? The WordPress function `is_home()` has been around since version 1.5.0, and in that case I obviously wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
+
+{% aside %}There are some counterintuitive quirks in WordPress which, similar to JavaScript, you can't easily fix in future versions, as this would break sites. `is_home()` doesn't actually refer to yout home page, but returns true if the site’s "Front page displays" Reading Settings are set to "blog posts" instead of a static page.{% endaside %}
+
+I then hardcoded the links to the pages with IDs 51, 53, 18 and 289 into it.
+Finished is the WordPress menu made in 2008!
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -60,7 +64,7 @@ I don't really know what I was doing. What is that `$homeActive` variable trying
 
 Look at that! No one understands that anymore. Nobody understood that back then either.
 
-I found some hardcoded elements, for example in the footer. I obviously din't know how to show this info otherwise. Did we have widgets already?
+I found some hardcoded elements, for example in the footer. I obviously didn't know how to show this info otherwise. Did we have widgets already?
 
 ```html
 <div id="footer">
@@ -72,7 +76,9 @@ I found some hardcoded elements, for example in the footer. I obviously din't kn
 </div>
 ```
 
-All in all I wrote a very very simple theme. It gets by with just a few lines of CSS, half of which I'm sure isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember it, but I don't speak Swedish.
+I even explicitly wrote the HTML 4 entities for german umlauts!
+
+All in all I wrote a very very simple theme. It gets by with just a few lines of CSS, half of which I'm sure isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
 
 ```css
 #sidebar .bloggy-meddelande {
@@ -90,25 +96,30 @@ JavaScript? Non-existent. I didn't know how to write it at that time, and it rea
 
 The very best: two plugins. **Two!**
 
-Three, if you count the _Hello Dolly plugin_ that shipped with WordPress for a long time. Then there were Akismet and TinyMCE Advanced, which apparently was heavily used until recently to change the default color of the content with `#ff0004` (websafe!!).
+Three, if you count the _Hello Dolly plugin_ that shipped with WordPress for a long time.
 
-## What had happened all those years?
+There remain Akismet and TinyMCE Advanced, which apparently was heavily used until recently to change the default color of the content to `#ff0004` (websafe!!).
 
-I remember updating WordPress for free a few times in the beginning. Then at some point I wanted a tiny monthly flat fee for it, and that didn't work out, and so we, the website and I, went our different ways. Mine was marked by personal development, fates and upheavals, the way of the website: absolutely unmoved.
+## What had happened in all those years?
 
-The admin of the website (who of course was still set as "admin"!) used the home page and the page for photos as a blog replacement and apparently didn't miss anything at all.
+I remember updating WordPress for free a few times in the beginning. It was exhausting, because the host required a manual entry of FTP credentials in the WordPress backend, for each and every update. Then at some point I wanted a tiny monthly flat fee for it. That didn't work out, so we, the website and I, went our seperate ways. Mine was marked by personal development, fates and upheavals, the way of the website: absolutely unmoved.
+
+The admin of the website (who of course was still set as "admin"!) happily used the home page and the gallery page as a blog replacement and apparently didn't miss anything at all.
 
 The big wave of Responsive Web Design came, and while the vast majority of sites gradually got media querys, my site didn't care. It came in handy I made the website so freaking narrow.
 
-{% image "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "Screenshot of the website on my screen. It only takes up about 30% of the space.", "lazy" %}
+{% imagePlaceholder "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "", "Screenshot of the website on my screen. It only takes up about 30% of the space.", "It is quite modern! I even kept the content nicely readable between 45 to 75 characters max per line!" %}
 
-Making websites Web with 600 to 800 pixels width was not so unusual around 2008. I could swear that it filled my monitor quite well back then.
+Making websites limited to 600 to 800 pixels width was not so unusual around 2008. I could swear that it filled my monitor quite well back then.
 
-So here it is again, 14 years of error free work later. It was the terribly outdated WordPress version and _TinyMCE Advanced_ that finally brought the site down. Heaven knows since when it had been discontinued.
+So here it is again, 14 years of error free work later. I forgot to check the exact version of WordPress running on there before deleting it, but it sure was terribly outdated. This, and _TinyMCE Advanced_, is what finally brought the site down when PHP 8.1 was activated.
+
+I can't imagine nobody ever updated this website since 2008. Is this even possible? Were they running a compatible PHP version all that time?
 
 Now the site has only one plugin left: Akismet. I guess it's all thanks to the simple nature of my programming back then and the absence of plugins that it had made it that far.
 
-I have put a fresh installation of WordPress on it, replaced the docytpe-declaration with `<!DOCTYPE>`, everything else is as it always was (no budget for more, if you believe it).
+I have put a fresh installation of WordPress on it, replaced the docytpe-declaration with `<!DOCTYPE>` and deleted that strange `$homeActive` logic, as it did't seem to do anything but confuse. I exchanged `is_home()` with `is_front_page()` to make the current page indicator for home actually work.
+Everything else is as it always was.
 
 You are welcome to visit it, but, disclaimer: Its web host makes you pay for SSL certificates with at least 2.99 euros per month. So, no SSL.
 
