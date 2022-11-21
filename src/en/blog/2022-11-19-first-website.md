@@ -14,7 +14,7 @@ A funny thing happened today. The very first website I made as a freelancer, in 
 
 The reason it came back into my life was, of course, that there was an error. A "forced" update to PHP 8.1 on the server caused the website to fail, so they thought of me, the creator, to fix it.
 
-Tis picture is familiar to every WordPress developer:
+This picture is familiar to every WordPress developer:
 
 {% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot of many lines of PHP errors caused by a incompability with PHP 8.1", "Hello darkness my old friend." %}
 
@@ -51,7 +51,8 @@ I had built the main menu like this at that time:
 </div>
 ```
 
-I don't really know what I was doing. What is that `$homeActive` variable trying to achieve up there? The WordPress function `is_home()` has been around since version 1.5.0, and in that case I obviously wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
+I guess I didn't really know what I was doing. What is that `$homeActive` variable trying to achieve up there?
+The WordPress function `is_home()` has been around since version 1.5.0, and in that case I obviously wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
 
 {% aside %}There are some counterintuitive quirks in WordPress which, similar to JavaScript, you can't easily fix in future versions, as this would break sites. `is_home()` doesn't actually refer inconditionally to your home page, but returns `true` if the site’s "Front page displays" Reading Settings are set to "blog posts" instead of a static page.{% endaside %}
 
