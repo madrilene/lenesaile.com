@@ -12,7 +12,7 @@ cta:
 
 A funny thing happened today. The very first website I made as a freelancer, in late 2008, caught up with me again. I haven't seen or heard from it in 14 years, and now it's back.
 
-The reason it came back into my life was, of course, that there appeared an error. A "forced" update to PHP 8.1 on the server caused the website to fail, so they thaught of me, the creator, to fix it.
+The reason it came back into my life was, of course, that there was an error. A "forced" update to PHP 8.1 on the server caused the website to fail, so they thought of me, the creator, to fix it.
 
 Tis picture is familiar to every WordPress developer:
 
