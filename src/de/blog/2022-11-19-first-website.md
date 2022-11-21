@@ -111,6 +111,7 @@ Es kam die große Welle des Responsive Webdesign, und während die allermeisten 
 Webseiten mit 600 bis 800 Pixel Breite war damals gar nicht so außergewöhnlich. Ich könnte schwören, dass sie meinen Monitor damals ganz gut ausgefüllt hat.
 
 Da ist sie also wieder. Ich habe vergessen, die genaue Version von WordPress zu überprüfen, bevor ich sie gelöscht habe, aber sie war mit Sicherheit furchtbar veraltet. Das alte WordPress und _TinyMCE Advanced_ haben die Seite schließlich zum Absturz gebracht, als PHP 8.1 aktiviert wurde.
+Ich kann mir nicht vorstellen, dass niemand diese Website seit 2008 aktualisiert hat. Ist das überhaupt möglich? Wurde die ganze Zeit eine kompatible PHP-Version verwendet?
 
 Nun hat die Seite nur noch ein einziges Plugin: Akismet. Ich schätze es ist der Einfältigkeit meiner damaligen Programmierung und dem Fehlen von Plugins zu verdanken, dass sie so weit gekommen ist.
 
