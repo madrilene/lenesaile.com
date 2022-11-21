@@ -30,7 +30,7 @@ It became a WordPress site, because it had to be maintained regularly with pictu
 
 Back then, everything was done with "hacks". WordPress was a pure blogging platform, and if you wanted to make some kind of CMS out of it, you had to do a lot of fiddling around.
 
-There wasn't much semantics back then, but all those divs really were a big step up from the table layouts that were still ubiquitous back then.
+There wasn't much semantics back then, but all those divs really were a big step up from the table layouts.
 
 I had built the main menu like this at that time:
 
