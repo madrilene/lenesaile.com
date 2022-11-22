@@ -24,8 +24,8 @@ svg.avatar-start {
 }
 
 svg.avatar-start {
-  transform: translateY(1.6rem) translateX(-6rem);
-  width: 50%;
+  transform: translateY(1.6rem) translateX(-7rem);
+  width: 60%;
 }
 
 .avatar-content-reverse__inner {
@@ -52,7 +52,8 @@ svg.avatar-blog {
   }
 
   svg.avatar-start {
-    transform: translateY(2rem) translateX(-8.2rem);
+    width: 50%;
+    transform: translateY(2rem) translateX(-7.2rem);
   }
 
   svg.avatar-blog {
