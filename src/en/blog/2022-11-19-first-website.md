@@ -91,6 +91,27 @@ All in all I wrote a very very simple theme. It gets by with just a few lines of
 }
 ```
 
+This is also a nice one:
+
+```css
+#menu a,
+#menu a:link,
+#menu a:active,
+#menu a:visited,
+#menu a:focus,
+#menu a:hover {
+  text-decoration: none;
+  border: 0px;
+  height: 30px;
+  line-height: 30px;
+  padding: 15px 15px 15px 15px;
+  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  white-space: nowrap;
+}
+```
+
+😱... but look at that comment! 😂
+
 JavaScript? Non-existent. I didn't know how to write it at that time, and it really wasn't needed at all.
 
 ## We didn't need any plugins
@@ -119,8 +140,8 @@ I can't imagine nobody ever updated this website since 2008. Is this even possib
 
 Now the site has only one plugin left: Akismet. I guess it's all thanks to the simple nature of my programming back then and the absence of plugins that it had made it that far.
 
-I have put a fresh installation of WordPress on it, replaced the docytpe-declaration with `<!DOCTYPE>` and deleted that strange `$homeActive` logic, as it did't seem to do anything but confuse. I exchanged `is_home()` with `is_front_page()` to make the current page indicator for home actually work.
-Everything else is as it always was.
+I have put a fresh installation of WordPress on it, replaced the docytpe-declaration with `<!DOCTYPE>` and deleted that strange `$homeActive` logic, as it did't seem to do anything but confuse. I exchanged `is_home()` with `is_front_page()` to make the current page indicator for home actually work. I deleted some redundant CSS and made it keyboard focusable again.
+Everything else is as it always was. You won't believe it, but the web vitals are great.
 
 You are welcome to visit it, but, disclaimer: Its web host makes you pay for SSL certificates with at least 2.99 euros per month. So, no SSL.
 

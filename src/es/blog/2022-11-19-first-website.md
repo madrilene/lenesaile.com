@@ -7,12 +7,12 @@ date: 2022-11-19
 fecha: 2022-11-19
 cta:
   title: '¿Quieres una página web con WordPress?'
-  desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son bastante sencillos y duraderos.'
-  lead: 'Soy un (nicho) [experto en WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página de WordPress hecho a medida, seguro y con buen rendimiento, considera trabajar conmigo.'
+  desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son bastante sencillas y duraderas.'
+  lead: 'Soy [experta en WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página de WordPress hecho a medida, seguro y con buen rendimiento, considera trabajar conmigo.'
 redirectFrom: ['/es/blog/mi-primer-pagina-web/']
 ---
 
-Hoy ha ocurrido algo curioso. La primera página web que hice como autónomo, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.
+Hoy ha ocurrido algo curioso. La primera página web que hice como autónoma, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.
 
 La razón por la que volvió a mi vida fue, por supuesto, que apareció un error. Una actualización "forzada" a PHP 8.1 en el servidor hizo que el sitio web fallara, así que pensaron en mí, la creadora, para arreglarlo.
 
@@ -92,6 +92,27 @@ En general, escribí un tema muy, muy simple. Se arregla con sólo unas pocas l�
 }
 ```
 
+Este también es bonito:
+
+```css
+#menu a,
+#menu a:link,
+#menu a:active,
+#menu a:visited,
+#menu a:focus,
+#menu a:hover {
+  text-decoration: none;
+  border: 0px;
+  height: 30px;
+  line-height: 30px;
+  padding: 15px 15px 15px 15px;
+  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  white-space: nowrap;
+}
+```
+
+😱...¡pero mira ese comentario! 😂
+
 ¿JavaScript? No existe. No sabía cómo escribirlo en ese momento, y realmente no era necesario en absoluto.
 
 ## No necesitábamos ningún plugin.
@@ -117,8 +138,8 @@ No puedo imaginar que nadie haya actualizado este sitio web desde 2008. ¿Es est
 
 Ahora sólo queda un plugin: Akismet. Supongo que es todo gracias a la naturaleza simple de mi programación en ese entonces y la ausencia de plugins que había dejado que pudiera llegar tan lejos.
 
-He puesto una nueva instalación de WordPress, he sustituido la declaración docytpe antígua por `<!DOCTYPE>` y he eliminado esa extraña lógica `$homeActive`, ya que no parecía hacer nada más que confundir. He cambiado `is_home()` por `is_front_page()` para que el indicador de página actual para "home" funcione realmente.
-Todo lo demás está como siempre.
+He puesto una nueva instalación de WordPress, he sustituido la declaración docytpe antígua por `<!DOCTYPE>` y he eliminado esa extraña lógica `$homeActive`, ya que no parecía hacer nada más que confundir. He cambiado `is_home()` por `is_front_page()` para que el indicador de página actual para "home" funcione realmente. Luego he quitado algo del CSS que sobraba y lo hize enfocable por el teclado de nuevo.
+Todo lo demás está como siempre. No te lo vas a creer, pero los web vitals son geniales.
 
 Os invito a visitarla, pero, "disclaimer": Su Hosting te hace pagar por certificados SSL con al menos 2,99 euros al mes. Así que, no hay SSL.
 

@@ -90,6 +90,27 @@ Alles in allem habe ich ein sehr simples theme geschrieben. Es kommt mit wenigen
 }
 ```
 
+Der ist auch gut:
+
+```css
+#menu a,
+#menu a:link,
+#menu a:active,
+#menu a:visited,
+#menu a:focus,
+#menu a:hover {
+  text-decoration: none;
+  border: 0px;
+  height: 30px;
+  line-height: 30px;
+  padding: 15px 15px 15px 15px;
+  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  white-space: nowrap;
+}
+```
+
+😱... aber schau dir diesen Kommentar an! 😂
+
 JavaScript? Nicht existent. Konnte ich damals kein Stück, und wurde ja auch gar nicht gebraucht!
 
 ## Wir brauchten keine Plugins
@@ -115,10 +136,10 @@ Ich kann mir nicht vorstellen, dass niemand diese Website seit 2008 aktualisiert
 
 Nun hat die Seite nur noch ein einziges Plugin: Akismet. Ich schätze es ist der Einfältigkeit meiner damaligen Programmierung und dem Fehlen von Plugins zu verdanken, dass sie so weit gekommen ist.
 
-Ich habe eine neue WordPress-Installation aufgesetzt, die alte docytpe-Deklaration durch `<!DOCTYPE>` ersetzt und die seltsame `$homeActive`-Logik gelöscht, da sie anscheinend nur für Verwirrung sorgte. Ich habe `is_home()` mit `is_front_page()` ersetzt, damit die visuelle Anzeige für "Home" nun tatsächlich funktioniert.
-Alles andere ist so, wie es immer war.
+Ich habe eine neue WordPress-Installation aufgesetzt, die alte docytpe-Deklaration durch `<!DOCTYPE>` ersetzt und die seltsame `$homeActive`-Logik gelöscht, da sie anscheinend nur für Verwirrung sorgte. Ich habe `is_home()` mit `is_front_page()` ersetzt, damit die visuelle Anzeige für "Home" nun tatsächlich funktioniert. Ich habe einiges überflüssiges CSS gelöscht und die Seite wieder fokussierbar gemacht.
+Alles andere ist so, wie es immer war. Du wirst es mir nicht glauben, aber die Web Vitals sind super.
 
-Ihr könnt sie gerne besuchen, allerdings, _disclaimer_: Der Webhost lässt sich SSL-Zertifikate mit mindestens 2,99 Euro im Monat bezahlen. Also, kein SSL.
+Du kannst sie gerne besuchen, allerdings, _disclaimer_: Der Webhost lässt sich SSL-Zertifikate mit mindestens 2,99 Euro im Monat bezahlen. Also, kein SSL.
 
 👉👉👉 www.ruefettojazzsessions.de
 
