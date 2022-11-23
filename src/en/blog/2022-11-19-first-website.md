@@ -79,7 +79,7 @@ I found some more hardcoded elements, for example in the footer. I obviously did
 
 I even explicitly wrote the HTML 4 entities for german umlauts!
 
-All in all I wrote a very very simple theme. It gets by with just a few lines of CSS, half of which I'm sure isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
+All in all I wrote a very very simple theme. It gets by with just a few lines of CSS, half of which isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
 
 ```css
 #sidebar .bloggy-meddelande {
@@ -112,7 +112,7 @@ This is also a nice one:
 
 😱... but look at that comment! 😂
 
-JavaScript? Non-existent. I didn't know how to write it at that time, and it really wasn't needed at all.
+JavaScript? Non-existent. I didn't know how to write it at that time, and it really wasn't necessary at all.
 
 ## We didn't need any plugins
 

@@ -25,7 +25,7 @@
   "author": "Lene Saile",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.16",
+    "@11ty/eleventy": "^2.0.0-canary.18",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
@@ -63,7 +63,7 @@
     "outdent": "^0.8.0",
     "postcss": "^8.4.8",
     "postcss-cli": "^10.0.0",
-    "postcss-custom-media": "^8.0.2",
+    "postcss-custom-media": "^9.0.1",
     "postcss-import": "^15.0.0",
     "postcss-import-ext-glob": "^2.0.1",
     "postcss-js": "^4.0.0",

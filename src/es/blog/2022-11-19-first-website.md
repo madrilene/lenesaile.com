@@ -80,7 +80,7 @@ Encontré algunos elementos codificados más, por ejemplo en el pie de página. 
 
 ¡Incluso escribí explícitamente las entidades HTML 4 para las diéresis alemanas!
 
-En general, escribí un tema muy, muy simple. Se arregla con sólo unas pocas líneas de CSS, la mitad de las cuales estoy seguro de que ni siquiera se necesitan, y algunas de las cuales copié despistadamente de algún página web. No es que lo recuerde, pero no hablo sueco.
+En general, escribí un tema muy, muy simple. Se arregla con sólo unas pocas líneas de CSS, la mitad de las cuales ni siquiera se necesitan, y algunas de las cuales copié despistadamente de algún página web. No es que lo recuerde, pero no hablo sueco.
 
 ```css
 #sidebar .bloggy-meddelande {

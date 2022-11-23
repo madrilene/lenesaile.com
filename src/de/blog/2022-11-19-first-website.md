@@ -78,7 +78,7 @@ Ich fand einige weitere hartkodierte Elemente, etwa im Footer. Ich wusste offens
 
 Ich habe sogar explizit die HTML 4-Entities für deutsche Umlaute genutzt!
 
-Alles in allem habe ich ein sehr simples theme geschrieben. Es kommt mit wenigen Zeilen CSS aus, von denen mit Sicherheit die Hälfte gar nicht gebraucht wird, und das ich teilweise ahnungslos irgendwo kopiert habe. Nicht dass ich mich daran noch erinnern könnte, aber ich spreche kein Schwedisch.
+Alles in allem habe ich ein sehr simples theme geschrieben. Es kommt mit wenigen Zeilen CSS aus, von denen die Hälfte gar nicht gebraucht wird, und das ich teilweise ahnungslos irgendwo kopiert habe. Nicht dass ich mich daran noch erinnern könnte, aber ich spreche kein Schwedisch.
 
 ```css
 #sidebar .bloggy-meddelande {
