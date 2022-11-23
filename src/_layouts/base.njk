@@ -52,7 +52,10 @@
     {% include "schemas/base-schema.njk" %}
   </head>
 
-  <body class="relative">
+  <body
+    class="relative"
+    style="--nav-list-color: {{ navcolor or 'var(--color-text)' }}; --nav-list-bg: {{ navbg or 'var(--color-bg)' }}"
+  >
     <!-- header -->
     {% include "partials/header.njk" %} {% include "partials/lang-switch.njk" %}
 

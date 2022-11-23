@@ -72,7 +72,7 @@ nav.navbar a {
   color: var(--nav-list-color, var(--color-text));
   padding: 0.1rem 0.3rem;
   text-decoration: none;
-  background-color: var(--color-bg);
+  background-color: var(--nav-list-bg, var(--color-bg));
   border-radius: var(--border-radius);
 }
 
@@ -94,11 +94,11 @@ nav.navbar a {
 
 /* Change the border-color on :hover and :focus */
 nav.navbar a:where(:hover, :focus) {
-  --border-color: var(--color-text);
+  --border-color: var(--nav-list-color, var(--color-text));
 }
 
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-text);
-  --text-color: var(--color-text);
+  --border-color: var(--nav-list-color, var(--color-text));
+  --text-color: var(--nav-list-color, var(--color-text));
 }

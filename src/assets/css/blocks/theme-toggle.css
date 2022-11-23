@@ -79,8 +79,8 @@
 
 .theme-toggle {
   --size: 2rem;
-  --icon-fill: var(--color-dark);
-  --icon-fill-hover: var(--color-dark);
+  --icon-fill: var(--nav-list-color, var(--color-dark));
+  --icon-fill-hover: var(--nav-list-color, var(--color-dark));
 
   background: none;
   border: none;
@@ -104,8 +104,8 @@
   }
 
   @nest [data-theme='dark'] & {
-    --icon-fill: var(--color-light);
-    --icon-fill-hover: var(--color-light);
+    --icon-fill: var(--nav-list-color, var(--color-light));
+    --icon-fill-hover: var(--nav-list-color, var(--color-light));
   }
 
   /* @media (hover: none) {

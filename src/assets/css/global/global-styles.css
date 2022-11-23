@@ -87,7 +87,9 @@ a:hover {
 }
 
 :focus {
-  outline: 3px solid;
+  outline: 3px;
+  outline-style: solid;
+  outline-color: var(--nav-list-color, var(--color-text));
   outline-offset: 0.3ch;
 }
 
