@@ -1,8 +1,8 @@
 {
   "name": "lenesaile.com",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
-    "node": "18.x"
+    "node": ">=18.x"
   },
   "description": "My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.",
   "main": ".eleventy.js",

@@ -1,6 +1,6 @@
 ---
 title: 'Meine erste Website'
-description: 'Heute ist etwas Lustiges passiert. Die allererste Website, die ich Ende 2008 als Freiberufler erstellt habe, hat mich wieder eingeholt. Ich habe 14 Jahre lang nichts mehr von ihr gesehen oder gehört, und jetzt ist sie wieder da.'
+description: 'Heute ist etwas Lustiges passiert. Die allererste Website, die ich Ende 2008 als Selbstständige erstellt habe, hat mich wieder eingeholt. Seit 14 Jahren habe ich nichts mehr von ihr gesehen oder gehört, und nun ist sie wieder da.'
 category: Blogpost
 key: 'firstwebsite'
 date: 2022-11-19
