@@ -18,13 +18,13 @@ This picture is familiar to every WordPress developer:
 
 {% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot of many lines of PHP errors caused by a incompability with PHP 8.1", "Hello darkness my old friend." %}
 
-Under what felt like 1 meter of PHP error messages, it then appeared, just as I had left it well over a decade ago.
+Under what felt like 1 meter of PHP error messages, it then appeared, exactly as I had left it well over a decade ago.
 
 ## How it came to life
 
-It was 2008 and I had just recently registered my freelance business with the German authorities in the southern city Freiburg im Breisgau (You may be familiar with it as the home town of the [Smashing Magazine](https://www.smashingmagazine.com/)). One evening I was visiting a jazz cellar and got into a conversation with a musician. It turned out that they were looking for a logo, a flyer and a website for their regular jazz sessions. I, of course, offered myself immediately! And this is how I landed my first job, if I remember correctly, paid with 400 euros for everything.
+It was 2008 and I had only recently registered my freelance business with the German authorities in the southern city Freiburg im Breisgau (You may be familiar with it as the home town of the [Smashing Magazine](https://www.smashingmagazine.com/)). One evening I was visiting a jazz cellar and got into a conversation with a musician. It turned out that they were looking for a logo, a flyer and a website for their regular jazz sessions. I offered myself immediately! And this is how I landed my first job, if I remember correctly, paid with 400 euros for everything.
 
-It became a WordPress site, because it had to be maintained regularly with pictures and news by non technical editors. We were somewhere between WordPress version 2.5 and 2.7 and it had very little in common with what you may know today. The WordPress menus, for example, were introduced two years later with version 3.0.
+It became a WordPress site, because it had to be maintained regularly with pictures and news. We were somewhere between WordPress version 2.5 and 2.7 and it had very little in common with what you may know today. The WordPress menus, for example, were introduced two years later with version 3.0.
 
 ## A simple theme
 
@@ -52,7 +52,7 @@ I had built the main menu like this at that time:
 ```
 
 I guess I didn't really know what I was doing. What is that `$homeActive` variable trying to achieve up there?
-The WordPress function `is_home()` has been around since version 1.5.0, and in that case I obviously wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
+The WordPress function `is_home()` has been around since version 1.5.0, and in that case I apparently wanted it to add the class `current_page_item` to "Home" if active, so I could show a visual indicator of where we are. That didn't work! Surely I lost some hours trying to figure out why, until I finally gave up.
 
 {% aside %}There are some counterintuitive quirks in WordPress which, similar to JavaScript, you can't easily fix in future versions, as this would break sites. `is_home()` doesn't actually refer inconditionally to your home page, but returns `true` if the site’s "Front page displays" Reading Settings are set to "blog posts" instead of a static page.{% endaside %}
 
@@ -65,7 +65,7 @@ Finished is the WordPress menu made in 2008!
 
 Look at that! No one understands that anymore. Nobody understood that back then either.
 
-I found some more hardcoded elements, for example in the footer. I obviously didn't know how to show this info otherwise. Did we have widgets already?
+I found some more hardcoded elements, for example in the footer. I guess I didn't know how to show this info otherwise. Did we have widgets already?
 
 ```html
 <div id="footer">
@@ -79,7 +79,7 @@ I found some more hardcoded elements, for example in the footer. I obviously did
 
 I even explicitly wrote the HTML 4 entities for german umlauts!
 
-All in all I wrote a very very simple theme. It gets by with just a few lines of CSS, half of which isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
+All in all I wrote a very very simple theme. It gets by with a few lines of CSS, half of which isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
 
 ```css
 #sidebar .bloggy-meddelande {
@@ -105,7 +105,7 @@ This is also a nice one:
   height: 30px;
   line-height: 30px;
   padding: 15px 15px 15px 15px;
-  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  /*_padding:0px 15px 0px 15px;  there are some things IE doesn't understand about padding */
   white-space: nowrap;
 }
 ```
@@ -126,7 +126,7 @@ There remain Akismet and TinyMCE Advanced, which apparently was heavily used unt
 
 I remember updating WordPress for free a few times in the beginning. It was exhausting, because the host required a manual entry of FTP credentials in the WordPress backend, for each and every update. Then at some point I wanted a tiny monthly flat fee for it. That didn't work out, so we, the website and I, went our seperate ways. Mine was marked by personal development, fates and upheavals, the way of the website: absolutely unmoved.
 
-The admin of the website (who of course was still set as "admin"!) happily used the home page and the gallery page as a blog replacement and apparently didn't miss anything at all.
+The admin of the website (who was still set as "admin"!) happily used the home page and the gallery page as a blog replacement and apparently didn't miss anything at all.
 
 The big wave of Responsive Web Design came, and while the vast majority of sites gradually got media querys, my site didn't care. It came in handy I made the website so freaking narrow.
 

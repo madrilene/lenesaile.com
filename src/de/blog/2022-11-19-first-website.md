@@ -104,12 +104,13 @@ Der ist auch gut:
   height: 30px;
   line-height: 30px;
   padding: 15px 15px 15px 15px;
-  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  /*_padding:0px 15px 0px 15px;  there are some things IE doesn't understand about padding */
   white-space: nowrap;
 }
 ```
 
-😱... aber schau dir diesen Kommentar an! 😂
+😱
+... aber schau dir den Kommentar an! 😂
 
 JavaScript? Nicht existent. Konnte ich damals kein Stück, und wurde ja auch gar nicht gebraucht!
 

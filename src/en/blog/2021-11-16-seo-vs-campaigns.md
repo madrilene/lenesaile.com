@@ -18,7 +18,7 @@ There are many factors to take into account, such as the type of product you wan
 
 More than 90% of interactions with the Internet start with a search engine (Google, Bing, etc.). Now, if you or your company does not appear in search results, how are users going to find you? In most cases, they will not.
 
-Of course, that can be solved immediately! **Being found is something you can buy.**
+That can be solved immediately! **Being found is something you can buy.**
 
 {% imagePlaceholder "./src/assets/images/blog/campana-twitter.jpg", "", "", "", "Screenshot of Twitter, a Mahou campaign is shown", "A custom Mahou PPC campaign among regular Twitter posts. The visually small 'Promoted' information indicates that this is a promotional post leading to an external website." %}
 
@@ -72,13 +72,13 @@ To do well in search, you'll need specialized content.
 >
 > 😎
 
-We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it easy for you to publish your articles at any time by yourself.
+We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it quite simple for you to publish your articles at any time by yourself.
 
 ## Combine both worlds: SEO and pay-per-click in tandem
 
 Many companies use both SEO _and_ PPC at the same time because they really complement each other.
 
-Did you just publish a post? Do you have a compelling, short product or event coming up? Launch ads on Facebook, Instagram or Twitter to reach as many interested people as possible.
+Did you publish a post? Do you have a compelling, short product or event coming up? Launch ads on Facebook, Instagram or Twitter to reach as many interested people as possible.
 
 We don't usually recommend campaigns on Google itself, as we put all our effort into natural positioning factors.
 

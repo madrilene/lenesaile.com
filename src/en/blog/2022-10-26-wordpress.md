@@ -25,7 +25,8 @@ I still think that it's a great solution for complex custom websites. It's extre
 
 WordPress is completely free to use and if you're not messing up, it is secure and fast. The other day I read that ==WP core is responsible for only 0.6% of vulnerabilities, the other 99.4% are custom made by plugins and themes==. [^1]
 
-WordPress sites get hacked. That's just a fact. But, so do other sites on the internet, we can just as well say _websites_ get hacked. It's just that very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core.
+WordPress sites get hacked. That's a fact. But, so do other sites on the internet, we can as well say _websites_ get hacked.
+Very _very_ many websites use WordPress. Hackers know the system and possible vulnerabilities. And these vulnerabilities we usually create ourselves, and not WordPress core.
 
 What we can do efficiently against hacking attempts is a separate blog post, but here is one of the most important tips: look for a good hosting platform. It's worth spending a little more money here! A good hosting also has a good service team that will help you quickly if there is a problem. Everything else is, as I said, outside the scope of what I want to write here. But know: if you do it right, it is very hard for hackers to get to your data or to exploit your website.
 
@@ -59,7 +60,8 @@ Everything that adds an unnecessary weight to a web page is something I try to a
 
 I have talked to a lot of people who bought a theme and then they spent countless hours trying to configure everything.
 
-Not always, but often, it is a mess. Not because they haven't done it right. But because some themes just try to solve every problem, to serve every industry. I have seen a theme/plugins combination that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection. Of course, you can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customized theme that only includes what you really need.
+Not always, but often, it is a mess. Not because they haven't done it right. But because some themes try to solve every problem, to serve every industry. I have seen a theme/plugins combination that loaded more than 100 different script files. I didn't count the stylesheets. The page took more than 10 seconds to load on my fibre internet connection.
+You can get a lot out of these pages using a CDN, optimizing assets, enabling caching and so on, but it's much better to have a customized theme that only includes what you really need.
 
 Here, of course, you have to be fair: neither third-party page builders nor third-party themes are the responsibility of WordPress.
 
@@ -115,26 +117,26 @@ It certainly is something you have to get used to. It’s like writing code with
 
 As I mentioned, I haven't really got to grips with it yet. My first impression is that it rather limits me as a developer.
 
-Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticize it without justification. The fact that I don't want to work with it at the moment simply reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
+Nevertheless - I have made up my mind to learn it, if only to really understand it, and not to criticize it without justification. The fact that I don't want to work with it at the moment reflects my current level of knowledge - I can't in good conscience offer services in an area that I don't completely control.
 
 ## What about Gutenberg?
 
 I think the Gutenberg editor is great for experienced content editors, and for anyone who is willing to learn a bit about it. You can do a lot of different layouts and create really interesting posts (don't overdo copying stuff from the [WordPress pattern library](https://wordpress.org/patterns/) though, as this adds on to the page weight).
 
-On the other hand, some clients are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users just want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
+On the other hand, some clients are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
 
 ## So what's the right technique to build a theme nowadays?
 
 It seems like old and new techniques are clashing together. There are a lot of ways to build with WordPress: block themes, the classic PHP driven templating or WordPress as a headless CMS feeding a front-end of our choice via its REST API or WPGraphQL.
 
-I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. Of course, I communicate exactly what I do and recommend and why I think this is the best solution for the customer.
+I wouldn't worry too much about that: ==Whatever is right for the project==. No visitor cares what the website was built with, and most customers don't care either. I always communicate exactly what I plan to do and recommend, and why I think this is the best solution.
 In the end, what really matters is the quality of the product.
 
 ## Conclusion
 
 Back when I discovered WordPress, it offered me an idea of what Developer Experience would mean in the future. Today, more than 40% of all websites depend on WordPress[^2].
 
-It's a huge construct with a lot of responsibility that can't just do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know today.
+It's a huge construct with a lot of responsibility that can't do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know today.
 
 ### What is WordPress to me?
 

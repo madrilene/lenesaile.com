@@ -14,7 +14,7 @@ tags:
   - notes
 ---
 
-I have just added to the [projects section](/en/projects/) one of the pages I made last fall.
+I have added to the [projects section](/en/projects/) one of the pages I made last fall.
 
 [Inelia Gestión](https://www.ineliagestion.com/) is a tax, labor and commercial consultancy in Madrid.
 
@@ -26,7 +26,7 @@ It was great to have Gabriel Monsalve's photos available! Original photos of the
 
 Jamstack is geared towards the early days of web development, when all web pages were static - pure HTML files sitting in a folder structure. In the past, you couldn't create dynamic websites, and design freedom left a lot to be desired. If you wanted to adjust something that referred to the other files, for example adding a new menu item, you had to adjust it manually in all files. However, these web pages, which made do with the bare essentials, were incredibly fast and secure.
 
-So today we just want to take advantage of the benefits of this classic technique.
+We want to take advantage of the benefits of this classic technique!
 
 In summary the customer has the following benefits:
 

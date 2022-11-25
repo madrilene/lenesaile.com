@@ -26,7 +26,7 @@ Debajo de lo que parecía un metro de mensajes de error de PHP, apareció entonc
 
 Corría el año 2008 y yo acababa de registrar mi negocio como autónoma ante las autoridades alemanas en la ciudad sureña de Friburgo de Brisgovia (quizá os resulte familiar por ser la ciudad de origen de [Smashing Magazine](https://www.smashingmagazine.com/)). Una noche estaba visitando una bodega de jazz y entablé conversación con un músico. Resulta que estaban buscando un logotipo, un folleto y una página web para sus sesiones regulares de jazz. Yo, por supuesto, me ofrecí inmediatamente. Y así fue como conseguí mi primer trabajo, si no recuerdo mal, pagado con 400 euros por todo.
 
-Se convirtió en una página web con WordPress, porque tenía que ser mantenido regularmente con fotos y noticias por personas no técnicas. Estábamos entre WordPress 2.5 y 2.7 y tenía muy poco en común con lo que se conoce hoy en día. Los menús de WordPress, por ejemplo, se introdujeron dos años después con la versión 3.0.
+Se convirtió en una página web con WordPress, porque tenía que ser mantenido regularmente con fotos y noticias. Estábamos entre WordPress 2.5 y 2.7 y tenía muy poco en común con lo que se conoce hoy en día. Los menús de WordPress, por ejemplo, se introdujeron dos años después con la versión 3.0.
 
 ## Un tema sencillo
 
@@ -106,12 +106,13 @@ Este también es bonito:
   height: 30px;
   line-height: 30px;
   padding: 15px 15px 15px 15px;
-  /*_padding:0px 15px 0px 15px;  there are some thins IE just don't understand about padding */
+  /*_padding:0px 15px 0px 15px;  there are some things IE doesn't understand about padding */
   white-space: nowrap;
 }
 ```
 
-😱...¡pero mira ese comentario! 😂
+😱...
+¡pero mira ese comentario! 😂
 
 ¿JavaScript? No existe. No sabía cómo escribirlo en ese momento, y realmente no era necesario en absoluto.
 

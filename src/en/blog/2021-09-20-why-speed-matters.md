@@ -18,7 +18,7 @@ When a customer goes to eat at a restaurant, slow service often leads to bad rev
 
 ## The website as an "experience"
 
-Visitors are more demanding than ever. Visiting a website is no longer about simply finding the desired information.
+Visitors are more demanding than ever. Visiting a website is no longer only about finding the desired information.
 
 It's about helping the visitor get to their destination as easily and quickly as possible.
 It is about the quality of the user's interaction with a website and also about their perception of it.
