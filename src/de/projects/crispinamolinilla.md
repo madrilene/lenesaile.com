@@ -1,6 +1,6 @@
 ---
 title: crispinaymolinilla.com
-date: 2021-10-01
+date: 2021-02-01
 key: 'crispinaymolinilla'
 technologies:
   - Jamstack (Eleventy)

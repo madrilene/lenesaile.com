@@ -83,7 +83,7 @@ I only install plugins from large, secure companies that provide reliable and im
 
 If I’m going headless it’s either [ACF to REST API](https://wordpress.org/plugins/acf-to-rest-api/), or [WP GraphQL](https://www.wpgraphql.com/) in combination with WPGraphQL for Advanced Custom Fields.
 
-For manual backups and migration between local development, staging and deployment: [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/). I use [Query Monitor](https://es.wordpress.org/plugins/query-monitor/) to visualize hooks, debug and improve performance.
+I use [Query Monitor](https://es.wordpress.org/plugins/query-monitor/) to visualize hooks, debug and improve performance.
 
 ## What I think about Full Site Editing
 

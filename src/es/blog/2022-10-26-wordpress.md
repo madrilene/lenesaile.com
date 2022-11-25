@@ -79,7 +79,7 @@ Valoro la estructura y el orden. Quiero ser capaz de entender mis propios temas 
 
 Si convierto WordPress en un headless CMS es [ACF a REST API](https://wordpress.org/plugins/acf-to-rest-api/), o [WP GraphQL](https://www.wpgraphql.com/) en combinación con WPGraphQL para Advanced Custom Fields.
 
-Para las copias de seguridad manuales y la migración entre el desarrollo local, entorno de staging y el entorno de producción: [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/). Uso [Query Monitor](https://es.wordpress.org/plugins/query-monitor/) para visualizar los hooks, depurar y mejorar el rendimiento.
+Uso [Query Monitor](https://es.wordpress.org/plugins/query-monitor/) para visualizar los hooks, depurar y mejorar el rendimiento.
 
 ## Lo que pienso sobre Full Site Editing
 

@@ -1,8 +1,8 @@
 ---
-title: kanzlei-koenigstrasse.de
-date: 2022-02-01
-key: 'kk'
-type: 'client'
+title: Eleventy Excellent
+date: 2022-05-01
+key: 'eleventyexcellent'
+type: 'opensource'
 technologies:
   - WordPress con ACF, Gravity Forms, WPML
   - Tailwind CSS
