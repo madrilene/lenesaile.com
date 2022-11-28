@@ -27,6 +27,7 @@ const languageNav = document.querySelector('.language-nav');
 const languageNavButton = document.querySelector('.language-nav-button');
 const activeLanguageItem = document.querySelector('.lang-active');
 activeLanguageItem.setAttribute('aria-selected', true);
+activeLanguageItem.ariaCurrent = 'page';
 const clickSound = new Audio('/assets/sounds/mouse.wav');
 
 function toggleNavOpen(event) {

@@ -74,6 +74,11 @@
   padding-inline-start: 0;
 }
 
+.blog #skip-toc {
+  transform: translateY(-50%);
+  padding: var(--space-m-) var(--space-s-m);
+}
+
 .blog hr.footnotes-sep {
   border-top: 1px var(--color-text);
   width: 100%;

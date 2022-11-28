@@ -4,6 +4,13 @@ eleventyExcludeFromCollections: true
 excludeFromSitemap: true
 ---
 
-/* TEAM */ Developer: {{ meta.author }} Contact: {{ meta.authorEmail }} Site:
-{{ meta.url }} {% if meta.meta_data.twitterCreator %}Twitter:
-{{ meta.meta_data.twitterCreator }}{% endif %} /* SITE */ Doctype: HTML5
+/* TEAM */
+Web designer and developer: {{ meta.author }}
+Contact: {{ meta.authorEmail }}
+Site: {{ meta.url }}
+{% if meta.meta_data.mastodonProfile %}Mastodon: {{ meta.meta_data.mastodonProfile }}{% endif %}
+From: {{ meta.address.city }}, {{ meta.address.country }}
+
+/* SITE */
+Doctype: HTML5
+Language: English / Deutsch / Castellano

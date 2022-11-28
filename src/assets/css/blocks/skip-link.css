@@ -10,7 +10,17 @@
   z-index: 999;
 }
 
-.skip-link:focus {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.skip-link:focus,
+.visually-hidden:focus {
   clip: auto;
   height: auto;
   overflow: visible;

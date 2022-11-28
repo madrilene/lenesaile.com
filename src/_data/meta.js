@@ -10,7 +10,8 @@ module.exports = {
   meta_data: {
     twitterSite: '@lenesaile',
     twitterCreator: '@lenesaile',
-    opengraph_default: '/assets/images/opengraph-default.jpg'
+    opengraph_default: '/assets/images/opengraph-default.jpg',
+    mastodonProfile: 'https://front-end.social/@lene'
   },
   pagination: {
     itemsPerPage: 20
@@ -21,6 +22,7 @@ module.exports = {
     city: 'Madrid',
     state: 'Madrid',
     zip: '28005',
+    country: 'Spain',
     mobileDisplay: '+34 644 959496',
     mobileCall: ' +34644959496',
     email: 'hola@lenesaile.com',
@@ -57,6 +59,7 @@ module.exports = {
     back: 'Back',
     skipText: 'Jump to main content',
     toc: 'Table of contents',
+    skipToc: 'Skip table of contents',
     blog: {
       name: 'Lene Saile - Web Development Blog',
       description:

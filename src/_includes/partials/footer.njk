@@ -1,7 +1,7 @@
 <footer class="site-foot" role="contentinfo">
   <div class="wrapper prose">
     <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer Menu">
         <a href="/{{ locale }}/">&copy; {% year %} {{ meta[locale].siteName }}</a>
 
         {% for item in navigation[locale].bottom %}
@@ -24,7 +24,7 @@
         {% for item in social %}
 
         {% if item.platform == "rss" %}
-        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" target="_blank">
+        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" target="_blank" rel="noopener">
         {% else %}
         <a href="{{ item.url }}" rel="me">
           {% endif %}

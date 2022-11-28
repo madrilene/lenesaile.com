@@ -9,7 +9,7 @@
     {% include "icons/settings.svg" %}
     <span class="sr-only">Show Navigation</span>
   </button>
-  <nav class="language-select-nav">
+  <nav id="languagenav" class="language-select-nav">
     {% for language in meta.languages %} {% if loop.first %} {% endif %}
 
     <!-- set translatedUrl to the homepage of that language by default  -->

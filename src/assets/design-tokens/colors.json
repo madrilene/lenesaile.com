@@ -3,15 +3,19 @@
   "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
   "items": [
     {
-      "name": "light",
+      "name": "Light",
       "value": "hsl(48, 100%, 98%)"
     },
     {
-      "name": "dark",
+      "name": "Light Code",
+      "value": "hsl(48, 12%, 87%)"
+    },
+    {
+      "name": "Dark",
       "value": "hsl(0, 0%, 20%)"
     },
     {
-      "name": "dark code",
+      "name": "Dark Code",
       "value": "hsl(0, 0%, 25%)"
     },
     {
