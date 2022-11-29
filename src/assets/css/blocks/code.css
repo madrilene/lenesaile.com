@@ -8,7 +8,7 @@ pre {
   color: var(--color-light);
   font-size: var(--size-step-0);
 
-  --color-code-neutral: #ccc;
+  --color-code-neutral: hsl(0deg 100% 100% / 0.5);
   --color-code-primary: #eb9999;
   --color-code-secondary: #9aa7ec;
   --color-code-tertiary: #eb99bd;
@@ -125,7 +125,7 @@ pre[class*='language-'] {
 }
 
 .token.comment {
-  color: var(--color-neutral);
+  color: var(--color-code-neutral);
 }
 
 .token.constant {

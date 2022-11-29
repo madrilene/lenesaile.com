@@ -44,10 +44,10 @@ const imageShortcodePlaceholder = async (
      ${
        fcls
          ? `
-     <figure class="${fcls} flow">
+     <figure class="${fcls} flow" role="group">
      `
          : `
-     <figure class="flow">
+     <figure class="flow" role="group">
      `
      }
      ${
