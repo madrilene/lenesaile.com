@@ -1,5 +1,5 @@
 ---
-title: 'Structuring the Eleventy config file'
+title: 'Organizing the Eleventy config file'
 description: "I'm a big fan of organization, order and clarity, and most of my projects get quite large. I also have personal preferences that I want to mold Eleventy into. Let's do that!"
 category: blogpost
 key: 'eleventyconfig'
@@ -177,5 +177,5 @@ You can see this being applied in my starter [eleventy-excellent](https://github
 
 I would love go into much more detail and break down other important folders like `assets` and `_includes`. But that would go beyond the scope of what I wanted to focus on here. Maybe I will make a follow-up.
 
-Generally, it is always a great idea to to dive deeply into the repositories of starter projects or personal sites of other developers.
+Generally, it is always a great idea to to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 There are so many great ideas out there!

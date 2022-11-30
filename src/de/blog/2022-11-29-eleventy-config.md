@@ -58,9 +58,9 @@ Obwohl wir die meisten Ordner nicht weiter besprechen, sieht ein Website-Projekt
 
 `pages` ist für deine statischen Seiten wie `index.md`, `about.md`, usw., `posts` enthält deine Blog-Artikel, und `projects` ist nur ein weiterer collections-Ordner, damit es sich überhaupt lohnt, diese Logik aus `eleventy.js` herauszuholen.
 
-... Denn dort _kannst_ du alle deine _collections_, _shortcodes_ und _filters_ konfigurieren. Der [offizielle Eleventy-Starter] (https://github.com/11ty/eleventy-base-blog/blob/main/.eleventy.js) ist sehr einfach gestaltet und macht es genau so.
+... Denn dort _kannst_ du alle deine _collections_, _shortcodes_ und _filters_ konfigurieren. Der [offizielle Eleventy-Starter](https://github.com/11ty/eleventy-base-blog/blob/main/.eleventy.js) ist sehr einfach gestaltet und macht es genau so.
 
-{% aside %}Wenn du es noch nicht getan hast, solltest du dir die [Eleventy-Dokumentation](https://www.11ty.dev/docs/config/) durchlesen, um dich mit allen Konfigurationsmöglichkeiten vertraut zu machen.{% endaside %}
+{% aside %}Du solltest dir unbedingt die [Eleventy-Dokumentation](https://www.11ty.dev/docs/config/) durchlesen, um dich mit allen Konfigurationsmöglichkeiten vertraut zu machen.{% endaside %}
 
 Ich möchte, dass meine Projekte frei wachsen können, ohne dass ich mir Sorgen machen muss, dass meine Konfigurationsdatei zu unübersichtlich wird. Deshalb kümmere ich mich an anderer Stelle um Anpassungen und importiere nur den `return`-Wert meiner Funktionen.
 
@@ -68,14 +68,14 @@ Ich möchte, dass meine Projekte frei wachsen können, ohne dass ich mir Sorgen 
 
 Üblicherweise lege ich einen neuen Ordner im Stammverzeichnis mit dem Namen `config` an.
 
-Auch sehr gut ist die Lösung einen Ordner mit dem Namen `_11ty` in `src` zu legen. Ich habe das in [Nicolas Hoizeys](https://nicolas-hoizey.com/)' Starter [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src) gesehen. Du kannst Ordner nennen wie du willst und ihn an einem beliebigem Ort im Verzeichnis ablegen.
+Auch sehr gut ist die Lösung einen Ordner mit dem Namen `_11ty` in `src` zu legen. Ich habe das in [Nicolas Hoizeys](https://nicolas-hoizey.com/) Starter [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src) gesehen. Du kannst den Ordner nennen wie du willst und ihn an einem beliebigem Ort im Verzeichnis ablegen.
 In diesem Fall gehe ich davon aus, dass du einen Ordner namens `config` in deinem Stammverzeichnis abgelegt hast.
 
 Wir brauchen Eleventy nicht über die Existenz dieses Ordners zu informieren. Wir benutzen ihn einfach, um unsere `return`-Werte zu exportieren und sie in `.eleventy.js` zu importieren.
 
-Ich stelle zwei Möglichkeiten vor, dies zu handhaben, indem ich [collections](https://www.11ty.dev/docs/collections/) als Beispiel verwende.
+Ich stelle zwei Möglichkeiten vor, dies zu handhaben, am Beispiel von [collections](https://www.11ty.dev/docs/collections/).
 
-## Methode 1: Datei importieren und lopp über die _collections_
+## Methode 1: Datei importieren und über die _collections_ "loopen"
 
 Erstelle eine Datei namens `collections.js` in deinem `config` Ordner.
 Definiere nun alle _collections_, die du verwenden möchtest:
@@ -94,7 +94,7 @@ module.exports = {
 {% aside %}`/**/*.md` überprüft eine beliebige Anzahl von Verzeichnissen zwischen `/src/posts/` und `*.md`. Auf diese Weise können wir sicherstellen, dass Eleventy alle Markdown-Dateien findet, egal wie tief sie verschachtelt sind, so dass wir die Inhalte weiter nach Jahr, dann nach Monat usw. ordnen können.
 {% endaside %}
 
-Your `eleventy.js` now looks like this:
+Deine `eleventy.js` sieht jetzt so aus:
 
 ```js
 const collections = require('./config/collections.js');
@@ -117,7 +117,8 @@ module.exports = eleventyConfig => {
 ```
 
 Wir "loopen" (wie sagt man das auf Deutsch?) über alle _collections_, die in `collections.js` definiert sind, und importieren sie in unsere Konfigurationsdatei. Genau dasselbe machen wir jetzt für _filter_, _transforms_, _shortcodes_ usw.
-Wenn du diese Methode in Aktion sehen willst, besuche das [public Repository] (https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) von [Ryan Mulligans Website] (https://ryanmulligan.dev/).
+
+Wenn du diese Methode in Aktion sehen willst, besuche das [öffentliche Repo](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) von [Ryan Mulligans Website](https://ryanmulligan.dev/).
 
 **Sehr aufgeräumt!**
 
@@ -171,10 +172,10 @@ module.exports = eleventyConfig => {
 Alles ist übersichtlich und ich kann auf einen Blick sehen, was ich für dieses Projekt importiere.
 
 So strukturiere ich derzeit meine Projekte (bis ich eine Methode finde, die mir noch besser gefällt).
-
 Du kannst das in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
 
-Ich würde gerne noch viel mehr ins Detail gehen und andere wichtige Ordner wie `assets` und `_includes` aufschlüsseln. Aber das würde den Rahmen sprengen, auf den ich mich hier konzentrieren wollte. Vielleicht werde ich eine Fortsetzung schreiben?
+Ich würde gerne noch viel mehr ins Detail gehen und andere wichtige Ordner wie `assets` und `_includes` aufschlüsseln. Aber das würde den Rahmen sprengen. Vielleicht schreibe ich eine Fortsetzung?
 
-Generell ist es immer eine gute Idee, tief in die Repositories von Starterprojekten oder Webseiten anderer Entwickler einzutauchen.
-Es gibt so viele tolle Ideen!
+Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
+
+Es gibt so viele tolle Ansätze!

@@ -68,8 +68,8 @@ Quiero que mis proyectos crezcan libremente sin preocuparme de que mi archivo de
 
 Mi preferencia es crear una nueva carpeta en el directorio raíz, llamada `config`.
 
-Otra gran idea es añadir una carpeta a `src` con el nombre de `_11ty`. Encontré esto en el _starter_ de [Nicolas Hoizeys](https://nicolas-hoizey.com/)' [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). Puedes nombrar la carpeta como quieras y ponerla donde quieras.
-En este caso, seguiré fingiendo que has hecho una carpeta llamada `config` en tu directorio raíz.
+Otra gran idea es añadir una carpeta a `src` con el nombre de `_11ty`. Encontré esto en el _starter_ de [Nicolas Hoizeys](https://nicolas-hoizey.com/) [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). Puedes nombrar la carpeta como quieras y ponerla donde quieras.
+En este caso, seguiré fingiendo que has creado una carpeta llamada `config` en tu directorio raíz.
 
 No necesitamos avisar a Eleventy sobre la existencia de esta carpeta. Simplemente la usamos para exportar nuestros valores de retorno e importarlos a `.eleventy.js`.
 
@@ -94,7 +94,7 @@ module.exports = {
 {% aside %}`/**/*.md` coincide con cualquier número de directorios entre `/src/posts/` y `*.md`. De esta manera podemos asegurarnos de que Eleventy encuentra todos los archivos markdown por muy anidados que estén, y podemos seguir ordenando los contenidos por año, luego por mes, etc.
 {% endaside %}
 
-Su `eleventy.js` ahora se ve así:
+Tu `eleventy.js` ahora se ve así:
 
 ```js
 const collections = require('./config/collections.js');
@@ -176,5 +176,6 @@ Puedes ver esto aplicado en mi starter [eleventy-excellent](https://github.com/m
 
 Me gustaría entrar en mucho más detalle y desglosar otras carpetas importantes como `assets` y `_includes`. Pero eso iría más allá del alcance de lo que quería enfocar aquí. ¿Quizás haré una continuación?
 
-En general, siempre es una gran idea bucear en los repositorios de los _starters_ o en los sitios personales de otras desarrolladoras.
+En general, siempre es una gran idea bucear en los repositorios de los _[starters](https://www.11ty.dev/docs/starter/)_ o en los sitios personales de otras desarrolladoras.
+
 ¡Hay tantas ideas geniales por ahí!
