@@ -6,7 +6,7 @@ key: 'eleventyconfig'
 date: 2022-11-29
 ---
 
-Eleventy wird mit einigen Voreinstellungen installiert. Zum Beispiel ist der Ausgabeordner standardmäßig `_site`, und Eleventy sucht nach deinen Quelldateien im Stammverzeichnis.
+[Eleventy](https://www.11ty.dev/) wird mit einigen Voreinstellungen installiert. Zum Beispiel ist der Ausgabeordner standardmäßig `_site`, und Eleventy sucht nach deinen Quelldateien im Stammverzeichnis.
 
 Das ist für sehr kleine Projekte in Ordnung. Eine zusätzliche config-Datei ist nicht notwendig, um mit Eleventy zu arbeiten. Allerdings bin ich ein großer Fan von Struktur, Organisation und Übersichtlichkeit, und die meisten meiner Projekte werden recht groß. Ich habe auch persönliche Vorlieben, an die ich Eleventy anpassen möchte. Lass uns das tun!
 

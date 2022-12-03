@@ -6,7 +6,7 @@ key: 'eleventyconfig'
 date: 2022-11-29
 ---
 
-Eleventy viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
+[Eleventy](https://www.11ty.dev/) viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
 
 Esto está bien para proyectos muy pequeños. Un archivo de configuración adicional no es necesario para trabajar con Eleventy. Sin embargo, soy un gran fan de la estructura, la organización y la claridad, y la mayoría de mis proyectos son bastante grandes. También tengo preferencias personales a las que quiero amoldar Eleventy. ¡Hagámoslo!
 
