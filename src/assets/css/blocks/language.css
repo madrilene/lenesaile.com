@@ -67,7 +67,7 @@
 }
 
 .active .language-item:hover {
-  background-color: var(--color-bg-code);
+  background-color: var(--color-bg-card);
   color: var(--color-light);
 }
 

@@ -11,6 +11,11 @@
       "max": 4
     },
     {
+      "name": "Step code",
+      "min": 16,
+      "max": 18
+    },
+    {
       "name": "Step 0",
       "min": 16,
       "max": 20

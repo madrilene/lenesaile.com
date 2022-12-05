@@ -73,14 +73,9 @@ Te podemos explicar la mejor manera de estructurar y formular los contenidos en 
 
 Estaremos encantados de hacerte sugerencias periódicas sobre nuevos artículos o, si te falta el tiempo, nos encargamos de la creación de contenidos.
 
-## Combinar ambos mundos: SEO y pago por clic en tándem
+## _Puedes_ combinar ambos mundos: SEO y pago por clic en tándem.
 
-Muchas empresas utilizan tanto el SEO _y_ el PPC a la vez porque realmente se complementan.
+Muchas empresas utilizan el SEO _y_ el PPC al mismo tiempo. Pruébalo, observa los resultados. ¡Tal vez este enfoque te funcione!
 
-¿Acabas de publicar un post? ¿Tienes un producto atractivo y breve o un evento que está a punto de llegar? Lanza anuncios en Facebook, Instagram o Twitter para que llegue al mayor número posible de personas interesadas.
-
-No solemos recomendar campañas en el propio Google, ya que ponemos todo nuestro esfuerzo en los factores de posicionamiento naturales.
-
-Lo importante es estudiar cada proyecto al detalle porque no hay normas fijas ya que cada cliente es un mundo.
-
-En el caso de nuestro amigo, le acabamos recomendando justo eso: apostar en el SEO y complementarlo con anuncios puntuales en las redes. Vamos a monitorizar los resultados y esperamos mejorar considerablemente su éxito.
+Personalmente, no me gusta la publicidad en Internet.
+Crea artículos interesantes y únicos que sirvan para un nicho o arrojen nueva luz sobre algo. Asegúrate de tener una jerarquía semánticamente correcta y de escribir etiquetas meta bien pensadas. Así es como atraes a la gente a tu sitio web y cómo los conduces a tus productos y servicios.

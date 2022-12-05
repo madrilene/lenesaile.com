@@ -1,9 +1,9 @@
 .card {
-  background-color: var(--color-bg-code);
+  background-color: var(--color-bg-card);
   color: var(--color-light);
   padding: var(--space-m-l);
   border-radius: var(--border-radius);
-  border: 3px solid var(--color-bg-code);
+  border: 3px solid var(--color-bg-card);
   max-width: unset;
 }
 

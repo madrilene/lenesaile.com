@@ -74,12 +74,8 @@ To do well in search, you'll need specialized content.
 
 We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it quite simple for you to publish your articles at any time by yourself.
 
-## Combine both worlds: SEO and pay-per-click in tandem
+## You _could_ combine both worlds: SEO and pay-per-click in tandem
 
-Many companies use both SEO _and_ PPC at the same time because they really complement each other.
+Many companies use both SEO _and_ PPC at the same time. Try it out, observe the results. Maybe this approach will work for you!
 
-Did you publish a post? Do you have a compelling, short product or event coming up? Launch ads on Facebook, Instagram or Twitter to reach as many interested people as possible.
-
-We don't usually recommend campaigns on Google itself, as we put all our effort into natural positioning factors.
-
-The important thing is to study each project in detail because there are no fixed rules as each client is different.
+Personally, I don't like internet advertising. Create exciting and unique articles that serve a niche or shed new light on something, use a semantically correct hierarchy and write well-considered meta tags. That's how you get people to your website, and that's how you lead them to your products and services!

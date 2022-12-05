@@ -35,12 +35,10 @@
 }
 
 @font-face {
-  font-family: 'RobotoMono';
-  font-weight: normal;
+  font-family: 'FiraCode';
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: local(''),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
-      format('woff2'),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  src: local(''), url(/assets/fonts/fira/firacode-medium-webfont.woff2) format('woff2'),
+    url(/assets/fonts/fira/firacode-medium-webfont.woff) format('woff');
 }

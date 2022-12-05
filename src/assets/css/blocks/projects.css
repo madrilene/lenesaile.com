@@ -57,7 +57,7 @@
 .projects .details {
   position: absolute;
   bottom: 0;
-  background-color: var(--color-bg-code);
+  background-color: var(--color-bg-card);
   color: var(--color-light);
   padding: 0 var(--space-m-l);
   border-radius: var(--border-radius);

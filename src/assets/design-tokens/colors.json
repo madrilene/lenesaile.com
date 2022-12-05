@@ -8,7 +8,7 @@
     },
     {
       "name": "Light Code",
-      "value": "hsl(48, 12%, 87%)"
+      "value": "hsl(48, 50%, 95%)"
     },
     {
       "name": "Dark",
@@ -16,6 +16,10 @@
     },
     {
       "name": "Dark Code",
+      "value": "hsl(0, 0%, 25%)"
+    },
+    {
+      "name": "Dark Card",
       "value": "hsl(0, 0%, 25%)"
     },
     {

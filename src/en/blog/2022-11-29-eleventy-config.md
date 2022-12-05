@@ -11,7 +11,7 @@ redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 
 This is okay for very small projects. An additional config file is not necessary to work with Eleventy. However, I'm a big fan of structure, organization and clarity, and most of my projects get quite large. I also have personal preferences that I want to mold Eleventy into. Let's do that!
 
-## Create a eleventy.js config file
+## Create an eleventy.js config file
 
 Add a new file in the root directory called `.eleventy.js` (as of Eleventy 2.0 it may also be called `eleventy.config.js.`).
 

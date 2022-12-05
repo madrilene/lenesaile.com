@@ -15,7 +15,7 @@
     {
       "name": "Mono",
       "description": "Expressive sections, like quotes",
-      "value": ["RobotoMono", "monospace"]
+      "value": ["FiraCode", "monospace"]
     }
   ]
 }

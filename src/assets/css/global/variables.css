@@ -15,7 +15,8 @@
 :root[data-theme='light'] {
   color-scheme: light dark;
   --color-bg: var(--color-light);
-  --color-bg-code: var(--color-dark-code);
+  --color-bg-code: var(--color-light-code);
+  --color-bg-card: var(--color-dark-card);
   --color-text: var(--color-dark);
   --color-text-code: var(--color-light);
   --color-primary: var(--color-primary-light);
@@ -24,6 +25,11 @@
   --color-tertiary: var(--color-tertiary-light);
   --color-quaternary: var(--color-quaternary-light);
   --color-quinary: var(--color-quinary-light);
+  --color-code-neutral: hsl(0deg 0% 0% / 0.6);
+  --color-code-primary: hsl(94, 57%, 30%);
+  --color-code-secondary: hsl(230, 57%, 40%);
+  --color-code-tertiary: hsl(341, 57%, 40%);
+  --color-code-quaternary: hsl(341, 57%, 50%);
 }
 
 /* Dark Color Scheme (System Preference) */
@@ -31,6 +37,7 @@
   :root {
     --color-bg: var(--color-dark);
     --color-bg-code: var(--color-dark-code);
+    --color-bg-card: var(--color-dark-card);
     --color-text: var(--color-light);
     --color-text-code: var(--color-light);
     --color-primary: var(--color-primary-dark);
@@ -39,12 +46,18 @@
     --color-tertiary: var(--color-tertiary-dark);
     --color-quaternary: var(--color-quaternary-dark);
     --color-quinary: var(--color-quinary-dark);
+    --color-code-neutral: hsl(0deg 100% 100% / 0.5);
+    --color-code-primary: hsl(94, 57%, 30%);
+    --color-code-secondary: hsl(230, 57%, 60%);
+    --color-code-tertiary: hsl(341, 57%, 40%);
+    --color-code-quaternary: hsl(341, 57%, 50%);
   }
 }
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
   --color-bg: var(--color-dark);
   --color-bg-code: var(--color-dark-code);
+  --color-bg-card: var(--color-dark-card);
   --color-text: var(--color-light);
   --color-text-code: var(--color-light-code);
   --color-primary: var(--color-primary-dark);
@@ -52,7 +65,11 @@
   --color-secondary: var(--color-secondary-dark);
   --color-tertiary: var(--color-tertiary-dark);
   --color-quaternary: var(--color-quaternary-dark);
-  --color-quinary: var(--color-quinary-dark);
+  --color-code-neutral: hsl(0deg 100% 100% / 0.7);
+  --color-code-primary: hsl(94, 35%, 60%);
+  --color-code-secondary: hsl(230, 100%, 80%);
+  --color-code-tertiary: hsl(28, 77%, 66%);
+  --color-code-quaternary: hsl(348, 78%, 75%);
 }
 
 @custom-media --motionOK (prefers-reduced-motion: no-preference);

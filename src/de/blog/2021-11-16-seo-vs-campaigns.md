@@ -74,14 +74,9 @@ Wir können dir erklären, wie du Inhalte im Internet am besten strukturierst un
 
 Wir machen dir gerne regelmäßig Vorschläge für neue Artikel.
 
-## Kombiniere beide Welten: SEO und Pay-per-Click im Tandem
+## Du _kannst_ beide Welten kombinieren: SEO und Pay-per-Click im Tandem
 
-Viele Unternehmen nutzen SEO _und_ PPC gleichzeitig, weil sie sich hervorragend ergänzen.
+Viele Unternehmen nutzen SEO _und_ PPC gleichzeitig. Probiere es aus, beobachte die Ergebnisse. Vielleicht funktioniert dieser Ansatz bei dir!
 
-Hast du gerade einen Beitrag veröffentlicht? Haben du ein interessantes, kurzes Produkt oder eine Veranstaltung in Aussicht? Schalte Anzeigen auf Facebook, Instagram oder Twitter, um so viele Interessenten wie möglich zu erreichen.
-
-Wir empfehlen in der Regel keine Kampagnen auf Google selbst, da wir unsere ganze Aufmerksamkeit auf die natürlichen Positionierungsfaktoren richten.
-
-Wichtig ist, dass man sich jedes Projekt genau ansieht, denn es gibt keine festen Regeln, da jeder Kunde anders ist.
-
-Im Fall unseres Freundes haben wir genau das empfohlen: auf SEO zu setzen und es mit spezifischen Anzeigen in den Netzwerken zu ergänzen. Wir werden die Ergebnisse beobachten und hoffen, dass sich sein Erfolg deutlich verbessern wird.
+Ich persönlich mag keine Internetwerbung.
+Erstelle spannende und einzigartige Artikel, die eine Nische bedienen oder ein neues Licht auf etwas werfen. Achte auf eine semantisch korrekte Hierarchie und schreibe gut durchdachte Meta-Tags. So bringst du Menschen auf deine Website, und so führst du sie zu deinen Produkten und Dienstleistungen.
