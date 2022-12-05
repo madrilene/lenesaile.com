@@ -1,5 +1,5 @@
 ---
-title: reder162012.org
+title: REDER
 date: 2022-01-01
 key: 'reder'
 technologies:

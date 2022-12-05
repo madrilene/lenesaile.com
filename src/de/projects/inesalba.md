@@ -1,5 +1,5 @@
 ---
-title: inesalba.es
+title: Inés Alba
 date: 2022-03-01
 key: 'inesalba'
 technologies:

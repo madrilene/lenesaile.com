@@ -1,10 +1,9 @@
 code,
 pre {
-  padding: 0.225em 0.4em;
+  padding: 0.4em 0.4em 0.2em 0.4em;
   font-family: var(--font-mono);
   background-color: var(--color-bg-code);
-  border-radius: var(--border-radius);
-  border-color: var(--color-text);
+
   color: var(--color-text);
   font-size: var(--size-step-code);
   font-weight: 500;

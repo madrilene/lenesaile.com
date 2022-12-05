@@ -1,5 +1,5 @@
 ---
-title: kanzlei-koenigstrasse.de
+title: Kanzlei Königstrasse
 date: 2022-02-01
 key: 'kk'
 type: 'client'

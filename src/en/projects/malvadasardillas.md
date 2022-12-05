@@ -1,5 +1,5 @@
 ---
-title: malvadasardillas.com
+title: Malvadas Ardillas
 date: 2021-03-01
 key: 'malvadasardillas'
 technologies:

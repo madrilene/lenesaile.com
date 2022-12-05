@@ -1,5 +1,5 @@
 ---
-title: lamprecht-rechtsanwaelte.de
+title: Lamprecht Rechtsanwälte
 date: 2022-04-01
 key: 'lamprecht'
 technologies:

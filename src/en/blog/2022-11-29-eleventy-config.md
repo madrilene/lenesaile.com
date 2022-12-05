@@ -92,7 +92,7 @@ module.exports = {
 };
 ```
 
-{% aside %}`/**/*.md` matches any number of directories between `/src/posts/` and `*.md`. This way we can ensure that Eleventy finds all markdown files however deep nested, so we can further arrange the contents by year, then by month, etc.
+{% aside %}`**/*` matches any number of directories between `/src/posts/` and your `.md` files. This way we can ensure that Eleventy finds all markdown files however deep nested, so we can further arrange the contents by year, then by month, etc. **Organize all the things!**
 {% endaside %}
 
 Your `eleventy.js` now looks like this:

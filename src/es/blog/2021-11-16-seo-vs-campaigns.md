@@ -56,7 +56,7 @@ Por lo tanto, una gran parte del SEO consiste en averiguar lo que los motores de
 
 El algoritmo de Google se centra en la riqueza de tu contenido. El SEO es una forma de asegurarse de que los motores de búsqueda pueden entender de qué trata tu página, que contiene información actualizada de calidad y que responderá a la pregunta que el buscador tenía en mente.
 
-**En primer lugar, tu página web debe ser impecable.** Atractiva, rápida, accesible, por supuesto optimizada para todos los dispositivos, y segura. No vamos a entrar en más detalles sobre lo que todo esto implica, sólo esto: sabemos todo sobre esto y si confías en nosotros, tu sitio web será mucho mejor que el de todos tus competidores.
+**En primer lugar, tu página web debe ser impecable.** Atractiva, rápida, accesible, por supuesto optimizada para todos los dispositivos, y segura. No voy a entrar en más detalles sobre lo que todo esto implica, sólo esto: sabemos todo sobre esto y si confías en mi, tu sitio web será mucho mejor que el de todos tus competidores.
 
 Luego hay que escribir los primeros contenidos. Una vez creada esta base, el siguiente paso es demostrar al buscador que nuestro sitio web cumple con sus altos criterios. Eso lleva tiempo. En palabras muy simples: Google y otros motores de búsqueda nos visitarán ahora repetidamente y echarán un vistazo a nuestro sitio web, y también observarán cómo interactúan sus usuarios con nuestro sitio web. ¿Parece que encuentran lo que buscan?
 
@@ -77,5 +77,6 @@ Estaremos encantados de hacerte sugerencias periódicas sobre nuevos artículos 
 
 Muchas empresas utilizan el SEO _y_ el PPC al mismo tiempo. Pruébalo, observa los resultados. ¡Tal vez este enfoque te funcione!
 
-Personalmente, no me gusta la publicidad en Internet.
-Crea artículos interesantes y únicos que sirvan para un nicho o arrojen nueva luz sobre algo. Asegúrate de tener una jerarquía semánticamente correcta y de escribir etiquetas meta bien pensadas. Así es como atraes a la gente a tu sitio web y cómo los conduces a tus productos y servicios.
+Seré sincera, no me gusta la publicidad en Internet y no ofrezco ningún servicio en ese sentido.
+
+Recomiendo de todo corazón lo siguiente: Crea artículos interesantes y únicos que sirvan para un nicho o arrojen nueva luz sobre algo. Asegúrate de tener una jerarquía semánticamente correcta y de escribir etiquetas meta bien pensadas. Así es como atraes a la gente a tu sitio web y cómo los conduces a tus productos y servicios.

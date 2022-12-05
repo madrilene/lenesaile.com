@@ -1,7 +1,7 @@
 ---
-title: ineliagestion.com
+title: Inelia Gestión
 date: 2021-04-01
-key: 'hnomarienplatz'
+key: 'inelia'
 technologies:
   - Jamstack (Eleventy)
   - Custom design

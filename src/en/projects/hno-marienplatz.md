@@ -1,5 +1,5 @@
 ---
-title: hno-marienplatz.de
+title: HNO Marienplatz
 date: 2021-08-01
 key: 'hnomarienplatz'
 technologies:

@@ -1,5 +1,5 @@
 ---
-title: albertoballesteros.com
+title: Alberto Ballesteros
 date: 2021-12-01
 key: 'albertoballesteros'
 technologies:

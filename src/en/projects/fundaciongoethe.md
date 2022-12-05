@@ -1,5 +1,5 @@
 ---
-title: fundaciongoethe.org
+title: Fundación Goethe
 date: 2021-12-01
 key: 'fundaciongoethe'
 technologies:

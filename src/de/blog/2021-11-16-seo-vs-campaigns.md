@@ -51,17 +51,17 @@ Ein großer Teil der Suchmaschinenoptimierung besteht also darin, herauszufinden
 
 ## Vorteile und Nachteile von SEO
 
-Was sind die Vor- und Nachteile von SEO? Zunächst einmal: **SEO ist auf lange Sicht viel billiger!** Was uns direkt zum größten Nachteil bringt: SEO braucht Zeit. Es gibt viel ausgefeiltes technisches SEO, das wir sorgfältig in alle unsere Websites einbauen, aber irgendwann ist der Inhalt das Wichtigste.
+Was sind die Vor- und Nachteile von SEO? Zunächst einmal: **SEO ist auf lange Sicht viel billiger!** Was uns direkt zum größten Nachteil bringt: SEO braucht Zeit. Es gibt eine Menge ausgefeilter technischer SEO-Maßnahmen, die ich in alle meine Websites einbauen. Aber der Inhalt ist immer das Wichtigste.
 
 Der Algorithmus von Google konzentriert sich auf die Reichhaltigkeit Ihrer Inhalte. SEO ist ein Weg, um sicherzustellen, dass Suchmaschinen verstehen können, worum es auf Ihrer Seite geht, dass sie hochwertige, aktuelle Informationen enthält und dass sie die Frage beantwortet, die die Suchmaschine im Sinn hat.
 
 **Zuallererst muss Ihre Website einwandfrei sein**.
 
-Attraktiv, schnell, zugänglich, natürlich für alle Geräte optimiert und sicher. Wir werden nicht näher darauf eingehen, was das alles bedeutet, nur so viel: Wir kennen uns damit aus, und wenn du uns vertraust, wird deine Website viel besser sein als die deiner Mitbewerber.
+Attraktiv, schnell, zugänglich, natürlich für alle Geräte optimiert und sicher. Ich werde nicht näher darauf eingehen, was das alles bedeutet, nur so viel: Ich kenne mich damit aus, und wenn du mit mir arbeitest, wird deine Website mit großer Sicherheit viel mehr Erfolg haben als die deiner Mitbewerber.
 
 Dann musst du die ersten Inhalte schreiben. Sobald diese Grundlage geschaffen ist, besteht der nächste Schritt darin, der Suchmaschine zu beweisen, dass unsere Website hohe Kriterien erfüllt. Das braucht Zeit. In sehr einfachen Worten: Google und andere Suchmaschinen werden uns jetzt immer wieder besuchen und sich unsere Website ansehen und auch beobachten, wie ihre Nutzer mit unserer Website umgehen. Finden sie was sie suchen? Fühlen sie sich wohl?
 
-Grob gesagt, können wir davon ausgehen, dass eine erste Positionierung zwei bis sechs Monate dauert. Aber wenn wir einmal in der Gunst der Suchmaschine stehen, wird sie ihren Nutzern künftige Inhalte viel schneller empfehlen.
+Grob gesagt, können wir davon ausgehen, dass eine erste Positionierung zwei bis sechs Monate dauert. Aber wenn du erst einmal in der Gunst der Suchmaschine stehst, wird sie ihren Nutzern künftige Inhalte von dir viel schneller empfehlen.
 
 Das bringt uns zum nächsten Vorteil: **Du kannst lernen, einen großen Teil der notwendigen Arbeit selbst zu erledigen**.
 Um bei der Suche gut abzuschneiden, brauchst du spezialisierte Inhalte.
@@ -78,5 +78,6 @@ Wir machen dir gerne regelmäßig Vorschläge für neue Artikel.
 
 Viele Unternehmen nutzen SEO _und_ PPC gleichzeitig. Probiere es aus, beobachte die Ergebnisse. Vielleicht funktioniert dieser Ansatz bei dir!
 
-Ich persönlich mag keine Internetwerbung.
-Erstelle spannende und einzigartige Artikel, die eine Nische bedienen oder ein neues Licht auf etwas werfen. Achte auf eine semantisch korrekte Hierarchie und schreibe gut durchdachte Meta-Tags. So bringst du Menschen auf deine Website, und so führst du sie zu deinen Produkten und Dienstleistungen.
+Ich bin ehrlich, ich mag keine Internetwerbung, und ich biete auch keine Leistungen in der Richtung an.
+
+Ich empfehle dir stattdessen von ganzem Herzen folgendes: Erstelle spannende und einzigartige Artikel, die eine Nische bedienen oder ein neues Licht auf etwas werfen. Achte auf eine semantisch korrekte Hierarchie und schreibe gut durchdachte Meta-Tags. So bringst du Menschen auf deine Website, und so führst du sie zu deinen Produkten und Dienstleistungen.

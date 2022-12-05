@@ -1,5 +1,5 @@
 ---
-title: crispinaymolinilla.com
+title: Crispina y Molinilla
 date: 2021-02-01
 key: 'crispinaymolinilla'
 technologies:

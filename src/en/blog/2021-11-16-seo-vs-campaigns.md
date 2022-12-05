@@ -59,11 +59,11 @@ Google's algorithm focuses on the richness of your content. SEO is a way to make
 
 **First of all, your website must be flawless**.
 
-Attractive, fast, accessible, of course optimized for all devices, and secure. We won't go into more details about what all this implies, just this: we know all about it and if you trust us, your website will be much better than all your competitors.
+Attractive, fast, accessible, of course optimized for all devices, and secure. I won't go into more details about what all this implies, just this: I know all about it and if you trust me, your website will most likely be much better than those of all your competitors.
 
 Then you have to write the first contents. Once this base is created, the next step is to prove to the search engine that our website meets their high criteria. That takes time. In very simple words: Google and other search engines will now visit us repeatedly and take a look at our website, and also observe how their users interact with our website. Do the visitors find what they are looking for? Do they feel comfortable?
 
-Roughly speaking, we can assume that an initial positioning takes two to six months. But once we are in the search engine's favor, it will recommend future content much faster to its users.
+Roughly speaking, you can assume that an initial positioning takes two to six months. But once we are in the search engine's favor, it will recommend your future content much faster to its users.
 
 That brings us to the next advantage: **You can learn to do some of the necessary work**.
 To do well in search, you'll need specialized content.
@@ -72,10 +72,12 @@ To do well in search, you'll need specialized content.
 >
 > 😎
 
-We can explain to you the best way to structure and formulate content on the web. A simple user interface makes it quite simple for you to publish your articles at any time by yourself.
+I can explain to you the best way to structure and formulate content on the web. A simple user interface makes it easier for you to publish your articles at any time by yourself.
 
 ## You _could_ combine both worlds: SEO and pay-per-click in tandem
 
 Many companies use both SEO _and_ PPC at the same time. Try it out, observe the results. Maybe this approach will work for you!
 
-Personally, I don't like internet advertising. Create exciting and unique articles that serve a niche or shed new light on something, use a semantically correct hierarchy and write well-considered meta tags. That's how you get people to your website, and that's how you lead them to your products and services!
+I'll be honest, I don't like internet advertising and I don't offer services in that direction.
+
+But I wholeheartedly recommend the following: Create exciting and unique articles that serve a niche or shed new light on something, use a semantically correct hierarchy and write well-considered meta tags. That's how you get people to your website, and that's how you lead them to your products and services!
