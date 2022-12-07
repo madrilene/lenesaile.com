@@ -1,7 +1,12 @@
+---
+permalink: /site.webmanifest
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
 {
-  "name": "Lene Saile - Frontend developer",
-  "short_name": "Lene Saile",
-  "start_url": "https://www.lene.dev",
+  "name": "{{ meta.siteName }} - {{ meta.siteDescription }}",
+  "short_name": "{{ meta.siteName }}",
+  "start_url": "{{ meta.url }}",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -20,7 +25,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#FF7F5C",
-  "background_color": "#FF7F5C",
+  "theme_color": "{{ meta.themeColor }}",
+  "background_color": "{{ meta.themeBgColor }}",
   "display": "standalone"
 }

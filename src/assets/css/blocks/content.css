@@ -17,3 +17,7 @@
   width: 100%;
   grid-column: 1 / 4;
 }
+
+.content :is(h2, h3, h4) + * {
+  --flow-space: var(--space-s-m);
+}

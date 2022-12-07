@@ -3,12 +3,46 @@
 <!DOCTYPE html>
 <html lang="{{ locale }}">
   <head>
+    <!-- 1 charset/http-equiv/viewport -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {% include "partials/meta-info.njk" %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- fonts preload -->
+    <!-- 2 title -->
+    <title>
+      {% if seo.title %} {{ seo.title }}
+      {% elif title %}
+      {{ title }} | {{ meta[locale].siteName }}
+      {% else %}
+      {{ meta[locale].siteName }}
+      {% endif %}
+    </title>
+
+    <!-- 3 preconnect/async js -->
+    <!-- load theme toggle first to avoid color flashing on page load.  -->
+    <script src="/assets/theme-toggle.js" async></script>
+    <!-- include inline base schema application/ld+jso -->
+    {% include "schemas/base-schema.njk" %}
+
+    <!-- 4 synchronous js  -->
+
+    <!-- 5 synchronous css  -->
+
+    <!-- 6 preload -->
+
+    <!-- css -->
+    <link
+      rel="preload"
+      href="/assets/css/global.css?{{ assetHash }}"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}"
+    /></noscript>
+
+    <!-- fonts -->
+
     <link
       rel="preload"
       href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2"
@@ -31,32 +65,16 @@
       crossorigin
     />
 
-    <!-- load theme toggle first to avoid color flashing on page load.  -->
-    <script src="/assets/theme-toggle.js"></script>
-
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
-
-    <!-- defer js  -->
+    <!-- 7 defered js  -->
     <script type="module" src="/assets/app.js" defer></script>
-
-    <!--  Add facility for pages to declare an array of stylesheet paths -->
-    {% if pageStylesheets %} {% for item in pageStylesheets %}
-    <link
-      rel="stylesheet"
-      media="print"
-      href="{{ item }}?{{ assetHash }}"
-      onload="this.media='all'"
-    />
-    {% endfor %} {% endif %}
-
     <script
       defer
       data-domain="lenesaile.com"
       src="https://plausible.io/js/plausible.js"
     ></script>
 
-    <!-- include base schema  -->
-    {% include "schemas/base-schema.njk" %}
+    <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+    {% include "partials/meta-info.njk" %}
   </head>
 
   <body

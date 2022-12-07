@@ -7,6 +7,8 @@ module.exports = {
   author: 'Lene Saile',
   authorEmail: 'hola@lenesaile.com',
   authorWebsite: 'https://www.lenesaile.com',
+  themeColor: '#E54848', //  Manifest: defines the default theme color for the application
+  themeBgColor: '#FF7F5C', // Manifest: defines a placeholder background color for the application page to display before
   meta_data: {
     twitterSite: '@lenesaile',
     twitterCreator: '@lenesaile',
