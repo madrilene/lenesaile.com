@@ -4,8 +4,6 @@ description: 'More than 90% of interactions start with Google. If your company d
 category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
-image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'
-alt: 'A photo of my mechanical keyboard and a string of lights'
 ---
 
 {% include "partials/toc.njk" %}

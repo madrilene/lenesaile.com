@@ -1,14 +1,30 @@
 {% set assetHash = global.random() %}
 
 <!DOCTYPE html>
-<html lang="{{ locale }}">
+<html lang="en">
   <head>
+    <!-- 1 charset/http-equiv/viewport -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    {% include "partials/meta-info.njk" %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- fonts preload -->
+    <!-- 2 title -->
+    <title>404 not found | Lene Saile</title>
+
+    <!-- 3 preconnect/async js -->
+    <!-- 4 synchronous js  -->
+    <!-- include inline base schema application/ld+jso -->
+    {% include "schemas/base-schema.njk" %}
+
+    <!-- 5 synchronous css / inline css  -->
+    {% set css %}{% include "global-inline.css" %}{% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+
+    <!-- 6 preload -->
+
+    <!-- general preloads -->
     <link
       rel="preload"
       href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2"
@@ -24,31 +40,11 @@
       crossorigin
     />
 
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+    <!-- 7 defered js  -->
 
-    <!-- defer js  -->
-    <script type="module" src="/assets/app.js" defer></script>
-
-    <!--  Add facility for pages to declare an array of stylesheet paths -->
-    {% if pageStylesheets %} {% for item in pageStylesheets %}
-    <link
-      rel="stylesheet"
-      media="print"
-      href="{{ item }}?{{ assetHash }}"
-      onload="this.media='all'"
-    />
-    {% endfor %} {% endif %}
-
-    <script
-      defer
-      data-domain="lenesaile.com"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
-
-    <!-- include base schema  -->
-    {%- include "schemas/base-schema.njk" %}
+    <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+    {% include "partials/meta-info.njk" %}
   </head>
-
   <body class="relative">
     {{ content | safe }}
   </body>

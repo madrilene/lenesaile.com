@@ -4,8 +4,6 @@ description: 'Mehr als 90 % der Interaktionen beginnen mit Google. Wenn dein Unt
 category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
-image: './src/assets/images/blog/posicionamiento-seo-vs-campanas-publicidad.jpg'
-alt: 'Ein Foto von meiner mechanischen Tastatur und einer Lichterkette'
 ---
 
 Vor ein paar Tagen erzählte uns ein befreundeter Kunde von seinen Zweifeln bezüglich der Wahl zwischen SEO und einer Werbekampagne zur Verbesserung der Kundengewinnung.
@@ -14,7 +12,7 @@ Es gibt viele Faktoren, die zu berücksichtigen sind, wie z. B. die Art des Prod
 
 ## Wie wird man im Internet gefunden?
 
-Mehr als 90 % der Interaktionen mit dem Internet beginnen mit einer Suchmaschine (Google, Bing usw.). Wenn du oder dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann finden? In den meisten Fällen werden sie es nicht tun.
+Mehr als 90 % der Interaktionen mit dem Internet beginnen mit einer Suchmaschine (Google, Bing usw.). Wenn du oder dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann nden? In den meisten Fällen werden sie es nicht tun.
 
 Aber das lässt sich natürlich sofort ändern! **Gefunden zu werden ist etwas, das man kaufen kann.**
 
