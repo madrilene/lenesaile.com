@@ -19,7 +19,6 @@
     </title>
 
     <!-- 3 preconnect/async js -->
-
     <!-- 4 synchronous js  -->
     <!-- load theme toggle first to avoid color flashing on page load.  -->
     <script src="/assets/theme-toggle.js"></script>
@@ -27,13 +26,14 @@
     {% include "schemas/base-schema.njk" %}
 
     <!-- 5 synchronous css / inline css  -->
-
     {% set css %}{% include "global-inline.css" %}{% endset %}
     <style>
       {{ css | cssmin | safe }}
     </style>
 
     <!-- 6 preload -->
+
+    <!-- general preloads -->
     <link
       rel="preload"
       href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2"
@@ -48,13 +48,16 @@
       type="font/woff2"
       crossorigin
     />
-    <link
-      rel="preload"
-      href="/assets/fonts/fira/firacode-medium-webfont.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+
+    <!-- preloads in page data -->
+    {% if preloads -%}
+    <!-- prettier-ignore -->
+    <link rel="preload"
+        href="{{ preloads.href }}"
+        as="{{ preloads.as }}"
+        {% if preloads.type %}type={{ preloads.type }}{% endif %}{% if preloads.imagesrcset %}imagesrcset="{{ preloads.imagesrcset }}" {% endif %}
+        {% if preloads.crossorigin %}crossorigin{% endif %} />
+    {% endif %}
 
     <!-- 7 defered js  -->
     <script type="module" src="/assets/app.js" defer></script>

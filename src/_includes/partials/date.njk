@@ -1,17 +1,18 @@
 <time datetime="{{ definedDate | toIsoString }}">
   <!-- TODO: less verbose -->
-  <!-- if DE -->
+
   {% if locale == "de" %}
   {{
     definedDate | formatDateDE('dddd, D. MMMM YYYY')
   }}
-  <!-- if ES -->
+
   {% elif locale == "es" %}
   {{
     definedDate | formatDateES('dddd, D MMMM, YYYY')
   }}
-  <!-- else default: EN -->
+
   {% else %}
+  <!-- default: EN -->
   {{
     definedDate | formatDate('MMMM D, YYYY')
   }}
