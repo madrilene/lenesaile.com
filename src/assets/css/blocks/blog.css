@@ -57,11 +57,11 @@
 }
 
 .blog aside:before {
-  background-image: url('../images/svg/info.svg');
+  background-image: url('/assets/images/svg/info.svg');
 }
 
 .blog .table-of-contents:before {
-  background-image: url('../images/svg/cursor.svg');
+  background-image: url('/assets/images/svg/cursor.svg');
 }
 
 .blog .toc-list {
