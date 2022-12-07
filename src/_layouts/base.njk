@@ -19,27 +19,21 @@
     </title>
 
     <!-- 3 preconnect/async js -->
+
+    <!-- 4 synchronous js  -->
     <!-- load theme toggle first to avoid color flashing on page load.  -->
-    <script src="/assets/theme-toggle.js" async></script>
+    <script src="/assets/theme-toggle.js"></script>
     <!-- include inline base schema application/ld+jso -->
     {% include "schemas/base-schema.njk" %}
 
-    <!-- 4 synchronous js  -->
+    <!-- 5 synchronous css / inline css  -->
 
-    <!-- 5 synchronous css  -->
+    {% set css %}{% include "global-inline.css" %}{% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
 
     <!-- 6 preload -->
-
-    <!-- css -->
-    <link
-      rel="preload"
-      href="/assets/css/global.css?{{ assetHash }}"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-
-    <!-- fonts -->
-
     <link
       rel="preload"
       href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2"
@@ -70,12 +64,7 @@
       src="https://plausible.io/js/plausible.js"
     ></script>
 
-    <!-- 8 defered css  -->
-    <noscript
-      ><link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}"
-    /></noscript>
-
-    <!-- 9 everything else: meta tags, icons, open graph etc.  -->
+    <!-- 8 everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
   </head>
 

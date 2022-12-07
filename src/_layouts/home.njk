@@ -6,7 +6,7 @@ layout: base
   <div class="gridwrap relative">
     <div class="welcome">
       <div class="wrapper region" style="--region-space-top: var(--space-3xl)">
-        <h1 class="fade-in" style="--custom-size-step: var(--size-step-4)">
+        <h1 class="fade-in-bottom" style="--custom-size-step: var(--size-step-4)">
           {{ hero.title }}
         </h1>
       </div>
@@ -19,8 +19,8 @@ layout: base
     </div>
 
     <div class="snapshot">
-      {% image hero.image, "", "object-fit-cover", hero.alt, "eager", " (min-width: 43rem)
-      60vw, 100vw" %}
+      {% image hero.image, "fade-in", "object-fit-cover", hero.alt, "eager", " (min-width:
+      43rem) 60vw, 100vw" %}
       <!-- this is me -->
       {% include 'svg/arrow.svg' %}
       <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
