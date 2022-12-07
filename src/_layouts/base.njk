@@ -37,9 +37,6 @@
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript
-      ><link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}"
-    /></noscript>
 
     <!-- fonts -->
 
@@ -73,7 +70,12 @@
       src="https://plausible.io/js/plausible.js"
     ></script>
 
-    <!-- 8 everything else: meta tags, icons, open graph etc.  -->
+    <!-- 8 defered css  -->
+    <noscript
+      ><link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}"
+    /></noscript>
+
+    <!-- 9 everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
   </head>
 
