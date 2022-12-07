@@ -57,12 +57,12 @@ svg.avatar-blog {
   }
 
   svg.avatar-blog {
-    width: 42%;
-    transform: translateY(7.4rem) translateX(var(--space-xl)) rotate(-1deg);
+    width: 55%;
+    transform: translateY(7.6rem) translateX(var(--space-xl)) rotate(-1deg);
   }
 
   .avatar-content-blog__inner {
-    padding-right: var(--space-3xl);
+    padding-right: var(--space-4xl);
   }
 }
 
@@ -83,6 +83,11 @@ svg.avatar-blog {
   svg.avatar-start {
     width: 40%;
     transform: translateY(2rem) translateX(-7rem);
+  }
+
+  svg.avatar-blog {
+    width: 42%;
+    transform: translateY(7.4rem) translateX(var(--space-xl)) rotate(-1deg);
   }
 
   svg.avatar-portatil {
