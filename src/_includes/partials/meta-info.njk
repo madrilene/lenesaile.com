@@ -37,9 +37,9 @@
 {% if meta.meta_data.mastodonProfile %}
 <!-- Mastodon verified site -->
 <link rel="me" href="{{ meta.meta_data.mastodonProfile }}" />
-{% endif %} {% if meta.meta_data.mastodonProfile %}
-<!-- Mastodon verified site -->
-<link rel="me" href="{{ meta.meta_data.mastodonProfile }}" />
+{% endif %} {% if meta.meta_data.twitterProfile %}
+<!-- twitter verified site -->
+<link rel="me" href="{{ meta.meta_data.twitterProfile }}" />
 {% endif %}
 
 <!-- Open Graph meta -->
@@ -75,8 +75,8 @@
 
 <!-- Twitter meta -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="{{ meta.meta_data.twitterProfile }}" />
-<meta name="twitter:creator" content="{{ meta.meta_data.twitterProfile }}" />
+<meta name="twitter:site" content="{{ meta.meta_data.twitterHandle }}" />
+<meta name="twitter:creator" content="{{ meta.meta_data.twitterHandle }}" />
 <meta name="twitter:dnt" content="on" />
 
 <!-- Favicon -->

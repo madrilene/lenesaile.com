@@ -79,7 +79,7 @@ I found some more hardcoded elements, for example in the footer. I guess I didn'
 
 I even explicitly wrote the HTML 4 entities for german umlauts!
 
-All in all I wrote a very very simple theme. It gets by with a few lines of CSS, half of which isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
+All in all I made a very very simple theme. It gets by with a few lines of CSS, half of which isn't even needed, and some of which I cluelessly copied from somewhere. Not that I can really remember that, but I don't speak Swedish.
 
 ```css
 #sidebar .bloggy-meddelande {
@@ -118,7 +118,7 @@ JavaScript? Non-existent. I didn't know how to write it at that time, and it rea
 
 The very best: two plugins. **Two!**
 
-Three, if you count the _Hello Dolly plugin_ that shipped with WordPress for a long time.
+Three, if you count the _Hello Dolly_ plugin that shipped with WordPress for a long time.
 
 There remain Akismet and TinyMCE Advanced, which apparently was heavily used until recently to change the default color of the content to `#ff0004` (websafe!!).
 
