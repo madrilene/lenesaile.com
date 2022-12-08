@@ -19,14 +19,14 @@ preloads:
     </div>
 
     <div class="intro region" style="--region-space-top: var(--space-xl)">
-      <div class="column">
+      <div class="column p-note">
         {{ hero.intro }}
       </div>
     </div>
 
     <div class="snapshot">
-      {% image hero.image, "fade-in", "object-fit-cover", hero.alt, "eager", " (min-width:
-      43rem) 60vw, 100vw" %}
+      {% image hero.image, "fade-in", "object-fit-cover u-photo", hero.alt, "eager", "
+      (min-width: 43rem) 60vw, 100vw" %}
       <!-- this is me -->
       {% include 'svg/arrow.svg' %}
       <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
