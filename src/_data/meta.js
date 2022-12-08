@@ -66,6 +66,10 @@ module.exports = {
       description:
         "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.  I specialize in custom creative websites with accessibility and performance in mind.",
       url: 'https://www.lenesaile.com/en/feed.xml'
+    },
+    webmentions: {
+      formTitle: 'Have you published a response? Let me know where:',
+      buttonValue: 'Send Webmention'
     }
   },
 
@@ -84,6 +88,10 @@ module.exports = {
       description:
         'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
       url: 'https://www.lenesaile.com/es/feed.xml'
+    },
+    webmentions: {
+      formTitle: '¿Has publicado una respuesta? Dime dónde:',
+      buttonValue: 'Enviar Webmention'
     }
   },
   de: {
@@ -101,6 +109,10 @@ module.exports = {
       description:
         'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
       url: 'https://www.lenesaile.com/de/feed.xml'
+    },
+    webmentions: {
+      formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
+      buttonValue: 'Webmention senden'
     }
   }
 };

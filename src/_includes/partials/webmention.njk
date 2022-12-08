@@ -1,6 +1,6 @@
 <article
-  class="webmention {% if webmention|isOwnWebmention %}webmention--own{% endif %}"
   id="webmention-{{ webmention['wm-id'] }}"
+  class="region | webmention {% if webmention|isOwnWebmention %}webmention--own{% endif %}"
 >
   <div class="webmention__meta">
     {% if webmention.author %} {% if webmention.author.photo %}

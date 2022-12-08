@@ -11,6 +11,12 @@
   padding: var(--space-xs) var(--space-m-l);
   transform-style: preserve-3d;
   background-color: var(--color-bg);
+  cursor: pointer;
+}
+
+.form-webmention .button {
+  margin-right: 0;
+  padding: 0.1rem var(--space-m-l);
 }
 
 .button::before {

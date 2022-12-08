@@ -21,7 +21,7 @@ EXCEPTIONS
 .sidebar {
   display: flex;
   flex-wrap: var(--sidebar-wrap, wrap);
-  gap: var(--space-s-l);
+  gap: var(--sidebar-gap, 0);
   align-items: var(--sidebar-align, center);
 }
 

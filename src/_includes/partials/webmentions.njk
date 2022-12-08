@@ -1,4 +1,9 @@
-<div class="webmentions flow" id="webmentions">
+<section
+  class="wrapper flow content region | blog webmentions"
+  id="webmentions"
+  style="--region-space-top: var(--space-2xl)"
+>
+  <h2>Webmentions</h2>
   <!-- Filter the cached mentions to only include ones matching the post's url -->
   {% set mentions = webmentions | getWebmentionsForUrl(metadata.url + webmentionUrl) %}
   <!-- Set reposts as mentions that are `repost-of`  -->
@@ -84,25 +89,40 @@
   {% endif %}
 
   <p>
-    These are <a href="https://indieweb.org/Webmention">webmentions</a> via the
-    <a href="https://indieweb.org/">IndieWeb</a> and
-    <a href="https://webmention.io/">webmention.io</a>. Mention this post from your site:
+    {{ meta[locale].webmentions.formTitle }}
   </p>
 
   <form
-    action="https://webmention.io/sia.codes/webmention"
+    action="https://webmention.io/www.lenesaile.com/webmention"
     method="post"
     class="form-webmention"
   >
     <label for="form-webmention-source">URL</label>
-    <input
-      id="form-webmention-source"
-      type="url"
-      name="source"
-      placeholder="https://example.com"
-      required
-    />
-    <input type="hidden" name="target" value="https://sia.codes/{{ page.url }}" />
-    <input type="submit" class="button button-small" value="Send Webmention" />
+    <div
+      class="sidebar"
+      style="
+        --sidebar-gap: var(--space-xs);
+        --sidebar-target-width: 10rem;
+        --sidebar-content-min-width: 40%;
+      "
+    >
+      <input
+        id="form-webmention-source"
+        type="url"
+        name="source"
+        placeholder="https://example.com"
+        required
+      />
+      <input
+        type="hidden"
+        name="target"
+        value="https://www.lenesaile.com/{{ page.url }}"
+      />
+      <input
+        type="submit"
+        class="button"
+        value="{{ meta[locale].webmentions.buttonValue }}"
+      />
+    </div>
   </form>
-</div>
+</section>
