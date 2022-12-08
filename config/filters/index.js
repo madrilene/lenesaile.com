@@ -7,6 +7,7 @@ const markdownLib = require('../plugins/markdown');
 const site = require('../../src/_data/meta');
 const {throwIfNotType} = require('../utils');
 const md = require('markdown-it')();
+const sanitizeHTML = require('sanitize-html');
 
 /** Returns the first `limit` elements of the the given array. */
 const limit = (array, limit) => {
@@ -109,7 +110,7 @@ const mdInline = (content, opts) => {
 };
 
 // originally from https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
-const splitlines = function (input, maxCharLength) {
+const splitlines = (input, maxCharLength) => {
   const parts = input.split(' ');
   const lines = parts.reduce(function (acc, cur) {
     if (!acc.length) {
@@ -130,6 +131,18 @@ const splitlines = function (input, maxCharLength) {
   return lines;
 };
 
+const getWebmentionsForUrl = (webmentions, url) => {
+  return webmentions.children.filter(entry => entry['wm-target'] === url);
+};
+
+const webmentionSize = mentions => {
+  return !mentions ? 0 : mentions.length;
+};
+
+const webmentionsByType = (mentions, mentionType) => {
+  return mentions.filter(entry => !!entry[mentionType]);
+};
+
 module.exports = {
   limit,
   where,
@@ -145,5 +158,8 @@ module.exports = {
   toAbsoluteUrl,
   minifyCss,
   mdInline,
-  splitlines
+  splitlines,
+  getWebmentionsForUrl,
+  webmentionSize,
+  webmentionsByType
 };

@@ -1,58 +1,48 @@
-<div
+<article
   class="webmention {% if webmention|isOwnWebmention %}webmention--own{% endif %}"
   id="webmention-{{ webmention['wm-id'] }}"
 >
   <div class="webmention__meta">
-    {% if webmention.author %}
-    <a
-      class="webmention__author h-card u-url"
-      {%
-      if
-      webmention.url
-      %}href="{{ webmention.url }}"
-      {%
-      endif
-      %}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {% if webmention.author.photo %}
-      <img
-        class="webmention__author__photo u-photo"
-        src="{{ webmention.author.photo }}"
-        alt=""
-        width="48"
-        height="48"
-        loading="lazy"
-      />
-      {% else %}
-      <img
-        class="webmention__author__photo"
-        src="{{ '/assets/images/avatar-default.jpg' | url }}"
-        alt=""
-        width="48"
-        height="48"
-      />
-      {% endif %}
-      <strong class="p-name">{{ webmention.author.name }}</strong>
-    </a>
+    {% if webmention.author %} {% if webmention.author.photo %}
+    <img
+      src="{{ webmention.author.photo }}"
+      alt="{{ webmention.author.name }}"
+      width="48"
+      height="48"
+      loading="lazy"
+    />
     {% else %}
-    <span class="webmention__author">
-      <img
-        class="webmention__author__photo"
-        src="{{ '/assets/images/avatar-default.svg' | url }}"
-        alt=""
-      />
+    <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
+    {% endif %}
+    <span>
+      <strong class="p-name">{{ webmention.author.name }}</strong>
+    </span>
+    {% else %}
+    <span>
       <strong>Anonymous</strong>
     </span>
     {% endif %} {% if webmention.published %}
-    <span class="webmention__meta__divider" aria-hidden="true">&sdot;</span>
-    <time class="webmention__pubdate dt-published" datetime="{{ webmention.published }}">
-      {{ webmention.published | dateFromISO | readableDate("dd LLL yyyy") }}
-    </time>
+    <!-- date -->
+    {% set definedDate = webmention.published %} {% include "partials/date.njk" %} {%
+    endif %} {% endif %}
+  </div>
+  <p class="webmention-text">
+    {{ webmention.content.text | truncate }}
+    {% if webmention.url %}
+    <a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+      source
+      <svg
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        width="10px"
+      >
+        <path
+          fill="currentColor"
+          d="M432 320h-32a16 16 0 00-16 16v112H64V128h144a16 16 0 0016-16V80a16 16 0 00-16-16H48a48 48 0 00-48 48v352a48 48 0 0048 48h352a48 48 0 0048-48V336a16 16 0 00-16-16zM488 0H360c-21.37 0-32.05 25.91-17 41l35.73 35.73L135 320.37a24 24 0 000 34L157.67 377a24 24 0 0034 0l243.61-243.68L471 169c15 15 41 4.5 41-17V24a24 24 0 00-24-24z"
+        />
+      </svg>
+    </a>
     {% endif %}
-  </div>
-  <div class="webmention__content p-content">
-    {{ webmention.content.value | safe }}
-  </div>
-</div>
+  </p>
+</article>

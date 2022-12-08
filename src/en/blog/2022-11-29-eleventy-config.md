@@ -76,7 +76,7 @@ We don't need to tell Eleventy about the existence of this folder. We just use i
 
 I introduce two nice ways to handle this, using [collections](https://www.11ty.dev/docs/collections/) as an example.
 
-## Method 1: Import file and loop over the collection names
+## Method 1: Import file and loop over the collection keys
 
 Create a file named `collections.js` in your `config` folder.
 Now define all the collections you want to use:
@@ -117,7 +117,7 @@ module.exports = eleventyConfig => {
 };
 ```
 
-We loop over all the collections that are defined in `collections.js` and import them into our config file. You'd now do exactly the same for your filters, transforms, shortcodes, etc.
+We loop through all the collections that are defined in `collections.js` and import them into our config file. You'd now do exactly the same for your filters, transforms, shortcodes, etc.
 If you want to see this method in action, visit the [public repository](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) of [Ryan Mulligan's personal site](https://ryanmulligan.dev/).
 
 **Very tidy!**

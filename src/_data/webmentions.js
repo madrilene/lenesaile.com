@@ -7,16 +7,14 @@ const domain = require('./meta.js').url;
 require('dotenv').config();
 
 // Define Cache Location and API Endpoint
-const CACHE_DIR = 'cache';
+const CACHE_DIR = '_cache';
 const API = 'https://webmention.io/api';
 const TOKEN = process.env.WEBMENTION_IO_TOKEN;
 
 async function fetchWebmentions(since, perPage = 10000) {
   if (!domain) {
     // If we dont have a domain name, abort
-    console.warn(
-      '>>> unable to fetch webmentions: no domain name specified in site.json'
-    );
+    console.warn('>>> unable to fetch webmentions: no domain name specified in meta.js');
     return false;
   }
 

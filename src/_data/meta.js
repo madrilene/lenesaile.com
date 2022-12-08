@@ -10,9 +10,8 @@ module.exports = {
   themeColor: '#E54848', //  Manifest: defines the default theme color for the application
   themeBgColor: '#FF7F5C', // Manifest: defines a placeholder background color for the application page to display before
   meta_data: {
-    twitterSite: '@lenesaile',
-    twitterCreator: '@lenesaile',
     opengraph_default: '/assets/images/opengraph-default.jpg',
+    twitterProfile: '@lenesaile',
     mastodonProfile: 'https://front-end.social/@lene'
   },
   pagination: {

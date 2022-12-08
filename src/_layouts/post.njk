@@ -27,7 +27,8 @@ preloads:
 </article>
 
 <!-- webmentions -->
-
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %} {% include
+"partials/webmentions.njk" %}
 <!-- cta -->
 {% include 'partials/cta.njk' %}
 <!-- include blogpost schema  -->

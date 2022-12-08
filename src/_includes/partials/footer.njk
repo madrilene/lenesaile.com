@@ -1,7 +1,7 @@
 <footer class="site-foot" role="contentinfo">
   <div class="wrapper prose">
     <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner" aria-label="Footer Menu">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
         {% set activePage = page.url | url %}
         <a href="/{{ locale }}/"  {% if activePage === '/en/' or activePage === '/de/' or activePage === '/es/' %}
         aria-current="page" {% endif %}>

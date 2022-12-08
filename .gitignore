@@ -9,7 +9,10 @@ Thumbs.db
 .cache
 _cache/
 
+# Local Netlify folder
+.netlify
+
 # Node modules and output
 node_modules
 dist
-src/_includes/css
+src/_includes/global-inline.css

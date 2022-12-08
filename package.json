@@ -1,6 +1,6 @@
 {
   "name": "lenesaile.com",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "engines": {
     "node": ">=18.x"
   },
