@@ -9,11 +9,11 @@ preloads:
 
 <article
   id="{{ title | slugify }}"
-  class="region blog h-entry"
+  class="region blog | h-entry"
   style="--region-space-top: var(--space-4xl)"
 >
-  <div class="wrapper flow content">
-    <h1 class="gradient-text p-name">{{ title }}</h1>
+  <div class="wrapper flow content | e-content">
+    <h1 class="gradient-text | p-name">{{ title }}</h1>
     <!-- date -->
     {% set definedDate = date %} {% include "partials/date.njk" %}
 
@@ -25,9 +25,8 @@ preloads:
       100vw" %}
     </div>
     {% endif %}
-    <div class="e-content">
-      {{ content | safe }}
-    </div>
+
+    {{ content | safe }}
   </div>
 
   <div hidden>
