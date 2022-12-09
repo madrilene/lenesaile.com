@@ -2,14 +2,17 @@
   <button
     type="button"
     aria-expanded="false"
-    aria-label="Select language"
     aria-controls="languagenav"
     class="language-nav-button"
   >
     {% include "icons/settings.svg" %}
-    <span class="sr-only">Show Navigation</span>
+    <span class="sr-only">{{ meta[locale].ariaLabels.optionsButton }}</span>
   </button>
-  <nav id="languagenav" class="language-select-nav" aria-label="Languages">
+  <nav
+    id="languagenav"
+    class="language-select-nav"
+    aria-label="{{ meta[locale].ariaLabels.optionsMenu }}"
+  >
     {% for language in meta.languages %} {% if loop.first %} {% endif %}
 
     <!-- set translatedUrl to the homepage of that language by default  -->
@@ -23,13 +26,13 @@
     item in collections.all %} {% if item.data.key == key and item.data.locale ==
     language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
     <a
-      class="language-item {{ activeClass }} "
+      class="language-item {{ activeClass }}"
       href="{{ translatedUrl }}"
       style="--offset: {{ loop.index }}"
       aria-selected="false"
       aria-controls="lang-{{ language.code }}"
     >
-      {{ language.long }}
+      <span lang="{{ language.code }}"> {{ language.long }}</span>
     </a>
     {% if loop.last %} {% endif %} {% endfor %}
   </nav>

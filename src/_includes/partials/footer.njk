@@ -1,10 +1,11 @@
 <footer class="site-foot h-card" role="contentinfo">
   <div class="wrapper prose">
     <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+      <nav id="footernav" class="site-foot__inner" aria-label="{{ meta[locale].ariaLabels.footerMenu }}">
         {% set activePage = page.url | url %}
+        <p class="h-card p-author">
         <a class="p-name u-url" rel="me" href="/">
-        &copy; {% year %} {{ meta[locale].siteName }}</a>
+        &copy; {% year %} {{ meta[locale].siteName }}</a></p>
 
         {% for item in navigation[locale].bottom %}
 

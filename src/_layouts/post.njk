@@ -13,7 +13,7 @@ preloads:
   style="--region-space-top: var(--space-4xl)"
 >
   <div class="wrapper flow content">
-    <h1 class="gradient-text">{{ title }}</h1>
+    <h1 class="gradient-text p-name">{{ title }}</h1>
     <!-- date -->
     {% set definedDate = date %} {% include "partials/date.njk" %}
 
@@ -25,8 +25,18 @@ preloads:
       100vw" %}
     </div>
     {% endif %}
+    <div class="e-content">
+      {{ content | safe }}
+    </div>
+  </div>
 
-    {{ content | safe }}
+  <div hidden>
+    <!--  h-card infos -->
+    <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+    <p class="h-card p-author">
+      <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author }}</a>
+      <img class="u-photo" src="{{ meta.authorAvatar | url | absoluteUrl(meta.url) }}" />
+    </p>
   </div>
 </article>
 

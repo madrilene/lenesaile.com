@@ -7,6 +7,7 @@ module.exports = {
   author: 'Lene Saile',
   authorEmail: 'hola@lenesaile.com',
   authorWebsite: 'https://www.lenesaile.com',
+  authorAvatar: '/assets/images/avatar.jpg',
   themeColor: '#E54848', //  Manifest: defines the default theme color for the application
   themeBgColor: '#FF7F5C', // Manifest: defines a placeholder background color for the application page to display before
   meta_data: {
@@ -71,6 +72,12 @@ module.exports = {
     webmentions: {
       formTitle: 'Have you published a response? Let me know where:',
       buttonValue: 'Send Webmention'
+    },
+    ariaLabels: {
+      mainMenu: 'Main',
+      footerMenu: 'Footer',
+      optionsMenu: 'select language',
+      optionsButton: 'change language'
     }
   },
 
@@ -93,6 +100,12 @@ module.exports = {
     webmentions: {
       formTitle: '¿Has publicado una respuesta? Dime dónde:',
       buttonValue: 'Enviar Webmention'
+    },
+    ariaLabels: {
+      mainMenu: 'Principal',
+      footerMenu: 'Información',
+      options: 'seleccionar idioma',
+      optionsButton: 'cambiar idioma'
     }
   },
   de: {
@@ -114,6 +127,12 @@ module.exports = {
     webmentions: {
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
       buttonValue: 'Webmention senden'
+    },
+    ariaLabels: {
+      mainMenu: 'Haupt',
+      footerMenu: 'Information',
+      options: 'Sprache wählen',
+      optionsButton: 'Sprache ändern'
     }
   }
 };

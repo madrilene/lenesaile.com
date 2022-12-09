@@ -175,7 +175,7 @@ This is how I'm currenlty structuring my projects (until I find a method that I 
 
 You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
 
-I would love go much more into detail and break down other important folders like `assets` and `_includes`. But that would go beyond the scope of what I wanted to focus on here. Maybe I will write a follow-up.
+I would love to break down other important folders too, like `assets` and `_includes`. But that would go beyond the scope of what I wanted to focus on here. Maybe I will write a follow-up.
 
 Generally, it is always a great idea to to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 There are so many great ideas out there!
