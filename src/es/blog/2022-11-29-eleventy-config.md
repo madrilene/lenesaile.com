@@ -124,7 +124,7 @@ Si quieres ver este método en acción, visita el [repositorio público](https:/
 Sin embargo, hay algo que no me gusta de este método.
 Hemos introducido la estructura, pero también quiero una buena visión de conjunto. Quiero poder ver directamente en mi archivo de configuración qué _collections_ estoy usando, qué _filters_, qué _transforms_ y demás. ¡Así que aquí viene el método dos!
 
-## Método 2: importaciones nombradas
+## Método 2: named exports
 
 En lugar de `collections.js` crea otra carpeta dentro de `config` llamada `collections`, y en ella pon un archivo llamado `index.js`:
 
@@ -144,6 +144,8 @@ module.exports = {
   getProjects
 };
 ```
+
+Las exportaciones nombradas pueden hacerse individualmente o agruparse en la parte inferior. Si se exporta todo al final del módulo, como en el ejemplo de aquí, queda mucho más claro, por lo que naturalmente prefiero este método.
 
 Y dentro de tu `eleventy.js`:
 
@@ -169,6 +171,9 @@ module.exports = eleventyConfig => {
 **¡Hecho!**
 
 Todo está ordenado y puedo ver de un vistazo lo que estoy importando para este proyecto.
+
+Si hay demasiados _filtros_, _colecciones_ o _códigos cortos_, los divido más en sus propias carpetas, por ejemplo sólo los filtros para manejar la fecha en un lugar común. Los bloques más grandes, como los shortcodes de _eleventy image , tienen su propia carpeta.
+Los \_values_ exportados se importan primero en el archivo padre `index.js` y luego se vuelven a exportar juntos para el archivo `eleventy.js`. 🤪
 
 Así es como actualmente estoy estructurando mis proyectos (hasta que encuentre un método que me guste aún más).
 

@@ -125,7 +125,7 @@ If you want to see this method in action, visit the [public repository](https://
 There is something I don't like about this method though.
 We have brought structure into it, but I also want a good overview. I want to be able to see directly in my config file which collections I'm using, which filters, which transforms and so on. So here comes method two!
 
-## Method 2: named imports
+## Method 2: named exports
 
 Instead of `collections.js` create another folder inside `config` called `collections`, and in there you put a file called `index.js`:
 
@@ -145,6 +145,8 @@ module.exports = {
   getProjects
 };
 ```
+
+Named exports can be exported individually, or batched together and exported at the bottom of a file. Exporting everything at the bottom of the module like in the example here, it's so much cleaner, so I naturally favor this method.
 
 And inside your `eleventy.js`:
 
@@ -171,11 +173,15 @@ module.exports = eleventyConfig => {
 
 Everything is neat and I can see at a glance what I am importing for this project.
 
-This is how I'm currenlty structuring my projects (until I find a method that I like even better).
+If there are too many filters, collections or shortcodes, I subdivide them further into their own folders, for example only the filters for handling the date in a common place. Larger blocks like the ones for the eleventy image shortcodes get their very own folder.
+The exported values are then imported into the parent `index.js`, and then exported all together again for the `eleventy.js` file. 🤪
 
 You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
 
-I would love to break down other important folders too, like `assets` and `_includes`. But that would go beyond the scope of what I wanted to focus on here. Maybe I will write a follow-up.
+This is how I'm currenlty structuring my projects (until I find a method that I like even better).
+
+There is much more to talk about, like looping over the favicon folder put these files collectively in the root directory of the output folder. I would also like to break down other important folders too, like `assets` and `_includes`. Maybe I will write a follow-up.
 
 Generally, it is always a great idea to to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
+
 There are so many great ideas out there!

@@ -1,11 +1,11 @@
 <section
   class="wrapper flow content region | blog webmentions"
   id="webmentions"
-  style="--region-space-top: var(--space-2xl)"
+  style="--region-space-top: var(--space-xl)"
 >
   <h2>Webmentions</h2>
   <!-- Filter the cached mentions to only include ones matching the post's url -->
-  {% set mentions = webmentions | getWebmentionsForUrl(metadata.url + webmentionUrl) %}
+  {% set mentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
   <!-- Set reposts as mentions that are `repost-of`  -->
   {% set reposts = mentions | webmentionsByType('repost-of') %}
   <!-- Count the total reposts -->
@@ -17,66 +17,73 @@
   <!-- Set replies as mentions that are `in-reply-to`  -->
   {% set replies = mentions | webmentionsByType('in-reply-to') %}
   <!-- Count the total replies -->
-  {% set repliesSize = replies | webmentionSize %} {% if likesSize > 0 %}
+  {% set repliesSize = replies | webmentionSize %}
 
-  <div class="webmentions__facepile flow">
-    <h3 style="margin-bottom: 1em" {% if repostsSize>
+  <!-- if likes -->
+  {% if likesSize > 0 %}
+
+  <div class="flow">
+    <h3 {% if repostsSize>
       11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{
         likesSize
       }}
       Like{% if likesSize != 1 %}s{% endif %}
     </h3>
 
-    {% for webmention in likes %} {% if webmention.url != "" %}
-    <a
-      class="h-card u-url link-u-exempt"
-      href="{{ webmention.url }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {% endif %} {% if webmention.author.photo %}
-      <img
-        src="{{ webmention.author.photo }}"
-        alt="{{ webmention.author.name }}"
-        width="48"
-        height="48"
-        loading="lazy"
-      />
-      {% else %}
-      <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
-      {% endif %} {% if webmention.url != "" %}
-    </a>
-    {% endif %} {% endfor %}
+    <p>
+      {% for webmention in likes %} {% if webmention.url != "" %}
+      <a
+        class="h-card u-url link-u-exempt"
+        href="{{ webmention.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {% endif %} {% if webmention.author.photo %}
+        <img
+          src="{{ webmention.author.photo }}"
+          alt="{{ webmention.author.name }}"
+          width="48"
+          height="48"
+          loading="lazy"
+        />
+        {% else %}
+        <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
+        {% endif %} {% if webmention.url != "" %}
+      </a>
+      {% endif %} {% endfor %}
+    </p>
   </div>
   {% endif %} {% if repostsSize > 0 %}
-  <div class="webmentions__facepile flow">
-    <h3 style="margin-bottom: 1em" {% if repostsSize>
+  <div class="flow">
+    <h3 {% if repostsSize>
       11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{
         repostsSize
       }}
       Retweet{% if repostsSize != 1 %}s{% endif %}
     </h3>
 
-    {% for webmention in reposts %} {% if webmention.url != "" %}
-    <a
-      class="h-card u-url link-u-exempt"
-      href="{{ webmention.url }}"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {% endif %} {% if webmention.author.photo %}
-      <img
-        src="{{ webmention.author.photo }}"
-        alt="{{ webmention.author.name }}"
-        width="48"
-        height="48"
-        loading="lazy"
-      />
-      {% else %}
-      <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
-      {% endif %} {% if webmention.url != "" %}
-    </a>
-    {% endif %} {% endfor %}
+    <p>
+      {% for webmention in reposts %} {% if webmention.url != "" %}
+      <a
+        class="h-card u-url link-u-exempt"
+        href="{{ webmention.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {% endif %} {% if webmention.author.photo %}
+        <img
+          src="{{ webmention.author.photo }}"
+          alt="{{ webmention.author.name }}"
+          width="48"
+          height="48"
+          loading="lazy"
+        />
+        {% else %}
+        <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
+        {% endif %} {% if webmention.url != "" %}
+      </a>
+      {% endif %} {% endfor %}
+    </p>
   </div>
   {% endif %} {% if repliesSize > 0 %}
   <div class="webmention-replies flow">
@@ -88,41 +95,43 @@
   </div>
   {% endif %}
 
-  <p>
-    {{ meta[locale].webmentions.formTitle }}
-  </p>
+  <section class="region flow">
+    <p>
+      {{ meta[locale].webmentions.formTitle }}
+    </p>
 
-  <form
-    action="https://webmention.io/www.lenesaile.com/webmention"
-    method="post"
-    class="form-webmention"
-  >
-    <label for="form-webmention-source">URL</label>
-    <div
-      class="sidebar"
-      style="
-        --sidebar-gap: var(--space-xs);
-        --sidebar-target-width: 10rem;
-        --sidebar-content-min-width: 40%;
-      "
+    <form
+      action="https://webmention.io/www.lenesaile.com/webmention"
+      method="post"
+      class="form-webmention"
     >
-      <input
-        id="form-webmention-source"
-        type="url"
-        name="source"
-        placeholder="https://example.com"
-        required
-      />
-      <input
-        type="hidden"
-        name="target"
-        value="https://www.lenesaile.com/{{ page.url }}"
-      />
-      <input
-        type="submit"
-        class="button"
-        value="{{ meta[locale].webmentions.buttonValue }}"
-      />
-    </div>
-  </form>
+      <label for="form-webmention-source">URL</label>
+      <div
+        class="sidebar"
+        style="
+          --sidebar-gap: var(--space-xs);
+          --sidebar-target-width: 10rem;
+          --sidebar-content-min-width: 40%;
+        "
+      >
+        <input
+          id="form-webmention-source"
+          type="url"
+          name="source"
+          placeholder="https://example.com"
+          required
+        />
+        <input
+          type="hidden"
+          name="target"
+          value="https://www.lenesaile.com/{{ page.url }}"
+        />
+        <input
+          type="submit"
+          class="button"
+          value="{{ meta[locale].webmentions.buttonValue }}"
+        />
+      </div>
+    </form>
+  </section>
 </section>

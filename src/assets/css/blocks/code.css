@@ -161,7 +161,6 @@ pre[class*='language-'] {
 
 .token.keyword {
   color: var(--color-code-tertiary);
-  font-style: italic;
 }
 
 .token.number {

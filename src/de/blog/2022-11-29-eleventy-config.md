@@ -125,7 +125,7 @@ Wenn du diese Methode in Aktion sehen willst, besuche das [öffentliche Repo](ht
 Es gibt allerdings etwas, das mir an dieser Methode nicht gefällt.
 Wir haben zwar Struktur reingebracht, aber ich möchte auch einen guten Überblick haben. Ich möchte direkt in meiner Konfigurationsdatei sehen können, welche _collections_ ich verwende, welche _filter_, welche _transforms_ und so weiter. Hier kommt also Methode zwei!
 
-## Methode 2: named imports
+## Methode 2: named exports
 
 Anstelle von `collections.js` erstellen wir einen weiteren Ordner innerhalb von `config` mit dem Namen `collections`, und dort legen wir eine Datei namens `index.js` ab:
 
@@ -145,6 +145,8 @@ module.exports = {
   getProjects
 };
 ```
+
+_Named exports_ können einzeln oder unten gruppiert exportiert werden. Wenn man wie im Beispiel hier alles am Ende des Moduls exportiert, ist es viel übersichtlicher, daher bevorzuge ich natürlich diese Methode.
 
 Und in der `eleventy.js`:
 
@@ -171,10 +173,14 @@ module.exports = eleventyConfig => {
 
 Alles ist übersichtlich und ich kann auf einen Blick sehen, was ich für dieses Projekt importiere.
 
-So strukturiere ich derzeit meine Projekte (bis ich eine Methode finde, die mir noch besser gefällt).
+Wenn es zu viele _filter_, _collections_ oder _shortcodes_ werden, unterteile ich sie weiter in eigene Ordner, zum Beispiel nur die Filter für die Ausgabe des Datums an einem gemeinsamen Ort. Größere Blöcke wie die für die _eleventy image shortcodes_ bekommen einen eigenen Ordner.
+Die exportierten _values_ werden dann erst in die übergeordnete `index.js` importiert und dann für die Datei`eleventy.js` wieder zusammen exportiert. 🤪
+
 Du kannst das in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
 
-Ich würde gerne noch viel mehr ins Detail gehen und andere wichtige Ordner wie `assets` und `_includes` aufschlüsseln. Aber das würde den Rahmen sprengen. Vielleicht schreibe ich eine Fortsetzung?
+So strukturiere ich derzeit meine Projekte (bis ich eine Methode finde, die mir noch besser gefällt).
+
+Es gibt noch viel mehr zu optimieren, wie z.B. über den Favicon-Ordner zu loopen (sagt man das so?) und die Dateien gemeinsam in das Stammverzeichnis des Ausgabeordners zu legen. Ich würde auch gerne andere wichtige Ordner aufschlüsseln, wie `assets` und `_includes`. Vielleicht schreibe ich eine Fortsetzung?
 
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 
