@@ -1,29 +1,23 @@
 /* Webmentions */
-.webmentions img {
-  border-radius: 50%;
-  display: inline;
-  object-fit: cover;
+
+.webmentions a:has(img) {
+  text-decoration: none;
 }
 
-.webmention-replies img {
-  height: 24px;
-  width: 24px;
+.webmentions h3 {
+  font-size: var(--size-step-1);
 }
-.webmention-replies article {
-  margin-bottom: 32px;
-}
-.webmention-replies .webmention__meta {
-  margin-bottom: 8px;
-}
-.webmention-replies .webmention__meta time {
-  display: block;
-  margin-top: 8px;
-}
-.webmention-text {
-  font-size: var(--size-400);
-  margin-top: 0;
-}
-.webmention-text a {
-  font-size: var(--size-300);
-  margin-left: 4px;
+
+.webmentions img {
+  --size: 2.5rem;
+  aspect-ratio: 1;
+  background: 0 0;
+  block-size: var(--size);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline;
+  inline-size: var(--size);
+  outline-offset: 5px;
+  padding: 0;
 }

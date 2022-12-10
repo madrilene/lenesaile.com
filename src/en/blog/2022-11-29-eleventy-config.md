@@ -146,7 +146,7 @@ module.exports = {
 };
 ```
 
-Named exports can be exported individually, or batched together and exported at the bottom of a file. Exporting everything at the bottom of the module like in the example here, it's so much cleaner, so I naturally favor this method.
+Named exports can be exported individually, or batched together and exported at the bottom of the module. Exporting everything at the bottom, like in the example here, is so much cleaner, so I naturally favor this method.
 
 And inside your `eleventy.js`:
 

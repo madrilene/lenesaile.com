@@ -41,7 +41,6 @@ preloads:
 
 <!-- set webmentions url -->
 {% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %}
-
 <!-- include webmentions -->
 {% include "partials/webmentions.njk" %}
 
