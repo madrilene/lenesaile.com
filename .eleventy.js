@@ -29,7 +29,8 @@ const {
   splitlines,
   getWebmentionsForUrl,
   webmentionSize,
-  webmentionsByType
+  webmentionsByType,
+  isOwnWebmention
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -111,6 +112,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('getWebmentionsForUrl', getWebmentionsForUrl);
   eleventyConfig.addFilter('webmentionSize', webmentionSize);
   eleventyConfig.addFilter('webmentionsByType', webmentionsByType);
+  eleventyConfig.addFilter('isOwnWebmention', isOwnWebmention);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('entries', Object.entries);

@@ -8,7 +8,7 @@ image: './src/assets/images/blog/shop.jpg'
 alt: 'Pantallazo del shop de albertoballesteros.com'
 cta:
   title: '¿Necesitas un shop rapido?'
-  desktop: 'Los visitantes de una tienda online están a punto de decidir si quieren un producto y si están dispuestos a pagar dinero por él. Los tiempos de carga y la preocupación por la seguridad de la tienda pueden hacer que abandonen ese plan.'
+  desktop: 'Los tiempos de carga y la preocupación por la seguridad de la tienda hacen que los visitantes la abandonen sin comprar nada.'
   lead: '¡Haré que tu tienda sea rápida y segura con el método Jamstack! Envíame un correo electrónico a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto.'
 redirectFrom: ['/blog/2022/nueva-tienda-alberto-ballesteros-eleventy-snipcart/']
 ---

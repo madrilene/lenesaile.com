@@ -143,6 +143,17 @@ const webmentionsByType = (mentions, mentionType) => {
   return mentions.filter(entry => !!entry[mentionType]);
 };
 
+const isOwnWebmention = webmention => {
+  const urls = [
+    'https://www.lenesaile.com',
+    'https://twitter.com/lenesaile',
+    'https://front-end.social/@lene'
+  ];
+  const authorUrl = webmention.author ? webmention.author.url : false;
+  // check if a given URL is part of this site.
+  return authorUrl && urls.includes(authorUrl);
+};
+
 module.exports = {
   limit,
   where,
@@ -161,5 +172,6 @@ module.exports = {
   splitlines,
   getWebmentionsForUrl,
   webmentionSize,
-  webmentionsByType
+  webmentionsByType,
+  isOwnWebmention
 };

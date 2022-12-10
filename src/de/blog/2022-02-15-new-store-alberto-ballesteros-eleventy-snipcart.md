@@ -8,7 +8,7 @@ image: './src/assets/images/blog/shop.jpg'
 alt: 'Screenshot vom Shop auf albertoballesteros.com.'
 cta:
   title: 'Willst du einen schnellen Shop?'
-  desktop: 'Die Besucher eines Shops sind dabei zu entscheiden, ob sie ein Produkt wollen und ob sie bereit sind, dafür Geld zu bezahlen. Ladezeiten und Bedenken über die Sicherheit des Ladens können dazu führen, dass sie diesen Plan aufgeben.'
+  desktop: 'Ladezeiten und Bedenken über die Sicherheit des shops führen dazu, dass Besucher deinen Shop verlassen ohne etwas zu kaufen.'
   lead: 'Ich mache deinen Shop schnell und sicher mit der Jamstack-Methode! Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt.'
 ---
 

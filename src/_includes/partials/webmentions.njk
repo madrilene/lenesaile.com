@@ -47,7 +47,12 @@
           loading="lazy"
         />
         {% else %}
-        <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
+        <img
+          src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}"
+          alt=""
+          width="48"
+          height="48"
+        />
         {% endif %} {% if webmention.url != "" %}
       </a>
       {% endif %} {% endfor %}
@@ -59,7 +64,7 @@
       11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{
         repostsSize
       }}
-      Retweet{% if repostsSize != 1 %}s{% endif %}
+      Repost{% if repostsSize != 1 %}s{% endif %}
     </h3>
 
     <p>
@@ -79,7 +84,12 @@
           loading="lazy"
         />
         {% else %}
-        <img src="{{ '/img/avatar.svg' | url }}" alt="" width="48" height="48" />
+        <img
+          src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}"
+          alt=""
+          width="48"
+          height="48"
+        />
         {% endif %} {% if webmention.url != "" %}
       </a>
       {% endif %} {% endfor %}
@@ -91,7 +101,7 @@
       {{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
     </h3>
 
-    {% for webmention in replies %} {% include 'webmention.njk' %} {% endfor %}
+    {% for webmention in replies %} {% include "partials/webmention.njk" %} {% endfor %}
   </div>
   {% endif %}
 

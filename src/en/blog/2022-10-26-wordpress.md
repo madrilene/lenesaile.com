@@ -15,7 +15,7 @@ cta:
 
 Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO3](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation.
 
-I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Still, some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I still like using it.
+I still think that it's a great solution for complex custom websites. It's extremely powerful and customizable, and I don't feel too limited as a developer as to create whatever I have in mind. Some look down on the CMS, saying it is unsafe and bloated. I'd like to briefly share my thoughts on the current state of WordPress, and why I'm still using it.
 
 {% include "partials/toc.njk" %}
 
@@ -38,7 +38,7 @@ Also, WordPress is easy to optimize for SEO, has eCommerce possibilities, and th
 
 The community is huge, and I have yet to encounter a problem that wasn't either already solved before or that I wasn't helped with instantly.
 
-Finally, a very important point: WordPress has been around for a long time, many of my customers have already worked with the WordPress backend and are familiar with it.
+Finally, a very important point: WordPress has been around for a long time, many have already worked with the WordPress backend and are familiar with it.
 
 ## What’s there to dislike?
 
@@ -140,7 +140,7 @@ It's a huge construct with a lot of responsibility that can't do everything diff
 
 ### What is WordPress to me?
 
-To me, WordPress is one thing above all: A free, very flexible CMS that many of my customers already know. I am less interested in the fact that a theme can be replaced at any time by another theme.
+To me, WordPress is one thing above all: A free, very flexible CMS that many of the people I work with already know. I am less interested in the fact that a theme can be replaced at any time by another theme.
 
 I develop a website especially for the needs of the customer. It should be fast, accessible and secure, and ideally last a few years if well maintained.
 
