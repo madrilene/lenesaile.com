@@ -14,11 +14,6 @@
   cursor: pointer;
 }
 
-.form-webmention .button {
-  margin-right: 0;
-  padding: 0.1rem var(--space-m-l);
-}
-
 .button::before {
   background-color: var(--button-color, var(--color-primary));
   border: 3px solid var(--button-color, var(--color-primary));

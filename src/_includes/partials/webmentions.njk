@@ -1,9 +1,8 @@
 <section
   class="wrapper flow content region | blog webmentions"
-  id="webmentions"
   style="--region-space-top: var(--space-xl)"
 >
-  <h2>Webmentions</h2>
+  <h2 id="webmentions">Webmentions</h2>
   <!-- Filter the cached mentions to only include ones matching the post's url -->
   {% set mentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
   <!-- Set reposts as mentions that are `repost-of`  -->

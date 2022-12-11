@@ -1,0 +1,20 @@
+<time class="dt-published" datetime="{{ definedDate | toIsoString }}">
+  <!-- TODO: less verbose -->
+
+  {% if locale == "de" %}
+  {{
+    definedDate | formatDateDE('dddd, D. MMMM YYYY, HH:mm')
+  }}
+
+  {% elif locale == "es" %}
+  {{
+    definedDate | formatDateES('dddd, D MMMM, YYYY, HH:mm')
+  }}
+
+  {% else %}
+  <!-- default: EN -->
+  {{
+    definedDate | formatDate('D MMMM YYYY, HH:mm')
+  }}
+  {% endif %}
+</time>

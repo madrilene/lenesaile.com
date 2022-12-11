@@ -1,6 +1,6 @@
 <article
   id="webmention-{{ webmention['wm-id'] }}"
-  class="| webmention {% if webmention|isOwnWebmention %}webmention--own{% endif %}"
+  class="webmention {% if webmention|isOwnWebmention %}webmention--own {% else %} webmention--single {% endif %}"
 >
   <div class="webmention__meta">
     {% if webmention.author %} {% if webmention.author.photo %}
@@ -28,7 +28,7 @@
     </span>
     {% endif %} {% if webmention.published %}
     <!-- date -->
-    {% set definedDate = webmention.published %} {% include "partials/date.njk" %} {%
+    {% set definedDate = webmention.published %} {% include "partials/date-time.njk" %} {%
     endif %}
   </div>
   <p class="webmention-text">
