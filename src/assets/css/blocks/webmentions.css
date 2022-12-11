@@ -38,11 +38,6 @@
 .webmentions .button {
   margin-right: 0;
   padding: 0.1rem var(--space-m-l);
-  max-width: 10rem;
-}
-
-.webmentions input[type='url'] {
-  height: 2.7rem;
 }
 
 @media screen and (min-width: 30em) {
