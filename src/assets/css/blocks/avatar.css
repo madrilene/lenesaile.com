@@ -96,8 +96,8 @@ svg.avatar-blog {
   }
 
   svg.avatar-ball {
-    width: 45%;
-    transform: translateY(7rem) translateX(var(--space-xl));
+    width: 50%;
+    transform: translateY(10rem) translateX(var(--space-xl));
   }
 }
 
@@ -110,8 +110,8 @@ svg.avatar-blog {
     transform: translateY(4.4rem) translateX(var(--space-l)) rotate(-1deg);
   }
   svg.avatar-ball {
-    width: 42%;
-    transform: translateY(7.6rem) translateX(var(--space-2xl));
+    width: 44%;
+    transform: translateY(10.6rem) translateX(var(--space-2xl));
   }
   svg.avatar-blog {
     transform: translateY(8.2rem) translateX(var(--space-xl)) rotate(-1deg);
@@ -125,8 +125,8 @@ svg.avatar-blog {
   }
 
   svg.avatar-ball {
-    width: 35%;
-    transform: translateY(8.3rem) translateX(var(--space-l));
+    width: 37%;
+    transform: translateY(11rem) translateX(var(--space-l));
   }
 
   svg.avatar-blog {
@@ -157,8 +157,8 @@ svg.avatar-blog {
   }
 
   svg.avatar-ball {
-    width: 35%;
-    transform: translateY(9rem) translateX(var(--space-m));
+    width: 37%;
+    transform: translateY(12.5rem) translateX(var(--space-m));
   }
 
   svg.avatar-blog {

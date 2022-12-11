@@ -1,13 +1,22 @@
+.projects-container {
+  transform: translateY(-9.4rem);
+}
+
 .projects {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
+  --region-space-top: var(--space-2xl);
+}
+
+.projects:last-child {
+  --region-space-bottom: 0;
 }
 
 .projects > * {
   flex-grow: 1;
-  flex-basis: calc((45rem - 100%) * 999);
+  flex-basis: calc((55rem - 100%) * 999);
 }
 
 .projects .visual {
@@ -16,7 +25,7 @@
 .projects .visual,
 .projects .visual img {
   aspect-ratio: 2 / 1.4;
-  width: clamp(45ch, 50%, 75ch);
+
   border-radius: var(--border-radius);
 }
 
@@ -24,9 +33,14 @@
   border: 3px solid var(--color-text);
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 30em) {
+  .projects-container {
+    transform: translateY(0);
+  }
+
   .projects .visual img {
     transform: rotate(-2deg);
+    /* width: clamp(45ch, 50%, 75ch); */
   }
 
   .projects .description::before {

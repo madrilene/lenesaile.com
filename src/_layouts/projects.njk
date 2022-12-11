@@ -5,7 +5,7 @@ layout: base
 <header class="section overflow-hidden" style="--spot-color: var(--color-tertiary)">
   <div
     class="section__inner region"
-    style="--region-space-bottom: var(--space-xl); --region-space-top: var(--space-3xl)"
+    style="--region-space-bottom: var(--space-3xl); --region-space-top: var(--space-3xl)"
   >
     <div class="wrapper | content relative avatar-content">
       <section class="prose | avatar-content__inner">
@@ -19,39 +19,42 @@ layout: base
   {% include 'svg/divider-tilt.svg' %}
 </header>
 
-{% set projectlist = collections["projects_" + locale] %} {% for project in projectlist %}
+<div class="projects-container">
+  {% set projectlist = collections["projects_" + locale] %} {% for project in projectlist
+  %}
 
-<div class="wrapper projects region flow" style="--region-space-top: var(--space-2xl)">
-  <div class="visual relative">
-    {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
-    "object-fit-cover", project.data.alt, "lazy", "(min-width: 764px) 50vw, (min-width:
-    1750px) 30vw, 100vw" %} {% endif %}
+  <article class="wrapper projects region flow">
+    <div class="visual relative">
+      {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
+      "object-fit-cover", project.data.alt, "lazy", "(min-width: 929px) 50vw, (min-width:
+      1750px) 30vw, 100vw" %} {% endif %}
 
-    <div class="details">
-      <ul>
-        {% for item in project.data.technologies %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
+      <div class="details">
+        <ul>
+          {% for item in project.data.technologies %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div
-    class="description wrapper prose flow"
-    style="--button-color: var(--color-tertiary)"
-  >
-    <!-- <span class="pill">{{ project.data.type }}</span> -->
-    <h2>{{ project.data.title }}</h2>
-
-    <p>{{ project.data.lead }}</p>
-    <a
-      class="button"
-      href="{{ project.data.clientURL }}"
-      >{{ project.data.clientURL | replace("https://www.", "") }}</a
+    <div
+      class="description wrapper prose flow"
+      style="--button-color: var(--color-tertiary)"
     >
-  </div>
+      <!-- <span class="pill">{{ project.data.type }}</span> -->
+      <h2>{{ project.data.title }}</h2>
+
+      <p>{{ project.data.lead }}</p>
+      <a
+        class="button"
+        href="{{ project.data.clientURL }}"
+        >{{ project.data.clientURL | replace("https://www.", "") }}</a
+      >
+    </div>
+  </article>
+  {% endfor %}
 </div>
-{% endfor %}
 
 <div
   class="region"
