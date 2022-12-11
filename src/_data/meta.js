@@ -10,7 +10,7 @@ module.exports = {
   authorWebsite: 'https://www.lenesaile.com',
   authorAvatar: '/assets/images/avatar.jpg',
   themeColor: '#E54848', //  Manifest: defines the default theme color for the application
-  themeBgColor: '#FF7F5C', // Manifest: defines a placeholder background color for the application page to display before
+  themeBgColor: '#FFFDF5', // Manifest: defines a placeholder background color for the application page to display before
   meta_data: {
     opengraph_default: '/assets/images/opengraph-default.jpg',
     twitterHandle: '@lenesaile',

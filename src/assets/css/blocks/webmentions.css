@@ -28,11 +28,18 @@
 
 .webmention {
   padding: var(--space-xs);
-  border: 1px solid var(--color-bg-code);
+  border: 2px solid var(--color-bg-code);
 }
 
-.webmention--own {
+.webmentions input[type='url'] {
   background-color: var(--color-bg-code);
+  border: 2px solid #999;
+  color: var(--color-text);
+}
+
+.webmentions input[type='url']::placeholder {
+  opacity: 0.5;
+  font-size: var(--size-step-0);
 }
 
 .webmentions .button {
