@@ -253,10 +253,8 @@ eleventyConfig.addPassthroughCopy({
 
 ## Wrap up
 
-So strukturiere ich derzeit meine Projekte (bis ich eine Methode finde, die mir noch besser gefällt).
-
-Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
+So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
 
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 
-Es gibt so viele tolle Ansätze!
+Es gibt so viele großartige Ideen!

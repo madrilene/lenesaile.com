@@ -250,13 +250,11 @@ eleventyConfig.addPassthroughCopy({
 });
 ```
 
-By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
+By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) about which variants you really need.
 
 ## Wrap up
 
-This is how I'm currenlty structuring my projects (until I find a method that I like even better).
-
-You can all see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
+This is how I'm currenlty structuring my projects. You can all see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
 
 Generally, it is always a great idea to to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 
