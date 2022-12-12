@@ -1,6 +1,6 @@
 ---
 title: 'Organizing the Eleventy config file'
-description: "I'm a big fan of structure, organization and clarity, and most of my projects get quite large. I also have personal preferences that I want to mold Eleventy into. Let's do that!"
+description: 'Eleventy lets you create a file called eleveny.js configure the SSG to your own project’s needs. This article is all about organizing your config file!'
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
