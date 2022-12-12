@@ -8,13 +8,13 @@ description: I'm a developer and designer based in Madrid who has been building 
 layout: home
 hero:
   title: I make highly optimized custom websites.
-  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have developed and designed countless websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and WordPress.
+  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have designed and developed countless personalized websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and WordPress.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
 projects:
   title: Have a look at some of the projects I built!
-  teaser: "There's a bit of everything: law firms, an ENT clinic, a public school, a cultural foundation, music groups..."
+  teaser: 'I love creating personalized web experiences that are fast, secure, accessible, environmentally friendly and privacy compliant. '
   goal: '/en/projects/'
   button: 'Projects'
 about:

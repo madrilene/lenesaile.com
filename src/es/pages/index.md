@@ -8,13 +8,13 @@ description: Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en
 layout: home
 hero:
   title: Hago páginas web a medida altamente optimizadas.
-  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado innumerables sitios web para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack y WordPress.
+  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado innumerables páginas web personalizadas para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack y WordPress.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sentada frente a su escritorio, sonriendo'
   hi: 'Hola, soy yo.'
 projects:
   title: ¡Mira algunas de las páginas web que he hecho!
-  teaser: 'Hay un poco de todo: bufetes de abogados, una clínica de otorrinolaringología, un colegio público, una fundación cultural, grupos musicales...'
+  teaser: 'Me apasiona crear experiencias web personalizadas que sean rápidas, seguras y accesibles, además de respetuosas con el medio ambiente y la privacidad. '
   goal: '/es/proyectos/'
   button: 'Proyectos'
 about:

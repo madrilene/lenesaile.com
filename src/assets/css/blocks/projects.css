@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--s1);
+  gap: var(--space-s-m);
   --region-space-top: var(--space-2xl);
 }
 

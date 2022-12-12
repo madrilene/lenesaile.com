@@ -8,13 +8,13 @@ description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisier
 layout: home
 hero:
   title: Ich entwickle hoch-optimierte Websites nach Maß.
-  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und WordPress.
+  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige personalisierte Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und WordPress.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'
 projects:
   title: Schau dir einige meiner Projekte an!
-  teaser: 'Es ist von allem etwas dabei: Anwaltskanzleien, eine HNO-Klinik, eine öffentliche Schule, eine Kulturstiftung, Musikgruppen...'
+  teaser: 'Ich erstelle liebend gerne personalisierte Weberlebnisse, die schnell, sicher, barrierefrei, umweltfreundlich und datenschutzkonform sind. '
   goal: '/de/projekte/'
   button: 'Projekte'
 about:
