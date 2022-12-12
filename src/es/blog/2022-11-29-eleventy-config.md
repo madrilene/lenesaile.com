@@ -8,7 +8,11 @@ date: 2022-11-29
 
 [Eleventy](https://www.11ty.dev/) viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
 
-Esto está bien para proyectos muy pequeños. Un archivo de configuración adicional no es necesario para trabajar con Eleventy. Sin embargo, soy un gran fan de la estructura, la organización y la claridad, y la mayoría de mis proyectos son bastante grandes. También tengo preferencias personales a las que quiero amoldar Eleventy. ¡Hagámoslo!
+Esto está bien para proyectos muy pequeños. Un archivo de configuración adicional no es necesario para trabajar con Eleventy. Sin embargo, soy un gran fan de la estructura, la organización y la claridad, y la mayoría de mis proyectos son bastante grandes. También tengo preferencias personales, y Eleventy es bastante abierto al respecto: puedes organizarlo y llamarlo como quieras.
+
+Empecemos!
+
+{% include "partials/toc.njk" %}
 
 ## Crear un archivo de configuración eleventy.js
 
@@ -62,20 +66,20 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 {% aside %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endaside %}
 
-Quiero que mis proyectos crezcan libremente sin preocuparme de que mi archivo de configuración se vuelva demasiado abarrotado. Así que me ocupo de las personalizaciones en otro lugar e importo sólo el valor de retorno de mis funciones.
+## Externalización de las personalización de los métodos de ayuda de Eleventy
 
-## Externalización de las configuraciones
+Quiero que mis proyectos crezcan libremente sin preocuparme de que mi archivo de configuración se vuelva demasiado abarrotado. Así que me ocupo de las personalizaciones en otro lugar e importo sólo el valor de retorno de mis funciones.
 
 Mi preferencia es crear una nueva carpeta en el directorio raíz, llamada `config`.
 
-Otra gran idea es añadir una carpeta a `src` con el nombre de `_11ty`. Encontré esto en el _starter_ de [Nicolas Hoizeys](https://nicolas-hoizey.com/) [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). Puedes nombrar la carpeta como quieras y ponerla donde quieras.
+Otro método habitual es añadir una carpeta a `src` con el nombre de `_11ty`. Encontré esto en el _starter_ de [Nicolas Hoizeys](https://nicolas-hoizey.com/) [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). Puedes nombrar la carpeta como quieras y ponerla donde quieras.
 En este caso, seguiré fingiendo que has creado una carpeta llamada `config` en tu directorio raíz.
 
 No necesitamos avisar a Eleventy sobre la existencia de esta carpeta. Simplemente la usamos para exportar nuestros valores de retorno e importarlos a `.eleventy.js`.
 
 Introduzco dos buenas maneras de manejar esto, usando [collections](https://www.11ty.dev/docs/collections/) como ejemplo.
 
-## Método 1: Importar el archivo y hacer un bucle sobre los nombres de las _collections_
+### Método 1: Importar el archivo y hacer un bucle sobre los nombres de las _collections_
 
 Crea un archivo llamado `collections.js` en tu carpeta `config`.
 Ahora define todas las _collections_ que quieras usar:
@@ -117,12 +121,16 @@ module.exports = eleventyConfig => {
 ```
 
 Hacemos un "loop" sobre todas las _collections_ definidas en `collections.js` y las importamos a nuestro archivo de configuración. Ahora harías exactamente lo mismo para tus _collections_, _shortcodes_, _filters_, etc.
+
 Si quieres ver este método en acción, visita el [repositorio público](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) del [sitio personal de Ryan Mulligan](https://ryanmulligan.dev/).
 
 **¡Muy ordenado!**
 
-Sin embargo, hay algo que no me gusta de este método.
-Hemos introducido la estructura, pero también quiero una buena visión de conjunto. Quiero poder ver directamente en mi archivo de configuración qué _collections_ estoy usando, qué _filters_, qué _transforms_ y demás. ¡Así que aquí viene el método dos!
+Este método tiene la ventaja de producir un archivo de configuración realmente compacto. Sin embargo, hay algo que no me gusta.
+
+Hemos traído estructura en ella, pero también quiero ver lo que se está utilizando en mi proyecto, allí mismo, en mi archivo de configuración.
+
+Quiero ver qué _collections_ estoy definiendo, qué _filters_, etc. ¡Así que aquí viene el método dos!
 
 ## Método 2: named exports
 
@@ -175,11 +183,78 @@ Todo está ordenado y puedo ver de un vistazo lo que estoy importando para este 
 Si hay demasiados _filtros_, _colecciones_ o _códigos cortos_, los divido más en sus propias carpetas, por ejemplo sólo los filtros para manejar la fecha en un lugar común. Los bloques más grandes, como los shortcodes de _eleventy image , tienen su propia carpeta.
 Los \_values_ exportados se importan primero en el archivo padre `index.js` y luego se vuelven a exportar juntos para el archivo `eleventy.js`. 🤪
 
+A continuación: Passthrough File Copy.
+
+## Estructurando Passthrough File Copies
+
+A veces sólo queremos copiar archivos a nuestra carpeta de salida, sin someterlos a más procesos de transformación. Exactamente como están. Así es como entran en juego los "Passthrough File Copies".
+
+### Mantener intacta la estructura de directorios
+
+Supongamos que has almacenado tus fuentes locales en `src/assets/fonts`.
+
+Si deseas mantener la misma estructura de anidamiento, añade lo siguiente a `eleventy,js` (he eliminado el código del ejemplo de los métodos de ayuda para mayor claridad):
+
+```js
+// Importing from config
+...
+module.exports = eleventyConfig => {
+  // Eleventy helper methods
+  ...
+
+  // Passthrough Copy
+  eleventyConfig.addPassthroughCopy('src/assets/fonts/');
+
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist',
+      includes: '_includes',
+      layouts: '_layouts'
+    }
+  };
+};
+```
+
+Ahora tus fuentes se copiarán con la misma estructura de directorios, en `dist/assets/fonts/`.
+
+Normalmente tengo más carpetas en `assets` que deberían ser copiadas. ¡Hay una manera concisa para esto también!
+
+```js
+['src/assets/fonts/', 'src/assets/images/', 'src/assets/pdf/'].forEach(path =>
+  eleventyConfig.addPassthroughCopy(path)
+);
+```
+
+Colocamos todos los directorios en un _array_ y aplicamos el método `forEach()` para ejecutar el passthrough una vez por cada elemento del _array_.
+
+### Copiar los archivos a otro directorio
+
+A veces quieres copiar tus archivos a _otro_ directorio. Para mí, esto tiene sentido especialmente para mis variantes de favicon. _Puedes_ decirle al navegador que los busque dentro de una carpeta, pero mi experiencia ha sido que es mejor ponerlos en el directorio raíz de la página web. Sin embargo, no quiero verlos en mi carpeta de entrada (¡demasiado ruido!), así que suelo ponerlos todos en `src/assets/images/favicon/`.
+
+Para copiar un solo archivo al directorio raíz de `dist`, escribe:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  'src/assets/images/favicon/apple-touch-icon.png': 'apple-touch-icon.png'
+});
+```
+
+Podrías hacer esto para cada archivo favicon, pero sería una repetición innecesaria. En su lugar, puedes seleccionar todos los archivos del directorio favicon con el \* (asterisco) wildcard:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  'src/assets/images/favicon/*': '/'
+});
+```
+
+Por cierto, respecto a los favicons, recomiendo leer [este artículo de Andrey Sitnik](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
+
+## Wrap up
+
 Así es como actualmente estoy estructurando mis proyectos (hasta que encuentre un método que me guste aún más).
 
 Puedes ver esto aplicado en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
-
-Me gustaría entrar en mucho más detalle y desglosar otras carpetas importantes como `assets` y `_includes`. Pero eso iría más allá del alcance de lo que quería enfocar aquí. ¿Quizás haré una continuación?
 
 En general, siempre es una gran idea bucear en los repositorios de los _[starters](https://www.11ty.dev/docs/starter/)_ o en los sitios personales de otras desarrolladoras.
 

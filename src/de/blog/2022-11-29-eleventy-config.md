@@ -8,7 +8,11 @@ date: 2022-11-29
 
 [Eleventy](https://www.11ty.dev/) wird mit einigen Voreinstellungen installiert. Zum Beispiel ist der Ausgabeordner standardmäßig `_site`, und Eleventy sucht nach deinen Quelldateien im Stammverzeichnis.
 
-Das ist für sehr kleine Projekte in Ordnung. Eine zusätzliche config-Datei ist nicht notwendig, um mit Eleventy zu arbeiten. Allerdings bin ich ein großer Fan von Struktur, Organisation und Übersichtlichkeit, und die meisten meiner Projekte werden recht groß. Ich habe auch persönliche Vorlieben, an die ich Eleventy anpassen möchte. Lass uns das tun!
+Das ist für sehr kleine Projekte in Ordnung. Eine zusätzliche config-Datei ist nicht notwendig, um mit Eleventy zu arbeiten. Allerdings bin ich ein großer Fan von Struktur, Organisation und Übersichtlichkeit, und die meisten meiner Projekte werden recht groß. Ich habe auch persönliche Vorlieben, und Eleventy ist da ziemlich offen - du kannst alles so anlegen und nennen wie du möchtest.
+
+Lass uns anfangen!
+
+{% include "partials/toc.njk" %}
 
 ## eleventy.js Konfigurationsdatei erstellen
 
@@ -37,6 +41,7 @@ Das Root-Verzeichnis bleibt all den Dateien vorbehalten, die unbedingt dort lieg
 ## Strukturierung des Eingabeordners
 
 Erstelle einen Ordner namens `src` im Stammverzeichnis.
+
 Obwohl wir die meisten Ordner nicht weiter besprechen, sieht ein Website-Projekt oftmals so aus:
 
 {% raw %}
@@ -62,9 +67,9 @@ Obwohl wir die meisten Ordner nicht weiter besprechen, sieht ein Website-Projekt
 
 {% aside %}Du solltest dir unbedingt die [Eleventy-Dokumentation](https://www.11ty.dev/docs/config/) durchlesen, um dich mit allen Konfigurationsmöglichkeiten vertraut zu machen.{% endaside %}
 
-Ich möchte, dass meine Projekte frei wachsen können, ohne dass ich mir Sorgen machen muss, dass meine Konfigurationsdatei zu unübersichtlich wird. Deshalb kümmere ich mich an anderer Stelle um Anpassungen und importiere nur den `return`-Wert meiner Funktionen.
+## Auslagerung der helper methods von Eleventy
 
-## Konfigurationen auslagern
+Ich möchte, dass meine Projekte frei wachsen können, ohne dass ich mir Sorgen machen muss, dass meine Konfigurationsdatei zu unübersichtlich wird. Deshalb kümmere ich mich an anderer Stelle um Anpassungen und importiere nur den `return`-Wert meiner Funktionen.
 
 Üblicherweise lege ich einen neuen Ordner im Stammverzeichnis mit dem Namen `config` an.
 
@@ -75,7 +80,7 @@ Wir brauchen Eleventy nicht über die Existenz dieses Ordners zu informieren. Wi
 
 Ich stelle zwei Möglichkeiten vor, dies zu handhaben, am Beispiel von [collections](https://www.11ty.dev/docs/collections/).
 
-## Methode 1: Datei importieren und über die _collections_ "loopen"
+### Methode 1: Datei importieren und über die _collections_ "loopen"
 
 Erstelle eine Datei namens `collections.js` in deinem `config` Ordner.
 Definiere nun alle _collections_, die du verwenden möchtest:
@@ -122,8 +127,11 @@ Wenn du diese Methode in Aktion sehen willst, besuche das [öffentliche Repo](ht
 
 **Sehr aufgeräumt!**
 
-Es gibt allerdings etwas, das mir an dieser Methode nicht gefällt.
+Dieser Ansatz erzeugt eine sehr kompakte Konfigurationsdatei. Es gibt allerdings etwas, das mir an dieser Methode nicht gefällt.
+
 Wir haben zwar Struktur reingebracht, aber ich möchte auch einen guten Überblick haben. Ich möchte direkt in meiner Konfigurationsdatei sehen können, welche _collections_ ich verwende, welche _filter_, welche _transforms_ und so weiter. Hier kommt also Methode zwei!
+
+Wir haben zwar Struktur reingebracht, aber ich möchte sehen, was in mein Projekt importiert wird, und zwar genau dort, in meiner Konfigurationsdatei. Ich möchte wissen, welche _collections_ ich verwende, welche _filter_, welche _transforms_ und so weiter. Hier kommt also Methode zwei!
 
 ## Methode 2: named exports
 
@@ -176,11 +184,78 @@ Alles ist übersichtlich und ich kann auf einen Blick sehen, was ich für dieses
 Wenn es zu viele _filter_, _collections_ oder _shortcodes_ werden, unterteile ich sie weiter in eigene Ordner, zum Beispiel nur die Filter für die Ausgabe des Datums an einem gemeinsamen Ort. Größere Blöcke wie die für die _eleventy image shortcodes_ bekommen einen eigenen Ordner.
 Die exportierten _values_ werden dann erst in die übergeordnete `index.js` importiert und dann für die Datei`eleventy.js` wieder zusammen exportiert. 🤪
 
-Du kannst das in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
+Als Nächstes: Passthrough File Copy.
+
+## Strukturierung der Passthrough File Copies
+
+Manchmal möchten wir Dateien einfach in unseren Ausgabeordner kopieren, ohne sie weiteren Transformationsprozessen zu unterziehen. Und zwar genau so, wie sie sind. Hier kommen _Passthrough File Copies_ ins Spiel.
+
+### Die Verzeichnisstruktur intakt halten
+
+Nehmen wir an, du hast deine lokalen Schriftarten in `src/assets/fonts` gespeichert.
+
+Wenn du diese Struktur beibehalten willst, fügst du folgendes zu `eleventy.js` hinzu (ich habe den Code aus dem Beispiel der Hilfsmethoden zur besseren Übersichtlichkeit entfernt):
+
+```js
+// Importing from config
+...
+module.exports = eleventyConfig => {
+  // Eleventy helper methods
+  ...
+
+  // Passthrough Copy
+  eleventyConfig.addPassthroughCopy('src/assets/fonts/');
+
+  return {
+    dir: {
+      input: 'src',
+      output: 'dist',
+      includes: '_includes',
+      layouts: '_layouts'
+    }
+  };
+};
+```
+
+Nun werden deine Schriftarten mit der gleichen Verzeichnisstruktur kopiert, in `dist/assets/fonts/`.
+
+Normalerweise habe ich mehr Ordner in `assets`, die kopiert werden sollten. Auch dafür gibt es eine kompakte Lösung!
+
+```js
+['src/assets/fonts/', 'src/assets/images/', 'src/assets/pdf/'].forEach(path =>
+  eleventyConfig.addPassthroughCopy(path)
+);
+```
+
+Wir packen alle Verzeichnisse in ein Array und wenden die Methode "forEach()" an, um den passthrough-Befehl für jedes Arrayelement einmal auszuführen.
+
+### Dateien in ein anderes Verzeichnis kopieren
+
+Manchmal möchtest du deine Dateien in ein _anderes_ Verzeichnis kopieren. Für mich macht das vor allem bei meinen Favicon-Varianten Sinn. Man _kann_ dem Browser sagen, dass er sie in einem Ordner suchen soll, aber meine Erfahrung ist, dass sie am besten in das Stammverzeichnis der Webseite gelegt werden. Ich möchte sie jedoch nicht in meinem Eingabeordner sehen (zu viel Lärm!), also lege ich sie normalerweise alle in `src/assets/images/favicon/` ab.
+
+Um eine einzelne Datei in das Stammverzeichnis von `dist` zu kopieren, verwende ich diesen Befehl:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  'src/assets/images/favicon/apple-touch-icon.png': 'apple-touch-icon.png'
+});
+```
+
+Jetzt könntest du das für jede Favicon-Datei tun, aber das wäre eine Menge unnötiger Wiederholungen. Stattdessen kannst du alle Dateien im Favicon-Verzeichnis mit dem Platzhalter \* (asterisk) selektieren:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  'src/assets/images/favicon/*': '/'
+});
+```
+
+Übrigens, was Favicons angeht, empfehle ich [Andrey Sitniks Artikel](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
+
+## Wrap up
 
 So strukturiere ich derzeit meine Projekte (bis ich eine Methode finde, die mir noch besser gefällt).
 
-Es gibt noch viel mehr zu optimieren, wie z.B. über den Favicon-Ordner zu loopen (sagt man das so?) und die Dateien gemeinsam in das Stammverzeichnis des Ausgabeordners zu legen. Ich würde auch gerne andere wichtige Ordner aufschlüsseln, wie `assets` und `_includes`. Vielleicht schreibe ich eine Fortsetzung?
+Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
 
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 
