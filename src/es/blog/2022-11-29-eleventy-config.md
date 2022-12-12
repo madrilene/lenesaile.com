@@ -183,7 +183,7 @@ Todo está ordenado y puedo ver de un vistazo lo que estoy importando para este 
 Si hay demasiados _filtros_, _colecciones_ o _códigos cortos_, los divido más en sus propias carpetas, por ejemplo sólo los filtros para manejar la fecha en un lugar común. Los bloques más grandes, como los shortcodes de _eleventy image , tienen su propia carpeta.
 Los \_values_ exportados se importan primero en el archivo padre `index.js` y luego se vuelven a exportar juntos para el archivo `eleventy.js`. 🤪
 
-A continuación: Passthrough File Copy.
+A continuación: [Passthrough File Copy](https://www.11ty.dev/docs/copy/).
 
 ## Estructurando Passthrough File Copies
 

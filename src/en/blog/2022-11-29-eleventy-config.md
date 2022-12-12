@@ -7,9 +7,9 @@ date: 2022-11-29
 redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 ---
 
-[Eleventy](https://www.11ty.dev/) comes with basic defaults set up for you. For example, the output folder defaults to `_site`, and Eleventy looks for your source files in the root directory.
+[Eleventy](https://www.11ty.dev/) comes with basic defaults already set up for you. That means you don't have to do anything to start working: the output folder defaults to `_site`, and Eleventy looks for your source files in the root directory.
 
-This is okay for very small projects. An additional config file is not necessary to work with Eleventy. However, I'm a big fan of structure, organization and clarity, and most of my projects get quite large. I also have personal preferences, and Eleventy is quite open about that - you can arrange and call it whatever you like.
+This is okay for very small projects. However, most of my projects get quite large, and they need customizations and dependencies. I also have personal preferences, and Eleventy is quite open about that - you can arrange and call it whatever you like. To fulfill all your wishes, Eleventy lets you create a file called `eleveny.js`. This article is all about organizing your Eleventy config file.
 
 Let's begin!
 
@@ -34,8 +34,8 @@ module.exports = function (eleventyConfig) {
 };
 ```
 
-Our output folder is now `dist`, and all our source files go into the folder `src`.
-Also, due to my personal preference, I pull the `layouts` folder out of the `_includes` folder, where it usually lives and make sure they lay side by side.
+Our output folder is now `dist`, and all our source files go into `src`.
+Also, due to my personal preference, I pull the `layouts` out of `_includes`, where they usually live, and make sure that the directories are now next to each other.
 
 This leaves our root to all the files that absolutely have to be there - like `package.json` and `README.md` as well as config files of other modules you use in your project.
 
@@ -185,7 +185,7 @@ Everything is neat and I can see at a glance what I am importing for this projec
 If there are too many filters, collections or shortcodes, I subdivide them further into their own folders, for example only the filters for handling the date in a common place. Larger blocks like the ones for the eleventy image shortcodes get their very own folder.
 The exported values are then imported into the parent `index.js`, and then exported all together again for the `eleventy.js` file. 🤪
 
-Next up: Passthrough File Copy.
+Next up: [Passthrough File Copy](https://www.11ty.dev/docs/copy/).
 
 ## Structuring your Passthrough File Copies
 
@@ -195,7 +195,7 @@ Sometimes we just want to copy files over to our output folder, without subjecti
 
 Let's say you have stored your local fonts in `src/assets/fonts`.
 
-If you want to keep the same nesting structure, you add the following to your config-file (I have removed the code from the helper methods example for better clarity):
+If you want to keep the same nesting structure, you add the following to `eleventy.js` (I have removed the code from the helper methods example for better clarity):
 
 ```js
 // Importing from config
@@ -220,7 +220,8 @@ module.exports = eleventyConfig => {
 
 Now your fonts will be copied over with the same directory structure, in `dist/assets/fonts/`.
 
-I usually have more folders in `assets` that should be copied over. There is a concise way for this too!
+I usually have more than one folder in `assets` that I want to deal with in the same way.
+There is a concise way for this too!
 
 ```js
 ['src/assets/fonts/', 'src/assets/images/', 'src/assets/pdf/'].forEach(path =>
@@ -232,7 +233,7 @@ We put all directories into an array and apply the `forEach()` method to execute
 
 ### Copy the files to another directory
 
-Sometimes you want to copy your files to _another_ directory. For me, this makes especially sense for my favicon variants. You _can_ tell the browser to look for them inside a folder, but my experience has been that they're best put in the root directory of the web page. However, I don't want to see them in my input folder (too much noise!), so I usually put them all in `src/assets/images/favicon/`.
+Maybe you want to copy your files to _another_ directory. For me, this makes especially sense for my favicon variants. You _can_ tell the browser to look for them inside a folder, but my experience has been that they're best put in the root directory of the web page. However, I don't want to see them in my project root (too much noise!), so I usually put them all in `src/assets/images/favicon/`.
 
 To copy a single file over to the `dist` root directory, use this command:
 
@@ -254,8 +255,8 @@ By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](ht
 
 ## Wrap up
 
-This is how I'm currenlty structuring my projects. You can all see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
+This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
 
-Generally, it is always a great idea to to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
+Generally, it is always a great idea to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 
 There are so many great ideas out there!

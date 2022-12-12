@@ -6,9 +6,9 @@ key: 'eleventyconfig'
 date: 2022-11-29
 ---
 
-[Eleventy](https://www.11ty.dev/) wird mit einigen Voreinstellungen installiert. Zum Beispiel ist der Ausgabeordner standardmäßig `_site`, und Eleventy sucht nach deinen Quelldateien im Stammverzeichnis.
+[Eleventy](https://www.11ty.dev/) kommt mit grundlegenden Voreinstellungen. Das bedeutet, dass du nichts tun musst, um mit der Arbeit zu beginnen: der Ausgabeordner ist standardmäßig `_site`, und Eleventy sucht deine Quelldateien im Stammverzeichnis.
 
-Das ist für sehr kleine Projekte in Ordnung. Eine zusätzliche config-Datei ist nicht notwendig, um mit Eleventy zu arbeiten. Allerdings bin ich ein großer Fan von Struktur, Organisation und Übersichtlichkeit, und die meisten meiner Projekte werden recht groß. Ich habe auch persönliche Vorlieben, und Eleventy ist da ziemlich offen - du kannst alles so anlegen und nennen wie du möchtest.
+Das ist für sehr kleine Projekte auch vollkommen in Ordnung. Die meisten meiner Projekte werden jedoch ziemlich groß, und ich muss Dinge Anpassen und _dependencies_ importieren. Ich habe auch persönliche Vorlieben, und Eleventy ist da ziemlich offen - du kannst alles so anlegen und nennen wie du möchtest. Um alle deine Wünsche zu erfüllen, gibt dir Eleventy die Möglichkeit eine Datei namens `eleveny.js` zu erstellen. In diesem Artikel geht es um die Organisation dieser Eleventy-Konfigurationsdatei.
 
 Lass uns anfangen!
 
@@ -34,7 +34,7 @@ module.exports = function (eleventyConfig) {
 ```
 
 Unser Ausgabeordner ist jetzt `dist`, und alle unsere Quelldateien kommen in den Ordner `src`.
-Außerdem ziehe ich aufgrund meiner persönlichen Vorliebe den `layouts`-Ordner aus dem `_includes`-Ordner heraus, wo er normalerweise liegt, und stelle sicher, dass sie nebeneinander liegen.
+Außerdem ziehe ich aufgrund meiner persönlichen Vorliebe den `layouts`-Ordner aus dem `_includes`-Ordner heraus, wo er normalerweise liegt, und stelle sicher, dass die Verzeichnisse nebeneinander liegen.
 
 Das Root-Verzeichnis bleibt all den Dateien vorbehalten, die unbedingt dort liegen müssen - wie `package.json` und `README.md`, oder die Konfigurationsdateien anderer Module, die du in deinem Projekt verwendest.
 
@@ -184,7 +184,7 @@ Alles ist übersichtlich und ich kann auf einen Blick sehen, was ich für dieses
 Wenn es zu viele _filter_, _collections_ oder _shortcodes_ werden, unterteile ich sie weiter in eigene Ordner, zum Beispiel nur die Filter für die Ausgabe des Datums an einem gemeinsamen Ort. Größere Blöcke wie die für die _eleventy image shortcodes_ bekommen einen eigenen Ordner.
 Die exportierten _values_ werden dann erst in die übergeordnete `index.js` importiert und dann für die Datei`eleventy.js` wieder zusammen exportiert. 🤪
 
-Als Nächstes: Passthrough File Copy.
+Als Nächstes: [Passthrough File Copy](https://www.11ty.dev/docs/copy/).
 
 ## Strukturierung der Passthrough File Copies
 
@@ -219,7 +219,8 @@ module.exports = eleventyConfig => {
 
 Nun werden deine Schriftarten mit der gleichen Verzeichnisstruktur kopiert, in `dist/assets/fonts/`.
 
-Normalerweise habe ich mehr Ordner in `assets`, die kopiert werden sollten. Auch dafür gibt es eine kompakte Lösung!
+Normalerweise habe ich mehr als nur einen Ordner in `assets`, mit denen ich gleichermaßen verfahren möchte.
+Auch dafür gibt es eine kompakte Lösung!
 
 ```js
 ['src/assets/fonts/', 'src/assets/images/', 'src/assets/pdf/'].forEach(path =>
@@ -231,7 +232,7 @@ Wir packen alle Verzeichnisse in ein Array und wenden die Methode "forEach()" an
 
 ### Dateien in ein anderes Verzeichnis kopieren
 
-Manchmal möchtest du deine Dateien in ein _anderes_ Verzeichnis kopieren. Für mich macht das vor allem bei meinen Favicon-Varianten Sinn. Man _kann_ dem Browser sagen, dass er sie in einem Ordner suchen soll, aber meine Erfahrung ist, dass sie am besten in das Stammverzeichnis der Webseite gelegt werden. Ich möchte sie jedoch nicht in meinem Eingabeordner sehen (zu viel Lärm!), also lege ich sie normalerweise alle in `src/assets/images/favicon/` ab.
+Manchmal möchtest du deine Dateien in ein _anderes_ Verzeichnis kopieren. Für mich macht das vor allem bei meinen Favicon-Varianten Sinn. Man _kann_ dem Browser sagen, dass er sie in einem Ordner suchen soll, aber meine Erfahrung ist, dass sie am besten in das Stammverzeichnis der Webseite gelegt werden. Ich möchte sie jedoch nicht im root meinees Projekts sehen (zu viel Lärm!), also lege ich sie normalerweise alle in `src/assets/images/favicon/` ab.
 
 Um eine einzelne Datei in das Stammverzeichnis von `dist` zu kopieren, verwende ich diesen Befehl:
 
