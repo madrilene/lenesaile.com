@@ -10,9 +10,9 @@ redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 
 [Eleventy](https://www.11ty.dev/) comes with basic defaults already set up for you. That means you don't have to do anything to start working: the output folder defaults to `_site`, and Eleventy looks for your source files in the root directory.
 
-This is okay for very small projects. However, most of my projects get quite large, and they need customizations and dependencies. I also have personal preferences, and Eleventy is quite open about that - you can arrange your input files and folders however you wish and call them whatever you like.
+This is okay for very small projects. However, most of my projects get quite large, and they need customizations and dependencies. I also have personal preferences, and Eleventy is quite open about that - you can arrange your input files and folders as you wish and call them whatever you like. Of course, Eleventy must be made aware of these settings.
 
-However, Eleventy must be made aware of these things. This article is all about organizing your Eleventy configuration file.
+This article is all about organizing your Eleventy configuration file.
 
 Let's begin!
 
