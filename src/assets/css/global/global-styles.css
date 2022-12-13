@@ -48,8 +48,7 @@ blockquote:not([class]) {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   max-width: 20ch;
 }
 
