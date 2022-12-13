@@ -252,15 +252,10 @@ Manchmal möchten wir Dateien einfach in unseren Ausgabeordner kopieren, ohne si
 
 Nehmen wir an, du hast deine lokalen Schriftarten in `src/assets/fonts` gespeichert.
 
-Wenn du diese Struktur beibehalten willst, fügst du folgendes zu `eleventy.js` hinzu (ich habe den Code aus dem Beispiel der Hilfsmethoden zur besseren Übersichtlichkeit entfernt):
+Wenn du diese Struktur beibehalten willst, fügst du folgendes zu `eleventy.js` hinzu:
 
 ```js
-// Importing from config
-...
 module.exports = eleventyConfig => {
-  // Eleventy helper methods
-  ...
-
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy('src/assets/fonts/');
 

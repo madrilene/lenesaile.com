@@ -255,15 +255,10 @@ Sometimes we just want to copy files over to our output folder, without subjecti
 
 Let's say you have stored your local fonts in `src/assets/fonts`.
 
-If you want to keep the same nesting structure, you add the following to `eleventy.js` (I have removed the code from the helper methods example for better clarity):
+If you want to keep the same nesting structure, you add the following to `eleventy.js`:
 
 ```js
-// Importing from config
-...
 module.exports = eleventyConfig => {
-  // Eleventy helper methods
-  ...
-
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy('src/assets/fonts/');
 

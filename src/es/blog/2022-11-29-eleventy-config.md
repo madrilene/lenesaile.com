@@ -256,12 +256,7 @@ Supongamos que has almacenado tus fuentes locales en `src/assets/fonts`.
 Si deseas mantener la misma estructura de anidamiento, añade lo siguiente a `eleventy,js` (he eliminado el código del ejemplo de los métodos de ayuda para mayor claridad):
 
 ```js
-// Importing from config
-...
 module.exports = eleventyConfig => {
-  // Eleventy helper methods
-  ...
-
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy('src/assets/fonts/');
 
