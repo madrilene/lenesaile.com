@@ -35,6 +35,7 @@
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@toycode/markdown-it-class": "^1.2.4",
+    "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",
     "concurrently": "^7.4.0",
     "cross-env": "^7.0.3",
@@ -63,6 +64,7 @@
     "outdent": "^0.8.0",
     "postcss": "^8.4.8",
     "postcss-cli": "^10.0.0",
+    "postcss-csso": "^6.0.1",
     "postcss-custom-media": "^9.0.1",
     "postcss-import": "^15.0.0",
     "postcss-import-ext-glob": "^2.0.1",
