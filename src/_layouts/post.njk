@@ -12,10 +12,24 @@ preloads:
   class="region blog | h-entry"
   style="--region-space-top: var(--space-4xl)"
 >
-  <div class="wrapper flow content | e-content">
+  <div class="wrapper flow content">
     <h1 class="gradient-text | p-name">{{ title }}</h1>
-    <!-- date -->
-    {% set definedDate = date %} {% include "partials/date.njk" %}
+
+    <div class="cluster">
+      <!-- date -->
+      {% set definedDate = date %}<span class="published">
+        {{ meta[locale].blog.published | capitalize }} {% include "partials/date.njk"
+        %}</span
+      >
+
+      <!-- last edit -->
+      {% if lastEdit %} {% set definedDate = lastEdit %}
+      <span class="published">
+        {{ meta[locale].blog.edited | capitalize }} {% include "partials/date.njk"
+        %}</span
+      >
+      {% endif %}
+    </div>
 
     <!-- image -->
     {% if image %}
@@ -26,7 +40,9 @@ preloads:
     </div>
     {% endif %}
 
-    {{ content | safe }}
+    <div class="flow e-content">
+      {{ content | safe }}
+    </div>
   </div>
 
   <div hidden>

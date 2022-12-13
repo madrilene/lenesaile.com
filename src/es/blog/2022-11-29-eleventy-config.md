@@ -4,6 +4,7 @@ description: 'Eleventy te permite crear un archivo llamado eleveny.js para confi
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
+lastEdit: 2022-12-13
 ---
 
 [Eleventy](https://www.11ty.dev/) viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
@@ -66,7 +67,7 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 {% aside %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endaside %}
 
-## Externalización de las personalización de los métodos de ayuda de Eleventy
+## Externalización de las personalizaciónes
 
 Quiero que mis proyectos crezcan libremente sin preocuparme de que mi archivo de configuración se vuelva demasiado abarrotado. Así que me ocupo de las personalizaciones en otro lugar e importo sólo el valor de retorno de mis funciones.
 

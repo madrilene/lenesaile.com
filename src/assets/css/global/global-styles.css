@@ -202,7 +202,8 @@ mark {
 }
 
 figcaption,
-time {
+time,
+.published {
   font-size: var(--size-step-0);
   opacity: 0.8;
 }

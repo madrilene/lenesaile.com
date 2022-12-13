@@ -4,6 +4,7 @@ description: 'Eleventy lets you create a file called eleveny.js configure the SS
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
+lastEdit: 2022-12-13
 redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 ---
 
@@ -70,7 +71,7 @@ Though we are not going to touch most of the folders, this is what your usual we
 
 {% aside %}If you haven't already, you should head over to the [Eleventy documentation](https://www.11ty.dev/docs/config/) to get aquainted with all the configuration options available.{% endaside %}
 
-## Outsourcing customizations with Eleventy’s helper methods
+## Outsourcing customizations
 
 I want my projects to grow freely without worrying that my config file is getting too cluttered. So I deal with customizations elsewhere and import only the return value of my functions.
 
