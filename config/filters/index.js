@@ -7,7 +7,7 @@ const markdownLib = require('../plugins/markdown');
 const site = require('../../src/_data/meta');
 const {throwIfNotType} = require('../utils');
 const md = require('markdown-it')();
-const sanitizeHTML = require('sanitize-html');
+const {minify} = require('terser');
 
 /** Returns the first `limit` elements of the the given array. */
 const limit = (array, limit) => {
@@ -89,6 +89,17 @@ const minifyCss = code => new CleanCSS({}).minify(code).styles;
  * @return {string|undefined}
  */
 
+const minifyJs = async (code, callback) => {
+  try {
+    const minified = await minify(code);
+    callback(null, minified.code);
+  } catch (err) {
+    console.error('Terser error: ', err);
+    // Fail gracefully.
+    callback(null, code);
+  }
+};
+
 const mdInline = (content, opts) => {
   if (!content) {
     return;
@@ -168,6 +179,7 @@ module.exports = {
   stripHtml,
   toAbsoluteUrl,
   minifyCss,
+  minifyJs,
   mdInline,
   splitlines,
   getWebmentionsForUrl,

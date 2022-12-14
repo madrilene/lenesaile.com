@@ -26,10 +26,9 @@
     {% set js %} {% include "theme-toggle-inline.js" %} {% endset %}
     <script>
           <!-- prettier-ignore -->
-      {{ js | safe }}
+      {{ js | jsmin | safe }}
     </script>
 
-    <script src="/assets/theme-toggle.js"></script>
     <!-- include inline base schema application/ld+jso -->
     {% include "schemas/base-schema.njk" %}
 

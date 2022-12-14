@@ -25,6 +25,7 @@ const {
   toAbsoluteUrl,
   stripHtml,
   minifyCss,
+  minifyJs,
   mdInline,
   splitlines,
   getWebmentionsForUrl,
@@ -107,6 +108,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('toJson', JSON.stringify);
   eleventyConfig.addFilter('fromJson', JSON.parse);
   eleventyConfig.addFilter('cssmin', minifyCss);
+  eleventyConfig.addNunjucksAsyncFilter('jsmin', minifyJs);
   eleventyConfig.addFilter('md', mdInline);
   eleventyConfig.addFilter('splitlines', splitlines);
   eleventyConfig.addFilter('getWebmentionsForUrl', getWebmentionsForUrl);
