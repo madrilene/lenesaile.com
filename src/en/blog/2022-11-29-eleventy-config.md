@@ -290,7 +290,7 @@ We put all directories into an array and apply the `forEach()` method to execute
 
 Maybe you want to copy your files to _another_ directory. For me, this makes especially sense for my favicon variants. You _can_ tell the browser to look for them inside a folder, but my experience has been that they're best put in the root directory of the web page. However, I don't want to see them in my project root (too much noise!), so I usually put them all in `src/assets/images/favicon/`.
 
-To copy a single file over to the `dist` root directory, use this command:
+To copy a single file over to the `dist` root directory, use this snippet:
 
 ```js
 eleventyConfig.addPassthroughCopy({
