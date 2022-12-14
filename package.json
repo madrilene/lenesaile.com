@@ -9,11 +9,11 @@
   "scripts": {
     "clean": "rimraf dist",
     "dev:postcss": "postcss src/assets/css/global.css --o src/_includes/global-inline.css --watch --verbose",
-    "dev:scripts": "esbuild src/assets/scripts/app.js src/assets/scripts/theme-toggle.js --bundle --watch --outdir=dist/assets",
+    "dev:scripts": "esbuild src/assets/scripts/theme-toggle.js --watch --outfile=src/_includes/theme-toggle-inline.js",
     "dev:11ty": "eleventy --serve --watch",
     "build:postcss": "NODE_ENV=production postcss src/assets/css/global.css -o src/_includes/global-inline.css",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
-    "build:scripts": "esbuild src/assets/scripts/app.js src/assets/scripts/theme-toggle.js --bundle --minify --outdir=dist/assets --platform=node --tree-shaking=true",
+    "build:scripts": "src/assets/scripts/theme-toggle.js --bundle --minify --outfile=src/_includes/theme-toggle-inline.js",
     "start": "run-p dev:*",
     "build": "run-s clean build:*"
   },

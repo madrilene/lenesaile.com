@@ -16,3 +16,4 @@ _cache/
 node_modules
 dist
 src/_includes/global-inline.css
+src/_includes/theme-toggle-inline.js

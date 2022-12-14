@@ -13,15 +13,11 @@
     class="language-select-nav"
     aria-label="{{ meta[locale].ariaLabels.optionsMenu }}"
   >
-    {% for language in meta.languages %} {% if loop.first %} {% endif %}
+    {% for language in meta.languages %} {% if loop.first %} {% endif %} {% set
+    translatedUrl = "/" + language.code + "/" %} {% set langClass = "lang-" +
+    language.code %}
 
-    <!-- set translatedUrl to the homepage of that language by default  -->
-    {% set translatedUrl = "/" + language.code + "/" %}
-
-    <!-- set general identifier class -->
-    {% set langClass = "lang-" + language.code %}
-
-    <!-- set current language class  -->
+    <!-- set current language class: {{ language.code | upper }}-->
     {% set activeClass = "lang-active" if language.code == locale else "inac" %} {% for
     item in collections.all %} {% if item.data.key == key and item.data.locale ==
     language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}

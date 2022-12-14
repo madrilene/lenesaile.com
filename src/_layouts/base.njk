@@ -20,7 +20,14 @@
 
     <!-- 3 preconnect/async js -->
     <!-- 4 synchronous js  -->
-    <!-- load theme toggle first to avoid color flashing on page load.  -->
+    <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+
+    {% set js %} {% include "theme-toggle-inline.js" %} {% endset %}
+    <script>
+          <!-- prettier-ignore -->
+      {{ js | safe }}
+    </script>
+
     <script src="/assets/theme-toggle.js"></script>
     <!-- include inline base schema application/ld+jso -->
     {% include "schemas/base-schema.njk" %}
@@ -60,7 +67,7 @@
     {% endif %}
 
     <!-- 7 defered js  -->
-    <script type="module" src="/assets/app.js" defer></script>
+    <script type="module" src="/assets/scripts/app.js" defer></script>
     <script
       defer
       data-domain="lenesaile.com"

@@ -138,6 +138,10 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Transforms ---------------------
 
+  // 	--------------------- Custom Template Languages, partial imported as plugin ---------------------
+
+  eleventyConfig.addPlugin(require('./config/template-formats/js-config.js'));
+
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
