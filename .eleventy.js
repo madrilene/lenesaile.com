@@ -88,6 +88,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
   eleventyConfig.addLayoutAlias('post', 'post.njk');
   eleventyConfig.addLayoutAlias('feed', 'feed.njk');
+  eleventyConfig.addLayoutAlias('naked', 'naked.njk');
   eleventyConfig.addLayoutAlias('error404', 'error404.njk');
 
   // 	---------------------  Custom filters -----------------------

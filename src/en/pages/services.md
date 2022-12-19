@@ -17,7 +17,7 @@ tools:
       link: ''
     - title: 'Design'
       icon: 'design.svg'
-      summary: 'I create visually stunning experiences, websites that are fun and easy to use. '
+      summary: 'I create visually stunning experiences: Elegant responsive websites that are fun and easy to use. '
       link:
     - title: 'Maintenance'
       icon: 'maintenance.svg'
