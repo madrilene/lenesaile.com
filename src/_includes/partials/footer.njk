@@ -23,7 +23,7 @@
         {% endfor %}
       </nav>
 
-      <div id="social" class="site-foot__inner">
+      <nav id="social" class="site-foot__inner" aria-label="{{ meta[locale].ariaLabels.socialMenu }}">
         {% for item in social %}
 
         {% if item.platform == "rss" %}
@@ -36,7 +36,7 @@
           </a
           >
         {% endfor %}
-      </div>
+        </nav>
     </div>
   </div>
 

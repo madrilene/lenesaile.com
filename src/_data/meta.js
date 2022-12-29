@@ -79,8 +79,9 @@ module.exports = {
     ariaLabels: {
       mainMenu: 'Main',
       footerMenu: 'Footer',
-      optionsMenu: 'select language',
-      optionsButton: 'change language'
+      socialMenu: 'Social links',
+      optionsMenu: 'Select language',
+      optionsButton: 'Change language'
     }
   },
 

@@ -24,6 +24,8 @@
     <a
       class="language-item {{ activeClass }}"
       href="{{ translatedUrl }}"
+      rel="alternate"
+      hreflang="{{ language.code }}"
       style="--offset: {{ loop.index }}"
       aria-selected="false"
       aria-controls="lang-{{ language.code }}"
