@@ -165,6 +165,19 @@ const isOwnWebmention = webmention => {
   return authorUrl && urls.includes(authorUrl);
 };
 
+const sortWebmentions = mentions => {
+  return mentions.sort((a, b) => {
+    if (a['published'] < b['published']) {
+      return -1;
+    }
+    if (a['published'] > b['published']) {
+      return 1;
+    }
+    // a must be equal to b
+    return 0;
+  });
+};
+
 module.exports = {
   limit,
   where,
@@ -185,5 +198,6 @@ module.exports = {
   getWebmentionsForUrl,
   webmentionSize,
   webmentionsByType,
-  isOwnWebmention
+  isOwnWebmention,
+  sortWebmentions
 };

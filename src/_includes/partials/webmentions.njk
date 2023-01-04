@@ -14,7 +14,7 @@
   <!-- Count the total likes -->
   {% set likesSize = likes | webmentionSize %}
   <!-- Set replies as mentions that are `in-reply-to`  -->
-  {% set replies = mentions | webmentionsByType('in-reply-to') %}
+  {% set replies = mentions | webmentionsByType('in-reply-to') | sortWebmentions %}
   <!-- Count the total replies -->
   {% set repliesSize = replies | webmentionSize %}
 
