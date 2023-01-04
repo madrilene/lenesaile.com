@@ -1,6 +1,6 @@
 import {gsapHighlight} from './components/gsap';
 
-// ------------------- cards redundant click, accessible whole card clickable solution by Heydon Pickering
+// ----- cards redundant click, accessible whole card clickable solution by Heydon Pickering: https://inclusive-components.design/cards/
 
 const cards = [...document.querySelectorAll('.clickable-card')];
 cards.forEach(card => {
@@ -17,7 +17,7 @@ cards.forEach(card => {
   };
 });
 
-// ----- masonry fallback  --------------------------------
+// ----- masonry fallback if CSS masonry not supported, solution by Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK
 
 const supportMasonry = CSS.supports('grid-template-rows', 'masonry');
 
@@ -74,11 +74,11 @@ if (!supportMasonry) {
   }
 }
 
-// ------------------- gsap marker
+// ----- gsap marker by Ryan Mulligan: https://codepen.io/hexagoncircle/pen/gOPMwvd
 
 gsapHighlight();
 
-// ----- language  --------------------------------
+// ----- language switcher  --------------------------------
 
 const languageNav = document.querySelector('.language-nav');
 const languageNavButton = document.querySelector('.language-nav-button');
