@@ -31,6 +31,10 @@
   border: 2px solid var(--color-bg-code);
 }
 
+.webmention .webmention-text {
+  word-break: break-all;
+}
+
 .webmention .webmention-text > a {
   font-size: var(--size-step-0);
   opacity: 0.8;
