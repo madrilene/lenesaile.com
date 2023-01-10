@@ -1,6 +1,6 @@
-<nav id="mainnav" class="navbar" aria-label="{{ meta[locale].ariaLabels.mainMenu }}">
+<nav id="mainnav" class="navbar" aria-label="{{ meta[page.lang].ariaLabels.mainMenu }}">
   <ul>
-    {% for item in navigation[locale].top %}
+    {% for item in navigation[page.lang].top %}
     <li>
       <a
         href="{{ item.url }}"

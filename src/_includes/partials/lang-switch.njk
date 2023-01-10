@@ -6,20 +6,20 @@
     class="language-nav-button"
   >
     {% include "icons/settings.svg" %}
-    <span class="sr-only">{{ meta[locale].ariaLabels.optionsButton }}</span>
+    <span class="sr-only">{{ meta[page.lang].ariaLabels.optionsButton }}</span>
   </button>
   <nav
     id="languagenav"
     class="language-select-nav"
-    aria-label="{{ meta[locale].ariaLabels.optionsMenu }}"
+    aria-label="{{ meta[page.lang].ariaLabels.optionsMenu }}"
   >
     {% for language in meta.languages %} {% if loop.first %} {% endif %} {% set
     translatedUrl = "/" + language.code + "/" %} {% set langClass = "lang-" +
     language.code %}
 
     <!-- set current language class: {{ language.code | upper }}-->
-    {% set activeClass = "lang-active" if language.code == locale else "inac" %} {% for
-    item in collections.all %} {% if item.data.key == key and item.data.locale ==
+    {% set activeClass = "lang-active" if language.code == page.lang else "inac" %} {% for
+    item in collections.all %} {% if item.data.key == key and item.data.page.lang ==
     language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
     <a
       class="language-item {{ activeClass }}"

@@ -1,27 +1,28 @@
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage"
-    },
-    "isPartOf": {
-      "@id": "{{ meta.url }}#website"
-    },
-    "@id": "{{ url }}",
-    "headline": "{{ title or meta.siteName }}",
-    "description": "{{ excerpt or meta.siteDescription }}",
-    "image": "{% if seo.image %}/assets/images/{{ seo.image }}{% else %}{{ meta.siteImage }}{% endif %}",
-    "inLanguage": "{{ meta[locale].localeCode }}",
-    "publisher": {
-      "@type": "{{ meta.siteType }}",
-      "name": "{{ meta.authorName }}",
-      "url": "{{ meta.url }}"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "{{ meta.authorName }}"
-    },
-    "datePublished": "{{ date | toIsoString }}"
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage"
+      },
+      "isPartOf": {
+        "@id": "{{ meta.url }}#website"
+      },
+      "@id": "{{ url }}",
+      "headline": "{{ title or meta.siteName }}",
+      "description": "{{ description or meta[page.lang].siteDescription }}",
+      "image": "{{ meta.url }}{% if category == 'blogpost' %}/assets/images/social-preview/{{ title | slugify }}-preview.jpeg
+  {% elif featured_image  %}{{ featured_image | replace('./src', '') }}{% else %}{{ meta.meta_data.opengraph_default }}{% endif %}",
+      "inLanguage": "{{ meta[page.lang].localeCode }}",
+      "publisher": {
+        "@type": "{{ meta.siteType }}",
+        "name": "{{ meta.author }}",
+        "url": "{{ meta.url }}"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "{{ meta.author }}"
+      },
+      "datePublished": "{{ date | toIsoString }}"
+    }
 </script>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/{{ locale }}/">
-  <title>{{ meta[locale].blog.name }}</title>
-  <subtitle>{{ meta[locale].blog.description }}</subtitle>
-  <link href="{{ meta[locale].blog.url }}" rel="self" />
-  <link href="{{ meta.url }}/{{ locale }}/" />
-  {% set postslist = collections["blog_" + locale] %}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.url }}/{{ page.lang }}/">
+  <title>{{ meta[page.lang].blog.name }}</title>
+  <subtitle>{{ meta[page.lang].blog.description }}</subtitle>
+  <link href="{{ meta[page.lang].blog.url }}" rel="self" />
+  <link href="{{ meta.url }}/{{ page.lang }}/" />
+  {% set postslist = collections["blog_" + page.lang] %}
   <updated>{{ postslist | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ meta.url }}/{{ locale }}/</id>
+  <id>{{ meta.url }}/{{ page.lang }}/</id>
   <author>
     <name>{{ meta.author }}</name>
     <email>{{ meta.authorEmail }}</email>
@@ -19,7 +19,7 @@
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content
-      xml:lang="{{ locale }}"
+      xml:lang="{{ page.lang }}"
       type="html"
       >{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content
     >

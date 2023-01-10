@@ -68,7 +68,7 @@ In meinem Projektordner habe ich die folgende Struktur (vereinfacht):
 
 {% endraw %}
 
-Um zu verhindern, dass JavaScript und CSS unnötigerweise von anderen Unterseiten geladen werden, lege ich in meinem base template fest, dass sie nur auf der Shop-Seite eingebunden werden:
+Um zu verhindern, dass JavaScript und CSS unnötigerweise von anderen Unterseiten geladen werden, lege ich in meinem "layout" fest, dass sie nur auf der Shop-Seite eingebunden werden:
 
 _base.njk:_
 

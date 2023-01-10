@@ -47,17 +47,19 @@ Obwohl wir die meisten Ordner nicht weiter besprechen, sieht ein Website-Projekt
 
 {% raw %}
 
+<!-- prettier-ignore -->
 ```md
 │
-└──src
-│ │
-│ └──_data
-│ └──_includes
-│ └──_layouts
-│ └──assets
-│ └──pages
-│ └──posts
-│ └──projects
+├── src
+│  │
+│  ├── _data
+│  ├── _includes
+│  ├── _layouts
+│  ├── assets
+│  ├── pages
+│  ├── posts
+│  ├── projects
+│
 ```
 
 {% endraw %}

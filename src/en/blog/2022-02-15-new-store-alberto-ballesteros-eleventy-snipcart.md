@@ -73,7 +73,7 @@ In my project folder I have the following structure (simplified):
 
 {% endraw %}
 
-To prevent JavaScript and CSS from being unnecessarily loaded by other pages, I specify in my base template that it will only be included on the store page:
+To prevent JavaScript and CSS from being unnecessarily loaded by other pages, I specify in my base layout that it will only be included on the store page:
 
 _base.njk:_
 

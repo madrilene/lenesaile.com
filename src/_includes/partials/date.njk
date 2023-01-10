@@ -1,14 +1,14 @@
 <time class="dt-published" datetime="{{ definedDate | toIsoString }}">
   <!-- TODO: less verbose -->
 
-  {% if locale == "de" %}
+  {% if page.lang == "de" %}
   {{
-    definedDate | formatDateDE('dddd, D. MMMM YYYY')
+    definedDate | formatDateDE('D. MMMM YYYY')
   }}
 
-  {% elif locale == "es" %}
+  {% elif page.lang == "es" %}
   {{
-    definedDate | formatDateES('dddd, D MMMM, YYYY')
+    definedDate | formatDateES('D MMMM, YYYY')
   }}
 
   {% else %}

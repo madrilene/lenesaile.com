@@ -1,0 +1,13 @@
+details {
+  padding: var(--space-xs-s);
+  background-color: var(--color-bg-code);
+}
+
+details:is([open]) summary {
+  margin-bottom: var(--space-xs-s);
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}

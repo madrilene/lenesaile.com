@@ -1,13 +1,13 @@
 <footer class="site-foot h-card" role="contentinfo">
   <div class="wrapper prose">
     <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner" aria-label="{{ meta[locale].ariaLabels.footerMenu }}">
+      <nav id="footernav" class="site-foot__inner" aria-label="{{ meta[page.lang].ariaLabels.footerMenu }}">
         {% set activePage = page.url | url %}
         <p class="h-card p-author">
           &copy; {% year %}  <a class="p-name u-url" rel="me" href="/">
-        {{ meta[locale].siteName }}</a></p>
+        {{ meta[page.lang].siteName }}</a></p>
 
-        {% for item in navigation[locale].bottom %}
+        {% for item in navigation[page.lang].bottom %}
 
         <a
           href="{{ item.url }}"
@@ -23,11 +23,11 @@
         {% endfor %}
       </nav>
 
-      <nav id="social" class="site-foot__inner" aria-label="{{ meta[locale].ariaLabels.socialMenu }}">
+      <nav id="social" class="site-foot__inner" aria-label="{{ meta[page.lang].ariaLabels.socialMenu }}">
         {% for item in social %}
 
         {% if item.platform == "rss" %}
-        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
+        <a href="{{ meta.url }}{{ item.url | locale_url }}" rel="alternate" type="application/rss+xml">
         {% else %}
         <a href="{{ item.url }}" rel="me">
           {% endif %}

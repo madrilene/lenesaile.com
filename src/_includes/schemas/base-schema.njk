@@ -6,9 +6,9 @@
         "@type": "WebSite",
         "@id": "{{ meta.url }}#website",
         "url": "{{ meta.url }}",
-        "name": "{{ meta.siteName }}",
-        "description": "{{ meta[locale].metaDescription }}",
-        "inLanguage": "{{ meta[locale].localeCode }}"
+        "name": "{{ meta[page.lang].siteName }}",
+        "description": "{{ meta[page.lang].siteDescription }}",
+        "inLanguage": "{{ meta[page.lang].localeCode }}"
       }
     ]
   }

@@ -20,8 +20,8 @@ layout: base
 </header>
 
 <div class="projects-container">
-  {% set projectlist = collections["projects_" + locale] %} {% for project in projectlist
-  %}
+  {% set projectlist = collections["projects_" + page.lang] %} {% for project in
+  projectlist %}
 
   <article class="wrapper projects region flow">
     <div class="visual relative">

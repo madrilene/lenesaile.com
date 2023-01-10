@@ -25,11 +25,12 @@
   "author": "Lene Saile",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.23",
+    "@11ty/eleventy": "^2.0.0-canary.25",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "gsap": "^3.11.3",
+    "markdown-it-deflist": "^2.1.0",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {

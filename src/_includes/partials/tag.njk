@@ -1,5 +1,5 @@
 <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-  {% set postslist = collections["blog_" + locale][tag] %} {% for post in postslist %}
+  {% set postslist = collections["blog_" + page.lang][tag] %} {% for post in postslist %}
 
   <li class="card flow clickable-card overflow-hidden">
     <h2>

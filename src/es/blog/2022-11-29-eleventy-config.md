@@ -46,17 +46,19 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 {% raw %}
 
+<!-- prettier-ignore -->
 ```md
 │
-└──src
-│ │
-│ └──_data
-│ └──_includes
-│ └──_layouts
-│ └──assets
-│ └──pages
-│ └──posts
-│ └──projects
+├── src
+│  │
+│  ├── _data
+│  ├── _includes
+│  ├── _layouts
+│  ├── assets
+│  ├── pages
+│  ├── posts
+│  ├── projects
+│
 ```
 
 {% endraw %}

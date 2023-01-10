@@ -8,7 +8,7 @@
  */
 
 // get package.json
-const pkg = require('./package.json');
+const packageVersion = require('./package.json').version;
 
 // module import filters
 const {
@@ -16,11 +16,13 @@ const {
   where,
   every,
   some,
+  truncate,
   categoryFilter,
   toHtml,
   toAbsoluteUrl,
   stripHtml,
   toISOString,
+  readingTime,
   formatDate,
   formatDateES,
   formatDateDE,
@@ -35,7 +37,7 @@ const {
   sortWebmentions
 } = require('./config/filters/index.js');
 
-// module import shortcodes
+// module import collections
 const {
   getProjectsEN,
   getBlogsEN,
@@ -46,6 +48,7 @@ const {
   getBlogsAllLang
 } = require('./config/collections/index.js');
 
+// module import shortcodes
 const {
   asideShortcode,
   breakoutShortcode,
@@ -67,6 +70,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
+const {EleventyI18nPlugin} = require('@11ty/eleventy');
 
 // module import events
 const {afterBuild} = require('./config/events/index.js');
@@ -97,8 +101,10 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('where', where);
   eleventyConfig.addFilter('every', every);
   eleventyConfig.addFilter('some', some);
+  eleventyConfig.addFilter('truncate', truncate);
   eleventyConfig.addFilter('categoryFilter', categoryFilter);
   eleventyConfig.addFilter('escape', escape);
+  eleventyConfig.addFilter('readingTime', readingTime);
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);
   eleventyConfig.addFilter('formatDate', formatDate);
@@ -129,7 +135,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
-  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, by Stephanie Eckles
+  eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('projects_en', getProjectsEN);
@@ -152,6 +159,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(EleventyI18nPlugin, {
+    defaultLanguage: 'en'
+  });
 
   // 	--------------------- Passthrough copies ---------------------
 

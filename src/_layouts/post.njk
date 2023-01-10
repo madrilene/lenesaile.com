@@ -1,5 +1,6 @@
 ---
 layout: base
+schema: blog
 preloads:
   href: '/assets/fonts/fira/firacode-medium-webfont.woff2'
   as: 'font'
@@ -15,21 +16,25 @@ preloads:
   <div class="wrapper flow content">
     <h1 class="gradient-text | p-name">{{ title }}</h1>
 
-    <div class="cluster">
+    <dl class="meta">
       <!-- date -->
-      {% set definedDate = date %}<span class="published">
-        {{ meta[locale].blog.published | capitalize }} {% include "partials/date.njk"
-        %}</span
-      >
+      {% set definedDate = date %}
+      <dt>
+        {{ meta[page.lang].blog.published | capitalize }}
+      </dt>
+      <dd>{% include "partials/date.njk" %}</dd>
 
+      {% if lastEdit %}
       <!-- last edit -->
-      {% if lastEdit %} {% set definedDate = lastEdit %}
-      <span class="published">
-        {{ meta[locale].blog.edited | capitalize }} {% include "partials/date.njk"
-        %}</span
-      >
+      {% set definedDate = lastEdit %}
+      <dt>{{ meta[page.lang].blog.edited | capitalize }}</dt>
+      <dd>{% include "partials/date.njk" %}</dd>
       {% endif %}
-    </div>
+
+      <!-- reading time -->
+      <dt>{{ meta[page.lang].blog.reading | capitalize }}</dt>
+      <dd>{{ content | readingTime }} {{ meta[page.lang].blog.unit }}</dd>
+    </dl>
 
     <!-- image -->
     {% if image %}
@@ -62,5 +67,3 @@ preloads:
 
 <!-- cta -->
 {% include 'partials/cta.njk' %}
-<!-- include blogpost schema  -->
-{%- include "schemas/blogpost-schema.njk" %}

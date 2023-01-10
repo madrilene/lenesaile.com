@@ -1,0 +1,21 @@
+/*
+based on SIDEBAR
+More info: https://every-layout.dev/layouts/sidebar/
+*/
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  align-items: center;
+}
+dt {
+  flex-basis: 10rem;
+  flex-grow: 1;
+}
+dd {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 70%;
+  display: block;
+}

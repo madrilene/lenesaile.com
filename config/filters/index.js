@@ -41,6 +41,9 @@ const some = (coll = [], propName = '', optionalProps = []) => {
   );
 };
 
+/** truncate */
+const truncate = text => (text.length > 300 ? `${text.substring(0, 300)}...` : text);
+
 /** filter by category. */
 const categoryFilter = (collection, category) => {
   if (!category) return collection;
@@ -72,6 +75,26 @@ const toAbsoluteUrl = url => {
 
 /** Converts the given date string to ISO8610 format. */
 const toISOString = dateString => dayjs(dateString).toISOString();
+
+const readingTime = text => {
+  let content = new String(text);
+  const speed = 230; // reading speed in words per minute
+
+  // remove all html elements
+  let re = /(&lt;.*?&gt;)|(<.*?>)/gi;
+  let plain = content.replace(re, '');
+
+  // replace all newlines and 's with spaces
+  plain = plain.replace(/\n+|'s/g, ' ');
+
+  // create array of all the words in the post & count them
+  let words = plain.split(' ');
+  let count = words.length;
+
+  // calculate the reading time
+  const calculatedReadingTime = Math.round(count / speed);
+  return calculatedReadingTime;
+};
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format, https://day.js.org/docs/en/i18n/loading-into-nodejs */
 // TODO: find a less verbose way to do this
@@ -183,11 +206,13 @@ module.exports = {
   where,
   every,
   some,
+  truncate,
   categoryFilter,
   toHtml,
   toAbsoluteUrl,
   stripHtml,
   toISOString,
+  readingTime,
   formatDate,
   formatDateES,
   formatDateDE,

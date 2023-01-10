@@ -75,7 +75,7 @@ preloads:
     <p>{{ blog.intro }}</p>
   </div>
   <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog_" + locale] | categoryFilter("blogpost") %} {%
+    {% set postslist = collections["blog_" + page.lang] | categoryFilter("blogpost") %} {%
     for post in postslist.slice(0, 4) %} {% if post.data.type %} {% else %}
 
     <li class="card flow clickable-card overflow-hidden">

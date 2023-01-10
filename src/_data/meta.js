@@ -1,7 +1,4 @@
-const package = require('../../package.json');
-
 module.exports = {
-  pkv: package.version || 'v1',
   url: process.env.URL || 'http://localhost:8080',
   domain: 'www.lenesaile.com',
   siteType: 'Person', // schema
@@ -70,7 +67,9 @@ module.exports = {
         "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.  I specialize in custom creative websites with accessibility and performance in mind.",
       url: 'https://www.lenesaile.com/en/feed.xml',
       published: 'published: ',
-      edited: 'last edit: '
+      edited: 'last edit: ',
+      reading: 'Reading time: ',
+      unit: 'min.'
     },
     webmentions: {
       formTitle: 'Have you published a response? Let me know where:',
@@ -101,7 +100,9 @@ module.exports = {
         'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
       url: 'https://www.lenesaile.com/es/feed.xml',
       published: 'publicado: ',
-      edited: 'última edición: '
+      edited: 'última edición: ',
+      reading: 'Tiempo de lectura: ',
+      unit: 'min.'
     },
     webmentions: {
       formTitle: '¿Has publicado una respuesta? Dime dónde:',
@@ -130,7 +131,9 @@ module.exports = {
         'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
       url: 'https://www.lenesaile.com/de/feed.xml',
       published: 'veröffentlicht: ',
-      edited: 'zuletzt bearbeitet: '
+      edited: 'zuletzt bearbeitet: ',
+      reading: 'Lesezeit: ',
+      unit: 'Min.'
     },
     webmentions: {
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',

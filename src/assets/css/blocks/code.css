@@ -3,10 +3,9 @@ pre {
   padding: 0.4em 0.4em 0.2em 0.4em;
   font-family: var(--font-mono);
   background-color: var(--color-bg-code);
-
   color: var(--color-text);
-  font-size: var(--size-step-code);
   font-weight: 500;
+  font-size: var(--size-step-code);
 }
 
 pre[class*='language-'] {
@@ -207,6 +206,27 @@ pre[class*='language-'] {
 
 .token.variable {
   color: var(--color-code-quaternary);
+}
+
+.token.deleted {
+  background-color: var(--color-code-quaternary);
+}
+.token.inserted {
+  background-color: var(--color-code-secondary);
+}
+
+/* Make the + and - characters unselectable for copy/paste */
+.token.prefix.unchanged,
+.token.prefix.inserted,
+.token.prefix.deleted {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Optional: full-width background color */
+.token.inserted:not(.prefix),
+.token.deleted:not(.prefix) {
+  display: block;
 }
 
 .codepen {

@@ -47,11 +47,6 @@ blockquote:not([class]) {
   max-width: 50ch;
 }
 
-h1,
-h2 {
-  max-width: 20ch;
-}
-
 /* More generic elements */
 blockquote:not([class]) {
   font-family: var(--font-serif);
@@ -203,7 +198,7 @@ mark {
 
 figcaption,
 time,
-.published {
+.meta {
   font-size: var(--size-step-0);
   opacity: 0.8;
 }

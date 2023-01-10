@@ -1,4 +1,4 @@
-<a href="#main" class="skip-link">{{ meta[locale].skipText }}</a>
+<a href="#main" class="skip-link">{{ meta[page.lang].skipText }}</a>
 
 <header class="wrapper | relative">
   <div class="absolute-menu">
@@ -20,14 +20,14 @@
         {% set activePage = page.url | url %}
         <!-- TODO: finda a less verbose solution here, also in footer -->
         <a
-          href="/{{ locale }}/"
+          href="/{{ page.lang }}/"
           class="no-underline"
 
           {% if activePage === '/en/' or activePage === '/de/' or activePage === '/es/' %}
         aria-current="page" {% endif %}
 
         >
-          {{ meta[locale].siteName }}
+          {{ meta[page.lang].siteName }}
         </a>
       </div>
 

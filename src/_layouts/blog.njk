@@ -26,7 +26,7 @@ navbg: 'var(--color-light)'
 
 <article class="wrapper region">
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-    {% set postslist = collections["blog_" + locale] %} {% for post in postslist %} {%
+    {% set postslist = collections["blog_" + page.lang] %} {% for post in postslist %} {%
     include "partials/blog-loop.njk" %} {% endfor %}
   </ul>
 </article>

@@ -50,17 +50,19 @@ Though we are not going to touch most of the folders, this is what your usual we
 
 {% raw %}
 
+<!-- prettier-ignore -->
 ```md
 │
-└──src
-│ │
-│ └──_data
-│ └──_includes
-│ └──_layouts
-│ └──assets
-│ └──pages
-│ └──posts
-│ └──projects
+├── src
+│  │
+│  ├── _data
+│  ├── _includes
+│  ├── _layouts
+│  ├── assets
+│  ├── pages
+│  ├── posts
+│  ├── projects
+│
 ```
 
 {% endraw %}
