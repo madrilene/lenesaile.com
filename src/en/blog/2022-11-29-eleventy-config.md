@@ -187,7 +187,7 @@ module.exports = eleventyConfig => {
 
 Everything is neat and I can see at a glance what I am importing for this project.
 
-If there are too many filters, collections or shortcodes, I subdivide them further into their own folders, for example only the filters for handling the date in a common place. Larger blocks like the ones for the eleventy image shortcodes get their very own folder.
+If there are too many filters, collections or shortcodes, I subdivide them further into their own folders, for example only the filters for handling the date in a common place. Larger blocks like the ones for the [Eleventy Image](https://www.11ty.dev/docs/plugins/image/) shortcodes get their very own folder.
 The exported values are then imported into the parent `index.js`, and then exported all together again for the `eleventy.js` file. 🤪
 
 ### Method 3: adding another config file as a plugin

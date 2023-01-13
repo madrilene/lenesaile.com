@@ -1,5 +1,5 @@
 ---
-title: Sobre mi
+title: Sobre mí
 permalink: /{{ locale }}/sobre/index.html
 redirectFrom: [/sobre/]
 key: 'about'
