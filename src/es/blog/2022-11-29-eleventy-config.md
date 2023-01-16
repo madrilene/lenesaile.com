@@ -186,9 +186,7 @@ Todo está ordenado y puedo ver de un vistazo lo que estoy importando para este 
 Si hay demasiados _filtros_, _colecciones_ o _códigos cortos_, los divido más en sus propias carpetas, por ejemplo sólo los filtros para manejar la fecha en un lugar común. Los bloques más grandes, como los shortcodes de [Eleventy Image](https://www.11ty.dev/docs/plugins/image/), tienen su propia carpeta.
 Los \_values\_ exportados se importan primero en el archivo padre `index.js` y luego se vuelven a exportar juntos para el archivo `eleventy.js`. 🤪
 
-### Methode 3: Weitere Konfigurationsdateien als Plugin
-
-Nachdem ich diesen Artikel auf Mastodon geteilt hatte, wies mich [Zach darauf hin](https://front-end.social/@eleventy@fosstodon.org/109501433721579265), dass es noch eine weitere Möglichkeit gibt, meine Konfigurationskomponenten auszulagern:
+### Método 3: Más archivos de configuración como plugin
 
 Después de compartir este artículo en Mastodon, [Zach me indicó](https://front-end.social/@eleventy@fosstodon.org/109501433721579265) que hay aún otra forma de externalizar mis componentes de configuración:
 

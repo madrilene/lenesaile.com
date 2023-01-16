@@ -5,7 +5,7 @@ redirectFrom: [/sobre/]
 key: 'about'
 description: 'Soy desarrolladora web y diseñadora nacida en Berlín, viviendo en Madrid. Llevo desarrollando para la web profesionalmente desde 2008.'
 layout: about
-lead: 'Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.'
+lead: 'Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008. Me especializo en sitios web creativos a medida teniendo muy en cuenta la accesibilidad y el rendimiento.'
 image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sentada en una pelota de gimnasia frente a su escritorio, aparentemente trabajando'
 breakout:
