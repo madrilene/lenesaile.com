@@ -135,7 +135,7 @@ Hemos traído estructura en ella, pero también quiero ver lo que se está utili
 
 Quiero ver qué _collections_ estoy definiendo, qué _filters_, etc. ¡Así que aquí viene el método dos!
 
-## Método 2: named exports
+### Método 2: named exports
 
 En lugar de `collections.js` crea otra carpeta dentro de `config` llamada `collections`, y en ella pon un archivo llamado `index.js`:
 

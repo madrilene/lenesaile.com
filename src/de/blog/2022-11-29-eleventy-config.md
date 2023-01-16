@@ -136,7 +136,7 @@ Wir haben zwar Struktur reingebracht, aber ich möchte auch einen guten Überbli
 
 Wir haben zwar Struktur reingebracht, aber ich möchte sehen, was in mein Projekt importiert wird, und zwar genau dort, in meiner Konfigurationsdatei. Ich möchte wissen, welche _collections_ ich verwende, welche _filter_, welche _transforms_ und so weiter. Hier kommt also Methode zwei!
 
-## Methode 2: named exports
+### Methode 2: named exports
 
 Anstelle von `collections.js` erstellen wir einen weiteren Ordner innerhalb von `config` mit dem Namen `collections`, und dort legen wir eine Datei namens `index.js` ab:
 
