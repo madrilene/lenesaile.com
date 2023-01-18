@@ -13,7 +13,7 @@
     />
     {% else %}
     <img
-      src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}"
+      src="{{ meta.webmentions.fallbackAvatar | url }}"
       alt=""
       width="48"
       height="48"
@@ -26,10 +26,10 @@
     <span>
       <strong>Anonymous</strong>
     </span>
-    {% endif %} {% if webmention.published %}
+    {% endif %} {% if webmention.wm-received %}
     <!-- date -->
-    {% set definedDate = webmention.published %} {% include "partials/date-time.njk" %} {%
-    endif %}
+    {% set definedDate = webmention.wm-received %} {% include "partials/date-time.njk" %}
+    {% endif %}
   </div>
   <p class="webmention-text">
     {{ webmention.content.text | truncate }}

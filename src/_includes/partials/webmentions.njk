@@ -4,28 +4,30 @@
 >
   <h2 id="webmentions">Webmentions</h2>
   <!-- Filter the cached mentions to only include ones matching the post's url -->
-  {% set mentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
+  {% set allMentions = webmentions | getWebmentionsForUrl(webmentionUrl) %}
   <!-- Set reposts as mentions that are `repost-of`  -->
-  {% set reposts = mentions | webmentionsByType('repost-of') %}
+  {% set reposts = allMentions | webmentionsByType('repost-of') %}
   <!-- Count the total reposts -->
   {% set repostsSize = reposts | webmentionSize %}
   <!-- Set likes as mentions that are `like-of`  -->
-  {% set likes = mentions | webmentionsByType('like-of') %}
+  {% set likes = allMentions | webmentionsByType('like-of') %}
   <!-- Count the total likes -->
   {% set likesSize = likes | webmentionSize %}
   <!-- Set replies as mentions that are `in-reply-to`  -->
-  {% set replies = mentions | webmentionsByType('in-reply-to') | sortWebmentions %}
+  {% set replies = allMentions | webmentionsByType('in-reply-to') | sortWebmentions %}
   <!-- Count the total replies -->
   {% set repliesSize = replies | webmentionSize %}
+  <!-- Set replies as mentions that are `in-reply-to`  -->
+  {% set mentions = allMentions | webmentionsByType('mention-of') | sortWebmentions %}
+  <!-- Count the total replies -->
+  {% set mentionsSize = mentions | webmentionSize %}
 
   <!-- if likes -->
   {% if likesSize > 0 %}
 
   <div class="flow">
-    <h3 {% if repostsSize>
-      11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{
-        likesSize
-      }}
+    <h3>
+      {{ likesSize }}
       Like{% if likesSize != 1 %}s{% endif %}
     </h3>
 
@@ -47,7 +49,7 @@
         />
         {% else %}
         <img
-          src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}"
+          src="{{ meta.webmentions.fallbackAvatar | url }}"
           alt=""
           width="48"
           height="48"
@@ -59,12 +61,7 @@
   </div>
   {% endif %} {% if repostsSize > 0 %}
   <div class="flow">
-    <h3 {% if repostsSize>
-      11 or likesSize > 11 %} class="webmentions__facepile__squish" {% endif %}>{{
-        repostsSize
-      }}
-      Repost{% if repostsSize != 1 %}s{% endif %}
-    </h3>
+    <h3>{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</h3>
 
     <p>
       {% for webmention in reposts %} {% if webmention.url != "" %}
@@ -84,7 +81,7 @@
         />
         {% else %}
         <img
-          src="{{ '/assets/images/svg/avatar-fallback.svg' | url }}"
+          src="{{ meta.webmentions.fallbackAvatar | url }}"
           alt=""
           width="48"
           height="48"
@@ -94,7 +91,50 @@
       {% endif %} {% endfor %}
     </p>
   </div>
-  {% endif %} {% if repliesSize > 0 %}
+  {% endif %}
+
+  <!-- mentions from websites -->
+  {% if mentionsSize > 0 %}
+  <div class="flow">
+    <h3>
+      {{ mentionsSize }}
+      Mention{% if mentionsSize != 1 %}s{% endif %}/Response{% if mentionsSize != 1 %}s{%
+      endif %}
+    </h3>
+
+    <p>
+      {% for webmention in mentions %} {% if webmention.url != "" %}
+      <a
+        class="h-card u-url link-u-exempt"
+        href="{{ webmention.url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {% endif %} {% if webmention.author.photo %}
+        <img
+          src="{{ webmention.author.photo }}"
+          alt="{{ webmention.author.name }}"
+          width="48"
+          height="48"
+          loading="lazy"
+        />
+        {% else %}
+        <img
+          src="{{ meta.webmentions.fallbackAvatar | url }}"
+          alt=""
+          width="48"
+          height="48"
+        />
+        {% endif %} {% if webmention.url != "" %}
+      </a>
+      {% endif %} {% endfor %}
+    </p>
+  </div>
+  {% endif %}
+
+  <!-- replies -->
+  {% if repliesSize > 0 %}
+
   <div class="webmention-replies flow">
     <h3>
       {{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}

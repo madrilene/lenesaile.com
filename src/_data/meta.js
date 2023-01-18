@@ -17,6 +17,9 @@ module.exports = {
   pagination: {
     itemsPerPage: 20
   },
+  webmentions: {
+    fallbackAvatar: '/assets/images/svg/avatar-fallback.svg'
+  },
   address: {
     firma: 'Lene Saile',
     street: 'c/ Humilladero 25, 2C',
