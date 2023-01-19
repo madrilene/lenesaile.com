@@ -72,7 +72,9 @@ module.exports = {
       published: 'published: ',
       edited: 'last edit: ',
       reading: 'Reading time: ',
-      unit: 'min.'
+      unit: 'min.',
+      githubEdit:
+        'I try to keep my articles up to date. If you see something that is not true (anymore), or something that should be mentioned, feel free to edit the article on'
     },
     webmentions: {
       formTitle: 'Have you published a response? Let me know where:',
@@ -105,7 +107,9 @@ module.exports = {
       published: 'publicado: ',
       edited: 'última edición: ',
       reading: 'Tiempo de lectura: ',
-      unit: 'min.'
+      unit: 'min.',
+      githubEdit:
+        'Intento mantener mis artículos actualizados. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en'
     },
     webmentions: {
       formTitle: '¿Has publicado una respuesta? Dime dónde:',
@@ -136,7 +140,9 @@ module.exports = {
       published: 'veröffentlicht: ',
       edited: 'zuletzt bearbeitet: ',
       reading: 'Lesezeit: ',
-      unit: 'Min.'
+      unit: 'Min.',
+      githubEdit:
+        'Ich versuche meine Artikel aktuell zu halten. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:'
     },
     webmentions: {
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',

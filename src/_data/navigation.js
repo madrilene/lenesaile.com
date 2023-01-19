@@ -33,7 +33,7 @@ module.exports = {
   es: {
     top: [
       {
-        text: 'Sobre mi',
+        text: 'Sobre mí',
         url: '/es/sobre/'
       },
       {

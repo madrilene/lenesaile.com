@@ -47,6 +47,16 @@ preloads:
 
     <div class="flow e-content">
       {{ content | safe }}
+
+      <hr />
+
+      <p>
+        {{ meta[page.lang].blog.githubEdit }}
+        <a
+          href="https://github.com/madrilene/lenesaile.com/tree/main/{{ page.inputPath }}"
+          >GitHub</a
+        >
+      </p>
     </div>
   </div>
 
