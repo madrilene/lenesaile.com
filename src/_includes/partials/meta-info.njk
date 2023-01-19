@@ -45,6 +45,14 @@
 <link rel="me" href="{{ meta.meta_data.twitterProfile }}" />
 {% endif %}
 
+<!-- alternate languages -->
+
+<link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}" />
+
+{% for link in page.url | locale_links %}
+<link rel="alternate" hreflang="{{ link.lang }}" href="{{ meta.url }}{{ link.url }}" />
+{% endfor %}
+
 <!-- Open Graph meta -->
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
