@@ -1,3 +1,7 @@
+.section > .curve {
+  transform: translateY(-1px);
+}
+
 .section > .curve:first-child {
   transform: rotate(180deg) translateY(-1px);
 }

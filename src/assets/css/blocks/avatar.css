@@ -4,6 +4,10 @@ svg.skyline {
   width: var(--space-xl);
 }
 
+svg.avatar {
+  z-index: 1;
+}
+
 svg.avatar-cta {
   width: var(--space-xl);
   height: auto;
