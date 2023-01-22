@@ -6,6 +6,7 @@ module.exports = {
     'postcss-custom-media': {},
     'tailwindcss/nesting': 'postcss-nesting',
     'tailwindcss': {},
+    'autoprefixer': {},
     'cssnano': {}
   }
 };

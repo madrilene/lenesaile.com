@@ -2,7 +2,12 @@
 
 My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.
 
+## License
+
+This is my personal website. I use a lot of code fragments that smarter people than me have come up with, so it's only right to release my code open source as well. Please feel free to use parts of the code of this website in your own projects, but please don't copy the page completely, it's not a template.
+
 - [lenesaile.com](#lenesailecom)
+  - [License](#license)
   - [Credits and Thank yous](#credits-and-thank-yous)
 
 ## Credits and Thank yous
@@ -61,6 +66,19 @@ Stephanie provides a lot of resources for Eleventy and modern CSS.
 
 - https://smolcss.dev/
 - https://moderncss.dev/
+
+**Max Böck and Sia Karamalegos**
+
+I followed the tutorials from Max and Sia to implement Webmentions on this site.
+
+- https://sia.codes/posts/webmentions-eleventy-in-depth/max
+- https://mxb.dev/blog/using-webmentions-on-static-sites/
+
+**Bernard Nijenhuis**
+
+The open graph images are generated automatically: First a SVG is created for every post, which is then converted to JPEG. I learned how to do that with Bernard's article.
+
+- https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
 
 **Aleksandr Hovhannisyan**
 
