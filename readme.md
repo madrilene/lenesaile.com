@@ -1,14 +1,17 @@
 # lenesaile.com
 
-My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.
+My freelancing website built with Eleventy. It supports three languages and uses my latest workflow.
+
+## TOC
+
+- [lenesaile.com](#lenesailecom)
+  - [TOC](#toc)
+  - [License](#license)
+  - [Credits and Thank yous](#credits-and-thank-yous)
 
 ## License
 
-This is my personal website. I use a lot of code fragments that smarter people than me have come up with, so it's only right to release my code open source as well. Please feel free to use parts of the code of this website in your own projects, but please don't copy the page completely, it's not a template.
-
-- [lenesaile.com](#lenesailecom)
-  - [License](#license)
-  - [Credits and Thank yous](#credits-and-thank-yous)
+This is my personal website. I use a lot of code fragments that smarter people than me have come up with, so it's only right to release my code open source as well. Please feel free to use parts of the code of this website in your own projects, but please don't copy the page completely, as it's not meant to be a template.
 
 ## Credits and Thank yous
 
