@@ -1,5 +1,5 @@
 ---
-title: 'Website for Stephen'
+title: 'Página web para Stephen'
 category: note
 key: 'stephenanfield'
 date: 2022-12-05

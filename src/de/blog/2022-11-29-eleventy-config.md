@@ -309,7 +309,7 @@ eleventyConfig.addPassthroughCopy({
 
 ## Wrap up
 
-So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen.
+So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent] (https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen. Ein wunderbares Beispiel für eine aufgeräumte Eleventy Konfigurationsdatei findet ihr im [Repository von Miriam Suzannes Website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
 
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 

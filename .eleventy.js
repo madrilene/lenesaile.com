@@ -45,6 +45,7 @@ const {
   getBlogsES,
   getProjectsDE,
   getBlogsDE,
+  getBlogsAllFullLang,
   getBlogsAllLang
 } = require('./config/collections/index.js');
 
@@ -146,6 +147,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('projects_de', getProjectsDE);
   eleventyConfig.addCollection('blog_de', getBlogsDE);
 
+  eleventyConfig.addCollection('blog_all_full', getBlogsAllFullLang);
   eleventyConfig.addCollection('blog_all', getBlogsAllLang);
 
   // 	--------------------- Transforms ---------------------

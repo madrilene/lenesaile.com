@@ -312,7 +312,9 @@ By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](ht
 
 ## Wrap up
 
-This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
+This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). A wonderful example of a tidy Eleventy config file can be found in the [repository of Miriam Suzanne's personal website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+
+https://github.com/mirisuzanne/mia/blob/main/.eleventy.js
 
 Generally, it is always a great idea to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 

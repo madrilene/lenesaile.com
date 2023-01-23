@@ -63,7 +63,9 @@
 
 <meta
   property="og:image"
-  content="{{ meta.url }}{% if category == 'blogpost' %}/assets/images/social-preview/{{
+  content="{{
+    meta.url
+  }}{% if (category == 'blogpost') or (category == 'note') %}/assets/images/social-preview/{{
     title | slugify
   }}-preview.jpeg
 

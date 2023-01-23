@@ -77,18 +77,12 @@
     0% {
       transform: skew(0deg) rotate(0deg);
     }
-
-    /* Finish changes by here */
     30% {
       transform: skew(1deg) rotate(1deg);
     }
-
-    /* Finish changes by here */
     70% {
       transform: skew(0deg) rotate(0deg);
     }
-
-    /* Between 20% and 100%, nothing changes */
     100% {
       transform: skew(1deg) rotate(1deg);
     }
@@ -113,18 +107,12 @@
     0% {
       transform: rotateX(3deg);
     }
-
-    /* Finish changes by here */
     40% {
       transform: rotateX(7deg);
     }
-
-    /* Finish changes by here */
     80% {
       transform: rotateX(5deg);
     }
-
-    /* Between 20% and 100%, nothing changes */
     100% {
       transform: rotateX(4deg);
     }
@@ -134,18 +122,12 @@
     0% {
       transform: rotateX(3deg);
     }
-
-    /* Finish changes by here */
     30% {
       transform: rotateX(7deg);
     }
-
-    /* Finish changes by here */
     70% {
       transform: rotateX(3deg);
     }
-
-    /* Between 20% and 100%, nothing changes */
     100% {
       transform: rotateX(6deg);
     }

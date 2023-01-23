@@ -307,7 +307,7 @@ Por cierto, respecto a los favicons, recomiendo leer [este artículo de Andrey S
 
 ## Wrap up
 
-Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js).
+Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). En el repositorio de la página web personal de Miriam Suzanne se puede encontrar un magnífico ejemplo de un [Eleventy config perfectamente ordenado](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
 
 En general, siempre es una gran idea bucear en los repositorios de los _[starters](https://www.11ty.dev/docs/starter/)_ o en los sitios personales de otras desarrolladoras.
 
