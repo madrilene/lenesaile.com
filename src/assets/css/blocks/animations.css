@@ -38,7 +38,7 @@
   /* avatar animations */
 
   #home-augen {
-    animation: augen2 3.5s ease-in-out infinite;
+    animation: augen-x 3.5s ease-in-out infinite;
     transform-origin: bottom;
   }
 
@@ -48,7 +48,7 @@
   }
 
   #portatil-augen {
-    animation: augen3 2s ease-in infinite alternate;
+    animation: augen-y 2s ease-in infinite alternate;
     transform-origin: bottom;
   }
 
@@ -73,10 +73,6 @@
     animation: ball 2s ease-in infinite alternate;
   }
 
-  #blog-smile {
-    display: none;
-  }
-
   @keyframes ball {
     0% {
       transform: skew(0deg) rotate(0deg);
@@ -98,28 +94,7 @@
     }
   }
 
-  @keyframes augen {
-    0% {
-      transform: rotateZ(0deg);
-    }
-
-    /* Finish changes by here */
-    40% {
-      transform: rotateZ(-0.8deg);
-    }
-
-    /* Finish changes by here */
-    80% {
-      transform: rotateZ(-0.8deg);
-    }
-
-    /* Between 20% and 100%, nothing changes */
-    100% {
-      transform: rotateZ(-0.8deg);
-    }
-  }
-
-  @keyframes augen2 {
+  @keyframes augen-x {
     0% {
       transform: rotateZ(0deg);
     }
@@ -134,7 +109,7 @@
     }
   }
 
-  @keyframes augen3 {
+  @keyframes augen-y {
     0% {
       transform: rotateX(3deg);
     }
