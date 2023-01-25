@@ -13,7 +13,6 @@
   );
   background-size: 50%;
   background-clip: text;
-  -webkit-background-clip: text;
   padding: 0.3rem 0;
 }
 
