@@ -1,5 +1,6 @@
 module.exports = {
   /**
+   * © Andy Bell
    * Returns back some attributes based on wether the
    * link is active or a parent of an active item
    *
