@@ -1,6 +1,6 @@
 {
   "name": "lenesaile.com",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "engines": {
     "node": ">=16.x"
   },
@@ -25,9 +25,9 @@
   },
   "author": "Lene Saile",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.1",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-fetch": "^3.0.0",
-    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-img": "^3.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "gsap": "^3.11.3",
     "markdown-it-deflist": "^2.1.0",
@@ -70,7 +70,7 @@
     "postcss-import": "^15.0.0",
     "postcss-import-ext-glob": "^2.0.1",
     "postcss-js": "^4.0.0",
-    "postcss-nesting": "^10.2.0",
+    "postcss-nesting": "^11.1.0",
     "prettier": "^2.3.2",
     "rimraf": "^4.1.1",
     "sanitize-html": "^2.7.2",

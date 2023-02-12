@@ -69,7 +69,7 @@ Though we are not going to touch most of the folders, this is what your usual we
 
 `pages` is for your static pages like `index.md`, `about.md`, etc., `posts` contains your blog articles, and `projects` is just another collection folder we create to make it worthwhile to get the logic out of eleventy.js.
 
-... Because you _can_ configure all your collections, shortcodes and filters right there. The [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/) is pretty simple and does it like that.
+... Because you _can_ configure all your collections, shortcodes and filters right there. The [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) is pretty simple and does it like that.
 
 {% aside %}If you haven't already, you should head over to the [Eleventy documentation](https://www.11ty.dev/docs/config/) to get aquainted with all the configuration options available.{% endaside %}
 

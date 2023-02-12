@@ -10,7 +10,7 @@
   <!-- Count the total reposts -->
   {% set repostsSize = reposts | webmentionSize %}
   <!-- Set likes as mentions that are `like-of`  -->
-  {% set likes = allMentions | webmentionsByType('like-of') %}
+  {% set likes = allMentions | webmentionsByType(['like-of' ]) %}
   <!-- Count the total likes -->
   {% set likesSize = likes | webmentionSize %}
   <!-- Set replies as mentions that are `in-reply-to`  -->

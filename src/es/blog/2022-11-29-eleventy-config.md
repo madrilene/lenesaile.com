@@ -65,7 +65,7 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 `pages` es para tus páginas estáticas como `index.md`, `about.md`, etc., `posts` contiene los artículos de tu blog, y `projects` es sólo otra carpeta de colección que creamos para que valga la pena sacar la lógica de `eleventy.js`.
 
-... Porque _puedes_ configurar todas tus _collections_, _shortcodes_ y _filters_ ahí mismo. El [starter oficial de Eleventy](https://github.com/11ty/eleventy-base-blog/blob/main/.eleventy.js) es bastante sencillo y lo hace así.
+... Porque _puedes_ configurar todas tus _collections_, _shortcodes_ y _filters_ ahí mismo. El [starter oficial de Eleventy](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) es bastante sencillo y lo hace así.
 
 {% aside %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endaside %}
 
