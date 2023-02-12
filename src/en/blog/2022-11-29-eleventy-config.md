@@ -69,7 +69,7 @@ Though we are not going to touch most of the folders, this is what your usual we
 
 `pages` is for your static pages like `index.md`, `about.md`, etc., `posts` contains your blog articles, and `projects` is just another collection folder we create to make it worthwhile to get the logic out of eleventy.js.
 
-... Because you _can_ configure all your collections, shortcodes and filters right there. The [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/blob/main/.eleventy.js) is pretty simple and does it like that.
+... Because you _can_ configure all your collections, shortcodes and filters right there. The [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/) is pretty simple and does it like that.
 
 {% aside %}If you haven't already, you should head over to the [Eleventy documentation](https://www.11ty.dev/docs/config/) to get aquainted with all the configuration options available.{% endaside %}
 
@@ -79,8 +79,7 @@ I want my projects to grow freely without worrying that my config file is gettin
 
 My preference is to create a new folder in the root directory, called `config`.
 
-Another common approach is adding a folder to `src` called `_11ty`. I found this in [Nicolas Hoizeys](https://nicolas-hoizey.com/)' starter [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). You can name the folder whatever you want and put it wherever you like.
-In this case, I will go on pretending you made a folder called `config` in your root directory.
+Another common approach is adding a folder to `src` called `_11ty`. I found this in [Nicolas Hoizeys](https://nicolas-hoizey.com/)' starter [pack11ty](https://github.com/nhoizey/pack11ty/tree/master/src). You can name the folder whatever you want and put it wherever you like. In this case, I will go on pretending you made a folder called `config` in your root directory.
 
 We don't need to tell Eleventy about the existence of this folder. We just use it export our return values and import them into `.eleventy.js`.
 
