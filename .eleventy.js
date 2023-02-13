@@ -167,17 +167,17 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Passthrough copies ---------------------
 
-  eleventyConfig.addPassthroughCopy('src/assets/fonts/');
-  eleventyConfig.addPassthroughCopy('src/assets/sounds/');
-
+  // keep directory
   [
     'src/assets/images/avatar.jpg',
     'src/assets/images/image-placeholder.png',
     'src/assets/images/opengraph-default.jpg',
-    'src/assets/images/svg/'
+    'src/assets/images/svg/',
+    'src/assets/fonts/',
+    'src/assets/sounds/'
   ].forEach(path => eleventyConfig.addPassthroughCopy(path));
 
-  // all social icons and manifest to root directory
+  // social icons and manifest to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
   });
