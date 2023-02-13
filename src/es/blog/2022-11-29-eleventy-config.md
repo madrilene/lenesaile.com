@@ -65,7 +65,7 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 `pages` es para tus páginas estáticas como `index.md`, `about.md`, etc., `posts` contiene los artículos de tu blog, y `projects` es sólo otra carpeta de colección que creamos para que valga la pena sacar la lógica de `eleventy.js`.
 
-... Porque _puedes_ configurar todas tus _collections_, _shortcodes_ y _filters_ ahí mismo. El [starter oficial de Eleventy](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) es bastante sencillo y lo hace así.
+... Porque _puedes_ configurar todas tus _collections_, _shortcodes_ y _filters_ ahí mismo.
 
 {% aside %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endaside %}
 
@@ -308,6 +308,8 @@ Por cierto, respecto a los favicons, recomiendo leer [este artículo de Andrey S
 ## Wrap up
 
 Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). En el repositorio de la página web personal de Miriam Suzanne se puede encontrar un magnífico ejemplo de un [Eleventy config perfectamente ordenado](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+
+Siempre merece la pena echar un vistazo al [arranque oficial de Eleventy](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js), porque allí se pueden encontrar ideas de vanguardia.
 
 En general, siempre es una gran idea bucear en los repositorios de los _[starters](https://www.11ty.dev/docs/starter/)_ o en los sitios personales de otras desarrolladoras.
 

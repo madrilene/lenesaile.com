@@ -69,7 +69,7 @@ Though we are not going to touch most of the folders, this is what your usual we
 
 `pages` is for your static pages like `index.md`, `about.md`, etc., `posts` contains your blog articles, and `projects` is just another collection folder we create to make it worthwhile to get the logic out of eleventy.js.
 
-... Because you _can_ configure all your collections, shortcodes and filters right there. The [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) is pretty simple and does it like that.
+... Because you _can_ configure all your collections, shortcodes and filters right there.
 
 {% aside %}If you haven't already, you should head over to the [Eleventy documentation](https://www.11ty.dev/docs/config/) to get aquainted with all the configuration options available.{% endaside %}
 
@@ -312,6 +312,8 @@ By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](ht
 ## Wrap up
 
 This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). A wonderful example of a tidy Eleventy config file can be found in the [repository of Miriam Suzanne's personal website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+
+A look at the [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) is always worthwhile, because there you can find cutting edge ideas from Zach, the creator of Eleventy.
 
 Generally, it is always a great idea to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 

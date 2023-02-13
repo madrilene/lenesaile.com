@@ -66,7 +66,7 @@ Obwohl wir die meisten Ordner nicht weiter besprechen, sieht ein Website-Projekt
 
 `pages` ist für deine statischen Seiten wie `index.md`, `about.md`, usw., `posts` enthält deine Blog-Artikel, und `projects` ist nur ein weiterer collections-Ordner, damit es sich überhaupt lohnt, diese Logik aus `eleventy.js` herauszuholen.
 
-... Denn dort _kannst_ du alle deine _collections_, _shortcodes_ und _filters_ konfigurieren. Der [offizielle Eleventy-Starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) ist sehr einfach gestaltet und macht es genau so.
+... Denn dort _kannst_ du alle deine _collections_, _shortcodes_ und _filters_ direkt konfigurieren.
 
 {% aside %}Du solltest dir unbedingt die [Eleventy-Dokumentation](https://www.11ty.dev/docs/config/) durchlesen, um dich mit allen Konfigurationsmöglichkeiten vertraut zu machen.{% endaside %}
 
@@ -310,6 +310,8 @@ eleventyConfig.addPassthroughCopy({
 ## Wrap up
 
 So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen. Ein wunderbares Beispiel für eine aufgeräumte Eleventy Konfigurationsdatei findet ihr im [Repository von Miriam Suzannes Website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+
+Ein Blick in den [offiziellen Eleventy-Starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) lohnt sich immer, denn dort sind Sicherheit _cutting edge_ Ideen zu finden.
 
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 
