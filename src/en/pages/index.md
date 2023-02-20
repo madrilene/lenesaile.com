@@ -28,7 +28,7 @@ cta:
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
-I make sure that a website is ==fast and loads only what is necessary==. The visitor should be able to find his way around immediately and the website should be ==accessible and usable for all people==. I am a humble learner in this field and adjust my knowledge on a daily basis.
+I make sure that a website is ==fast and loads only what is necessary==. The visitors should be able to find their way around immediately and the website should be ==accessible and usable for all people==. I am a humble learner in this field and adjust my knowledge on a daily basis.
 
 I do not create websites based on premade templates/themes and I do not use Website Builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
 
