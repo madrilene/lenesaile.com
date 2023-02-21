@@ -10,7 +10,7 @@
   <!-- Count the total reposts -->
   {% set repostsSize = reposts | webmentionSize %}
   <!-- Set likes as mentions that are `like-of`  -->
-  {% set likes = allMentions | webmentionsByType(['like-of' ]) %}
+  {% set likes = allMentions | webmentionsByType('like-of') %}
   <!-- Count the total likes -->
   {% set likesSize = likes | webmentionSize %}
   <!-- Set replies as mentions that are `in-reply-to`  -->
@@ -22,17 +22,23 @@
   <!-- Count the total replies -->
   {% set mentionsSize = mentions | webmentionSize %}
 
-  <!-- if likes -->
-  {% if likesSize > 0 %}
+  <!-- Set replies as mentions that are `in-reply-to`  -->
+  {% set combinedMentions = allMentions | sortWebmentions %}
+  <!-- Count the total replies -->
+  {% set combinedMentionsSize = combinedMentions | webmentionSize %}
+
+  <!-- if reactions -->
+  {% if combinedMentionsSize > 0 %}
 
   <div class="flow">
     <h3>
-      {{ likesSize }}
-      Like{% if likesSize != 1 %}s{% endif %}
+      {{ combinedMentionsSize }} Reaction{% if combinedMentionsSize != 1 %}s{% endif %}
+      <span>(Likes, reposts, links and comments)</span>
     </h3>
 
     <p>
-      {% for webmention in likes %} {% if webmention.url != "" %}
+      {% for webmention in allMentions %} {% if webmention.author.name != "Lene Saile" %}
+      {% if webmention.url != "" %}
       <a
         class="h-card u-url link-u-exempt"
         href="{{ webmention.url }}"
@@ -56,78 +62,7 @@
         />
         {% endif %} {% if webmention.url != "" %}
       </a>
-      {% endif %} {% endfor %}
-    </p>
-  </div>
-  {% endif %} {% if repostsSize > 0 %}
-  <div class="flow">
-    <h3>{{ repostsSize }} Repost{% if repostsSize != 1 %}s{% endif %}</h3>
-
-    <p>
-      {% for webmention in reposts %} {% if webmention.url != "" %}
-      <a
-        class="h-card u-url link-u-exempt"
-        href="{{ webmention.url }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {% endif %} {% if webmention.author.photo %}
-        <img
-          src="{{ webmention.author.photo }}"
-          alt="{{ webmention.author.name }}"
-          width="48"
-          height="48"
-          loading="lazy"
-        />
-        {% else %}
-        <img
-          src="{{ meta.webmentions.fallbackAvatar | url }}"
-          alt=""
-          width="48"
-          height="48"
-        />
-        {% endif %} {% if webmention.url != "" %}
-      </a>
-      {% endif %} {% endfor %}
-    </p>
-  </div>
-  {% endif %}
-
-  <!-- mentions from websites -->
-  {% if mentionsSize > 0 %}
-  <div class="flow">
-    <h3>
-      {{ mentionsSize }}
-      Mention{% if mentionsSize != 1 %}s{% endif %}/Response{% if mentionsSize != 1 %}s{%
-      endif %}
-    </h3>
-
-    <p>
-      {% for webmention in mentions %} {% if webmention.url != "" %}
-      <a
-        class="h-card u-url link-u-exempt"
-        href="{{ webmention.url }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {% endif %} {% if webmention.author.photo %}
-        <img
-          src="{{ webmention.author.photo }}"
-          alt="{{ webmention.author.name }}"
-          width="48"
-          height="48"
-          loading="lazy"
-        />
-        {% else %}
-        <img
-          src="{{ meta.webmentions.fallbackAvatar | url }}"
-          alt=""
-          width="48"
-          height="48"
-        />
-        {% endif %} {% if webmention.url != "" %}
-      </a>
-      {% endif %} {% endfor %}
+      {% endif %} {% endif %} {% endfor %}
     </p>
   </div>
   {% endif %}
@@ -136,9 +71,7 @@
   {% if repliesSize > 0 %}
 
   <div class="webmention-replies flow">
-    <h3>
-      {{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
-    </h3>
+    <h3>{% if repliesSize == "1" %}Comment{% else %}Comments{% endif %}</h3>
 
     {% for webmention in replies %} {% include "partials/webmention.njk" %} {% endfor %}
   </div>

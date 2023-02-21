@@ -35,10 +35,12 @@
   word-break: break-all;
 }
 
-.webmention .webmention-text > a {
+.webmention .webmention-text > a,
+.webmentions h3 span {
   font-size: var(--size-step-0);
   opacity: 0.8;
   margin-inline: 0.2rem;
+  font-weight: normal;
 }
 
 .webmentions input[type='url'] {

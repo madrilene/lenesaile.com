@@ -4,6 +4,7 @@ description: 'En 2007, descubrí WordPress. Nunca dejó de ser una gran solució
 category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
+lastEdit: 2023-02-21
 image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'El logo de WordPress con algo de código php en el fondo.'
 youtube: true
@@ -132,7 +133,7 @@ Pero al final, lo que realmente importa es la calidad del producto.
 
 Cuando descubrí WordPress, me ofreció una idea de lo que iba a significar la "experiencia del desarrollador" en el futuro. Hoy en día, más del 40% de todos las páginas web dependen de WordPress[^2].
 
-Es enorme y tiene mucha responsabilidad. No puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos hoy.
+Es enorme y tiene mucha responsabilidad. No puede hacer todo de manera diferente y mejor en la próxima versión, al igual que los meta-frameworks modernos como [Astro](https://astro.build/). Y como WordPress tiene que moverse tan lentamente, una pequeña fracción apenas está llegando al mundo de JavaScript y React que conocemos (y rechazamos 😛).
 
 ### ¿Qué es WordPress para mí?
 

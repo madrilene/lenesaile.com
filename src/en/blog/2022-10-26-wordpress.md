@@ -4,6 +4,7 @@ description: 'Back in 2007, I discovered WordPress. It never stopped being a gre
 category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
+lastEdit: 2023-02-21
 image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'The WordPress logo with some php code in the background.'
 youtube: true
@@ -136,7 +137,7 @@ In the end, what really matters is the quality of the product.
 
 Back when I discovered WordPress, it offered me an idea of what Developer Experience would mean in the future. Today, more than 40% of all websites depend on WordPress[^2].
 
-It's a huge construct with a lot of responsibility that can't do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know today.
+It's a huge construct with a lot of responsibility that can't do everything differently and better in the next version, like modern meta-frameworks such as [Astro](https://astro.build/). And because WordPress has to move so slowly, a small fraction of it is only just arriving in the JavaScript and React world we know (and loathe 😛) today.
 
 ### What is WordPress to me?
 

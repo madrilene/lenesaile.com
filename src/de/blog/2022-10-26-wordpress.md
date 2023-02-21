@@ -4,6 +4,7 @@ description: '2007 entdeckte ich WordPress. Es war immer eine großartige Lösun
 category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
+lastEdit: 2023-02-21
 image: './src/assets/images/blog/wordpress-notes.jpg'
 alt: 'Das WordPress-Logo mit etwas php-Code im Hintergrund'
 youtube: true
@@ -134,7 +135,7 @@ Was am Ende aber wirklich zählt, ist die Qualität des Produkts.
 
 Damals, als ich WordPress entdeckte, bot es mir eine Idee davon, was Developer Experience zukünftig bedeuten würde. Heute hängen mehr als 40% aller Webseiten von WordPress ab[^2].
 
-Es ist ein riesiges Konstrukt mit großer Verantwortung, das nicht wie moderne meta-frameworks wie [Astro](https://astro.build/) in der nächsten Version einfach alles nochmal anders und besser machen kann. Und weil WordPress sich so langsam bewegen muss, ist ein kleiner Teil davon gerade erst in der JavaScript- und React-Welt angekommen, die wir heute kennen.
+Es ist ein riesiges Konstrukt mit großer Verantwortung, das nicht wie moderne meta-frameworks wie [Astro](https://astro.build/) in der nächsten Version einfach alles nochmal anders und besser machen kann. Und weil WordPress sich so langsam bewegen muss, ist ein kleiner Teil davon gerade erst in der JavaScript- und React-Welt angekommen, die wir heute kennen (und ablehnen 😛).
 
 ### Was ist WordPress für mich?
 
