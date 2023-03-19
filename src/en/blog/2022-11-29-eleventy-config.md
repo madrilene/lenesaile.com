@@ -4,8 +4,9 @@ description: 'Eleventy lets you create a file called eleventy.js to configure th
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2022-12-13
+lastEdit: 2023-03-19
 redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
+youtube: true
 ---
 
 [Eleventy](https://www.11ty.dev/) comes with basic defaults already set up for you. That means you don't have to do anything to start working: the output folder defaults to `_site`, and Eleventy looks for your source files in the root directory.
@@ -318,3 +319,9 @@ A look at the [official Eleventy starter](https://github.com/11ty/eleventy-base-
 Generally, it is always a great idea to dive deeply into the repositories of [starter projects](https://www.11ty.dev/docs/starter/) or personal sites of other developers.
 
 There are so many great ideas out there!
+
+## Eleventy Meetup
+
+I attended Eleventy Meetup Ep. 12 on March 16, 2023 and gave a short talk based on this article!
+
+{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized ' %}

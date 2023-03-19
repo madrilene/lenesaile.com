@@ -185,6 +185,8 @@ module.exports = eleventyConfig => {
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', afterBuild);
 
+  // testing js in frontmatter
+
   return {
     dir: {
       input: 'src',

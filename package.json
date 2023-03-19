@@ -1,6 +1,6 @@
 {
   "name": "lenesaile.com",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "engines": {
     "node": ">=16.x"
   },
@@ -26,15 +26,14 @@
   "author": "Lene Saile",
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-fetch": "^3.0.0",
+    "@11ty/eleventy-fetch": "^4.0.0",
     "@11ty/eleventy-img": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "gsap": "^3.11.3",
-    "markdown-it-deflist": "^2.1.0",
     "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",
@@ -54,6 +53,7 @@
     "markdown-it": "^13.0.1",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-anchor": "^8.6.5",
+    "markdown-it-deflist": "^2.1.0",
     "markdown-it-emoji": "^2.0.2",
     "markdown-it-footnote": "^3.0.3",
     "markdown-it-link-attributes": "^4.0.1",
@@ -75,7 +75,7 @@
     "rimraf": "^4.1.1",
     "sanitize-html": "^2.7.2",
     "slugify": "^1.6.5",
-    "speedlify-score": "^2.0.2",
+    "speedlify-score": "^3.0.0",
     "terser": "^5.16.1"
   }
 }
