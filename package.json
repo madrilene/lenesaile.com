@@ -1,6 +1,6 @@
 {
   "name": "lenesaile.com",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "engines": {
     "node": ">=16.x"
   },
@@ -37,9 +37,9 @@
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",
-    "concurrently": "^7.4.0",
+    "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.1.7",
+    "cssnano": "^6.0.0",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
     "esbuild": "^0.17.3",
@@ -72,7 +72,7 @@
     "postcss-js": "^4.0.0",
     "postcss-nesting": "^11.1.0",
     "prettier": "^2.3.2",
-    "rimraf": "^4.1.1",
+    "rimraf": "^5.0.0",
     "sanitize-html": "^2.7.2",
     "slugify": "^1.6.5",
     "speedlify-score": "^3.0.0",

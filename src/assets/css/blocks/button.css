@@ -1,36 +1,15 @@
-/* A blank block because there is *always* a button */
-
 .button {
   color: var(--color-text);
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  border: 3px solid var(--color-text);
-  border-radius: var(--border-radius);
-  margin-right: 0.5em;
-  padding: var(--space-xs) var(--space-m-l);
-  transform-style: preserve-3d;
   background-color: var(--color-bg);
+  border: 3px solid var(--color-text);
+  padding: var(--space-xs) var(--space-m-l);
+  line-height: 3.5;
+  box-shadow: 6px 6px 0 0 var(--color-text);
+  transition: all 0.1s ease;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.button::before {
-  background-color: var(--button-color, var(--color-primary));
-  border: 3px solid var(--button-color, var(--color-primary));
-  border-radius: var(--border-radius);
-}
-
-.button:hover::before {
-  transform: translate3d(-0.1em, -0.1em, -1px);
-}
-.button::before {
-  width: 100%;
-  height: 100%;
-  content: '';
-  left: 0;
-  top: 0;
-  transform: translate3d(0.1em, 0.1em, -1px);
-  position: absolute;
-  transition: transform 0.2s ease-in-out;
-  box-sizing: content-box;
+.button:hover {
+  box-shadow: 0px 0px 0 0 var(--color-text);
 }
