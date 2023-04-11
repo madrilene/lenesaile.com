@@ -7,7 +7,7 @@ date: 2022-11-19
 cta:
   title: 'You want a WordPress site?'
   desktop: "I've learned a thing or two since 2008. I still make them WordPress sites quite simple and long-lasting though."
-  lead: "I'm a (niche) [WordPress expert on Codeable](https://www.codeable.io/developers/lene-saile/). If you want a custom made, secure and fast WordPress site, consider working with me."
+  lead: "I'm working with WordPress using the [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) platform. If you want a custom made, secure and fast WordPress site, consider working with me."
 ---
 
 A funny thing happened today. The very first website I made as a freelancer, in late 2008, caught up with me again. I haven't seen or heard from it in 14 years, and now it's back.

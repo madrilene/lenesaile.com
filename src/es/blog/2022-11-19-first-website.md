@@ -8,7 +8,7 @@ fecha: 2022-11-19
 cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son bastante sencillas y duraderas.'
-  lead: 'Soy [experta en WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página de WordPress hecho a medida, seguro y con buen rendimiento, considera trabajar conmigo.'
+  lead: 'Trabajo con WordPress utilizando la plataforma [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033). Si quieres una página de WordPress hecho a medida, seguro y con buen rendimiento, considera trabajar conmigo.'
 redirectFrom: ['/es/blog/mi-primer-pagina-web/']
 ---
 

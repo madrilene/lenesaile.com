@@ -7,7 +7,7 @@ date: 2022-11-19
 cta:
   title: 'Willst du eine WordPress-Seite?'
   desktop: 'Ich habe seit 2008 einiges dazugelernt. Ich mache allerings immer noch WordPress-Seiten die recht simpel und langlebig sind.'
-  lead: 'Ich bin [WordPress-Expertin bei Codeable](https://www.codeable.io/developers/lene-saile/). Wenn du eine handgemachte, sichere und sehr schnelle WordPress-Website möchtest, kannst du mich jederzeit anschreiben!'
+  lead: Ich arbeite mir WordPress über die [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) Plattform. Wenn du eine handgemachte, sichere und sehr schnelle WordPress-Website möchtest, kannst du mich jederzeit anschreiben!'
 ---
 
 Heute ist etwas Lustiges passiert. Die allererste Website, die ich Ende 2008 als Selbstständige erstellt habe, hat mich wieder eingeholt. Seit 14 Jahren habe ich nichts mehr von ihr gesehen oder gehört, und nun ist sie wieder da.

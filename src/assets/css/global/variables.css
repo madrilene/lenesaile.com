@@ -53,6 +53,7 @@
     --color-code-quaternary: hsl(341, 57%, 50%);
   }
 }
+
 /* Dark Color Scheme (Override) */
 :root[data-theme='dark'] {
   --color-bg: var(--color-dark);

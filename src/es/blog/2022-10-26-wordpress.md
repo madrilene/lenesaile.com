@@ -11,7 +11,7 @@ youtube: true
 cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'Llevo muchos años trabajando con WordPress. Sin embargo, probablemente no podré ayudarte con temas premium, constructores de páginas o problemas de plugins.'
-  lead: 'Soy [experta de WordPress en Codeable](https://www.codeable.io/developers/lene-saile/). Si quieres una página web con WordPress hecho a medida, segura y rápida, ponte en contacto conmigo.'
+  lead: 'Trabajo con WordPress utilizando la plataforma [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033). Si quieres una página web con WordPress hecho a medida, segura y rápida, ponte en contacto conmigo.'
 ---
 
 En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https://www.joomla.org/) y [TYPO3](https://typo3.org/) (y odiarlo), descubrí [WordPress](https://wordpress.org/). Fue una revelación.
