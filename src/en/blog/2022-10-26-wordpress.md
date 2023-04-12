@@ -10,8 +10,8 @@ alt: 'The WordPress logo with some php code in the background.'
 youtube: true
 cta:
   title: 'You want a WordPress site?'
-  desktop: "I have been working with WordPress for many years. I probably won't be able to help you with premium themes, page builders or plugin issues though."
-  lead: "I'm working with WordPress using the [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) platform. If you want a custom made, secure and fast WordPress site, consider working with me."
+  desktop: "I have been working with WordPress for many years. I probably won't be able to (don't want to 😶) help with premium themes, page builders or plugin issues."
+  lead: "I'm working with WordPress using the [Codeable platform](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033)."
 ---
 
 Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO3](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation.

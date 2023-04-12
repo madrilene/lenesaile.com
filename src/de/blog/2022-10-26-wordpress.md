@@ -10,8 +10,8 @@ alt: 'Das WordPress-Logo mit etwas php-Code im Hintergrund'
 youtube: true
 cta:
   title: 'Möchtest du eine WordPress-Seite?'
-  desktop: 'Ich arbeite schon seit vielen Jahren mit WordPress. Bei Premium-Themes, Page-Buildern oder Plugin-Problemen kann ich dir aber wahrscheinlich nicht helfen. '
-  lead: 'Ich arbeite mir WordPress über die [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) Plattform. Wenn du eine handgemachte, sichere und sehr schnelle WordPress-Website möchtest, kannst du mich gerne anschreiben!'
+  desktop: 'Ich arbeite schon seit vielen Jahren mit WordPress. Mit Premium-Themes, Page-Buildern oder Plugin-Problemen kann (möchte 😇) ich nicht helfen.'
+  lead: 'Ich arbeite mir WordPress über die [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) Plattform. '
 ---
 
 2007 war ich auf der Suche nach einem CMS, das ich verstehen konnte, um mit ihm eigene Webseiten zu erstellen. Nachdem ich [Joomla](https://www.joomla.org/) und [TYPO3](https://typo3.org/) ausprobiert hatte (und es hasste), entdeckte ich [WordPress](https://wordpress.org/). Es war eine Offenbarung.

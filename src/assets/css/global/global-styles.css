@@ -74,6 +74,8 @@ svg {
 
 a {
   color: currentcolor;
+  text-decoration-color: currentcolor;
+  text-decoration-thickness: 0.07em;
 }
 
 a:hover {
@@ -95,7 +97,8 @@ main:focus {
   outline: none;
 }
 
-article [href^='http']:not([href*='lenesaile.com'])::after {
+/* article [href^='http']:not([href*='lenesaile.com'])::after {
+  content: '(external link)';
   display: inline-block;
   width: 1em;
   height: 1em;
@@ -103,12 +106,10 @@ article [href^='http']:not([href*='lenesaile.com'])::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60% auto;
-  /* alternative text rules */
-  content: '(external link)';
   overflow: hidden;
   white-space: nowrap;
-  text-indent: 1em; /* the width of the icon */
-}
+  text-indent: 1em;
+} */
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
