@@ -8,17 +8,17 @@ lead: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. I
 
 tools:
   items:
-    - title: 'Jamstack'
-      icon: 'jamstack.svg'
-      summary: 'Jamstack macht das Web schneller, sicherer und einfacher zu skalieren. Es gibt mir als Entwicklerin unbegrenzte Freiheit und ich kann mit den besten Tools für das Projekt arbeiten.'
+    - title: 'Consultancy'
+      icon: 'chat.svg'
+      summary: 'Ich entwickle gemeinsam mit dir visuell ansprechende Websites, die auf dich persönlich zugeschnitten sind und deinen Besuchern einen stimmigen Eindruck von dir und deinem Angebot vermitteln.'
       link: ''
-    - title: 'WordPress'
-      icon: 'wordpress.svg'
-      summary: 'Ich entwickle seit vielen Jahren WordPress-Themes. Ich biete auch die Übertragung bestehender WordPress-Umgebungen zur Jamstack-Architektur an, optional mit WordPress als Headless CMS.'
+    - title: 'Eleventy'
+      icon: 'code.svg'
+      summary: 'Eleventy hilft mir dabei Websites auf der Grundlage von semantischem HTML, CSS und JavaScript zu erstellen. Es ist mein Lieblingswerkzeug für alle Arten von Projekten.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'
-      summary: 'Ich gestalte visuell spannende Erlebnisse, Websites, die Spaß machen und einfach zu bedienen sind.'
+      summary: 'Ich habe mich auf kreatives Webdesign spezialisiert und gestalte visuell spannende Erlebnisse: Websites, die Spaß machen und einfach zu bedienen sind.'
       link:
     - title: 'Wartung'
       icon: 'maintenance.svg'

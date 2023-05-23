@@ -83,7 +83,7 @@ nav.navbar a {
   }
 
   nav.navbar {
-    margin-right: var(--space-l);
+    margin-inline-end: var(--space-l);
   }
 
   nav.navbar a {

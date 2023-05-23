@@ -4,7 +4,7 @@ details {
 }
 
 details:is([open]) summary {
-  margin-bottom: var(--space-xs-s);
+  margin-block-end: var(--space-xs-s);
 }
 
 summary {

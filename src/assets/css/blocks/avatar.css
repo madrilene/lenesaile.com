@@ -31,11 +31,11 @@ svg.avatar-blog {
 }
 
 .avatar-content {
-  padding-top: var(--space-2xl);
+  padding-block-start: var(--space-2xl);
 }
 
 .avatar-content-reverse__inner {
-  padding-left: var(--space-3xl);
+  padding-inline-start: var(--space-3xl);
 }
 
 @media (min-width: 24em) {
@@ -54,7 +54,7 @@ svg.avatar-blog {
   }
 
   .avatar-content-blog__inner {
-    padding-right: var(--space-4xl);
+    padding-inline-end: var(--space-4xl);
   }
 }
 
@@ -80,6 +80,6 @@ svg.avatar-blog {
   }
 
   .avatar-content__inner {
-    padding-right: var(--space-4xl);
+    padding-inline-end: var(--space-4xl);
   }
 }

@@ -55,7 +55,7 @@
 }
 
 .webmentions .button {
-  margin-right: 0;
+  margin-inline-end: 0;
   padding: 0.1rem var(--space-m-l);
   line-height: 1.3;
 }
@@ -68,7 +68,7 @@
 
   .webmention-replies .webmention__meta time {
     display: inline;
-    margin-top: 0;
+    margin-block-start: 0;
     text-align: right;
   }
 }

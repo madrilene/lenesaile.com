@@ -90,7 +90,7 @@ a:hover {
 }
 
 :target {
-  scroll-margin-top: 2ex;
+  scroll-margin-block-start: 2ex;
 }
 
 main:focus {
@@ -136,7 +136,7 @@ blockquote {
 }
 
 blockquote > * + * {
-  margin-top: var(--space-m-l);
+  margin-block-start: var(--space-m-l);
 }
 
 blockquote :last-child {

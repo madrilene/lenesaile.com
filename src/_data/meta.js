@@ -60,6 +60,7 @@ module.exports = {
     siteName: 'Lene Saile',
     siteDescription:
       'Frontend developer based in Madrid. I enjoy working with Jamstack, vanilla Javascript and modern CSS. I do my very best to improve in terms of accessibility and performance.',
+    shortDescription: 'Frontend developer and designer based in Madrid.',
     back: 'Back',
     skipText: 'Jump to main content',
     toc: 'Table of contents',

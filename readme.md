@@ -61,8 +61,6 @@ Pablo is the creator of the avatars of this website. His hand-drawn illustration
 
 I'm using Ekrems hand drawn icon set.
 
-- http://ekremelmas.com/hand-drawn-icons/
-
 **Stephanie Eckles**
 
 Stephanie provides a lot of resources for Eleventy and modern CSS.

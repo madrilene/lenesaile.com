@@ -72,6 +72,7 @@ const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {EleventyI18nPlugin} = require('@11ty/eleventy');
+const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 
 // module import events
 const {afterBuild} = require('./config/events/index.js');
@@ -164,6 +165,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: 'en'
   });
+  eleventyConfig.addPlugin(bundlerPlugin);
 
   // 	--------------------- Passthrough copies ---------------------
 

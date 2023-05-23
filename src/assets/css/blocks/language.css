@@ -21,7 +21,7 @@
 }
 
 .language-select-nav {
-  margin-top: 0;
+  margin-block-start: 0;
   right: 30px;
   position: absolute;
   top: 110px;
@@ -37,7 +37,7 @@
   font-size: var(--size-step-1);
   height: 0;
   justify-content: center;
-  margin-top: -5px;
+  margin-block-start: -5px;
   opacity: 0;
   padding: 0;
   text-decoration: none;

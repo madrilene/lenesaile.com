@@ -45,7 +45,7 @@ if (!supportMasonry) {
           grid.ncol = ncol;
 
           /* revert to initial positioning, no margin */
-          grid.items.forEach(c => c._el.style.removeProperty('margin-top'));
+          grid.items.forEach(c => c._el.style.removeProperty('margin-block-start'));
 
           /* if we have more than one column */
           if (grid.ncol > 1) {
