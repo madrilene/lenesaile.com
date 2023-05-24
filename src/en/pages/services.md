@@ -7,17 +7,17 @@ layout: services
 lead: 'I mainly concentrate on developing things for the web. My approach is semantic HTML, some CSS, and a dash of JavaScript for flavor. I place value on performance, accessibility, simplicity and long term support. Also: websites should be fun!'
 tools:
   items:
-    - title: 'Consultancy'
+    - title: 'Consulting'
       icon: 'chat.svg'
       summary: 'I offer expert guidance to create visually appealing websites, tailored to you personally, giving your visitors a coherent impression of you and what you offer.'
       link: ''
-    - title: 'Eleventy'
+    - title: 'Development'
       icon: 'code.svg'
-      summary: 'Eleventy helps me to create websites based on semantic HTML, CSS and JavaScript without the need for databases or server-side languages. It is my favorite tool for all types of projects.'
+      summary: 'Eleventy (11ty) helps me to create websites based on semantic HTML, CSS and JavaScript without the need for databases or server-side languages. It is my favorite tool for all types of projects.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'
-      summary: 'I specialize in creative web design and development, creating visually stunning experiences: Elegant, responsive websites that are fun and easy to use.'
+      summary: 'I specialize in creative web design, creating visually stunning experiences: Elegant, responsive websites that are fun and easy to use.'
       link:
     - title: 'Maintenance'
       icon: 'maintenance.svg'

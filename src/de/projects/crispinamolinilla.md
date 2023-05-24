@@ -4,7 +4,7 @@ date: 2021-02-01
 key: 'crispinaymolinilla'
 technologies:
   - Jamstack (Eleventy)
-  - Custom design
+  - Design
   - Tailwind CSS
   - Alpine.js & vanilla JS
 clientURL: https://www.crispinaymolinilla.com

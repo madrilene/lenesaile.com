@@ -8,17 +8,17 @@ lead: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. I
 
 tools:
   items:
-    - title: 'Consultancy'
+    - title: 'Consulting'
       icon: 'chat.svg'
       summary: 'Ich entwickle gemeinsam mit dir visuell ansprechende Websites, die auf dich persönlich zugeschnitten sind und deinen Besuchern einen stimmigen Eindruck von dir und deinem Angebot vermitteln.'
       link: ''
-    - title: 'Eleventy'
+    - title: 'Development'
       icon: 'code.svg'
-      summary: 'Eleventy hilft mir dabei Websites auf der Grundlage von semantischem HTML, CSS und JavaScript zu erstellen. Es ist mein Lieblingswerkzeug für alle Arten von Projekten.'
+      summary: 'Eleventy (11ty) hilft mir dabei Websites auf der Grundlage von semantischem HTML, CSS und JavaScript zu erstellen. Es ist mein Lieblingswerkzeug für alle Arten von Projekten.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'
-      summary: 'Ich habe mich auf kreatives Webdesign spezialisiert und gestalte visuell spannende Erlebnisse: Websites, die Spaß machen und einfach zu bedienen sind.'
+      summary: 'Ich habe mich auf kreatives Webdesign spezialisiert. Visuell spannende Websites, die Spaß machen, und einfach zu bedienen sind.'
       link:
     - title: 'Wartung'
       icon: 'maintenance.svg'

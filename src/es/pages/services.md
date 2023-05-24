@@ -8,13 +8,13 @@ layout: services
 lead: 'Me dedico principalmente a desarrollar cosas para la web. Mi enfoque es HTML semántico, algo de CSS y una pizca de JavaScript para darle sabor. Doy valor al rendimiento, la accesibilidad, la simplicidad y el soporte a largo plazo.'
 tools:
   items:
-    - title: 'Consultancy'
+    - title: 'Consulting'
       icon: 'chat.svg'
       summary: 'Ofrezco asesoramiento experto para crear sitios web visualmente atrayentes, adaptados a ti personalmente, que den a tus visitantes una impresión coherente de ti y de lo que ofreces.'
       link: ''
-    - title: 'Eleventy'
+    - title: 'Desarrollo'
       icon: 'code.svg'
-      summary: 'Eleventy me ayuda a crear sitios web basados en HTML semántico, CSS y JavaScript sin necesidad de bases de datos ni lenguajes del lado del servidor. Es mi herramienta favorita para todo tipo de proyectos.'
+      summary: 'Eleventy (11ty) me ayuda a crear sitios web basados en HTML semántico, CSS y JavaScript sin necesidad de bases de datos ni lenguajes del lado del servidor. Es mi herramienta favorita para todo tipo de proyectos.'
       link: ''
     - title: 'Diseño'
       icon: 'design.svg'

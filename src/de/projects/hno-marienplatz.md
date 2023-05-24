@@ -4,7 +4,7 @@ date: 2021-08-01
 key: 'hnomarienplatz'
 technologies:
   - Jamstack (Eleventy)
-  - Custom design
+  - Design
   - Tailwind CSS
   - Alpine.js & vanilla JS
 clientURL: https://www.hno-marienplatz.de

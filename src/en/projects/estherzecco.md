@@ -4,9 +4,8 @@ date: 2023-04-01
 key: 'estherzecco'
 technologies:
   - Jamstack (Eleventy)
-  - Custom design
-  - Custom CSS
-  - Vanilla JS
+  - Design
+  - Custom CSS & JS
 clientURL: https://www.estherzecco.com
 image: './src/assets/images/projects/proyecto-estherzecco.jpg'
 alt: 'screenshot of the website estherzecco.com'

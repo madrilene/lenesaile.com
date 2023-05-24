@@ -4,11 +4,10 @@ date: 2023-04-01
 key: 'estherzecco'
 technologies:
   - Jamstack (Eleventy)
-  - Custom design
-  - Custom CSS
-  - Vanilla JS
+  - CDesign
+  - Custom CSS & JS
 clientURL: https://www.estherzecco.com
 image: './src/assets/images/projects/proyecto-estherzecco.jpg'
 alt: 'screenshot of the website estherzecco.com'
-lead: 'Esther Zecco is a singer/songwriter from Segovia with influences from American folk and country. We worked together on the concept of a very modern and simple website where she can present and sell her CDs (through Stripe Checkout), show her upcoming concerts and share updates and thoughts with her fans through the blog. The page is based on my Eleventy starter "Eleventy Excellent".'
+lead: 'Esther Zecco ist eine Singer/Songwriterin aus Segovia mit Einflüssen aus dem amerikanischen Folk und Country. Wir haben zusammen an dem Konzept einer sehr modernen und einfachen Website gearbeitet, auf der sie ihre CDs präsentieren und verkaufen kann (über Stripe Checkout), ihre bevorstehenden Konzerte ankündigt und auf ihre Fans über den Blog auf dem Laufenden hält. Die Seite basiert auf meinem Eleventy-Starter "Eleventy Excellent".'
 ---

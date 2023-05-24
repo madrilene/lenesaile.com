@@ -4,9 +4,9 @@ date: 2021-12-01
 key: 'fundaciongoethe'
 technologies:
   - Jamstack (Eleventy)
-  - Custom design
+  - Design
   - Tailwind CSS
-  - Custom vanilla JS
+  - Vanilla JS
 clientURL: https://www.fundaciongoethe.org
 image: './src/assets/images/projects/proyecto-fundaciongoethe.jpg'
 alt: 'screenshot of the website fundaciongoethe.org'

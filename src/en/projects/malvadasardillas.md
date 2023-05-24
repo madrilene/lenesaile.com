@@ -4,7 +4,7 @@ date: 2021-03-01
 key: 'malvadasardillas'
 technologies:
   - WordPress (Timber)
-  - Custom design
+  - Design
   - Tailwind CSS
   - Alpine.js & vanilla JS
 clientURL: https://www.malvadasardillas.com

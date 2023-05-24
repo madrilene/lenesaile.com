@@ -4,7 +4,7 @@ date: 2021-12-01
 key: 'albertoballesteros'
 technologies:
   - Jamstack (Eleventy, Stripe)
-  - Custom design
+  - Design
   - Tailwind CSS
   - Alpine.js & vanilla JS
 clientURL: https://www.albertoballesteros.com

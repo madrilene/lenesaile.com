@@ -4,7 +4,7 @@ date: 2022-04-01
 key: 'lamprecht'
 technologies:
   - Jamstack (Eleventy)
-  - Diseño personalizado
+  - Diseño
   - Tailwind CSS
   - Alpine.js & vanilla JS
 clientURL: https://www.lamprecht-rechtsanwaelte.de
