@@ -22,10 +22,24 @@
         <a
           href="/{{ page.lang }}/"
           class="no-underline"
-
-          {% if activePage === '/en/' or activePage === '/de/' or activePage === '/es/' %}
-        aria-current="page" {% endif %}
-
+          {%
+          if
+          activePage=""
+          =""
+          ="/en/"
+          or
+          activePage=""
+          =""
+          ="/de/"
+          or
+          activePage=""
+          =""
+          ="/es/"
+          %}
+          aria-current="page"
+          {%
+          endif
+          %}
         >
           {{ meta[page.lang].siteName }}
         </a>
