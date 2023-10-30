@@ -4,7 +4,7 @@ description: 'Eleventy lässt dich eine Datei namens eleveny.js anlegen, um alle
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2022-12-13
+lastEdit: 2023-10-30
 ---
 
 [Eleventy](https://www.11ty.dev/) kommt mit grundlegenden Voreinstellungen. Das bedeutet, dass du nichts tun musst, um mit der Arbeit zu beginnen: der Ausgabeordner ist standardmäßig `_site`, und Eleventy sucht deine Quelldateien im Stammverzeichnis.
@@ -15,9 +15,9 @@ Lass uns anfangen!
 
 {% include "partials/toc.njk" %}
 
-## eleventy.js Konfigurationsdatei erstellen
+## .eleventy.js Konfigurationsdatei erstellen
 
-Füge eine neue Datei im Hauptverzeichnis mit dem Namen `.eleventy.js` hinzu (ab Eleventy 2.0 kann sie auch `eleventy.config.js.` heißen).
+Füge eine neue Datei im Hauptverzeichnis mit dem Namen `.eleventy.js` hinzu ([ab Eleventy 2.0 kann sie auch `eleventy.config.js.` heißen](https://www.11ty.dev/docs/config/)).
 
 Zuerst passen wir die Ordnerstruktur etwas an.
 

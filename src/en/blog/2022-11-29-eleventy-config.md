@@ -4,7 +4,7 @@ description: 'Eleventy lets you create a file called eleventy.js to configure th
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2023-03-19
+lastEdit: 2023-10-30
 redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 youtube: true
 ---
@@ -19,9 +19,9 @@ Let's begin!
 
 {% include "partials/toc.njk" %}
 
-## Create an eleventy.js config file
+## Create an .eleventy.js config file
 
-Add a new file in the root directory called `.eleventy.js` (as of Eleventy 2.0 it may also be called `eleventy.config.js.`).
+Add a new file in the root directory called `.eleventy.js` ([as of Eleventy 2.0 it may also be called `eleventy.config.js.`](https://www.11ty.dev/docs/config/)).
 
 Let's make a small adjustment in the folder structure first.
 

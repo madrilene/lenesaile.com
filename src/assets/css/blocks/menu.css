@@ -70,7 +70,7 @@ nav.navbar ul {
 nav.navbar a {
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--nav-list-color, var(--color-text));
-  padding: 0.1rem 0.3rem;
+  margin: 0.1rem 0.3rem;
   text-decoration: none;
   background-color: var(--nav-list-bg, var(--color-bg));
   border-radius: var(--border-radius);

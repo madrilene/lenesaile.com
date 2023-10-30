@@ -1,6 +1,5 @@
 const fs = require('fs');
 const Image = require('@11ty/eleventy-img');
-const {yellow} = require('kleur');
 
 const afterBuild = function () {
   const socialPreviewImagesDir = 'dist/assets/images/social-preview/';
@@ -20,7 +19,7 @@ const afterBuild = function () {
         }
       });
     } else {
-      console.log(yellow('⚠ No social images found'));
+      console.log('⚠ No social images found');
     }
   });
 };

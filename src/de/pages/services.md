@@ -14,7 +14,7 @@ tools:
       link: ''
     - title: 'Development'
       icon: 'code.svg'
-      summary: 'Eleventy (11ty) hilft mir dabei Websites auf der Grundlage von semantischem HTML, CSS und JavaScript zu erstellen. Es ist mein Lieblingswerkzeug für alle Arten von Projekten.'
+      summary: 'Moderne Web-Frameworks wie Eleventy und Astro helfen mir, Websites auf der Grundlage von semantischem HTML, CSS und JavaScript zu erstellen.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'

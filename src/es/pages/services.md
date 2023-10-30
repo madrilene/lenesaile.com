@@ -14,7 +14,7 @@ tools:
       link: ''
     - title: 'Desarrollo'
       icon: 'code.svg'
-      summary: 'Eleventy (11ty) me ayuda a crear sitios web basados en HTML semántico, CSS y JavaScript sin necesidad de bases de datos ni lenguajes del lado del servidor. Es mi herramienta favorita para todo tipo de proyectos.'
+      summary: 'Web frameworks como Eleventy y Astro me ayudan a crear sitios web basados en HTML semántico, CSS y JavaScript sin necesidad de bases de datos ni lenguajes del lado del servidor.'
       link: ''
     - title: 'Diseño'
       icon: 'design.svg'

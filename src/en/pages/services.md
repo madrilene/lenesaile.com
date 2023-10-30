@@ -13,7 +13,7 @@ tools:
       link: ''
     - title: 'Development'
       icon: 'code.svg'
-      summary: 'Eleventy (11ty) helps me to create websites based on semantic HTML, CSS and JavaScript without the need for databases or server-side languages. It is my favorite tool for all types of projects.'
+      summary: 'Modern web frameworks like Eleventy and Astro help me to create websites based on semantic HTML, CSS and JavaScript without the need for databases or server-side languages.'
       link: ''
     - title: 'Design'
       icon: 'design.svg'

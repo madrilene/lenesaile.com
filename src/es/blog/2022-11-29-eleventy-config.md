@@ -4,7 +4,7 @@ description: 'Eleventy te permite crear un archivo llamado eleveny.js para confi
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2022-12-13
+lastEdit: 2023-10-30
 ---
 
 [Eleventy](https://www.11ty.dev/) viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
@@ -15,9 +15,9 @@ Empecemos!
 
 {% include "partials/toc.njk" %}
 
-## Crear un archivo de configuración eleventy.js
+## Crear un archivo de configuración .eleventy.js
 
-Añade un nuevo archivo en el directorio raíz llamado `.eleventy.js` (a partir de Eleventy 2.0 también puede llamarse `eleventy.config.js.`).
+Añade un nuevo archivo en el directorio raíz llamado `.eleventy.js` ([a partir de Eleventy 2.0 también puede llamarse `eleventy.config.js.`](https://www.11ty.dev/docs/config/)).
 
 Hagamos primero un pequeño ajuste en la estructura de carpetas.
 

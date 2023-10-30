@@ -17,12 +17,13 @@ cta:
   lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-Ich habe schon immer gerne mit Computern experimentiert. Ca. 2004 habe ich dann versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, mit meinem Hobby meinen Lebensunterhalt zu verdienen.
+Ich habe schon immer gerne mit Computern experimentiert. Im Jahr 2004 habe ich versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, meinen Lebensunterhalt mit meinem Hobby zu verdienen.
 
-Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [WordPress](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um die Möglichkeiten zu erweitern.
+Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [WordPress](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um meine Möglichkeiten zu erweitern.
 
-2018 stieß ich auf den Begriff Jamstack und änderte kurz darauf alle meine Arbeitsabläufe. Ich begann, Git standardmäßig für alle Projekte zu integrieren, testete neue Bundler, CSS- und Javscript-Frameworks und entdeckte die Welt der "Continuous Deployments" über GitHub und Netlify.
+Im Jahr 2018 bin ich auf den Jamstack-Ansatz gestoßen und habe daraufhin alle meine Arbeitsabläufe umgestellt.
+Nach einem kurzen Abstecher zu verschiedenen JavaScript-Frameworks und Tailwind CSS ziehe ich es nun vor, direkt mit den Technologien der Webplattform zu arbeiten, ohne Abstraktionsebenen.
 
 ==Ich liebe es, schnelle Websites mit minimalem Einsatz von Javascript sowie allen Möglichkeiten des modernen CSS zu erstellen.==
 
-Ich lege großen Wert auf Barrierefreiheit und Performance und teste so lange, bis das Ergebnis so ist, wie ich es haben möchte. Und das ist nahezu perfekt.
+Besonders begeistert bin ich von modernem CSS, Barrierefreiheit und Performance. Dies sind die Bereiche, in denen ich mich kontinuierlich und leidenschaftlich weiterbilde.

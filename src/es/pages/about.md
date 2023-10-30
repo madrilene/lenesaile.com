@@ -22,8 +22,9 @@ Siempre me ha gustado experimentar con los ordenadores. En 2004, intenté constr
 
 Tras llegar a mis límites con los sitios web estáticos, empecé a trabajar con [WordPress](/es/blog/algunas-notas-personales-sobre-wordpress-en-2022/) y aprendí PHP para ampliar las posibilidades.
 
-En 2018 descubrí la idea de Jamstack y poco después cambié todos mis flujos de trabajo. Empecé a integrar Git por defecto para todos los proyectos, probé nuevos bundlers, frameworks de CSS y Javscript y descubrí el mundo de los despliegues continuos a través de GitHub y Netlify.
+En 2018 conocí el enfoque de Jamstack y, como consecuencia, renové todos mis flujos de trabajo.
+Tras un breve desvío a varios frameworks de JavaScript y Tailwind CSS, ahora prefiero trabajar directamente con las tecnologías de la plataforma web, sin capas de abstracción.
 
 ==Disfruto construyendo sitios de alto rendimiento con un mínimo de Javascript vainilla y todas las posibilidades del CSS moderno.==
 
-Me tomo la accesibilidad y el rendimiento muy en serio, probando y volviendo a probar hasta que el resultado es lo que quiero que sea. Que es (lo más cerca que puedo llegar) perfecto.
+Estoy especialmente entusiasmada con todo lo que está pasando en las áreas de CSS moderno, accesibilidad y rendimiento. Estos son los principales campos en los que me estoy formando continua y apasionadamente.
