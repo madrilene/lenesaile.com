@@ -40,15 +40,11 @@
 {% if meta.meta_data.mastodonProfile %}
 <!-- Mastodon verified site -->
 <link rel="me" href="{{ meta.meta_data.mastodonProfile }}" />
-{% endif %} {% if meta.meta_data.twitterProfile %}
-<!-- twitter verified site -->
-<link rel="me" href="{{ meta.meta_data.twitterProfile }}" />
 {% endif %}
 
 <!-- alternate languages -->
 
 <link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}" />
-
 {% for link in page.url | locale_links %}
 <link rel="alternate" hreflang="{{ link.lang }}" href="{{ meta.url }}{{ link.url }}" />
 {% endfor %}
@@ -86,11 +82,7 @@
 <meta property="og:locale" content="{{ meta[page.lang] }}" />
 <meta property="article:author" content="{{ meta.author }}" />
 
-<!-- Twitter meta -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="{{ meta.meta_data.twitterHandle }}" />
-<meta name="twitter:creator" content="{{ meta.meta_data.twitterHandle }}" />
-<meta name="twitter:dnt" content="on" />
+<!-- Fuck Twitter, you're out -->
 
 <!-- Favicon -->
 <link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any" />
