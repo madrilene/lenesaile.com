@@ -322,6 +322,6 @@ There are so many great ideas out there!
 
 ## Eleventy Meetup
 
-I attended Eleventy Meetup Ep. 12 on March 16, 2023 and gave a short talk based on this article!
+I was invited as a speaker at the Eleventy Meetup Ep. 12 on March 16, 2023 and gave a short talk based on this article.
 
 {% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized ' %}

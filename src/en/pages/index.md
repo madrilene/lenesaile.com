@@ -28,7 +28,7 @@ cta:
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
-I make sure that a website is ==fast and loads only what is necessary==. Everyone should be able to find their way around immediately and the website should be ==accessible and usable for all people==. I am a humble learner in this field and adjust my knowledge on a daily basis.
+I make sure that a website is ==fast and loads only what is necessary==. Everyone should be able to find their way around immediately and the website should be ==accessible and usable for all people==. The field of accessibility is huge and complex - I am constantly learning.
 
 I do not create websites based on premade templates/themes and I do not use Website Builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
 
@@ -36,5 +36,5 @@ This approach has various advantages:
 
 1. No image is too big, no code is too much - and the website runs error-free and fast.
 2. I am independent of third parties, I react to problems and necessary updates myself.
-3. The websites of my clients achieve a very good positioning in the search engines.
+3. The websites achieve very good positionings in the search engines.
 4. Almost all ideas can be fulfilled in terms of form, structure and function.

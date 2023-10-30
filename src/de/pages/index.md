@@ -28,7 +28,7 @@ cta:
   lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass der Besucher sich sofort zurechtfindet und dass die Website ==zugänglich und nutzbar für alle Menschen== ist. Ich bin eine ewig Lernende in diesem Bereich und passe mein Wissen täglich an.
+Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass der Besucher sich sofort zurechtfindet und dass die Website ==zugänglich und nutzbar für alle Menschen== ist. Das Feld der Barrierefreiheit ist riesig und komplex - ich lerne ständig dazu.
 
 Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf so konzipiert und entwickelt, sodass sie genau so funktionieren und aussehen wie meine Kunden und ich uns das vorstellen.
 
@@ -36,5 +36,5 @@ Das hat viele Vorteile:
 
 1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
 2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
-3. Die Websites meiner Kunden erreichen eine sehr gute Positionierung in den Suchmaschinen.
-4. Nahezu alle Vorstellungen können in Bezug auf Form, Struktur und Funktion erfüllt werden!
+3. Die Websites erreichen eine sehr gute Positionierung in den Suchmaschinen.
+4. Nahezu alle Vorstellungen können in Bezug auf Form, Struktur und Funktion erfüllt werden.

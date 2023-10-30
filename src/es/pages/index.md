@@ -28,7 +28,7 @@ cta:
   lead: '¡Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesto a charlar.'
 ---
 
-Me aseguro de que un sitio web sea ==rápido y cargue sólo lo necesario==. El visitante debe poder orientarse inmediatamente y el sitio web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier discapacidad. Intento ser una aprendiz humilde en este campo y ajustao mis conocimientos a diario.
+Me aseguro de que un sitio web sea ==rápido y cargue sólo lo necesario==. El visitante debe poder orientarse inmediatamente y el sitio web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier discapacidad. El campo de la accesibilidad es enorme y complejo: aprendo constantemente.
 
 No creo sitios web basados en plantillas preprogramadas y no utilizo constructores visuales de sitios web. Todos los sitios web se diseñan y desarrollan desde cero para que funcionen exactamente como yo y mis clientes los imaginamos.
 
@@ -36,5 +36,5 @@ Este enfoque tiene varias ventajas:
 
 1. Ninguna imagen es demasiado grande, ningún código es demasiado, y el sitio web funciona sin errores y con rapidez.
 2. Soy independiente de terceros, reacciono a los problemas y a las actualizaciones necesarias yo mismo.
-3. Las páginas web de mis clientes consiguen un muy buen posicionamiento en los buscadores.
+3. Las páginas web consiguen un muy buen posicionamiento en los buscadores.
 4. Casi todas las ideas se pueden cumplir en términos de forma, estructura y función.

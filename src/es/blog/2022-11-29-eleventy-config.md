@@ -314,3 +314,9 @@ Siempre merece la pena echar un vistazo al [arranque oficial de Eleventy](https:
 En general, siempre es una gran idea bucear en los repositorios de los _[starters](https://www.11ty.dev/docs/starter/)_ o en los sitios personales de otras desarrolladoras.
 
 ¡Hay tantas ideas geniales por ahí!
+
+## Eleventy Meetup
+
+Me invitaron como ponente al Eleventy Meetup Ep. 12 el 16 de marzo de 2023 y di una breve charla basada en este artículo.
+
+{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized' %}

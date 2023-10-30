@@ -5,6 +5,7 @@ category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
 lastEdit: 2023-10-30
+youtube: true
 ---
 
 [Eleventy](https://www.11ty.dev/) kommt mit grundlegenden Voreinstellungen. Das bedeutet, dass du nichts tun musst, um mit der Arbeit zu beginnen: der Ausgabeordner ist standardmäßig `_site`, und Eleventy sucht deine Quelldateien im Stammverzeichnis.
@@ -316,3 +317,9 @@ Ein Blick in den [offiziellen Eleventy-Starter](https://github.com/11ty/eleventy
 Generell ist es immer eine gute Idee, tief in die Repos von [Starterprojekten](https://www.11ty.dev/docs/starter/) oder Webseiten anderer EntwicklerInnen einzutauchen.
 
 Es gibt so viele großartige Ideen!
+
+## Eleventy Meetup
+
+Ich wurde als Rednerin zum _Eleventy Meetup Ep. 12_ am 16. März 2023 eingeladen und hielt einen kurzen Vortrag, der auf diesem Artikel basierte.
+
+{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized ' %}
