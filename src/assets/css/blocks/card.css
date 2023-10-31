@@ -7,7 +7,7 @@
   max-inline-size: unset;
 }
 
-.card.note span {
+.card.note > span {
   font-size: var(--size-step-0);
   background-color: var(--color-quaternary);
   border-radius: var(--border-radius);
