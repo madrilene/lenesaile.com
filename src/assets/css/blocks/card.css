@@ -41,3 +41,16 @@
 .card:not(.note):focus-within a:focus {
   outline: none;
 }
+
+.card {
+  position: relative;
+}
+
+.card:not(.note) a:after {
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
