@@ -15,6 +15,7 @@
     "build:postcss": "NODE_ENV=production postcss src/assets/css/global.css -o src/_includes/global-inline.css",
     "build:scripts": "NODE_ENV=production esbuild src/assets/scripts/theme-toggle.js --bundle --outfile=src/_includes/theme-toggle-inline.js",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:sw": "workbox generateSW",
     "start": "run-p dev:*",
     "build": "run-s clean build:*"
   },
@@ -73,6 +74,7 @@
     "sanitize-html": "^2.7.2",
     "slugify": "^1.6.5",
     "speedlify-score": "^3.0.0",
-    "terser": "^5.16.1"
+    "terser": "^5.16.1",
+    "workbox-cli": "^7.0.0"
   }
 }

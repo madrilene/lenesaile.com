@@ -1,21 +1,16 @@
 import {gsapHighlight} from './components/gsap';
 
-// ----- cards redundant click, accessible whole card clickable solution by Heydon Pickering: https://inclusive-components.design/cards/
-
-const cards = [...document.querySelectorAll('.clickable-card')];
-cards.forEach(card => {
-  card.style.cursor = 'pointer';
-  let down,
-    up,
-    link = card.querySelector('a');
-  card.onmousedown = () => (down = +new Date());
-  card.onmouseup = () => {
-    up = +new Date();
-    if (up - down < 200) {
-      link.click();
+// ----- Check that service workers are supported
+if ('serviceWorker' in navigator) {
+  // use the window load event to keep the page load performant
+  window.addEventListener('load', () => {
+    try {
+      navigator.serviceWorker.register('/sw.js');
+    } catch (error) {
+      console.error('Service worker registration failed: ', error);
     }
-  };
-});
+  });
+}
 
 // ----- masonry fallback if CSS masonry not supported, solution by Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK
 
