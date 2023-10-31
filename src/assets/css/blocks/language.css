@@ -1,8 +1,8 @@
 .language-nav {
   --offset: 1;
   position: absolute;
-  top: 0;
-  right: 0;
+  inset-block-start: 0;
+  inset-inline-end: 0;
   z-index: 2;
 }
 
@@ -22,11 +22,11 @@
 
 .language-select-nav {
   margin-block-start: 0;
-  right: 30px;
+  inset-inline-end: 30px;
   position: absolute;
-  top: 110px;
+  inset-block-start: 110px;
   visibility: hidden;
-  width: 120px;
+  inline-size: 120px;
   z-index: 90;
 }
 .language-item {
@@ -35,13 +35,13 @@
   border-radius: var(--border-radius);
   color: var(--color-text);
   font-size: var(--size-step-1);
-  height: 0;
+  block-size: 0;
   justify-content: center;
   margin-block-start: -5px;
   opacity: 0;
   padding: 0;
   text-decoration: none;
-  bottom: -75px;
+  inset-block-end: -75px;
   transform: translate3d(0, 0, 0) rotate(0) scale(0);
   transform-origin: right center;
 }
@@ -53,9 +53,9 @@
   background-color: var(--color-bg);
   border: 3px solid var(--color-text);
   display: grid;
-  height: 45px;
+  block-size: 45px;
   opacity: 1;
-  top: 0;
+  inset-block-start: 0;
   transform: translateX(calc(var(--offset) * 4px))
     rotate(calc(-0.01turn * var(--offset) + 0.02turn)) scale(1);
 }
@@ -79,10 +79,10 @@
 
 @media (min-width: 50em) {
   .language-select-nav {
-    width: 220px;
+    inline-size: 220px;
   }
 
   .active .language-item {
-    height: 65px;
+    block-size: 65px;
   }
 }

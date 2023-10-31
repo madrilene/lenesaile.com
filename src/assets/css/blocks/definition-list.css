@@ -16,6 +16,6 @@ dt {
 dd {
   flex-basis: 0;
   flex-grow: 999;
-  min-width: 70%;
+  min-inline-size: 70%;
   display: block;
 }

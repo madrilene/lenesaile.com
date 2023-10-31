@@ -40,14 +40,14 @@
 
   .projects .visual img {
     transform: rotate(-2deg);
-    /* width: clamp(45ch, 50%, 75ch); */
+    /* inline-size: clamp(45ch, 50%, 75ch); */
   }
 
   .projects .description::before {
     content: '';
     float: left;
-    min-height: 100%;
-    width: 100%;
+    min-block-size: 100%;
+    inline-size: 100%;
     shape-outside: polygon(0 0, 0 0.1rem, 1.1rem 100%);
     shape-margin: 1em;
   }
@@ -70,11 +70,11 @@
 
 .projects .details {
   position: absolute;
-  bottom: 0;
+  inset-block-end: 0;
   background-color: var(--color-bg-card);
   color: var(--color-light);
   padding: 0 var(--space-m-l);
   border-radius: var(--border-radius);
-  max-width: unset;
+  max-inline-size: unset;
   transform: translateX(-2rem) translateY(var(--space-xs-s));
 }

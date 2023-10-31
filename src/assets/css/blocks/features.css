@@ -10,7 +10,7 @@
 .features svg {
   display: block;
   margin-inline: auto;
-  height: 4em;
+  block-size: 4em;
 }
 
 .features a {

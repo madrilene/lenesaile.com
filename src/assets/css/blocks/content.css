@@ -14,7 +14,7 @@
 }
 
 .content .breakout {
-  width: 100%;
+  inline-size: 100%;
   grid-column: 1 / 4;
 }
 

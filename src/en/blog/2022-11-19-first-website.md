@@ -102,7 +102,7 @@ This is also a nice one:
 #menu a:hover {
   text-decoration: none;
   border: 0px;
-  height: 30px;
+  block-size: 30px;
   line-height: 30px;
   padding: 15px 15px 15px 15px;
   /*_padding:0px 15px 0px 15px;  there are some things IE doesn't understand about padding */

@@ -24,6 +24,6 @@ After reaching my limits with static websites, I discovered [WordPress](/en/blog
 In 2018 I came across the Jamstack approach and as a consequence revamped all my workflows.
 After a short detour to various JavaScript frameworks and Tailwind CSS, I now prefer to work directly with the technologies of the web platform, without abstraction layers.
 
-I enjoy building ==fast websites== with minimal vanilla Javascript and all the ==possibilities of modern CSS==.
+I enjoy building ==fast websites== with minimal vanilla Javascript and ==all the possibilities of modern CSS==.
 
 I'm especially enthusiastic about everything that's happening in the areas of modern CSS, Accessibility and Performance. These are the main fields in which I am continuously and passionately educating myself.

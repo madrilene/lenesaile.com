@@ -33,7 +33,7 @@ EXCEPTIONS
 .sidebar > :last-child {
   flex-basis: 0;
   flex-grow: 999;
-  min-width: var(--sidebar-content-min-width, 50%);
+  min-inline-size: var(--sidebar-content-min-width, 50%);
 }
 
 /*

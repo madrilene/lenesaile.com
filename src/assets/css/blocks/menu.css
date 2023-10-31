@@ -8,8 +8,11 @@
 }
 
 @media (min-width: 85em) {
-  .logo {
+  [dir='ltr'] .logo {
     transform: translateX(var(--gutter));
+  }
+  [dir='rtl'] .logo {
+    transform: translateX(var(--negative-gutter));
   }
 }
 
@@ -31,7 +34,7 @@ nav.navbar ul {
 
 .absolute-menu {
   position: absolute;
-  width: 95%;
+  inline-size: 95%;
   color: var(--nav-list-color, var(--color-text));
 }
 
@@ -55,14 +58,14 @@ nav.navbar ul {
   flex-direction: var(--nav-list-layout);
   flex-wrap: wrap;
   gap: 0.75rem 0.3rem;
-  height: var(--nav-list-height);
+  block-size: var(--nav-list-height);
   list-style: none;
   margin: 0;
   padding: var(--nav-list-padding, 3rem) var(--nav-list-padding, 2rem);
   position: var(--nav-list-position, fixed);
   inset-block-start: 0;
   inset-inline-end: 0;
-  width: var(--nav-list-width, min(22rem, 100vw));
+  inline-size: var(--nav-list-width, min(22rem, 100vw));
   visibility: var(--nav-list-visibility, visible);
 }
 
@@ -70,7 +73,7 @@ nav.navbar ul {
 nav.navbar a {
   border-block-end: 3px solid var(--border-color, transparent);
   color: var(--nav-list-color, var(--color-text));
-  margin: 0.1rem 0.3rem;
+  padding: 0.1rem 0.3rem;
   text-decoration: none;
   background-color: var(--nav-list-bg, var(--color-bg));
   border-radius: var(--border-radius);
@@ -89,6 +92,8 @@ nav.navbar a {
   nav.navbar a {
     background-color: transparent;
     border-radius: 0;
+    padding: 0;
+    margin: 0.1rem 0.3rem;
   }
 }
 

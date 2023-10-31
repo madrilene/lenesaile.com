@@ -41,7 +41,7 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
+  min-block-size: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -54,7 +54,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  max-inline-size: 100%;
   display: block;
 }
 

@@ -1,6 +1,7 @@
 /* Global variables */
 :root {
   --gutter: var(--space-s-m);
+  --negative-gutter: calc(var(--gutter) * -1);
   --border-radius: var(--size-step-min);
   --transition-base: 250ms ease;
   --transition-movement: 200ms linear;

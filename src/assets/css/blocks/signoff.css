@@ -1,7 +1,7 @@
 .signoff h2 {
   font-weight: 400;
   font-size: var(--size-step-1);
-  max-width: 30ch;
+  max-inline-size: 30ch;
   letter-spacing: var(--tracking);
 }
 

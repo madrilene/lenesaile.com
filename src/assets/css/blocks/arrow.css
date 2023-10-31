@@ -1,20 +1,30 @@
 .arrow {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  inset-block-end: 0;
+  inset-inline-end: 0;
   display: block;
-  height: 6em;
-  width: auto;
+  block-size: 6em;
+  inline-size: auto;
   fill: var(--spot-color, var(--color-bg));
-  transform: translate(100px, -20px) scale(-1, 1);
 }
 
 .thisisme {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  inset-block-end: 0;
+  inset-inline-end: 0;
   color: var(--spot-color, var(--color-text));
+}
+
+[dir='ltr'] .thisisme {
   transform: rotate(10deg) translate(155px, -20px);
+}
+
+[dir='rtl'] .thisisme {
+  transform: rotate(10deg) translate(-50px, 30px);
+}
+
+[dir='ltr'] .arrow {
+  transform: translate(100px, -20px) scale(-1, 1);
 }
 
 .whimsical-hi {
