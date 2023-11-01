@@ -59,7 +59,7 @@
             fill="var(--color-dark)"
           />
         </g>
-        <g id="lenes haare">
+        <g id="lene-hair">
           <ellipse
             id="Ellipse 4"
             cx="152.728"
@@ -83,7 +83,7 @@
             fill="var(--color-dark)"
           />
           <path
-            id="Vector 1"
+            id="vector-1"
             d="M117.671 120.382C101.176 126.155 106.125 117.908 120.97 104.712L144.063 114.609C140.764 114.609 130.867 115.764 117.671 120.382Z"
             fill="var(--color-dark)"
           />

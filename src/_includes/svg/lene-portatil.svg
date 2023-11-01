@@ -22,7 +22,7 @@
         fill="var(--color-dark)"
       />
     </g>
-    <g id="lenes haare">
+    <g id="lene-hair">
       <path
         id="Background_6"
         fill-rule="evenodd"
@@ -38,7 +38,7 @@
         fill="var(--color-dark)"
       />
       <path
-        id="Vector 1"
+        id="vector-1"
         d="M55.1639 70.1075C43.6439 74.1395 47.0999 68.3795 57.4679 59.1635L73.5959 66.0755C71.2919 66.0755 64.3799 66.8819 55.1639 70.1075Z"
         fill="var(--color-dark)"
       />

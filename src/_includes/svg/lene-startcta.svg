@@ -5,8 +5,8 @@
   xmlns="http://www.w3.org/2000/svg"
   aria-hidden="true"
 >
-  <g id="lene avatar">
-    <g id="body/Explaining">
+  <g id="lene-start">
+    <g id="body-explaining">
       <path
         id="Background"
         fill-rule="evenodd"
@@ -38,7 +38,7 @@
         fill="var(--color-dark)"
       />
       <path
-        id="Vector 1"
+        id="vector-1"
         d="M53.2419 106.871C40.992 111.158 44.667 105.034 55.6919 95.2336L72.8419 102.584C70.3919 102.584 63.0419 103.441 53.2419 106.871Z"
         fill="var(--color-dark)"
       />
