@@ -29,7 +29,7 @@
   inline-size: 120px;
   z-index: 90;
 }
-.language-select-nav > a {
+.language-select-nav a {
   align-items: center;
   background: 0 0;
   border-radius: var(--border-radius);
