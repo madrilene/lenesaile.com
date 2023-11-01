@@ -8,10 +8,11 @@
     {% include "icons/settings.svg" %}
     <span class="sr-only">{{ meta[page.lang].ariaLabels.optionsButton }}</span>
   </button>
+  <!-- TODO: is nav the right element or should this be a list? -->
   <nav
     id="languagenav"
     class="language-select-nav"
-    role="tablist"
+    role="listbox"
     aria-label="{{ meta[page.lang].ariaLabels.optionsMenu }}"
   >
     {% for language in meta.languages %} {% if loop.first %} {% endif %} {% set
@@ -30,6 +31,7 @@
       hreflang="{{ language.code }}"
       style="--offset: {{ loop.index }}"
       aria-selected="{{ selectedState }}"
+      role="option"
     >
       <span lang="{{ language.code }}"> {{ language.long }}</span>
     </a>
