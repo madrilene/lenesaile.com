@@ -1,6 +1,7 @@
 # lenesaile.com
 
 [![Follow @lene@front-end.social](https://img.shields.io/mastodon/follow/109292536543732634?domain=https%3A%2F%2Ffront-end.social&style=flat-square&logo=Mastodon&logoColor=white&labelColor=%235B4BE1)](https://front-end.social/@lene)
+![GitHub followers](https://img.shields.io/github/followers/madrilene?label=GitHub%20followers&style=flat-square&logo=github&link=https%3A%2F%2Fgithub.com%2Fmadrilene)
 
 This is my freelancing website, built with [Eleventy](https://www.11ty.dev/), built upon the [Eleventy Excellent starter](https://eleventy-excellent.netlify.app/).
 It supports three languages and uses my latest workflow.
