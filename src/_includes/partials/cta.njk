@@ -13,11 +13,11 @@
         --sidebar-align: flex-end;
       "
     >
-      <section class="region flow" style="--region-space-bottom: var(--space-2xl)">
+      <div class="region flow" style="--region-space-bottom: var(--space-2xl)">
         <h2>{{ cta.title }}</h2>
         <p class="visible-desktop">{{ cta.desktop | md | safe }}</p>
         <p>{{ cta.lead | md | safe }}</p>
-      </section>
+      </div>
 
       {% include "svg/lene-cta.svg" %}
     </div>
