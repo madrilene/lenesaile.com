@@ -11,7 +11,17 @@ module.exports = {
       options: {
         cacheName: 'html',
         expiration: {
-          maxAgeSeconds: 60 * 60 * 24 * 7
+          maxAgeSeconds: 60 * 60 * 24 * 7 // 2 weeks
+        }
+      }
+    },
+    {
+      urlPattern: /\.(?:woff|woff2)$/,
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'fonts',
+        expiration: {
+          maxAgeSeconds: 60 * 60 * 24 * 7 // 2 weeks
         }
       }
     },
@@ -21,7 +31,7 @@ module.exports = {
       options: {
         cacheName: 'images',
         expiration: {
-          maxAgeSeconds: 30 * 24 * 60 * 60,
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
           maxEntries: 30
         }
       }
