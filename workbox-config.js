@@ -35,6 +35,17 @@ module.exports = {
           maxEntries: 30
         }
       }
+    },
+    {
+      urlPattern: /\.(?:mp3|wav)$/,
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'sounds',
+        expiration: {
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+          maxEntries: 30
+        }
+      }
     }
   ]
 };
