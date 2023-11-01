@@ -77,7 +77,7 @@ gsapHighlight();
 
 const languageNav = document.querySelector('.language-nav');
 const languageNavButton = document.querySelector('.language-nav-button');
-const activeLanguageItem = document.querySelector('.lang-active');
+const activeLanguageItem = languageNav.querySelector('a[aria-selected="true"]');
 activeLanguageItem.setAttribute('aria-selected', true);
 activeLanguageItem.ariaCurrent = 'page';
 const clickSound = new Audio('/assets/sounds/mouse.wav');
