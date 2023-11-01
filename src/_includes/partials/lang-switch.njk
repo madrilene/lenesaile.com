@@ -21,12 +21,16 @@
 
     <!-- set active state-->
     {% set selectedState = "true" if language.code == page.lang else "false" %}
+
+    <!-- now redundant: class selecting -->
+    {% set activeClass = "lang-active" if language.code == page.lang else "inactive" %}
     <!-- start loop -->
     {% for item in collections.all %} {% if item.data.key == key and item.data.page.lang
     == language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
     <li>
       <a
         id="lang-{{ language.code }}"
+        class="{{ activeClass }}"
         href="{{ translatedUrl }}"
         rel="alternate"
         hreflang="{{ language.code }}"
