@@ -1,0 +1,41 @@
+@media (--motionOK) {
+  .gsap-highlight {
+    --duration: 1s;
+    --ease: cubic-bezier(0.25, 1, 0.5, 1);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition:
+      color calc(var(--duration) / 4) var(--ease),
+      background-color calc(var(--duration) / 4) var(--ease),
+      background-size var(--duration) var(--ease);
+
+    &.active {
+      color: var(--color-dark);
+      background-size: 100% 100%;
+    }
+
+    & {
+      background-image: linear-gradient(var(--color-quaternary), var(--color-quaternary));
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      clip-path: inset(100%);
+      clip: rect(1px, 1px, 1px, 1px);
+      inline-size: 1px;
+      block-size: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    &::before {
+      content: ' [highlight start] ';
+    }
+
+    &::after {
+      content: ' [highlight end] ';
+    }
+  }
+}
