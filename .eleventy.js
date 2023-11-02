@@ -184,6 +184,11 @@ module.exports = eleventyConfig => {
     'src/assets/images/favicon/*': '/'
   });
 
+  // web components
+  eleventyConfig.addPassthroughCopy({
+    'src/_includes/components/*': 'assets/scripts/components/'
+  });
+
   // 	--------------------- Events ---------------------
   eleventyConfig.on('afterBuild', afterBuild);
 
