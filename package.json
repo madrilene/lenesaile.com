@@ -15,7 +15,7 @@
     "dev:11ty": "eleventy --serve --watch",
     "build:postcss": "NODE_ENV=production postcss src/assets/css/global.css -o src/_includes/global-inline.css",
     "build:scripts-inline": "NODE_ENV=production esbuild src/assets/scripts/theme-toggle.js --bundle --minify --outfile=src/_includes/theme-toggle-inline.js",
-    "build:scripts-hydrated": "NODE_ENV=production src/assets/scripts/hydrated/*.js --bundle --minify --outfile=dist/assets/scripts/gsap.js",
+    "build:scripts-hydrated": "NODE_ENV=production src/assets/scripts/hydrated/*.js --bundle --minify --outdir=dist/assets/scripts/hydrated",
     "build:11ty": "cross-env ELEVENTY_ENV=production eleventy",
     "build:sw": "workbox generateSW",
     "start": "run-p dev:*",
