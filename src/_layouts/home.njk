@@ -22,6 +22,7 @@ preloads:
       <div class="column p-note">
         {{ hero.intro }}
       </div>
+      <is-land on:visible import="/assets/scripts/hydrated/gsap.js"></is-land>
     </div>
 
     <div class="snapshot">
@@ -92,3 +93,5 @@ preloads:
 </article>
 
 {% include 'partials/cta.njk' %}
+
+<script defer src="/assets/scripts/hydrated/masonry.js"></script>
