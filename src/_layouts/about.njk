@@ -21,6 +21,7 @@ layout: base
 <article class="region" style="--region-space-bottom: var(--space-3xl)">
   <div class="wrapper flow content">
     {{ content | safe }}
+    <is-land on:visible import="/assets/scripts/hydrated/gsap.js"></is-land>
 
     <section class="breakout relative">
       <div class="sidebar my-l-xl flow">

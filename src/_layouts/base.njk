@@ -24,6 +24,7 @@
     <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
 
     {% set js %} {% include "theme-toggle-inline.js" %} {% endset %}
+
     <script>
       <!-- prettier-ignore -->
       {{ js | jsmin | safe }}
@@ -85,6 +86,7 @@
     {% endif %}
 
     <!-- 7 defered js  -->
+    <script src="/assets/scripts/is-land.js" type="module"></script>
     <script defer src="/assets/scripts/app.js"></script>
     <script
       defer
