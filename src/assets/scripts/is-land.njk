@@ -1,0 +1,9 @@
+---
+permalink: assets/scripts/is-land.js
+eleventyExcludeFromCollections: true
+---
+
+{% set js %} {# Islands must come first #} {% include
+"../../../node_modules/@11ty/is-land/is-land.js" %} {% include
+"../../../node_modules/@11ty/is-land/is-land-autoinit.js" %} {% endset %}
+{{ js | jsmin | safe }}
