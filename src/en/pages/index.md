@@ -30,11 +30,11 @@ cta:
 
 I make sure that a website is ==fast and loads only what is necessary==. Everyone should be able to find their way around immediately and a website should be ==accessible and usable for as many people as possible==. The field of accessibility is huge and complex - I am constantly learning.
 
-I do not create websites based on premade templates/themes and I do not use website builders. All websites are designed and developed from the ground up.
+I do not create websites based on premade templates/themes and I do not use website builders. I plan, design and program all websites from scratch.
 
 This approach has various advantages:
 
 1. No image is too big, no code is too much - and the website runs error-free and fast.
 2. I am independent of third parties, I react to problems and necessary updates myself.
 3. The websites achieve very good positionings in the search engines.
-4. Almost all ideas can be fulfilled in terms of form, structure and function.
+4. We can realize almost anything we can imagine!

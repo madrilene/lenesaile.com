@@ -8,7 +8,7 @@ description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisier
 layout: home
 hero:
   title: Ich entwickle hoch-optimierte Websites nach Maß.
-  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige personalisierte Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur.
+  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige personalisierte Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und den Technologien der Webplattform.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'
@@ -28,13 +28,13 @@ cta:
   lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass der Besucher sich sofort zurechtfindet und dass die Website ==zugänglich und nutzbar für alle Menschen== ist. Das Feld der Barrierefreiheit ist riesig und komplex - ich lerne ständig dazu.
+Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass Besucher sich sofort zurechtfindeen und dass die Website ==zugänglich und nutzbar für möglichst viele Menschen== ist. Das Feld der Barrierefreiheit ist riesig und komplex - ich lerne ständig dazu.
 
-Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf so konzipiert und entwickelt, sodass sie genau so funktionieren und aussehen wie meine Kunden und ich uns das vorstellen.
+Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf konzipiert, gestaltet und entwickelt.
 
 Das hat viele Vorteile:
 
 1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
 2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
 3. Die Websites erreichen eine sehr gute Positionierung in den Suchmaschinen.
-4. Nahezu alle Vorstellungen können in Bezug auf Form, Struktur und Funktion erfüllt werden.
+4. Wir können nahezu alles umsetzen was wir uns vorstellen!

@@ -8,7 +8,7 @@ description: Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en
 layout: home
 hero:
   title: Hago páginas web a medida altamente optimizadas.
-  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado innumerables páginas web personalizadas para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack.
+  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado muchas páginas web personalizadas para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack y las tecnologías de la plataforma web.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sentada frente a su escritorio, sonriendo'
   hi: 'Hola, soy yo.'
@@ -30,11 +30,11 @@ cta:
 
 Me aseguro de que un sitio web sea ==rápido y cargue sólo lo necesario==. El visitante debe poder orientarse inmediatamente y el sitio web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier discapacidad. El campo de la accesibilidad es enorme y complejo: aprendo constantemente.
 
-No creo sitios web basados en plantillas preprogramadas y no utilizo constructores visuales de sitios web. Todos los sitios web se diseñan y desarrollan desde cero para que funcionen exactamente como yo y mis clientes los imaginamos.
+No creo sitios web basados en plantillas preprogramadas y no utilizo constructores visuales de sitios web. Planifico, diseño y realizo la programación de todos las páginas web desde cero.
 
 Este enfoque tiene varias ventajas:
 
 1. Ninguna imagen es demasiado grande, ningún código es demasiado, y el sitio web funciona sin errores y con rapidez.
 2. Soy independiente de terceros, reacciono a los problemas y a las actualizaciones necesarias yo mismo.
 3. Las páginas web consiguen un muy buen posicionamiento en los buscadores.
-4. Casi todas las ideas se pueden cumplir en términos de forma, estructura y función.
+4. Podemos hacer realidad casi cualquier cosa que imaginemos!
