@@ -20,8 +20,7 @@ This is my personal website. I use a lot of code fragments that smarter people t
 
 **Andy Bell**
 
-Andys CSS methodology makes sense to me. I'm still working on understanding it fully and using it consistently. It also goes hand in hand with the Every Layout solutions he co-authors. An ardent opponent of the utility class framework Tailwind CSS. But has recently published an approach that incorporates Tailwind CSS into his methodology. This is built into my website and I'm working on tweaking it.
-I learned how to use Eleventy in 2020 with his (now free) course.
+I like working with Andy's CSS methodology CUBE, going hand in hand with the Every Layout solutions he co-authors. He has recently published an approach that incorporates Tailwind CSS into his methodology, as a creator for custom utility classes. This workflow is built into my website, and really all websites I am building since discovering it. I learned how to use Eleventy in 2020 with his (now free) course.
 
 - https://buildexcellentwebsit.es/
 - https://cube.fyi/
@@ -29,14 +28,14 @@ I learned how to use Eleventy in 2020 with his (now free) course.
 
 **Heydon Pickering**
 
-I strongly orientate myself on Heydon's approaches and love his books.
+Heydon is great.
 
 - https://every-layout.dev/
 - https://inclusive-components.design/
 
 **Zach Leatherman**
 
-Zach is developing Eleventy.
+Zach is developing Eleventy, a genius!
 
 - https://www.11ty.dev/
 - https://www.zachleat.com/
@@ -100,3 +99,10 @@ The theme switch is from one of his GUI Challenges.
 **Tailwind**
 
 - https://tailwindcss.com/
+
+**Harry Roberts**
+
+Harry Roberts taught me a lot about how to make websites faster.
+The strict order of my `head` is something he figured out.
+
+- https://csswizardry.com/
