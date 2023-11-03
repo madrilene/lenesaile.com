@@ -8,7 +8,7 @@ description: I'm a developer and designer based in Madrid who has been building 
 layout: home
 hero:
   title: I make highly optimized custom websites.
-  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have designed and developed countless personalized websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture.
+  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have designed and developed countless personalized websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and technologies of the web platform.
   image: './src/assets/images/lene2022.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
@@ -28,9 +28,9 @@ cta:
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
-I make sure that a website is ==fast and loads only what is necessary==. Everyone should be able to find their way around immediately and the website should be ==accessible and usable for all people==. The field of accessibility is huge and complex - I am constantly learning.
+I make sure that a website is ==fast and loads only what is necessary==. Everyone should be able to find their way around immediately and a website should be ==accessible and usable for as many people as possible==. The field of accessibility is huge and complex - I am constantly learning.
 
-I do not create websites based on premade templates/themes and I do not use Website Builders. All websites are designed and developed from the ground up so that they work exactly as I and my clients imagine them to.
+I do not create websites based on premade templates/themes and I do not use website builders. All websites are designed and developed from the ground up.
 
 This approach has various advantages:
 
