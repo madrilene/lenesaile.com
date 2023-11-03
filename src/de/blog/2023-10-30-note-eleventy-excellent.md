@@ -3,7 +3,6 @@ title: 'Eleventy Excellent Demos'
 category: note
 key: 'ee-demos'
 date: 2023-10-30
-excludeFromSitemap: true
 ---
 
 Ich habe ein paar [Demo-branches für Eleventy Excellent](https://eleventy-excellent.netlify.app/blog/demo-pages/) erstellt.
