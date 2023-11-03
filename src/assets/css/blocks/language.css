@@ -26,7 +26,7 @@
   position: absolute;
   inset-block-start: 110px;
   visibility: hidden;
-  inline-size: 120px;
+  inline-size: 150px;
   z-index: 90;
 }
 .language-select-nav a {
@@ -54,6 +54,7 @@
   border: 3px solid var(--color-text);
   display: grid;
   block-size: 45px;
+
   opacity: 1;
   inset-block-start: 0;
   transform: translateX(calc(var(--offset) * 4px))
