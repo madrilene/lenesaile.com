@@ -18,13 +18,18 @@ const languageNavButton = document.querySelector('.language-nav-button');
 const activeLanguageItem = languageNav.querySelector('a[aria-selected="true"]');
 activeLanguageItem.setAttribute('aria-selected', true);
 activeLanguageItem.ariaCurrent = 'page';
-const clickSound = new Audio('/assets/sounds/mouse.wav');
+let clickSound;
 
 function toggleNavOpen(event) {
   event.preventDefault();
   languageNav.classList.toggle('active');
   const isOpen = languageNavButton.getAttribute('aria-expanded') === 'false';
   languageNavButton.setAttribute('aria-expanded', isOpen);
+
+  // load and play whimsical sound
+  if (!clickSound) {
+    clickSound = new Audio('/assets/sounds/mouse.wav');
+  }
   clickSound.play();
 }
 languageNavButton.addEventListener('click', toggleNavOpen);
