@@ -8,8 +8,6 @@ preloads:
   crossorigin: true
 ---
 
-<is-land import="/assets/scripts/hydrated/gsap.js"></is-land>
-
 <article
   id="{{ title | slugify }}"
   class="region blog | h-entry"
@@ -48,6 +46,7 @@ preloads:
     {% endif %}
 
     <div class="flow e-content">
+      <is-land on:idle on:visible import="/assets/scripts/hydrated/gsap.js"></is-land>
       {{ content | safe }}
 
       <hr />
@@ -67,7 +66,7 @@ preloads:
     <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
     <p class="h-card p-author">
       <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author }}</a>
-      <img class="u-photo" src="{{ meta.authorAvatar | url | absoluteUrl(meta.url) }}" />
+      <img src="{{ meta.authorAvatar | url | absoluteUrl(meta.url) }}" />
     </p>
   </div>
 </article>

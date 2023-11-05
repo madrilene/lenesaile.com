@@ -22,12 +22,11 @@ preloads:
       <div class="column p-note">
         {{ hero.intro }}
       </div>
-      <is-land on:visible import="/assets/scripts/hydrated/gsap.js"></is-land>
     </div>
 
     <div class="snapshot">
-      {% image hero.image, "fade-in", "object-fit-cover u-photo", hero.alt, "eager",
-      "(min-width: 688px) 60vw, 100vw" %}
+      {% image hero.image, "fade-in ", "object-fit-cover", hero.alt, "eager", "(min-width:
+      688px) 60vw, 100vw" %}
       <!-- this is me -->
       {% include 'svg/arrow.svg' %}
       <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
@@ -41,6 +40,7 @@ preloads:
 
     <div class="column flow prose">
       {{ content | safe }}
+      <is-land on:idle on:visible import="/assets/scripts/hydrated/gsap.js"></is-land>
     </div>
   </div>
 </article>
@@ -96,4 +96,7 @@ preloads:
 
 {% include 'partials/cta.njk' %}
 
-<script defer src="/assets/scripts/hydrated/masonry.js"></script>
+<is-land
+  on:media="(min-width: 56em)"
+  import="/assets/scripts/hydrated/masonry.js"
+></is-land>

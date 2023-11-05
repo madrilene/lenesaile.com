@@ -14,7 +14,7 @@ hero:
   hi: 'Das bin ich.'
 projects:
   title: Schau dir einige meiner Projekte an!
-  teaser: 'Ich erstelle liebend gerne personalisierte Weberlebnisse, die schnell, sicher, barrierefrei, umweltfreundlich und datenschutzkonform sind. '
+  teaser: 'Ich erstelle personalisierte Web-"Erlebnisse", die schnell, sicher, barrierefrei, umweltfreundlich und datenschutzkonform sind.'
   goal: '/de/projekte/'
   button: 'Projekte'
 about:
