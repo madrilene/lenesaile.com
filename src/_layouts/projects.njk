@@ -25,9 +25,15 @@ layout: base
 
   <article class="wrapper projects region flow">
     <div class="visual relative">
-      {% if project.data.image %} {% image project.data.image, "object-fit-cover" ,
-      "object-fit-cover", project.data.alt, "lazy", "(min-width: 1750px) 50vw, 100vw" %}
-      {% endif %}
+      {% if project.data.image %}
+      <!-- check if image -->
+      {% if loop.first %}
+      <!-- check if first loop, load eager -->
+      {% image project.data.image, "object-fit-cover" , "object-fit-cover",
+      project.data.alt, "eager", "(min-width: 58em) 50vw, 95vw" %}
+      <!-- all other images, lazy -->
+      {% else %} {% image project.data.image, "object-fit-cover" , "object-fit-cover",
+      project.data.alt, "lazy", "(min-width: 58em) 50vw, 95vw" %} {% endif %} {% endif %}
 
       <div class="details">
         <ul>
