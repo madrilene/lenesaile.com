@@ -9,7 +9,7 @@ layout: home
 hero:
   title: I make highly optimized custom websites.
   intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have designed and developed countless personalized websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and technologies of the web platform.
-  image: './src/assets/images/lene2022.jpg'
+  image: './src/assets/images/lene2023.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
 projects:
