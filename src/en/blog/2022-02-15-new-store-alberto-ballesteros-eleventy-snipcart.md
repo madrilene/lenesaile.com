@@ -190,7 +190,7 @@ For Snipcart to work, we have to enable script retrieval through Snipcart in the
 
 When we have achieve our first sale, the item is listed automatically within the products section. The buyer details are stored in the customer section and in the order section the transaction appears with the customer details.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
+{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Snipcart admin panel screenshot", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
 
 ## Conclusion and recommendations
 

@@ -5,8 +5,6 @@ category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 lastEdit: 2023-02-21
-image: './src/assets/images/blog/wordpress-notes.jpg'
-alt: 'Das WordPress-Logo mit etwas php-Code im Hintergrund'
 youtube: true
 cta:
   title: 'Möchtest du eine WordPress-Seite?'

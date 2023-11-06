@@ -5,8 +5,6 @@ category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 lastEdit: 2023-02-21
-image: './src/assets/images/blog/wordpress-notes.jpg'
-alt: 'The WordPress logo with some php code in the background.'
 youtube: true
 cta:
   title: 'You want a WordPress site?'
