@@ -1,10 +1,9 @@
 ---
 title: 'Grabación, edición e integración de un sonido de evento de clic'
 description: 'Los pequeños sonidos de interacción han vuelto a aparecer en los sitios web personales en los últimos años, y creo que eso es maravilloso. A continuación te explico cómo puedes incorporar un sonido a tu sitio web que tenga como disparador un evento de clic.'
-Categoría: Blogpost
-Clave: 'eleventyi18n'
-Fecha: 2023-11-06
-youtube: false
+category: blogpost
+key: 'audioswitch'
+date: 2023-11-06
 ---
 
 ¿Quién recuerda los días en los que la música u otros ruidos desagradables empezaban a sonar de repente en cuanto visitabas una página web? Yo recuerdo bajar los altavoces antes de conectarme (sí, también recuerdo encender y apagar internet deliberadamente. Eso salía caro).
