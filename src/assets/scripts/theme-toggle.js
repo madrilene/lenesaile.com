@@ -1,11 +1,17 @@
 // ------------------- theme switcher
 
 const storageKey = 'theme-preference';
+let switchSound;
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchSound = new Audio('/assets/sounds/light-on.mp3');
+});
 
 const onClick = () => {
-  // load and play whimsical sound
-  const switchSound = new Audio('/assets/sounds/light-on.mp3');
-  switchSound.play();
+  if (switchSound) {
+    switchSound.play();
+  }
+
   // flip current value
   theme.value = theme.value === 'light' ? 'dark' : 'light';
   setPreference();

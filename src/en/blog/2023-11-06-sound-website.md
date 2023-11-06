@@ -76,9 +76,17 @@ In your HTML you must define the area to listen for the click. In my case, that'
 I embed my sound as part of a theme switcher with a few more settings, but the relevant part in my JavaScript is this one:
 
 ```js
+let switchSound;
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchSound = new Audio('/assets/sounds/light-on.mp3');
+  switchSound.load();
+});
+
 const onClick = () => {
-  const switchSound = new Audio('/assets/sounds/light-on.mp3');
-  switchSound.play();
+  if (switchSound) {
+    switchSound.play();
+  }
 };
 
 window.onload = () => {
@@ -86,9 +94,11 @@ window.onload = () => {
 };
 ```
 
-All actions - the declaration of the variable `switchSound`, the subsequent loading of the file and the actual playing of the sound (using the `HTMLMediaElement` `play()` method) - take place in the function expression `onClick`.
+The first line declares a variable called `switchSound` without initializing it. Being defined at a higher scope it can be accessed by different parts of the code. We then listen for the `DOMContentLoaded` event, which is fired when the HTML document has been completely loaded and parsed, but external resources like stylesheets and images may not have been fully loaded yet. This is to make sure that the loading of the sound does not block any important assets.
 
-The load event for the window object is triggered when the entire page, including styles, images and other resources, is loaded. It is available via the `onload` property.
+Within the event listener for `DOMContentLoaded`, I create the new `Audio` object and assign it to the `switchSound` variable. The actual playing of the sound (using the `HTMLMediaElement` `play()` method) - takes place in the function expression `onClick`.
+
+The `load` event for the `window` object is triggered when the entire page, including styles, images and other resources, is loaded. It is available via the `onload` property.
 I make it listen for clicks on the `button` with an ID of `#theme-toggle`.
 
 For a valid theme switcher more things have to happen, you can have a look at the [theme switcher on this page on GitHub](https://github.com/madrilene/lenesaile.com/blob/main/src/assets/scripts/theme-toggle.js).

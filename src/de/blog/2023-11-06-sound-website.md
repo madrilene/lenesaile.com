@@ -73,12 +73,20 @@ In deinem HTML musst du den Bereich definieren, der auf den Klick "hören" soll.
 </button>
 ```
 
-Ich bette meinen Sound als Teil eines Themenumschalters mit einigen weiteren Einstellungen ein, aber der relevante Teil in meinem JavaScript ist dieser:
+Ich bette meinen Sound als Teil eines Theme-Switchers mit ein paar weiteren Einstellungen ein, aber der relevante Teil in meinem JavaScript ist dieser:
 
 ```js
+let switchSound;
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchSound = new Audio('/assets/sounds/light-on.mp3');
+  switchSound.load();
+});
+
 const onClick = () => {
-  const switchSound = new Audio('/assets/sounds/light-on.mp3');
-  switchSound.play();
+  if (switchSound) {
+    switchSound.play();
+  }
 };
 
 window.onload = () => {
@@ -86,9 +94,11 @@ window.onload = () => {
 };
 ```
 
-Alle Aktionen - die Deklaration der Variablen `switchSound`, das anschließende Laden der Datei und das eigentliche Abspielen des Sounds (mittels der `HTMLMediaElement` `play()` Methode) - finden in der "function expression" `onClick` statt.
+Die erste Zeile deklariert eine Variable namens `switchSound`, ohne sie zu initialisieren. Da sie in einem höheren "scope" definiert ist, kann ich darauf von verschiedenen Bereichen des Codes zugegreifen. Dann warten wir auf den event `DOMContentLoaded`, der ausgelöst wird, wenn das HTML-Dokument vollständig geladen und geparst wurde, externe Ressourcen wie Stylesheets und Bilder aber möglicherweise noch nicht vollständig geladen wurden. Damit soll sichergestellt werden, dass das Laden des Tons keine wichtigen Ressourcen blockiert.
 
-Das Ladeereignis für das Window-Objekt wird ausgelöst, wenn die gesamte Seite, einschließlich der CSS-Dateien, Bilder und anderer Ressourcen, geladen wurde. Es ist verfügbar über die `onload`-property.
-Ich lasse es nach Klicks auf den `button` mit der ID `#theme-toggle` warten.
+Innerhalb des Event-Listeners für `DOMContentLoaded` erstelle ich das neue `Audio`-Objekt und weise es der Variablen `switchSound` zu. Das eigentliche Abspielen des Sounds (unter Verwendung der `HTMLMediaElement` `play()` Methode) - findet im Funktionsausdruck `onClick` statt.
+
+Der `load`-event für das `window`-Objekt wird ausgelöst, wenn die gesamte Seite, einschließlich CSS, Bilder und anderer Ressourcen, geladen wurde. Es ist über die _property_ `onload` verfügbar.
+Ich lasse es auf Klicks auf den `Button` mit der ID `#theme-toggle` warten.
 
 Für einen gültigen Theme-Switcher müssen noch mehr Dinge passieren, du kannst dir den kompletten [Theme-Switcher von dieser Website auf GitHub](https://github.com/madrilene/lenesaile.com/blob/main/src/assets/scripts/theme-toggle.js) ansehen.

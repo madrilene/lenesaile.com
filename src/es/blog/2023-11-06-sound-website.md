@@ -73,12 +73,20 @@ En tu HTML tienes que definir el área que debe "escuchar" el click. En mi caso 
 </button>
 ```
 
-Yo incrusto mi sonido como parte de un conmutador de tema con algunos otros ajustes, pero la parte relevante en mi JavaScript es esta:
+Incrusto mi sonido como parte de un conmutador de temas con algunos ajustes más, pero la parte relevante en mi JavaScript es esta:
 
 ```js
+let switchSound;
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchSound = new Audio('/assets/sounds/light-on.mp3');
+  switchSound.load();
+});
+
 const onClick = () => {
-  const switchSound = new Audio('/assets/sounds/light-on.mp3');
-  switchSound.play();
+  if (switchSound) {
+    switchSound.play();
+  }
 };
 
 window.onload = () => {
@@ -86,9 +94,11 @@ window.onload = () => {
 };
 ```
 
-Todas las acciones - la declaración de la variable `switchSound`, la posterior carga del archivo y la reproducción real del sonido (utilizando el método `play()` de `HTMLMediaElement`) - tienen lugar en la "expresión de función" `onClick`.
+La primera línea declara una variable llamada `switchSound` sin inicializarla. Al estar definida en un ámbito superior puede ser accedida por diferentes partes del código. A continuación escuchamos el evento `DOMContentLoaded`, que se dispara cuando el documento HTML ha sido completamente cargado y analizado, pero los recursos externos como las hojas de estilo y las imágenes pueden no haber sido completamente cargados todavía. Esto es para asegurarse de que la carga del sonido no bloquea ningún recurso importante.
 
-El evento de carga para el objeto ventana se activa cuando se ha cargado toda la página, incluidos los archivos CSS, las imágenes y otros recursos. Está disponible a través de la propiedad `onload`.
-Hago que espere después de hacer clic en el botón con el ID `#theme-toggle`.
+Dentro del escuchador de eventos para `DOMContentLoaded`, creo el nuevo objeto `Audio` y lo asigno a la variable `switchSound`. La reproducción del sonido (usando el método `play()` del `HTMLMediaElement`) tiene lugar en la función `onClick`.
+
+El evento `load` para el objeto `window` se activa cuando se carga toda la página, incluyendo estilos, imágenes y otros recursos. Está disponible a través de la propiedad `onload`.
+Hago que escuche los clics en el `button` con un ID de `#theme-toggle`.
 
 Para un conmutador de temas válido tienen que pasar más cosas, puedes echar un vistazo al [conmutador de temas de esta página web en GitHub](https://github.com/madrilene/lenesaile.com/blob/main/src/assets/scripts/theme-toggle.js).
