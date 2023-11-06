@@ -13,7 +13,7 @@ Durante mucho tiempo estuvo mal visto reproducir sonidos no solicitados. Los vis
 
 ## Grabar sonido
 
-Esto es muy sencillo. Hoy en día siempre tenemos un dispositivo de grabación con nosotros. Yo me pongo al lado de mi viejo interruptor de la luz y grabo su nítido sonido.
+Esto es muy sencillo. Hoy en día siempre tenemos un dispositivo de grabación con nosotros. Yo me pongo al lado de mi viejo interruptor de la luz y grabo su nítido sonido con mi móvil.
 
 {% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "Una pared blanca con un viejo interruptor pulsador", "Mi interruptor de la luz utilizado para el sonido de mi interruptor temático. Así que en cierto modo, en realidad está encendiendo y apagando mi luz. " %}
 

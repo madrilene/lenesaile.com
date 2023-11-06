@@ -1,5 +1,5 @@
 ---
-title: 'Aufnehmen, Bearbeiten und Integrieren eines click event Sounds'
+title: 'Aufnehmen, Bearbeiten und Einbauen eines Sounds'
 description: 'Kleine Interaktionssounds haben in den letzten Jahren wieder Einzug in persönliche Websites gehalten, und das finde ich wunderbar. Im Folgenden erkläre ich, wie du einen Sound in deine Website einbauen kannst, der einen click event als Auslöser hat.'
 Kategorie: Blogpost
 Schlüssel: 'eleventyi18n'
@@ -13,7 +13,7 @@ Lange Zeit war es verpönt, irgendwelche unaufgefordert Töne abzuspielen. Besuc
 
 ## Ton aufnehmen
 
-Das ist ganz einfach! Heutzutage haben wir immer ein Aufnahmegerät dabei. Ich stelle mich neben meinen alten Lichtschalter und nehme sein knackiges Geräusch auf.
+Das ist ganz einfach! Heutzutage haben wir immer ein Aufnahmegerät dabei. Ich stelle mich neben meinen alten Lichtschalter und nehme sein knarzendes Geräusch mit meinem Handy auf.
 
 {% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "Eine weiße Wand mit einem alten Druckknopfschalter", "Mein Lichtschalter, der für den Sound meines Theme-Umschalters verwendet wurde. In gewisser Weise schaltest du also tatsächlich mein Licht an und aus. " %}
 

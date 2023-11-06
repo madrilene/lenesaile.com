@@ -13,7 +13,7 @@ For a long time it was frowned upon to play any unsolicited sounds. The user rig
 
 ## Record your sound
 
-That's easy! Nowadays we always have a sound recorder with us. So I stand next to my old light switch and record its crackling sound.
+That's easy! Nowadays we always have a sound recorder with us. So I stand next to my old light switch and record its crackling sound with my phone.
 
 {% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "A white wall with an old push-button switch", "My light switch, which was used for my theme switcher sound. So in a way, you actually switch my light on and off. " %}
 
