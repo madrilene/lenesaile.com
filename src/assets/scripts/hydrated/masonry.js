@@ -18,17 +18,13 @@ if (!supportMasonry) {
     function layout() {
       grids.forEach(grid => {
         let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(' ').length;
-
         if (grid.ncol !== ncol) {
           grid.ncol = ncol;
-
           grid.items.forEach(c => c._el.style.removeProperty('margin-block-start'));
-
           if (grid.ncol > 1) {
             grid.items.slice(ncol).forEach((c, i) => {
               let prev_fin = grid.items[i]._el.getBoundingClientRect().bottom,
                 curr_ini = c._el.getBoundingClientRect().top;
-
               c._el.style.marginTop = `${prev_fin + grid.gap - curr_ini}px`;
             });
           }

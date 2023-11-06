@@ -1,17 +1,13 @@
-// ------------------- dark mode
+// ------------------- theme switcher
 
 const storageKey = 'theme-preference';
-let switchSound;
 
 const onClick = () => {
   // load and play whimsical sound
-  if (!switchSound) {
-    switchSound = new Audio('/assets/sounds/light-on.wav');
-  }
+  const switchSound = new Audio('/assets/sounds/light-on.mp3');
   switchSound.play();
   // flip current value
   theme.value = theme.value === 'light' ? 'dark' : 'light';
-
   setPreference();
 };
 
@@ -28,7 +24,6 @@ const setPreference = () => {
 
 const reflectPreference = () => {
   document.firstElementChild.setAttribute('data-theme', theme.value);
-
   document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
 };
 
@@ -40,10 +35,7 @@ const theme = {
 reflectPreference();
 
 window.onload = () => {
-  // set on load so screen readers can see latest value on the button
   reflectPreference();
-
-  // now this script can find and listen for clicks on the control
   document.querySelector('#theme-toggle').addEventListener('click', onClick);
 };
 

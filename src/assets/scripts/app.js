@@ -1,4 +1,4 @@
-// ----- Check that service workers are supported
+// ----- Check that service workers are supported --------------------------------
 
 if ('serviceWorker' in navigator) {
   // use the window load event to keep the page load performant
@@ -18,7 +18,6 @@ const languageNavButton = document.querySelector('.language-nav-button');
 const activeLanguageItem = languageNav.querySelector('a[aria-selected="true"]');
 activeLanguageItem.setAttribute('aria-selected', true);
 activeLanguageItem.ariaCurrent = 'page';
-let clickSound;
 
 function toggleNavOpen(event) {
   event.preventDefault();
@@ -26,10 +25,8 @@ function toggleNavOpen(event) {
   const isOpen = languageNavButton.getAttribute('aria-expanded') === 'false';
   languageNavButton.setAttribute('aria-expanded', isOpen);
 
-  // load and play whimsical sound
-  if (!clickSound) {
-    clickSound = new Audio('/assets/sounds/mouse.wav');
-  }
+  // load and play sound
+  const clickSound = new Audio('/assets/sounds/mouse.mp3');
   clickSound.play();
 }
 languageNavButton.addEventListener('click', toggleNavOpen);
