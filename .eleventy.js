@@ -73,6 +73,7 @@ const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {EleventyI18nPlugin} = require('@11ty/eleventy');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const {partytownSnippet} = require('@builder.io/partytown/integration');
 
 // module import events
 const {afterBuild} = require('./config/events/index.js');
@@ -139,6 +140,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, by Stephanie Eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
+  eleventyConfig.addShortcode('partytown', () => partytownSnippet());
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('projects_en', getProjectsEN);

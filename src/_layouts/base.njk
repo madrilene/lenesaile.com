@@ -80,10 +80,29 @@
     <!-- 7 defered js  -->
     <script type="module" src="/assets/scripts/is-land.js"></script>
     <script defer src="/assets/scripts/app.js"></script>
+    {% if youtube %}
+    <!-- include yt script if youtube: true in template frontmatter -->
     <script
-      defer
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
+    ></script>
+    {% endif %}
+
+    <script>
+      partytown = {
+        debug: true
+      };
+    </script>
+
+    <script>
+      {% partytown %}
+    </script>
+
+    <script
+      type="text/partytown"
       data-domain="lenesaile.com"
       src="https://plausible.io/js/plausible.js"
+      defer
     ></script>
 
     <!-- 8 everything else: meta tags, icons, open graph etc.  -->
@@ -98,12 +117,6 @@
 
     <main id="main" class="relative">{{ content | safe }}</main>
 
-    {% include "partials/footer.njk" %} {% if youtube %}
-    <!-- include yt script if youtube: true in template frontmatter -->
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
-    ></script>
-    {% endif %}
+    {% include "partials/footer.njk" %}
   </body>
 </html>
