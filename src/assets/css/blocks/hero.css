@@ -23,6 +23,7 @@
 .hero .snapshot {
   grid-column: 1 / 5;
   grid-row: 2 / 4;
+  background-color: var(--color-bg);
 }
 
 @media (min-width: 43em) {
@@ -54,12 +55,16 @@
     max-width: var(--wrapper-max-width, 85rem);
     margin-inline: auto;
     padding-inline: var(--gutter);
-    /* position: relative; */
   }
+}
+
+.hero .snapshot picture {
+  aspect-ratio: 500 / 294;
 }
 
 .hero .snapshot img {
   filter: sepia(0.3) grayscale(0.7) brightness(1.2);
+  object-fit: cover;
 }
 
 .hero .reverse {

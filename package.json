@@ -35,7 +35,6 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/is-land": "^4.0.0",
-    "@builder.io/partytown": "^0.8.1",
     "gsap": "^3.11.3",
     "tailwindcss": "^3.0.23"
   },

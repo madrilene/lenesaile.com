@@ -56,8 +56,7 @@ const {
   insertionShortcode,
   imageShortcode,
   imageShortcodePlaceholder,
-  liteYoutube,
-  partytownShortcode
+  liteYoutube
 } = require('./config/shortcodes/index.js');
 
 // module import transforms
@@ -135,7 +134,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPairedShortcode('aside', asideShortcode);
   eleventyConfig.addPairedShortcode('breakout', breakoutShortcode);
   eleventyConfig.addPairedShortcode('insertion', insertionShortcode);
-  eleventyConfig.addPairedShortcode('partytown', partytownShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
