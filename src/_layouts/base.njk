@@ -88,15 +88,8 @@
     ></script>
     {% endif %}
 
-    <script>
-      partytown = {
-        debug: true
-      };
-    </script>
-
-    <script>
-      {% partytown %}
-    </script>
+    <!-- partytown -->
+    {% partytown %} partytown = { forward: [], }; {% endpartytown %}
 
     <script
       type="text/partytown"
