@@ -10,7 +10,7 @@ alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu a
 breakout:
   title: 'Ich lebe und arbeite in Madrid'
   intro: 'Seit 2010 lebe und arbeite ich in Madrid, im Stadtteil La Latina. Ich mache Projekte für Kunden aus aller Welt.'
-finalWords: 'Ich lese und lerne permanent. Besonders antegtan bin ich von allem, was in den Bereichen Jamstack, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Expertin, da ich ständig optimiere und jeder Bereich unglaublich groß ist. Ich lerne schnell und flexibel und habe kein Problem damit, mich in neue Methoden und Techniken einzuarbeiten.'
+finalWords: 'Ich lese und lerne permanent. Besonders antegtan bin ich von allem, was in den Bereichen Webplattform, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Expertin, da ich ständig optimiere und jeder Bereich groß ist - ich lerne schnell und bin flexibel.'
 cta:
   title: 'Lass uns reden!'
   desktop: 'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.'

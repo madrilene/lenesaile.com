@@ -10,8 +10,8 @@ image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sentada en una pelota de gimnasia frente a su escritorio, aparentemente trabajando'
 breakout:
   title: 'Vivo y trabajo en Madrid'
-  intro: 'Desde 2010, vivo y trabajo en Madrid, La Latina. Muchos de mis clientes se encuentran en España, pero también trabajo para clientes internacionales.'
-finalWords: 'Estoy constantemente leyendo y aprendiendo, y me entusiasma especialmente todo lo que está pasando en las áreas de Jamstack, accesibilidad y rendimiento. No me considero una experta en ninguna parte, ya que estoy aprendiendo algo nuevo constantemente. No me cuesta familiarizarme con nuevos métodos y técnicas.'
+  intro: 'Desde 2010, vivo y trabajo en Madrid, La Latina. Muchos de mis clientes se encuentran en España, pero realizo proyectos con gente de todas partes del mundo.'
+finalWords: 'Estoy constantemente leyendo y aprendiendo, y me entusiasma especialmente todo lo que está pasando en las áreas de Jamstack, accesibilidad y rendimiento. No me cuesta familiarizarme con nuevos métodos y técnicas.'
 cta:
   title: '¡Hablemos!'
   desktop: 'Un proyecto tiene éxito en Internet cuando se ve bien, se siente bien y funciona con tecnología limpia y segura. Desde 2008 creo experiencias web atractivas con atención al detalle.'

@@ -9,8 +9,8 @@ image: './src/assets/images/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitting on a gym ball in front of her desk, apparently working'
 breakout:
   title: 'I live and work in Madrid'
-  intro: 'Since 2010, I have been living and working in Madrid, La Latina. A lot of my clients are based in Spain, but I also work for international clients.'
-finalWords: "I don't consider myself an expert anywhere, as I'm constantly readjusting perspectives and optimising my way of working. I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques. "
+  intro: 'Since 2010, I have been living and working in Madrid, La Latina. I work with people all over the world.'
+finalWords: "I'm constantly readjusting perspectives and optimising my way of working. I am a quick and flexible learner and have no trouble familiarising myself with new methods and techniques."
 cta:
   title: "Let's talk!"
   desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'
@@ -24,6 +24,6 @@ After reaching my limits with static websites, I discovered [WordPress](/en/blog
 In 2018 I came across the Jamstack approach and as a consequence revamped all my workflows.
 After a short detour to various JavaScript frameworks and Tailwind CSS, I now prefer to work directly with the technologies of the web platform, without abstraction layers.
 
-I enjoy building ==fast websites== with minimal vanilla Javascript and ==all the possibilities of modern CSS==.
+I enjoy building ==fast websites== with minimal vanilla Javascript and ==all the possibilities of modern CSS.==
 
 I'm especially enthusiastic about everything that's happening in the areas of modern CSS, Accessibility and Performance. These are the main fields in which I am continuously and passionately educating myself.
