@@ -1,7 +1,7 @@
 @font-face {
   font-family: Outfit;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src:
     local(''),
@@ -11,7 +11,7 @@
 @font-face {
   font-family: Outfit;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src:
     local(''),
@@ -21,7 +21,7 @@
 @font-face {
   font-family: Charter;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   src:
     local(''),
@@ -30,7 +30,7 @@
 @font-face {
   font-family: Charter;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 700;
   src:
     local(''),
@@ -41,7 +41,7 @@
   font-family: 'FiraCode';
   font-weight: 500;
   font-style: normal;
-  font-display: fallback;
+  font-display: swap;
   src:
     local(''),
     url(/assets/fonts/fira/firacode-medium-webfont.woff2) format('woff2');
