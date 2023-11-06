@@ -2,9 +2,8 @@
 title: 'Recording, editing and integrating a sound for a click event'
 description: "Whimsical interaction sounds have found their back into personal websites in recent years, and I think that's wonderful. I explain below how you can implement a sound in your website that has a click event as a trigger."
 category: blogpost
-key: 'eleventyi18n'
+key: 'audioswitch'
 date: 2023-11-06
-youtube: false
 ---
 
 Who remembers the times when music or other nasty sounds randomly started playing as soon as you visited a website? I remember making sure to turn the speakers down before I went online (yes, I also remember consciously switching the internet on and off. That was expensive).
