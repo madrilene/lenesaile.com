@@ -49,7 +49,6 @@ blockquote:not([class]) {
 
 /* More generic elements */
 blockquote:not([class]) {
-  font-family: var(--font-serif);
   font-size: var(--size-step-2);
 }
 

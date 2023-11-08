@@ -8,11 +8,6 @@
       "value": ["Outfit", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
-      "name": "Serif",
-      "description": "Expressive sections, like quotes",
-      "value": ["Charter", "serif"]
-    },
-    {
       "name": "Mono",
       "description": "Expressive sections, like quotes",
       "value": ["FiraCode", "monospace"]

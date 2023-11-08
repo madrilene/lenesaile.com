@@ -19,25 +19,6 @@
 }
 
 @font-face {
-  font-family: Charter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src:
-    local(''),
-    url(/assets/fonts/charter/charter_regular.woff2) format('woff2');
-}
-@font-face {
-  font-family: Charter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src:
-    local(''),
-    url(/assets/fonts/charter/charter_bold.woff2) format('woff2');
-}
-
-@font-face {
   font-family: 'FiraCode';
   font-weight: 500;
   font-style: normal;
