@@ -22,8 +22,6 @@ const imageShortcode = async (src, pcls, cls, alt, loading, sizes = '100vw') => 
 
   let lowsrc = metadata.jpeg[0];
 
-  // check if there its a picture class
-
   return `
   ${
     pcls

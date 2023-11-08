@@ -50,6 +50,14 @@
       crossorigin
     />
 
+    <link
+      rel="preload"
+      href="/assets/fonts/outfit/outfit-v5-latin-700-webfont.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
     <!-- preloads in page data -->
     {% if preloads -%}
     <!-- prettier-ignore -->
@@ -78,8 +86,8 @@
     {% endif %}
 
     <!-- 7 defered js  -->
-    <script type="module" src="/assets/scripts/is-land.js"></script>
-    <script defer src="/assets/scripts/app.js"></script>
+    <script type="module" src="/assets/scripts/is-land.js?{{ assetHash }}"></script>
+    <script defer src="/assets/scripts/app.js?{{ assetHash }}"></script>
     {% if youtube %}
     <!-- include yt script if youtube: true in template frontmatter -->
     <script
