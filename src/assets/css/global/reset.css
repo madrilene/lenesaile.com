@@ -52,11 +52,8 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  /* max-inline-size: 100%;
-  display: block; */
+picture,
+img {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
