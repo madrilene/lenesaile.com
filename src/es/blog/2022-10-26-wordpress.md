@@ -32,7 +32,7 @@ En relación a la velocidad, recomiendo este vídeo un poco enfadado realizado p
 
 {% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
 
-Además, WordPress es fácil de optimizar para SEO, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
+Además, es fácil hacer que una página web de WordPress sea descubrible, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
 
 La comunidad es enorme, y todavía no me he encontrado con un problema que no estuviera ya resuelto antes o con el que no me ayudaran al instante.
 

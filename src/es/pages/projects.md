@@ -3,9 +3,9 @@ title: Proyectos
 permalink: /{{ locale }}/proyectos/index.html
 redirectFrom: [/proyectos/]
 key: 'projects'
-description: 'Escaparate de proyectos recientes. Saber que los páginas web que construyo para mis clientes les ayudan a crecer y tener más éxito es increíble.'
+description: 'Escaparate de proyectos recientes. Es estupendo saber que los webs que hago hacen feliz a la gente porque se sienten bien presentados.'
 layout: projects
-lead: 'Escaparate de proyectos recientes. Saber que los páginas web que construyo para mis clientes les ayudan a crecer y a tener más éxito es increíble.'
+lead: 'Escaparate de proyectos recientes. Es estupendo saber que los webs que hago hacen feliz a la gente porque se sienten bien presentados'
 cta:
   title: '¡Ponte en contacto!'
   desktop: ' ¿Acabas de abrir un restaurante?, ¿Diseñas ropa y necesitas un shop?, ¿Eres coach?, ¿Actriz, actor, cantante?'

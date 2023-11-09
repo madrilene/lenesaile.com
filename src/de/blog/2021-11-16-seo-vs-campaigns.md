@@ -1,6 +1,7 @@
 ---
-title: 'SEO-Positionierung vs. Werbekampagnen'
+title: 'Organisches Ranking vs. Werbekampagnen'
 description: 'Mehr als 90 % der Interaktionen beginnen mit Google. Wenn dein Unternehmen nicht in den Suchergebnissen erscheint, wie sollen die Nutzer dich dann finden?'
+permalink: seo-positionierung-vs-werbekampagnen
 category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
@@ -35,38 +36,23 @@ Du müssen sehr genau hinschauen:
 
 Das Gleiche gilt für soziale Netzwerke. Wenn du dich weigerst dafür zu bezahlen, wird die Interaktion mit deinen Inhalten wahrscheinlich abnehmen.
 
-SEO hingegen bedeutet kostenlosen, wiederkehrenden Traffic. Anders als bei Twitter, wo ein Tweet für ein oder zwei Tage Traffic bringt, oder bei der bezahlten Suche, wo jeder Klick Geld kostet, kann SEO dir konstanten Traffic bringen, Monate oder Jahre nachdem du etwas auf deiner Website veröffentlicht hast.
+Organisches Ranking hingegen bedeutet kostenlosen, wiederkehrenden Traffic. Anders als bei Twitter, wo ein Tweet für ein oder zwei Tage Traffic bringt, oder bei der bezahlten Suche, wo jeder Klick Geld kostet, kann SEO dir konstanten Traffic bringen, Monate oder Jahre nachdem du etwas auf deiner Website veröffentlicht hast.
 
 {% imagePlaceholder "./src/assets/images/blog/bing-results.jpg", "", "", "", "Screenshot der organischen Ergebnisse der Bing Suchmaschine", "Organische Ergebnisse der Bing Suchmaschine für fundaciongoethe.org. Zusätzliche Unterseiten werden entsprechend den Suchmaschinenkriterien angezeigt." %}
 
-### SEO: Optimierung einer Webseite, damit sie in den Suchergebnissen natürlich erscheint
+### Optimierung einer Webseite, damit sie in den Suchergebnissen natürlich erscheint
 
-Bei der Suchmaschinenoptimierung (SEO) geht es darum, deine Website so zu optimieren, dass sie in den organischen Ergebnissen von Google oder Bing erscheint.
+Bei der Suchmaschinenoptimierung (SEO) geht es darum, deine Website so zu optimieren, dass sie in den organischen Ergebnissen von Google, Bing, oder anderen Suchmaschinen wie [DuckDuckGo](https://duckduckgo.com/) erscheint. Ich mag diesen Begriff wirklich nicht. Nach meinem Verständnis hat er etwas Negatives an sich, das mit Trickserei zu tun hat.
 
-Das Tückische an SEO ist, dass man nicht dafür bezahlen kann, um aufzutauchen. Google und die anderen Suchmaschinen haben Algorithmen, die die Qualität und Relevanz Ihrer Seite berechnen und sie entsprechend einstufen.
+Nach all meinen Jahren der Erfahrung mit dem Bauen von Websites und der Auffindbarkeit dieser Seiten läuft alles darauf hinaus, gute Inhalte zu schreiben, eingebettet in semantisches und leicht zugängliches HTML. Machen Sie die Website schnell und sicher. Bauen Sie Vertrauen auf, das heißt, schreiben Sie über einen langen Zeitraum hinweg hochwertige Inhalte.
 
-Ein großer Teil der Suchmaschinenoptimierung besteht also darin, herauszufinden, was die Suchmaschinen für wichtig halten, und deine Website dann entsprechend zu optimieren. Und somit: Eine rundherum gut Webseite zu haben.
+Suchmaschinen arbeiten mit Algorithmen, die die Qualität und Relevanz Ihrer Seite berechnen und sie entsprechend einstufen.
 
-## Vorteile und Nachteile von SEO
+Der Algorithmus von Google konzentriert sich auf die Reichhaltigkeit deiner Inhalte. SEO ist ein Weg, um sicherzustellen, dass Suchmaschinen verstehen können, worum es auf deiner Seite geht, dass sie hochwertige, aktuelle Informationen enthält und dass sie die Frage beantwortet, die die Suchmaschine im Sinn hat.
 
-Was sind die Vor- und Nachteile von SEO? Zunächst einmal: **SEO ist auf lange Sicht viel billiger!** Was uns direkt zum größten Nachteil bringt: SEO braucht Zeit. Es gibt eine Menge ausgefeilter technischer SEO-Maßnahmen, die ich in alle meine Websites einbauen. Aber der Inhalt ist immer das Wichtigste.
+Grob gesagt, kannst du davon ausgehen, dass eine erste Positionierung zwei bis sechs Monate dauert. Aber wenn wir erst einmal in der Gunst der Suchmaschine stehen, wird sie deinen zukünftigen Inhalt viel schneller an ihre Nutzer weiterempfehlen.
 
-Der Algorithmus von Google konzentriert sich auf die Reichhaltigkeit Ihrer Inhalte. SEO ist ein Weg, um sicherzustellen, dass Suchmaschinen verstehen können, worum es auf Ihrer Seite geht, dass sie hochwertige, aktuelle Informationen enthält und dass sie die Frage beantwortet, die die Suchmaschine im Sinn hat.
-
-**Zuallererst muss Ihre Website einwandfrei sein**.
-
-Attraktiv, schnell, zugänglich, natürlich für alle Geräte optimiert und sicher. Ich werde nicht näher darauf eingehen, was das alles bedeutet, nur so viel: Ich kenne mich damit aus, und wenn du mit mir arbeitest, wird deine Website mit großer Sicherheit viel mehr Erfolg haben als die deiner Mitbewerber.
-
-Dann musst du die ersten Inhalte schreiben. Sobald diese Grundlage geschaffen ist, besteht der nächste Schritt darin, der Suchmaschine zu beweisen, dass unsere Website hohe Kriterien erfüllt. Das braucht Zeit. In sehr einfachen Worten: Google und andere Suchmaschinen werden uns jetzt immer wieder besuchen und sich unsere Website ansehen und auch beobachten, wie ihre Nutzer mit unserer Website umgehen. Finden sie was sie suchen? Fühlen sie sich wohl?
-
-Grob gesagt, können wir davon ausgehen, dass eine erste Positionierung zwei bis sechs Monate dauert. Aber wenn du erst einmal in der Gunst der Suchmaschine stehst, wird sie ihren Nutzern künftige Inhalte von dir viel schneller empfehlen.
-
-Das bringt uns zum nächsten Vorteil: **Du kannst lernen, einen großen Teil der notwendigen Arbeit selbst zu erledigen**.
-Um bei der Suche gut abzuschneiden, brauchst du spezialisierte Inhalte.
-
-> Duu weißt besser als jeder andere, wovon du sprichst, denn du bist ein Experte in deinem Fachgebiet.
->
-> 😎
+> Du weißt besser als jeder andere, wovon du sprichst, denn du bist ein Experte in deinem Fachgebiet.
 
 Wir können dir erklären, wie du Inhalte im Internet am besten strukturierst und formulierst. Eine einfache Benutzeroberfläche macht es dir leicht, deine Artikel jederzeit selbst zu veröffentlichen.
 

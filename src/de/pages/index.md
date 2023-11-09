@@ -1,6 +1,6 @@
 ---
 title: Lene Saile
-seo:
+discover:
   title: Lene Saile, Webentwicklerin und Designerin in Madrid
 permalink: /{{ locale }}/index.html
 key: 'home'
@@ -36,5 +36,5 @@ Das hat viele Vorteile:
 
 1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
 2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
-3. Die Websites erreichen eine sehr gute Positionierung in den Suchmaschinen.
+3. Aufgrund ihrer ehrlichen und durchdachten Aufbau sind sie sehr gut auffindbar.
 4. Wir können nahezu alles umsetzen was wir uns vorstellen!

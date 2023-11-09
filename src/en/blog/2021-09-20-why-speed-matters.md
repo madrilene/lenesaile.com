@@ -35,7 +35,7 @@ Google also wants users to have a good experience on the web, so fast web pages 
 
 ## Make sites fast for mobile phone users!
 
-People are increasingly using their cell phones to access digital content and services. When I look at our clients' website analytics, I see this trend reflected in the data. A typical split is 60% mobile (with a small proportion of tablets) and 40% desktop and laptop.
+People are increasingly using their cell phones to access digital content and services. When I look at the clients' website analytics, I see this trend reflected in the data. A typical split is 60% mobile (with a small proportion of tablets) and 40% desktop and laptop.
 
 The performance of a website can vary greatly depending on the user's device, network conditions or other processes running on the device. If you find your website fast enough on a computer with fiber-optic Internet, a user with an older cell phone with mobile data may experience it very differently.
 

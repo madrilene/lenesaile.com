@@ -1,7 +1,7 @@
 ---
 title: 'New store for albertoballesteros.com: Eleventy and Snipcart'
 description: 'A fast and secure website - and a look and feel that reflects that! - is crucial for a shop. albertoballesteros.com is a static website based on the Jamstack method.'
-seo:
+discover:
   title: 'New shop for albertoballesteros.com: Eleventy and Snipcart'
   description: 'Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page. This article describes how to do that with an Eleventy static site.'
 category: blogpost

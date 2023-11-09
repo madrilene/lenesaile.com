@@ -1,6 +1,6 @@
 ---
 title: Lene Saile
-seo:
+discover:
   title: Lene Saile, desarrolladora y diseñadora en Madrid
 permalink: /{{ locale }}/index.html
 key: 'home'
@@ -36,5 +36,5 @@ Este enfoque tiene varias ventajas:
 
 1. Ninguna imagen es demasiado grande, ningún código es demasiado, y el sitio web funciona sin errores y con rapidez.
 2. Soy independiente de terceros, reacciono a los problemas y a las actualizaciones necesarias yo mismo.
-3. Las páginas web consiguen un muy buen posicionamiento en los buscadores.
+3. Gracias a su estructura honesta y bien pensada, son muy fáciles de encontrar.
 4. Podemos hacer realidad casi cualquier cosa que imaginemos!

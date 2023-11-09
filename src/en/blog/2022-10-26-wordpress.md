@@ -33,7 +33,7 @@ When it comes to speed, I recommend this slightly angry video made by Alex Young
 
 {% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
 
-Also, WordPress is easy to optimize for SEO, has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
+Also, it's quite easy to make a WordPress site discoverable, it has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
 
 The community is huge, and I have yet to encounter a problem that wasn't either already solved before or that I wasn't helped with instantly.
 
@@ -122,7 +122,7 @@ Nevertheless - I have made up my mind to learn it, if only to really understand 
 
 I think the Gutenberg editor is great for experienced content editors, and for anyone who is willing to learn a bit about it. You can do a lot of different layouts and create really interesting posts (don't overdo copying stuff from the [WordPress pattern library](https://wordpress.org/patterns/) though, as this adds on to the page weight).
 
-On the other hand, some clients are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
+On the other hand, some people are notoriously afraid of breaking things. There’s a lot you can do with the Gutenberg editor - it can be a little overwhelming. Some WordPress users want the good old "Microsoft Word" editor back. And I have to say, I can understand that (by the way, there are also wonderful CMS in the Jamstack world that have a very simple editing experience - I'd be happy to tell you more about them).
 
 ## So what's the right technique to build a theme nowadays?
 

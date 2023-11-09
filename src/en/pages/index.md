@@ -1,6 +1,6 @@
 ---
 title: Lene Saile
-seo:
+discover:
   title: Lene Saile, developer and designer based in Madrid
 permalink: /{{ locale }}/index.html
 key: 'home'
@@ -36,5 +36,5 @@ This approach has various advantages:
 
 1. No image is too big, no code is too much - and the website runs error-free and fast.
 2. I am independent of third parties, I react to problems and necessary updates myself.
-3. The websites achieve very good positionings in the search engines.
+3. Due to their honest and well thought-out structure, they are highly discoverable.
 4. We can realize almost anything we can imagine!

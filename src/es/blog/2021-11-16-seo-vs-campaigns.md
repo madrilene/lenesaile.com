@@ -1,13 +1,14 @@
 ---
-title: 'Posicionamiento SEO vs. Campañas de publicidad'
+title: 'Ranking orgánico vs. Campañas de publicidad'
 description: 'Más del 90% de las interacciones comienzan con Google. Si tu empresa no aparece en los resultados de búsqueda, cómo te van a encontrar los usuarios?'
+permalink: sposicionamiento-seo-vs-campanas-de-publicidad
 category: blogpost
 key: 'seovscampaigns'
 date: 2021-11-16
 redirectFrom: ['/blog/2021/posicionamiento-seo-vs-campanas-publicidad/']
 ---
 
-Hace unos días un cliente amigo nos transmitió sus dudas en relación a elegir entre el SEO y una campaña de publicidad para mejorar la captación de clientes.
+Hace unos días un cliente amigo nos transmitió sus dudas en relación a elegir entre el ranking orgánico y una campaña de publicidad para mejorar la captación de clientes.
 
 Hay que tener en cuenta muchos factores, como por ejemplo el tipo de producto que quieras vender o el servicio que estés ofreciendo. Pero empecemos por lo básico.
 
@@ -36,36 +37,25 @@ Hay que mirar con mucho cuidado:
 
 Lo mismo ocurre con las redes sociales. Si te niegas a pagar, es probable que la interacción con tu contenido disminuya.
 
-El SEO por otro lado significa tráfico gratuito y recurrente. A diferencia de Twitter, donde un tweet puede conseguirte tráfico durante un día o dos, o de la búsqueda pagada, donde cada clic cuesta dinero, el SEO puede traerte tráfico constante meses o años después de haber publicado algo en tu página web.
+El ranking orgánico por otro lado significa tráfico gratuito y recurrente. A diferencia de Twitter, donde un tweet puede conseguirte tráfico durante un día o dos, o de la búsqueda pagada, donde cada clic cuesta dinero, el ranking orgánico puede traerte tráfico constante meses o años después de haber publicado algo en tu página web.
 
 {% imagePlaceholder "./src/assets/images/blog/bing-results.jpg", "", "", "", "Pantallazo de los resultados orgánicos del buscador Bing", "Resultados orgánicos del buscador Bing para fundaciongoethe.org. Se muestran subpáginas adicionales según los criterios del buscador." %}
 
-### SEO: Optimizar una página web de tal manera que aparezca naturalmente en una búsqueda
+### Optimizar una página web de tal manera que aparezca naturalmente en una búsqueda
 
-Search Engine Optimization (SEO) es el proceso de optimizar tu sitio web para que aparezca en los resultados orgánicos de Google y Bing.
+"Search Engine Optimization" (SEO) es el proceso de optimizar tu sitio web para que aparezca en los resultados orgánicos de Google y Bing, o [DuckDuckGo](https://duckduckgo.com/). SEO - Realmente no me gusta ese término. A mi entender, tiene algo negativo que tiene que ver con el engaño.
 
-La parte difícil del SEO es que no se puede pagar para aparecer. Google y los demás tienen algoritmos que calculan la calidad y relevancia de tu página y la clasifican en consecuencia.
+Después de todos mis años de experiencia construyendo sitios web y haciéndolos descubribles, todo se reduce a escribir buenos contenidos incrustados en HTML semántico y accesible. Hacer que el sitio web sea rápido y seguro. Generar confianza, es decir, seguir escribiendo ese contenido de calidad durante un largo periodo de tiempo.
 
-Por lo tanto, una gran parte del SEO consiste en averiguar lo que los motores de búsqueda consideran importante, y luego optimizar tu sitio web en consecuencia.
+Los motores de búsqueda funcionan con algoritmos que calculan la calidad y relevancia de su página y la clasifican en consecuencia.
 
-## Ventajas y desventajas del SEO
+El algoritmo de Google se centra en la riqueza de su contenido. El SEO es una forma de asegurarse de que los motores de búsqueda pueden entender de qué trata su página, que contiene información actualizada de calidad y que responderá a la pregunta que el motor de búsqueda tenía en mente.
 
-¿Qué son las ventajas y desventajas del SEO? En primer lugar: **¡El SEO es mucho más barato a largo plazo!** Lo que nos lleva directamente al mayor inconveniente: El SEO lleva tiempo. Hay una gran cantidad de SEO técnico refinado que incluimos cuidadosamente en todas nuestras páginas web, pero en algún momento lo que más importa son los contenidos.
+A grandes rasgos, se puede suponer que un posicionamiento inicial lleva de dos a seis meses. Pero una vez que estemos a favor del motor de búsqueda, éste recomendará su contenido futuro mucho más rápido a sus usuarios.
 
-El algoritmo de Google se centra en la riqueza de tu contenido. El SEO es una forma de asegurarse de que los motores de búsqueda pueden entender de qué trata tu página, que contiene información actualizada de calidad y que responderá a la pregunta que el buscador tenía en mente.
-
-**En primer lugar, tu página web debe ser impecable.** Atractiva, rápida, accesible, por supuesto optimizada para todos los dispositivos, y segura. No voy a entrar en más detalles sobre lo que todo esto implica, sólo esto: sabemos todo sobre esto y si confías en mi, tu sitio web será mucho mejor que el de todos tus competidores.
-
-Luego hay que escribir los primeros contenidos. Una vez creada esta base, el siguiente paso es demostrar al buscador que nuestro sitio web cumple con sus altos criterios. Eso lleva tiempo. En palabras muy simples: Google y otros motores de búsqueda nos visitarán ahora repetidamente y echarán un vistazo a nuestro sitio web, y también observarán cómo interactúan sus usuarios con nuestro sitio web. ¿Parece que encuentran lo que buscan?
-
-A grandes rasgos, podemos suponer que un posicionamiento inicial lleva de dos a seis meses. Pero una vez que estemos a favor del motor de búsqueda, recomendará futuros contenidos mucho más rápido a sus usuarios.
-
-Eso nos lleva a la siguiente ventaja: **Puedes aprender a realizar parte de los trabajos necesarios**.
-Para que te vaya bien en la búsqueda, necesitarás contenidos especializados.
+Eso nos lleva a la siguiente ventaja: **Puedes aprender a hacer parte del trabajo necesario**.
 
 > Tú sabes mejor que nadie de lo que hablas, porque eres un experto en tu profesión.
->
-> 😎
 
 Te podemos explicar la mejor manera de estructurar y formular los contenidos en la web. Una sencilla interfaz de usuario te facilita la publicación de tus artículos en cualquier momento.
 
