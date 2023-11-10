@@ -8,7 +8,7 @@ excludeFromSitemap: true
   {% for page in collections.allMarkdown %}
   {% if page.url and page.data.excludeFromSitemap != true %}
 
-  {% if page.data.lastUpdated %}{% set lastmod = page.data.lastUpdated %}
+  {% if page.data.lastEdit %}{% set lastmod = page.data.lastEdit %}
   {% else %}{% set lastmod = page.date %}
   {% endif %}
 
