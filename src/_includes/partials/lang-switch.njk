@@ -17,16 +17,13 @@
   >
     {% for language in meta.languages %} {% if loop.first %} {% endif %} {% set
     translatedUrl = "/" + language.code + "/" %} {% set langClass = "lang-" +
-    language.code %}
+    language.code %} {% set selectedState = "true" if language.code == page.lang else
+    "false" %}
 
-    <!-- set active state-->
-    {% set selectedState = "true" if language.code == page.lang else "false" %}
-
-    <!-- now redundant: class selecting -->
-    {% set activeClass = "lang-active" if language.code == page.lang else "inactive" %}
-    <!-- start loop -->
-    {% for item in collections.all %} {% if item.data.key == key and item.data.page.lang
-    == language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
+    <!-- TODO: redundant: class selecting -->
+    {% set activeClass = "lang-active" if language.code == page.lang else "inactive" %} {%
+    for item in collections.all %} {% if item.data.key == key and item.data.page.lang ==
+    language.code %} {% set translatedUrl = item.url %} {% endif %} {% endfor %}
     <li>
       <a
         id="lang-{{ language.code }}"
