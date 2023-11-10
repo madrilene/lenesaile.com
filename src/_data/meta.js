@@ -57,8 +57,8 @@ module.exports = {
     long: 'English',
     siteName: 'Lene Saile',
     siteDescription:
-      'Frontend developer based in Madrid. I enjoy working with Jamstack, vanilla Javascript and modern CSS. I do my very best to improve in terms of accessibility and performance.',
-    shortDescription: 'Frontend developer and designer based in Madrid.',
+      'Frontend developer and designer based in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.',
+    shortDescription: 'Frontend developer and designer',
     back: 'Back',
     skipText: 'Jump to main content',
     toc: 'Table of contents',
@@ -93,7 +93,7 @@ module.exports = {
     long: 'Español',
     siteName: 'Lene Saile',
     siteDescription:
-      'Desarrolladora Frontend en Madrid. Me gusta trabajar con Jamstack, Javascript vainilla y CSS moderno.  Es muy importante que las webs sean rápidas y accesibles.',
+      'Desarrolladora Frontend y diseñadora en Madrid. Me gusta trabajar con HTML semántico, vanilla Javascript y CSS moderno.',
     back: 'Atrás',
     skipText: 'Saltar al contenido principal',
     toc: 'índice de contenidos',
@@ -126,7 +126,7 @@ module.exports = {
     long: 'Deutsch',
     siteName: 'Lene Saile',
     siteDescription:
-      'Frontend-Developer in Madrid. Ich arbeite gerne mit Jamstack, Vanilla Javascript und modernem CSS. Ich tue alles, um die Barrierefreiheit und Leistung zu optimieren.',
+      'Frontend-Developer und Designer in Madrid. Ich arbeite semantischem HTML, vanilla Javascript und modernem CSS.',
     back: 'Zurück',
     skipText: 'Zum Hauptinhalt springen',
     toc: 'Inhaltsverzeichnis',
