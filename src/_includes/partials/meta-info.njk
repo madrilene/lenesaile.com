@@ -49,6 +49,12 @@
 <link rel="alternate" hreflang="{{ link.lang }}" href="{{ meta.url }}{{ link.url }}" />
 {% endfor %}
 
+<link
+  rel="alternate"
+  hreflang="x-default"
+  href="{{ meta.url }}{{ page.url | locale_url('en') }}"
+/>
+
 <!-- Open Graph meta -->
 <meta property="og:url" content="{{ meta.url }}{{ page.url }}" />
 <meta property="og:type" content="website" />
