@@ -1,6 +1,6 @@
 ---
 title: 'My first website'
-description: "A funny thing happened today. The very first website I made as a freelancer, in late 2008, caught up with me again. I haven't seen or heard from it in 14 years, and now it's back."
+description: "A funny thing happened today. The very first website I made as a freelancer, in late 2008, caught up with me again. I haven't seen or heard from it in 14 years."
 category: blogpost
 key: 'firstwebsite'
 date: 2022-11-19

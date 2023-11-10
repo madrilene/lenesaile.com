@@ -1,6 +1,6 @@
 ---
 title: 'Web-Performance: Warum Geschwindigkeit wichtig ist'
-description: 'Bei der web performance geht es darum, dass jeder schnell auf eine Webseite zugreifen kann, egal welche Internetverhältnissse herrschen oder welches Gerät benutzt wird.'
+description: 'Bei web performance geht es darum, dass jeder schnell auf eine Webseite zugreifen kann.'
 category: blogpost
 key: 'speedmatters'
 date: 2021-09-20

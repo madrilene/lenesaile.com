@@ -1,6 +1,6 @@
 ---
 title: 'Recording, editing and integrating a sound for a click event'
-description: "Whimsical interaction sounds have found their back into personal websites in recent years, and I think that's wonderful. I explain below how you can implement a sound in your website that has a click event as a trigger."
+description: "Whimsical interaction sounds have found their back into personal websites in recent years, and I think that's wonderful."
 category: blogpost
 key: 'audioswitch'
 date: 2023-11-06

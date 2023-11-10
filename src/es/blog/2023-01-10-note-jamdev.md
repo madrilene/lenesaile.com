@@ -3,7 +3,6 @@ title: 'Lightning talk con TheJam.dev 2023'
 category: note
 key: 'jamdev'
 date: 2023-01-10
-excludeFromSitemap: true
 ---
 
 El día 25 de enero participaré en [TheJam.dev 2023](https://cfe.dev/events/the-jam-2023/). Cuando veo a los [otros ponentes en la alineación](https://cfe.dev/events/the-jam-2023/#speakers) puedo sentir claramente el síndrome del impostor dando patadas... 😬

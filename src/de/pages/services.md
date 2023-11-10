@@ -2,9 +2,9 @@
 title: Was ich mache
 permalink: /{{ locale }}/leistungen/index.html
 key: 'services'
-description: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Und: Webseiten sollen Spaß machen!'
+description: 'Semantisches HTML, CSS und eine Prise JavaScript! Ich lege Wert auf Leistung, Barrierefreiheit und langfristige Unterstützung. Und: Webseiten sollen Spaß machen!'
 layout: services
-lead: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristigen Kundenservice. Und: Webseiten sollen Spaß machen!'
+lead: 'Mein Ansatz ist semantisches HTML, etwas CSS und eine Prise JavaScript. Ich lege Wert auf Leistung, Barrierefreiheit, intuitive Bedienung und langfristige Unterstützung. Und: Webseiten sollen Spaß machen!'
 
 tools:
   items:

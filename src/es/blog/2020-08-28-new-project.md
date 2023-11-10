@@ -1,6 +1,6 @@
 ---
 title: 'Un nuevo proyecto: de la planificación a la publicación'
-description: 'Cada proyecto comienza con la planificación. Así puedo tener una sensación más concreta del proyecto. Estudio sitios web de la misma industria y busco inspiración.'
+description: 'Cada proyecto comienza con la planificación. Así puedo tener una sensación más concreta del proyecto.'
 category: blogpost
 key: 'newproject'
 date: 2020-08-28

@@ -1,6 +1,6 @@
 ---
 title: 'Organisierung der Eleventy config-Datei'
-description: 'Eleventy lässt dich eine Datei namens eleveny.js anlegen, um alles nach den Bedürfnissen deines Projekts zu konfigurieren. In diesem Artikel geht es um die Organisation dieser Konfigurationsdatei!'
+description: 'Eleventy lässt dich eine Datei anlegen, um alles nach den Bedürfnissen deines Projekts zu konfigurieren. In diesem Artikel geht es um Organisation.'
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29

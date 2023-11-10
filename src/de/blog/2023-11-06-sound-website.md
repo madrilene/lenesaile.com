@@ -1,6 +1,6 @@
 ---
 title: 'Aufnehmen, Bearbeiten und Einbauen eines Sounds'
-description: 'Kleine Interaktionssounds haben in den letzten Jahren wieder Einzug in persönliche Websites gehalten, und das finde ich wunderbar. Im Folgenden erkläre ich, wie du einen Sound in deine Website einbauen kannst, der einen click event als Auslöser hat.'
+description: 'Kleine Interaktionssounds haben in den letzten Jahren wieder Einzug in persönliche Websites gehalten, und das finde ich wunderbar.'
 category: blogpost
 key: 'audioswitch'
 date: 2023-11-06

@@ -1,6 +1,6 @@
 ---
 title: 'La claridad en los contenidos una página web'
-description: 'La claridad en los contenidos es una de las características más importantes. De poco sirve un bonito diseño si luego el visitante no entiende nada y abandona la página frustrado.'
+description: 'La claridad en los contenidos es lo más importantes. De poco sirve un bonito diseño si luego el visitante no entiende nada y abandona la página.'
 category: blogpost
 key: 'contentsclarity'
 date: 2021-01-27

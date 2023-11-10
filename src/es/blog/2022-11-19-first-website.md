@@ -1,6 +1,6 @@
 ---
 title: 'Mi primera página web'
-description: 'Hoy ha ocurrido algo curioso. La primera página web que hice como autónoma, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella, y ahora ha vuelto.'
+description: 'Hoy ha ocurrido algo curioso. La primera página web que hice como autónoma, a finales de 2008, me ha vuelto a atrapar. Hacía 14 años que no la veía ni sabía nada de ella.'
 category: blogpost
 key: 'firstwebsite'
 date: 2022-11-19

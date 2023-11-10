@@ -1,6 +1,6 @@
 ---
 title: 'Detalles técnicos sobre el desarrollo de ineliagestion.com'
-description: 'ineliagestion.com se desarrolló con un nuevo método, el Jamstack. Esta técnica está orientada a los primeros tiempos del desarrollo web, cuando todas las páginas web eran estáticas.'
+description: 'ineliagestion.com se desarrolló con un el método Jamstack. Está orientada a los primeros tiempos del desarrollo web, cuando todas las páginas web eran estáticas.'
 category: blogpost
 key: 'ineliadevelopment'
 date: 2021-01-11

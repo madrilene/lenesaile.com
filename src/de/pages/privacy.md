@@ -2,7 +2,7 @@
 title: Datenschutz
 permalink: /{{ locale }}/datenschutz/index.html
 key: 'privacy'
-description: Ich respektiere die EU-Datenschutzgrundverordnung (GDPR). Dieses Dokument erklärt, wie ich alle Informationen, die du mir zur Verfügung stellst, sammle und behandle.
+description: Ich respektiere die EU-Datenschutzgrundverordnung (GDPR). Dieses Dokument erklärt, wie ich alle Informationen sammle und behandle.
 layout: page
 ---
 

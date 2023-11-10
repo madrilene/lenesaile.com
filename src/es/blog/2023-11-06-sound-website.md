@@ -1,6 +1,6 @@
 ---
 title: 'Grabación, edición e integración de un sonido de evento de clic'
-description: 'Los pequeños sonidos de interacción han vuelto a aparecer en los sitios web personales en los últimos años, y creo que eso es maravilloso. A continuación te explico cómo puedes incorporar un sonido a tu sitio web que tenga como disparador un evento de clic.'
+description: 'Los pequeños sonidos de interacción han vuelto a aparecer en los sitios web personales en los últimos años, y creo que eso es maravilloso.'
 category: blogpost
 key: 'audioswitch'
 date: 2023-11-06

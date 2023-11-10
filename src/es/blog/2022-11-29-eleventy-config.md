@@ -1,6 +1,6 @@
 ---
 title: 'Estructuración del archivo de configuración de Eleventy'
-description: 'Eleventy te permite crear un archivo llamado eleveny.js para configurarlo todo según las necesidades de tu proyecto. Este artículo trata de la organización de este archivo de configuración.'
+description: 'Eleventy te permite crear un archivo para configurarlo todo según las necesidades de tu proyecto. Este artículo trata de la organización de este archivo.'
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29

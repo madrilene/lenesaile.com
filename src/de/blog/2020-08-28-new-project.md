@@ -1,6 +1,6 @@
 ---
 title: 'Ein neues Projekt: Von der Planung bis zur Fertigstellung'
-description: 'Jedes Projekt beginnt mit der Planung. Auf diese Weise kann ich ein konkreteres Gefühl für das Projekt bekommen. Ich studiere Websites aus der gleichen Branche und suche nach Inspiration.'
+description: 'Jedes Projekt beginnt mit der Planung. Auf diese Weise kann ich ein konkreteres Gefühl für das Projekt bekommen. '
 category: blogpost
 key: 'newproject'
 date: 2020-08-28
