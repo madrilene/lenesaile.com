@@ -164,7 +164,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
-    defaultLanguage: 'en'
+    defaultLanguage: 'en',
+    errorMode: 'allow-fallback'
   });
   eleventyConfig.addPlugin(bundlerPlugin);
 
