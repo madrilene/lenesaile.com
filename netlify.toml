@@ -1,48 +1,24 @@
 # redirect to english, spanish or german landing pages.
 
-
-
-# Content negotiation for home page
 [[redirects]]
-  from = "/"
-  to = "/de/"
-  status = 200
-  conditions = {Language = ["de"]}
-
-[[redirects]]
-  from = "/"
-  to = "/es/"
-  status = 200
-  conditions = {Language = ["es"]}
-
-# Content negotiation for home page
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 200
-
-# Redirect for end-user’s browser preference override
-[[redirects]]
-from = "/*"
-to = "/de/:splat"
+from = "/"
+to = "/de"
 status = 302
 force = true
 conditions = {Language = ["de"]}
 
 [[redirects]]
-from = "/*"
-to = "/es/:splat"
+from = "/"
+to = "/es"
 status = 302
 force = true
 conditions = {Language = ["es"]}
 
 [[redirects]]
-from = "/*"
-to = "/en/:splat"
+from = "/"
+to = "/en"
 status = 302
 force = true
-
-
 
 
 # redirect the 404 pages to your specific variant.
@@ -66,7 +42,6 @@ force = true
 package = "netlify-plugin-cache"
   [plugins.inputs]
   paths = [ ".cache" ]
-
 
 
 [[headers]]
