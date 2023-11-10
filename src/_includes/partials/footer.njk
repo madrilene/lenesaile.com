@@ -4,7 +4,7 @@
       <nav id="footernav" class="site-foot__inner" aria-label="{{ meta[page.lang].ariaLabels.footerMenu }}">
         {% set activePage = page.url | url %}
         <p class="h-card p-author">
-          &copy; {% year %}  <a class="p-name u-url" rel="me" href="/">
+          &copy; {% year %}  <a class="p-name u-url" rel="me" href="/{{ page.lang }}/">
         {{ meta[page.lang].siteName }}</a></p>
 
         {% for item in navigation[page.lang].bottom %}
