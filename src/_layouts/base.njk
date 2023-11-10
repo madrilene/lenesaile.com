@@ -11,10 +11,13 @@
 
     <!-- 2 title -->
     <title>
-      {% if discover.title %} {{ discover.title }}
-      {% elif title %}
+      {% if discover.title %}
+      {{ discover.title }}
+      {% elif title %} {% if title.length < 18 %}
       {{ title }} | {{ meta[page.lang].siteName }}
       {% else %}
+      {{ title }}
+      {% endif %} {% else %}
       {{ meta[page.lang].siteName }}
       {% endif %}
     </title>
@@ -112,7 +115,9 @@
   >
     {% include "partials/header.njk" %} {% include "partials/lang-switch.njk" %}
 
-    <main id="main" class="relative">{{ content | safe }}</main>
+    <main id="main" class="relative">
+      {{ content | safe }}
+    </main>
 
     {% include "partials/footer.njk" %}
   </body>
