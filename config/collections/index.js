@@ -1,3 +1,8 @@
+/** All markdown files as a collection for sitemap.xml */
+const allMarkdown = collection => {
+  return collection.getFilteredByGlob('./src/**/*.md');
+};
+
 // projects english
 const getProjectsEN = collection => {
   const projects = collection.getFilteredByGlob('./src/en/projects/*.md');
@@ -45,6 +50,7 @@ const getBlogsAllLang = collection => {
 };
 
 module.exports = {
+  allMarkdown,
   getProjectsEN,
   getBlogsEN,
   getProjectsES,

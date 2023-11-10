@@ -39,6 +39,7 @@ const {
 
 // module import collections
 const {
+  allMarkdown,
   getProjectsEN,
   getBlogsEN,
   getProjectsES,
@@ -142,6 +143,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
 
   // 	--------------------- Custom collections -----------------------
+  eleventyConfig.addCollection('allMarkdown', allMarkdown);
+
   eleventyConfig.addCollection('projects_en', getProjectsEN);
   eleventyConfig.addCollection('blog_en', getBlogsEN);
   eleventyConfig.addCollection('projects_es', getProjectsES);
