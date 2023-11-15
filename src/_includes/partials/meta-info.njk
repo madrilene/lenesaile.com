@@ -80,9 +80,10 @@
 
 <meta
   property="og:description"
-  content="{% if description %}{{ description }}{% else %}{{
-    meta.siteDescription
-  }}{% endif %}"
+  content="{% if discover.description %}{{ discover.description }}{% elif description %}{{
+    description
+  }}{% else %}{{ meta[page.lang].siteDescription }}{% endif %}"
+
 />
 <meta property="og:site_name" content="{{ meta[page.lang].siteName }}" />
 <meta property="og:locale" content="{{ meta[page.lang] }}" />
