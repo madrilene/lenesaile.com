@@ -1,8 +1,15 @@
 .prose {
-  --flow-space: var(--space-l-xl);
   --wrapper-max-width: 55rem;
 }
 
-.prose :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m);
+.prose :is(pre, pre + *, figure, figure + *) {
+  --flow-space: var(--space-m-l);
+}
+
+.prose :is(h2, h3, h4) {
+  --flow-space: var(--space-l-xl);
+}
+
+.prose :is(h2 + *, h3 + *, h4 + *):not(figure) {
+  --flow-space: var(--space-s);
 }

@@ -19,5 +19,5 @@
 }
 
 .content :is(h2, h3, h4) + * {
-  --flow-space: var(--space-s-m);
+  --flow-space: var(--space-m-l);
 }
