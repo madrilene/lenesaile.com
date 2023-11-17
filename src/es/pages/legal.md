@@ -10,8 +10,5 @@ layout: page
 De conformidad con el artículo 10 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico advertimos que el emisor, titular y responsable de la presente página web es la empresa:
 
 {{ meta.address.firma }}
-{{ meta.address.street }}
-{{ meta.address.zip }}, {{ meta.address.city }}
-
-Tel: <a href="tel:{{ meta.address.mobileCall }}">{{ meta.address.mobileDisplay }}</a>
+{{ meta.address.city }}, {{ meta.address.country }}
 Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
