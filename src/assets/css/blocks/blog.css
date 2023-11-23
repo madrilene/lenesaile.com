@@ -11,7 +11,8 @@
   font-size: var(--size-step-3);
 }
 
-.blog h3 {
+.blog h3,
+.blog h4 {
   font-size: var(--size-step-2);
 }
 
