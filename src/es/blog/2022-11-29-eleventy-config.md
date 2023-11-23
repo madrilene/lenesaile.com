@@ -4,7 +4,7 @@ description: 'Eleventy te permite crear un archivo para configurarlo todo según
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2023-10-30
+lastEdit: 2023-11-23 11:10:00
 ---
 
 [Eleventy](https://www.11ty.dev/) viene con algunos valores básicos por defecto. Por ejemplo, la carpeta de salida por defecto es `_site`, y Eleventy busca tus archivos fuente en el directorio raíz.
@@ -305,6 +305,35 @@ eleventyConfig.addPassthroughCopy({
 
 Por cierto, respecto a los favicons, recomiendo leer [este artículo de Andrey Sitnik](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
 
+#### Más trucos de copia de archivos Passthrough
+
+Aquí puedes ser realmente creativo.
+Puedes dirigirte a cualquier imagen JPG en cualquier dirección, y enviarlas todas juntas a una carpeta de salida común:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  '**/*.jpg': 'img'
+});
+```
+
+Puedes combinar tus assets en un array, manteniendo la estructura de directorios:
+
+```js
+['src/activos/imágenes/', 'src/activos/fonts/', 'src/activos/pdf/'].forEach(ruta =>
+  eleventyConfig.addPassthroughCopy(path)
+);
+```
+
+O aplicar este interesante filtrado que descubrí en el [código fuente](https://github.com/rknightuk/rknight.me/blob/master/.eleventy.js) del [sitio web personal de Robb Knight](https://rknight.me/), donde todo lo que hay dentro de `src/assets` y `src/files` se copia en el directorio de salida, _excepto_ los archivos CSS y los archivos que empiezan por guión bajo.
+
+```js
+['src/assets', 'src/files'].forEach(path => {
+  eleventyConfig.addPassthroughCopy(path, {
+    filter: path => !path.endsWith('.css') && !path.startsWith('_')
+  });
+});
+```
+
 ## Wrap up
 
 Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). En el repositorio de la página web personal de Miriam Suzanne se puede encontrar un magnífico ejemplo de un [Eleventy config perfectamente ordenado](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
@@ -320,3 +349,7 @@ En general, siempre es una gran idea bucear en los repositorios de los _[starter
 Me invitaron como ponente al Eleventy Meetup Ep. 12 el 16 de marzo de 2023 y di una breve charla basada en este artículo.
 
 {% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized' %}
+
+```
+
+```

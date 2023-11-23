@@ -4,7 +4,7 @@ description: 'Eleventy lets you create a file called eleventy.js to configure th
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2023-10-30
+lastEdit: 2023-11-23 11:10:00
 redirectFrom: ['/en/blog/structuring-the-eleventyjs-config-file/']
 youtube: true
 ---
@@ -288,7 +288,7 @@ There is a concise way for this too!
 
 We put all directories into an array and apply the `forEach()` method to execute the passthrough once for each array element.
 
-### Copy the files to another directory
+### Copy files to another directory
 
 Maybe you want to copy your files to _another_ directory. For me, this makes especially sense for my favicon variants. You _can_ tell the browser to look for them inside a folder, but my experience has been that they're best put in the root directory of the web page. However, I don't want to see them in my project root (too much noise!), so I usually put them all in `src/assets/images/favicon/`.
 
@@ -309,6 +309,36 @@ eleventyConfig.addPassthroughCopy({
 ```
 
 By the way, regarding favicons, I recommend reading [Andrey Sitnik's article](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) about which variants you really need.
+
+#### More Passthrough File Copy tricks
+
+You can get really creative here.
+
+You can address any JPG-image in any directoy, and send them alltogether to a common output folder:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  '**/*.jpg': 'img'
+});
+```
+
+You can combine your assets in an array, keeping the directory structure:
+
+```js
+['src/assets/images/', 'src/assets/fonts/', 'src/assets/pdf/'].forEach(path =>
+  eleventyConfig.addPassthroughCopy(path)
+);
+```
+
+Or apply this interesting filtering that I discovered in the [source code](https://github.com/rknightuk/rknight.me/blob/master/.eleventy.js) of [Robb Knight's personal website](https://rknight.me/), where everything inside `src/assets` and `src/files` is being copied to the output directory, _except_ any CSS files and files starting with an underscore.
+
+```js
+['src/assets', 'src/files'].forEach(path => {
+  eleventyConfig.addPassthroughCopy(path, {
+    filter: path => !path.endsWith('.css') && !path.startsWith('_')
+  });
+});
+```
 
 ## Wrap up
 

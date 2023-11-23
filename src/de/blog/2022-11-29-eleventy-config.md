@@ -4,7 +4,7 @@ description: 'Eleventy lässt dich eine Datei anlegen, um alles nach den Bedürf
 category: blogpost
 key: 'eleventyconfig'
 date: 2022-11-29
-lastEdit: 2023-10-30
+lastEdit: 2023-11-23 11:10:00
 youtube: true
 ---
 
@@ -306,7 +306,37 @@ eleventyConfig.addPassthroughCopy({
 });
 ```
 
-Übrigens, was Favicons angeht, empfehle ich [Andrey Sitniks Artikel](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
+Was Art und Anzahl von Favicons angeht, empfehle ich [Andrey Sitniks Artikel](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs).
+
+#### Weitere Passthrough File Copy Tricks
+
+Hier könnt ihr wirklich kreativ werden.
+
+Man kann alle JPG-Bilder in allen Ordnern ansprechen und sie alle zusammen in einen gemeinsamen Ausgabeordner schicken:
+
+```js
+eleventyConfig.addPassthroughCopy({
+  '**/*.jpg': 'img'
+});
+```
+
+Du kannst deine Assets in einem Array kombinieren und dabei die Verzeichnisstruktur beibehalten:
+
+```js
+['src/assets/images/', 'src/assets/fonts/', 'src/assets/pdf/'].forEach(path =>
+  eleventyConfig.addPassthroughCopy(path)
+);
+```
+
+Oder du kannst diese interessante Filterung anwenden, die ich im [Quellcode](https://github.com/rknightuk/rknight.me/blob/master/.eleventy.js) von [Robb Knights persönlicher Website](https://rknight.me/) entdeckt habe, wo alles innerhalb von `src/assets` und `src/files` in das Ausgabeverzeichnis kopiert wird, _außer_ allen CSS-Dateien und Dateien, die mit einem Unterstrich beginnen.
+
+```js
+['src/assets', 'src/files'].forEach(path => {
+  eleventyConfig.addPassthroughCopy(path, {
+    filter: path => !path.endsWith('.css') && !path.startsWith('_')
+  });
+});
+```
 
 ## Wrap up
 
