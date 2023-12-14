@@ -57,7 +57,7 @@ module.exports = {
     long: 'English',
     siteName: 'Lene Saile',
     siteDescription:
-      'Frontend developer and designer based in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.',
+      'Frontend developer and designer living in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.',
     shortDescription: 'Frontend developer and designer',
     back: 'Back',
     skipText: 'Jump to main content',
