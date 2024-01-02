@@ -1,8 +1,8 @@
 ---
 title: 'Adopción de dimensiones de rejilla de hermanos gracias a subgrid'
-description: 'Lo que quiero conseguir es la alineación vertical de los hermanos: las dimensiones dinámicas de los elementos dentro del <header> `landmark` deberían implementar la plantilla de columna de rejilla definida en el elemento <body>, para que los elementos hermanos puedan alinearse a ella.'
+description: 'Lo que quiero conseguir es la alineación vertical de los hermanos: las dimensiones dinámicas de los elementos dentro del <header> landmark deberían implementar la plantilla de columna de rejilla definida en el elemento <body>, para que los elementos hermanos puedan alinearse a ella.'
 discover:
-  description: 'Alineación vertical de hermanos: las dimensiones dinámicas de los elementos dentro del <header> `landmark` deben implementar la plantilla de columna de cuadrícula definida en el elemento <body>, de modo que los elementos hermanos puedan alinearse con ella.'
+  description: 'Alineación vertical de hermanos: las dimensiones dinámicas de los elementos dentro del <header> landmark deben implementar la plantilla de columna de cuadrícula definida en el elemento <body>, de modo que los elementos hermanos puedan alinearse con ella.'
 category: blogpost
 key: 'subgrid'
 date: 2024-01-02 11:30:00
@@ -12,11 +12,11 @@ codepen: true
 
 Subgrids utiliza las pistas de rejilla de una rejilla predecesora para alinear sus elementos de rejilla. Por ejemplo, puede crear varias columnas en el elemento `<body>` y pasarlas "hacia abajo", sin importar la profundidad. Lo más importante aquí: El sistema de rejilla que se pasa hacia abajo **debe** estar en un predecesor. Subgrid busca en el árbol DOM el elemento más cercano que defina una plantilla de columna o fila (`grid-template-columns` o `grid-template-rows`) que _no_ esté marcado como subgrid.
 
-Así que si creo un layout en el elemento `<body>`, puedo transferirlo a los `landmark`s `<header>`, `<main>` y `<footer>`, que entonces afecta a sus hijos.
+Así que si creo un layout en el elemento `<body>`, puedo transferirlo a los landmarks `<header>`, `<main>` y `<footer>`, que entonces afecta a sus hijos.
 
 ## ¿Podemos definir las dimensiones de la rejilla en un elemento hermano?
 
-Lo que quiero conseguir es la alineación vertical de los hermanos: las dimensiones dinámicas de los elementos dentro del `<header>` `landmark` deberían implementar la plantilla de columna de rejilla definida para el elemento `<body>`. Las líneas de la cuadrícula deben "anidarse" contra el logotipo SVG y el nombre del sitio web junto a él. Los elementos dentro de `<main>` y `<footer>` deben poder participar en esta cuadrícula colocándose a lo largo de las dimensiones del logotipo y el nombre de la página.
+Lo que quiero conseguir es la alineación vertical de los hermanos: las dimensiones dinámicas de los elementos dentro del `<header>` landmark deberían implementar la plantilla de columna de rejilla definida para el elemento `<body>`. Las líneas de la cuadrícula deben "anidarse" contra el logotipo SVG y el nombre del sitio web junto a él. Los elementos dentro de `<main>` y `<footer>` deben poder participar en esta cuadrícula colocándose a lo largo de las dimensiones del logotipo y el nombre de la página.
 
 El título debe abarcar toda la columna, y quiero que el contenido del elemento `<section>` comience a la altura del título inicial de la página. El `<nav>` en el `<footer>` debe estar exactamente donde termina el título de la página.
 
@@ -149,15 +149,15 @@ body > * {
 }
 ```
 
-Ya no son los propios `landmark`s los que se colocan en la cuadrícula, sino _sus hijos_, como si el diseño de la columna de la cuadrícula estuviera definido en los propios `landmark`s. No se trata simplemente de una copia del valor, sino que los tres elementos utilizan literalmente las pistas de cuadrícula del cuerpo.
+Ya no son los propios landmarks los que se colocan en la cuadrícula, sino _sus hijos_, como si el diseño de la columna de la cuadrícula estuviera definido en los propios landmarks. No se trata simplemente de una copia del valor, sino que los tres elementos utilizan literalmente las pistas de cuadrícula del cuerpo.
 
-Ahora los hijos de los tres `landmark`s definen las dimensiones de la rejilla, pero es el elemento equivocado el que define la anchura: según `min-content`, la palabra más larga del elemento "heading" dentro de `<main>` define ahora las dimensiones de la primera zona de la rejilla.
+Ahora los hijos de los tres landmarks definen las dimensiones de la rejilla, pero es el elemento equivocado el que define la anchura: según `min-content`, la palabra más larga del elemento "heading" dentro de `<main>` define ahora las dimensiones de la primera zona de la rejilla.
 
 {% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
 Herencia de trazas de cuadrícula de un hermano- 2
 {% endcodepen %}
 
-Los tres `landmark`s tienen sólo dos hijos, por lo que la tercera columna está vacía.
+Los tres landmarks tienen sólo dos hijos, por lo que la tercera columna está vacía.
 
 Liberemos primero a los hijos del elemento `<main>` de la tarea de determinar las dimensiones de la rejilla. Deben extenderse por todo el ancho disponible de la envoltura, lo que en nuestro caso sólo afecta al elemento H1, ya que todo lo que hay en el elemento `<section>` debe alinearse donde comienza el título del sitio web.
 

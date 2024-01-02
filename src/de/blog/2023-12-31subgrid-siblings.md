@@ -1,8 +1,8 @@
 ---
 title: 'Übernahme von Grid-Abmessungen von Geschwistern dank subgrid'
-description: 'Was ich erreichen möchte, ist die vertikale Ausrichtung von Geschwistern: die dynamischen Dimensionen von Elementen innerhalb des <header> `landmark` sollen das Grid-Spalten-Template implementieren, das auf dem <body>-Element definiert ist, so dass Geschwister-Elemente sich daran ausrichten können.'
+description: 'Was ich erreichen möchte, ist die vertikale Ausrichtung von Geschwistern: die dynamischen Dimensionen von Elementen innerhalb des <header> landmark sollen das Grid-Spalten-Template implementieren, das auf dem <body>-Element definiert ist, so dass Geschwister-Elemente sich daran ausrichten können.'
 discover:
-  description: 'Vertikale Ausrichtung von Geschwistern: die dynamischen Dimensionen von Elementen innerhalb des <header> `landmark` sollen das Grid-Spalten-Template implementieren, das auf dem <body>-Element definiert ist, so dass Geschwister-Elemente sich daran ausrichten können.'
+  description: 'Vertikale Ausrichtung von Geschwistern: die dynamischen Dimensionen von Elementen innerhalb des <header> landmark sollen das Grid-Spalten-Template implementieren, das auf dem <body>-Element definiert ist, so dass Geschwister-Elemente sich daran ausrichten können.'
 category: blogpost
 key: 'subgrid'
 date: 2024-01-02 11:30:00
@@ -12,11 +12,11 @@ codepen: true
 
 Subgrids verwenden die Gitterspuren eines Vorgänger-Grids, um ihre Grid-Elemente auszurichten. Zum Beispiel kann man mehrere Spalten auf dem Element `<body>` erstellen und sie "nach unten" weitergeben, egal wie tief. Das Wichtigste dabei: Das Rastersystem, das nach unten weitergegeben wird, **muss** sich auf einem Vorgänger befinden. Subgrid sucht im DOM-Baum nach dem nächstgelegenen Element, das eine Spalten- oder Zeilenvorlage (`grid-template columns` oder `grid-template-rows`) definiert, die _nicht_ als Subgrid markiert ist.
 
-Wenn ich also ein Layout auf dem `<body>` Element erstelle, kann ich es auf die `landmark`s `<header>`, `<main>` und `<footer>` übertragen, was sich dann auf deren Kinder auswirkt.
+Wenn ich also ein Layout auf dem `<body>` Element erstelle, kann ich es auf die landmarks `<header>`, `<main>` und `<footer>` übertragen, was sich dann auf deren Kinder auswirkt.
 
 ## Können wir die Abmessungen des Grids auf einem Geschwister-Element definieren?
 
-Was ich erreichen möchte, ist die vertikale Ausrichtung der Geschwister: Die dynamischen Abmessungen der Elemente innerhalb der `<header>` `landmark` sollen die Gitterspaltenvorlage implementieren, die für das Element `<body>` definiert wurde. Die Rasterlinien sollten sich an das SVG-Logo und den Website-Namen daneben "anschmiegen". Elemente innerhalb von `<main>` und `<footer>` sollten in der Lage sein, an diesem Raster teilzunehmen, indem sie sich entlang der Dimensionen des Logos und des Seitennamens platzieren.
+Was ich erreichen möchte, ist die vertikale Ausrichtung der Geschwister: Die dynamischen Abmessungen der Elemente innerhalb der `<header>` landmark sollen die Gitterspaltenvorlage implementieren, die für das Element `<body>` definiert wurde. Die Rasterlinien sollten sich an das SVG-Logo und den Website-Namen daneben "anschmiegen". Elemente innerhalb von `<main>` und `<footer>` sollten in der Lage sein, an diesem Raster teilzunehmen, indem sie sich entlang der Dimensionen des Logos und des Seitennamens platzieren.
 
 Der Titel soll sich über die gesamte Spalte erstrecken, und ich möchte, dass der Inhalt innerhalb des Elements `<section>` in der Höhe des beginnenden Seitentitels beginnt. Das `<nav>` im `<footer>` sollte sich genau dort befinden, wo der Seitentitel endet.
 
@@ -149,15 +149,15 @@ body > * {
 }
 ```
 
-Es sind nicht mehr die `landmark`s selbst, die im Raster platziert werden, sondern _ihre Kinder_, als ob der Rasterspaltenentwurf in den `landmark`s selbst definiert wäre. Es handelt sich nicht nur um eine Kopie des Wertes, sondern die drei Elemente verwenden buchstäblich die Rasterspuren des Körpers.
+Es sind nicht mehr die landmarks selbst, die im Raster platziert werden, sondern _ihre Kinder_, als ob der Rasterspaltenentwurf in den landmarks selbst definiert wäre. Es handelt sich nicht nur um eine Kopie des Wertes, sondern die drei Elemente verwenden buchstäblich die Rasterspuren des Körpers.
 
-Jetzt bestimmen die Kinder der drei `landmark`s die Dimensionen des Gitters, aber es ist das falsche Element, das die Breite definiert: laut "min-content" definiert das längste Wort des "Heading"-Elements innerhalb von `<main>` nun die Dimensionen des ersten Gitterbereichs.
+Jetzt bestimmen die Kinder der drei landmarks die Dimensionen des Gitters, aber es ist das falsche Element, das die Breite definiert: laut "min-content" definiert das längste Wort des "Heading"-Elements innerhalb von `<main>` nun die Dimensionen des ersten Gitterbereichs.
 
 {% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
 Vererbung von Gitterspuren von einem Geschwisterkind - 2
 {% endcodepen %}
 
-Alle drei `landmark`s haben nur zwei Kinder, so dass die dritte Spalte leer ist.
+Alle drei landmarks haben nur zwei Kinder, so dass die dritte Spalte leer ist.
 
 Lasst uns zunächst die Kinder des Elements `<main>` von der Aufgabe befreien, die Abmessungen des Rasters zu bestimmen. Sie sollen sich über die gesamte verfügbare Breite des Wrappers erstrecken, was in unserem Fall nur das H1-Element betrifft, da alles im Element `<section>` dort ausgerichtet werden soll, wo der Titel der Website beginnt.
 

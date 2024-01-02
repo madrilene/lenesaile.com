@@ -12,15 +12,15 @@ codepen: true
 
 Subgrids use the grid tracks of an ancestor grid to align their grid items. For example, you can create a number of columns on the `<body>` element and pass them "down", no matter how deep. The gist here: the grid system that will be passed down **must** be on an ancestor. Subgrid searches up the DOM tree for the nearest element that defines a column or row template (`grid-template columns` or `grid-template-rows`) that is _not_ marked as a subgrid.
 
-So if I create a layout on the `<body>` element, I can transfer it to the `landmark`s `<header>`, `<main>` and `<footer>`, which will then effect their children.
+So if I create a layout on the `<body>` element, I can transfer it to the landmarks `<header>`, `<main>` and `<footer>`, which will then effect their children.
 
 ## Can the actual dimensions of the grid be defined by a sibling?
 
-What I want to achieve is aligning siblings vertically: the dynamic dimensions of elements inside the `<header>` `landmark` shall implement the grid column template defined on the `<body>` element. The grid lines should "nestle" against the SVG logo and the site name next to it. Elements inside of `<main>` and `<footer>` should be able to participate in this grid, placing themselves alongside the dimensions of the logo and the site name.
+What I want to achieve is aligning siblings vertically: the dynamic dimensions of elements inside the `<header>` landmark shall implement the grid column template defined on the `<body>` element. The grid lines should "nestle" against the SVG logo and the site name next to it. Elements inside of `<main>` and `<footer>` should be able to participate in this grid, placing their own children alongside the dimensions of the logo and the site name.
 
-Specifically, the title is to span the entire column, and I want the contents inside the `<section>` element to start at the height of the beginning site title. The `<nav>` in the `<footer>` should place itself just where the site title ends.
+Specifically, the H1 is to span the entire column, and I want the contents inside the `<section>` element and the paragraph in the `<footer>` to start at the height of the beginning site title. The `<nav>` in the `<footer>` should place itself just where the site title ends.
 
-Grid and subgrid are not topics that are easy to understand. I therefore try to get to the result in detail and step by step.
+Grid and subgrid are not topics that are easy to understand at first. I therefore try to get to the result in detail and step by step.
 
 The HTML looks like this:
 
@@ -93,7 +93,7 @@ The HTML looks like this:
 
 ## The grid system
 
-The grid system is defined for the `<body>` element. I use implicit line names in the grid setup so I can easily reference them later:
+The grid system is defined for the `<body>` element. In the grid setup I create implicit grid areas with named lines, so I can easily reference them later:
 
 ```css
 body {
@@ -117,7 +117,7 @@ The remaining available space is reserved for the menu, the `fr` unit makes sure
 
 The explicit rows specify that the header and footer should have a height determined by their content, while the main section should take up the remaining space. This places the `<footer>` at the bottom of the viewport. To prevent the elements in `<main>` from splitting up weirdly when there is little content, I also set the rule `main {place-content: start;}`.
 
-Without subgrid, the `landmark`s now jam themselves in the tracks given to them.
+Without subgrid, the landmarks now jam themselves in the tracks given to them.
 
 {% codepen "https://codepen.io/madrilene/pen/LYapGMy", "result" %}
 Subgrid: Inheriting grid tracks from a sibling - first step
@@ -132,6 +132,7 @@ body > * {
 ```
 
 But, instead of using the notation `1/-1` for the entire width, we can also use our name mechanism.
+The named lines created a named area, which I can now reference as "full":
 
 ```css
 body > * {
@@ -149,15 +150,15 @@ body > * {
 }
 ```
 
-It is no longer the `landmark`s themselves that are placed in the grid, but _their children_, as if the grid column blueprint were defined in the `landmark`s themselves. It is not just a copy of the value, the three elements literally use the grid tracks of the body.
+It is no longer the landmarks themselves that are placed in the grid, but _their children_, as if the grid column blueprint were defined in the landmarks themselves. It is not just a copy of the value, the three elements literally use the grid tracks of the body.
 
-Now the children of the three `landmark`s determine the dimensions of the grid, but it is the wrong element that defines the width: according to `min-content`, the longest word of the Heading element inside of `<main>` now defines the dimensions of the first grid area.
+Now the children of the three landmarks determine the dimensions of the grid, but it is the wrong element that defines the width: according to `min-content`, the longest word of the Heading element inside of `<main>` now defines the dimensions of the first grid area.
+
+All three landmarks have only two children, so the third column is empty.
 
 {% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
 Subgrid: Inheriting grid tracks from a sibling - second step
 {% endcodepen %}
-
-All three `landmark`s have only two children, so the third column is empty.
 
 Let us first free the children of the `<main>` element from the task of determining the grid dimensions. We want them to span the entire available width of the wrapper, which in our case only affects the H1, because everything in the `<section>` element should be aligned where the site title begins.
 
