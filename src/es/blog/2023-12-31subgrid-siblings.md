@@ -132,6 +132,7 @@ body > * {
 ```
 
 Pero en lugar de utilizar la notación `1/-1` para toda la anchura, también podemos utilizar nuestro mecanismo de nomenclatura.
+Las líneas con nombre crearon un área con nombre, que ahora puedo referenciar como `full`.
 
 ```css
 body > * {
@@ -207,11 +208,12 @@ header > nav {
 }
 ```
 
-Por último, el párrafo del `<footer>` debe extenderse desde el principio de la envoltura hasta el final del nombre del sitio, de modo que el siguiente `<nav>` ocupe el espacio restante:
+Por último, el párrafo en el `<footer>` debe extender el ancho del nombre del sitio otra área nombrada: `logo-text`.
+Esto hace que el siguiente `<nav>` ocupe el espacio restante:
 
 ```css
 footer > p {
-  grid-column: logo-text-start / logo-text-end;
+  grid-column: logo-text;
 }
 ```
 
@@ -226,3 +228,6 @@ Ahora tenemos un layout en el que la rejilla está definida en el `<body>`, pero
 Más abajo en el CSS encontrarás todos los pequeños ajustes que he hecho, las clases `.cluster` y `.flow` vienen de las primitivas de layout de [every-layout.dev](https://every-layout.dev/), el tipo de fluido y las escalas de espacio fueron calculadas con la ayuda de [utopia.fyi](https://utopia.fyi/).
 
 Cathy Dutton ya tuvo la idea de utilizar una columna de rejilla padre flexible para la alineación vertical entre hermanos en un artículo publicado en [css-tricks.com](https://css-tricks.com/achieving-vertical-alignment-thanks-subgrid/#aa-can-grid-help-us) en 2020.
+
+Gracias a la [referencia de Bob Monsour](https://indieweb.social/@bobmonsour/111686716289873152) al artículo de Ryan Mulligan <span lang="en">"[Horizontal Scrolling in a Centered Max-Width Container](https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/)"</span>, he encontrado un [artículo de Anna Monus](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) que explica las diferencias entre las subcuadrículas y las cuadrículas anidadas (`grid-template-columns: subgrid;` y `grid-template-columns: inherit;`).
+Merece la pena leerlo en este contexto.

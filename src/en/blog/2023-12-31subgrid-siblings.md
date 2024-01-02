@@ -208,11 +208,12 @@ header > nav {
 }
 ```
 
-Finally, the paragraph in the `<footer>` should extend from the beginning of the wrapper to the end of the site name, which makes the following `<nav>` take up the remaining space:
+Finally, the paragraph in the `<footer>` should extend the width of the site name another named area: `logo-text`.
+This makes the following `<nav>` take up the remaining space:
 
 ```css
 footer > p {
-  grid-column: logo-text-start / logo-text-end;
+  grid-column: logo-text;
 }
 ```
 
@@ -227,3 +228,6 @@ Now we have a layout in which the grid is defined on the `<body>`, but is only r
 Further down in the CSS you will find all the small settings I have otherwise made, the classes `.cluster` and `.flow` originate from the layout primitives of [every-layout.dev](https://every-layout.dev/), the fluid type and space scales were calculated with the help of [utopia.fyi](https://utopia.fyi/).
 
 Cathy Dutton came up with the idea of using a flexible parent grid column for vertical alignment under siblings back in 2020 in an article published on [css-tricks.com](https://css-tricks.com/achieving-vertical-alignment-thanks-subgrid/#aa-can-grid-help-us).
+
+[Thanks to Bob Monsour's reference](https://indieweb.social/@bobmonsour/111686716289873152) to Ryan Mulligan's article "[Horizontal Scrolling in a Centered Max-Width Container](https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/)", I came across an [article by Anna Monus](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) that explains the differences between subgrids and nested grids (`grid-template-columns: subgrid;` and `grid-template-columns: inherit;`).
+This is also well worth reading in this context.

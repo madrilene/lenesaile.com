@@ -132,6 +132,7 @@ body > * {
 ```
 
 Aber anstatt die Notation `1/-1` für die gesamte Breite zu verwenden, können wir auch unseren Namensmechanismus benutzen.
+Durch die benannten Zeilen wurde ein benannter Bereich geschaffen, den ich nun mit `full` ansprechen kann:
 
 ```css
 body > * {
@@ -207,11 +208,12 @@ header > nav {
 }
 ```
 
-Schließlich sollte sich der Absatz im `<footer>` vom Anfang des Wrappers bis zum Ende des Site-Namens erstrecken, so dass das folgende `<nav>` den restlichen Platz einnimmt:
+Schließlich sollte der Absatz im `<footer>` die Breite des Seitennamens um einen weiteren benannten Bereich erweitern: `logo-text`.
+Dadurch nimmt das folgende `<nav>` Element den restlichen Platz ein:
 
 ```css
 footer > p {
-  grid-column: logo-text-start / logo-text-end;
+  grid-column: logo-text;
 }
 ```
 
@@ -226,3 +228,6 @@ Jetzt haben wir ein Layout, in dem das Raster auf dem `<body>` definiert ist, ab
 Weiter unten im CSS findest du all die kleinen Einstellungen, die ich sonst noch vorgenommen habe, die Klassen `.cluster` und `.flow` stammen aus den Layout-Primitiven von [every-layout.dev](https://every-layout.dev/), der Fluidtyp und die Raumskalen wurden mit Hilfe von [utopia.fyi](https://utopia.fyi/) berechnet.
 
 Cathy Dutton hatte bereits 2020 in einem auf [css-tricks.com](https://css-tricks.com/achieving-vertical-alignment-thanks-subgrid/#aa-can-grid-help-us) veröffentlichten Artikel die Idee, eine flexible übergeordnete Gitterspalte für die vertikale Ausrichtung unter Geschwistern zu verwenden.
+
+Dank Bob [Bob Monsours Hinweis](https://indieweb.social/@bobmonsour/111686716289873152) auf Ryan Mulligans Artikel <span lang="en">"[Horizontal Scrolling in a Centered Max-Width Container](https://ryanmulligan.dev/blog/x-scrolling-centered-max-width-container/)"</span> bin ich auf einen [Artikel von Anna Monus](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) gestoßen, der die Unterschiede zwischen Subgrids und verschachtelten Grids (`grid-template-columns: subgrid;` und `grid-template-columns: inherit;`) erklärt.
+Das ist in diesem Zusammenhang sehr lesenswert.
