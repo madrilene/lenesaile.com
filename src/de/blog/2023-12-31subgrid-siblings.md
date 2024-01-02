@@ -208,7 +208,7 @@ header > nav {
 }
 ```
 
-Schließlich sollte der Absatz im `<footer>` die Breite des Seitennamens um einen weiteren benannten Bereich erweitern: `logo-text`.
+Schließlich sollte der Absatz im `<footer>` die Breite des Seitennamens umfassen. Das erreichen wir mit einem weiteren benannten Bereich: `logo-text`.
 Dadurch nimmt das folgende `<nav>` Element den restlichen Platz ein:
 
 ```css

@@ -208,7 +208,7 @@ header > nav {
 }
 ```
 
-Finally, the paragraph in the `<footer>` should extend the width of the site name another named area: `logo-text`.
+Finally, the paragraph in the `<footer>` should span the width of the site name. We achieve this with another named area: `logo-text`.
 This makes the following `<nav>` take up the remaining space:
 
 ```css

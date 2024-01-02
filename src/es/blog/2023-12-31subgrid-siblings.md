@@ -208,7 +208,7 @@ header > nav {
 }
 ```
 
-Por último, el párrafo en el `<footer>` debe extender el ancho del nombre del sitio otra área nombrada: `logo-text`.
+Por último, el párrafo del `<footer>` debe abarcar el ancho del nombre del sitio. Esto se consigue con otra área denominada `logo-text`.
 Esto hace que el siguiente `<nav>` ocupe el espacio restante:
 
 ```css
