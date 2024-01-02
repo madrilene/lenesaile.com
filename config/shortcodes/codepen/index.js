@@ -5,7 +5,7 @@ const codePen = (
   url,
   tabs = 'html,result',
   theme = 'default',
-  height = '300'
+  height = '100%'
 ) => {
   // split and name all the parts of the url from codepen
   const [protocol, , domain, user, pen, hash] = url.split('/');
