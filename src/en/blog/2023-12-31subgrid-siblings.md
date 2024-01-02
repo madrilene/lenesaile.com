@@ -115,7 +115,7 @@ This grid track will become just as small as the widest content element that pla
 
 The remaining available space is reserved for the menu, the `fr` unit makes sure of that.
 
-The explicit rows specify that the header and footer should have a height determined by their content, while the main section should take up the remaining space. This places the `<footer>` at the bottom of the viewport. To prevent the elements in `<main>` from splitting up weirdly when there is little content, I also set the rule `main {place-content: start;}`.
+The explicit rows specify that the `<header>` and `<footer>` should have a height determined by their content, while `<main>` should take up the remaining space. This places the `<footer>` at the bottom of the viewport. To prevent the elements in `<main>` from splitting up weirdly when there is little content, I also set the rule `main {place-content: start;}`.
 
 Without subgrid, the landmarks now jam themselves in the tracks given to them.
 
