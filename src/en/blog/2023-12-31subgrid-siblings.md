@@ -132,7 +132,7 @@ body > * {
 ```
 
 But, instead of using the notation `1/-1` for the entire width, we can also use our name mechanism.
-The named lines created a named area, which I can now reference as "full":
+The named lines `full-start` and `full-end` created a named area, which I can now reference as `full`:
 
 ```css
 body > * {
