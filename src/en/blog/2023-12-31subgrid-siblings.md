@@ -150,7 +150,7 @@ body > * {
 }
 ```
 
-It is no longer the landmarks themselves that are placed in the grid, but _their children_, as if the grid column blueprint were defined in the landmarks themselves. It is not just a copy of the value, the three elements literally use the grid tracks of the body.
+It is no longer the landmarks themselves that are placed in the grid, but _their children_, as if the grid column blueprint were defined in the landmarks themselves. It is not just a copy of the value, the three elements literally use the grid tracks of the `<body>`.
 
 Now the children of the three landmarks determine the dimensions of the grid, but it is the wrong element that defines the width: according to `min-content`, the longest word of the Heading element inside of `<main>` now defines the dimensions of the first grid area.
 
