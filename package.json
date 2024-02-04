@@ -46,7 +46,7 @@
     "cssnano": "^6.0.0",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
-    "esbuild": "^0.19.0",
+    "esbuild": "^0.20.0",
     "glob": "^10.3.3",
     "html-minifier": "^4.0.0",
     "lodash": "^4.17.21",
