@@ -30,6 +30,20 @@ module.exports = {
     email: 'hola@lenesaile.com',
     cif: ''
   },
+  greenweb: {
+    // this goues into src/common/greenweb.njk
+    providers: {
+      // if you want to add more than one, edit the array directly.
+      domain: 'netlify.com',
+      service: 'cdn'
+    },
+    credentials: {
+      // optional, eg: 	{ domain='my-org.com', doctype = 'webpage', url = 'https://my-org.com/our-climate-record'}
+      domain: '',
+      doctype: '',
+      url: ''
+    }
+  },
 
   languages: [
     {
@@ -64,7 +78,7 @@ module.exports = {
     toc: 'Table of contents',
     skipToc: 'Skip table of contents',
     blog: {
-      name: 'Lene Saile - Web Development Blog',
+      name: 'Lene Saile',
       description:
         "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.  I specialize in custom creative websites with accessibility and performance in mind.",
       url: 'https://www.lenesaile.com/en/feed.xml',

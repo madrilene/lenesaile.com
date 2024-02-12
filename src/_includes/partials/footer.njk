@@ -27,7 +27,7 @@
         {% for item in social %}
 
         {% if item.platform == "rss" %}
-        <a href="{{ meta.url }}{{ item.url | locale_url }}" rel="alternate" type="application/rss+xml">
+        <a href="{{ meta.url }}{{ item.url | locale_url }}" rel="alternate" type="application/atom+xml">
         {% else %}
         <a href="{{ item.url }}" rel="me">
           {% endif %}
