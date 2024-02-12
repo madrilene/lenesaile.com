@@ -1,3 +1,2 @@
-src/assets/helperfiles/*
+src/common/*
 src/*/feed.njk
-src/social-preview.njk
