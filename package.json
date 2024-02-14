@@ -2,7 +2,7 @@
   "name": "lenesaile.com",
   "version": "1.2.7",
   "engines": {
-    "node": ">=16.x"
+    "node": ">=20.x"
   },
   "license": "CC BY-SA",
   "description": "My freelancing website built with Eleventy. It supports three languages and uses my latest workflow, as of autumn 2022.",
