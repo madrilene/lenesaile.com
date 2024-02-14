@@ -4,7 +4,7 @@ description: 'What I want to achieve is aligning siblings vertically: the dynami
 discover:
   description: 'Aligning siblings vertically: the dynamic dimensions of elements inside the <header> landmark shall implement the grid column template defined on the <body> element, so that sibling elements can align themselves with it.'
 category: blogpost
-key: 'subgrid'
+key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
 codepen: true

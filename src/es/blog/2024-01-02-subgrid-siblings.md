@@ -4,7 +4,7 @@ description: 'Lo que quiero conseguir es la alineación vertical de los hermanos
 discover:
   description: 'Alineación vertical de hermanos: las dimensiones dinámicas de los elementos dentro del <header> landmark deben implementar la plantilla de columna de cuadrícula definida en el elemento <body>, de modo que los elementos hermanos puedan alinearse con ella.'
 category: blogpost
-key: 'subgrid'
+key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
 codepen: true

@@ -4,7 +4,7 @@ description: 'Was ich erreichen möchte, ist die vertikale Ausrichtung von Gesch
 discover:
   description: 'Vertikale Ausrichtung von Geschwistern: die dynamischen Dimensionen von Elementen innerhalb des <header> landmark sollen das Grid-Spalten-Template implementieren, das auf dem <body>-Element definiert ist, so dass Geschwister-Elemente sich daran ausrichten können.'
 category: blogpost
-key: 'subgrid'
+key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
 codepen: true
