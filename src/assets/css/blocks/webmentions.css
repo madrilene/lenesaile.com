@@ -9,7 +9,7 @@
 }
 
 .webmentions img {
-  --size: 2.5rem;
+  --size: 2rem;
   aspect-ratio: 1;
   background: 0 0;
   block-size: var(--size);

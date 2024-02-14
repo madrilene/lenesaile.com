@@ -49,16 +49,16 @@
         <img
           src="{{ webmention.author.photo }}"
           alt="{{ webmention.author.name }}"
-          width="48"
-          height="48"
+          width="40"
+          height="40"
           loading="lazy"
         />
         {% else %}
         <img
           src="{{ meta.webmentions.fallbackAvatar | url }}"
           alt=""
-          width="48"
-          height="48"
+          width="40"
+          height="40"
         />
         {% endif %} {% if webmention.url != "" %}
       </a>
@@ -67,7 +67,7 @@
   </div>
   {% endif %}
 
-  <!-- replies -->
+  <!-- replies
   {% if repliesSize > 0 %}
 
   <div class="webmention-replies flow">
@@ -75,7 +75,7 @@
 
     {% for webmention in replies %} {% include "partials/webmention.njk" %} {% endfor %}
   </div>
-  {% endif %}
+  {% endif %}  -->
 
   <section class="region flow">
     <p>
