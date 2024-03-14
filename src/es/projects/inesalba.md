@@ -3,7 +3,7 @@ title: Inés Alba
 date: 2022-03-01
 key: 'inesalba'
 technologies:
-  - Jamstack (Eleventy)
+  - Eleventy
   - Diseño
   - Tailwind CSS
   - JS "vainilla"

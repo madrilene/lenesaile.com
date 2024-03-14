@@ -3,7 +3,7 @@ title: Inelia Gestión
 date: 2021-04-01
 key: 'inelia'
 technologies:
-  - Jamstack (Eleventy)
+  - Eleventy
   - Diseño
   - Tailwind CSS
   - Alpine.js & vanilla JS

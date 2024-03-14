@@ -3,7 +3,7 @@ title: Esther Zecco
 date: 2023-04-01
 key: 'estherzecco'
 technologies:
-  - Jamstack (Eleventy)
+  - Eleventy
   - Diseño
   - CSS y JS personalizado
 clientURL: https://www.estherzecco.com

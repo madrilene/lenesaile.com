@@ -1,9 +1,9 @@
 ---
 title: Lamprecht Rechtsanwälte
-date: 2022-04-01
+date: 2022-03-01
 key: 'lamprecht'
 technologies:
-  - Jamstack (Eleventy)
+  - Eleventy
   - Diseño
   - Tailwind CSS
   - Alpine.js & vanilla JS

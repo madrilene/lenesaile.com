@@ -3,7 +3,7 @@ title: Fundación Goethe
 date: 2021-12-01
 key: 'fundaciongoethe'
 technologies:
-  - Jamstack (Eleventy)
+  - Eleventy
   - Diseño
   - Tailwind CSS
   - JS "vainilla"
