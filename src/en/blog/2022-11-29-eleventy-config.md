@@ -130,7 +130,7 @@ module.exports = eleventyConfig => {
 
 We loop through all the collections that are defined in `collections.js` and import them into our config file. You'd now do exactly the same for your filters, transforms, shortcodes, etc.
 
-If you want to see this method in action, visit the [public repository](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) of [Ryan Mulligan's personal site](https://ryanmulligan.dev/).
+If you want to see this method in action, visit the [public repository](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/eleventy.config.js) of [Ryan Mulligan's personal site](https://ryanmulligan.dev/).
 
 **Very tidy!**
 
@@ -342,7 +342,7 @@ Or apply this interesting filtering that I discovered in the [source code](https
 
 ## Wrap up
 
-This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). A wonderful example of a tidy Eleventy config file can be found in the [repository of Miriam Suzanne's personal website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+This is how I'm currenlty structuring my projects. You can see this being applied in my starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/eleventy.config.js). A wonderful example of a tidy Eleventy config file can be found in the [repository of Miriam Suzanne's personal website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
 
 A look at the [official Eleventy starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) is always worthwhile, because there you can find cutting edge ideas from Zach, the creator of Eleventy.
 
