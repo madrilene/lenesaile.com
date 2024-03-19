@@ -125,7 +125,7 @@ module.exports = eleventyConfig => {
 
 Hacemos un "loop" sobre todas las _collections_ definidas en `collections.js` y las importamos a nuestro archivo de configuración. Ahora harías exactamente lo mismo para tus _collections_, _shortcodes_, _filters_, etc.
 
-Si quieres ver este método en acción, visita el [repositorio público](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) del [sitio personal de Ryan Mulligan](https://ryanmulligan.dev/).
+Si quieres ver este método en acción, visita el [repositorio público](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/eleventy.config.js) del [sitio personal de Ryan Mulligan](https://ryanmulligan.dev/).
 
 **¡Muy ordenado!**
 
@@ -336,7 +336,7 @@ O aplicar este interesante filtrado que descubrí en el [código fuente](https:/
 
 ## Wrap up
 
-Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js). En el repositorio de la página web personal de Miriam Suzanne se puede encontrar un magnífico ejemplo de un [Eleventy config perfectamente ordenado](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+Así es como actualmente estoy estructurando mis proyectos. Puedes ver estos métodos aplicados en mi starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/eleventy.config.js). En el repositorio de la página web personal de Miriam Suzanne se puede encontrar un magnífico ejemplo de un [Eleventy config perfectamente ordenado](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
 
 Siempre merece la pena echar un vistazo al [arranque oficial de Eleventy](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js), porque allí se pueden encontrar ideas de vanguardia.
 
