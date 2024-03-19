@@ -127,7 +127,7 @@ module.exports = eleventyConfig => {
 
 Wir "loopen" (wie sagt man das auf Deutsch?) über alle _collections_, die in `collections.js` definiert sind, und importieren sie in unsere Konfigurationsdatei. Genau dasselbe machen wir jetzt für _filter_, _transforms_, _shortcodes_ usw.
 
-Wenn du diese Methode in Aktion sehen willst, besuche das [öffentliche Repo](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/.eleventy.js) von [Ryan Mulligans Website](https://ryanmulligan.dev/).
+Wenn du diese Methode in Aktion sehen willst, besuche das [öffentliche Repo](https://github.com/hexagoncircle/ryan-mulligan-dev/blob/main/eleventy.config.js) von [Ryan Mulligans Website](https://ryanmulligan.dev/).
 
 **Sehr aufgeräumt!**
 
@@ -340,7 +340,7 @@ Oder du kannst diese interessante Filterung anwenden, die ich im [Quellcode](htt
 
 ## Wrap up
 
-So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/.eleventy.js) sehen. Ein wunderbares Beispiel für eine aufgeräumte Eleventy Konfigurationsdatei findet ihr im [Repository von Miriam Suzannes Website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
+So strukturiere ich derzeit meine Projekte. Du kannst die Methoden angewandt in meinem Starter [eleventy-excellent](https://github.com/madrilene/eleventy-excellent/blob/main/eleventy.config.js) sehen. Ein wunderbares Beispiel für eine aufgeräumte Eleventy Konfigurationsdatei findet ihr im [Repository von Miriam Suzannes Website](https://github.com/mirisuzanne/mia/blob/main/.eleventy.js).
 
 Ein Blick in den [offiziellen Eleventy-Starter](https://github.com/11ty/eleventy-base-blog/blob/main/eleventy.config.js) lohnt sich immer, denn dort sind Sicherheit _cutting edge_ Ideen zu finden.
 
