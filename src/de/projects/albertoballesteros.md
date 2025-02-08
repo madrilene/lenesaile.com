@@ -1,14 +1,12 @@
 ---
 title: Alberto Ballesteros
-date: 2021-12-01
+date: 2025-01-01
 key: 'albertoballesteros'
 technologies:
-  - Jamstack (Eleventy, Stripe)
+  - Eleventy
   - Design
-  - Tailwind CSS
-  - Alpine.js & vanilla JS
 clientURL: https://www.albertoballesteros.com
 image: './src/assets/images/projects/proyecto-alberto.jpg'
 alt: 'Screenshot der Website albertoballesteros.com'
-lead: 'Alberto ist Teil der Familie, das Projekt war also ein Heimspiel. Die Website, die mit der Jamstack-Methode (Eleventy, Netlify, Stripe) erstellt wurde, sollte die Dynamik, die Kraft und die Elektrizität des neuen Albums des Singer-Songwriters darstellen. Die Website verfügt über einen Shop zum Verkauf von Platten und anderen Merchandising-Produkten. '
+lead: 'Alberto ist mein Partner, das Projekt war also ein Heimspiel. Die Website, natürlich mit Eleventy erstellt, repräsentiert das aktuelle Image des Singer-Songwriters und verwendet die großartige Schriftart Wilco von simplebits. Für das Layout und das Farbschema habe ich mich von der Programmreihe des Manchester Literature Festivals 2018 inspirieren lassen. Ein kleines Easteregg ist die Oktave, die auf Desktopgröße erklingt, über das Menü hovert.'
 ---
