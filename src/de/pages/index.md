@@ -36,5 +36,5 @@ Das hat viele Vorteile:
 
 1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
 2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
-3. Los webs estructurados semánticamente y con buenos contenidos son muy fáciles de encontrar.
+3. Semantisch strukturierte Websites mit gutem Inhalt sind sehr leicht zu finden.
 4. Wir können nahezu alles umsetzen was wir uns vorstellen!
