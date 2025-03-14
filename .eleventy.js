@@ -77,9 +77,6 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const {afterBuild} = require('./config/events/index.js');
 
 module.exports = async function (eleventyConfig) {
-  // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
-  eleventyConfig.setUseGitIgnore(false);
-
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
   eleventyConfig.addWatchTarget('./utils/*.js');
