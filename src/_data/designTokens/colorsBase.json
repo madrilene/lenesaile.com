@@ -4,22 +4,43 @@
   "shades_neutral": [
     {
       "name": "Gray",
-      "value": "#888888"
+      "value": "#6d6d6d"
     }
   ],
-  "shades_vibrant": [],
+  "shades_vibrant": [
+    {
+      "name": "Cinnabar",
+      "value": "#E54848"
+    },
+    {
+      "name": "Royal Blue",
+      "value": "#4862E5"
+    },
+    {
+      "name": "Mandy",
+      "value": "#E54867"
+    },
+    {
+      "name": "Bright Sun",
+      "value": "#F5CF38"
+    }
+  ],
   "light_dark": [
     {
-      "name": "Pink",
-      "value": "#dd4462"
+      "name": "Cinnabar",
+      "value": "#E54848"
     },
     {
-      "name": "Blue",
-      "value": "#4467dd"
+      "name": "Royal Blue",
+      "value": "#4862E5"
     },
     {
-      "name": "Gold",
-      "value": "#fbbe25"
+      "name": "Mandy",
+      "value": "#E54867"
+    },
+    {
+      "name": "Bright Sun",
+      "value": "#F5CF38"
     }
   ],
   "standalone": []

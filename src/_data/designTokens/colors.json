@@ -39,28 +39,180 @@
       "value": "#161616"
     },
     {
-      "name": "Pink",
-      "value": "#dd4462"
+      "name": "Cinnabar 100",
+      "value": "#ffe9e6"
     },
     {
-      "name": "Pink Subdued",
-      "value": "#ce5769"
+      "name": "Cinnabar 200",
+      "value": "#ffd5ce"
     },
     {
-      "name": "Blue",
-      "value": "#4467dd"
+      "name": "Cinnabar 300",
+      "value": "#ffa79f"
     },
     {
-      "name": "Blue Subdued",
-      "value": "#4d6cc8"
+      "name": "Cinnabar 400",
+      "value": "#ff7b75"
     },
     {
-      "name": "Gold",
-      "value": "#fbbe25"
+      "name": "Cinnabar 500",
+      "value": "#e34647"
     },
     {
-      "name": "Gold Subdued",
-      "value": "#f1c15b"
+      "name": "Cinnabar 600",
+      "value": "#b81223"
+    },
+    {
+      "name": "Cinnabar 700",
+      "value": "#9c0005"
+    },
+    {
+      "name": "Cinnabar 800",
+      "value": "#7e0004"
+    },
+    {
+      "name": "Cinnabar 900",
+      "value": "#390000"
+    },
+    {
+      "name": "Royal Blue 100",
+      "value": "#e8f1ff"
+    },
+    {
+      "name": "Royal Blue 200",
+      "value": "#d4e9ff"
+    },
+    {
+      "name": "Royal Blue 300",
+      "value": "#a9cbff"
+    },
+    {
+      "name": "Royal Blue 400",
+      "value": "#83a4ff"
+    },
+    {
+      "name": "Royal Blue 500",
+      "value": "#5a78fc"
+    },
+    {
+      "name": "Royal Blue 600",
+      "value": "#3b51d3"
+    },
+    {
+      "name": "Royal Blue 700",
+      "value": "#2936b7"
+    },
+    {
+      "name": "Royal Blue 800",
+      "value": "#202b94"
+    },
+    {
+      "name": "Royal Blue 900",
+      "value": "#070846"
+    },
+    {
+      "name": "Mandy 100",
+      "value": "#ffe8eb"
+    },
+    {
+      "name": "Mandy 200",
+      "value": "#ffd4da"
+    },
+    {
+      "name": "Mandy 300",
+      "value": "#ffa5b5"
+    },
+    {
+      "name": "Mandy 400",
+      "value": "#ff798e"
+    },
+    {
+      "name": "Mandy 500",
+      "value": "#e14464"
+    },
+    {
+      "name": "Mandy 600",
+      "value": "#b60f42"
+    },
+    {
+      "name": "Mandy 700",
+      "value": "#9a002d"
+    },
+    {
+      "name": "Mandy 800",
+      "value": "#7c0023"
+    },
+    {
+      "name": "Mandy 900",
+      "value": "#380007"
+    },
+    {
+      "name": "Bright Sun 100",
+      "value": "#f8f2db"
+    },
+    {
+      "name": "Bright Sun 200",
+      "value": "#fbebb4"
+    },
+    {
+      "name": "Bright Sun 300",
+      "value": "#ecd069"
+    },
+    {
+      "name": "Bright Sun 400",
+      "value": "#ccab22"
+    },
+    {
+      "name": "Bright Sun 500",
+      "value": "#a78200"
+    },
+    {
+      "name": "Bright Sun 600",
+      "value": "#825e00"
+    },
+    {
+      "name": "Bright Sun 700",
+      "value": "#6a4600"
+    },
+    {
+      "name": "Bright Sun 800",
+      "value": "#553800"
+    },
+    {
+      "name": "Bright Sun 900",
+      "value": "#231200"
+    },
+    {
+      "name": "Cinnabar",
+      "value": "#E54848"
+    },
+    {
+      "name": "Cinnabar Subdued",
+      "value": "#d55b56"
+    },
+    {
+      "name": "Royal Blue",
+      "value": "#4862E5"
+    },
+    {
+      "name": "Royal Blue Subdued",
+      "value": "#4f68cf"
+    },
+    {
+      "name": "Mandy",
+      "value": "#E54867"
+    },
+    {
+      "name": "Mandy Subdued",
+      "value": "#d55b6e"
+    },
+    {
+      "name": "Bright Sun",
+      "value": "#F5CF38"
+    },
+    {
+      "name": "Bright Sun Subdued",
+      "value": "#eed066"
     }
   ]
 }
