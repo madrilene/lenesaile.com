@@ -1,0 +1,19 @@
+<is-land on:idle>
+  <div class="gallery | grid mt-l-xl" role="list">
+    {%- for item in gallery -%}
+      <dialog class="flow modal{{ loop.index }}">
+        <button class="button" autofocus>{{ meta.dialog.close }}</button>
+        {%- image item.image, item.alt, item.caption -%}
+      </dialog>
+      <button data-index="{{ loop.index }}">{%- image item.image, item.alt -%}</button>
+    {%- endfor -%}
+  </div>
+
+  {% css "local" %}
+    {% include "css/gallery.css" %}
+  {% endcss %}
+
+  {% js "defer" %}
+    {% include "scripts/dialog.js" %}
+  {% endjs %}
+</is-land>

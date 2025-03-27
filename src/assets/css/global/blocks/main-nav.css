@@ -1,0 +1,180 @@
+.mainnav {
+  --nav-list-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  position: var(--nav-position, absolute);
+  inset-inline-end: 0;
+}
+
+.mainnav:has([aria-expanded='true']) {
+  --nav-position: fixed;
+  inset-inline-end: var(--gap);
+}
+
+.mainnav ul {
+  /* configuration */
+  --gutter: var(--space-xs);
+  --cluster-vertical-alignment: normal;
+  --nav-list-background: var(--color-bg);
+  --nav-list-shadow: -5px 0 11px 0 hsl(0 0% 0% / 0.2);
+  --nav-list-layout: column;
+  --nav-list-height: 100dvh;
+  --nav-list-padding: var(--space-2xl) var(--space-s);
+  --nav-list-position: fixed;
+  --nav-list-width: min(18rem, 100vw);
+  --nav-list-visibility: hidden;
+  --nav-list-opacity: 0;
+
+  background: var(--nav-list-background);
+  box-shadow: var(--nav-list-shadow);
+  display: flex;
+  flex-direction: var(--nav-list-layout);
+  flex-wrap: wrap;
+  block-size: var(--nav-list-height);
+  list-style: none;
+  margin: 0;
+  padding: var(--nav-list-padding);
+  position: var(--nav-list-position);
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: var(--nav-list-width);
+  opacity: var(--nav-list-opacity);
+  transition:
+    opacity 0.3 var(--nav-list-timing-function),
+    visibility 0.3s ease-in-out;
+  visibility: var(--nav-list-visibility);
+}
+
+.mainnav ul[no-flash] {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mainnav ul {
+    --nav-list-transform: translateX(100%);
+    --nav-list-opacity: 1;
+    transform: var(--nav-list-transform);
+    transition:
+      transform 0.5s var(--nav-list-timing-function),
+      visibility 0.3s linear;
+  }
+
+  .mainnav svg {
+    transition: transform 0.4s var(--nav-list-timing-function);
+  }
+}
+
+.mainnav [aria-expanded='true'] + ul {
+  --nav-list-visibility: visible;
+  --nav-list-transform: translateX(0);
+  --nav-list-opacity: 1;
+}
+
+.mainnav button {
+  --gutter: var(--space-2xs);
+  --cluster-vertical-alignment: center;
+  display: var(--nav-button-display, flex);
+  position: relative;
+  z-index: 2;
+  padding: var(--space-2xs) 0;
+  line-height: var(--leading-flat);
+}
+
+.mainnav span {
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: var(--size-step-min-1);
+}
+
+.mainnav svg {
+  block-size: 0.9em;
+  color: var(--color-text);
+  stroke-width: 3;
+}
+
+.mainnav [aria-expanded='true'] svg {
+  transform: rotate(45deg);
+}
+
+.mainnav a {
+  /* configuration */
+  --nav-item-background: transparent;
+  --nav-item-text-color: var(--color-text);
+  --nav-item-padding: var(--space-xs) var(--space-2xs);
+  --nav-item-decoration-color: transparent;
+
+  background: var(--nav-item-background);
+  color: var(--nav-item-text-color);
+  padding: var(--nav-item-padding);
+  display: block;
+  border-radius: var(--border-radius-medium);
+  text-decoration-line: underline;
+  text-decoration-color: var(--nav-item-decoration-color);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.2em;
+}
+
+.mainnav a:where(:hover, :focus) {
+  --nav-item-background: transparent;
+  --nav-item-text-color: var(--color-text);
+  --nav-item-decoration-color: var(--color-text);
+}
+
+.mainnav [aria-current='page'],
+.mainnav [data-state='active'] {
+  --nav-item-background: var(--color-primary);
+  --nav-item-text-color: var(--color-light);
+  --nav-item-decoration-color: transparent;
+}
+
+@media screen(navigation) {
+  .mainnav {
+    --nav-position: static;
+    --nav-button-display: none;
+  }
+
+  .mainnav ul {
+    --nav-list-layout: row;
+    --nav-list-position: static;
+    --nav-list-padding: 0;
+    --nav-list-height: auto;
+    --nav-list-width: 100%;
+    --nav-list-shadow: none;
+    --nav-list-visibility: visible;
+    --nav-list-transform: translateX(0);
+    --nav-list-opacity: 1;
+  }
+
+  .mainnav [aria-current='page'],
+  .mainnav [data-state='active'] {
+    --nav-item-background: transparent;
+    --nav-item-text-color: var(--color-primary);
+    --nav-item-decoration-color: var(--color-primary);
+  }
+}
+
+/* Repeat the settings to provide a different styling when JavaScript is disabled or drawerNav is set to false. The selector
+assumes that the button doesn’t exist without JS, making the list the first child within the navigation. */
+
+.mainnav ul:first-child {
+  --nav-list-layout: row;
+  --nav-list-position: static;
+  --nav-list-padding: 0;
+  --nav-list-height: auto;
+  --nav-list-width: 100%;
+  --nav-list-shadow: none;
+  --nav-list-visibility: visible;
+  --nav-list-transform: translateX(0);
+  --nav-list-opacity: 1;
+}
+
+.mainnav ul:first-child [aria-current='page'],
+.mainnav ul:first-child [data-state='active'] {
+  --nav-item-background: transparent;
+  --nav-item-text-color: var(--color-primary);
+  --nav-item-decoration-color: var(--color-primary);
+}
+
+/* make menu wrap without drawer */
+.mainnav:has(ul:first-child) {
+  --nav-position: relative;
+}
