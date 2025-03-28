@@ -20,7 +20,7 @@ export const creator = {
   website: 'https://www.lenesaile.com',
   social: 'https://front-end.social/@lene'
 };
-export const pathToSvgLogo = 'src/assets/svg/misc/logo.svg'; // used for favicon generation
+export const pathToSvgLogo = 'src/assets/images/template/avatar.jpg'; // used for favicon generation
 export const themeColor = '#dd4462'; // used in manifest, for example primary color value
 export const themeLight = '#f8f8f8'; // used for meta tag theme-color, if light colors are prefered. best use value set for light bg
 export const themeDark = '#2e2e2e'; // used for meta tag theme-color, if dark colors are prefered. best use value set for dark bg
