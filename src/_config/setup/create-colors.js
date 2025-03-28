@@ -3,15 +3,21 @@ import Color from 'colorjs.io';
 
 const colorsBase = JSON.parse(fs.readFileSync('./src/_data/designTokens/colorsBase.json', 'utf-8'));
 
+const neutralDark = '#161616';
+const neutralLight = '#ffffff';
+
 const generatePalette = (baseColorHex, steps) => {
   const baseColor = new Color(baseColorHex).to('oklch');
 
   return steps.map(step => {
-    const color = new Color('oklch', [step.lightness, baseColor.c * step.chromaFactor, baseColor.h]).to(
-      'srgb'
-    );
+    let color = new Color('oklch', [step.lightness, baseColor.c * step.chromaFactor, baseColor.h]);
 
-    const [r, g, b] = color.coords.map(value => Math.round(Math.min(Math.max(value * 255, 0), 255)));
+    if (step.mixWith && step.mixAmount) {
+      color = color.mix(new Color(step.mixWith), step.mixAmount, {space: 'oklab'});
+    }
+
+    const rgb = color.to('srgb');
+    const [r, g, b] = rgb.coords.map(value => Math.round(Math.min(Math.max(value * 255, 0), 255)));
 
     const hexValue = `#${r.toString(16).padStart(2, '0')}${g
       .toString(16)
@@ -25,15 +31,15 @@ const generatePalette = (baseColorHex, steps) => {
 };
 
 const vibrantSteps = [
-  {label: '100', lightness: 0.96, chromaFactor: 0.19},
-  {label: '200', lightness: 0.94, chromaFactor: 0.45},
-  {label: '300', lightness: 0.86, chromaFactor: 0.78},
-  {label: '400', lightness: 0.75, chromaFactor: 0.9},
+  {label: '100', lightness: 0.96, chromaFactor: 0.19, mixWith: neutralLight, mixAmount: 0.75},
+  {label: '200', lightness: 0.8, chromaFactor: 0.65, mixWith: neutralLight, mixAmount: 0.6},
+  {label: '300', lightness: 0.75, chromaFactor: 0.8, mixWith: neutralLight, mixAmount: 0.3},
+  {label: '400', lightness: 0.7, chromaFactor: 0.9, mixWith: neutralLight, mixAmount: 0.15},
   {label: '500', lightness: 0.62, chromaFactor: 1},
   {label: '600', lightness: 0.5, chromaFactor: 1},
-  {label: '700', lightness: 0.42, chromaFactor: 1},
-  {label: '800', lightness: 0.36, chromaFactor: 0.85},
-  {label: '900', lightness: 0.2, chromaFactor: 0.55}
+  {label: '700', lightness: 0.4, chromaFactor: 1, mixWith: neutralDark, mixAmount: 0.3},
+  {label: '800', lightness: 0.35, chromaFactor: 0.85, mixWith: neutralDark, mixAmount: 0.7},
+  {label: '900', lightness: 0.25, chromaFactor: 0.65, mixWith: neutralDark, mixAmount: 0.85}
 ];
 
 const neutralSteps = [

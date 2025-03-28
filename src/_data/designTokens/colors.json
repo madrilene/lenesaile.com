@@ -40,19 +40,19 @@
     },
     {
       "name": "Cinnabar 100",
-      "value": "#ffe9e6"
+      "value": "#fffaf9"
     },
     {
       "name": "Cinnabar 200",
-      "value": "#ffd5ce"
+      "value": "#ffd8d4"
     },
     {
       "name": "Cinnabar 300",
-      "value": "#ffa79f"
+      "value": "#ffaaa2"
     },
     {
       "name": "Cinnabar 400",
-      "value": "#ff7b75"
+      "value": "#fc837c"
     },
     {
       "name": "Cinnabar 500",
@@ -64,31 +64,31 @@
     },
     {
       "name": "Cinnabar 700",
-      "value": "#9c0005"
+      "value": "#6e020e"
     },
     {
       "name": "Cinnabar 800",
-      "value": "#7e0004"
+      "value": "#351614"
     },
     {
       "name": "Cinnabar 900",
-      "value": "#390000"
+      "value": "#201413"
     },
     {
       "name": "Royal Blue 100",
-      "value": "#e8f1ff"
+      "value": "#f9fcff"
     },
     {
       "name": "Royal Blue 200",
-      "value": "#d4e9ff"
+      "value": "#d7e4ff"
     },
     {
       "name": "Royal Blue 300",
-      "value": "#a9cbff"
+      "value": "#a9c2ff"
     },
     {
       "name": "Royal Blue 400",
-      "value": "#83a4ff"
+      "value": "#87a5ff"
     },
     {
       "name": "Royal Blue 500",
@@ -100,31 +100,31 @@
     },
     {
       "name": "Royal Blue 700",
-      "value": "#2936b7"
+      "value": "#1f2c7f"
     },
     {
       "name": "Royal Blue 800",
-      "value": "#202b94"
+      "value": "#171f39"
     },
     {
       "name": "Royal Blue 900",
-      "value": "#070846"
+      "value": "#141721"
     },
     {
       "name": "Mandy 100",
-      "value": "#ffe8eb"
+      "value": "#fff9fa"
     },
     {
       "name": "Mandy 200",
-      "value": "#ffd4da"
+      "value": "#ffd8db"
     },
     {
       "name": "Mandy 300",
-      "value": "#ffa5b5"
+      "value": "#ffa8b2"
     },
     {
       "name": "Mandy 400",
-      "value": "#ff798e"
+      "value": "#fb8291"
     },
     {
       "name": "Mandy 500",
@@ -136,31 +136,31 @@
     },
     {
       "name": "Mandy 700",
-      "value": "#9a002d"
+      "value": "#6c0123"
     },
     {
       "name": "Mandy 800",
-      "value": "#7c0023"
+      "value": "#34161a"
     },
     {
       "name": "Mandy 900",
-      "value": "#380007"
+      "value": "#201415"
     },
     {
       "name": "Bright Sun 100",
-      "value": "#f8f2db"
+      "value": "#fdfcf6"
     },
     {
       "name": "Bright Sun 200",
-      "value": "#fbebb4"
+      "value": "#eee5c6"
     },
     {
       "name": "Bright Sun 300",
-      "value": "#ecd069"
+      "value": "#d9c580"
     },
     {
       "name": "Bright Sun 400",
-      "value": "#ccab22"
+      "value": "#c6ab45"
     },
     {
       "name": "Bright Sun 500",
@@ -172,15 +172,15 @@
     },
     {
       "name": "Bright Sun 700",
-      "value": "#6a4600"
+      "value": "#4b3400"
     },
     {
       "name": "Bright Sun 800",
-      "value": "#553800"
+      "value": "#272007"
     },
     {
       "name": "Bright Sun 900",
-      "value": "#231200"
+      "value": "#1a1810"
     },
     {
       "name": "Cinnabar",

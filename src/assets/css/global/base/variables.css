@@ -38,7 +38,7 @@
 
 [data-color='cinnabar'] {
   --color-text: light-dark(var(--color-cinnabar-900), var(--color-gray-100));
-  --color-bg: light-dark(var(--color-cinnabar), var(--color-gray-800));
+  --color-bg: light-dark(var(--color-cinnabar-100), var(--color-gray-800));
   --color-bg-accent: light-dark(var(--color-cinnabar-200), var(--color-gray-700));
   --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
   --color-light: light-dark(var(--color-cinnabar-100), var(--color-gray-100));
