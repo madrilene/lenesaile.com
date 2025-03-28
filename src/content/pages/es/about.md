@@ -1,6 +1,6 @@
 ---
 title: Sobre mí
-permalink: /{{ locale }}/sobre/index.html
+permalink: /{{ lang }}/sobre/index.html
 redirectFrom: [/sobre/]
 key: 'about'
 description: 'Soy desarrolladora web y diseñadora nacida en Berlín, viviendo en Madrid. Llevo desarrollando para la web profesionalmente desde 2008.'

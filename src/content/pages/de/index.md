@@ -2,7 +2,7 @@
 title: Lene Saile
 discover:
   title: Lene Saile, Webentwicklerin und Designerin in Madrid
-permalink: /{{ locale }}/index.html
+permalink: /{{ lang }}/index.html
 key: 'home'
 description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.
 layout: home

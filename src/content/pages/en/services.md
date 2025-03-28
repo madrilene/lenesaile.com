@@ -1,6 +1,6 @@
 ---
 title: What I do
-permalink: /{{ locale }}/services/index.html
+permalink: /{{ lang }}/services/index.html
 key: 'services'
 description: 'I mainly concentrate on developing things for the web. I place value on performance, accessibility, simplicity and long term support.'
 layout: services

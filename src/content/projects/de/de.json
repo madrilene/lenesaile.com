@@ -1,3 +1,6 @@
 {
-	"locale": "de"
+  "lang": "de",
+  "permalink": false,
+  "tags": "projects",
+  "excludeFromSitemap": true
 }

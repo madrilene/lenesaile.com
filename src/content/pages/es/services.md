@@ -1,6 +1,6 @@
 ---
 title: Lo que hago
-permalink: /{{ locale }}/servicios/index.html
+permalink: /{{ lang }}/servicios/index.html
 redirectFrom: [/servicios/]
 key: 'services'
 description: 'Me dedico a desarrollar cosas para la web. Doy valor al rendimiento, la accesibilidad, la simplicidad y el soporte a largo plazo.'

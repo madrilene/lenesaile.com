@@ -1,6 +1,6 @@
 ---
 title: Legal notice
-permalink: /{{ locale }}/imprint/index.html
+permalink: /{{ lang }}/imprint/index.html
 key: 'legal'
 description: I am issuer, owner and responsible for the web site
 layout: page

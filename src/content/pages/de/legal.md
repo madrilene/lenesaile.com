@@ -1,6 +1,6 @@
 ---
 title: Impressum
-permalink: /{{ locale }}/impressum/index.html
+permalink: /{{ lang }}/impressum/index.html
 key: 'legal'
 description: Verpflichtende Infos zu Eigentümer und Verantworktlichkeit für meine Website
 layout: page

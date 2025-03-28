@@ -29,10 +29,17 @@ export default async function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
 
   // --------------------- layout aliases
-  eleventyConfig.addLayoutAlias('base', 'base.njk');
-  eleventyConfig.addLayoutAlias('page', 'page.njk');
-  eleventyConfig.addLayoutAlias('post', 'post.njk');
-  eleventyConfig.addLayoutAlias('tags', 'tags.njk');
+  eleventyConfig.addLayoutAlias('base', 'base/base.njk');
+  eleventyConfig.addLayoutAlias('page', 'base/page.njk');
+  eleventyConfig.addLayoutAlias('post', 'base/post.njk');
+  eleventyConfig.addLayoutAlias('tags', 'base/tags.njk');
+  eleventyConfig.addLayoutAlias('404', 'pages/404.njk');
+
+  eleventyConfig.addLayoutAlias('home', 'pages/home.njk');
+  eleventyConfig.addLayoutAlias('about', 'pages/about.njk');
+  eleventyConfig.addLayoutAlias('services', 'pages/services.njk');
+  eleventyConfig.addLayoutAlias('projects', 'pages/projects.njk');
+  eleventyConfig.addLayoutAlias('blog', 'pages/blog.njk');
 
   //	---------------------  Collections
   eleventyConfig.addCollection('blog_en', collectionApi => postsByLang(collectionApi, 'en'));

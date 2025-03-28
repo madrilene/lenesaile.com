@@ -2,7 +2,7 @@
 title: Lene Saile
 discover:
   title: Lene Saile, desarrolladora y diseñadora en Madrid
-permalink: /{{ locale }}/index.html
+permalink: /{{ lang }}/index.html
 key: 'home'
 description: Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008.
 layout: home

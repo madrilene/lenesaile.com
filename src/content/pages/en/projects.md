@@ -1,6 +1,6 @@
 ---
 title: Projects
-permalink: /{{ locale }}/projects/index.html
+permalink: /{{ lang }}/projects/index.html
 key: 'projects'
 description: 'Some of my latest projects. I want to make the web a little better: For the people and organizations I work with, for their users and for our planet.'
 layout: projects

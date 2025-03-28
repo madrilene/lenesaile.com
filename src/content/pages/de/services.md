@@ -1,6 +1,6 @@
 ---
 title: Was ich mache
-permalink: /{{ locale }}/leistungen/index.html
+permalink: /{{ lang }}/leistungen/index.html
 key: 'services'
 description: 'Semantisches HTML, CSS und eine Prise JavaScript! Ich lege Wert auf Leistung, Barrierefreiheit und langfristige Unterstützung. Und: Webseiten sollen Spaß machen!'
 layout: services

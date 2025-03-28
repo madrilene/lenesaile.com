@@ -1,6 +1,6 @@
 ---
 title: Proyectos
-permalink: /{{ locale }}/proyectos/index.html
+permalink: /{{ lang }}/proyectos/index.html
 redirectFrom: [/proyectos/]
 key: 'projects'
 description: 'Algunos de mis últimos proyectos. Quiero hacer la web un poco mejor: Para las personas y organizaciones con las que trabajo, para sus usuarios y para nuestro planeta.'
