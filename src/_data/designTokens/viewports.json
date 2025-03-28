@@ -2,8 +2,8 @@
   "title": "Viewports",
   "description": "The min and maximum viewports used to generate fluid type and space scales.",
   "min": 320,
+  "xs": 590,
   "sm": 640,
-  "navigation": 662,
   "md": 1000,
   "wrapper": 1360,
   "max": 1760

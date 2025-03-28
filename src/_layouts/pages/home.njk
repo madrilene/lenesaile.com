@@ -32,24 +32,24 @@ mainClass: row-1
 
     <div class="column flow prose">
       {{ content | safe }}
-      <is-land on:idle on:visible import="/assets/scripts/components/gsap.js"></is-land>
     </div>
   </div>
 </article>
 
+
+
+
 <article
-  class="section overflow-hidden"
-  style="--button-color: var(--color-tertiary); --spot-color: var(--color-secondary)"
->
-
-  {% svg "divider/divider-curve" %}
-
-  <div class="section__inner region" style="--region-space-top: 0">
+  class="full section overflow-hidden" data-color="royal-blue">
+  {% svg "divider/divider-curve", null, "seperator" %}
+  <div class="section__inner">
     <div class="wrapper flow | content relative">
 
-      {% svg "mascot/lene-startcta" %}
+      <div class="mascot">
 
-      <div class="flow region | avatar-content-reverse__inner">
+      {% svg "mascot/home-projects" %}
+
+      <div class="flow region pr-l">
         <h2>{{ projects.title }}</h2>
         <p>{{ projects.teaser }}</p>
 
@@ -57,6 +57,7 @@ mainClass: row-1
           <a href="{{ projects.goal }}" class="button">{{ projects.button }}</a>
         </p>
       </div>
+    </div>
     </div>
   </div>
 </article>

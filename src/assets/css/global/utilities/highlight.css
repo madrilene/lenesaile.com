@@ -1,0 +1,9 @@
+/**
+ * REGION
+ * Add consistent vertical padding to create regions of content
+ * Can either be configured by setting --region-space or use a default from the space scale
+ */
+.highlight {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}

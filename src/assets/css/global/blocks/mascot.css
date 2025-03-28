@@ -1,0 +1,29 @@
+.mascot {
+  grid-column: full;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-l);
+}
+
+@media screen(max) {
+  .mascot {
+    grid-column: popout;
+  }
+}
+
+.mascot svg {
+  inline-size: auto;
+  block-size: 100%;
+  height: auto;
+  width: clamp(10rem, 33vw, 30rem);
+  place-self: end;
+  translate: -25% -25%;
+  scale: 1.8;
+}
+
+@media screen(sm) {
+  .mascot svg {
+    scale: 1.1;
+    translate: -10% 5%;
+  }
+}

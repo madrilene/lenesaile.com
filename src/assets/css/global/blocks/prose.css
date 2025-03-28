@@ -47,10 +47,10 @@
   text-decoration: none;
 }
 
-.prose mark {
+/* .prose mark {
   background-color: var(--color-tertiary);
   color: var(--color-dark);
-}
+} */
 
 /* block space only for "regular lists" and sublists */
 .prose :is(ul, ol):not([class]) li + li,

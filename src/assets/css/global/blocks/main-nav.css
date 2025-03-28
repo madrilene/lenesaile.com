@@ -126,7 +126,7 @@
   --nav-item-decoration-color: transparent;
 }
 
-@media screen(navigation) {
+@media screen(sm) {
   .mainnav {
     --nav-position: static;
     --nav-button-display: none;

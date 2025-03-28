@@ -22,18 +22,6 @@
   grid-column: content;
 }
 
-.popout {
-  grid-column: popout;
-}
-
-.feature {
-  grid-column: feature;
-}
-
-.full {
-  grid-column: full;
-}
-
 /* use subgrid to inherit the grid columns for header, main, footer */
 body.wrapper > * {
   grid-column: full;
@@ -51,4 +39,16 @@ body.wrapper > * > * {
 /* utility for sharing the same row in the wrapper (hero overlapping header) */
 .row-1 {
   grid-row: 1;
+}
+
+.popout {
+  grid-column: popout !important;
+}
+
+.feature {
+  grid-column: feature !important;
+}
+
+.full {
+  grid-column: full !important;
 }

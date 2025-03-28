@@ -1,0 +1,23 @@
+/* based on Chris Coyier's article on https://frontendmasters.com/blog/highlight-text-when-a-user-scrolls-down-to-that-piece-of-text/ */
+
+mark {
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: linear-gradient(var(--color-mark), var(--color-mark));
+  color: var(--color-text);
+  animation: mark-it linear;
+  animation-fill-mode: forwards;
+  animation-timeline: view();
+  animation-iteration-count: 1;
+  animation-range: contain 0% contain 25%;
+}
+
+@keyframes mark-it {
+  0% {
+    background-size: 0 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}

@@ -31,11 +31,10 @@ export default {
   presets: [],
   theme: {
     screens: {
+      xs: `${viewportTokens.sm}px`,
       ltsm: {max: `${viewportTokens.sm}px`},
       sm: `${viewportTokens.sm}px`,
       md: `${viewportTokens.md}px`,
-      ltnavigation: {max: `${viewportTokens.navigation}px`},
-      navigation: `${viewportTokens.navigation}px`,
       wrapper: `${viewportTokens.wrapper}px`,
       max: `${viewportTokens.max}px`
     },

@@ -1,0 +1,101 @@
+svg.avatar {
+  z-index: 1;
+}
+
+svg.avatar-404 {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+svg.avatar-cta {
+  inline-size: var(--space-xl);
+  block-size: auto;
+  transform: translateY(1.6rem);
+}
+
+[dir='rtl'] svg.avatar-cta {
+  transform: translateY(1.6rem) scaleX(-1);
+}
+
+svg.avatar-start {
+  display: block;
+  position: absolute;
+  block-size: auto;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  transform: translateY(2.6rem) translateX(-50%);
+  inline-size: clamp(200px, 33%, 30vw);
+  grid-column: 1;
+}
+
+svg.avatar-portatil,
+svg.avatar-ball,
+svg.avatar-blog {
+  display: none;
+}
+
+.avatar-content {
+  padding-block-start: var(--space-2xl);
+}
+
+.avatar-content-reverse__inner {
+  padding-inline-start: var(--space-3xl);
+}
+
+@media (min-width: 24em) {
+  svg.avatar-blog {
+    display: block;
+    position: absolute;
+    block-size: auto;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+  }
+
+  svg.avatar-blog {
+    inline-size: clamp(200px, 35%, 30vw);
+    transform: translateY(clamp(8rem, 6rem + 4vw, 10rem)) translateX(var(--space-xl))
+      rotate(-1deg);
+  }
+
+  [dir='rtl'] svg.avatar-blog {
+    transform: translateY(clamp(8rem, 6rem + 4vw, 9.2rem)) rotate(1deg) scaleX(-1);
+  }
+
+  .avatar-content-blog__inner {
+    padding-inline-end: var(--space-4xl);
+  }
+}
+
+@media (min-width: 30em) {
+  svg.avatar-portatil,
+  svg.avatar-ball {
+    display: block;
+    position: absolute;
+    block-size: auto;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+  }
+
+  svg.avatar-portatil {
+    inline-size: clamp(200px, 40%, 40vw);
+    transform: translateY(clamp(4rem, 3rem + 3vw, 6rem)) translateX(var(--space-2xl-3xl))
+      scaleX(-1);
+  }
+
+  [dir='rtl'] svg.avatar-portatil {
+    transform: translateY(clamp(4rem, 3rem + 3vw, 5rem)) translateX(-3rem) scaleX(1);
+  }
+
+  svg.avatar-ball {
+    inline-size: clamp(200px, 38%, 30vw);
+    transform: translateY(var(--space-4xl)) translateX(var(--space-xl));
+  }
+
+  [dir='rtl'] svg.avatar-ball {
+    transform: translateY(var(--space-4xl)) translateX(var(--space-xs)) scaleX(-1);
+  }
+
+  .avatar-content__inner {
+    padding-inline-end: var(--space-4xl);
+  }
+}
