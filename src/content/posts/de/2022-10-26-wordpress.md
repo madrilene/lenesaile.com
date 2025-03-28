@@ -30,7 +30,7 @@ Was wir effizient gegen hacking-Versuche unternehmen können ist ein eigener Blo
 
 Was die Geschwindigkeit angeht, empfehle ich dieses etwas wütende Video von Alex Young.
 
-{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+<div><custom-youtube @slug="rhWhBi7W14A" @label="How To Make A slow WordPress Site"> </custom-youtube></div>
 
 Außerdem ist es sehr leicht WordPress auffindbar zu machen, hat eCommerce-Möglichkeiten und dank des Plugins "Advanced Custom Fields" flexible Inhaltsfelder.
 

@@ -41,8 +41,8 @@
   </head>
 
   <body class="{{ layout }}">
-    {% set indicateActiveHome %}
-      {% if page.url == "/" %}
+    {% set indicateActive %}
+      {% if page.url == "/" + page.lang + "/" %}
         aria-current=page
       {% endif %}
     {% endset %}

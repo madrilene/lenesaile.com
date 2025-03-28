@@ -37,7 +37,7 @@ Por nuestra parte, sin embargo, vamos a ampliar la gama de productos un poco y e
 
 Snipcart es una solución de comercio electrónico que nos permite añadir un carrito de la compra a una página web y convertirlo en una tienda. Snipcart ofrece un carrito de la compra totalmente personalizable, webhooks y APIs, y un panel de administración intuitivo.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "Snipcart tiene un panel de administración atractivo y claro. Entre otras cosas, puedo encontrar información útil sobre el fenómeno de las cestas de la compra abandonadas." %}
+{% image "./src/assets/images/blog/snipcart-dashboard.jpg", "Pantallazo del panel de administración de Snipcart", "Snipcart tiene un panel de administración atractivo y claro. Entre otras cosas, puedo encontrar información útil sobre el fenómeno de las cestas de la compra abandonadas." %}
 
 Para Snipcart no importa la plataforma en la que esté construido el sitio web. Sin embargo, funciona especialmente bien con una página web de Jamstack. [albertoballesteros.com](https://www.albertoballesteros.com/shop) es una página Jamstack, construida con el generador de webs estáticas [Eleventy](https://www.11ty.dev/).
 
@@ -187,7 +187,7 @@ Para que Snipcart funcione, tenemos que habilitar la recuperación de scripts a 
 
 Según hemos conseguido nuestra primera venta, consta el artículo automáticamente dentro de la sección de productos. El comprador está listado en la sección de clientes y en la sección de pedidos aparece la transacción con los detalles del cliente.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "¡Hemos vendido el primer ejemplar del libro por medio de la página web! Ahora aparece el producto en el  panel de administración de Snipcart." %}
+{% image "./src/assets/images/blog/snipcart-ventas.jpg", "Pantallazo del panel de administración de Snipcart", "¡Hemos vendido el primer ejemplar del libro por medio de la página web! Ahora aparece el producto en el  panel de administración de Snipcart." %}
 
 ## Conclusión y recomendaciones
 

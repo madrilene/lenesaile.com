@@ -16,7 +16,7 @@ Der Grund, warum sie wieder in mein Leben trat, war natürlich, dass ein Fehler 
 
 Das Bild kennt jeder WordPress-Entwickler:
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot von vielen PHP-Fehlerzeilen, verursacht durch eine Inkompatibilität mit PHP 8.1", "Hello darkness my old friend." %}
+{% image "./src/assets/images/blog/ruefetto-php-error.jpg", "Screenshot von vielen PHP-Fehlerzeilen, verursacht durch eine Inkompatibilität mit PHP 8.1", "Hello darkness my old friend." %}
 
 Unter einem gefühlten Meter PHP-Fehlermeldungen erschien sie dann, genau so wie ich sie vor weit über einem Jahrzehnt hinterlassen hatte.
 
@@ -128,7 +128,7 @@ Ich erinnere mich daran, dass ich zu Beginn noch ein paar Mal kostenlos WordPres
 
 Es kam die große Welle des Responsive Webdesign, und während die allermeisten Seiten nach und nach media querys bekamen, scherte sich meine Seite nicht darum. Es war hilfreich, dass ich die Website so verdammt schmal gemacht habe!
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "", "Screenshot der Website auf meinem Bildschirm. Sie nimmt nur etwa 30 % des Platzes ein.", "Es ist ziemlich modern! Ich habe sogar den Inhalt gut lesbar auf maximal 45 bis 75 Zeichen pro Zeile gehalten!" %}
+{% image "./src/assets/images/blog/ruefetto-narrow.jpg", "Screenshot der Website auf meinem Bildschirm. Sie nimmt nur etwa 30 % des Platzes ein.", "Es ist ziemlich modern! Ich habe sogar den Inhalt gut lesbar auf maximal 45 bis 75 Zeichen pro Zeile gehalten!" %}
 
 Webseiten mit 600 bis 800 Pixel Breite war damals gar nicht so außergewöhnlich. Ich könnte schwören, dass sie meinen Monitor damals ganz gut ausgefüllt hat.
 

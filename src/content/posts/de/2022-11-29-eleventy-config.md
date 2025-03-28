@@ -352,4 +352,4 @@ Es gibt so viele großartige Ideen!
 
 Ich wurde als Rednerin zum _Eleventy Meetup Ep. 12_ am 16. März 2023 eingeladen und hielt einen kurzen Vortrag, der auf diesem Artikel basierte.
 
-{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized ' %}
+<div><custom-youtube @slug="nlaN-mifrWk" @label="How to keep your Eleventy config file organized"></custom-youtube></div>

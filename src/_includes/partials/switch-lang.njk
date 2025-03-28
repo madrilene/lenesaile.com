@@ -1,0 +1,34 @@
+<nav class="switch-lang" aria-label="{{ translations[page.lang].a11y.navLangAria }}">
+  <ul class="cluster gutter-2xs text-step-min-1" role="list">
+    {% for lang, details in translations %}
+      {% set translatedUrl = "/" + lang + "/" %}
+
+      {% set indicateActiveLang %}
+        {% if lang == page.lang %}
+          aria-current=page
+        {% endif %}
+      {% endset %}
+
+      {% for item in collections.all %}
+        {%
+          if item.data.translationKey == translationKey and item.data.page.lang ==
+          lang
+        %}
+          {% set translatedUrl = item.url %}
+        {% endif %}
+      {% endfor %}
+
+      <li>
+        <a
+          href="{{ translatedUrl }}"
+          rel="alternate"
+          hreflang="{{ lang }}"
+          aria-label="{{ details.name }}"
+          {{ indicateActiveLang }}
+        >
+          <span lang="{{ lang }}">{{ lang | upper }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

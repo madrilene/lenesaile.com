@@ -1,4 +1,6 @@
-import {imageShortcode} from './shortcodes/image.js';
-import {svgShortcode} from './shortcodes/svg.js';
+import {aside} from './shortcodes/aside.js';
+import {codepen} from './shortcodes/codepen.js';
+import {image} from './shortcodes/image.js';
+import {svg} from './shortcodes/svg.js';
 
-export default {imageShortcode, svgShortcode};
+export default {aside, codepen, image, svg};

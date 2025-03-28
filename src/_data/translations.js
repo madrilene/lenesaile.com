@@ -1,0 +1,152 @@
+export default {
+  en: {
+    dir: '', // defaults to ltr
+    name: 'English',
+    discover: {
+      description:
+        'Frontend developer and designer living in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.'
+    },
+    a11y: {
+      skipText: 'Jump to main content',
+      skipTextSection: 'Jump to next section',
+      navMainAria: 'Main',
+      navFooterAria: 'Legal information',
+      navMainLabel: 'Menu',
+      navLangAria: 'Change language',
+      navBreadcrump: 'breadcrump',
+      projectSidebarMeta: 'Meta information',
+      projectSidebarMedia: 'Media',
+      audioPaused: 'Audio paused',
+      audioProgress: 'Audio progress',
+      toc: 'Table of contents',
+      skipToc: 'Skip table of contents'
+    },
+    blog: {
+      name: 'Lene Saile',
+      description:
+        "I'm writing about things related to web development. Projects, approaches and observations, things I have learned or consider important.  I specialize in custom creative websites with accessibility and performance in mind.",
+      url: 'https://www.lenesaile.com/en/feed.xml',
+      published: 'published: ',
+      edited: 'last edit: ',
+      reading: 'Reading time: ',
+      unit: 'min.',
+      githubEdit:
+        'I try to keep my articles up to date, and of course I could be wrong, or there could be a better solution.  If you see something that is not true (anymore), or something that should be mentioned, feel free to edit the article on'
+    },
+    webmentions: {
+      formTitle: 'Have you published a response? Let me know where:',
+      buttonValue: 'Send Webmention'
+    },
+    misc: {
+      backHome: 'Back to homepage',
+      allPosts: 'See all posts',
+      feedSubscribe: 'Subscribe to the feed',
+      writtenByPrefix: 'by'
+    },
+    details: {
+      aria: 'section controls',
+      expand: 'expand all',
+      collapse: 'collapse all'
+    }
+  },
+  de: {
+    dir: '',
+    name: 'Deutsch',
+    discover: {
+      description:
+        'Frontend-Developer und Designer in Madrid. Ich arbeite semantischem HTML, vanilla Javascript und modernem CSS.'
+    },
+    a11y: {
+      skipText: 'Zum Hauptinhalt springen',
+      skipTextSection: 'Zum nächsten Abschnitt springen',
+      navMainAria: 'Haupt',
+      navFooterAria: 'Rechtliche Informationen',
+      navMainLabel: 'Menü',
+      navLangAria: 'Sprache ändern',
+      navBreadcrump: 'breadcrump',
+      projectSidebarMeta: 'Meta-Informationen',
+      projectSidebarMedia: 'Medien',
+      audioPaused: 'Audio pausiert',
+      audioProgress: 'Audio-Fortschritt',
+      toc: 'Inhaltsverzeichnis',
+      skipToc: 'Inhaltsverzeichnis überspringen'
+    },
+    blog: {
+      name: 'Lene Saile - Blog de desarrollo web',
+      description:
+        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
+      url: 'https://www.lenesaile.com/es/feed.xml',
+      published: 'publicado: ',
+      edited: 'última edición: ',
+      reading: 'Tiempo de lectura: ',
+      unit: 'min.',
+      githubEdit:
+        'Intento mantener mis artículos actualizados y, por supuesto, podría equivocarme o podría haber una solución mejor. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en'
+    },
+    webmentions: {
+      formTitle: '¿Has publicado una respuesta? Dime dónde:',
+      buttonValue: 'Enviar Webmention'
+    },
+    misc: {
+      backHome: 'Zurück zur Startseite',
+      allPosts: 'Alle Beiträge anzeigen',
+      feedSubscribe: 'Feed abonnieren',
+      writtenByPrefix: 'von'
+    },
+    details: {
+      aria: 'Abschnittssteuerung',
+      expand: 'Alles erweitern',
+      collapse: 'Alles reduzieren'
+    }
+  },
+  es: {
+    dir: '',
+    name: 'Español',
+    discover: {
+      description:
+        'Desarrolladora Frontend y diseñadora en Madrid. Me gusta trabajar con HTML semántico, vanilla Javascript y CSS moderno'
+    },
+    a11y: {
+      skipText: 'Saltar al contenido principal',
+      skipTextSection: 'Saltar a la siguiente sección',
+      navMainAria: 'Principal',
+      navFooterAria: 'Información legal',
+      navMainLabel: 'Menú',
+      navLangAria: 'Cambiar idioma',
+      navBreadcrump: 'miga de pan',
+      projectSidebarMeta: 'Información meta',
+      projectSidebarMedia: 'Medios',
+      audioPaused: 'Audio pausado',
+      audioProgress: 'Progreso del audio',
+      toc: 'índice de contenidos',
+      skipToc: 'Saltar el índice de contenidos'
+    },
+    blog: {
+      name: 'Lene Saile - Web Development Blog',
+      description:
+        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
+      url: 'https://www.lenesaile.com/de/feed.xml',
+      published: 'veröffentlicht: ',
+      edited: 'zuletzt bearbeitet: ',
+      reading: 'Lesezeit: ',
+      unit: 'Min.',
+      githubEdit:
+        'Ich versuche meine Artikel aktuell zu halten, und natürlich kann ich mich auch irren, oder es gibt eine bessere Lösung. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:'
+    },
+    webmentions: {
+      formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
+      buttonValue: 'Webmention senden'
+    },
+    misc: {
+      backHome: 'Volver a la página principal',
+      allPosts: 'Ver todas las publicaciones',
+      feedSubscribe: 'Suscribirse al feed',
+      writtenByPrefix: 'por'
+    },
+    details: {
+      aria: 'controles de sección',
+      expand: 'expandir todo',
+      collapse: 'colapsar todo'
+    }
+  }
+};

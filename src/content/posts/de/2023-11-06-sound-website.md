@@ -14,7 +14,7 @@ Lange Zeit war es verpönt, irgendwelche unaufgefordert Töne abzuspielen. Besuc
 
 Das ist ganz einfach! Heutzutage haben wir immer ein Aufnahmegerät dabei. Ich stelle mich neben meinen alten Lichtschalter und nehme sein knarzendes Geräusch mit meinem Handy auf.
 
-{% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "Eine weiße Wand mit einem alten Druckknopfschalter", "Mein Lichtschalter, der für den Sound meines Theme-Umschalters verwendet wurde. In gewisser Weise schaltest du also tatsächlich mein Licht an und aus. " %}
+{% image "./src/assets/images/blog/wall.jpg", "Eine weiße Wand mit einem alten Druckknopfschalter", "Mein Lichtschalter, der für den Sound meines Theme-Umschalters verwendet wurde (Ja, ich hab mich da hingestellt und hab das aufgenommen). In gewisser Weise schaltest du also tatsächlich mein Licht an und aus." %}
 
 Schicke nun den Ton an deinen Computer. Hier müssen wir ihn noch zuschneiden. Ein kostenloses und einfach zu benutzendes Tool dafür ist _Audacity_.
 
@@ -32,13 +32,13 @@ Du findest die Downloads für alle Betriebssysteme auf der Website: https://www.
 
 Sobald du Audacity gestartet hast, ziehe deine Audiodatei in das Bearbeitungsfenster. In meinem Fall habe ich eine `.ogg'-Datei von meinem Handy bekommen.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity.jpg", "", "", "", "Audacity-Oberfläche mit geladener Audiodatei", "Die Audacity-Oberfläche sieht etwas unübersichtlich aus, aber das meiste braucht man nicht" %}
+{% image "./src/assets/images/blog/audacity.jpg", "Audacity-Oberfläche mit geladener Audiodatei", "Die Audacity-Oberfläche sieht etwas unübersichtlich aus, aber das meiste braucht man nicht" %}
 
 Jetzt kannst du einen Bereich für deinen Audioclip auswählen und ihn dann über "Edit" > "Clip Boundaries" > "Split" vom Rest der Datei trennen.
 
 Du hast nun drei Bereiche.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity-three-areas.jpg", "", "", "", "Audacity-Schnittstelle mit der in drei Bereiche aufgeteilten Audiodatei, der mittlere ist die Auswahl, die wir exportieren werden" %}
+{% image "./src/assets/images/blog/audacity-three-areas.jpg", "Audacity-Schnittstelle mit der in drei Bereiche aufgeteilten Audiodatei, der mittlere ist die Auswahl, die wir exportieren werden" %}
 
 Du kannst die Bereiche, die du nicht willst, markieren und löschen. Achte darauf, dass der Ton recht schnell beginnt, da eine hörbare Verzögerung nach dem `click event` nicht natürlich wirkt.
 

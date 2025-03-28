@@ -50,4 +50,4 @@ Wir wollen nur das Wesentliche laden, wie bei klassischen Webseiten. Deshalb wer
 
 Abschließend überprüfe ich die gesamte Seite noch einmal auf Performance-Faktoren, Barrierefreiheit, sogenannte Best Practices und Suchmaschinenkompatibilität.
 
-{% imagePlaceholder "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "", "", "object-fit-cover", "Screenshot der Lighthouse-Audit-Ergebnisse für ineliagestion.com, zeigt hervorragende Ergebnisse in allen Bereichen", "Lighthouse-Audit-Ergebnisse für ineliagestion.com. Lighthouse ist ein Tool, das Informationen über die Leistung einer Seite, SEO, Benutzerfreundlichkeit und Zugänglichkeit liefert.", "60vw" %}
+{% image "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "Screenshot der Lighthouse-Audit-Ergebnisse für ineliagestion.com, zeigt gute Ergebnisse in allen Bereichen", "Lighthouse-Audit-Ergebnisse für ineliagestion.com. Lighthouse ist ein Tool, das Informationen über die Leistung einer Seite, SEO, Benutzerfreundlichkeit und Zugänglichkeit liefert.", null, null, "object-fit-cover" %}

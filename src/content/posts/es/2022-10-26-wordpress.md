@@ -30,7 +30,7 @@ Lo que podemos hacer eficientemente contra los intentos de hackeo es una entrada
 
 En relación a la velocidad, recomiendo este vídeo un poco enfadado realizado por Alex Young. Lo dice todo.
 
-{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+<div><custom-youtube @slug="rhWhBi7W14A" @label="How To Make A slow WordPress Site"> </custom-youtube></div>
 
 Además, es fácil hacer que una página web de WordPress sea descubrible, tiene posibilidades de eCommerce, y gracias al plugin "Advanced Custom fields" campos de contenido flexibles.
 

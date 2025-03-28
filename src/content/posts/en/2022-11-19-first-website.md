@@ -16,7 +16,7 @@ The reason it came back into my life was, of course, that there was an error. A 
 
 This picture is familiar to every WordPress developer:
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Screenshot of many lines of PHP errors caused by a incompability with PHP 8.1", "Hello darkness my old friend." %}
+{% image "./src/assets/images/blog/ruefetto-php-error.jpg", "Screenshot of many lines of PHP errors caused by a incompability with PHP 8.1", "Hello darkness my old friend." %}
 
 Under what felt like 1 meter of PHP error messages, it then appeared, exactly as I had left it well over a decade ago.
 
@@ -130,7 +130,7 @@ The admin of the website (who was still set as "admin"!) happily used the home p
 
 The big wave of Responsive Web Design came, and while the vast majority of sites gradually got media querys, my site didn't care. It came in handy I made the website so freaking narrow.
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "", "Screenshot of the website on my screen. It only takes up about 30% of the space.", "It is quite modern! I even kept the content nicely readable between 45 to 75 characters max per line!" %}
+{% image "./src/assets/images/blog/ruefetto-narrow.jpg", "Screenshot of the website on my screen. It only takes up about 30% of the space.", "It is quite modern! I even kept the content nicely readable between 45 to 75 characters max per line!" %}
 
 Making websites limited to 600 to 800 pixels width was not so unusual around 2008. I could swear that it filled my monitor quite well back then.
 

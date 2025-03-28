@@ -41,7 +41,7 @@ On our end, however, we're going to expand the product range a bit and a shopper
 
 Snipcart is an e-commerce solution that allows us to add a shopping cart to a web page and turn it into a store. Snipcart offers a fully customizable shopping cart, webhooks and APIs, and an intuitive administration panel.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Snipcart admin panel screenshot", "Snipcart has an attractive and clear admin panel. Among other things, I can find useful information about the phenomenon of abandoned shopping carts." %}
+{% image "./src/assets/images/blog/snipcart-dashboard.jpg", "Snipcart admin panel screenshot", "Snipcart has an attractive and clear admin panel. Among other things, I can find useful information about the phenomenon of abandoned shopping carts." %}
 
 For Snipcart, it doesn't matter what platform the website is built on. However, it works especially well with a Jamstack website. [albertoballesteros.com](https://www.albertoballesteros.com/shop) is a Jamstack page, built with the [Eleventy](https://www.11ty.dev/) static web generator.
 
@@ -190,7 +190,7 @@ For Snipcart to work, we have to enable script retrieval through Snipcart in the
 
 When we have achieve our first sale, the item is listed automatically within the products section. The buyer details are stored in the customer section and in the order section the transaction appears with the customer details.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Snipcart admin panel screenshot", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
+{% image "./src/assets/images/blog/snipcart-ventas.jpg", "Snipcart admin panel screenshot", "We have sold the first copy of the book through the website! The product now appears in the Snipcart administration panel." %}
 
 ## Conclusion and recommendations
 

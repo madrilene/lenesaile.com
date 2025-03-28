@@ -52,4 +52,4 @@ We want to load only the most essential, like classic web pages. Therefore, all 
 
 Finally, I recheck the entire site for performance factors, accessibility issues, so-called best practices and search engine compatibility.
 
-{% imagePlaceholder "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "", "", "object-fit-cover", "Screenshot of Lighthouse audit results for ineliagestion.com, showing great results in all areas", "Lighthouse audit results for ineliagestion.com. Lighthouseis a tool that provides information about a page's performance, SEO, usability and accessibility.", "60vw" %}
+{% image "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "object-fit-cover", "Screenshot of Lighthouse audit results for ineliagestion.com, showing great results in all areas", "Lighthouse audit results for ineliagestion.com. Lighthouseis a tool that provides information about a page's performance, SEO, usability and accessibility.", "60vw" %}

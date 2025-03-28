@@ -14,7 +14,7 @@ For a long time it was frowned upon to play any unsolicited sounds. The user rig
 
 That's easy! Nowadays we always have a sound recorder with us. So I stand next to my old light switch and record its crackling sound with my phone.
 
-{% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "A white wall with an old push-button switch", "My light switch, which was used for my theme switcher sound. So in a way, you actually switch my light on and off. " %}
+{% image "./src/assets/images/blog/wall.jpg", "A white wall with an old push-button switch", "My light switch, which was used for my theme switcher sound (Yes, I was standing there recording my light switch). So in a way, you actually switch my light on and off." %}
 
 Now send the sound to your computer, and here we have to cut it up. A free and easy-to-use tool is _Audacity_.
 
@@ -32,13 +32,13 @@ You can find the downloads for all operating systems on their website: https://w
 
 Once you have Audacity running, drag your audio file into the editing window. In my case I got an `.ogg` file from my mobile phone.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity.jpg", "", "", "", "Audacity interface with the sound file loaded", "The Audacity interface looks a bit busy, but you don't need most of the stuff" %}
+{% image "./src/assets/images/blog/audacity.jpg", "Audacity interface with the sound file loaded", "The Audacity interface looks a bit busy, but you don't need most of the stuff" %}
 
 Now you can select an area for your audio clip and then separate it from the rest of the file via "Edit" > "Clip Boundaries" > "Split".
 
 You now have three areas.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity-three-areas.jpg", "", "", "", "Audacity interface with the audio file split into three areas, the middle one is the selection we will export" %}
+{% image "./src/assets/images/blog/audacity-three-areas.jpg", "Audacity interface with the audio file split into three areas, the middle one is the selection we will export" %}
 
 You can mark and delete the areas you don't want. Make sure that the sound starts quite quickly, as an audible delay after the click event does not seem natural.
 

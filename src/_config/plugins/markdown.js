@@ -8,6 +8,7 @@ import {full as markdownItEmoji} from 'markdown-it-emoji';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
 import markdownitAbbr from 'markdown-it-abbr';
+import markdownItTocDoneRight from 'markdown-it-toc-done-right';
 import {slugifyString} from '../filters/slugify.js';
 
 export const markdownLib = markdownIt({
@@ -31,6 +32,15 @@ export const markdownLib = markdownIt({
   .use(markdownItClass, {
     ol: 'list',
     ul: 'list'
+  })
+  .use(markdownItTocDoneRight, {
+    placeholder: `{:toc}`,
+    slugify: slugifyString,
+    containerId: 'toc',
+    listClass: 'toc-list',
+    itemClass: 'toc-item',
+    linkClass: 'toc-link',
+    listType: 'ol'
   })
   .use(markdownItLinkAttributes, [
     {

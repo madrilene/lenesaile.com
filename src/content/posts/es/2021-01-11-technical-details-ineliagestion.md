@@ -59,4 +59,4 @@ Queremos cargar sólo lo más esencial, como las páginas web clásicas. Por lo 
 
 Por último, vuelvo a comprobar todo el sitio en cuanto a los factores de rendimiento, accesibilidad, las denominadas mejores prácticas y la compatibilidad con los motores de búsqueda.
 
-{% imagePlaceholder "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "", "", "object-fit-cover", "Screenshot of Lighthouse audit results for ineliagestion.com, showing great results in all areas", "Resultados de la auditoría Lighthouse para ineliagestion.com. Lighthouse es una herramienta que proporciona información sobre el rendimiento, el SEO, la usabilidad y la accesibilidad de una página.", "60vw" %}
+{% image "./src/assets/images/blog/ineliagestion-lighthouse.jpg", "Screenshot of Lighthouse audit results for ineliagestion.com, showing great results in all areas", "Resultados de la auditoría Lighthouse para ineliagestion.com. Lighthouse es una herramienta que proporciona información sobre el rendimiento, el SEO, la usabilidad y la accesibilidad de una página." %}

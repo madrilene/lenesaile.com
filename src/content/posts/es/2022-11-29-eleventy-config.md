@@ -348,8 +348,4 @@ En general, siempre es una gran idea bucear en los repositorios de los _[starter
 
 Me invitaron como ponente al Eleventy Meetup Ep. 12 el 16 de marzo de 2023 y di una breve charla basada en este artículo.
 
-{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized' %}
-
-```
-
-```
+<div><custom-youtube @slug="nlaN-mifrWk" @label="How to keep your Eleventy config file organized"></custom-youtube></div>

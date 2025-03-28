@@ -36,7 +36,7 @@ In unserem Fall werden wir jedoch die Produktpalette etwas erweitern, und ein Ku
 
 Snipcart ist eine E-Commerce-Lösung, die es uns ermöglicht, ganz leicht einen Warenkorb zu einer Webseite hinzuzufügen und diese in einen Shop zu verwandeln. Snipcart bietet einen vollständig anpassbaren Einkaufswagen, Webhooks und APIs sowie ein intuitives Administrationspanel.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-dashboard.jpg", "", "", "", "Snipcart admin panel screenshot", "Snipcart hat ein attraktives und übersichtliches Adminpanel. Hier finde ich unter anderem hilfreiche Informationen über das Phänomen der verlassenen Warenkörbe." %}
+{% image "./src/assets/images/blog/snipcart-dashboard.jpg", "Snipcart admin panel screenshot", "Snipcart hat ein attraktives und übersichtliches Adminpanel. Hier finde ich unter anderem hilfreiche Informationen über das Phänomen der verlassenen Warenkörbe." %}
 
 Für Snipcart spielt es keine Rolle, mit welchem System die Website aufgebaut ist. Es funktioniert jedoch besonders gut mit einer Jamstack-Website. [albertoballesteros.com](https://www.albertoballesteros.com/shop) ist eine Jamstack-Seite, die mit [Eleventy](https://www.11ty.dev/) erstellt wurde.
 
@@ -188,7 +188,7 @@ Damit Snipcart funktioniert, müssen wir den Skriptabruf durch Snipcart in der K
 
 Da wir unseren ersten Verkauf getätigt haben, wird der Artikel automatisch im Abschnitt Produkte aufgeführt. Der Käufer wird im Kundenbereich aufgeführt und im Bestellbereich erscheint die Transaktion mit den Kundendaten.
 
-{% imagePlaceholder "./src/assets/images/blog/snipcart-ventas.jpg", "", "", "", "Pantallazo del panel de administración de Snipcart", "Wir haben das erste Exemplar des Buches über die Website verkauft! Das Produkt erscheint nun im Snipcart-Verwaltungspanel." %}
+{% image "./src/assets/images/blog/snipcart-ventas.jpg", "Pantallazo del panel de administración de Snipcart", "Wir haben das erste Exemplar des Buches über die Website verkauft! Das Produkt erscheint nun im Snipcart-Verwaltungspanel." %}
 
 ## Schlussfolgerung und Empfehlungen:
 

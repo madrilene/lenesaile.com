@@ -399,4 +399,4 @@ There are so many great ideas out there!
 
 I was invited as a speaker at the Eleventy Meetup Ep. 12 on March 16, 2023 and gave a short talk based on this article.
 
-{% youtube 'nlaN-mifrWk', 'How to keep your Eleventy config file organized ' %}
+<div><custom-youtube @slug="nlaN-mifrWk" @label="How to keep your Eleventy config file organized"></custom-youtube></div>

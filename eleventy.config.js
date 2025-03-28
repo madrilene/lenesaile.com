@@ -96,8 +96,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('slugify', filters.slugifyString);
 
   // --------------------- Shortcodes
-  eleventyConfig.addShortcode('svg', shortcodes.svgShortcode);
-  eleventyConfig.addShortcode('image', shortcodes.imageShortcode);
+  eleventyConfig.addPairedShortcode('aside', shortcodes.aside);
+  eleventyConfig.addPairedShortcode('codepen', shortcodes.codepen);
+  eleventyConfig.addShortcode('svg', shortcodes.svg);
+  eleventyConfig.addShortcode('image', shortcodes.image);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events ---------------------

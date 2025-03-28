@@ -31,7 +31,7 @@ What we can do efficiently against hacking attempts is a separate blog post, but
 
 When it comes to speed, I recommend this slightly angry video made by Alex Young. It pretty much says it all.
 
-{% youtube 'rhWhBi7W14A', 'How To Make A SLOW WordPress Site' %}
+<div><custom-youtube @slug="rhWhBi7W14A" @label="How To Make A slow WordPress Site"> </custom-youtube></div>
 
 Also, it's quite easy to make a WordPress site discoverable, it has eCommerce possibilities, and thanks to the plugin "Advanced Custom fields" great flexible content fields.
 

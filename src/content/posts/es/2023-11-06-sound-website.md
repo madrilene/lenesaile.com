@@ -14,7 +14,7 @@ Durante mucho tiempo estuvo mal visto reproducir sonidos no solicitados. Los vis
 
 Esto es muy sencillo. Hoy en día siempre tenemos un dispositivo de grabación con nosotros. Yo me pongo al lado de mi viejo interruptor de la luz y grabo su nítido sonido con mi móvil.
 
-{% imagePlaceholder "./src/assets/images/blog/wall.jpg", "", "", "", "Una pared blanca con un viejo interruptor pulsador", "Mi interruptor de la luz utilizado para el sonido de mi interruptor temático. Así que en cierto modo, en realidad está encendiendo y apagando mi luz. " %}
+{% image "./src/assets/images/blog/wall.jpg", "Una pared blanca con un viejo interruptor pulsador", "Mi interruptor de la luz utilizado para el sonido de mi interruptor temático. Así que en cierto modo, en realidad está encendiendo y apagando mi luz. " %}
 
 Ahora envía el sonido a tu ordenador. Aquí todavía tenemos que cortarlo. Una herramienta gratuita y fácil de usar para esto es _Audacity_.
 
@@ -32,13 +32,13 @@ Puedes encontrar las descargas para todos los sistemas operativos en la página 
 
 Una vez que hayas iniciado Audacity, arrastra tu archivo de audio a la ventana de edición. En mi caso, tengo un archivo `.ogg' de mi teléfono móvil.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity.jpg", "", "", "", "Interfaz de Audacity con archivo de audio cargado", "La interfaz de Audacity parece un poco desordenada, pero no necesitas la mayor parte de ella" %}
+{% image "./src/assets/images/blog/audacity.jpg", "Interfaz de Audacity con archivo de audio cargado", "La interfaz de Audacity parece un poco desordenada, pero no necesitas la mayor parte de ella" %}
 
 Ahora puedes seleccionar un rango para su clip de audio y luego separarlo del resto del archivo mediante "Edit" > "Clip Boundaries" > "Split".
 
 Ahora tiene tres áreas.
 
-{% imagePlaceholder "./src/assets/images/blog/audacity-three-areas.jpg", "", "", "", "Interfaz de Audacity con el archivo de audio dividido en tres áreas, la del medio es la selección que exportaremos" %}
+{% image "./src/assets/images/blog/audacity-three-areas.jpg", "Interfaz de Audacity con el archivo de audio dividido en tres áreas, la del medio es la selección que exportaremos" %}
 
 Puedes seleccionar y borrar las secciones que no quieras. Asegúrese de que el sonido comienza bastante rápido, ya que un retraso audible después del "evento clic" no parece natural.
 

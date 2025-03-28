@@ -18,7 +18,7 @@ La razón por la que volvió a mi vida fue, por supuesto, que apareció un error
 
 La imagen es familiar para todos los desarrolladores de WordPress:
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-php-error.jpg", "", "", "", "Captura de pantalla de muchas líneas de errores PHP causados por una incompatibilidad con PHP 8.1", "Hello darkness my old friend." %}
+{% image "./src/assets/images/blog/ruefetto-php-error.jpg", "Captura de pantalla de muchas líneas de errores PHP causados por una incompatibilidad con PHP 8.1", "Hello darkness my old friend." %}
 
 Debajo de lo que parecía un metro de mensajes de error de PHP, apareció entonces la página web, tal y como lo había dejado hace más de una década.
 
@@ -130,7 +130,7 @@ El administrador de la web (¡que por supuesto seguía siendo "admin"!) utilizab
 
 Llegó la gran ola del "Responsive Web Design", y mientras la gran mayoría de los sitios se fueron haciendo con los "media querys", a mi página no la importó. Vino muy bien que la web fuera tan jodidamente estrecha.
 
-{% imagePlaceholder "./src/assets/images/blog/ruefetto-narrow.jpg", "", "", "", "Captura de pantalla del sitio web en mi pantalla. Sólo ocupa un 30% del espacio", "¡Es bastante moderna! Incluso mantuve el contenido legible a un máximo de 45 a 75 caracteres por línea." %}
+{% image "./src/assets/images/blog/ruefetto-narrow.jpg", "Captura de pantalla del sitio web en mi pantalla. Sólo ocupa un 30% del espacio", "¡Es bastante moderna! Incluso mantuve el contenido legible a un máximo de 45 a 75 caracteres por línea." %}
 
 Hacer páginas web con 600 a 800 píxeles de ancho no era tan inusual por el año 2008. Podría jurar que llenaba bastante bien mi monitor por aquel entonces.
 
