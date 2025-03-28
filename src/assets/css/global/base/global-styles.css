@@ -5,10 +5,6 @@
 	project: https://cube.fyi/css.html
 */
 
-html {
-  color-scheme: light dark;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -31,7 +27,7 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: var(--font-extra-bold);
+  font-weight: var(--font-bold);
   line-height: var(--leading-fine);
   letter-spacing: var(--tracking-s);
 }

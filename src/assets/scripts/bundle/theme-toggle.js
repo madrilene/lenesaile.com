@@ -1,74 +1,46 @@
 const storageKey = 'theme-preference';
-const lightLabel = '{{ meta.themeSwitch.light }}';
-const darkLabel = '{{ meta.themeSwitch.dark }}';
-const themeColors = {
-  dark: '{{ meta.themeLight }}',
-  light: '{{ meta.themeDark }}'
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const savedPreference = localStorage.getItem(storageKey) || 'auto';
+
+const getEffectiveTheme = () => {
+  return savedPreference === 'auto' ? (systemPrefersDark ? 'dark' : 'light') : savedPreference;
 };
 
-const theme = {
-  value: getColorPreference()
-};
+// Prevent flash
+const effectiveTheme = getEffectiveTheme();
+document.querySelector('meta[name="color-scheme"]').content = effectiveTheme;
+document.documentElement.setAttribute('data-theme', effectiveTheme);
 
 window.onload = () => {
-  const lightThemeToggle = document.querySelector('#light-theme-toggle');
-  const darkThemeToggle = document.querySelector('#dark-theme-toggle');
+  const colorScheme = document.querySelector('meta[name="color-scheme"]');
   const switcher = document.querySelector('[data-theme-switcher]');
 
-  if (!switcher) {
+  if (!switcher || !colorScheme) {
     return;
   }
 
-  reflectPreference();
-  updateMetaThemeColor();
+  const switchButtons = switcher.querySelectorAll('button');
 
-  lightThemeToggle.addEventListener('click', () => onClick('light'));
-  darkThemeToggle.addEventListener('click', () => onClick('dark'));
+  switchButtons.forEach(button => {
+    button.setAttribute('aria-pressed', button.value === savedPreference);
+  });
 
-  lightThemeToggle.setAttribute('aria-pressed', theme.value === 'light');
-  darkThemeToggle.setAttribute('aria-pressed', theme.value === 'dark');
+  switchButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedTheme = button.value;
+      localStorage.setItem(storageKey, selectedTheme);
+
+      const newTheme =
+        selectedTheme === 'auto'
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light'
+          : selectedTheme;
+
+      colorScheme.content = newTheme;
+      document.documentElement.setAttribute('data-theme', newTheme);
+
+      switchButtons.forEach(btn => btn.setAttribute('aria-pressed', btn === button));
+    });
+  });
 };
-
-// sync with system changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {
-  theme.value = isDark ? 'dark' : 'light';
-  setPreference();
-  updateMetaThemeColor();
-});
-
-function onClick(themeValue) {
-  theme.value = themeValue;
-  document.querySelector('#light-theme-toggle').setAttribute('aria-pressed', themeValue === 'light');
-  document.querySelector('#dark-theme-toggle').setAttribute('aria-pressed', themeValue === 'dark');
-  setPreference();
-  updateMetaThemeColor();
-}
-
-function getColorPreference() {
-  if (localStorage.getItem(storageKey)) {
-    return localStorage.getItem(storageKey);
-  } else {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-}
-
-function setPreference() {
-  localStorage.setItem(storageKey, theme.value);
-  reflectPreference();
-  updateMetaThemeColor();
-}
-
-function reflectPreference() {
-  document.firstElementChild.setAttribute('data-theme', theme.value);
-  // document.querySelector('#light-theme-toggle')?.setAttribute('aria-label', lightLabel);
-  // document.querySelector('#dark-theme-toggle')?.setAttribute('aria-label', darkLabel);
-}
-
-function updateMetaThemeColor() {
-  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-  const newColor = theme.value === 'dark' ? themeColors.dark : themeColors.light;
-  metaThemeColor.setAttribute('content', newColor);
-}
-
-// set early so no page flashes / CSS is made aware
-reflectPreference();

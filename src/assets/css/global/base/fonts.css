@@ -29,11 +29,31 @@
 }
 
 @font-face {
-  font-family: 'Redhat';
+  font-family: Outfit;
   font-style: normal;
   font-display: swap;
-  font-weight: 900;
+  font-weight: 400;
   src:
     local(''),
-    url('/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2') format('woff2');
+    url('/assets/fonts/outfit/outfit-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Outfit;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local(''),
+    url('/assets/fonts/outfit/outfit-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'FiraCode';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    local(''),
+    url('/assets/fonts/fira/firacode-medium-webfont.woff2') format('woff2');
 }
