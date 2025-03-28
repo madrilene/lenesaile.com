@@ -22,10 +22,6 @@
   grid-column: content;
 }
 
-.prose-wrapper {
-  --wrapper-width: 64rem;
-}
-
 .popout {
   grid-column: popout;
 }
@@ -36,4 +32,23 @@
 
 .full {
   grid-column: full;
+}
+
+/* use subgrid to inherit the grid columns for header, main, footer */
+body.wrapper > * {
+  grid-column: full;
+  display: grid;
+  grid-template-columns: subgrid;
+  align-self: start;
+  grid-template-rows: max-content auto max-content;
+}
+
+/* for all direct children of header, main, footer: default to content column */
+body.wrapper > * > * {
+  grid-column: content;
+}
+
+/* utility for sharing the same row in the wrapper (hero overlapping header) */
+.row-1 {
+  grid-row: 1;
 }

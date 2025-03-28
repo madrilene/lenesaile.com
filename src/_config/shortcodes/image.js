@@ -19,7 +19,7 @@ export const image = async (
   imageClass,
   widths = [650, 960, 1400],
   sizes = 'auto',
-  formats = ['avif', 'webp', 'jpeg']
+  formats = ['webp', 'jpeg']
 ) => {
   // Prepend "./src" if not present
   if (!src.startsWith('./src')) {

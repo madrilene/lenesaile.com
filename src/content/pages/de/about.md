@@ -5,7 +5,7 @@ key: 'about'
 description: 'Ich arbeite als freie Webentwicklerin und Designerin in Madrid. Seit 2008 erstelle ich Websites und Webapps.'
 layout: about
 lead: 'Ich bin Webentwicklerin und Designerin, geboren in Berlin, zu Hause in Madrid. Seit 2008 erstelle ich Websites und Webapps. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.'
-image: './src/assets/images/lene-sobre-mi-2021.jpg'
+image: './src/assets/images/lene/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu arbeiten'
 breakout:
   title: 'Ich lebe und arbeite in Madrid'

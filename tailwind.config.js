@@ -35,7 +35,9 @@ export default {
       sm: `${viewportTokens.sm}px`,
       md: `${viewportTokens.md}px`,
       ltnavigation: {max: `${viewportTokens.navigation}px`},
-      navigation: `${viewportTokens.navigation}px`
+      navigation: `${viewportTokens.navigation}px`,
+      wrapper: `${viewportTokens.wrapper}px`,
+      max: `${viewportTokens.max}px`
     },
     colors,
     borderRadius,

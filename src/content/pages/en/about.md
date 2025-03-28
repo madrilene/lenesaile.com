@@ -5,7 +5,7 @@ key: 'about'
 description: "I'm a developer and designer in Madrid who has been building for the web professionally since 2008."
 layout: about
 lead: "I'm a Berlin born, Madrid based developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites with accessibility and performance in mind."
-image: './src/assets/images/lene-sobre-mi-2021.jpg'
+image: './src/assets/images/lene/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitting on a gym ball in front of her desk, apparently working'
 breakout:
   title: 'I live and work in Madrid'

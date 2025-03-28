@@ -9,7 +9,7 @@ layout: home
 hero:
   title: Ich entwickle hoch-optimierte Websites nach Maß.
   intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige personalisierte Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und den Technologien der Webplattform.
-  image: './src/assets/images/lene2023.jpg'
+  image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'
 projects:

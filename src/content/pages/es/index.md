@@ -9,7 +9,7 @@ layout: home
 hero:
   title: Hago páginas web a medida altamente optimizadas.
   intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado muchas páginas web personalizadas para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack y las tecnologías de la plataforma web.
-  image: './src/assets/images/lene2023.jpg'
+  image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sentada frente a su escritorio, sonriendo'
   hi: 'Hola, soy yo.'
 projects:

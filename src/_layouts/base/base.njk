@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ meta.lang }}" data-color="{{ theme or 'cinnabar' }}">
+<html lang="{{ meta.lang }}" dir="ltr" data-color="{{ theme or 'cinnabar' }}">
   <head>
     <!-- 1 charset/viewport -->
     <meta charset="UTF-8" />
@@ -38,7 +38,7 @@
     {% include "head/schema.njk" %}
   </head>
 
-  <body class="{{ layout }}">
+  <body class="wrapper {{ layout }}">
     {% set indicateActive %}
       {% if page.url == "/" + page.lang + "/" %}
         aria-current=page
@@ -46,7 +46,7 @@
     {% endset %}
     {% include "partials/header.njk" %}
 
-    <main id="main" class="flow">{{ content | safe }}</main>
+    <main id="main" class="flow {{ mainClass }}" tabindex="-1">{{ content | safe }}</main>
 
     {% include "partials/footer.njk" %}
     {%- if meta.easteregg -%}
