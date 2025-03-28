@@ -18,7 +18,7 @@ dotenv.config();
 import yaml from 'js-yaml';
 
 //  config import
-import {getAllPosts, showInSitemap, tagList} from './src/_config/collections.js';
+import {postsByLang, showInSitemap, tagList} from './src/_config/collections.js';
 import events from './src/_config/events.js';
 import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
@@ -35,7 +35,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('tags', 'tags.njk');
 
   //	---------------------  Collections
-  eleventyConfig.addCollection('allPosts', getAllPosts);
+  eleventyConfig.addCollection('blog_en', collectionApi => postsByLang(collectionApi, 'en'));
+  eleventyConfig.addCollection('blog_fr', collectionApi => postsByLang(collectionApi, 'fr'));
+  eleventyConfig.addCollection('blog_de', collectionApi => postsByLang(collectionApi, 'de'));
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
 
@@ -66,6 +68,8 @@ export default async function (eleventyConfig) {
       pictureAttributes: {}
     }
   });
+
+  eleventyConfig.addPlugin(plugins.EleventyI18nPlugin, {defaultLanguage: 'en', errorMode: 'allow-fallback'});
 
   // ---------------------  bundle
   eleventyConfig.addBundle('css', {hoist: true});

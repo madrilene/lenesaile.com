@@ -1,0 +1,22 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "{{ meta.siteName }}",
+  "language": "{{ page.lang }}",
+  "home_page_url": "{{- meta.url | addPathPrefixToFullUrl -}}{{- page.lang -}}/",
+  "feed_url": "{{ permalink | htmlBaseUrl(meta.url) }}",
+  "description": "{{- translations[page.lang].discover.description -}}",
+  "items": [
+		{%- set postslist = collections["blog_" + page.lang] -%}
+		{%- for post in postslist -%}
+		{%- set absolutePostUrl = post.url | htmlBaseUrl(meta.url) -%}
+    {
+      "id": "{{ absolutePostUrl }}",
+      "url": "{{ absolutePostUrl }}",
+      "title": "{{ post.data.title }}",
+      "content_html": {% if post.content %}{{ post.content | renderTransforms(post.data.page, meta.url) | dump | safe }}{% else %}""{% endif %},
+      "date_published": "{{ post.date | dateToRfc3339 }}"
+    }
+    {% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+}

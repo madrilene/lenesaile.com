@@ -1,0 +1,6 @@
+---
+eleventyComputed:
+  permalink: '/{{ lang }}/blog.xml'
+---
+{%- set postlist = collections["blog_" + lang] -%}
+{%- include "partials/rss-atom.njk" -%}

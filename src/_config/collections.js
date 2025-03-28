@@ -1,6 +1,6 @@
 /** All blog posts as a collection. */
-export const getAllPosts = collection => {
-  return collection.getFilteredByGlob('./src/posts/**/*.md').reverse();
+export const postsByLang = (collection, lang) => {
+  return collection.getFilteredByGlob(`./src/posts/${lang}/**/*.md`).reverse();
 };
 
 /** All relevant pages as a collection for sitemap.xml */
