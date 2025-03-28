@@ -1,15 +1,3 @@
-.post article h1 {
-  font-size: var(--size-step-6);
-}
-
-.post article h2 {
-  font-size: var(--size-step-3);
-}
-
-.post article h3 {
-  font-size: var(--size-step-2);
-}
-
 /* make featured image alwyays 16/9 */
 .post h1 + :is(picture, figure) img {
   max-inline-size: var(--max-img-width, 100%);
