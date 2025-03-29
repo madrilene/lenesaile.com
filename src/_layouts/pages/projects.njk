@@ -1,8 +1,23 @@
 ---
 layout: base
+headerClass: row-1 ontop
+mainClass: row-1
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">{{ title }}</h1>
-  {{ content | safe }}
-</div>
+<header class="section overflow-hidden full" data-color="mandy">
+  <div class="section__inner">
+    <div class="wrapper flow">
+      <div class="mascot" data-direction="rtl">
+        <div
+          class="flow region wrapper stack-bread place-self-end"
+          style="--region-space-top: var(--space-header-distance)"
+        >
+          <h1 class="fade-in-bottom">{{ title }}</h1>
+          <p>{{ lead }}</p>
+        </div>
+        {% svg "mascot/projects" %}
+      </div>
+    </div>
+  </div>
+  {% svg 'divider/used-tilt', null, 'seperator' %}
+</header>

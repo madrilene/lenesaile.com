@@ -1,18 +1,17 @@
 ---
 layout: base
+headerClass: row-1 ontop
+mainClass: row-1
 ---
 
 <header
   class="section overflow-hidden full"
   data-color="bright-sun"
 >
-
-
   <div class="section__inner">
     <div class="wrapper flow">
       <div class="mascot" data-direction='rtl'>
-
-      <div class="flow region wrapper stack-bread place-self-end">
+      <div class="flow region wrapper stack-bread place-self-end" style="--region-space-top: var(--space-header-distance)">
         <h1 class="fade-in-bottom">{{ title }}</h1>
         <p>{{ description }}</p>
       </div>
@@ -20,11 +19,8 @@ layout: base
     </div>
     </div>
   </div>
-
-
   {% svg 'divider/used-curve', null, 'seperator' %}
 </header>
-
 
 <div class="region">
   <custom-masonry layout="50-50">

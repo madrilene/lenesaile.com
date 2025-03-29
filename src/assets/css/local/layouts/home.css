@@ -11,7 +11,7 @@
   background-color: var(--color-accent);
   color: var(--color-light);
   padding-inline: var(--gutter);
-  padding-block-start: calc(var(--space-2xl) * 2);
+  padding-block-start: var(--space-header-distance);
 }
 
 .hero .intro {

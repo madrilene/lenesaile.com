@@ -85,6 +85,12 @@
       "name": "2XL - 3xl",
       "min": 95,
       "max": 224
+    },
+
+    {
+      "name": "header distance",
+      "min": 120,
+      "max": 125
     }
   ]
 }
