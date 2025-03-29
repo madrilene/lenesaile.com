@@ -38,7 +38,7 @@
     {% include "head/schema.njk" %}
   </head>
 
-  <body class="wrapper {{ layout }}">
+  <body class="wrapper stack-sandwich {{ layout }}">
     {% set indicateActive %}
       {% if page.url == "/" + page.lang + "/" %}
         aria-current=page
