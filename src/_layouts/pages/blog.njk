@@ -2,7 +2,33 @@
 layout: base
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">{{ title }}</h1>
-  {{ content | safe }}
+<header
+  class="section overflow-hidden full"
+  data-color="bright-sun"
+>
+  <div class="section__inner region">
+    <div class="wrapper | content relative avatar-content">
+      <section class="prose | avatar-content-blog__inner">
+        <h1 class="fade-in-bottom">{{ title }}</h1>
+        <p>{{ description }}</p>
+      </section>
+      {% svg "mascot/blog" %}
+    </div>
+  </div>
+  {% svg 'divider/used-curve', null, 'seperator' %}
+</header>
+
+
+<div class="wrapper">
+  <custom-masonry layout="50-50">
+		{% asyncEach item in pagination.items %}
+			{% include "partials/card-blog.njk" %}
+		{% endeach %}
+	</custom-masonry>
+
+  <!-- set collection to paginate -->
+  {% set collectionToPaginate = collections["blog_" + page.lang] %}
+  {% if collectionToPaginate.length > pagination.size %}
+    {% include 'partials/pagination.njk' %}
+  {% endif %}
 </div>

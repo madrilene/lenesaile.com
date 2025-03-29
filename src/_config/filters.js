@@ -1,3 +1,4 @@
+import {categoryFilter} from './filters/category-filter.js';
 import {toISOString, formatDate} from './filters/dates.js';
 import {markdownFormat} from './filters/markdown-format.js';
 import {shuffleArray} from './filters/sort-random.js';
@@ -7,6 +8,7 @@ import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
 
 export default {
+  categoryFilter,
   toISOString,
   formatDate,
   markdownFormat,

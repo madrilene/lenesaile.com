@@ -10,49 +10,36 @@ mainClass: row-1
           {{ hero.title }}
         </h1>
     </div>
-
     <div class="intro">
       <div class="column">
         {{ hero.intro }}
       </div>
     </div>
-
     {% image hero.image, hero.alt, null, "eager", "fade-in", "object-fit-cover", [650, 1000, 1400], "(max-width:
       42em) 100vw, (max-width: 85em) 60vw, 1400px" %}
-
     {% svg "misc/arrow", null, "arrow whimsical-hi wobble" %}
     <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
-
 </header>
 
-
-<article class="region" style="--region-space-top: var(--space-2xl)">
+<article class="region region-space-2xl">
   <div class="wrapper flow prose">
     <h2>{{ about.title }}</h2>
-
     <div class="column flow prose">
       {{ content | safe }}
     </div>
   </div>
 </article>
 
-
-
-
 <article
   class="full section overflow-hidden" data-color="royal-blue">
-  {% svg "divider/divider-curve", null, "seperator" %}
+  {% svg "divider/used-curve", null, "seperator" %}
   <div class="section__inner">
     <div class="wrapper flow | content relative">
-
       <div class="mascot">
-
       {% svg "mascot/home-projects" %}
-
-      <div class="flow region pr-l">
+      <div class="flow region pr-l text-gray-100">
         <h2>{{ projects.title }}</h2>
         <p>{{ projects.teaser }}</p>
-
         <p>
           <a href="{{ projects.goal }}" class="button">{{ projects.button }}</a>
         </p>
@@ -65,7 +52,6 @@ mainClass: row-1
 <section class="full | region">
   <div class="wrapper flow prose">
     <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
 
     {% if blog.intro %}
       <p>{{ blog.intro }}</p>
@@ -73,17 +59,15 @@ mainClass: row-1
 
     <div class="feature |  region region-space-l">
       <custom-masonry layout="50-50">
-        <!-- loop posts -->
-        {% set itemList = collections.allPosts %}
+        {% set itemList = collections["blog_" + page.lang] | categoryFilter("blogpost") %}
         {% asyncEach item in itemList.slice(0, 4) %}
-          {% set definedDate = item.date %}
+          {% set headingLevel = "h3" %}
           {% include "partials/card-blog.njk" %}
         {% endeach %}
       </custom-masonry>
     </div>
   </div>
 </section>
-
 
 {%- css "local" -%}
   {%- include 'css/home.css' -%}

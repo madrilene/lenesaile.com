@@ -1,3 +1,5 @@
+{% set metaKey = metaKey | default("blog") %}
+
 <section class="region">
   <nav role="navigation" aria-labelledby="pagination_label">
     <span id="pagination_label" hidden>{{ meta[metaKey].paginationLabel }}</span>
