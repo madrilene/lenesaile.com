@@ -2,7 +2,32 @@
 layout: base
 ---
 
-<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
-  <h1 class="gradient-text">{{ title }}</h1>
-  {{ content | safe }}
-</div>
+<header class="section overflow-hidden full" data-color="cinneamon">
+  <div class="section__inner">
+        <div
+          class="flow region wrapper place-self-end prose"
+          style="--region-space-top: var(--space-header-distance)"
+        >
+          <h1 class="fade-in-bottom">{{ title }}</h1>
+          <p>{{ lead }}</p>
+        </div>
+      </div>
+  </div>
+  {% svg 'divider/pixels', null, 'seperator' %}
+</header>
+
+<article class="region">
+  <div class="wrapper flow prose">
+    {{ content | safe }}
+  </div>
+  <div class="sidebar items-center flow region">
+    <header class="flow mr-xs">
+      <h2>{{ breakout.title }}</h2>
+      <p>{{ breakout.intro }}</p>
+    </header>
+    {% image image %}
+  </div>
+  <div class="wrapper flow prose">
+    <p class="prose">{{ finalWords | markdownFormat | safe }}</p>
+  </div>
+</article>

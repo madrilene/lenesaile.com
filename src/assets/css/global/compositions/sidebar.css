@@ -26,7 +26,7 @@ EXCEPTIONS
 }
 
 .sidebar:not([data-direction]) > :first-child {
-  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-basis: var(--sidebar-target-width, 25rem);
   flex-grow: 1;
 }
 
@@ -40,7 +40,7 @@ EXCEPTIONS
 A flipped version where the sidebar is on the right
 */
 .sidebar[data-direction='rtl'] > :last-child {
-  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-basis: var(--sidebar-target-width, 25rem);
   flex-grow: 1;
 }
 
