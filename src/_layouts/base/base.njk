@@ -38,7 +38,7 @@
     {% include "head/schema.njk" %}
   </head>
 
-  <body class="wrapper stack-sandwich {{ layout }}">
+  <body class="wrapper {{ layout }}">
     {% set indicateActive %}
       {% if page.url == "/" + page.lang + "/" %}
         aria-current=page
@@ -49,9 +49,5 @@
     <main id="main" class="flow {{ mainClass }}" tabindex="-1">{{ content | safe }}</main>
 
     {% include "partials/footer.njk" %}
-    {%- if meta.easteregg -%}
-      <script type="module" src="/assets/scripts/components/custom-easteregg.js"></script>
-      <custom-easteregg></custom-easteregg>
-    {%- endif -%}
   </body>
 </html>

@@ -23,6 +23,17 @@
 }
 
 /* use subgrid to inherit the grid columns for header, main, footer */
+
+body.wrapper {
+  /* default behaviour for the 3 children */
+  grid-template-rows: max-content auto max-content;
+}
+
+/* if first two children share a row */
+.wrapper:has(> .row-1 + .row-1) {
+  grid-template-rows: auto max-content;
+}
+
 body.wrapper > * {
   grid-column: full;
   display: grid;
@@ -38,14 +49,6 @@ body.wrapper > * > * {
 /* utility for sharing the same row in the wrapper (hero overlapping header) */
 .row-1 {
   grid-row: 1;
-}
-
-.stack-bread {
-  grid-template-rows: max-content auto;
-}
-
-.stack-sandwich {
-  grid-template-rows: max-content auto max-content;
 }
 
 .popout {
