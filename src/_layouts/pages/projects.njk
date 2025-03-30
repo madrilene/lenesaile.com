@@ -21,3 +21,42 @@ mainClass: row-1
   </div>
   {% svg 'divider/used-tilt', null, 'seperator' %}
 </header>
+
+<div class="projects">
+  {% for project in projects %}
+    {% set i18n = project.translations[page.lang] %}
+    <article class="project flow region">
+      <h2>{{ project.name }}</h2>
+      <p>{{ i18n.about | markdownFormat | safe }}</p>
+      <p class="text-step-min-1">{{ i18n.peculiarities | markdownFormat | safe }}</p>
+
+      {% if loop.first %}
+        {% image project.image, i18n.alt or "", null, "eager" %}
+      {% else %}
+        {% image project.image, i18n.alt or "", null, "lazy" %}
+      {% endif %}
+
+      <ul class="tech-list">
+        {% for tech in project.technologies %}
+          <li>
+            <button data-popover>
+              {{ tech }}
+              <span class="popover">{{ technologies[page.lang][tech] }}</span>
+            </button>
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if project.collaboration %}
+        {% set c = collaborators[project.collaboration] %}
+        <div class="collaboration">
+          <h3>{{ c.name }}</h3>
+          <p>{{ c.description[page.lang] }}</p>
+          <a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.url }}</a>
+        </div>
+      {% endif %}
+
+      <a href="{{ project.clientURL }}" rel="noopener">{{ project.clientURL }}</a>
+    </article>
+  {% endfor %}
+</div>
