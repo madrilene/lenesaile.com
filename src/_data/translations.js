@@ -1,14 +1,13 @@
 export default {
   en: {
     dir: '', // defaults to ltr
+    locale: 'en_EN',
     name: 'English',
-    discover: {
-      description:
-        'Frontend developer and designer living in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.'
-    },
+    siteDescription:
+      'Frontend developer and designer living in Madrid. I enjoy working with semantic HTML, vanilla Javascript and modern CSS.',
     a11y: {
-      skipText: 'Jump to main content',
-      skipTextSection: 'Jump to next section',
+      skipMain: 'Jump to main content',
+      skipSection: 'Jump to next section',
       navMainAria: 'Main',
       navFooterAria: 'Legal information',
       navMainLabel: 'Menu',
@@ -19,7 +18,8 @@ export default {
       audioPaused: 'Audio paused',
       audioProgress: 'Audio progress',
       toc: 'Table of contents',
-      skipToc: 'Skip table of contents'
+      skipToc: 'Skip table of contents',
+      ogDefault_alt: ''
     },
     blog: {
       name: 'Lene Saile',
@@ -51,14 +51,13 @@ export default {
   },
   de: {
     dir: '',
+    locale: 'de_DE',
     name: 'Deutsch',
-    discover: {
-      description:
-        'Frontend-Developer und Designer in Madrid. Ich arbeite semantischem HTML, vanilla Javascript und modernem CSS.'
-    },
+    siteDescription:
+      'Frontend-Developer und Designer in Madrid. Ich arbeite semantischem HTML, vanilla Javascript und modernem CSS.',
     a11y: {
-      skipText: 'Zum Hauptinhalt springen',
-      skipTextSection: 'Zum nächsten Abschnitt springen',
+      skipMain: 'Zum Hauptinhalt springen',
+      skipSection: 'Zum nächsten Abschnitt springen',
       navMainAria: 'Haupt',
       navFooterAria: 'Rechtliche Informationen',
       navMainLabel: 'Menü',
@@ -69,7 +68,8 @@ export default {
       audioPaused: 'Audio pausiert',
       audioProgress: 'Audio-Fortschritt',
       toc: 'Inhaltsverzeichnis',
-      skipToc: 'Inhaltsverzeichnis überspringen'
+      skipToc: 'Inhaltsverzeichnis überspringen',
+      ogDefault_alt: ''
     },
     blog: {
       name: 'Lene Saile - Blog de desarrollo web',
@@ -101,14 +101,13 @@ export default {
   },
   es: {
     dir: '',
+    locale: 'es_ES',
     name: 'Español',
-    discover: {
-      description:
-        'Desarrolladora Frontend y diseñadora en Madrid. Me gusta trabajar con HTML semántico, vanilla Javascript y CSS moderno'
-    },
+    siteDescription:
+      'Desarrolladora Frontend y diseñadora en Madrid. Me gusta trabajar con HTML semántico, vanilla Javascript y CSS moderno',
     a11y: {
-      skipText: 'Saltar al contenido principal',
-      skipTextSection: 'Saltar a la siguiente sección',
+      skipMain: 'Saltar al contenido principal',
+      skipSection: 'Saltar a la siguiente sección',
       navMainAria: 'Principal',
       navFooterAria: 'Información legal',
       navMainLabel: 'Menú',
@@ -119,7 +118,8 @@ export default {
       audioPaused: 'Audio pausado',
       audioProgress: 'Progreso del audio',
       toc: 'índice de contenidos',
-      skipToc: 'Saltar el índice de contenidos'
+      skipToc: 'Saltar el índice de contenidos',
+      ogDefault_alt: ''
     },
     blog: {
       name: 'Lene Saile - Web Development Blog',

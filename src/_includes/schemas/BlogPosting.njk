@@ -10,9 +10,9 @@
     },
     "@id": "{{ url }}",
     "headline": "{{ title or meta.siteName }}",
-    "description": "{{ discover.description or description or meta.siteDescription }}",
-    "image": "{{ meta.url }}{% if discover.image %}/assets/images/{{ discover.image }}{% else %}{{ meta.opengraph_default }}{% endif %}",
-    "inLanguage": "{{ meta.locale }}",
+    "description": "{{ discover.description or description or translations[page.lang].siteDescription }}",
+    "image": "{{ meta.url }}{% if discover.image %}/assets/images/{{ discover.image }}{% else %}{{ meta.ogDefault }}{% endif %}",
+    "inLanguage": "{{ translations[page.lang].locale }}",
     "publisher": {
       "@type": "{{ meta.siteType }}",
       "name": "{{ meta.author.name }}",
