@@ -20,7 +20,7 @@
 /* mascot grid settings per layout */
 
 @media screen(ltsm) {
-  :is(.projects, .blog) .mascot div {
+  :is(.projects, .blog, .services) .mascot div {
     grid-column: 1 / -1;
   }
 }
@@ -41,8 +41,13 @@
   translate: -25% -25%;
 }
 
-:is(.projects, .blog) .mascot svg {
+:is(.projects, .blog, .services) .mascot svg {
   grid-column: 1 / -1;
+}
+
+.services .mascot svg {
+  scale: -1.5 1.5;
+  translate: 0 var(--space-l);
 }
 
 .projects .mascot svg {
@@ -61,9 +66,14 @@
     translate: -10% 5%;
   }
 
-  :is(.projects, .blog) .mascot svg {
+  :is(.projects, .blog, .services) .mascot svg {
     scale: 1;
     grid-column: 2;
+  }
+
+  .services .mascot svg {
+    scale: -1 1;
+    translate: 0 calc(var(--space-2xl) * 1.2);
   }
 
   .projects .mascot svg {
