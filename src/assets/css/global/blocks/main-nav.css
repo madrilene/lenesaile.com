@@ -11,13 +11,14 @@
 
 .mainnav ul {
   /* configuration */
-  --gutter: var(--space-xs);
+  --gutter: var(--space-s-m);
   --cluster-vertical-alignment: normal;
-  --nav-list-background: var(--color-bg);
+  --nav-list-background: transparent;
   --nav-list-shadow: -5px 0 11px 0 hsl(0 0% 0% / 0.2);
   --nav-list-layout: column;
   --nav-list-height: 100dvh;
   --nav-list-padding: var(--space-2xl) var(--space-s);
+  --nav-list-margin-end: var(--space-2xl);
   --nav-list-position: fixed;
   --nav-list-width: min(18rem, 100vw);
   --nav-list-visibility: hidden;
@@ -32,6 +33,7 @@
   list-style: none;
   margin: 0;
   padding: var(--nav-list-padding);
+  margin-inline-end: var(--nav-list-margin-end);
   position: var(--nav-list-position);
   inset-block-start: 0;
   inset-inline-end: 0;
@@ -99,24 +101,24 @@
   /* configuration */
   --nav-item-background: transparent;
   --nav-item-text-color: var(--color-text);
-  --nav-item-padding: var(--space-xs) var(--space-2xs);
+  --nav-item-padding: var(--space-xs) 0;
   --nav-item-decoration-color: transparent;
 
   background: var(--nav-item-background);
-  color: var(--nav-item-text-color);
+  color: var(--header-color-override, var(--nav-item-text-color));
   padding: var(--nav-item-padding);
   display: block;
   border-radius: var(--border-radius-medium);
   text-decoration-line: underline;
   text-decoration-color: var(--nav-item-decoration-color);
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 0.1em;
   text-underline-offset: 0.2em;
 }
 
-.mainnav a:where(:hover, :focus) {
+.mainnav a:where(:hover) {
   --nav-item-background: transparent;
   --nav-item-text-color: var(--color-text);
-  --nav-item-decoration-color: var(--color-text);
+  --nav-item-decoration-color: var(--header-color-override, var(--color-text));
 }
 
 .mainnav [aria-current='page'],
@@ -147,8 +149,14 @@
   .mainnav [aria-current='page'],
   .mainnav [data-state='active'] {
     --nav-item-background: transparent;
-    --nav-item-text-color: var(--color-primary);
-    --nav-item-decoration-color: var(--color-primary);
+    --nav-item-text-color: var(--color-text);
+    --nav-item-decoration-color: var(--header-color-override, var(--color-text));
+  }
+}
+
+@media screen(max) {
+  .mainnav ul {
+    --nav-list-margin-end: 0;
   }
 }
 
@@ -170,8 +178,8 @@ assumes that the button doesn’t exist without JS, making the list the first ch
 .mainnav ul:first-child [aria-current='page'],
 .mainnav ul:first-child [data-state='active'] {
   --nav-item-background: transparent;
-  --nav-item-text-color: var(--color-primary);
-  --nav-item-decoration-color: var(--color-primary);
+  --nav-item-text-color: var(--color-text);
+  --nav-item-decoration-color: var(--header-color-override, var(--color-text));
 }
 
 /* make menu wrap without drawer */

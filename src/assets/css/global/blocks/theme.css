@@ -1,0 +1,20 @@
+/* Hide without JS */
+is-land:not(:defined) .theme-switch {
+  display: none;
+}
+
+[data-theme='light'] .theme-switch .light-off {
+  display: none;
+}
+[data-theme='dark'] .theme-switch .light-on {
+  display: none;
+}
+
+.theme-switch button {
+  padding-inline: var(--space-s);
+  padding-block-end: var(--space-s);
+}
+
+.theme-switch svg {
+  scale: 2.3;
+}

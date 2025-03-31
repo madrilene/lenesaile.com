@@ -1,0 +1,6 @@
+.icon-center {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-items: center;
+}

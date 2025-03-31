@@ -13,7 +13,6 @@ pre {
   font-family: var(--font-mono);
   font-size: var(--size-step-min-1);
   background-color: var(--color-code-bg);
-
   border-radius: var(--border-radius-medium);
 }
 
@@ -30,7 +29,7 @@ pre[class*='language-'] {
 pre {
   grid-column: popout !important;
   overflow-x: auto;
-  padding: var(--space-s) var(--space-l);
+  padding: var(--space-s) calc(var(--space-l) + 0.2em);
 }
 
 /* Style Adjustments for <code> within different contexts */

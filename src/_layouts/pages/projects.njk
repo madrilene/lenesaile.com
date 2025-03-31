@@ -1,6 +1,6 @@
 ---
 layout: base
-headerClass: row-1 ontop
+headerClass: row-1
 mainClass: row-1
 ---
 
@@ -8,12 +8,9 @@ mainClass: row-1
   <div class="section__inner">
     <div class="wrapper flow">
       <div class="mascot" data-direction="rtl">
-        <div
-          class="flow region wrapper stack-bread place-self-end"
-          style="--region-space-top: var(--space-header-distance)"
-        >
+        <div class="flow region place-self-end" style="--region-space-top: var(--space-header-distance)">
           <h1 class="fade-in-bottom">{{ title }}</h1>
-          <p>{{ lead }}</p>
+          <p class="flow-space-xs">{{ lead }}</p>
         </div>
         {% svg "mascot/projects" %}
       </div>

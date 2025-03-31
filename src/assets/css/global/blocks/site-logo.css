@@ -3,4 +3,5 @@
   padding: var(--space-s) 0;
   font-size: var(--size-step-0);
   text-decoration: none;
+  color: var(--header-color-override, var(--color-text));
 }

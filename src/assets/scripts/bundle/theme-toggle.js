@@ -1,6 +1,11 @@
 const storageKey = 'theme-preference';
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const savedPreference = localStorage.getItem(storageKey) || 'auto';
+let switchSound;
+
+document.addEventListener('DOMContentLoaded', () => {
+  switchSound = new Audio('/assets/sounds/light-on.mp3');
+});
 
 const getEffectiveTheme = () => {
   return savedPreference === 'auto' ? (systemPrefersDark ? 'dark' : 'light') : savedPreference;
@@ -19,28 +24,28 @@ window.onload = () => {
     return;
   }
 
-  const switchButtons = switcher.querySelectorAll('button');
+  const switchButton = switcher.querySelector('button');
 
-  switchButtons.forEach(button => {
-    button.setAttribute('aria-pressed', button.value === savedPreference);
-  });
+  switchButton.setAttribute('aria-pressed', switchButton.value === savedPreference);
 
-  switchButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const selectedTheme = button.value;
-      localStorage.setItem(storageKey, selectedTheme);
+  switchButton.addEventListener('click', () => {
+    const selectedTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    localStorage.setItem(storageKey, selectedTheme);
 
-      const newTheme =
-        selectedTheme === 'auto'
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'dark'
-            : 'light'
-          : selectedTheme;
+    const newTheme =
+      selectedTheme === 'auto'
+        ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        : selectedTheme;
 
-      colorScheme.content = newTheme;
-      document.documentElement.setAttribute('data-theme', newTheme);
+    colorScheme.content = newTheme;
+    document.documentElement.setAttribute('data-theme', newTheme);
 
-      switchButtons.forEach(btn => btn.setAttribute('aria-pressed', btn === button));
-    });
+    switchButton.setAttribute('aria-pressed', selectedTheme === 'light');
+
+    if (switchSound) {
+      switchSound.play();
+    }
   });
 };

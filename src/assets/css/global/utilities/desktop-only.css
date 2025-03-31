@@ -1,0 +1,9 @@
+.desktop-only {
+  display: none;
+}
+
+@media screen(md) {
+  .desktop-only {
+    display: block;
+  }
+}

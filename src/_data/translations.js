@@ -47,6 +47,17 @@ export default {
       aria: 'section controls',
       expand: 'expand all',
       collapse: 'collapse all'
+    },
+    cta: {
+      title: "Let's talk!",
+      desktop:
+        'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.',
+      lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
+    },
+    theme: {
+      title: 'Change theme',
+      light: 'light',
+      dark: 'dark'
     }
   },
   de: {
@@ -72,20 +83,20 @@ export default {
       ogDefault_alt: ''
     },
     blog: {
-      name: 'Lene Saile - Blog de desarrollo web',
+      name: 'Lene Saile - Web Development Blog',
       description:
-        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
-      url: 'https://www.lenesaile.com/es/feed.xml',
-      published: 'publicado: ',
-      edited: 'última edición: ',
-      reading: 'Tiempo de lectura: ',
-      unit: 'min.',
+        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
+      url: 'https://www.lenesaile.com/de/feed.xml',
+      published: 'veröffentlicht: ',
+      edited: 'zuletzt bearbeitet: ',
+      reading: 'Lesezeit: ',
+      unit: 'Min.',
       githubEdit:
-        'Intento mantener mis artículos actualizados y, por supuesto, podría equivocarme o podría haber una solución mejor. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en'
+        'Ich versuche meine Artikel aktuell zu halten, und natürlich kann ich mich auch irren, oder es gibt eine bessere Lösung. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:'
     },
     webmentions: {
-      formTitle: '¿Has publicado una respuesta? Dime dónde:',
-      buttonValue: 'Enviar Webmention'
+      formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
+      buttonValue: 'Webmention senden'
     },
     misc: {
       backHome: 'Zurück zur Startseite',
@@ -97,6 +108,17 @@ export default {
       aria: 'Abschnittssteuerung',
       expand: 'Alles erweitern',
       collapse: 'Alles reduzieren'
+    },
+    cta: {
+      title: 'Lass uns reden!',
+      desktop:
+        'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.',
+      lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
+    },
+    theme: {
+      title: 'Thema ändern',
+      light: 'hell',
+      dark: 'dunkel'
     }
   },
   es: {
@@ -122,20 +144,20 @@ export default {
       ogDefault_alt: ''
     },
     blog: {
-      name: 'Lene Saile - Web Development Blog',
+      name: 'Lene Saile - Blog de desarrollo web',
       description:
-        'Ich schreibe vor allem über Dinge, die mit Webentwicklung zu tun haben. Projekte, Ansätze und Beobachtungen, Dinge, die ich gelernt habe oder für wichtig halte. ch habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.',
-      url: 'https://www.lenesaile.com/de/feed.xml',
-      published: 'veröffentlicht: ',
-      edited: 'zuletzt bearbeitet: ',
-      reading: 'Lesezeit: ',
-      unit: 'Min.',
+        'Escribo sobre cosas relacionadas con el desarrollo web. Proyectos, enfoques y observaciones, cosas que he aprendido o que considero importantes. Me especializo en sitios web creativos a medida teniendo en cuenta especialmente la accesibilidad y el rendimiento.',
+      url: 'https://www.lenesaile.com/es/feed.xml',
+      published: 'publicado: ',
+      edited: 'última edición: ',
+      reading: 'Tiempo de lectura: ',
+      unit: 'min.',
       githubEdit:
-        'Ich versuche meine Artikel aktuell zu halten, und natürlich kann ich mich auch irren, oder es gibt eine bessere Lösung. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:'
+        'Intento mantener mis artículos actualizados y, por supuesto, podría equivocarme o podría haber una solución mejor. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en'
     },
     webmentions: {
-      formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
-      buttonValue: 'Webmention senden'
+      formTitle: '¿Has publicado una respuesta? Dime dónde:',
+      buttonValue: 'Enviar Webmention'
     },
     misc: {
       backHome: 'Volver a la página principal',
@@ -147,6 +169,17 @@ export default {
       aria: 'controles de sección',
       expand: 'expandir todo',
       collapse: 'colapsar todo'
+    },
+    cta: {
+      title: '¡Hablemos!',
+      desktop:
+        'Un proyecto tiene éxito en Internet cuando se ve bien, se siente bien y funciona con tecnología limpia y segura. Desde 2008 creo experiencias web atractivas con atención al detalle.',
+      lead: '¡Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesto a charlar.'
+    },
+    theme: {
+      title: 'Cambiar tema',
+      light: 'claro',
+      dark: 'oscuro'
     }
   }
 };

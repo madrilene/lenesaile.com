@@ -1,0 +1,12 @@
+.cta a {
+  background-color: var(--color-bg);
+  border-radius: var(--border-radius-medium);
+  color: var(--color-text);
+  padding: var(--space-2xs) var(--space-xs);
+  text-decoration: none;
+}
+
+.cta a:hover {
+  outline: 2px solid;
+  outline-offset: 0.01ch;
+}

@@ -1,13 +1,29 @@
-<nav class="switch-lang" aria-label="{{ translations[page.lang].a11y.navLangAria }}">
-  <ul class="cluster gutter-2xs text-step-min-1" role="list">
-    {% for lang, details in translations %}
-      {% set translatedUrl = "/" + lang + "/" %}
+<div class="language-select | self-start my-s me-l" data-lang-switcher>
+  <button
+    type="button"
+    aria-expanded="false"
+    aria-controls="language-items"
+    class="language-nav-button icon-center p-xs relative"
+  >
+    {% svg "misc/globe" %}
+    <span class="sr-only">{{ translations[page.lang].theme.title }}</span>
+  </button>
 
-      {% set indicateActiveLang %}
-        {% if lang == page.lang %}
-          aria-current=page
-        {% endif %}
-      {% endset %}
+  <ul
+    id="languagenav"
+    class="language-items"
+    role="list"
+    aria-label="{{ meta[page.lang].ariaLabels.optionsMenu }}"
+  >
+    {% for lang, details in translations %}
+      {%
+        set
+        translatedUrl = "/" + lang + "/"
+      %}
+      {%
+        set selectedState = "true" if lang == page.lang else
+        "false"
+      %}
 
       {% for item in collections.all %}
         {%
@@ -17,18 +33,24 @@
           {% set translatedUrl = item.url %}
         {% endif %}
       {% endfor %}
-
       <li>
         <a
+          id="lang-{{ lang }}"
           href="{{ translatedUrl }}"
-          rel="alternate"
           hreflang="{{ lang }}"
-          aria-label="{{ details.name }}"
-          {{ indicateActiveLang }}
+          rel="alternate"
+          style="--offset: {{ loop.index }}"
+          aria-selected="{{ selectedState }}"
+          role="option"
         >
-          <span lang="{{ lang }}">{{ lang | upper }}</span>
+          <span lang="{{ lang }}"> {{ details.name }} </span>
         </a>
       </li>
+      {% if loop.last %}{% endif %}
     {% endfor %}
   </ul>
-</nav>
+</div>
+
+{% js "defer" %}
+  {% include "scripts/lang-select.js" %}
+{% endjs %}

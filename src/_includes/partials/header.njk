@@ -1,12 +1,15 @@
-<header class="wrapper {{ headerClass }}">
+<header class="wrapper ontop-2 {{ headerClass }}" {% if headerStyle %}style="{{ headerStyle }}"{% endif %}>
   <a href="#main" class="skip-link">{{ translations[page.lang].a11y.skipMain }}</a>
 
-  <div class="repel ontop gutter-s">
+  <div class="repel ontop gutter-s row-1">
     <a href="/{{ page.lang }}/" class="logo | cluster" {{ indicateActive }}>
-      {% svg "misc/star" %}
-
-      <span class="font-display">{{ meta.siteName }}</span>
+      <span class="font-display font-bold uppercase">{{ meta.siteName }}</span>
     </a>
     {% include "partials/main-nav.njk" %}
+  </div>
+
+  <div class="full cluster gutter-s row-1 justify-self-end ontop">
+    {% include "partials/switch-theme.njk" %}
+    {% include "partials/switch-lang.njk" %}
   </div>
 </header>

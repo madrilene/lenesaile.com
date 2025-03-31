@@ -1,7 +1,7 @@
 <footer class="site-footer {{ footerClass }} mt-l-xl p-s-m">
   <div class="wrapper">
     <div class="cluster gutter-xs">
-      <nav class="cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
+      <nav class="cluster text-step-min-1" aria-label="{{ meta.navigation.ariaBottom }}">
         &copy; {% year %}
         <a href="/{{ page.lang }}/" {{ indicateActive }}
           ><span class="font-display">{{ meta.siteName }}</span> <small>{{ pkg.version }}</small>
@@ -39,14 +39,5 @@
         {% endfor %}
       </nav>
     </div>
-
-    {% include 'partials/theme-switch.njk' %}
-    {% include 'partials/switch-lang.njk' %}
-
-    <aside class="creator | cluster gutter-2xs text-step-min-1 mt-xl">
-      Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
-      <a href="https://www.11ty.dev/">{% svg "misc/11ty", "Eleventy" %}</a> by
-      <a href="{{ meta.creator.website }}">{{ meta.creator.name }}</a>
-    </aside>
   </div>
 </footer>

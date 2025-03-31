@@ -1,7 +1,7 @@
 /* mascot grid */
 
 .mascot {
-  grid-column: full;
+  grid-column: content;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: var(--space-l);
@@ -11,9 +11,15 @@
   grid-template-columns: 2fr 1fr;
 }
 
-@media screen(max) {
+@media screen(md) {
+  .mascot[data-direction='rtl'] {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen(wrapper) {
   .mascot {
-    grid-column: popout;
+    grid-column: content;
   }
 }
 
@@ -41,6 +47,11 @@
   translate: -25% -25%;
 }
 
+.mascot.cta svg {
+  scale: 1.7;
+  translate: 30% -10%;
+}
+
 :is(.projects, .blog, .services) .mascot svg {
   grid-column: 1 / -1;
 }
@@ -62,6 +73,11 @@
 
 @media screen(sm) {
   .home .mascot.projects svg {
+    scale: 1.1;
+    translate: -10% 5%;
+  }
+
+  .mascot.cta svg {
     scale: 1.1;
     translate: -10% 5%;
   }

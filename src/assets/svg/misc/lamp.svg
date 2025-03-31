@@ -1,0 +1,9 @@
+<svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path id="ray-left" class="light-on" d="M7.41797 19L5.99995 20.4104" stroke="var(--color-text)" />
+<path id="ray-center" class="light-on" d="M12.0187 23L12.0001 21.0001" stroke="var(--color-text)" />
+<path id="ray-right" class="light-on" d="M18.4142 20.4143L17 19.0001" stroke="var(--color-text)" />
+<path id="shade" d="M6 6H18L22 14H2L6 6Z" stroke="var(--color-text)" />
+<path id="cable" d="M12 1V6" stroke="var(--color-text)" />
+<path id="bulb-outer" d="M9.17 14C9.01087 14.4524 8.96249 14.9363 9.02894 15.4112C9.09538 15.8861 9.2747 16.3382 9.55188 16.7295C9.82905 17.1208 10.196 17.44 10.6219 17.6603C11.0479 17.8806 11.5205 17.9955 12 17.9955C12.4795 17.9955 12.9521 17.8806 13.3781 17.6603C13.804 17.44 14.171 17.1208 14.4481 16.7295C14.7253 16.3382 14.9046 15.8861 14.9711 15.4112C15.0375 14.9363 14.9891 14.4524 14.83 14" stroke="var(--color-text)" />
+<ellipse id="bulb-filled" class="light-on" cx="12" cy="16.5" rx="3" ry="2.5" fill="var(--color-text)"/>
+</svg>

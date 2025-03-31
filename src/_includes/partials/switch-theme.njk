@@ -1,0 +1,17 @@
+<div
+  data-scheme-switcher
+  role="region"
+  class="theme-switch | self-start"
+  aria-labelledby="theme-switcher-label"
+  data-theme-switcher
+>
+  <h2 id="theme-switcher-label" class="visually-hidden">{{ translations[page.lang].theme.title }}</h2>
+
+  <button class="" aria-pressed="false">
+    <div class="visually-hidden">
+      <span class="light-on">{{ translations[page.lang].theme.light }}</span>
+      <span class="light-off">{{ translations[page.lang].theme.dark }}</span>
+    </div>
+    {% svg "misc/lamp-alt" %}
+  </button>
+</div>

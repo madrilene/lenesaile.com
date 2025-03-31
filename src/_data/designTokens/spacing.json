@@ -89,8 +89,8 @@
 
     {
       "name": "header distance",
-      "min": 120,
-      "max": 125
+      "min": 160,
+      "max": 165
     }
   ]
 }

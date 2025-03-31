@@ -1,5 +1,8 @@
 /* set on parent div to get the right z-index context */
 .ontop {
   z-index: 1;
-  position: relative;
+}
+
+.ontop-2 {
+  z-index: 2;
 }
