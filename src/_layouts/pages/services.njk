@@ -1,5 +1,6 @@
 ---
 layout: base
+theme: royal-blue
 headerClass: row-1
 mainClass: row-1
 headerStyle: '--header-color-override: var(--color-gray-100);'
@@ -24,15 +25,13 @@ headerStyle: '--header-color-override: var(--color-gray-100);'
 </header>
 
 <article class="region">
-  <div class="wrapper">
-    <dl class="grid flow mt-l-xl" data-layout="thirds">
-      {% for tool in toolbox[page.lang] %}
-        <div class="flow flow-space-s text-center">
-          {% svg 'tools/' + tool.key, null, 'text-step-4' %}
-          <dt class="text-step-1 font-display font-bold flow-space-l">{{ tool.title }}</dt>
-          <dd>{{ tool.summary | markdownFormat | safe }}</dd>
-        </div>
-      {% endfor %}
-    </dl>
-  </div>
+  <dl class="grid mt-l-xl gutter-xl" data-layout="thirds">
+    {% for tool in toolbox[page.lang] %}
+      <div class="flow flow-space-l wrapper:text-center">
+        {% svg 'tools/' + tool.key, null, 'text-step-4' %}
+        <dt class="text-step-1 font-display font-bold">{{ tool.title }}</dt>
+        <dd class="flow-space-s">{{ tool.summary | markdownFormat | safe }}</dd>
+      </div>
+    {% endfor %}
+  </dl>
 </article>

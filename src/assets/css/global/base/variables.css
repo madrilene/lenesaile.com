@@ -21,8 +21,6 @@
   --color-light: var(--color-gray-100);
   --color-dark: var(--color-gray-800);
 
-  /* color-scheme: light dark; --- handled by meta tag*/
-
   --color-primary: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
   --color-secondary: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
   --color-tertiary: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
@@ -38,16 +36,20 @@
 
 [data-color='cinnabar'] {
   --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
+  --color-active: light-dark(var(--color-cinnabar-600), var(--color-cinnabar-600));
 }
 
 [data-color='royal-blue'] {
   --color-accent: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
+  --color-active: light-dark(var(--color-royal-blue-600), var(--color-royal-blue-600));
 }
 
 [data-color='mandy'] {
   --color-accent: light-dark(var(--color-mandy), var(--color-mandy-subdued));
+  --color-active: light-dark(var(--color-mandy-600), var(--color-mandy-600));
 }
 
 [data-color='bright-sun'] {
   --color-accent: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
+  --color-active: light-dark(var(--color-gray-700), var(--color-gray-700));
 }

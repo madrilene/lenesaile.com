@@ -1,4 +1,4 @@
-<div class="language-select | self-start my-s me-l" data-lang-switcher>
+<div class="language-select | self-start my-s me-l relative" data-lang-switcher>
   <button
     type="button"
     aria-expanded="false"
@@ -41,6 +41,7 @@
           rel="alternate"
           style="--offset: {{ loop.index }}"
           aria-selected="{{ selectedState }}"
+          class="button"
           role="option"
         >
           <span lang="{{ lang }}"> {{ details.name }} </span>

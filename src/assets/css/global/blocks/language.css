@@ -4,69 +4,60 @@ is-land:not(:defined) .language-select {
 }
 
 .language-items {
-  margin-block-start: 0;
-  inset-inline-end: 30px;
   position: absolute;
-  inset-block-start: 110px;
+  margin-block-start: 0;
+  inset-inline-end: var(--space-xs);
+  inset-block-start: var(--space-2xl);
   visibility: hidden;
-  inline-size: 150px;
-  z-index: 90;
+  inline-size: calc(var(--space-2xl) * 2);
 }
 
-.language-items a {
-  align-items: center;
-  background: 0 0;
-  border-radius: var(--border-radius-small);
-  color: var(--color-text);
-  font-size: var(--size-step-0);
-  block-size: 0;
-  justify-content: center;
-  margin-block-start: -5px;
-  opacity: 0;
-  padding: 0;
-  text-decoration: none;
-  inset-block-end: -75px;
-  transform: translate3d(0, 0, 0) rotate(0) scale(0);
-  transform-origin: right center;
-}
-
-.active .language-items {
+[aria-expanded='true'] + .language-items {
   visibility: visible;
 }
 
-.active a {
+[aria-expanded='true'] + .language-items a {
+  color: var(--color-text);
+  justify-content: center;
+  margin-block-start: -3px;
+  transform-origin: right center;
   background-color: var(--color-bg);
-  border: 3px solid var(--color-text);
+  border: 2px solid var(--color-text);
   display: grid;
-  block-size: 45px;
-  opacity: 1;
-  inset-block-start: 0;
-  transform: translateX(calc(var(--offset) * 4px)) rotate(calc(-0.01turn * var(--offset) + 0.02turn)) scale(1);
+  block-size: var(--space-xl);
+  translate: calc(var(--offset) * 5px) 0;
+  rotate: calc(-0.01turn * var(--offset) + 0.02turn);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .active a {
+  [aria-expanded='true'] + .language-items a {
     transition-delay: calc(var(--offset) * 50ms + 100ms);
   }
 }
 
-.active a:hover {
-  background-color: var(--color-bg-card);
+[aria-expanded='true'] + .language-items a:hover {
+  background: var(--color-bg-accent);
+  color: var(--color-text);
+  transition-delay: 0ms;
+}
+
+[aria-expanded='true'] + .language-items [aria-selected='true'] {
+  background: var(--color-active);
   color: var(--color-light);
 }
 
-.active [aria-selected='true'] {
-  border: 3px solid var(--color-text);
-  background-color: var(--color-accent);
+[aria-expanded='true'] + .language-items [aria-selected='true']:hover {
+  background: var(--color-active);
+  background: color-mix(in oklab, var(--color-active) 95%, var(--color-dark));
   color: var(--color-light);
 }
 
 @media screen(md) {
   .language-items {
-    inline-size: 220px;
+    inline-size: calc(var(--space-2xl) * 2);
   }
 
-  .active a {
-    block-size: 65px;
+  [aria-expanded='true'] + .language-items a {
+    block-size: var(--space-xl);
   }
 }

@@ -10,14 +10,14 @@
   grid-row: 1;
   background-color: var(--color-accent);
   color: var(--color-light);
-  padding-inline: var(--gutter);
+  padding-inline: var(--gap);
   padding-block-start: var(--space-header-distance);
 }
 
 .hero .intro {
   grid-column: 1 / -1;
   grid-row: 3;
-  padding-inline: var(--gutter);
+  padding-inline: var(--gap);
 }
 
 .hero picture {
@@ -55,6 +55,9 @@
 @media screen(wrapper) {
   .hero {
     grid-column: popout;
+  }
+  .hero .welcome {
+    padding-inline: var(--gutter);
   }
 }
 
