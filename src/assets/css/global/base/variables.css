@@ -51,5 +51,5 @@
 
 [data-color='bright-sun'] {
   --color-accent: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
-  --color-active: light-dark(var(--color-gray-700), var(--color-gray-700));
+  --color-active: light-dark(var(--color-gray-700), var(--color-bright-sun-500));
 }
