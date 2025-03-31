@@ -1,91 +1,26 @@
-# Eleventy Excellent
+# lenesaile.com
 
-Easy to use Eleventy starter, based on the workflow suggested by Andy Bell's [buildexcellentwebsit.es](https://buildexcellentwebsit.es/).
-
-![GitHub Repo stars](https://img.shields.io/github/stars/madrilene/eleventy-excellent?style=flat-square&logo=github&logoColor=white&label=GitHub%20stars)
 [![Follow @lene@front-end.social](https://img.shields.io/mastodon/follow/109292536543732634?domain=https%3A%2F%2Ffront-end.social&style=flat-square&logo=Mastodon&logoColor=white&labelColor=%235B4BE1)](https://front-end.social/@lene)
 
-If you end up using this starter, feel free to send me a link, I'd love to see it!
+This is my freelancing website, built with [Eleventy](https://www.11ty.dev/), built upon the [Eleventy Excellent starter](https://eleventy-excellent.netlify.app/).
+It supports three languages and uses my latest workflow.
 
-- [Eleventy Excellent](#eleventy-excellent)
-	- [Preview](#preview)
-	- [Features](#features)
-	- [First steps](#first-steps)
-	- [Development](#development)
-		- [Install dependencies](#install-dependencies)
-		- [Working locally](#working-locally)
-		- [Creating a production build](#creating-a-production-build)
-	- [Built with Eleventy Excellent](#built-with-eleventy-excellent)
-	- [Credits and Thank yous](#credits-and-thank-yous)
+## TOC
 
-## Preview
+- [lenesaile.com](#lenesailecom)
+  - [TOC](#toc)
+  - [License](#license)
+  - [Credits and Thank yous](#credits-and-thank-yous)
 
-https://eleventy-excellent.netlify.app/
+## License
 
-## Features
-
-**This starter includes:**
-
-- **Cube Boilerplate**: Created by Andy Bell, available under the MIT License. [View Repository](https://github.com/Set-Creative-Studio/cube-boilerplate)
-- Accessible site navigation, editable in `src/_data/navigation.js`
-- Image optimization with Eleventy-img _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-an-image/))_
-- Youtube embed with lite-youtube _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-a-video/))_
-- Easy resource fetching with eleventy-fetch _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-fetched-content/))_
-- Syntax highlighting via eleventy-plugin-syntaxhighlight _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-some-code/))_
-- Advanced markdown handling _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-all-the-markdown/))_
-- 301 redirects for Netlify _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-301-redirects/))_
-- Automatically generated Open Graph images for blog posts _([see blog post](https://eleventy-excellent.netlify.app/blog/open-graph-images/))_
-- Tailwind CSS - but not how you might expect _([see blog post](https://eleventy-excellent.netlify.app/blog/what-is-tailwind-css-doing-here/))_
-- XML-sitemap
-- dayjs handling dates & times
-- Bundling via esbuild
-- RSS feed (now you can add more than one)
-- Links to platforms and social media profiles
-- Mastodon domain verification snippet
-- carbon.txt - to show that their digital infrastructure runs on green electricity
-- Accessible dark and light mode based on user preference and custom toggle
-- Tags in blog posts
-- Accessible blog pagination
-- A styleguide™
-
-## First steps
-
-[Read the Get started docs!](https://eleventy-excellent.netlify.app/get-started/)
-
-## Development
-
-### Install dependencies
-
-```
-npm install
-```
-
-### Working locally
-
-Starts watch tasks to compile when changes detected
-
-```
-npm start
-```
-
-### Creating a production build
-
-Minify JS, CSS and HTML.
-
-```
-npm run build
-```
-
-## Built with Eleventy Excellent
-
-[Sites that are based on / built with Eleventy Excellent. ](https://eleventy-excellent.netlify.app/built-with/)
-Add your site by submitting a pull request! :)
+This is my personal website. I use a lot of code fragments that smarter people than me have come up with, so it's only right to release my code open source as well. Please feel free to use parts of the code of this website in your own projects, but please don't copy the page completely, as it's not meant to be a template.
 
 ## Credits and Thank yous
 
 **Andy Bell**
 
-> Be the browser's mentor, not its micromanager. Give the browser some solid rules and hints, then let it make the right decisions for the people that visit it, based on their device, connection quality and capabilities.
+I like working with Andy's CSS methodology CUBE, going hand in hand with the Every Layout solutions he co-authors. He has recently published an approach that incorporates Tailwind CSS into his methodology, as a creator for custom utility classes. This workflow is built into my website, and really all websites I am building since discovering it. I learned how to use Eleventy in 2020 with his (now free) course.
 
 - https://buildexcellentwebsit.es/
 - https://cube.fyi/
@@ -93,17 +28,40 @@ Add your site by submitting a pull request! :)
 
 **Heydon Pickering**
 
-Heydon creates some invaluable resources.
+Heydon is great.
 
 - https://every-layout.dev/
 - https://inclusive-components.design/
 
 **Zach Leatherman**
 
-Zach is developing Eleventy and is constantly making it even better!
+Zach is developing Eleventy, a genius!
 
 - https://www.11ty.dev/
 - https://www.zachleat.com/
+
+**Ryan Mulligan**
+
+Ryan came up with the scroll trigger for highlighting text, which I am shamelessly using in this website.
+
+- https://codepen.io/hexagoncircle/pen/gOPMwvd
+
+**Oliver Schöndorfer**
+
+Oliver is a type expert. He writes the Pimp my Type Newsletter where I dscovered the font I'm using for this website.
+
+- https://pimpmytype.com/outfit/
+- https://pimpmytype.com/category/fontfriday/
+
+**Pablo Stanley**
+
+Pablo is the creator of the avatars of this website. His hand-drawn illustration library Open Peeps is just great.
+
+- https://www.openpeeps.com/
+
+**Ekrem Elmas**
+
+I'm using Ekrems hand drawn icon set.
 
 **Stephanie Eckles**
 
@@ -112,42 +70,39 @@ Stephanie provides a lot of resources for Eleventy and modern CSS.
 - https://smolcss.dev/
 - https://moderncss.dev/
 
-**Ryan Mulligan**
+**Max Böck and Sia Karamalegos**
 
-I'm using Ryan's example of a breakout wrapper on this site.
+I followed the tutorials from Max and Sia to implement Webmentions on this site.
 
-Also have a look at those codepens!
+- https://sia.codes/posts/webmentions-eleventy-in-depth/max
+- https://mxb.dev/blog/using-webmentions-on-static-sites/
 
-- https://ryanmulligan.dev/
-- https://codepen.io/hexagoncircle/
+**Bernard Nijenhuis**
 
-**Sara Soueidan**
+The open graph images are generated automatically: First a SVG is created for every post, which is then converted to JPEG. I learned how to do that with Bernard's article.
 
-I took a close look at Sara's recommendations for accessible theme switch and pagination in the Practical Accessibility course
-
-- https://practical-accessibility.today/
-- https://www.sarasoueidan.com/
-
-**Steven Woodson**
-
-The style guide was inspired by a [great talk on the Eleventy Meetup](https://www.youtube.com/watch?v=3mhA2bH6q8s). Steven also wrote a [blog post](https://stevenwoodson.com/blog/eleventy-style-guide-generator-step-by-step-guide-adding-to-an-existing-site/) about that.
+- https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
 
 **Aleksandr Hovhannisyan**
 
-Aleksandr seems to value a well-structured project just as much as I do. It was the repo from aleksandrhovhannisyan.com that inspired me to write the article [Organizing the Eleventy config file](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/). The 301 redirect solution I'm using is from Aleksandr's article.
+I love structure and clarity. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his personal site. The 301 redirect solution I'm using is from his blog.
 
 - https://github.com/AleksandrHovhannisyan
 - https://www.aleksandrhovhannisyan.com/blog/eleventy-netlify-redirects/
 
-**Manuel Matuzović**
+**Adam Argyle**
 
-Manuel is an accessibility expert. The menu I was using as default up to v2, is very much inspired by an article Manuel wrote on web.dev.
+The theme switch is from one of his GUI Challenges.
 
-- https://web.dev/website-navigation/
-- https://www.matuzo.at/
+- https://github.com/argyleink/gui-challenges
 
-**Bernard Nijenhuis**
+**Tailwind**
 
-Bernard wrote the article on which the Open Graph Images implementation is based.
+- https://tailwindcss.com/
 
-- https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
+**Harry Roberts**
+
+Harry Roberts taught me a lot about how to make websites faster.
+The strict order of my `head` is something he figured out.
+
+- https://csswizardry.com/

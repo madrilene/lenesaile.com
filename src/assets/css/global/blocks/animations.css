@@ -1,0 +1,153 @@
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-bottom {
+    opacity: 0;
+    transform: translateY(1rem);
+    animation-name: fadeInBottom;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.05, 0.22, 1.2);
+  }
+
+  @keyframes fadeInBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fade-in {
+    animation-duration: 0.6s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* mascot animations */
+
+  .home .eyes {
+    animation: eyes-x 3.5s ease-in-out infinite;
+    transform-origin: bottom;
+  }
+
+  .blog .eyebrows {
+    animation: eyebrows 1s ease-in-out infinite alternate;
+    transform-origin: top;
+  }
+
+  .services .eyes {
+    animation: augen-y 2s ease-in infinite alternate;
+    transform-origin: bottom;
+  }
+
+  .services .eyebrows {
+    animation: eyebrows 4s ease-out infinite alternate;
+    transform-origin: top;
+  }
+
+  .cta .nodding {
+    transform: translateY(10%) rotateZ(-10deg) rotateX(-90deg);
+    animation: nodding 1s infinite linear alternate-reverse;
+    transform-origin: bottom;
+  }
+
+  .projects .body {
+    animation: bounce 2s ease-in infinite alternate;
+    transform-origin: bottom;
+  }
+
+  .projects .ball {
+    transform-origin: bottom;
+    animation: ball 2s ease-in infinite alternate;
+  }
+
+  @keyframes ball {
+    0% {
+      transform: skew(0deg) rotate(0deg);
+    }
+    30% {
+      transform: skew(1deg) rotate(1deg);
+    }
+    70% {
+      transform: skew(0deg) rotate(0deg);
+    }
+    100% {
+      transform: skew(1deg) rotate(1deg);
+    }
+  }
+
+  @keyframes eyes-x {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    10% {
+      transform: rotateZ(0.5deg);
+    }
+    80% {
+      transform: rotateZ(0.5deg);
+    }
+    90% {
+      transform: rotateZ(0deg);
+    }
+  }
+
+  @keyframes augen-y {
+    0% {
+      transform: rotateX(3deg);
+    }
+    40% {
+      transform: rotateX(7deg);
+    }
+    80% {
+      transform: rotateX(5deg);
+    }
+    100% {
+      transform: rotateX(4deg);
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: rotateX(3deg);
+    }
+    30% {
+      transform: rotateX(7deg);
+    }
+    70% {
+      transform: rotateX(3deg);
+    }
+    100% {
+      transform: rotateX(6deg);
+    }
+  }
+
+  @keyframes eyebrows {
+    from {
+      transform: rotateX(-3deg);
+    }
+    to {
+      transform: rotateX(13deg);
+    }
+  }
+
+  @keyframes nodding {
+    from {
+      transform: rotateZ(-1deg);
+    }
+    to {
+      transform: rotateZ(0deg);
+    }
+  }
+}

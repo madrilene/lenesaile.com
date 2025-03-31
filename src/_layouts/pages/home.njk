@@ -17,7 +17,7 @@ mainClass: row-1
     </div>
     {% image hero.image, hero.alt, null, "eager", "fade-in", "object-fit-cover", [650, 1000, 1400], "(max-width:
       42em) 100vw, (max-width: 85em) 60vw, 1400px" %}
-    {% svg "misc/arrow", null, "arrow whimsical-hi wobble" %}
+    {% svg "misc/arrow", null, "arrow whimsical-hi" %}
     <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
 </header>
 
@@ -74,5 +74,4 @@ mainClass: row-1
 {%- css "local" -%}
   {%- include 'css/home.css' -%}
   {%- include 'css/column.css' -%}
-  {%- include 'css/animations.css' -%}
 {%- endcss -%}

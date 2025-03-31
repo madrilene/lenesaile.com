@@ -6,3 +6,7 @@ layout: base
   <h1 class="gradient-text">{{ title }}</h1>
   {{ content | safe }}
 </div>
+
+{%- css "local" -%}
+  {%- include 'css/page.css' -%}
+{%- endcss -%}

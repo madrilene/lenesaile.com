@@ -33,7 +33,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('page', 'base/page.njk');
   eleventyConfig.addLayoutAlias('post', 'base/post.njk');
   eleventyConfig.addLayoutAlias('tags', 'base/tags.njk');
-  eleventyConfig.addLayoutAlias('404', 'pages/404.njk');
+  eleventyConfig.addLayoutAlias('error', 'pages/error.njk');
 
   eleventyConfig.addLayoutAlias('home', 'pages/home.njk');
   eleventyConfig.addLayoutAlias('about', 'pages/about.njk');

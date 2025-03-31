@@ -30,9 +30,7 @@ Alle relevanten Antwort-HTTP-Header werden zu deinem Schutz gesetzt und die "Con
 
 ## Datenkontrolleur
 
-{{ meta.address.firma }}
-{{ meta.address.city }}, {{ meta.address.country }}
-E.Mail: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
+{{ personal.address }}
 
 ## Änderungen an der Richtlinie
 
@@ -40,6 +38,6 @@ Wenn ich den Inhalt dieser Richtlinie ändere, treten diese Änderungen zu dem Z
 
 ## Reklamationen
 
-Hast du Fragen oder Beschwerden? Wende dich gerne per E-Mail an mich: [hola@lenesaile.com](mailto:hello@hola@lenesaile.com).
+Hast du Fragen oder Beschwerden? Wende dich gerne per E-Mail an mich: {{ personal.email }}.
 
 Zuletzt aktualisiert am: 25. Oktober 2022

@@ -1,8 +1,11 @@
 ## Licenses
 
-This project is licensed under the ISC License. Additionally, it includes components that are licensed under the MIT and SIL License.
+This is my personal website. I use a lot of code fragments that very smart and nice people came up with, so it's only right to release my code open source as well.
+Please feel free to use parts of the code of this website in your own projects, but please don't copy the page completely, as it's not meant to be a template.
 
 ### ISC License
+
+**Eleventy Excellent** is licensed under the ISC license:
 
 Copyright (c) 2024 Lene Saile
 
@@ -36,9 +39,9 @@ SOFTWARE.
 
 ### SIL OPEN FONT LICENSE
 
-The Fonts **Red Hat Display** and **Atkinson Hyperlegible** are licensed under the SIL License, Version 1.1.
+The Fonts **Red Hat Display** and **Outfit** are licensed under the SIL License, Version 1.1.
 
-Copyright (c) Red Hat, Inc. and (c) Braille Institute.
+Copyright (c) The Outfit Project Authors and (c) Braille Institute.
 
 This license allows
 

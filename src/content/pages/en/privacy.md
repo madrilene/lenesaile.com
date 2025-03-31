@@ -27,10 +27,9 @@ This website transmits itself using HTTPS, encrypting all data between the brows
 
 ## Data controller
 
-{{ meta.address.firma }}
-{{ meta.address.city }}, {{ meta.address.country }}
+{{ personal.address }}
 
-If you have any questions or doubts, please contact me: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>
+If you have any questions or doubts, please contact me: {{ personal.email }}.
 
 ## Changes to the policy
 
@@ -38,6 +37,6 @@ If I change the content of this policy, those changes will be effective at the t
 
 ## Complaints
 
-If you have any reason to complain about the way I handle your privacy, please contact me by email: <a href="mailto:{{ meta.address.email }}">{{ meta.address.email }}</a>.
+If you have any reason to complain about the way I handle your privacy, please contact me by email: {{ personal.email }}.
 
 Last updated: October 25, 2022

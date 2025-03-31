@@ -31,6 +31,6 @@ Si cambio el contenido de esta política, esos cambios serán efectivos en el mo
 
 ## Quejas
 
-Si tienes alguna razón para quejarte de la forma en que manejo su privacidad, por favor contácteme (Lene Saile) por correo electrónico a [hola@lenesaile.com](mailto:hello@hola@lenesaile.com).
+Si tienes alguna razón para quejarte de la forma en que manejo su privacidad, por favor contácteme (Lene Saile) por correo electrónico a {{ personal.email }}.
 
 Última actualización: 25 de octubre de 2022
