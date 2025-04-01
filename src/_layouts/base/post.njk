@@ -6,7 +6,10 @@ schema: BlogPosting
 
 <div class="region" style="--region-space-top: var(--space-xl-2xl)">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+    <h1 class="gradient-text">
+      {%- if draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %}
+      {{ title }}
+    </h1>
 
     <dl class="cluster text-step-min-1">
       <div>
