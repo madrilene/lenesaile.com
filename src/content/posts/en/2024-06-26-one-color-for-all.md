@@ -8,6 +8,7 @@ key: 'color-all'
 date: 2024-06-26 11:30:00
 lastEdit:
 codepen: false
+draft: true
 ---
 
 In letzter Zeit genieße ich es sehr mit den Möglichkeiten zu spielen, die uns modernes CSS für Farben bietet. Dank der wunderbaren property `accent-color` und der `color-mix()` functional notation können wir nun eine konsistente Farbgebung für unsere Website mit nur einer Farbe erstellen.
