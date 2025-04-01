@@ -31,6 +31,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@11ty/is-land": "^4.0.1",
+    "@zachleat/table-saw": "^1.0.6",
     "lite-youtube-embed": "^0.3.3",
     "tailwindcss": "^3.4.17"
   },

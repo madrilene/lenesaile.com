@@ -15,7 +15,7 @@ body {
   line-height: var(--leading-standard);
   color: var(--color-text);
   background-color: var(--color-bg);
-  accent-color: var(--color-primary);
+  accent-color: var(--color-cinnabar);
   letter-spacing: var(--tracking);
 }
 
