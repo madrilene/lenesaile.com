@@ -15,7 +15,7 @@ mainClass: row-1
         {{ hero.intro }}
       </div>
     </div>
-    {% image hero.image, hero.alt, null, "eager", "fade-in", "object-fit-cover", [650, 1000, 1300], "(min-width: 40em) 70vw, 100vw" %}
+    {% image hero.image, hero.alt, null, "eager", "fade-in", "object-fit-cover" %}
     {% svg "misc/arrow", null, "arrow whimsical-hi" %}
     <div class="thisisme whimsical-hi">{{ hero.hi }}</div>
 </header>

@@ -20,7 +20,7 @@ body {
 }
 
 main {
-  flex: auto;
+  z-index: 0;
 }
 
 h1,

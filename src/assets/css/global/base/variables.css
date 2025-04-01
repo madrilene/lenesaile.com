@@ -36,20 +36,32 @@
 
 [data-color='cinnabar'] {
   --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
-  --color-active: light-dark(var(--color-cinnabar-600), var(--color-cinnabar-600));
+  --color-active: light-dark(
+    color-mix(in oklab, var(--color-cinnabar) 90%, var(--color-bg)),
+    color-mix(in oklab, var(--color-cinnabar-subdued) 90%, var(--color-text))
+  );
 }
 
 [data-color='royal-blue'] {
   --color-accent: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
-  --color-active: light-dark(var(--color-royal-blue-600), var(--color-royal-blue-600));
+  --color-active: light-dark(
+    color-mix(in oklab, var(--color-royal-blue) 90%, var(--color-bg)),
+    color-mix(in oklab, var(--color-royal-blue-subdued) 90%, var(--color-text))
+  );
 }
 
 [data-color='mandy'] {
   --color-accent: light-dark(var(--color-mandy), var(--color-mandy-subdued));
-  --color-active: light-dark(var(--color-mandy-600), var(--color-mandy-600));
+  --color-active: light-dark(
+    color-mix(in oklab, var(--color-mandy) 90%, var(--color-bg)),
+    color-mix(in oklab, var(--color-mandy-subdued) 90%, var(--color-text))
+  );
 }
 
 [data-color='bright-sun'] {
   --color-accent: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
-  --color-active: light-dark(var(--color-gray-700), var(--color-bright-sun-500));
+  --color-active: light-dark(
+    color-mix(in oklab, var(--color-bright-sun) 90%, var(--color-bg)),
+    color-mix(in oklab, var(--color-bright-sun-subdued) 90%, var(--color-text))
+  );
 }

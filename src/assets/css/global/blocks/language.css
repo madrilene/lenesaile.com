@@ -43,13 +43,13 @@ is-land:not(:defined) .language-select {
 
 [aria-expanded='true'] + .language-items [aria-selected='true'] {
   background: var(--color-active);
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 [aria-expanded='true'] + .language-items [aria-selected='true']:hover {
   background: var(--color-active);
   background: color-mix(in oklab, var(--color-active) 95%, var(--color-dark));
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 @media screen(md) {
