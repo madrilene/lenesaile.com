@@ -39,3 +39,7 @@
   --pagination-border: var(--color-accent);
   --pagination-text: var(--color-text);
 }
+
+[data-color='bright-sun'] :is(.pagination li:has(a:hover), .pagination li:has(a[aria-current='page'])) {
+  --pagination-text: var(--color-dark);
+}
