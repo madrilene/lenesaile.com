@@ -2,14 +2,16 @@
 
 <section class="region">
   <nav role="navigation" aria-labelledby="pagination_label">
-    <span id="pagination_label" hidden>{{ meta[metaKey].paginationLabel }}</span>
-    <span id="prefix" hidden>{{ meta[metaKey].paginationPage }}</span>
+    <span id="pagination_label" hidden>{{ translations[page.lang][metaKey].pagination.label }}</span>
+    <span id="prefix" hidden>{{ translations[page.lang][metaKey].pagination.page }}</span>
     <ol class="pagination | cluster" role="list">
       <li>
         {% if pagination.href.previous %}
-          <a href="{{ pagination.href.previous }}"> {{ meta[metaKey].paginationPrevious }} </a>
+          <a href="{{ pagination.href.previous }}">
+            {{ translations[page.lang][metaKey].pagination.previous }}
+          </a>
         {% else %}
-          {{ meta[metaKey].paginationPrevious }}
+          {{ translations[page.lang][metaKey].pagination.previous }}
         {% endif %}
       </li>
       {% if meta[metaKey].paginationNumbers %}
@@ -28,9 +30,9 @@
       {% endif %}
       <li>
         {% if pagination.href.next %}
-          <a href="{{ pagination.href.next }}">{{ meta[metaKey].paginationNext }}</a>
+          <a href="{{ pagination.href.next }}">{{ translations[page.lang][metaKey].pagination.next }}</a>
         {% else %}
-          {{ meta[metaKey].paginationNext }}
+          {{ translations[page.lang][metaKey].pagination.next }}
         {% endif %}
       </li>
     </ol>

@@ -4,41 +4,34 @@
 
 {% if item.data.category == "note" %}
 
-<custom-card clickable note>
-  <{{ headingLevel }} slot="headline" class="text-step-1">
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-  </{{ headingLevel }}>
-  <span slot="date" class="flow-space-s"> {% include "partials/date.njk" %} </span>
-  {% if showTags and item.data.tags.length > 1 %}
-    <div slot="tag" webc:nokeep>
-      {% for tag in item.data.tags %}
-        {% if tag != "posts" %}
-          <span class="button" data-small-button>{{ tag }}</span>
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endif %}
-  <div slot="content" webc:nokeep>{{ item.content | safe }}</div>
-</custom-card>
+  <custom-card note>
+    <header slot="headline" class="cluster">
+      <span slot="note" class="button font-display font-bold text-step-min-2" data-small-button data-button-variant="theme">
+        {{ translations[page.lang].blog.note }}</span
+      >
+      <span class="flow-space-s text-step-min-1"> {% include "partials/date.njk" %} </span>
+    </header>
+    <div slot="content" class="flow text-step-min-1">{{ item.content | safe }}</div>
+  </custom-card>
 
 {% else %}
 
-<custom-card clickable>
-  <{{ headingLevel }} slot="headline" class="text-step-1">
-    <a href="{{ item.url | url }}">{{ item.data.title }}</a>
-  </{{ headingLevel }}>
-  <span slot="date" class="flow-space-s"> {% include "partials/date.njk" %} </span>
-  {% if showTags and item.data.tags.length > 1 %}
-    <div slot="tag" webc:nokeep>
-      {% for tag in item.data.tags %}
-        {% if tag != "posts" %}
-          <span class="button" data-small-button>{{ tag }}</span>
-        {% endif %}
-      {% endfor %}
+  <custom-card clickable>
+    <{{ headingLevel }} slot="headline" class="text-step-1">
+      <a href="{{ item.url | url }}">{{ item.data.title }}</a>
+    </{{ headingLevel }}>
+    <div slot="meta" class="meta | cluster flow-space-xs">
+      <span class="flow-space-s"> {% include "partials/date.njk" %} </span>
+      {% if showTags and item.data.tags.length > 1 %}
+        {% for tag in item.data.tags %}
+          {% if tag != "posts" %}
+            <span class="button" data-small-button>{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
     </div>
-  {% endif %}
-  <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
-</custom-card>
+    <div slot="content" webc:nokeep>{{ item.data.description | markdownFormat | safe }}</div>
+  </custom-card>
 
 {% endif %}
 

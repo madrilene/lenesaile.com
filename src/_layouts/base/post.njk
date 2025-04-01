@@ -8,24 +8,28 @@ schema: BlogPosting
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
+    <dl class="cluster text-step-min-1">
+      <div>
+        {% set definedDate = date %}
+        <dt>{{ translations[page.lang].blog.published | capitalize }}</dt>
+        <dd>{% include "partials/date.njk" %}</dd>
+      </div>
+      {% if lastEdit %}
+        <div>
+          {% set definedDate = lastEdit %}
+          <dt>{{ translations[page.lang].blog.edited | capitalize }}</dt>
+          <dd>{% include "partials/date.njk" %}</dd>
+        </div>
+      {% endif %}
+      <div>
+        <dt>{{ translations[page.lang].blog.reading | capitalize }}</dt>
+        <dd>{{ content | readingTime }} {{ translations[page.lang].blog.unit }}</dd>
+      </div>
+    </dl>
+
     {% if image %}
-      <!-- image -->
       {% image image, alt or "", credit, "eager", "feature" %}
     {% endif %}
-
-    <p class="meta | cluster gutter-xs-s">
-      <!-- date -->
-      {% set definedDate = date %} {% include "partials/date.njk" %}
-      {%
-        if tags.length >
-        1
-      %}
-        <!-- tags -->
-        {% for tag in tags %}{% if tag != "posts" %}
-          <a class="button" href="/tags/{{ tag }}" data-small-button> {{ tag }} </a>
-        {% endif %}{% endfor %}
-      {% endif %}
-    </p>
 
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}

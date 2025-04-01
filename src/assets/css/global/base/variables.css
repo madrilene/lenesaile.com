@@ -13,9 +13,11 @@
 
   --gradient-rainbow: linear-gradient(90deg, #cf4662 10%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
   --gradient-conic: conic-gradient(
-    var(--color-primary) 0 28%,
-    var(--color-secondary) 0 67%,
-    var(--color-tertiary) 0 100%
+    light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 12%,
+    light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued)) 0 33%,
+    light-dark(var(--color-mandy), var(--color-mandy-subdued)) 0 55%,
+    light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued)) 0 70%,
+    light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 100%
   );
 
   --color-light: var(--color-gray-100);
@@ -30,8 +32,7 @@
   --color-text-accent: light-dark(var(--color-gray-700), var(--color-gray-300));
   --color-bg-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
   --color-bg-accent-2: light-dark(var(--color-gray-400), var(--color-gray-600));
-  --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
-  --color-mark: light-dark(var(--color-bright-sun), var(--color-cinnabar));
+  --color-mark: light-dark(var(--color-bright-sun), var(--color-royal-blue-subdued));
 }
 
 [data-color='cinnabar'] {
@@ -64,4 +65,8 @@
     color-mix(in oklab, var(--color-bright-sun) 90%, var(--color-bg)),
     color-mix(in oklab, var(--color-bright-sun-subdued) 90%, var(--color-text))
   );
+}
+
+[data-color='gray'] {
+  --color-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
 }

@@ -31,7 +31,14 @@ export default {
       reading: 'Reading time: ',
       unit: 'min.',
       githubEdit:
-        'I try to keep my articles up to date, and of course I could be wrong, or there could be a better solution.  If you see something that is not true (anymore), or something that should be mentioned, feel free to edit the article on'
+        'I try to keep my articles up to date, and of course I could be wrong, or there could be a better solution.  If you see something that is not true (anymore), or something that should be mentioned, feel free to edit the article on',
+      note: 'Quick note',
+      pagination: {
+        label: 'Blog',
+        page: 'Page',
+        previous: 'Previous',
+        next: 'Next'
+      }
     },
     webmentions: {
       formTitle: 'Have you published a response? Let me know where:',
@@ -92,8 +99,16 @@ export default {
       reading: 'Lesezeit: ',
       unit: 'Min.',
       githubEdit:
-        'Ich versuche meine Artikel aktuell zu halten, und natürlich kann ich mich auch irren, oder es gibt eine bessere Lösung. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:'
+        'Ich versuche meine Artikel aktuell zu halten, und natürlich kann ich mich auch irren, oder es gibt eine bessere Lösung. Wenn du etwas siehst was so nicht (mehr) stimmt, oder etwas das noch erwähnt werden sollte, kannst du den Artikel gerne bearbeiten:',
+      note: 'Kurze Notiz',
+      pagination: {
+        label: 'Blog',
+        page: 'Seite',
+        previous: 'Vorherige',
+        next: 'Nächste'
+      }
     },
+
     webmentions: {
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
       buttonValue: 'Webmention senden'
@@ -153,7 +168,14 @@ export default {
       reading: 'Tiempo de lectura: ',
       unit: 'min.',
       githubEdit:
-        'Intento mantener mis artículos actualizados y, por supuesto, podría equivocarme o podría haber una solución mejor. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en'
+        'Intento mantener mis artículos actualizados y, por supuesto, podría equivocarme o podría haber una solución mejor. Si ves algo que (ya) no es correcto, o algo que debería mencionarse, no dudes en editar el artículo en',
+      note: 'Nota rápida',
+      pagination: {
+        label: 'Blog',
+        page: 'Página',
+        previous: 'Anterior',
+        next: 'Siguiente'
+      }
     },
     webmentions: {
       formTitle: '¿Has publicado una respuesta? Dime dónde:',

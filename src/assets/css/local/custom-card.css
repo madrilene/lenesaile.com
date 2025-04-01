@@ -80,6 +80,13 @@ custom-card[img-square] img {
   aspect-ratio: 1;
 }
 
+/* note */
+
+custom-card[note] {
+  grid-template-rows: [headline] max-content [desc] auto;
+  grid-template-columns: 1fr;
+}
+
 /* clickable */
 
 custom-card[clickable]:hover,

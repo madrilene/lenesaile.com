@@ -8,13 +8,9 @@ customColors:
   - property: '--color-text-accent'
   - property: '--color-bg'
   - property: '--color-bg-accent'
-  - property: '--color-light-fade'
+  - property: '--color-bg-accent-2'
   - property: '--color-accent'
-  - property: '--color-dark'
-  - property: '--color-dark-glare'
   - property: '--color-light'
-  - property: '--color-light-glare'
-  - property: '--color-light-spot'
 customGradients:
   - property: '--gradient-rainbow'
 ---
@@ -31,7 +27,7 @@ customGradients:
     </p>
   </header>
 
-  <section class="section__inner wrapper flow region">
+  <section class="section__inner wrapper flow region" data-color="gray">
     <h2 class="heading-line">Buttons</h2>
 
     <ul class="cluster" role="list">
@@ -42,13 +38,7 @@ customGradients:
         <a href="#" class="button" data-button-variant="accent">Accent button</a>
       </li>
       <li>
-        <a href="#" class="button" data-button-variant="astronaut">astronaut button</a>
-      </li>
-      <li>
-        <a href="#" class="button" data-button-variant="tawny">tawny button</a>
-      </li>
-      <li>
-        <a href="#" class="button" data-button-variant="genoa">Genoa button</a>
+        <a href="#" class="button" data-button-variant="theme">current theme button</a>
       </li>
       <li>
         <a href="#" class="button" data-ghost-button>Ghost button</a>
@@ -60,15 +50,12 @@ customGradients:
         <a href="#" class="button"> {% svg "misc/star" %} Button with icon </a>
       </li>
       <li>
-        <a href="#" class="button" data-button-ghost-pill>Ghost pill</a>
-      </li>
-      <li>
-        <a href="#" class="button" data-button-ghost-pill-revert>Ghost pill on dark</a>
+        <a href="#" class="button" data-small-button>small button</a>
       </li>
     </ul>
   </section>
 
-  <div class="full colors | section">
+  <div class="full colors | section" data-color="gray">
     <section class="section__inner wrapper flow region">
       <h2 class="heading-line">Colors</h2>
 
@@ -121,7 +108,7 @@ customGradients:
     </section>
   </div>
 
-  <section class="fonts | flow region">
+  <section class="fonts | flow region" data-color="gray">
     <h2 class="heading-line">Fonts</h2>
 
     <ul class="fonts flow">
@@ -136,7 +123,7 @@ customGradients:
     </ul>
   </section>
 
-  <div class="full sizes | section">
+  <div class="full sizes | section" data-color="gray">
     <section class="section__inner wrapper flow region">
       <h2 class="heading-line">Sizes</h2>
 

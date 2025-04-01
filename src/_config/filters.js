@@ -1,6 +1,7 @@
 import {categoryFilter} from './filters/category-filter.js';
 import {toISOString, formatDate} from './filters/dates.js';
 import {markdownFormat} from './filters/markdown-format.js';
+import {readingTime} from './filters/reading-time.js';
 import {shuffleArray} from './filters/sort-random.js';
 import {sortAlphabetically} from './filters/sort-alphabetic.js';
 import {splitlines} from './filters/splitlines.js';
@@ -12,6 +13,7 @@ export default {
   toISOString,
   formatDate,
   markdownFormat,
+  readingTime,
   splitlines,
   striptags,
   shuffleArray,
