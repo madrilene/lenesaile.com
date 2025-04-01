@@ -103,19 +103,19 @@ export default [
     technologies: ['eleventy', 'html', 'css', 'js'],
     translations: {
       en: {
-        alt: 'A dark and light split layout illustrating the use of dark and light mode, with the text "Database, done right." and an illustration of a fern',
+        alt: 'A dark and light split layout illustrating the use of dark and light mode, with the text Database, done right. and an illustration of a fern',
         about:
           'Data-Bene specializes in providing expert PostgreSQL services, offering a range of solutions from system design and database architecture to technical support and consulting.',
         peculiarities: 'The website is fully bilingual, supporting both French and English.'
       },
       de: {
-        alt: 'Ein in Hell und Dunkel geteiltes Layout, das die Verwendung des Hell- und Dunkelmodus veranschaulicht, mit dem Text "Database, done right. und einer Abbildung eines Farns',
+        alt: 'Ein in Hell und Dunkel geteiltes Layout, das die Verwendung des Hell- und Dunkelmodus veranschaulicht, mit dem Text Database, done right. und einer Abbildung eines Farns',
         about:
           'Data-Bene hat sich auf die Bereitstellung von PostgreSQL-Dienstleistungen spezialisiert und bietet eine Reihe von Lösungen an, die von Systemdesign und Datenbankarchitektur bis hin zu technischem Support und Beratung reichen.',
         peculiarities: 'Die Seite ist zweisprachig, unterstützt sowohl Französisch als auch Englisch.'
       },
       es: {
-        alt: 'Un diseño dividido en oscuro y claro que ilustra el uso de los modos oscuro y claro, con el texto "Base de datos, bien hecha" y la ilustración de un helecho',
+        alt: 'Un diseño dividido en oscuro y claro que ilustra el uso de los modos oscuro y claro, con el texto Base de datos, bien hecha y la ilustración de un helecho',
         about:
           'Data-Bene se especializa en la prestación de servicios expertos PostgreSQL, ofreciendo una gama de soluciones que van desde el diseño de sistemas y arquitectura de bases de datos hasta soporte técnico y consultoría.',
         peculiarities: 'La página es totalmente bilingüe, compatible con los idiomas francés e inglés.'
@@ -161,19 +161,19 @@ export default [
     technologies: ['eleventy', 'html', 'css', 'js'],
     translations: {
       en: {
-        alt: 'Large bold text saying "We make good websites" with three vertical lines dividing the screen.',
+        alt: 'Large bold text saying We make good websites with three vertical lines dividing the screen.',
         about:
           'Together with my friend, Berlin-based designer Daniela Grau, I develop websites that think about their visitors while keeping in mind the core values that make the web a good place to be. We focus on understanding and solving individual problems, combining creativity with strategy. Our goal is to make the web more beautiful and empathetic for everyone. badwebsites.rip is our space, which we continue to shape and expand.',
         peculiarities: ''
       },
       de: {
-        alt: '"We make good websites" in großen fetten Buchstaben, mit drei senkrechten Linien, die den Bildschirm unterteilen.',
+        alt: 'We make good websites in großen fetten Buchstaben, mit drei senkrechten Linien, die den Bildschirm unterteilen.',
         about:
           'Zusammen mit meiner Freundin, der Berliner Designerin Daniela Grau, entwerfen und entwickeln wir Websites, die an ihre Besucher denken und dabei die Grundwerte im Auge behalten, die das Web zu einem guten Ort machen. Wir konzentrieren uns darauf, individuelle Probleme zu verstehen und zu lösen, Kreativität mit Strategie zu verbinden und effektive, maßgeschneiderte Lösungen zu liefern. Unser Ziel ist es, das Web schöner und einfühlsamer für alle zu machen. badwebsites.rip ist unser Raum, den wir immer weiter gestalten und ausbauen.',
         peculiarities: ''
       },
       es: {
-        alt: 'Texto grande y en negrita que dice "We make good websites" con tres líneas verticales que dividen la pantalla.',
+        alt: 'Texto grande y en negrita que dice We make good websites con tres líneas verticales que dividen la pantalla.',
         about:
           'Junto con mi amiga, la diseñadora berlinesa Daniela Grau, diseñamos y desarrollamos sitios web que piensan en sus visitantes sin perder de vista los valores fundamentales que hacen de la web un buen lugar para estar. Nos centramos en entender y resolver problemas individuales, combinando creatividad con estrategia y ofreciendo soluciones eficaces y personalizadas. Nuestro objetivo es hacer que la web sea más bella y empática para todos. badwebsites.rip es nuestro espacio, al que seguimos dando forma y ampliando.',
         peculiarities: ''
@@ -190,19 +190,19 @@ export default [
     technologies: ['eleventy', 'design', 'html', 'css', 'js'],
     translations: {
       en: {
-        alt: 'Esther holding an acoustic guitar with the text "Nuevo disco ya a la venta"',
+        alt: 'Esther holding an acoustic guitar with the text Nuevo disco ya a la venta',
         about:
           'Esther Zecco is a singer/songwriter from Segovia with influences from American folk and country. We worked together on the concept of a very modern and simple website where she can present and sell her CDs (through Stripe Checkout), show her upcoming concerts and share updates and thoughts with her fans through the blog.',
         peculiarities: ''
       },
       de: {
-        alt: 'Esther mit einer Akustikgitarre und dem Text "Nuevo disco ya a la venta"',
+        alt: 'Esther mit einer Akustikgitarre und dem Text Nuevo disco ya a la venta',
         about:
           'Esther Zecco ist eine Singer/Songwriterin aus Segovia mit Einflüssen aus dem amerikanischen Folk und Country. Wir haben zusammen an dem Konzept einer sehr modernen und einfachen Website gearbeitet, auf der sie ihre CDs präsentieren und verkaufen kann (über Stripe Checkout), ihre bevorstehenden Konzerte ankündigt und auf ihre Fans über den Blog auf dem Laufenden hält. ',
         peculiarities: ''
       },
       es: {
-        alt: ' Esthercon una guitarra acústica y el texto "Nuevo disco ya a la venta"',
+        alt: ' Esthercon una guitarra acústica y el texto Nuevo disco ya a la venta',
         about:
           'Esther Zecco es una cantautora segoviana con influencias del folk y country americano. Trabajamos juntos en el concepto de una página web muy moderna y sencilla donde puede presentar y vender sus CDs (a través de Stripe Checkout), mostrar sus próximos conciertos y compartir actualizaciones y pensamientos con sus fans a través del blog.',
         peculiarities: ''
