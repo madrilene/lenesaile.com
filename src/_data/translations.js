@@ -19,7 +19,8 @@ export default {
       audioProgress: 'Audio progress',
       toc: 'Table of contents',
       skipToc: 'Skip table of contents',
-      ogDefault_alt: ''
+      ogDefault_alt: '',
+      popover: 'About this tool'
     },
     blog: {
       name: 'Lene Saile',
@@ -87,7 +88,8 @@ export default {
       audioProgress: 'Audio-Fortschritt',
       toc: 'Inhaltsverzeichnis',
       skipToc: 'Inhaltsverzeichnis überspringen',
-      ogDefault_alt: ''
+      ogDefault_alt: '',
+      popover: 'Über dieses Tool'
     },
     blog: {
       name: 'Lene Saile - Web Development Blog',
@@ -156,7 +158,8 @@ export default {
       audioProgress: 'Progreso del audio',
       toc: 'índice de contenidos',
       skipToc: 'Saltar el índice de contenidos',
-      ogDefault_alt: ''
+      ogDefault_alt: '',
+      popover: 'Acerca de esta herramienta'
     },
     blog: {
       name: 'Lene Saile - Blog de desarrollo web',

@@ -6,7 +6,7 @@ export default [
     clientURL: 'https://eimearsweeney.com',
     image: './src/assets/images/projects/eimearsweeney.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'css', 'js'],
+    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Eimear smiling at the camera, next to a blue box with the quote “Tell me, what is it you plan to do with your one wild and precious life?',
@@ -38,7 +38,7 @@ export default [
     clientURL: 'https://www.albertoballesteros.com',
     image: './src/assets/images/projects/proyecto-alberto-2025.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'css', 'js'],
+    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Alberto Ballesteros in large letters on a blue-green background with part of his face on the right side',
@@ -70,7 +70,7 @@ export default [
     clientURL: 'https://www.buerokratiemonster.eu',
     image: './src/assets/images/projects/buerokratiemonster.png',
     collaboration: 'badwebsites',
-    technologies: ['eleventy', 'css', 'js'],
+    tools: ['eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'The website shows three illustrated signs with the words Environment, Rule of Law, and Human Rights',
@@ -100,7 +100,7 @@ export default [
     clientURL: 'https://www.data-bene.io',
     image: './src/assets/images/projects/data-bene.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'html', 'css', 'js'],
+    tools: ['eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'A dark and light split layout illustrating the use of dark and light mode, with the text Database, done right. and an illustration of a fern',
@@ -129,7 +129,7 @@ export default [
     clientURL: 'https://cantautor.es',
     image: './src/assets/images/projects/proyecto-cantautores.jpg',
     collaboration: 'daniela grau',
-    technologies: ['eleventy', 'html', 'css', 'js'],
+    tools: ['eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'A grid of black and white photos and illustrations of various singer-songwriters',
@@ -158,7 +158,7 @@ export default [
     clientURL: 'https://badwebsites.rip',
     image: './src/assets/images/projects/proyecto-badwebsites.jpg',
     collaboration: 'badwebsites',
-    technologies: ['eleventy', 'html', 'css', 'js'],
+    tools: ['eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Large bold text saying We make good websites with three vertical lines dividing the screen.',
@@ -187,7 +187,7 @@ export default [
     clientURL: 'https://www.estherzecco.com',
     image: './src/assets/images/projects/proyecto-estherzecco.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'html', 'css', 'js'],
+    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Esther holding an acoustic guitar with the text Nuevo disco ya a la venta',
@@ -216,7 +216,7 @@ export default [
     clientURL: 'https://www.inesalba.es',
     image: './src/assets/images/projects/proyecto-inesalba.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'tailwind', 'js'],
+    tools: ['eleventy', 'design', 'html', 'tailwind', 'javascript'],
     translations: {
       en: {
         alt: '',
@@ -245,7 +245,7 @@ export default [
     clientURL: 'https://www.fundaciongoethe.org',
     image: './src/assets/images/projects/proyecto-fundaciongoethe.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'tailwind', 'alpine'],
+    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'A black and white photo of a person crouching by water next to german text about the Fundación Goethe',
@@ -274,7 +274,7 @@ export default [
     clientURL: 'https://www.hno-marienplatz.de',
     image: './src/assets/images/projects/proyecto-hno-marienplatz.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'tailwind', 'alpine'],
+    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'Text about the ENT clinic and a photo of the entrance door with six people in a circle',
@@ -303,7 +303,7 @@ export default [
     clientURL: 'https://www.ineliagestion.com',
     image: './src/assets/images/projects/proyecto-inelia.jpg',
     collaboration: '',
-    technologies: ['eleventy', 'design', 'tailwind', 'alpine'],
+    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'Text about tax consultancy services next to a person on the phone smiling.',
@@ -332,7 +332,7 @@ export default [
     clientURL: 'https://www.reder162012.org',
     image: './src/assets/images/projects/proyecto-reder.jpg',
     collaboration: '',
-    technologies: ['wordpress', 'php', 'design', 'tailwind'],
+    tools: ['wordpress', 'php', 'design', 'html', 'tailwind'],
     translations: {
       en: {
         alt: '',

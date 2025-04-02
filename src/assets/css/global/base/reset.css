@@ -124,10 +124,10 @@ dialog {
 [popover] {
   border: none;
   background: none;
-  inset: unset;
   color: inherit;
 }
 
+/*  hide dialog elements without open or popover attributes, and elements with a popover attribute that are not in an open state. */
 dialog:not([open], [popover]),
 [popover]:not(:popover-open) {
   display: none !important;

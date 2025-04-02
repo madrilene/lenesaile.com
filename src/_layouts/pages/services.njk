@@ -26,9 +26,9 @@ headerStyle: '--header-color-override: var(--color-gray-100);'
 
 <article class="region">
   <dl class="grid mt-l-xl gutter-xl" data-layout="thirds">
-    {% for tool in toolbox[page.lang] %}
+    {% for tool in whatido[page.lang] %}
       <div class="flow flow-space-l wrapper:text-center">
-        {% svg 'tools/' + tool.key, null, 'text-step-4' %}
+        {% svg 'whatido/' + tool.key, null, 'text-step-4' %}
         <dt class="text-step-1 font-display font-bold">{{ tool.title }}</dt>
         <dd class="flow-space-s">{{ tool.summary | markdownFormat | safe }}</dd>
       </div>
