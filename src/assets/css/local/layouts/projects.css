@@ -1,3 +1,26 @@
 .projects {
-  --sidebar-target-width: 30rem;
+  --sidebar-target-width: min(40rem, 50vw);
+  --sidebar-content-min-width: 40%;
+}
+
+.projects .visual,
+.projects .visual img {
+  aspect-ratio: 2 / 1.4;
+  border-radius: var(--border-radius-medium);
+}
+
+.projects .visual img {
+  border: 3px solid var(--color-text);
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+}
+.projects .visual {
+  background-color: var(--color-accent);
+}
+
+@media screen(md) {
+  .projects .visual img {
+    rotate: -2deg;
+  }
 }

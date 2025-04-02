@@ -22,20 +22,19 @@ mainClass: row-1
 
 {% for project in projects %}
   {% set i18n = project.translations[page.lang] %}
-  <article class="sidebar region">
-    {% if loop.first %}
-      {% image project.image, i18n.alt or "", null, "eager" %}
-    {% else %}
-      {% image project.image, i18n.alt or "", null, "lazy" %}
-    {% endif %}
-
-    <div class="flow">
-      <h2 class="text-step-1">{{ project.name }}</h2>
-      {{ i18n.about | markdownFormat | safe }}
-      <span class="text-step-min-1">{{ i18n.peculiarities | markdownFormat | safe }}</span>
+  <article class="sidebar region items-start gutter-xl">
+    <div class="flow flow-space-xs vt-appear-bottom">
+      <div class="visual">
+        {% if loop.first %}
+          {% image project.image, i18n.alt or "", null, "eager" %}
+        {% else %}
+          {% image project.image, i18n.alt or "", null, "lazy" %}
+        {% endif %}
+      </div>
 
       <div class="meta repel">
-        <ul role="list" class="cluster gutter-s">
+        <ul role="list" class="cluster gutter-xs">
+          <h3 class="visually hidden">{{ translations[page.lang].a11y.tools }}</h3>
           {% set uniqueId = project.name | slugify %}
           {% for tool in project.tools %}
             <li>
@@ -64,10 +63,12 @@ mainClass: row-1
 
           <div
             popover="auto"
+            data-direction="rtl"
             id="target-popover-{{ uniqueId }}-{{ project.collaboration }}"
             class="target"
             style="position-anchor: --anchor-btn-{{ uniqueId }}-{{ project.collaboration }}"
           >
+            <h3 class="visually hidden">{{ translations[page.lang].a11y.collaborations }}</h3>
             {{ partner.description[page.lang] | markdownFormat | safe }}
 
             <p>
@@ -83,10 +84,16 @@ mainClass: row-1
             class="anchor"
             style="anchor-name: --anchor-btn-{{ uniqueId }}-{{ project.collaboration }}"
           >
-            {% svg 'collaborators/' + project.collaboration, partner.name, 'text-step-1' %}
+            {% svg 'collaborators/' + project.collaboration, partner.name, 'text-step-0' %}
           </button>
         {% endif %}
       </div>
+    </div>
+
+    <div class="description flow relative">
+      <h2 class="text-step-1">{{ project.name }}</h2>
+      {{ i18n.about | markdownFormat | safe }}
+      <div class="text-step-min-1">{{ i18n.peculiarities | markdownFormat | safe }}</div>
 
       <a class="button no-indicator" href="{{ project.clientURL }}" rel="noopener"
         >{{ project.clientURL | replace("https://www.", "") | replace("https://", "") }}</a
@@ -99,4 +106,5 @@ mainClass: row-1
 {%- css "local" -%}
   {%- include 'css/projects.css' -%}
   {%- include 'css/anchor.css' -%}
+  {%- include 'css/view-transitions.css' -%}
 {%- endcss -%}

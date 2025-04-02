@@ -53,4 +53,16 @@
     position: absolute;
     translate: calc(var(--size-step-1) + calc(var(--space-xs) / 1)) 0;
   }
+
+  .target[data-direction='rtl'] {
+    translate: var(--size-step-1) -0.7em;
+    inset-inline-start: auto;
+    inset-inline-end: anchor(right);
+  }
+
+  .target[data-direction='rtl']::before {
+    inset-inline-end: 0;
+    inset-inline-start: auto;
+    translate: calc(var(--size-step-2) / -1) 0;
+  }
 }

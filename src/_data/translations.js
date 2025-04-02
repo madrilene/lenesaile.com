@@ -20,7 +20,9 @@ export default {
       toc: 'Table of contents',
       skipToc: 'Skip table of contents',
       ogDefault_alt: '',
-      popover: 'About this tool'
+      popover: 'About this tool',
+      tools: 'Tools',
+      collaborations: 'Collaboration'
     },
     blog: {
       name: 'Lene Saile',
@@ -89,7 +91,9 @@ export default {
       toc: 'Inhaltsverzeichnis',
       skipToc: 'Inhaltsverzeichnis überspringen',
       ogDefault_alt: '',
-      popover: 'Über dieses Tool'
+      popover: 'Über dieses Tool',
+      tools: 'Werkzeuge',
+      collaborations: 'Zusammenarbeit'
     },
     blog: {
       name: 'Lene Saile - Web Development Blog',
@@ -159,7 +163,9 @@ export default {
       toc: 'índice de contenidos',
       skipToc: 'Saltar el índice de contenidos',
       ogDefault_alt: '',
-      popover: 'Acerca de esta herramienta'
+      popover: 'Acerca de esta herramienta',
+      tools: 'Herramientas',
+      collaborations: 'Colaboraciones'
     },
     blog: {
       name: 'Lene Saile - Blog de desarrollo web',
