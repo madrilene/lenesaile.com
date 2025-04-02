@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.pagination a:hover {
+  color: var(--pagination-text, var(--color-text));
+}
+
 .pagination a {
   padding: var(--space-xs) var(--space-s-m);
   text-decoration: none;
@@ -30,6 +34,7 @@
 }
 
 .pagination li:has(a:hover) {
+  --pagination-text: var(--color-text);
   --pagination-bg: var(--color-bg-accent);
   --pagination-border: var(--color-bg-accent);
 }
@@ -40,6 +45,6 @@
   --pagination-text: var(--color-text);
 }
 
-[data-color='bright-sun'] :is(.pagination li:has(a:hover), .pagination li:has(a[aria-current='page'])) {
+[data-color='bright-sun'] .pagination li:has(a[aria-current='page']) {
   --pagination-text: var(--color-dark);
 }

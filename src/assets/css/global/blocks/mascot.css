@@ -47,7 +47,7 @@
   translate: -25% -25%;
 }
 
-.mascot.cta svg {
+.cta .mascot svg {
   scale: 1.7;
   translate: 30% -10%;
 }
@@ -77,7 +77,7 @@
     translate: -10% 5%;
   }
 
-  .mascot.cta svg {
+  .cta .mascot svg {
     scale: 1.1;
     translate: -10% 5%;
   }

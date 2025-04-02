@@ -20,6 +20,16 @@
     light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 100%
   );
 
+  --gradient-fade-color: linear-gradient(
+    5deg,
+    light-dark(
+        color-mix(in oklab, var(--color-accent) 90%, var(--color-bg)),
+        color-mix(in oklab, var(--color-accent) 80%, var(--color-bg))
+      )
+      0,
+    var(--color-accent) 71%
+  );
+
   --color-light: var(--color-gray-100);
   --color-dark: var(--color-gray-800);
 

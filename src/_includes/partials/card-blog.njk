@@ -6,7 +6,7 @@
 
   <custom-card note>
     <header slot="headline" class="cluster">
-      {%- if item.data.draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %}
+      {%- if item.data.draft -%}<span class="text-step-min-1 bg-cinnabar-600 text-cinnabar-100 px-2 font-regular">[draft]</span>{%- endif %}
       <span slot="note" class="button font-display font-bold text-step-min-2" data-small-button data-button-variant="theme">
         {{ translations[page.lang].blog.note }}</span
       >
@@ -19,7 +19,7 @@
 
   <custom-card clickable>
     <{{ headingLevel }} slot="headline" class="text-step-1">
-      <a href="{{ item.url | url }}">{%- if item.data.draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %} {{ item.data.title }}</a>
+      <a href="{{ item.url | url }}">{%- if item.data.draft -%}<span class="text-step-min-1 bg-cinnabar-600 text-cinnabar-100 font-regular">[draft]</span>{%- endif %} {{ item.data.title }}</a>
     </{{ headingLevel }}>
     <div slot="meta" class="meta | cluster flow-space-xs">
       <span class="flow-space-s"> {% include "partials/date.njk" %} </span>

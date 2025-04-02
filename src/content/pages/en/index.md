@@ -4,7 +4,6 @@ discover:
   title: Lene Saile, developer and designer living in Madrid
 permalink: /{{ lang }}/index.html
 key: 'home'
-description: I'm a developer and designer living in Madrid who has been building for the web professionally since 2008. I make highly optimized custom websites.
 layout: home
 hero:
   title: I make highly optimized custom websites.

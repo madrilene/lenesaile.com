@@ -5,11 +5,11 @@ category: blogpost
 key: 'wordpressblog'
 date: 2022-10-26
 lastEdit: 2023-02-21
-youtube: true
+show_cta: true
 cta:
   title: 'You want a WordPress site?'
-  desktop: "I have been working with WordPress for many years. I probably won't be able to (don't want to 😶) help with premium themes, page builders or plugin issues."
-  lead: "I'm working with WordPress using the [Codeable platform](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033)."
+  desktop: "I have been working with WordPress for many years. Want a custom, optimized theme? Happy to talk! I absolutely won't be able (don't want to 😇) to help with premium themes, page builders or third party plugin issues, though."
+  lead: "For any WordPress issue I can't help you with, I recommend the people working at the [Codeable platform](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033)."
 ---
 
 Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO3](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation.

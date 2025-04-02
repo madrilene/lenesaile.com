@@ -5,7 +5,7 @@
 
 .projects .visual,
 .projects .visual img {
-  aspect-ratio: 2 / 1.4;
+  aspect-ratio: 2 / 1.5;
   border-radius: var(--border-radius-medium);
 }
 

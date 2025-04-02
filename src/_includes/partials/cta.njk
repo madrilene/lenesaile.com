@@ -2,21 +2,23 @@
 {% set ctaDesktop = cta.desktop or translations[page.lang].cta.desktop %}
 {% set ctaLead = cta.lead or translations[page.lang].cta.lead %}
 
-<aside class="section overflow-hidden full" data-color="cinnabar">
-  {% svg "divider/used-tilt", null, "seperator" %}
-  <div class="section__inner">
-    <div class="wrapper flow">
-      <div class="mascot cta" data-direction="rtl">
-        <div class="flow region place-self-end">
-          <h2>{{ ctaTitle }}</h2>
-          <div class="desktop-only">{{ ctaDesktop | markdownFormat | safe }}</div>
-          <div>{{ ctaLead | markdownFormat | safe }}</div>
+{% if show_cta %}
+  <aside class="cta | section overflow-hidden full">
+    {% svg "divider/used-tilt", null, "seperator" %}
+    <div class="section__inner">
+      <div class="wrapper flow">
+        <div class="mascot cta" data-direction="rtl">
+          <div class="flow region place-self-end">
+            <h2>{{ ctaTitle }}</h2>
+            <div class="desktop-only">{{ ctaDesktop | markdownFormat | safe }}</div>
+            <div>{{ ctaLead | markdownFormat | safe }}</div>
+          </div>
+          {% svg "mascot/cta" %}
         </div>
-        {% svg "mascot/cta" %}
       </div>
     </div>
-  </div>
-</aside>
+  </aside>
+{% endif %}
 
 {% css "local" %}
   {% include "css/cta.css" %}

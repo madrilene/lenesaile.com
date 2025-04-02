@@ -10,3 +10,11 @@
   outline: 2px solid;
   outline-offset: 0.01ch;
 }
+
+.cta .section__inner {
+  background-image: var(--gradient-fade-color);
+}
+
+[data-color='bright-sun'] .cta {
+  color: var(--color-dark);
+}
