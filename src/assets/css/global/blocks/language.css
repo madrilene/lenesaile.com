@@ -3,6 +3,10 @@ is-land:not(:defined) .language-select {
   display: none;
 }
 
+.language-nav-button[aria-expanded='true'] svg {
+  rotate: -15deg;
+}
+
 .language-items {
   position: absolute;
   margin-block-start: 0;

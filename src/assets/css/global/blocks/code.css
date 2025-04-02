@@ -48,6 +48,12 @@ pre[class*='language-'] {
   opacity: 0.7;
 }
 
+.codepen {
+  /* padding: var(--space-sm); */
+  color: var(--color-bg);
+  border: 2px dashed var(--color-text);
+}
+
 .token.atrule {
   color: var(--color-code-pink);
 }
