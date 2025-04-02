@@ -1,11 +1,10 @@
 .anchor {
-  cursor: pointer;
+  cursor: cursor;
   z-index: 1;
-  /* padding: var(--space-xs) var(--space-2xs);
+  padding: var(--space-xs);
   height: auto;
   display: grid;
   place-content: center;
- */
 }
 
 .anchor svg {
@@ -13,14 +12,14 @@
 }
 
 .target {
-  inline-size: min(25rem, 90%);
-  background-color: var(--target-bg, var(--color-accent));
+  inline-size: min(25ch, calc(100% - var(--gap)));
+  background-color: var(--target-bg, var(--color-text));
   color: var(--target-color, var(--color-bg));
-  border: 2px solid var(--target-border, var(--color-active));
+  border: 2px solid var(--target-border, var(--color-text));
   font-size: var(--target-font-size, var(--size-step-min-1));
   overflow: visible;
   border-radius: var(--border-radius-small);
-  padding: var(--space-xs) var(--space-m);
+  padding: var(--space-s) var(--space-m);
 }
 
 .target .meta {
@@ -34,27 +33,24 @@
 @supports (position-anchor: --anchor-el) {
   .target {
     inset: unset;
-    position: absolute;
-    margin: 0;
-    inset-inline-end: anchor(right);
-    inset-block-start: anchor(bottom);
     inset-block-end: anchor(top);
-    translate: 0 0.5em;
-    inline-size: min(28rem, calc(100% - var(--gap)));
+    inset-inline-start: anchor(left);
+    margin: 0;
+    position: absolute;
+    translate: calc(var(--size-step-1) / -1) -0.7em;
   }
 
   .target::before {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    border: solid transparent;
     block-size: 0;
+    content: '';
+    border: solid transparent;
+    border-top-color: var(--target-bg, var(--color-text));
+    border-width: calc(calc(var(--size-step-1) / 3) + 0.1em);
     inline-size: 0;
-    border-color: transparent;
-    border-bottom-color: var(--target-bg, var(--color-text));
-    border-width: 12px;
-    inset-block-end: 100%;
-    inset-inline-end: 0;
-    translate: calc(var(--gap) / -1) 0;
+    inset-block-start: 100%;
+    inset-inline-start: 0;
+    pointer-events: none;
+    position: absolute;
+    translate: calc(var(--size-step-1) + calc(var(--space-xs) / 1)) 0;
   }
 }

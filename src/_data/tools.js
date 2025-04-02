@@ -1,7 +1,7 @@
 export default {
   en: {
     eleventy:
-      'Eleventy is a static site generator based on JavaScript and Markdown. I usually build my websites with my starter Eleventy Excellent',
+      'Eleventy is a static site generator based on JavaScript and Markdown. I usually build my websites with my starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
     design: 'Custom design, typography, and layout work.',
     html: 'no website without HTML!',
     css: 'Styling using CSS without frameworks.',

@@ -128,7 +128,7 @@ export default [
     date: '2024-01-02',
     clientURL: 'https://cantautor.es',
     image: './src/assets/images/projects/proyecto-cantautores.jpg',
-    collaboration: 'daniela grau',
+    collaboration: 'badwebsites',
     tools: ['eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {

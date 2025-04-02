@@ -34,41 +34,62 @@ mainClass: row-1
       {{ i18n.about | markdownFormat | safe }}
       <span class="text-step-min-1">{{ i18n.peculiarities | markdownFormat | safe }}</span>
 
-      <ul role="list" class="cluster">
-        {% for tool in project.tools %}
-          <li>
-            <div
-              popover="auto"
-              id="target-popover-info-{{ loop.index }}"
-              class="target"
-              style="position-anchor: --anchor-btn-info-{{ loop.index }}"
-            >
-              {{ tools[page.lang][tool] }}
-            </div>
-            <button
-              popovertarget="target-popover-info-{{ loop.index }}"
-              id="anchor-popover-info-{{ loop.index }}"
-              class="anchor"
-              style="anchor-name: --anchor-btn-info-{{ loop.index }}"
-              data-click-sound
-            >
-              {% svg 'tools/' + tool, tool, 'text-step-1' %}
-            </button>
-          </li>
-        {% endfor %}
-      </ul>
+      <div class="meta repel">
+        <ul role="list" class="cluster gutter-s">
+          {% set uniqueId = project.name | slugify %}
+          {% for tool in project.tools %}
+            <li>
+              <div
+                popover="auto"
+                id="target-popover-{{ uniqueId }}-{{ loop.index }}"
+                class="target"
+                style="position-anchor: --anchor-btn-{{ uniqueId }}-{{ loop.index }}"
+              >
+                {{ tools[page.lang][tool] | markdownFormat | safe }}
+              </div>
+              <button
+                popovertarget="target-popover-{{ uniqueId }}-{{ loop.index }}"
+                id="anchor-popover-{{ uniqueId }}-{{ loop.index }}"
+                class="anchor icon-center"
+                style="anchor-name: --anchor-btn-{{ uniqueId }}-{{ loop.index }}"
+              >
+                {% svg 'tools/' + tool, tool, 'text-step-1' %}
+              </button>
+            </li>
+          {% endfor %}
+        </ul>
 
-      {% if project.collaboration %}
-        {% set partner = collaborators[project.collaboration] %}
-        <div class="collaboration">
-          <h3>{{ partner.name }}</h3>
-          <p>{{ partner.description[page.lang] }}</p>
-          <a href="{{ partner.url }}" target="_blank" rel="noopener">{{ partner.url }}</a>
-        </div>
-      {% endif %}
+        {% if project.collaboration %}
+          {% set partner = collaborators[project.collaboration] %}
+
+          <div
+            popover="auto"
+            id="target-popover-{{ uniqueId }}-{{ project.collaboration }}"
+            class="target"
+            style="position-anchor: --anchor-btn-{{ uniqueId }}-{{ project.collaboration }}"
+          >
+            {{ partner.description[page.lang] | markdownFormat | safe }}
+
+            <p>
+              <a href="{{ partner.url }}" rel="noopener"
+                >{{ partner.url | replace("https://www.", "") | replace("https://", "") }}</a
+              >
+            </p>
+          </div>
+
+          <button
+            popovertarget="target-popover-{{ uniqueId }}-{{ project.collaboration }}"
+            id="anchor-popover-{{ uniqueId }}-{{ project.collaboration }}"
+            class="anchor"
+            style="anchor-name: --anchor-btn-{{ uniqueId }}-{{ project.collaboration }}"
+          >
+            {% svg 'collaborators/' + project.collaboration, partner.name, 'text-step-1' %}
+          </button>
+        {% endif %}
+      </div>
 
       <a class="button no-indicator" href="{{ project.clientURL }}" rel="noopener"
-        >{{ project.clientURL | replace("https://", "") }}</a
+        >{{ project.clientURL | replace("https://www.", "") | replace("https://", "") }}</a
       >
     </div>
   </article>
