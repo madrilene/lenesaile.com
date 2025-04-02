@@ -95,12 +95,13 @@ mainClass: row-1
       {{ i18n.about | markdownFormat | safe }}
       <div class="text-step-min-1">{{ i18n.peculiarities | markdownFormat | safe }}</div>
 
-      <a class="button no-indicator" href="{{ project.clientURL }}" rel="noopener"
+      <a class="button no-indicator" href="{{ project.clientURL }}" rel="noopener" data-funky-button
         >{{ project.clientURL | replace("https://www.", "") | replace("https://", "") }}</a
       >
     </div>
   </article>
 {% endfor %}
+{% set show_cta = true %}
 {% include 'partials/cta.njk' %}
 
 {%- css "local" -%}

@@ -96,3 +96,18 @@
 .button[data-button-radius='hard'] {
   --button-radius: 0;
 }
+
+/* Radius variants */
+.button[data-funky-button] {
+  --button-bg: var(--color-bg);
+  --button-color: var(--color-text);
+  --button-border-color: var(--color-text);
+  --button-radius: var(--border-radius-small);
+  --button-padding: var(--space-s) var(--space-l);
+  box-shadow: 6px 6px 0 0 var(--color-text);
+  transition: all 0.1s ease;
+}
+
+.button[data-funky-button]:hover {
+  box-shadow: 0px 0px 0 0 var(--color-text);
+}
