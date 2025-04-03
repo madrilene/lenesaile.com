@@ -101,6 +101,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
+  eleventyConfig.addFilter('webmentionGetForUrl', filters.webmentionGetForUrl);
+  eleventyConfig.addFilter('webmentionSize', filters.webmentionSize);
+  eleventyConfig.addFilter('webmentionByType', filters.webmentionByType);
+  eleventyConfig.addFilter('webmentionisOwn', filters.webmentionisOwn);
+  eleventyConfig.addFilter('webmentionSort', filters.webmentionSort);
 
   // --------------------- Shortcodes
   eleventyConfig.addPairedShortcode('aside', shortcodes.aside);

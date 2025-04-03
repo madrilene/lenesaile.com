@@ -101,7 +101,8 @@ label,
 select,
 summary,
 [role='button'],
-[role='option'] {
+[role='option'],
+[type='submit'] {
   cursor: pointer;
 }
 

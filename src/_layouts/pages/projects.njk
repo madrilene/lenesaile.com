@@ -32,7 +32,8 @@ mainClass: row-1
         {% endif %}
       </div>
 
-      <div class="meta repel">
+      <!-- TODO: create a svg sprite sheet -->
+      <div class="meta | repel">
         <ul role="list" class="cluster gutter-xs">
           <h3 class="visually hidden">{{ translations[page.lang].a11y.tools }}</h3>
           {% set uniqueId = project.name | slugify %}

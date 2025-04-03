@@ -3,6 +3,10 @@
   --sidebar-content-min-width: 40%;
 }
 
+.projects .meta ul {
+  margin-block: var(--space-s);
+}
+
 .projects .visual,
 .projects .visual img {
   aspect-ratio: 2 / 1.5;

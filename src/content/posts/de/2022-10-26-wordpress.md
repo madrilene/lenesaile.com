@@ -11,7 +11,6 @@ cta:
   desktop: 'Ich arbeite schon seit vielen Jahren mit WordPress. Möchtest du ein eigenes, hoch optimiertes Theme? Lass uns gerne reden! Mit Premium-Themes, Page-Buildern oder Plugin-Problemen kann (möchte 😇) ich allerdings nicht helfen.'
   lead: 'Für alle WordPress-Probleme, bei denen ich nicht helfen kann, empfehle ich die Leute der [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033) Plattform. '
 ---
-(don't want to 😇)
 2007 war ich auf der Suche nach einem CMS, das ich verstehen konnte, um mit ihm eigene Webseiten zu erstellen. Nachdem ich [Joomla](https://www.joomla.org/) und [TYPO3](https://typo3.org/) ausprobiert hatte (und es hasste), entdeckte ich [WordPress](https://wordpress.org/). Es war eine Offenbarung.
 
 Ich denke immer noch, dass es eine großartige Lösung für komplexe benutzerdefinierte Websites ist. Es ist extrem leistungsfähig und anpassbar, und ich fühle mich als Entwickler nicht zu sehr eingeschränkt, um das zu schaffen, was mir vorschwebt. Dennoch gibt es einige, die auf das CMS herabschauen und sagen, es sei unsicher und aufgebläht. Ich möchte kurz meine Gedanken zum aktuellen Stand von WordPress darlegen und erklären, warum ich es immer noch gerne benutze.

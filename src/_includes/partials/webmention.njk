@@ -1,0 +1,35 @@
+<article
+  id="webmention-{{ webmention['wm-id'] }}"
+  class="webmention {{ webmention | webmentionisOwn ? 'webmention--own' : 'webmention--single' }}"
+>
+  <div class="webmention__meta">
+    {% if webmention.author %}
+      <img
+        src="{{ webmention.author.photo or meta.webmentions.fallbackAvatar | url }}"
+        alt="{{ webmention.author.name or '' }}"
+        width="48"
+        height="48"
+        loading="lazy"
+      />
+      <span>
+        <strong class="p-name">{{ webmention.author.name }}</strong>
+      </span>
+    {% else %}
+      <span>
+        <strong>Anonymous</strong>
+      </span>
+    {% endif %}
+
+    {% if webmention['wm-received'] %}
+      {% set definedDate = webmention['wm-received'] %}
+      {% include "partials/date-time.njk" %}
+    {% endif %}
+  </div>
+
+  <p class="webmention-text">
+    {{ webmention.content.text | truncate }}
+    {% if webmention.url %}
+      <a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">source</a>
+    {% endif %}
+  </p>
+</article>

@@ -1,6 +1,7 @@
 export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
+export const webmentionDomain = 'www.lenesaile.com';
 export const siteName = 'Lene Saile';
 export const siteType = 'Person'; // schema
 export const author = {
@@ -15,6 +16,9 @@ export const creator = {
   email: 'hola@lenesaile.com',
   website: 'https://www.lenesaile.com',
   social: 'https://front-end.social/@lene'
+};
+export const webmentions = {
+  fallbackAvatar: '/assets/images/template/webmention-fallback.svg'
 };
 export const pathToSvgLogo = 'src/assets/images/template/avatar.jpg'; // used for favicon generation
 export const themeColor = '#dd4462'; // used in manifest, for example primary color value
@@ -59,11 +63,6 @@ export const navigation = {
   ariaBottom: 'Complementary',
   ariaPlatforms: 'Platforms',
   drawerNav: false
-};
-export const themeSwitch = {
-  title: 'Theme',
-  light: 'light',
-  dark: 'dark'
 };
 export const greenweb = {
   // https://carbontxt.org/

@@ -7,24 +7,20 @@ schema: BlogPosting
 <div class="full region wrapper flow prose region-space-2xl">
   <h1 class="gradient-text">{{ title }}</h1>
 
-  <dl class="cluster text-step-min-1">
+  <dl class="cluster gutter-3xs text-step-min-1">
     {%- if draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %}
-    <div>
-      {% set definedDate = date %}
-      <dt>{{ translations[page.lang].blog.published | capitalize }}</dt>
-      <dd>{% include "partials/date.njk" %}</dd>
-    </div>
+    {% set definedDate = date %}
+    <dt>{{ translations[page.lang].blog.published | capitalize }}</dt>
+    <dd>{% include "partials/date.njk" %}</dd>
+
     {% if lastEdit %}
-      <div>
-        {% set definedDate = lastEdit %}
-        <dt>{{ translations[page.lang].blog.edited | capitalize }}</dt>
-        <dd>{% include "partials/date.njk" %}</dd>
-      </div>
+      {% set definedDate = lastEdit %}
+      <dt>{{ translations[page.lang].blog.edited | capitalize }}</dt>
+      <dd>{% include "partials/date.njk" %}</dd>
     {% endif %}
-    <div>
-      <dt>{{ translations[page.lang].blog.reading | capitalize }}</dt>
-      <dd>{{ content | readingTime }} {{ translations[page.lang].blog.unit }}</dd>
-    </div>
+
+    <dt>{{ translations[page.lang].blog.reading | capitalize }}</dt>
+    <dd>{{ content | readingTime }} {{ translations[page.lang].blog.unit }}</dd>
   </dl>
 
   {% if image %}
@@ -46,10 +42,14 @@ schema: BlogPosting
   />
 </div>
 
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(meta.url) }}{% endset %}
+{% include "partials/webmentions.njk" %}
 {% include 'partials/cta.njk' %}
 
 {%- css "local" -%}
   {%- include 'css/post.css' -%}
   {%- include 'css/table.css' -%}
+  {%- include 'css/forms.css' -%}
+  {%- include 'css/webmentions.css' -%}
   {%- include 'css/footnotes.css' -%}
 {%- endcss -%}

@@ -4,7 +4,7 @@ form > * + * {
   margin-top: var(--flow-space, 1rem);
 }
 
-:is(input:not([type='checkbox'], [type='radio'], [type='color']), select, textarea) {
+:is(input:not([type='checkbox'], [type='radio'], [type='color'], [type='submit']), select, textarea) {
   padding: 0.5em 0.8em;
   border-radius: var(--border-radius-small);
   border: var(--stroke);

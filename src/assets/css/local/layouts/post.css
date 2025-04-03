@@ -35,8 +35,16 @@
   max-inline-size: fit-content;
 }
 
-.post .meta {
-  font-size: var(--size-step-min-1);
+.post dt {
+  flex-basis: 10rem;
+  flex-grow: 1;
+}
+
+.post dd {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 70%;
 }
 
 /* note and toc */

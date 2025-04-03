@@ -1,0 +1,72 @@
+<section class="webmentions | flow content region" style="--region-space-top: var(--space-xl)">
+  <h2 id="webmentions">Webmentions</h2>
+
+  <!-- only needed for local testing -->
+  {% set webmentionUrl = "https://www.lenesaile.com" + page.url %}
+  {% set allMentions = webmentions | webmentionGetForUrl(webmentionUrl) %}
+  {% set withAvatar = [] %}
+  {% set withoutAvatar = [] %}
+
+  {% for webmention in allMentions %}
+    {% if not (webmention | webmentionisOwn) and webmention.url %}
+      {% if webmention.author.photo %}
+        {% set withAvatar = withAvatar.concat([webmention]) %}
+      {% else %}
+        {% set withoutAvatar = withoutAvatar.concat([webmention]) %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% set sortedMentions = withAvatar.concat(withoutAvatar) %}
+
+  {% if allMentions | length > 0 %}
+    <div class="flow">
+      <h3>
+        {{ allMentions | length }} Reaction{% if allMentions | length != 1 %}s{% endif %}
+        <span class="font-base text-step-0 font-regular">(Likes, reposts, links and comments)</span>
+      </h3>
+
+      <ul class="avatars | cluster gutter-3xs" role="list">
+        {% for webmention in sortedMentions %}
+          {% if not (webmention | webmentionisOwn) and webmention.url %}
+            <li>
+              <a class="h-card u-url link-u-exempt no-indicator" href="{{ webmention.url }}" rel="noreferrer">
+                {% if webmention.author.photo %}
+                  <img
+                    src="{{ webmention.author.photo }}"
+                    alt="{{ webmention.author.name }}"
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                  />
+                {% else %}
+                  <img src="{{ meta.webmentions.fallbackAvatar | url }}" alt="" width="40" height="40" />
+                {% endif %}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <aside class="flow">
+    <p>{{ translations[page.lang].webmentions.formTitle }}</p>
+    <form action="https://webmention.io/www.lenesaile.com/webmention" method="post" class="form-webmention">
+      <label for="form-webmention-source">URL</label>
+      <div
+        class="sidebar"
+        style="--sidebar-gap: var(--space-xs); --sidebar-target-width: 60%; --sidebar-content-min-width: 220px;"
+      >
+        <input
+          id="form-webmention-source"
+          type="url"
+          name="source"
+          placeholder="https://example.com"
+          required
+        />
+        <input type="hidden" name="target" value="https://www.lenesaile.com{{ page.url }}" />
+        <input type="submit" class="button" value="{{ translations[page.lang].webmentions.buttonValue }}" />
+      </div>
+    </form>
+  </aside>
+</section>

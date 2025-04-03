@@ -1,6 +1,6 @@
 [href^='http']:not([href*='localhost:8080']):not([href*='lenesaile.com']):not(.button):not(.no-indicator),
 .indicator {
-  padding-inline-end: 0.8em;
+  margin-inline-end: 0.8em;
 }
 
 [href^='http']:not([href*='localhost:8080']):not([href*='lenesaile.com']):not(.no-indicator)::after,
