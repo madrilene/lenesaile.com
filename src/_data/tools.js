@@ -1,39 +1,50 @@
 export default {
   en: {
     eleventy:
-      'Eleventy is a static site generator based on JavaScript and Markdown. I usually build my websites with my starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
-    design: 'Custom design, typography, and layout work.',
-    html: 'no website without HTML!',
-    css: 'Styling using CSS without frameworks.',
-    javascript: 'Custom JavaScript without frameworks.',
-    alpine: 'Lightweight JavaScript framework.',
+      'Eleventy is a wonderful static site generator. I do most of my projects with it, using my starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
+    design: 'I also did the design for this project.',
+    html: 'No website without HTML! What else is there to say?',
+    css: 'Styling using with my favrotite programming language CSS, without frameworks.',
+    javascript:
+      'Custom minimal JavaScript without frameworks - for progressive Enhacment, accssibility and a dash of joy.',
+    alpine:
+      'Alpine.js is a very lightweight JavaScript framework, that provides declarative interactivity directly in the HTML. Similar to Vue, but tailored for simple, component-like behaviors.',
     tailwind: 'Utility-first CSS framework.',
-    i18n: 'Internationalization / Multilingual setup.',
-    wordpress: 'Content Management System.',
-    php: 'Backend logic written in PHP.'
+    i18n: 'With nternationalization / Multilingual setup.',
+    wordpress:
+      'WordPress is a free, secure and fast Content-Management-System. I build lightweight and secure custom WordPress themes around it.',
+    php: 'When working with WordPress, I use PHP for backend logic.'
   },
   de: {
-    eleventy: 'Statischer Seitengenerator basierend auf JavaScript und Markdown.',
-    design: 'Individuelles Design, Typografie und Layout.',
-    html: 'Keine Webseite ohne HTML!',
-    css: 'Styling mit CSS ohne Frameworks.',
-    javascript: 'Individuelles JavaScript ohne Frameworks.',
-    alpine: 'Leichtgewichtiges JavaScript-Framework.',
+    eleventy:
+      'Eleventy ist ein perfekter Generator für statische Websites. Ich mache die meisten meiner Projekte damit und verwende dafür meinen Starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
+    design: 'Bei diesem Projekt habe ich mich auch das Design gemacht.',
+    html: 'Keine Webseite ohne HTML! Was gibt es sonst zu sagen?',
+    css: 'Stile mit meinem Lieblingsprogrammiersprache CSS, ohne Frameworks.',
+    javascript:
+      'Benutzerdefiniertes minimales JavaScript ohne Frameworks - für progressive Verbesserung, Barrierefreiheit und eine Prise Freude.',
+    alpine:
+      'Alpine.js ist ein sehr leichtgewichtiges JavaScript-Framework, das deklarative Interaktivität direkt im HTML ermöglichsr. Ähnlich wie Vue, aber auf einfache, komponentenähnliche Verhaltensweisen zugeschnitten.',
     tailwind: 'Utility-First CSS-Framework.',
-    i18n: 'Internationalisierung / Mehrsprachigkeit.',
-    wordpress: 'Content-Management-System.',
-    php: 'Backend-Logik in PHP.'
+    i18n: 'Mit Internationalisierung / Mehrsprachigkeit.',
+    wordpress:
+      'WordPress ist ein kostenloses, sicheres und schnelles Content-Management-System. Ich baue damit leichtgewichtige und sichere WordPress-Themes.',
+    php: 'Wenn ich mit WordPress arbeite, verwende ich PHP für die Backend-Logik.'
   },
   es: {
-    eleventy: 'Generador de sitios estáticos basado en JavaScript y Markdown.',
-    design: 'Diseño personalizado, tipografía y maquetación.',
-    html: '¡No hay página web sin HTML!',
-    css: 'Estilos con CSS sin frameworks.',
-    javascript: 'JavaScript personalizado sin frameworks.',
-    alpine: 'Framework de JavaScript ligero.',
+    eleventy:
+      'Eleventy es un maravilloso generador de sitios estáticos. Hago la mayoría de mis proyectos con él, usando mi starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
+    design: 'También hice el diseño de este proyecto.',
+    html: '¡No hay página web sin HTML! ¿Qué más hay que decir?',
+    css: 'Estilos con mi lenguaje de programación favorito CSS, sin frameworks.',
+    javascript:
+      'JavaScript personalizado mínimo sin frameworks - para mejoras progresivas, accesibilidad y una pizca de alegría.',
+    alpine:
+      'Alpine.js es un framework de JavaScript muy ligero, que proporciona interactividad declarativa directamente en el HTML. Similar a Vue, pero adaptado para comportamientos simples y similares a componentes.',
     tailwind: 'Framework CSS utility-first.',
-    i18n: 'Internacionalización / configuración multilingüe.',
-    wordpress: 'Sistema de gestión de contenidos.',
-    php: 'Lógica backend escrita en PHP.'
+    i18n: 'Con internacionalización / configuración multilingüe.',
+    wordpress:
+      'WordPress es un sistema de gestión de contenido gratuito, seguro y rápido. Construyo temas de WordPress personalizados ligeros y seguros.',
+    php: 'Cuando trabajo con WordPress, utilizo PHP para la lógica del backend.'
   }
 };

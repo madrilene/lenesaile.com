@@ -6,8 +6,9 @@ export default [
     clientURL: 'https://eimearsweeney.com',
     image: './src/assets/images/projects/eimearsweeney.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
+    tools: ['design', 'eleventy', 'html', 'css', 'javascript'],
     translations: {
+      // tools set here will take precedence over the ones in tools.js
       en: {
         alt: 'Eimear smiling at the camera, next to a blue box with the quote “Tell me, what is it you plan to do with your one wild and precious life?',
         about:
@@ -38,7 +39,7 @@ export default [
     clientURL: 'https://www.albertoballesteros.com',
     image: './src/assets/images/projects/proyecto-alberto-2025.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
+    tools: ['design', 'eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Alberto Ballesteros in large letters on a blue-green background with part of his face on the right side',
@@ -187,7 +188,7 @@ export default [
     clientURL: 'https://www.estherzecco.com',
     image: './src/assets/images/projects/proyecto-estherzecco.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'css', 'javascript'],
+    tools: ['design', 'eleventy', 'html', 'css', 'javascript'],
     translations: {
       en: {
         alt: 'Esther holding an acoustic guitar with the text Nuevo disco ya a la venta',
@@ -216,7 +217,7 @@ export default [
     clientURL: 'https://www.inesalba.es',
     image: './src/assets/images/projects/proyecto-inesalba.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'tailwind', 'javascript'],
+    tools: ['design', 'eleventy', 'html', 'tailwind', 'javascript'],
     translations: {
       en: {
         alt: '',
@@ -245,7 +246,7 @@ export default [
     clientURL: 'https://www.fundaciongoethe.org',
     image: './src/assets/images/projects/proyecto-fundaciongoethe.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
+    tools: ['design', 'eleventy', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'A black and white photo of a person crouching by water next to german text about the Fundación Goethe',
@@ -274,7 +275,7 @@ export default [
     clientURL: 'https://www.hno-marienplatz.de',
     image: './src/assets/images/projects/proyecto-hno-marienplatz.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
+    tools: ['design', 'eleventy', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'Text about the ENT clinic and a photo of the entrance door with six people in a circle',
@@ -303,7 +304,7 @@ export default [
     clientURL: 'https://www.ineliagestion.com',
     image: './src/assets/images/projects/proyecto-inelia.jpg',
     collaboration: '',
-    tools: ['eleventy', 'design', 'html', 'tailwind', 'alpine'],
+    tools: ['design', 'eleventy', 'html', 'tailwind', 'alpine'],
     translations: {
       en: {
         alt: 'Text about tax consultancy services next to a person on the phone smiling.',
@@ -332,7 +333,7 @@ export default [
     clientURL: 'https://www.reder162012.org',
     image: './src/assets/images/projects/proyecto-reder.jpg',
     collaboration: '',
-    tools: ['wordpress', 'php', 'design', 'html', 'tailwind'],
+    tools: ['design', 'wordpress', 'php', 'html', 'tailwind'],
     translations: {
       en: {
         alt: '',

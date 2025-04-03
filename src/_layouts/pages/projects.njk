@@ -45,7 +45,7 @@ mainClass: row-1
                 class="target"
                 style="position-anchor: --anchor-btn-{{ uniqueId }}-{{ loop.index }}"
               >
-                {{ tools[page.lang][tool] | markdownFormat | safe }}
+                {{ (project.translations[page.lang][tool] or tools[page.lang][tool]) | markdownFormat | safe }}
               </div>
               <button
                 popovertarget="target-popover-{{ uniqueId }}-{{ loop.index }}"
