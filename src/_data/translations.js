@@ -41,7 +41,8 @@ export default {
         page: 'Page',
         previous: 'Previous',
         next: 'Next'
-      }
+      },
+      codepen: 'See on Codepen'
     },
     webmentions: {
       formTitle: 'Have you published a response? Let me know where:',
@@ -112,7 +113,8 @@ export default {
         page: 'Seite',
         previous: 'Vorherige',
         next: 'Nächste'
-      }
+      },
+      codepen: 'Code auf Codepen'
     },
 
     webmentions: {
@@ -184,7 +186,8 @@ export default {
         page: 'Página',
         previous: 'Anterior',
         next: 'Siguiente'
-      }
+      },
+      codepen: 'Ver en Codepen'
     },
     webmentions: {
       formTitle: '¿Has publicado una respuesta? Dime dónde:',

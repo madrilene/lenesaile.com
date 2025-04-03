@@ -48,12 +48,6 @@ pre[class*='language-'] {
   opacity: 0.7;
 }
 
-.codepen {
-  /* padding: var(--space-sm); */
-  color: var(--color-bg);
-  border: 2px dashed var(--color-text);
-}
-
 .token.atrule {
   color: var(--color-code-pink);
 }
@@ -203,15 +197,6 @@ pre[class*='language-'] {
 
 .token.variable {
   color: var(--color-code-pink);
-}
-
-/* CodePen iframe */
-.codepen a {
-  --icon-size: 1.2em;
-
-  display: flex;
-  align-items: center;
-  gap: var(--space-2xs);
 }
 
 .prose .cp_embed_wrapper,

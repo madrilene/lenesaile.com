@@ -31,7 +31,6 @@ schema: BlogPosting
     {% if image %}
       {% image image, alt or "", credit, "eager", "feature" %}
     {% endif %}
-
     {{ content | safe }}
     {% include 'partials/edit-on.njk' %}
   </div>

@@ -10,6 +10,7 @@
   --tracking-s: -0.075ch;
   --tracking-wide: 0.04ch;
   --border-thickness: 0.15em;
+  --stroke: 1px solid var(--color-bg-accent);
 
   --gradient-rainbow: linear-gradient(90deg, #cf4662 10%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
   --gradient-conic: conic-gradient(

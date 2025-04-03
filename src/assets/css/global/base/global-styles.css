@@ -86,21 +86,11 @@ hr {
 }
 
 figcaption {
+  --flow-space: var(--space-s);
   margin-block-start: var(--space-s);
   font-size: var(--size-step-min-1);
   text-align: center;
   padding-block-end: var(--space-xs);
-}
-
-figcaption:after {
-  border-block: var(--stroke);
-  content: '';
-  display: block;
-  margin-block: var(--space-xs);
-  /* block-size: 1rem; */
-  inline-size: 50%;
-  margin-inline: auto;
-  opacity: 0.8;
 }
 
 a {

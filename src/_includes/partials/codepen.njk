@@ -1,0 +1,12 @@
+{% set user = user or "madrilene" %}
+{% set url = "https://codepen.io/" + user + "/pen/" + slug %}
+{% set image = "https://shots.codepen.io/" + user + "/pen/" + slug + "-1280.jpg" %}
+{% set alt = alt or "" %}
+
+<figure class="flow popout">
+  <img src="{{ image }}" alt="{{ alt }}" />
+  <figcaption class="repel">
+    {{ caption }}
+    <a class="text-step-min-1 indicator" href="{{ url }}">{{ translations[page.lang].blog.codepen }}</a>
+  </figcaption>
+</figure>

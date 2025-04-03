@@ -73,6 +73,11 @@ export default async function (eleventyConfig) {
         sizes: 'auto'
       },
       pictureAttributes: {}
+    },
+    cacheOptions: {
+      duration: '1d',
+      directory: '.cache',
+      removeUrlQueryParams: false
     }
   });
 
@@ -99,7 +104,6 @@ export default async function (eleventyConfig) {
 
   // --------------------- Shortcodes
   eleventyConfig.addPairedShortcode('aside', shortcodes.aside);
-  eleventyConfig.addPairedShortcode('codepen', shortcodes.codepen);
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('image', shortcodes.image);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);

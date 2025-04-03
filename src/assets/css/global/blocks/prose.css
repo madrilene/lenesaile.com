@@ -8,8 +8,7 @@
 .prose :is(pre, pre + *, figure, picture) {
   --flow-space: var(--space-m-l);
 }
-
-.prose :is(figure + *, picture + *) {
+.prose :is(figure + *, picture:not(:has(+ figcaption)) + *) {
   --flow-space: var(--space-xl);
 }
 

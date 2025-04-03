@@ -7,7 +7,6 @@ category: blogpost
 key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
-codepen: true
 ---
 
 Subgrids utiliza las pistas de rejilla de una rejilla predecesora para alinear sus elementos de rejilla. Por ejemplo, puede crear varias columnas en el elemento `<body>` y pasarlas "hacia abajo", sin importar la profundidad. Lo más importante aquí: El sistema de rejilla que se pasa hacia abajo **debe** estar en un predecesor. Subgrid busca en el árbol DOM el elemento más cercano que defina una plantilla de columna o fila (`grid-template-columns` o `grid-template-rows`) que _no_ esté marcado como subgrid.
@@ -119,9 +118,9 @@ Las líneas explícitas especifican que el encabezado y el pie de página deben 
 
 Sin un subgrid, los `landmarks` ahora se atascan en las pistas que tienen asignadas.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGMy", "result" %}
-Herencia de pistas de rejilla de un hermano - 1
-{% endcodepen %}
+{% set slug = "LYapGMy" %}
+{% set caption = "Herencia de pistas de rejilla de un hermano - 1" %}
+{% include "partials/codepen.njk" %}
 
 Podemos contrarrestar esto haciendo que ocupen todo el ancho de la columna:
 
@@ -154,9 +153,9 @@ Ya no son los propios landmarks los que se colocan en la cuadrícula, sino _sus 
 
 Ahora los hijos de los tres landmarks definen las dimensiones de la rejilla, pero es el elemento equivocado el que define la anchura: según `min-content`, la palabra más larga del elemento "heading" dentro de `<main>` define ahora las dimensiones de la primera zona de la rejilla.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
-Herencia de trazas de cuadrícula de un hermano- 2
-{% endcodepen %}
+{% set slug = "LYapGaL" %}
+{% set caption = "Herencia de trazas de cuadrícula de un hermano - 2" %}
+{% include "partials/codepen.njk" %}
 
 Los tres landmarks tienen sólo dos hijos, por lo que la tercera columna está vacía.
 
@@ -172,9 +171,9 @@ main > section {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/YzgywMY", "result" %}
-Herencia de trazas de cuadrícula de un hermano- 3
-{% endcodepen %}
+{% set slug = "YzgywMY" %}
+{% set caption = "Herencia de trazas de cuadrícula de un hermano - 3" %}
+{% include "partials/codepen.njk" %}
 
 **¡Casi!**
 
@@ -217,9 +216,9 @@ footer > p {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/RwdWrap", "result" %}
-Herencia de trazas de cuadrícula de un hermano- final
-{% endcodepen %}
+{% set slug = "RwdWrap" %}
+{% set caption = "Herencia de trazas de cuadrícula de un hermano - final" %}
+{% include "partials/codepen.njk" %}
 
 Ahora tenemos un layout en el que la rejilla está definida en el `<body>`, pero sólo está realmente implementada por los hijos del `<header>`.
 

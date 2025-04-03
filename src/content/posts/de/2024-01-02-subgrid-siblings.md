@@ -7,7 +7,6 @@ category: blogpost
 key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
-codepen: true
 ---
 
 Subgrids verwenden die Gitterspuren eines Vorgänger-Grids, um ihre Grid-Elemente auszurichten. Zum Beispiel kann man mehrere Spalten auf dem Element `<body>` erstellen und sie "nach unten" weitergeben, egal wie tief. Das Wichtigste dabei: Das Rastersystem, das nach unten weitergegeben wird, **muss** sich auf einem Vorgänger befinden. Subgrid sucht im DOM-Baum nach dem nächstgelegenen Element, das eine Spalten- oder Zeilenvorlage (`grid-template columns` oder `grid-template-rows`) definiert, die _nicht_ als Subgrid markiert ist.
@@ -119,9 +118,9 @@ Die expliziten Zeilen legen fest, dass die Kopf- und Fußzeile eine Höhe haben 
 
 Ohne Subgrid klemmen sich die `Landmarken` nun in den ihnen zugewiesenen Spuren ein.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGMy", "result" %}
-Vererbung von Gitterspuren von einem Geschwisterkind - 1
-{% endcodepen %}
+{% set slug = "LYapGMy" %}
+{% set caption = "Vererbung von Gitterspuren von einem Geschwisterkind - 1" %}
+{% include "partials/codepen.njk" %}
 
 Wir können dem entgegenwirken, indem wir sie die gesamte Spaltenbreite einnehmen lassen:
 
@@ -154,9 +153,9 @@ Es sind nicht mehr die landmarks selbst, die im Raster platziert werden, sondern
 
 Jetzt bestimmen die Kinder der drei landmarks die Dimensionen des Gitters, aber es ist das falsche Element, das die Breite definiert: laut "min-content" definiert das längste Wort des "Heading"-Elements innerhalb von `<main>` nun die Dimensionen des ersten Gitterbereichs.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
-Vererbung von Gitterspuren von einem Geschwisterkind - 2
-{% endcodepen %}
+{% set slug = "LYapGaL" %}
+{% set caption = "Vererbung von Gitterspuren von einem Geschwisterkind - 2" %}
+{% include "partials/codepen.njk" %}
 
 Alle drei landmarks haben nur zwei Kinder, so dass die dritte Spalte leer ist.
 
@@ -172,9 +171,9 @@ main > section {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/YzgywMY", "result" %}
-Vererbung von Gitterspuren von einem Geschwisterkind - 3
-{% endcodepen %}
+{% set slug = "YzgywMY" %}
+{% set caption = "Vererbung von Gitterspuren von einem Geschwisterkind - 3" %}
+{% include "partials/codepen.njk" %}
 
 **Fast!**
 
@@ -217,9 +216,9 @@ footer > p {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/RwdWrap", "result" %}
-Vererbung von Gitterspuren von einem Geschwisterkind - final
-{% endcodepen %}
+{% set slug = "RwdWrap" %}
+{% set caption = "Vererbung von Gitterspuren von einem Geschwisterkind - final" %}
+{% include "partials/codepen.njk" %}
 
 Jetzt haben wir ein Layout, in dem das Raster auf dem `<body>` definiert ist, aber nur von den Kindern des `<header>` wirklich implementiert wird.
 

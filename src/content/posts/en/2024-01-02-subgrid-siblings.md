@@ -7,7 +7,6 @@ category: blogpost
 key: 'subgrid-siblings'
 date: 2024-01-02 11:30:00
 lastEdit:
-codepen: true
 ---
 
 Subgrids use the grid tracks of an ancestor grid to align their grid items. For example, you can create a number of columns on the `<body>` element and pass them "down", no matter how deep. The gist here: the grid system that will be passed down **must** be on an ancestor. Subgrid searches up the DOM tree for the nearest element that defines a column or row template (`grid-template columns` or `grid-template-rows`) that is _not_ marked as a subgrid.
@@ -119,9 +118,9 @@ The explicit rows specify that the `<header>` and `<footer>` should have a heigh
 
 Without subgrid, the landmarks now jam themselves in the tracks given to them.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGMy", "result" %}
-Subgrid: Inheriting grid tracks from a sibling - first step
-{% endcodepen %}
+{% set slug = "LYapGMy" %}
+{% set caption = "Subgrid: Inheriting grid tracks from a sibling - first step" %}
+{% include "partials/codepen.njk" %}
 
 We can counteract this by having them take up the entire column width:
 
@@ -156,9 +155,9 @@ Now the children of the three landmarks determine the dimensions of the grid, bu
 
 All three landmarks have only two children, so the third column is empty.
 
-{% codepen "https://codepen.io/madrilene/pen/LYapGaL", "result" %}
-Subgrid: Inheriting grid tracks from a sibling - second step
-{% endcodepen %}
+{% set slug = "LYapGaL" %}
+{% set caption = "Subgrid: Inheriting grid tracks from a sibling - second step" %}
+{% include "partials/codepen.njk" %}
 
 Let us first free the children of the `<main>` element from the task of determining the grid dimensions. We want them to span the entire available width of the wrapper, which in our case only affects the H1, because everything in the `<section>` element should be aligned where the site title begins.
 
@@ -172,9 +171,9 @@ main > section {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/YzgywMY", "result" %}
-Subgrid: Inheriting grid tracks from a sibling - third step
-{% endcodepen %}
+{% set slug = "YzgywMY" %}
+{% set caption = "Subgrid: Inheriting grid tracks from a sibling - third step" %}
+{% include "partials/codepen.njk" %}
 
 **Almost!**
 
@@ -217,9 +216,9 @@ footer > p {
 }
 ```
 
-{% codepen "https://codepen.io/madrilene/pen/RwdWrap", "result" %}
-Subgrid: Inheriting grid tracks from a sibling - final step
-{% endcodepen %}
+{% set slug = "RwdWrap" %}
+{% set caption = "Subgrid: Inheriting grid tracks from a sibling - final step" %}
+{% include "partials/codepen.njk" %}
 
 Now we have a layout in which the grid is defined on the `<body>`, but is only really implemented by the children of the `<header>`.
 
