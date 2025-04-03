@@ -1,11 +1,6 @@
 const storageKey = 'theme-preference';
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const savedPreference = localStorage.getItem(storageKey) || 'auto';
-let switchSound;
-
-document.addEventListener('DOMContentLoaded', () => {
-  switchSound = new Audio('/assets/sounds/light-on.mp3');
-});
 
 const getEffectiveTheme = () => {
   return savedPreference === 'auto' ? (systemPrefersDark ? 'dark' : 'light') : savedPreference;
@@ -43,9 +38,5 @@ window.onload = () => {
     document.documentElement.setAttribute('data-theme', newTheme);
 
     switchButton.setAttribute('aria-pressed', selectedTheme === 'light');
-
-    if (switchSound) {
-      switchSound.play();
-    }
   });
 };
