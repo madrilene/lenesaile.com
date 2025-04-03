@@ -71,7 +71,12 @@
 <meta property="og:locale" content="{{ translations[page.lang].locale }}" />
 <meta property="article:author" content="{{ meta.author.name }}" />
 
-<!-- Twitter specific head data was removed in v2 -->
+<!-- alternate languages -->
+<link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}" />
+{% for link in page.url | locale_links %}
+  <link rel="alternate" hreflang="{{ link.lang }}" href="{{ meta.url }}{{ link.url }}" />
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ meta.url }}{{ page.url | locale_url('en') }}" />
 
 <!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
 {% for feedLink in meta.blog.feedLinks %}
@@ -79,7 +84,7 @@
     rel="alternate"
     type="{{ feedLink.type }}"
     title="{{ feedLink.title }}: {{ meta.siteName }}"
-    href="{{ feedLink.url }}"
+    href="/{{ page.lang }}{{ feedLink.url }}"
   />
 {% endfor %}
 

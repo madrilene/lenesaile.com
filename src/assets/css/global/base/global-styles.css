@@ -89,8 +89,11 @@ figcaption {
   --flow-space: var(--space-s);
   margin-block-start: var(--space-s);
   font-size: var(--size-step-min-1);
-  text-align: center;
   padding-block-end: var(--space-xs);
+}
+
+figcaption:not(.repel) {
+  text-align: center;
 }
 
 a {

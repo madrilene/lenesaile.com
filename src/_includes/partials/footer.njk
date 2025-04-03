@@ -23,7 +23,11 @@
 
       <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
         <!-- gets the first item from the feed loop set in meta -->
-        <a href="{{ meta.blog.feedLinks[0].url }}" rel="alternate" type="{{ meta.blog.feedLinks[0].type }}">
+        <a
+          href="/{{ page.lang }}{{ meta.blog.feedLinks[0].url }}"
+          rel="alternate"
+          type="{{ meta.blog.feedLinks[0].type }}"
+        >
           <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
           {% svg "misc/rss" %}
         </a>
