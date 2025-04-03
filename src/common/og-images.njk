@@ -1,14 +1,16 @@
 ---
-fontDisplay: "'Red Hat Display', Ubuntu" # needed created in local development, font must be installed on your system.
+fontDisplay: "'Outfit', Ubuntu" # needed created in local development, font must be installed on your system.
 fontBody: "'Atkinson Hyperlegible', Ubuntu" # needed created in local development, font must be installed on your system.
+fontDisplayWidth: 700
+fontBodyWidth: 400
 background: '#FBBE25'
 text: '#161616'
-siteUrl: 'eleventy-excellent.netlify.app'
+siteUrl: 'lenesaile.com'
 pagination:
-  data: collections.allPosts
+  data: collections.posts
   size: 1
   alias: post
-permalink: '/assets/og-images/{{ post.data.title | slugify }}-preview.svg'
+permalink: '/assets/og-images/{{ post.data.lang }}-{{ post.data.title | slugify }}-preview.svg'
 eleventyExcludeFromCollections: true
 ---
 
@@ -44,7 +46,7 @@ eleventyExcludeFromCollections: true
   <text
     font-family="{{ fontBody }}, sans-serif"
     font-size="22"
-    font-weight="500"
+    font-weight="{{ fontBodyWidth }}"
     fill="{{ text }}"
     letter-spacing="-1"
   >
@@ -58,7 +60,7 @@ eleventyExcludeFromCollections: true
     id="text"
     font-family="{{ fontDisplay }}, sans-serif"
     font-size="80"
-    font-weight="900"
+    font-weight="{{ fontDisplayWidth }}"
     fill="{{ text }}"
     letter-spacing="-3"
   >
@@ -71,7 +73,7 @@ eleventyExcludeFromCollections: true
   <text
     font-family="{{ fontBody }}, sans-serif"
     font-size="22"
-    font-weight="500"
+    font-weight="{{ fontBodyWidth }}"
     fill="{{ text }}"
     letter-spacing="-0.5"
   >
@@ -83,7 +85,7 @@ eleventyExcludeFromCollections: true
   <text
     font-family="{{ fontDisplay }}, sans-serif"
     font-size="18"
-    font-weight="950"
+    font-weight="{{ fontDisplayWidth }}"
     fill="{{ text }}"
     letter-spacing="-0.5"
   >
