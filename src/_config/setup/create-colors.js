@@ -51,7 +51,7 @@ const neutralSteps = [
   {label: '600', lightness: 0.4, chromaFactor: 0.35},
   {label: '700', lightness: 0.35, chromaFactor: 0.3},
   {label: '800', lightness: 0.3, chromaFactor: 0.27},
-  {label: '900', lightness: 0.2, chromaFactor: 0.25}
+  {label: '900', lightness: 0.24, chromaFactor: 0.25}
 ];
 
 const colorTokens = {

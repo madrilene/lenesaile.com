@@ -66,6 +66,12 @@
   --button-color: color-mix(in oklab, var(--color-accent) 5%, var(--color-text));
 }
 
+.button[data-button-variant='discreet'] {
+  --button-bg: var(--color-bg);
+  --button-color: var(--color-text);
+  --button-border-color: var(--color-mid);
+}
+
 [data-color='bright-sun'] .button[data-button-variant='theme'] {
   --button-color: var(--color-dark);
 }

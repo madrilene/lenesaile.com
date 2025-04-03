@@ -67,6 +67,7 @@ export default {
     },
     theme: {
       title: 'Change theme',
+      current: 'Current theme: ',
       light: 'light',
       dark: 'dark'
     }
@@ -139,7 +140,8 @@ export default {
       lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
     },
     theme: {
-      title: 'Thema ändern',
+      title: 'Thema wechseln',
+      current: 'Aktuelles Thema: ',
       light: 'hell',
       dark: 'dunkel'
     }
@@ -211,7 +213,8 @@ export default {
       lead: '¡Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesto a charlar.'
     },
     theme: {
-      title: 'Cambiar tema',
+      title: 'Cambiar tema ',
+      current: 'Tema actual: ',
       light: 'claro',
       dark: 'oscuro'
     }

@@ -1,4 +1,4 @@
-<footer class="site-footer {{ footerClass }} mt-l-xl p-s-m">
+<footer class="site-footer {{ footerClass }} p-s-m">
   <div class="wrapper">
     <div class="cluster gutter-xs">
       <nav class="cluster text-step-min-1" aria-label="{{ meta.navigation.ariaBottom }}">
@@ -31,7 +31,7 @@
         {% for key, value in personal.platforms %}
           {% if value != "" %}
             <!-- regular platforms -->
-            <a href="{{ value }}" rel="me">
+            <a class="no-indicator" href="{{ value }}" rel="me">
               <span class="visually-hidden">{{ key | capitalize }}</span>
               {% svg 'platform/' + key %}
             </a>

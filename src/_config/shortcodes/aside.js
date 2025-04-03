@@ -5,5 +5,5 @@ export const aside = children => {
     throw new Error('You must provide a non-empty string for an aside.');
   }
   const content = markdownLib.renderInline(children);
-  return `<aside>${content}</aside>`;
+  return `<aside class="note">${content}</aside>`;
 };

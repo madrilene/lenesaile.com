@@ -3,8 +3,12 @@
   line-height: var(--leading-fine);
 }
 
-.post :is(h2, h3) {
+.post h2 {
   font-size: var(--size-step-2);
+}
+
+.post h3 {
+  font-size: var(--size-step-1);
 }
 
 /* make featured image alwyays 16/9 */
@@ -33,4 +37,54 @@
 
 .post .meta {
   font-size: var(--size-step-min-1);
+}
+
+/* note and toc */
+
+.post .details summary {
+  font-size: var(--size-step-0);
+}
+
+.post :is(.note, .table-of-contents) {
+  border: var(--stroke);
+  border-radius: var(--border-radius-medium);
+  padding-inline: var(--space-xl);
+  padding-block: var(--space-s-m);
+  position: relative;
+}
+
+.post :is(.note, .table-of-contents):before {
+  --size: var(--space-2xl);
+  content: '';
+  border-radius: 100%;
+  display: flex;
+  font-size: var(--size-step-1);
+  block-size: var(--size);
+  inline-size: var(--size);
+  inset-inline-start: calc(var(--size) / -2 - var(--border-thickness) / 2);
+  line-height: 1;
+  position: absolute;
+  inset-block-start: var(--space-l);
+  background-color: var(--color-bg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+}
+
+.post .note:before {
+  background-image: url('/assets/images/template/info.svg');
+}
+
+.post .table-of-contents:before {
+  background-image: url('/assets/images/template/cursor.svg');
+}
+
+.post .toc-list {
+  line-height: var(--leading-loose);
+}
+
+.post .toc-list .toc-list {
+  list-style: none;
+  opacity: 0.7;
+  padding-inline-start: 0;
 }

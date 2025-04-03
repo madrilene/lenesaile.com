@@ -6,15 +6,10 @@
     class="language-nav-button icon-center p-xs relative"
   >
     {% svg "misc/globe" %}
-    <span class="sr-only">{{ translations[page.lang].theme.title }}</span>
+    <span class="visually-hidden">{{ translations[page.lang].a11y.navLangAria }}</span>
   </button>
 
-  <ul
-    id="languagenav"
-    class="language-items"
-    role="list"
-    aria-label="{{ meta[page.lang].ariaLabels.optionsMenu }}"
-  >
+  <ul id="languagenav" class="language-items" role="list">
     {% for lang, details in translations %}
       {%
         set

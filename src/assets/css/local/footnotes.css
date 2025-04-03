@@ -12,6 +12,9 @@
 .footnote-ref a {
   text-decoration: none;
   padding: 0.3ch;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  font-weight: var(--font-bold);
 }
 
 .footnote-backref {

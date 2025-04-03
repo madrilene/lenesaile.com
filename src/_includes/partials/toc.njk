@@ -1,9 +1,11 @@
-<a href="#toc-skipped" id="skip-toc" class="visually-hidden">{{
-  meta[page.lang].skipToc
-}}</a>
+<aside class="details">
+  <details>
+    <summary>{{ translations[page.lang].a11y.toc }}</summary>
 
-<h2 id="table-of-contents">{{ meta[page.lang].toc }}</h2>
+    {:toc}
+  </details>
+</aside>
 
-{:toc}
-
-<div id="toc-skipped"></div>
+{% css "local" %}
+  {% include "css/details.css" %}
+{% endcss %}

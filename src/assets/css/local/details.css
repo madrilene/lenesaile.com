@@ -28,25 +28,27 @@ is-land:not(:defined) .details .control {
 
 .details summary {
   display: flex;
-  align-items: baseline;
-  line-height: 1.2;
+  align-items: center;
+  line-height: var(--leading-fine);
   gap: 0 1ch;
   cursor: pointer;
   list-style: none;
   font-weight: var(--font-bold);
   font-size: var(--size-step-1);
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
 
 .details summary:hover,
 .details summary:focus-visible,
 .details[open] > summary {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .details summary::before {
   content: '+';
   display: block;
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-family: var(--font-mono);
   font-size: var(--size-step-0);
   font-weight: var(--font-regular);

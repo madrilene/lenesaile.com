@@ -10,7 +10,9 @@
   --tracking-s: -0.075ch;
   --tracking-wide: 0.04ch;
   --border-thickness: 0.15em;
-  --stroke: 1px solid var(--color-bg-accent);
+  --stroke: var(--border-thickness) solid var(--color-mid);
+  --stroke-light: var(--border-thickness) solid var(--color-bg-accent);
+  --stroke-thin: 1px solid var(--color-mid);
 
   --gradient-rainbow: linear-gradient(90deg, #cf4662 10%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
   --gradient-conic: conic-gradient(
@@ -33,6 +35,7 @@
 
   --color-light: var(--color-gray-100);
   --color-dark: var(--color-gray-800);
+  --color-mid: var(--color-gray-400);
 
   --color-primary: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
   --color-secondary: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));

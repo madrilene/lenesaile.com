@@ -47,8 +47,8 @@
     },
     {
       "name": "Step code",
-      "min": 16,
-      "max": 18
+      "min": 15,
+      "max": 22
     }
   ]
 }

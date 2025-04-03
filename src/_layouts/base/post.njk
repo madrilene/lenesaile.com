@@ -4,48 +4,46 @@ theme: bright-sun
 schema: BlogPosting
 ---
 
-<div class="region" style="--region-space-top: var(--space-xl-2xl)">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+<div class="full region wrapper flow prose region-space-2xl">
+  <h1 class="gradient-text">{{ title }}</h1>
 
-    <dl class="cluster text-step-min-1">
-      {%- if draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %}
+  <dl class="cluster text-step-min-1">
+    {%- if draft -%}<span class="text-step-min-1 text-cinnabar-500 font-regular">[draft]</span>{%- endif %}
+    <div>
+      {% set definedDate = date %}
+      <dt>{{ translations[page.lang].blog.published | capitalize }}</dt>
+      <dd>{% include "partials/date.njk" %}</dd>
+    </div>
+    {% if lastEdit %}
       <div>
-        {% set definedDate = date %}
-        <dt>{{ translations[page.lang].blog.published | capitalize }}</dt>
+        {% set definedDate = lastEdit %}
+        <dt>{{ translations[page.lang].blog.edited | capitalize }}</dt>
         <dd>{% include "partials/date.njk" %}</dd>
       </div>
-      {% if lastEdit %}
-        <div>
-          {% set definedDate = lastEdit %}
-          <dt>{{ translations[page.lang].blog.edited | capitalize }}</dt>
-          <dd>{% include "partials/date.njk" %}</dd>
-        </div>
-      {% endif %}
-      <div>
-        <dt>{{ translations[page.lang].blog.reading | capitalize }}</dt>
-        <dd>{{ content | readingTime }} {{ translations[page.lang].blog.unit }}</dd>
-      </div>
-    </dl>
-
-    {% if image %}
-      {% image image, alt or "", credit, "eager", "feature" %}
     {% endif %}
-    {{ content | safe }}
-    {% include 'partials/edit-on.njk' %}
-  </div>
+    <div>
+      <dt>{{ translations[page.lang].blog.reading | capitalize }}</dt>
+      <dd>{{ content | readingTime }} {{ translations[page.lang].blog.unit }}</dd>
+    </div>
+  </dl>
 
-  <!--  h-card infos: https://indieweb.org/authorship -->
-  <div hidden class="h-entry">
-    <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
-    <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
-    <img
-      eleventy:ignore
-      class="u-author h-card"
-      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
-      alt="{{ meta.author.name }}"
-    />
-  </div>
+  {% if image %}
+    {% image image, alt or "", credit, "eager", "feature" %}
+  {% endif %}
+  {{ content | safe }}
+  {% include 'partials/edit-on.njk' %}
+</div>
+
+<!--  h-card infos: https://indieweb.org/authorship -->
+<div hidden class="h-entry">
+  <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+  <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+  <img
+    eleventy:ignore
+    class="u-author h-card"
+    src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+    alt="{{ meta.author.name }}"
+  />
 </div>
 
 {% include 'partials/cta.njk' %}

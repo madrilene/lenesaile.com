@@ -1,17 +1,17 @@
 :root {
-  --color-code-orange: hsl(30, 70%, 60%);
-  --color-code-blue: var(--color-secondary);
-  --color-code-indigo: hsl(260, 48%, 56%);
-  --color-code-violet: hsl(314, 70%, 60%);
-  --color-code-pink: hsl(350, 70%, 60%);
-  --color-code-gray: hsl(0, 0%, 58%);
-  --color-code-bg: color-mix(in oklab, var(--color-bg) 92%, black);
+  --color-code-orange: light-dark(hsl(35, 100%, 35%), hsl(35, 70%, 60%));
+  --color-code-blue: light-dark(var(--color-royal-blue), var(--color-royal-blue-400));
+  --color-code-pink: light-dark(var(--color-mandy-600), var(--color-mandy-400));
+  --color-code-red: light-dark(var(--color-cinnamon-600), var(--color-cinnamon-400));
+  --color-code-gray: var(--color-mid);
+  --color-code-gray-light: var(--color-text-accent);
+  --color-code-bg: light-dark(var(--color-gray-200), var(--color-gray-900));
 }
 
 code,
 pre {
   font-family: var(--font-mono);
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-code);
   background-color: var(--color-code-bg);
   border-radius: var(--border-radius-medium);
 }
@@ -25,14 +25,12 @@ pre[class*='language-'] {
   hyphens: none;
 }
 
-/* Specific Styles for <pre> Elements */
 pre {
   grid-column: popout !important;
   overflow-x: auto;
   padding: var(--space-s) calc(var(--space-l) + 0.2em);
 }
 
-/* Style Adjustments for <code> within different contexts */
 :where(:not(pre)) > code {
   position: relative;
   top: -0.05em;
@@ -48,173 +46,57 @@ pre[class*='language-'] {
   opacity: 0.7;
 }
 
-.token.atrule {
+.token.atrule,
+.token.keyword,
+.token.tag,
+.token.selector,
+.token.symbol,
+.token.variable,
+.token.unit,
+.token.boolean,
+.token.constant,
+.token.important,
+.token.entity,
+.token.function,
+.token.id,
+.token.url {
   color: var(--color-code-pink);
 }
 
-.token.attr-name {
-  color: var(--color-code-orange);
-}
-
-.token.attr-value {
-  color: var(--color-text-accent);
-}
-
-.token.attribute {
-  color: var(--color-code-blue);
-}
-
-.token.boolean {
-  color: var(--color-code-pink);
-}
-
-.token.builtin {
-  color: var(--color-code-orange);
-}
-
+.token.attr-name,
+.token.property,
+.token.regex,
+.token.hexcode,
+.token.class,
+.token.class-name,
+.token.color,
+.token.prolog,
+.token.doctype,
+.token.inserted,
+.token.builtin,
+.token.char,
 .token.cdata {
   color: var(--color-code-orange);
 }
 
-.token.char {
-  color: var(--color-code-orange);
-}
-
-.token.class {
-  color: var(--color-code-orange);
-}
-
-.token.class-name {
-  color: var(--color-code-orange);
-}
-
-.token.color {
-  color: var(--color-code-orange);
-}
-
-.token.comment {
-  color: var(--color-code-gray);
-}
-
-.token.constant {
-  color: var(--color-code-pink);
-}
-
-.token.deleted {
-  color: var(--color-code-pink);
-}
-
-.token.doctype {
-  color: var(--color-code-orange);
-}
-
-.token.entity {
-  color: var(--color-code-pink);
-}
-
-.token.function {
-  color: var(--color-code-pink);
-}
-
-.token.hexcode {
-  color: var(--color-code-orange);
-}
-
-.token.id {
-  color: var(--color-code-pink);
-  font-weight: var(--font-bold);
-}
-
-.token.important {
-  color: var(--color-code-pink);
-  font-weight: var(--font-bold);
-}
-
-.token.inserted {
-  color: var(--color-code-orange);
-}
-
-.token.keyword {
-  color: var(--color-code-pink);
-  font-style: italic;
-}
-
+.token.attr-value,
+.token.string,
 .token.number {
-  color: var(--color-text-accent);
+  color: var(--color-code-gray-light);
 }
 
-.token.operator {
-  color: var(--color-code-gray);
-}
-
-.token.prolog {
-  color: var(--color-code-orange);
-}
-
-.token.property {
-  color: var(--color-code-orange);
-}
-
-.token.pseudo-class {
+.token.pseudo-class,
+.token.pseudo-element,
+.token.attribute {
   color: var(--color-code-blue);
 }
 
-.token.pseudo-element {
-  color: var(--color-code-blue);
-}
-
+.token.comment,
+.token.operator,
 .token.punctuation {
   color: var(--color-code-gray);
 }
 
-.token.regex {
-  color: var(--color-code-orange);
-}
-
-.token.selector {
-  color: var(--color-code-pink);
-}
-
-.token.string {
-  color: var(--color-text-accent);
-}
-
-.token.symbol {
-  color: var(--color-code-pink);
-}
-
-.token.tag {
-  color: var(--color-code-pink);
-}
-
-.token.unit {
-  color: var(--color-code-pink);
-}
-
-.token.url {
-  color: var(--color-code-violet);
-}
-
-.token.variable {
-  color: var(--color-code-pink);
-}
-
-.prose .cp_embed_wrapper,
-.prose .cp_embed_wrapper + script + *:not(h2) {
-  --flow-space: var(--space-l);
-}
-
-.cp_embed_wrapper {
-  grid-column: popout;
-  position: relative;
-  overflow: auto;
-  display: grid;
-  place-items: center;
-  grid-template-areas: 'container';
-  resize: horizontal;
-}
-
-.cp_embed_wrapper iframe {
-  grid-area: container;
-  width: 100%;
+.token.deleted {
+  color: var(--color-code-red);
 }
