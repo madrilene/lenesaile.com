@@ -19,7 +19,7 @@ export default {
       audioProgress: 'Audio progress',
       toc: 'Table of contents',
       skipToc: 'Skip table of contents',
-      ogDefault_alt: '',
+      ogDefault_alt: 'I make highly optimized custom websites.',
       popover: 'About this tool',
       tools: 'Tools',
       collaborations: 'Collaboration'
@@ -92,7 +92,7 @@ export default {
       audioProgress: 'Audio-Fortschritt',
       toc: 'Inhaltsverzeichnis',
       skipToc: 'Inhaltsverzeichnis überspringen',
-      ogDefault_alt: '',
+      ogDefault_alt: 'Ich entwickle hoch-optimierte Websites nach Maß.',
       popover: 'Über dieses Tool',
       tools: 'Werkzeuge',
       collaborations: 'Zusammenarbeit'
@@ -166,7 +166,7 @@ export default {
       audioProgress: 'Progreso del audio',
       toc: 'índice de contenidos',
       skipToc: 'Saltar el índice de contenidos',
-      ogDefault_alt: '',
+      ogDefault_alt: 'Hago páginas web a medida altamente optimizadas.',
       popover: 'Acerca de esta herramienta',
       tools: 'Herramientas',
       collaborations: 'Colaboraciones'
