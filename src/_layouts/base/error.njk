@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+<div class="full wrapper region flow prose">
+  {% svg "mascot/error" %}
+  <h1 class="gradient-text">{{ title }}</h1>
+  {{ content | safe }}
+</div>
+
+{%- css "local" -%}
+  {%- include 'css/error.css' -%}
+{%- endcss -%}

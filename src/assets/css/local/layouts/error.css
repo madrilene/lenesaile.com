@@ -1,0 +1,8 @@
+.error .prose svg {
+  block-size: 100%;
+  inline-size: auto;
+  height: auto;
+  place-self: center;
+  width: clamp(10rem, 33vw, 30rem);
+  z-index: 1;
+}
