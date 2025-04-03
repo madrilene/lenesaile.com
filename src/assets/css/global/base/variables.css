@@ -15,72 +15,122 @@
   --stroke-thin: 1px solid var(--color-mid);
 
   --gradient-rainbow: linear-gradient(90deg, #cf4662 10%, #fbbe25 30%, #62c95c 50%, #08bccb 75%, #a977d5 90%);
-  --gradient-conic: conic-gradient(
-    light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 12%,
-    light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued)) 0 33%,
-    light-dark(var(--color-mandy), var(--color-mandy-subdued)) 0 55%,
-    light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued)) 0 70%,
-    light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 100%
-  );
-
-  --gradient-fade-color: linear-gradient(
-    5deg,
-    light-dark(
-        color-mix(in oklab, var(--color-accent) 90%, var(--color-bg)),
-        color-mix(in oklab, var(--color-accent) 80%, var(--color-bg))
-      )
-      0,
-    var(--color-accent) 71%
-  );
 
   --color-light: var(--color-gray-100);
   --color-dark: var(--color-gray-800);
   --color-mid: var(--color-gray-400);
-
-  --color-primary: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
-  --color-secondary: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
-  --color-tertiary: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
-
-  --color-text: light-dark(var(--color-gray-800), var(--color-gray-100));
-  --color-bg: light-dark(var(--color-gray-100), var(--color-gray-800));
-  --color-text-accent: light-dark(var(--color-gray-700), var(--color-gray-300));
-  --color-bg-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
-  --color-bg-accent-2: light-dark(var(--color-gray-400), var(--color-gray-600));
-  --color-mark: light-dark(var(--color-bright-sun), var(--color-royal-blue-subdued));
 }
 
-[data-color='cinnabar'] {
-  --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
-  --color-active: light-dark(
-    color-mix(in oklab, var(--color-cinnabar) 90%, var(--color-bg)),
-    color-mix(in oklab, var(--color-cinnabar-subdued) 90%, var(--color-text))
+/* fallbacks: if light-dark is not supported */
+:root,
+[data-theme='light'] {
+  --color-text: var(--color-gray-800);
+  --color-bg: var(--color-gray-100);
+  --color-text-accent: var(--color-gray-700);
+  --color-bg-accent: var(--color-gray-200);
+  --color-bg-accent-2: var(--color-gray-400);
+  --color-accent: var(--color-cinnabar);
+  --color-mark: var(--color-bright-sun);
+
+  --gradient-conic: conic-gradient(
+    var(--color-cinnabar) 0 12%,
+    var(--color-royal-blue) 0 33%,
+    var(--color-mandy) 0 55%,
+    var(--color-bright-sun) 0 70%,
+    var(--color-cinnabar) 0 100%
+  );
+
+  --gradient-fade-color: linear-gradient(
+    5deg,
+    color-mix(in oklab, var(--color-accent) 90%, var(--color-bg)) 0,
+    var(--color-accent) 71%
   );
 }
 
-[data-color='royal-blue'] {
-  --color-accent: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
-  --color-active: light-dark(
-    color-mix(in oklab, var(--color-royal-blue) 90%, var(--color-bg)),
-    color-mix(in oklab, var(--color-royal-blue-subdued) 90%, var(--color-text))
-  );
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: var(--color-gray-800);
+    --color-bg: var(--color-gray-100);
+    --color-text-accent: var(--color-gray-700);
+    --color-bg-accent: var(--color-gray-200);
+    --color-bg-accent-2: var(--color-gray-400);
+    --color-accent: var(--color-cinnabar);
+    --color-mark: var(--color-royal-blue-subdued);
+  }
 }
-
-[data-color='mandy'] {
-  --color-accent: light-dark(var(--color-mandy), var(--color-mandy-subdued));
-  --color-active: light-dark(
-    color-mix(in oklab, var(--color-mandy) 90%, var(--color-bg)),
-    color-mix(in oklab, var(--color-mandy-subdued) 90%, var(--color-text))
-  );
+[data-theme='dark'] {
+  --color-text: var(--color-gray-100);
+  --color-bg: var(--color-gray-800);
+  --color-text-accent: var(--color-gray-300);
+  --color-bg-accent: var(--color-gray-700);
+  --color-bg-accent-2: var(--color-gray-600);
+  --color-accent: var(--color-cinnabar-subdued);
+  --color-mark: var(--color-royal-blue-subdued);
 }
+/* fallbacks end */
 
-[data-color='bright-sun'] {
-  --color-accent: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
-  --color-active: light-dark(
-    color-mix(in oklab, var(--color-bright-sun) 90%, var(--color-bg)),
-    color-mix(in oklab, var(--color-bright-sun-subdued) 90%, var(--color-text))
-  );
-}
+@supports (color: light-dark(white, black)) {
+  :root {
+    --color-text: light-dark(var(--color-gray-800), var(--color-gray-100));
+    --color-bg: light-dark(var(--color-gray-100), var(--color-gray-800));
+    --color-text-accent: light-dark(var(--color-gray-700), var(--color-gray-300));
+    --color-bg-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
+    --color-bg-accent-2: light-dark(var(--color-gray-400), var(--color-gray-600));
+    --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
+    --color-mark: light-dark(var(--color-bright-sun), var(--color-royal-blue-subdued));
 
-[data-color='gray'] {
-  --color-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
+    --gradient-conic: conic-gradient(
+      light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 12%,
+      light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued)) 0 33%,
+      light-dark(var(--color-mandy), var(--color-mandy-subdued)) 0 55%,
+      light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued)) 0 70%,
+      light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued)) 0 100%
+    );
+
+    --gradient-fade-color: linear-gradient(
+      5deg,
+      light-dark(
+          color-mix(in oklab, var(--color-accent) 90%, var(--color-bg)),
+          color-mix(in oklab, var(--color-accent) 80%, var(--color-bg))
+        )
+        0,
+      var(--color-accent) 71%
+    );
+  }
+
+  [data-color='cinnabar'] {
+    --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
+    --color-active: light-dark(
+      color-mix(in oklab, var(--color-cinnabar) 90%, var(--color-bg)),
+      color-mix(in oklab, var(--color-cinnabar-subdued) 90%, var(--color-text))
+    );
+  }
+
+  [data-color='royal-blue'] {
+    --color-accent: light-dark(var(--color-royal-blue), var(--color-royal-blue-subdued));
+    --color-active: light-dark(
+      color-mix(in oklab, var(--color-royal-blue) 90%, var(--color-bg)),
+      color-mix(in oklab, var(--color-royal-blue-subdued) 90%, var(--color-text))
+    );
+  }
+
+  [data-color='mandy'] {
+    --color-accent: light-dark(var(--color-mandy), var(--color-mandy-subdued));
+    --color-active: light-dark(
+      color-mix(in oklab, var(--color-mandy) 90%, var(--color-bg)),
+      color-mix(in oklab, var(--color-mandy-subdued) 90%, var(--color-text))
+    );
+  }
+
+  [data-color='bright-sun'] {
+    --color-accent: light-dark(var(--color-bright-sun), var(--color-bright-sun-subdued));
+    --color-active: light-dark(
+      color-mix(in oklab, var(--color-bright-sun) 90%, var(--color-bg)),
+      color-mix(in oklab, var(--color-bright-sun-subdued) 90%, var(--color-text))
+    );
+  }
+
+  [data-color='gray'] {
+    --color-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
+  }
 }

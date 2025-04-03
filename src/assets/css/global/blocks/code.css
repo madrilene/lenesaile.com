@@ -1,11 +1,21 @@
 :root {
-  --color-code-orange: light-dark(hsl(35, 100%, 35%), hsl(35, 70%, 60%));
-  --color-code-blue: light-dark(var(--color-royal-blue), var(--color-royal-blue-400));
-  --color-code-pink: light-dark(var(--color-mandy-600), var(--color-mandy-400));
-  --color-code-red: light-dark(var(--color-cinnamon-600), var(--color-cinnamon-400));
+  --color-code-orange: hsl(35, 100%, 50%);
+  --color-code-blue: var(--color-royal-blue);
+  --color-code-pink: var(--color-mandy);
+  --color-code-red: var(--color-cinnamon);
   --color-code-gray: var(--color-mid);
   --color-code-gray-light: var(--color-text-accent);
-  --color-code-bg: light-dark(var(--color-gray-200), var(--color-gray-900));
+  --color-code-bg: var(--color-gray-200);
+}
+
+@supports (color: light-dark(white, black)) {
+  :root {
+    --color-code-orange: light-dark(hsl(35, 100%, 35%), hsl(35, 70%, 60%));
+    --color-code-blue: light-dark(var(--color-royal-blue), var(--color-royal-blue-400));
+    --color-code-pink: light-dark(var(--color-mandy-600), var(--color-mandy-400));
+    --color-code-red: light-dark(var(--color-cinnamon-600), var(--color-cinnamon-400));
+    --color-code-bg: light-dark(var(--color-gray-200), var(--color-gray-900));
+  }
 }
 
 code,

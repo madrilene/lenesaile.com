@@ -46,7 +46,7 @@ h3 {
 
 blockquote {
   padding: var(--space-m-l);
-  border-inline-start: 0.5rem solid var(--color-primary);
+  border-inline-start: 0.5rem solid var(--color-accent);
   font-size: var(--size-step-1);
 }
 
@@ -62,7 +62,7 @@ blockquote :last-child {
 
 input,
 textarea {
-  caret-color: var(--color-primary);
+  caret-color: var(--color-accent);
 }
 
 svg {

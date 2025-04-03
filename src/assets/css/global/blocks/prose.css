@@ -46,11 +46,6 @@
   text-decoration: none;
 }
 
-/* .prose mark {
-  background-color: var(--color-tertiary);
-  color: var(--color-dark);
-} */
-
 /* block space only for "regular lists" and sublists */
 .prose :is(ul, ol):not([class]) li + li,
 .prose :is(ul, ol):not([class]) li > :is(ol, ul) {
@@ -64,12 +59,12 @@
 
 /* marker only for "regular lists" */
 .prose :is(ul:not([class]):not([role='list'])) li::marker {
-  color: var(--color-primary);
+  color: var(--color-accent);
   content: '– ';
 }
 
 .prose ol li::marker {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .prose img {

@@ -123,7 +123,7 @@
 
 .mainnav [aria-current='page'],
 .mainnav [data-state='active'] {
-  --nav-item-background: var(--color-primary);
+  --nav-item-background: var(--color-accent);
   --nav-item-text-color: var(--color-light);
   --nav-item-decoration-color: transparent;
 }
