@@ -3,8 +3,8 @@ export default {
     eleventy:
       'Eleventy is a wonderful static site generator. I do most of my projects with it, using my starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
     design: 'I also did the design for this project.',
-    html: 'No website without HTML! What else is there to say?',
-    css: 'Styling using with my favrotite programming language CSS, without frameworks.',
+    html: 'No website without HTML!',
+    css: 'My favrotite programming language, CSS! No frameworks.',
     javascript:
       'Custom minimal JavaScript without frameworks - for progressive Enhacment, accssibility and a dash of joy.',
     alpine:
@@ -19,8 +19,8 @@ export default {
     eleventy:
       'Eleventy ist ein perfekter Generator für statische Websites. Ich mache die meisten meiner Projekte damit und verwende dafür meinen Starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
     design: 'Bei diesem Projekt habe ich mich auch das Design gemacht.',
-    html: 'Keine Webseite ohne HTML! Was gibt es sonst zu sagen?',
-    css: 'Stile mit meinem Lieblingsprogrammiersprache CSS, ohne Frameworks.',
+    html: 'Keine Webseite ohne HTML!',
+    css: 'Meine Lieblingsprogrammiersprache: CSS! Keine Frameworks.',
     javascript:
       'Benutzerdefiniertes minimales JavaScript ohne Frameworks - für progressive Verbesserung, Barrierefreiheit und eine Prise Freude.',
     alpine:
@@ -35,8 +35,8 @@ export default {
     eleventy:
       'Eleventy es un maravilloso generador de sitios estáticos. Hago la mayoría de mis proyectos con él, usando mi starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
     design: 'También hice el diseño de este proyecto.',
-    html: '¡No hay página web sin HTML! ¿Qué más hay que decir?',
-    css: 'Estilos con mi lenguaje de programación favorito CSS, sin frameworks.',
+    html: 'No hay página web sin HTML!',
+    css: 'Mi lenguaje de programación favorito: CSS! Sin frameworks.',
     javascript:
       'JavaScript personalizado mínimo sin frameworks - para mejoras progresivas, accesibilidad y una pizca de alegría.',
     alpine:
