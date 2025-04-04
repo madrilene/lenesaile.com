@@ -23,7 +23,30 @@ pre {
   font-family: var(--font-mono);
   font-size: var(--size-step-code);
   background-color: var(--color-code-bg);
-  border-radius: var(--border-radius-medium);
+}
+
+code {
+  border-radius: var(--border-radius-small);
+}
+
+pre {
+  grid-column: full;
+  overflow-x: auto;
+  padding: var(--space-l) calc(var(--gap));
+}
+
+@media screen(md) {
+  pre {
+    grid-column: popout;
+    border-radius: var(--border-radius-medium);
+    padding: var(--space-m) calc(var(--space-l) + 0.2em);
+  }
+}
+
+:where(:not(pre)) > code {
+  position: relative;
+  top: -0.05em;
+  padding: 0.1em 0.4em;
 }
 
 code[class*='language-'],
@@ -33,18 +56,6 @@ pre[class*='language-'] {
   word-break: normal;
   word-wrap: normal;
   hyphens: none;
-}
-
-pre {
-  grid-column: popout !important;
-  overflow-x: auto;
-  padding: var(--space-s) calc(var(--space-l) + 0.2em);
-}
-
-:where(:not(pre)) > code {
-  position: relative;
-  top: -0.05em;
-  padding: 0.1em 0.4em;
 }
 
 pre[class*='language-'] {
