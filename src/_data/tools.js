@@ -6,7 +6,7 @@ export default {
     html: 'No website without HTML!',
     css: 'My favorite programming language, CSS! No frameworks.',
     javascript:
-      'Custom minimal JavaScript without frameworks - for progressive Enhacment, accssibility and a dash of joy.',
+      'Custom minimal JavaScript without frameworks - for progressive enhancement, accssibility and a dash of joy.',
     alpine:
       'Alpine.js is a very lightweight JavaScript framework, that provides declarative interactivity directly in the HTML. Similar to Vue, but tailored for simple, component-like behaviors.',
     tailwind: 'Utility-first CSS framework.',
