@@ -4,6 +4,7 @@ description: "Whimsical interaction sounds have found their back into personal w
 category: blogpost
 key: 'audioswitch'
 date: 2023-11-06
+lastEdit: 2025-04-04 17:30:00
 ---
 
 Who remembers the times when music or other nasty sounds randomly started playing as soon as you visited a website? I remember making sure to turn the speakers down before I went online (yes, I also remember consciously switching the internet on and off. That was expensive).
@@ -50,6 +51,10 @@ Go to "File" > "Export" and select "Export as mp3". You will be asked for the sa
 
 My file is 3.9kb in size.
 
+## Better use .wav?
+
+`.mp3` is smaller and good for long audio or streaming, but `.wav` might actually better for short UI sounds. It does have a better quality and no gap or latency. Export both and compare quality and file size - with very short sounds it often does not make much difference.
+
 ## Add the sound to your site
 
 For this to work you don't need a static site generator (a tool that creates web pages in advance, making them faster and more secure, as they don't rely on server-side processing), you can just put your sound in a folder of your choice.
@@ -67,12 +72,14 @@ eleventyConfig.addPassthroughCopy('src/assets/sounds/');
 In your HTML you must define the area to listen for the click. In my case, that's a `button` next to my name and navigation.
 
 ```html
-<button type="button" id="theme-toggle">
+<button type="button" data-sound-switch>
   <!-- svg icon, for example -->
 </button>
 ```
 
-I embed my sound as part of a theme switcher with a few more settings, but the relevant part in my JavaScript is this one:
+## Using the HTMLAudioElement: Audio() constructor
+
+As part of a theme switch, the relevant part in the JavaScript is:
 
 ```js
 let switchSound;
@@ -89,7 +96,7 @@ const onClick = () => {
 };
 
 window.onload = () => {
-  document.querySelector('#theme-toggle').addEventListener('click', onClick);
+  document.querySelector('[data-sound-switch]').addEventListener('click', onClick);
 };
 ```
 
@@ -98,6 +105,46 @@ The first line declares a variable called `switchSound` without initializing it.
 Within the event listener for `DOMContentLoaded`, I create the new `Audio` object and assign it to the `switchSound` variable. The actual playing of the sound (using the `HTMLMediaElement` `play()` method) - takes place in the function expression `onClick`.
 
 The `load` event for the `window` object is triggered when the entire page, including styles, images and other resources, is loaded. It is available via the `onload` property.
-I make it listen for clicks on the `button` with an ID of `#theme-toggle`.
+I make it listen for clicks on the `button` with an `attr` of `data-sound-switch`.
 
-For a valid theme switcher more things have to happen, you can have a look at the [theme switcher on this page on GitHub](https://github.com/madrilene/lenesaile.com/blob/main/src/assets/scripts/theme-toggle.js).
+## Using the Web Audio API
+
+The above code works fine for basic needs - Web Audio API allows for better better performance and control.
+
+```js
+document.addEventListener('DOMContentLoaded', async () => {
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  let switchBuffer = null;
+
+  async function loadSwitchSound() {
+    const response = await fetch('/assets/sounds/light-on.mp3');
+    const arrayBuffer = await response.arrayBuffer();
+    switchBuffer = await audioContext.decodeAudioData(arrayBuffer);
+  }
+
+  await loadSwitchSound();
+
+  function playSwitch() {
+    if (!switchBuffer) return;
+    const source = audioContext.createBufferSource();
+    source.buffer = switchBuffer;
+    source.connect(audioContext.destination);
+    source.start(0);
+  }
+
+  document.querySelector('[data-sound-switch]')?.addEventListener('click', () => {
+    if (audioContext.state === 'suspended') {
+      audioContext.resume();
+    }
+    playSwitch();
+  });
+});
+```
+
+Instead of creating a new `Audio` object each time, we fetch and decode the `.mp3` file once and store the decoded audio in `switchBuffer`. `AudioContext` gives us sample-level control over audio playback. This means it exposes audio as raw digital data, actual waveforms: Now we can do thigs like fading in and out, control volume, change playback speed, etc. [Look into the mdn docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) to see what's possible. To control the volume, we can do this:
+
+```js
+const gainNode = audioContext.createGain()
+gainNode.gain.value = 0.5
+source.connect(gainNode).connect(audioContext.destination)
+```

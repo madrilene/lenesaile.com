@@ -67,12 +67,14 @@ eleventyConfig.addPassthroughCopy('src/activos/sonidos/');
 En tu HTML tienes que definir el área que debe "escuchar" el click. En mi caso se trata de un "botón" junto a mi nombre y el elemento de navegación.
 
 ```html
-<button type="button" id="theme-toggle">
+<button type="button" data-sound-switch>
   <!-- svg icon, zum Beispiel -->
 </button>
 ```
 
-Incrusto mi sonido como parte de un conmutador de temas con algunos ajustes más, pero la parte relevante en mi JavaScript es esta:
+## Con HTMLAudioElement: Audio() constructor
+
+Como parte de un cambio de tema, la parte relevante en el JavaScript es:
 
 ```js
 let switchSound;
@@ -89,7 +91,7 @@ const onClick = () => {
 };
 
 window.onload = () => {
-  document.querySelector('#theme-toggle').addEventListener('click', onClick);
+  document.querySelector('[data-sound-switch]').addEventListener('click', onClick);
 };
 ```
 
@@ -98,6 +100,48 @@ La primera línea declara una variable llamada `switchSound` sin inicializarla. 
 Dentro del escuchador de eventos para `DOMContentLoaded`, creo el nuevo objeto `Audio` y lo asigno a la variable `switchSound`. La reproducción del sonido (usando el método `play()` del `HTMLMediaElement`) tiene lugar en la función `onClick`.
 
 El evento `load` para el objeto `window` se activa cuando se carga toda la página, incluyendo estilos, imágenes y otros recursos. Está disponible a través de la propiedad `onload`.
-Hago que escuche los clics en el `button` con un ID de `#theme-toggle`.
+Hago que escuche los clics en el `button` con un  `attr` de `data-sound-switch`.
 
-Para un conmutador de temas válido tienen que pasar más cosas, puedes echar un vistazo al [conmutador de temas de esta página web en GitHub](https://github.com/madrilene/lenesaile.com/blob/main/src/assets/scripts/theme-toggle.js).
+## Con la Web Audio API
+
+El código anterior funciona bien para necesidades básicas, pero la Web Audio API permite un mejor rendimiento y control.
+
+```js
+document.addEventListener('DOMContentLoaded', async () => {
+  const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+  let switchBuffer = null;
+
+  async function loadSwitchSound() {
+    const response = await fetch('/assets/sounds/light-on.mp3');
+    const arrayBuffer = await response.arrayBuffer();
+    switchBuffer = await audioContext.decodeAudioData(arrayBuffer);
+  }
+
+  await loadSwitchSound();
+
+  function playSwitch() {
+    if (!switchBuffer) return;
+    const source = audioContext.createBufferSource();
+    source.buffer = switchBuffer;
+    source.connect(audioContext.destination);
+    source.start(0);
+  }
+
+  document.querySelector('[data-sound-switch]')?.addEventListener('click', () => {
+    if (audioContext.state === 'suspended') {
+      audioContext.resume();
+    }
+    playSwitch();
+  });
+});
+```
+
+En lugar de crear un nuevo objeto `Audio` cada vez, obtenemos y decodificamos el archivo `.mp3` una vez y almacenamos el audio decodificado en `switchBuffer`. AudioContext» nos permite controlar la reproducción de audio a nivel de muestra. Esto significa que expone el audio como datos digitales en bruto, formas de onda reales: Ahora podemos hacer cosas como fundidos, controlar el volumen, cambiar la velocidad de reproducción, etc. [Mir los mdn docs](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) para ver lo que es posible.
+
+Para controlar el volumen, podemos hacer esto:
+
+```js
+const gainNode = audioContext.createGain()
+gainNode.gain.value = 0.5
+source.connect(gainNode).connect(audioContext.destination)
+```
