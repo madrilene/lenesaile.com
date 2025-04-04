@@ -4,7 +4,7 @@ export default {
       'Eleventy is a wonderful static site generator. I do most of my projects with it, using my starter [Eleventy Excellent](https://github.com/madrilene/eleventy-excellent)',
     design: 'I also did the design for this project.',
     html: 'No website without HTML!',
-    css: 'My favrotite programming language, CSS! No frameworks.',
+    css: 'My favorite programming language, CSS! No frameworks.',
     javascript:
       'Custom minimal JavaScript without frameworks - for progressive Enhacment, accssibility and a dash of joy.',
     alpine:
