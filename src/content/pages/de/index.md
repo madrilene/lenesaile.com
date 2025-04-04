@@ -8,13 +8,13 @@ description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisier
 layout: home
 hero:
   title: Ich entwickle hoch-optimierte Websites nach Maß.
-  intro: Seit über 15 Jahren entwickle ich Websites. Als Selbstständige und mit Digitalagenturen habe ich unzählige Websites für globale Marken, kleine und mittlere Unternehmen, FreiberuflerInnen, Einzelpersonen, Vereine und Stiftungen entworfen und entwickelt. Ich lege großen Wert auf Code-Organisation und Einfachheit, Performance und Barrierefreiheit. Ich verwende fast ausschließlich Technologien der Webplattform.
+  intro: Seit über 15 Jahren entwickle ich Websites. Als Selbstständige und mit Digitalagenturen habe ich unzählige Websites für globale Marken, kleine und mittlere Unternehmen, FreiberuflerInnen, Einzelpersonen, Vereine und Stiftungen entworfen und entwickelt. Ich lege großen Wert auf Code-Organisation und Einfachheit, Performance und Barrierefreiheit. Ich arbeite mit den Technologien der Webplattform.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'
 projects:
   title: Schau dir einige meiner Projekte an!
-  teaser: 'Ich erstelle personalisierte Web-"Erlebnisse", die schnell, sicher, barrierefrei, umweltfreundlich und datenschutzkonform sind.'
+  teaser: 'Ich baue Websites die schnell, sicher, barrierefrei, umweltfreundlich und datenschutzkonform sind.'
   goal: '/de/projekte/'
   button: 'Projekte'
 about:

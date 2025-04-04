@@ -4,7 +4,7 @@ permalink: /{{ lang }}/ueber/index.html
 key: 'about'
 description: 'Ich arbeite als freie Webentwicklerin und Designerin in Madrid. Seit 2008 erstelle ich Websites und Webapps.'
 layout: about
-lead: 'Ich bin Webentwicklerin und Designerin, geboren in Berlin, zu Hause in Madrid. Seit 2008 erstelle ich Websites und Webapps. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert, bei denen Barrierefreiheit und Leistung im Vordergrund stehen.'
+lead: 'Ich bin Webentwicklerin und Designerin, geboren in Berlin, zu Hause in Madrid. Seit 2008 erstelle ich Websites und Webapps. Ich habe mich auf maßgeschneiderte, kreative Websites spezialisiert.'
 image: './src/assets/images/lene/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu arbeiten'
 breakout:
@@ -25,4 +25,4 @@ Damals war ich Generalistin in allen Facetten und habe neben der Programmierung 
 
 2018 bin ich auf den Jamstack-Ansatz gestoßen (vorgerenderte Inhalte + clientseitige Erweiterungen, die über ein CDN ausgeliefert werden) und habe daraufhin alle meine bisherigen Prozesse umgestellt. Zurück zu statischen Websites, wenn man so will! Mit _Eleventy_ fand ich das perfekte Generator-Tool, und es stand mir nun eine ganze Infrastruktur mit Hosting- und CMS-Lösungen zur Verfügung.
 
-Mein Fokus lag schon immer auf persönlichen Websites, Marketing- und Business-Websites oder kleinen Apps. Ich möchte sinnvolle Erlebnisse schaffen, die die Persönlichkeit von Menschen und die Besonderheiten von Produkten widerspiegeln und <sparkly-text number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**Freude bringen**.</sparkly-text>
+Mein Fokus lag schon immer auf persönlichen Websites, Marketing- und Business-Websites oder kleinen Apps. Ich möchte sinnvolle Erlebnisse schaffen, die die Persönlichkeit von Menschen und die Besonderheiten von Produkten widerspiegeln und <sparkly-text class="pl-2xs" number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**Freude bringen**.</sparkly-text>

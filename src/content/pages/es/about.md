@@ -5,7 +5,7 @@ redirectFrom: [/sobre/]
 key: 'about'
 description: 'Soy desarrolladora web y diseñadora nacida en Berlín, viviendo en Madrid. Llevo desarrollando para la web profesionalmente desde 2008.'
 layout: about
-lead: 'Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008. Me especializo en sitios web creativos a medida teniendo muy en cuenta la accesibilidad y el rendimiento.'
+lead: 'Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en Madrid. Llevo creando para la web profesionalmente desde 2008. Me especializo en páginas webs creativas a medida.'
 image: './src/assets/images/lene/lene-sobre-mi-2021.jpg'
 alt: 'Lene sentada en una pelota de gimnasia frente a su escritorio, aparentemente trabajando'
 breakout:
@@ -26,4 +26,4 @@ Entonces era generalista en todas sus facetas y, además de programar, también 
 
 En 2018 descubrí el enfoque Jamstack (contenido prerrenderizado + mejoras client-side, servido a través de CDN) y, como consecuencia, renové todos mis workflows. ¡De vuelta a los sitios web estáticos, por así decirlo! Con _Eleventy_ encontré la herramienta generadora perfecta, y ahora tenía a mi disposición toda una infraestructura con soluciones de alojamiento y CMS.
 
-Siempre me he centrado en páginas web personales, de marketing y empresariales o pequeñas aplicaciones. Quiero crear experiencias significativas que reflejen la personalidad de las personas y las peculiaridades de los productos, y que y que <sparkly-text number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**aporten alegría**.</sparkly-text>.
+Siempre me he centrado en páginas web personales, de marketing y empresariales o pequeñas aplicaciones. Quiero crear experiencias significativas que reflejen la personalidad de las personas y las peculiaridades de los productos, y que y que <sparkly-text class="pl-2xs" number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**aporten alegría**.</sparkly-text>.

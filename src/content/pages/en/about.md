@@ -4,7 +4,7 @@ permalink: /{{ lang }}/about/index.html
 key: 'about'
 description: "I'm a developer and designer in Madrid who has been building for the web professionally since 2008."
 layout: about
-lead: "I'm a Berlin born, Madrid based developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites with accessibility and performance in mind."
+lead: "I'm a Berlin born, Madrid based developer and designer who has been building for the web professionally since 2008. I specialize in custom creative websites."
 image: './src/assets/images/lene/lene-sobre-mi-2021.jpg'
 alt: 'Lene sitting on a gym ball in front of her desk, apparently working'
 breakout:
@@ -21,8 +21,8 @@ I have always enjoyed tinkering with computers. In 2004, I started building my f
 
 In the beginning, these were simple linked HTML documents that I uploaded directly to the server. As soon as a website grew, this became very cumbersome, because changes in the navigation had to be made individually for each page. Also, there were no CMS (content management systems) for these pages, and only people with HTML knowledge could edit them. I discovered _WordPress_ and learned PHP to broaden the possibilities.
 
-Back then, I was a generalist in all its facets, and in addition to programming, I also did design (and graphic design for print media!), copy, marketing and search engine optimization. I have retained programming and digital design to this day, with a special love of typography, and can advise on the creation and organization of great content.
+Back then, I was a generalist in all its facets, and in addition to programming, I also did design (and graphic design for print media!), copy, marketing and search engine optimization. I have retained programming and digital design to this day, with a special love for typography, and can advise on the creation and organization of great content.
 
 In 2018 I came across the Jamstack approach (Pre-rendered content + client-side enhancements, served via CDN) and as a consequence revamped all my workflows. Back to static websites, if you will! With _Eleventy_ I found the perfect generator tool, and there was now a whole infrastructure with hosting and CMS solutions available to me.
 
-My focus has always been on personal websites, marketing and business websites or small applications. I want to create meaningful experiences that reflect the personality of people and peculiarities of products, and <sparkly-text number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**bring joy**.</sparkly-text>
+My focus has always been on personal websites, marketing and business websites or small applications. I want to create meaningful experiences that reflect the personality of people and peculiarities of products, and <sparkly-text class="pl-2xs" number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**bring joy**.</sparkly-text>

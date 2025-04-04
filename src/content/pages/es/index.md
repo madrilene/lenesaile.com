@@ -8,13 +8,13 @@ description: Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en
 layout: home
 hero:
   title: Hago páginas web a medida altamente optimizadas.
-  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y junto con agencias digitales he diseñado y desarrollado innumerables páginas web personalizadas para marcas globales, pequeñas y medianas empresas, autónomas, particulares, asociaciones y fundaciones. Valoro la organización y simplicidad del código, el rendimiento y la accesibilidad. Utilizo casi exclusivamente tecnologías de la plataforma web.
+  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y junto con agencias digitales he diseñado y desarrollado innumerables páginas web personalizadas para marcas globales, pequeñas y medianas empresas, autónomas, particulares, asociaciones y fundaciones. Valoro la organización y simplicidad del código, el rendimiento y la accesibilidad. Trabajo con las tecnologías de la plataforma web.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sentada frente a su escritorio, sonriendo'
   hi: 'Hola, soy yo.'
 projects:
-  title: ¡Mira algunas de las páginas web que he hecho!
-  teaser: 'Me apasiona crear experiencias web personalizadas que sean rápidas, seguras y accesibles, además de respetuosas con el medio ambiente y la privacidad. '
+  title: ¡Mira algunos de mis proyectos!
+  teaser: 'Creo páginas web que son rápidas, seguras y accesibles, respetuosas con el medio ambiente y la privacidad. '
   goal: '/es/proyectos/'
   button: 'Proyectos'
 about:

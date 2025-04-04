@@ -7,13 +7,13 @@ key: 'home'
 layout: home
 hero:
   title: I make highly optimized custom websites.
-  intro: I have been working as a web developer for over 15 years. As a freelancer and together with digital agencies I have designed and developed countless personalized websites for global brands, small and medium-sized enterprises, freelancers, individuals, associations and foundations. I value code organization and simplicity, performance and accessibility. I use almost exclusively technologies of the web platform.
+  intro: I have been working as a web developer for over 15 years. As a freelancer and together with digital agencies I have designed and developed countless personalized websites for global brands, small and medium-sized enterprises, freelancers, individuals, associations and foundations. I value code organization and simplicity, performance and accessibility. I work with technologies of the web platform.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
 projects:
-  title: Have a look at some of the projects I built!
-  teaser: 'I love creating personalized web experiences that are fast, secure, accessible, environmentally friendly and privacy compliant. '
+  title: Have a look at some of my projects!
+  teaser: 'I build websites that are fast, secure, accessible, environmentally friendly and privacy compliant. '
   goal: '/en/projects/'
   button: 'Projects'
 about:
@@ -35,5 +35,5 @@ This approach has various advantages:
 
 1. No image is too big, no code is too much - and the website runs error-free and extremely fast.
 2. I am independent of third parties, both from persons or external code: I react to problems and necessary updates myself.
-3. I create semantically structured websites with human-written, approachable contents that are highly discoverable without the need for additional effort.
+3. I create semantically structured websites with human-written, approachable contents that are highly discoverable without the need for additional SEO efforts.
 4. Truly, we can realize almost anything you can imagine!
