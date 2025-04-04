@@ -28,7 +28,7 @@
   --color-bg: var(--color-gray-100);
   --color-text-accent: var(--color-gray-700);
   --color-bg-accent: var(--color-gray-200);
-  --color-bg-accent-2: var(--color-gray-400);
+  --color-bg-accent-2: var(--color-gray-300);
   --color-accent: var(--color-cinnabar);
   --color-mark: var(--color-bright-sun);
 
@@ -53,7 +53,7 @@
     --color-bg: var(--color-gray-100);
     --color-text-accent: var(--color-gray-700);
     --color-bg-accent: var(--color-gray-200);
-    --color-bg-accent-2: var(--color-gray-400);
+    --color-bg-accent-2: var(--color-gray-300);
     --color-accent: var(--color-cinnabar);
     --color-mark: var(--color-royal-blue-subdued);
   }
@@ -75,7 +75,7 @@
     --color-bg: light-dark(var(--color-gray-100), var(--color-gray-800));
     --color-text-accent: light-dark(var(--color-gray-700), var(--color-gray-300));
     --color-bg-accent: light-dark(var(--color-gray-200), var(--color-gray-700));
-    --color-bg-accent-2: light-dark(var(--color-gray-400), var(--color-gray-600));
+    --color-bg-accent-2: light-dark(var(--color-gray-300), var(--color-gray-600));
     --color-accent: light-dark(var(--color-cinnabar), var(--color-cinnabar-subdued));
     --color-mark: light-dark(var(--color-bright-sun), var(--color-royal-blue-subdued));
 

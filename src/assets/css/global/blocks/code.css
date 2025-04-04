@@ -47,6 +47,7 @@ pre {
   position: relative;
   top: -0.05em;
   padding: 0.1em 0.4em;
+  border: 1px solid var(--color-bg-accent-2);
 }
 
 code[class*='language-'],
