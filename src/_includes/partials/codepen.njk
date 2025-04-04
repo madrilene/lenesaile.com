@@ -7,6 +7,11 @@
   <img src="{{ image }}" alt="{{ alt }}" />
   <figcaption class="repel">
     {{ caption }}
-    <a class="text-step-min-1 indicator" href="{{ url }}">{{ translations[page.lang].blog.codepen }}</a>
+    <a
+      class="text-step-min-1 indicator"
+      href="{{ url }}"
+      aria-label="{{ translations[page.lang].blog.codepen }}: {{ caption }}"
+      >{{ translations[page.lang].blog.codepen }}</a
+    >
   </figcaption>
 </figure>
