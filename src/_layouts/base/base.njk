@@ -31,6 +31,9 @@
     <!-- 7 defer  -->
     {% include "head/js-defer.njk" %}
     <script data-domain="lenesaile.com" src="https://plausible.io/js/plausible.js" defer></script>
+    {%- if sparkle -%}
+      <script type="module" src="/assets/scripts/components/sparkly-text.js"></script>
+    {%- endif -%}
 
     <!-- 8 meta tags, icons, open graph etc.  -->
     {% include "head/meta-info.njk" %}
