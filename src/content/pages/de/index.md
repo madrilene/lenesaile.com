@@ -8,7 +8,7 @@ description: Ich habe mich auf maßgeschneiderte, kreative Websites spezialisier
 layout: home
 hero:
   title: Ich entwickle hoch-optimierte Websites nach Maß.
-  intro: Seit über 15 Jahren bin ich als Webentwicklerin tätig. Als Freelancer und im Auftrag von Agenturen habe ich unzählige personalisierte Websites für kleine und mittlere Unternehmen, Privatpersonen, Vereine und Stiftungen entwickelt und gestaltet. Ich arbeite hauptsächlich mit der Jamstack-Architektur und den Technologien der Webplattform.
+  intro: Seit über 15 Jahren entwickle ich Websites. Als Selbstständige und mit Digitalagenturen habe ich unzählige Websites für globale Marken, kleine und mittlere Unternehmen, FreiberuflerInnen, Einzelpersonen, Vereine und Stiftungen entworfen und entwickelt. Ich lege großen Wert auf Code-Organisation und Einfachheit, Performance und Barrierefreiheit. Ich verwende fast ausschließlich Technologien der Webplattform.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sitzt vor ihrem Schreibtisch und lächelt'
   hi: 'Das bin ich.'
@@ -28,13 +28,13 @@ cta:
   lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-Ich achte darauf, dass eine Website ==schnell ist und nur das Nötigste lädt==, dass Besucher sich sofort zurechtfindeen und dass die Website ==zugänglich und nutzbar für möglichst viele Menschen== ist. Das Feld der Barrierefreiheit ist riesig und komplex - ich lerne ständig dazu.
+Ich achte darauf, dass eine Website schnell ist und nur das Nötigste lädt, dass Besucher sich sofort zurechtfindeen und dass die Website ==zugänglich und nutzbar für möglichst viele Menschen== ist.
 
-Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf konzipiert, gestaltet und entwickelt.
+Ich erstelle keine Websites auf der Grundlage von vorprogrammierten Vorlagen (zum Beispiel WordPress Themes) und verwende keine visuellen Website-Builder. Alle Projekte werden von Grund auf konzipiert, gestaltet und entwickelt, wobei ich meistens eine von mir konzipierte Grundlage ("Starter") für die Grundlagen verwende.
 
 Das hat viele Vorteile:
 
-1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und schnell.
-2. Ich bin unabhängig von Dritten, ich reagiere selbst auf Probleme und notwendige Aktualisierungen.
-3. Semantisch strukturierte Websites mit gutem Inhalt sind sehr leicht zu finden.
-4. Wir können nahezu alles umsetzen was wir uns vorstellen!
+1. Kein Bild ist zu groß, kein Code ist zu viel - und die Website läuft fehlerfrei und extrem schnell.
+2. Ich bin unabhängig von Dritten, sowohl von Personen als auch von externem Code: Auf Probleme und notwendige Updates reagiere ich selbst.
+3. Ich erstelle semantisch strukturierte Websites mit von Menschen geschriebenen, zugänglichen Inhalten, die ohne weiteren Aufwand sehr gut auffindbar sind.
+4. Wir können fast alles verwirklichen, was du dir vorstellen kannst!

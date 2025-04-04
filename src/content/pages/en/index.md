@@ -7,7 +7,7 @@ key: 'home'
 layout: home
 hero:
   title: I make highly optimized custom websites.
-  intro: I have been working as a web developer for over 15 years. As a freelancer and on behalf of agencies I have designed and developed countless personalized websites for small and medium-sized enterprises, freelancers, individuals, associations and foundations. I mainly work with the Jamstack architecture and technologies of the web platform.
+  intro: I have been working as a web developer for over 15 years. As a freelancer and together with digital agencies I have designed and developed countless personalized websites for global brands, small and medium-sized enterprises, freelancers, individuals, associations and foundations. I value code organization and simplicity, performance and accessibility. I use almost exclusively technologies of the web platform.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sitting in front of her desk, smiling'
   hi: 'Hi, this is me.'
@@ -27,13 +27,13 @@ cta:
   lead: "Send me a mail at [hola@lenesaile.com](mailto:hola@lenesaile.com) and tell me about your project, opportunities or whatever you have in mind! I'm always up for a chat."
 ---
 
-I make sure that a website is ==fast and loads only what is necessary.== Everyone should be able to find their way around immediately and a website should be ==accessible and usable for as many people as possible.== The field of accessibility is huge and complex - I am constantly learning.
+I make sure that a website is fast and loads only what is necessary. Everyone should be able to find their way around immediately and a website should be ==accessible and usable for as many people as possible.==
 
-I do not create websites based on premade templates/themes and I do not use website builders. I plan, design and program all websites from scratch.
+I do not create websites based on premade templates/themes and I do not use website builders. I plan, design and program all websites from scratch, usually using a foundation (“starter”) I have developed for the basics.
 
 This approach has various advantages:
 
-1. No image is too big, no code is too much - and the website runs error-free and fast.
-2. I am independent of third parties, I react to problems and necessary updates myself.
-3. Semantically structured websites with good content are highly discoverable.
-4. We can realize almost anything we can imagine!
+1. No image is too big, no code is too much - and the website runs error-free and extremely fast.
+2. I am independent of third parties, both from persons or external code: I react to problems and necessary updates myself.
+3. I create semantically structured websites with human-written, approachable contents that are highly discoverable without the need for additional effort.
+4. Truly, we can realize almost anything you can imagine!

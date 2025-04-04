@@ -76,21 +76,23 @@ export default [
       en: {
         alt: 'The website shows three illustrated signs with the words Environment, Rule of Law, and Human Rights',
         about:
-          'buerokratiemonster.eu is a German project for the promotion of democracy in the EU. The importance of the rule of law, environmental protection and human rights is personified through the bureaucracy monsters Justus, Fleur and Robin. A continuing project together with Daniela Grau (Design). A blog, an upvoting system and a fake AI are planned.',
-        peculiarities: ''
+          'buerokratiemonster.eu is a German project for the promotion of democracy in the EU. The importance of the rule of law, environmental protection and human rights is personified through the bureaucracy monsters Justus, Fleur and Robin. ',
+        peculiarities:
+          'A continuing project together with Daniela Grau (Design). A blog, an upvoting system and a fake AI are planned.'
       },
       de: {
         alt: 'Die Website zeigt drei illustrierte Schilder mit den Worten Environment, Rule of Law und Human Rights',
         about:
-          'buerokratiemonster.eu ist ein deutsches Projekt für Demokratieförderung in der EU. Die Bedeutung von Rechtsstaat, Umweltschutz und Menschenrechten wird über die Bürokratiemonster Justus, Fleur und Robin personifiziert werden. Ein anhaltened Projekt gemeinsam mit Daniela Grau (Design), für das u.a. ein Blog, ein upvoting system und eine fake AI geplant sind.',
+          'buerokratiemonster.eu ist ein deutsches Projekt für Demokratieförderung in der EU. Die Bedeutung von Rechtsstaat, Umweltschutz und Menschenrechten wird über die Bürokratiemonster Justus, Fleur und Robin personifiziert werden. ',
         peculiarities:
-          'La web muestra tres carteles ilustrados con las palabras Environment, Rule of Law y Human Rights'
+          'La web muestra tres carteles ilustrados con las palabras Environment, Rule of Law y Human RigEin anhaltened Projekt gemeinsam mit Daniela Grau (Design), für das u.a. ein Blog, ein upvoting system und eine fake AI geplant sind.'
       },
       es: {
-        alt: '',
+        alt: 'La web muestra tres carteles ilustrados con las palabras Environment, Rule of Law y Human Rights',
         about:
-          'buerokratiemonster.eu es un proyecto alemán para el fomento de la democracia en la UE. La importancia del Estado de Derecho, la protección del medio ambiente y los derechos humanos serán personificados por los monstruos de la burocracia Justus, Fleur y Robin. Un proyecto en curso junto con Daniela Grau (Diseño), para el que están previstos un blog, un sistema de upvoting y una IA falsa.',
-        peculiarities: ''
+          'buerokratiemonster.eu es un proyecto alemán para el fomento de la democracia en la UE. La importancia del Estado de Derecho, la protección del medio ambiente y los derechos humanos serán personificados por los monstruos de la burocracia Justus, Fleur y Robin. ',
+        peculiarities:
+          'Un proyecto en curso junto con Daniela Grau (Diseño), para el que están previstos un blog, un sistema de upvoting y una IA falsa.'
       }
     }
   },
@@ -135,20 +137,23 @@ export default [
       en: {
         alt: 'A grid of black and white photos and illustrations of various singer-songwriters',
         about:
-          'cantautor.es is a joint personal project with Daniela Grau. We want to give Spanish singer-songwriters more attention, having created a place where you can listen to excerpts of selected songs. Being based on a Spotify playlist, we have a lot of plans for this project: In the long run, we want to make it independent of large providers and support the artists themselves instead.',
-        peculiarities: ''
+          'cantautor.es is a joint personal project with Daniela Grau. We want to give Spanish singer-songwriters more attention, having created a place where you can listen to excerpts of selected songs. ',
+        peculiarities:
+          'Being based on a Spotify playlist, we have a lot of plans for this project: In the long run, we want to make it independent of large providers and support the artists themselves instead.'
       },
       de: {
         alt: 'Raster aus Schwarz-Weiß-Fotos und Illustrationen verschiedener Singer-Songwriter',
         about:
-          'cantautor.es ist ein gemeinsames persönliches Projekt mit Daniela Grau. Wir wollen spanischen Singer-Songwritern mehr Aufmerksamkeit schenken und haben einen Ort geschaffen, an dem man sich Ausschnitte ausgewählter Lieder anhören kann. Da es auf einer Spotify-Playlist basiert, haben wir viele Pläne für dieses Projekt: Langfristig wollen wir es unabhängig von großen Anbietern machen und stattdessen die Künstler selbst unterstützen.',
-        peculiarities: ''
+          'cantautor.es ist ein gemeinsames persönliches Projekt mit Daniela Grau. Wir wollen spanischen Singer-Songwritern mehr Aufmerksamkeit schenken und haben einen Ort geschaffen, an dem man sich Ausschnitte ausgewählter Lieder anhören kann. ',
+        peculiarities:
+          'Da es auf einer Spotify-Playlist basiert, haben wir viele Pläne für dieses Projekt: Langfristig wollen wir es unabhängig von großen Anbietern machen und stattdessen die Künstler selbst unterstützen.'
       },
       es: {
         alt: 'Cuadrícula de fotos e ilustraciones en blanco y negro de varios cantautores',
         about:
-          'cantautor.es es un proyecto personal conjunto con Daniela Grau. Queremos dar más atención a los cantautores españoles, habiendo creado un lugar donde se pueden escuchar fragmentos de canciones seleccionadas. Al estar basado en una lista de reproducción de Spotify, tenemos muchos planes para este proyecto: A largo plazo, queremos hacerlo independiente de los grandes proveedores y apoyar en su lugar a los propios artistas.',
-        peculiarities: ''
+          'cantautor.es es un proyecto personal conjunto con Daniela Grau. Queremos dar más atención a los cantautores españoles, habiendo creado un lugar donde se pueden escuchar fragmentos de canciones seleccionadas. ',
+        peculiarities:
+          'Al estar basado en una lista de reproducción de Spotify, tenemos muchos planes para este proyecto: A largo plazo, queremos hacerlo independiente de los grandes proveedores y apoyar en su lugar a los propios artistas.'
       }
     }
   },
@@ -193,20 +198,22 @@ export default [
       en: {
         alt: 'Esther holding an acoustic guitar with the text Nuevo disco ya a la venta',
         about:
-          'Esther Zecco is a singer/songwriter from Segovia with influences from American folk and country. We worked together on the concept of a very modern and simple website where she can present and sell her CDs (through Stripe Checkout), show her upcoming concerts and share updates and thoughts with her fans through the blog.',
-        peculiarities: ''
+          'Esther Zecco is a singer/songwriter from Segovia with influences from American folk and country. ',
+        peculiarities:
+          'We worked together on the concept of a very modern and simple website where she can present and sell her CDs (through Stripe Checkout), show her upcoming concerts and share updates and thoughts with her fans through the blog.'
       },
       de: {
         alt: 'Esther mit einer Akustikgitarre und dem Text Nuevo disco ya a la venta',
         about:
-          'Esther Zecco ist eine Singer/Songwriterin aus Segovia mit Einflüssen aus dem amerikanischen Folk und Country. Wir haben zusammen an dem Konzept einer sehr modernen und einfachen Website gearbeitet, auf der sie ihre CDs präsentieren und verkaufen kann (über Stripe Checkout), ihre bevorstehenden Konzerte ankündigt und auf ihre Fans über den Blog auf dem Laufenden hält. ',
-        peculiarities: ''
+          'Esther Zecco ist eine Singer/Songwriterin aus Segovia mit Einflüssen aus dem amerikanischen Folk und Country.',
+        peculiarities:
+          'Wir haben zusammen an dem Konzept einer sehr modernen und einfachen Website gearbeitet, auf der sie ihre CDs präsentieren und verkaufen kann (über Stripe Checkout), ihre bevorstehenden Konzerte ankündigt und auf ihre Fans über den Blog auf dem Laufenden hält.'
       },
       es: {
         alt: ' Esthercon una guitarra acústica y el texto Nuevo disco ya a la venta',
-        about:
-          'Esther Zecco es una cantautora segoviana con influencias del folk y country americano. Trabajamos juntos en el concepto de una página web muy moderna y sencilla donde puede presentar y vender sus CDs (a través de Stripe Checkout), mostrar sus próximos conciertos y compartir actualizaciones y pensamientos con sus fans a través del blog.',
-        peculiarities: ''
+        about: 'Esther Zecco es una cantautora segoviana con influencias del folk y country americano.',
+        peculiarities:
+          'Trabajamos juntos en el concepto de una página web muy moderna y sencilla donde puede presentar y vender sus CDs (a través de Stripe Checkout), mostrar sus próximos conciertos y compartir actualizaciones y pensamientos con sus fans a través del blog.'
       }
     }
   },
@@ -221,21 +228,21 @@ export default [
     translations: {
       en: {
         alt: '',
-        about:
-          "Inés is an actress, singer and dubbing artist. These multiple talents needed to be represented on the website as well. At the same time, I wanted to reflect the actress' convertibility, which is why the website has a clear and simple structure. Inés is a cheerful and positive person, it is particularly easy to work with her. This quality is also captured by small playful accents and colours.",
-        peculiarities: ''
+        about: 'Inés is an actress, singer and dubbing artist. ',
+        peculiarities:
+          "Her multiple talents needed to be represented on the website as well. At the same time, I wanted to reflect the actress' convertibility, which is why the website has a clear and simple structure. Inés is a cheerful and positive person, it is particularly easy to work with her. This quality is also captured by small playful accents and colours."
       },
       de: {
         alt: '',
-        about:
-          'Inés ist Schauspielerin, Sängerin und Synchronsprecherin. Diese Vielseitigkeit sollte auch die Webseite darstellen. Zugleich sollte sie die Wandelbarkeit der Schauspielerin widerspiegeln, weshalb sie eine klare und schlichte Struktur aufweist. Inés ist ein lebensfroher und positiver Mensch, es ist einfach mit ihr zusammenzuarbeiten. Auch das wird durch kleine verspielte Akzente und Farben eingefangen.',
-        peculiarities: ''
+        about: 'Inés ist Schauspielerin, Sängerin und Synchronsprecherin. ',
+        peculiarities:
+          'Ihre Vielseitigkeit sollte auch die Webseite darstellen. Zugleich sollte sie die Wandelbarkeit der Schauspielerin widerspiegeln, weshalb sie eine klare und schlichte Struktur aufweist. Inés ist ein lebensfroher und positiver Mensch, es ist einfach mit ihr zusammenzuarbeiten. Auch das wird durch kleine verspielte Akzente und Farben eingefangen.'
       },
       es: {
         alt: '',
-        about:
-          'Inés es actriz, cantante y dobladora. Esta versatilidad también debería estar representada en el sitio web. Al mismo tiempo, debe reflejar la capacidad de cambio de la actriz, por lo que tiene una estructura clara y sencilla. Inés es una persona alegre y positiva, es fácil trabajar con ella. Esto también se capta con pequeños acentos y colores lúdicos.',
-        peculiarities: ''
+        about: 'Inés es actriz, cantante y dobladora. ',
+        peculiarities:
+          'Su versatilidad también debería estar representada en el sitio web. Al mismo tiempo, debe reflejar la capacidad de cambio de la actriz, por lo que tiene una estructura clara y sencilla. Inés es una persona alegre y positiva, es fácil trabajar con ella. Esto también se capta con pequeños acentos y colores lúdicos.'
       }
     }
   },
@@ -251,20 +258,23 @@ export default [
       en: {
         alt: 'A black and white photo of a person crouching by water next to german text about the Fundación Goethe',
         about:
-          'The non-profit foundation seeks to create socio-economic links between Germany and Spain through culture. I have been working with them for many years. I started working with them many years ago designing the programs of their concerts, the posters of the events and doing maintenance work on the page they had. I continue to collaborate with them maintaining the page.',
-        peculiarities: ''
+          'The non-profit foundation seeks to create socio-economic links between Germany and Spain through culture. ',
+        peculiarities:
+          'I started working with them many years ago designing the programs of their concerts, the posters of the events and doing maintenance work on the page they had. I continue to collaborate with them maintaining the page.'
       },
       de: {
         alt: 'Schwarz-Weiß-Foto einer Person, die im Wasser hockt, neben einem Text über die Fundación Goethe',
         about:
-          'Die gemeinnützige Stiftung schafft sozioökonomische Verbindungen zwischen Deutschland und Spanien auf Grundlage von kulturellen Veranstaltungen. Ich arbeite schon seit vielen Jahren mit ihnen zusammen. Wir gestalten die Konzertprogramme und Plakate und pflegen die Website langfristig.',
-        peculiarities: ''
+          'Die gemeinnützige Stiftung schafft sozioökonomische Verbindungen zwischen Deutschland und Spanien auf Grundlage von kulturellen Veranstaltungen. ',
+        peculiarities:
+          'Ich begann vor vielen Jahren mit ihnen zusammenzuarbeiten, indem ich die Programme für ihre Konzerte und die Plakate für die Veranstaltungen entwarf und die Seite, die sie hatten, pflegte. Ich arbeite weiterhin mit ihnen zusammen um die Inhalte und Technik der Seite aktuell zu halten.'
       },
       es: {
         alt: 'Una foto en blanco y negro de una persona agachada junto al agua, junto a un texto sobre la Fundación Goethe',
         about:
-          'La fundación sin ánimo de lucro busca mediante la cultura, crear vínculos socioeconómicos entre Alemania y España. Llevamos muchos años trabajando con ellos. Empezamos la relación diseñando los programas de sus conciertos, los carteles de los eventos y realizando trabajos de mantenimiento en la página que tenían. Seguimos colaborando con ellos manteniendo la página, creando los eventos que organizan y gestionando sus redes sociales.',
-        peculiarities: ''
+          'La fundación sin ánimo de lucro busca mediante la cultura, crear vínculos socioeconómicos entre Alemania y España. ',
+        peculiarities:
+          'Empecé a trabajar con ellos hace muchos años diseñando los programas de sus conciertos, los carteles de los eventos y haciendo labores de mantenimiento de la página que tenían. Sigo colaborando con ellos manteniendo la página.'
       }
     }
   },
@@ -279,21 +289,21 @@ export default [
     translations: {
       en: {
         alt: 'Text about the ENT clinic and a photo of the entrance door with six people in a circle',
-        about:
-          'The website of the Munich ENT clinic of Dr. Kothe was redesigned to achieve a clear, confidence-inspiring feel. The site was previously running WordPress. The relaunch went smoothly and without any loss of rankings.',
-        peculiarities: ''
+        about: 'HNO Marienplatz is a ENT clinic in the center of Munich.',
+        peculiarities:
+          "The website wants to convey a clear, confidence-inspiring feel. It was moved from WordPress to Eleventy, improving rankings, which led to me being asked to please don't do any more SEO efforts, as we cannot take on any more clients. I never did though, the website just works well all on its own."
       },
       de: {
         alt: 'Text über die HNO-Praxis und ein Foto der Eingangstür mit sechs Personen im Kreis',
-        about:
-          'Die Website der Münchner HNO-Klinik von Dr. Kothe wurde neu gestaltet, um ein klares, vertrauenserweckendes Auftreten zu bieten. Die Seite war zuvor mit WordPress gebaut worden. Der Relaunch verlief reibungslos und ohne Ranking-Verluste. Dank der Optimierung wird die Website nun in den Suchmaschinen deutlich besser gefunden.',
-        peculiarities: ''
+        about: 'HNO Marienplatz ist eine HNO-Klinik im Zentrum von München.',
+        peculiarities:
+          'Die Website soll ein klares, vertrauenserweckendes Gefühl vermitteln. Sie wurde von WordPress auf Eleventy umgestellt, wobei die Rankings verbessert wurden, was dazu führte, dass man mich bat, bitte keine weiteren SEO-Maßnahmen mehr durchzuführen, da sie nicht noch mehr Kunden aufnehmen können. Das habe ich aber nie getan, die Website funktioniert einfach ganz alleine gut.'
       },
       es: {
         alt: 'Texto sobre la clínica ORL y una foto de la puerta de entrada con seis personas en círculo',
-        about:
-          'La página web de la clínica ORL de Múnich del Dr. Kothe se rediseñó para conseguir una sensación clara y que inspirara confianza. El sitio funcionaba anteriormente con WordPress. El cambio se realizó sin problemas y sin pérdida de posicionamiento. Gracias a la optimización, ahora se les encuantra mucho mejor en Google y otros buscadores.',
-        peculiarities: ''
+        about: 'HNO Marienplatz es una clínica ORL en el centro de Múnich.',
+        peculiarities:
+          'La página web debe transmitir una sensación clara, que inspire confianza. Se trasladó de WordPress a Eleventy, lo que mejoró el posicionamiento, lo que llevó a que me pidieran que no haga más SEO porque no pueden aceptar más clientes. Pero nunca lo hice, la web funciona bien por sí sola.'
       }
     }
   },
@@ -308,21 +318,21 @@ export default [
     translations: {
       en: {
         alt: 'Text about tax consultancy services next to a person on the phone smiling.',
-        about:
-          'A tax, labor and commercial consultancy in Madrid. They did not have a website before. They wanted to be represented as an experienced and professional agency but far from the traditional serious tone.',
-        peculiarities: ''
+        about: 'A tax, labor and commercial consultancy in Madrid.',
+        peculiarities:
+          'While we wanted to present them as an experienced and professional agency, we also wanted them to be far away from the traditional serious tone associated with this industry. The owner, Carlos Recio, is a singer-songwriter and many of his clients are creative artists themselves.'
       },
       de: {
         alt: 'Text über Steuerberatungsdienstleistungen, daneben eine lächelnde Person am Telefon',
-        about:
-          'Reder ist ein Zusammenschluss von NRO, Kollektiven, Bewegungen, Organisationen und Einzelpersonen, der sich für den allgemeinen Zugang zur Gesundheitsversorgung in Spanien einsetzt und die Ausgrenzung im Gesundheitssystem anprangert. Die Website ist ein gutes Beispiel dafür, dass eine WordPress-Website schnell sein kann. Nur fünf Plugins sind auf der Website aktiviert: Advanced Custom Fields PRO, Akismet Anti-Spam, SiteGround Security, WP Rocket Pro und Yoast SEO.',
-        peculiarities: ''
+        about: 'Eine Steuer-, Arbeits- und Handelsberatung in Madrid.',
+        peculiarities:
+          'Wir wollten sie als eine erfahrene und professionelle Agentur präsentieren, aber auch weit weg von dem traditionellen seriösen Ton der dieser Branche anhaftet. Der Inhaber, Carlos Recio, ist ein Singer-Songwriter und viele seiner Kunden sind selbst kreative Künstler.'
       },
       es: {
         alt: 'Texto sobre servicios de asesoría fiscal a lado de una person sonriendo mientras habla por teléfono',
-        about:
-          'Es una gestoría fiscal, laboral y mercantil de Madrid. No disponían de página web previa y tenían claro que querían mostraste como son, una gestoría muy experimentada y profesional pero alejada del tradicional tono aburrido y serio que normalmente tienen los asesores y gestores. Para Inelia Gestión es muy importante el uso de un lenguaje directo y claro con sus clientes para que estos entiendan de forma sencilla las gestiones que realizan día a día, y esto se nota en los textos de la página web.',
-        peculiarities: ''
+        about: 'Una asesoría fiscal, laboral y mercantil de Madrid.',
+        peculiarities:
+          'Aunque queríamos presentarlos como una agencia profesional y con experiencia, también queríamos que se alejaran del tradicional tono serio que caracteriza a esta industria. El propietario, Carlos Recio, es cantautor y muchos de sus clientes son artistas creativos.'
       }
     }
   },
@@ -336,21 +346,21 @@ export default [
     tools: ['design', 'wordpress', 'php', 'html', 'tailwind'],
     translations: {
       en: {
-        alt: '',
+        alt: 'The main headline reads ‘Sanidad Universal para todas y todos’ (Sanidad Universal para todas y todos) with images of activists holding exclusion healthcare cards.',
         about:
-          'Reder is a coalition of NGOs, collectives, movements, organizations and individuals that campaigns for universal access to healthcare in Spain and denounces exclusion in the healthcare system. ',
+          'Reder is a coalition of NGOs, collectives, movements, organizations and individuals that campaigns for universal access to healthcare in Spain and denounces exclusion in the healthcare system.',
         peculiarities:
           'A good example that a WordPress website can be perfectly fast. Only five plugins are activated on the website: Advanced Custom Fields PRO, Akismet Anti-Spam, SiteGround Security, WP Rocket Pro and Yoast SEO. No client side JavaScript whatsoever was added from my side.'
       },
       de: {
-        alt: '',
+        alt: 'Die Hauptüberschrift lautet „Sanidad Universal para todas y todos“ (Universelle Gesundheitsfürsorge für alle und jeden) mit Bildern von Aktivisten, die Gesundheitskarten mit Ausschlusskriterien halten.',
         about:
           'Reder ist ein Zusammenschluss von NRO, Kollektiven, Bewegungen, Organisationen und Einzelpersonen, der sich für den allgemeinen Zugang zur Gesundheitsversorgung in Spanien einsetzt und die Ausgrenzung im Gesundheitssystem anprangert.',
         peculiarities:
           'Ein gutes Beispiel dafür, dass eine WordPress-Website durchaus schnell sein kann. Nur fünf Plugins sind auf der Website aktiviert: Advanced Custom Fields PRO, Akismet Anti-Spam, SiteGround Security, WP Rocket Pro und Yoast SEO. Von meiner Seite wurde keinerlei clientseitiges JavaScript hinzugefügt.'
       },
       es: {
-        alt: '',
+        alt: 'El titular principal reza «Sanidad Universal para todas y todos», con imágenes de activistas sosteniendo tarjetas sanitarias de exclusión.',
         about:
           'Reder es una coalición de ONG, colectivos, movimientos, organizaciones y particulares que lucha por el acceso universal a la sanidad en España y denuncia la exclusión en el sistema sanitario.',
         peculiarities:

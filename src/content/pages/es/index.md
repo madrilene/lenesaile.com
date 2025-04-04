@@ -8,7 +8,7 @@ description: Soy una desarrolladora y diseñadora nacida en Berlín, viviendo en
 layout: home
 hero:
   title: Hago páginas web a medida altamente optimizadas.
-  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y por encargo de agencias he desarrollado y diseñado muchas páginas web personalizadas para pequeñas y medianas empresas, autónomos, particulares, asociaciones y fundaciones. Trabajo principalmente con la arquitectura Jamstack y las tecnologías de la plataforma web.
+  intro: Llevo más de 15 años trabajando como desarrolladora web. Como autónoma y junto con agencias digitales he diseñado y desarrollado innumerables páginas web personalizadas para marcas globales, pequeñas y medianas empresas, autónomas, particulares, asociaciones y fundaciones. Valoro la organización y simplicidad del código, el rendimiento y la accesibilidad. Utilizo casi exclusivamente tecnologías de la plataforma web.
   image: './src/assets/images/lene/lene2023.jpg'
   alt: 'Lene sentada frente a su escritorio, sonriendo'
   hi: 'Hola, soy yo.'
@@ -28,13 +28,13 @@ cta:
   lead: '¡Envíame un correo a [hola@lenesaile.com](mailto:hola@lenesaile.com) y cuéntame tu proyecto, oportunidades o lo que tengas en mente! Siempre estoy dispuesto a charlar.'
 ---
 
-Me aseguro de que un sitio web sea ==rápido y cargue sólo lo necesario==. El visitante debe poder orientarse inmediatamente y el sitio web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier discapacidad. El campo de la accesibilidad es enorme y complejo: aprendo constantemente.
+Me aseguro de que una página web sea rápida y cargue sólo lo necesario. Visitantes deben poder orientarse inmediatamente y la web debe ser ==accesible y utilizable para todas las personas== independientemente de cualquier diversidad funcional.
 
-No creo sitios web basados en plantillas preprogramadas y no utilizo constructores visuales de sitios web. Planifico, diseño y realizo la programación de todos las páginas web desde cero.
+No creo webs basadas en plantillas preprogramadas (como temas de WordPress) y no utilizo constructores visuales de sitios web. Planifico, diseño y realizo la programación de todos las páginas web desde cero, habitualmente utilizando una base («starter») que he desarrollado para los fundamentos.
 
 Este enfoque tiene varias ventajas:
 
-1. Ninguna imagen es demasiado grande, ningún código es demasiado, y el sitio web funciona sin errores y con rapidez.
-2. Soy independiente de terceros, reacciono a los problemas y a las actualizaciones necesarias yo mismo.
-3. Gracias a su estructura honesta y bien pensada, son muy fáciles de encontrar.
-4. Podemos hacer realidad casi cualquier cosa que imaginemos!
+1. Ninguna imagen es demasiado grande, ningún código es sobrante... y el sitio web funciona sin errores y con extrema rapidez.
+2. Soy independiente de terceros, tanto de personas como de código externo: Yo misma reacciono ante los problemas y las actualizaciones necesarias.
+3. Creo sitios web semánticamente estructurados con contenidos accesibles escritos por humanos, altamente descubribles sin necesidad de esfuerzo adicional.
+4. Realmente, ¡podemos realizar casi cualquier cosa que puedas imaginar!

@@ -1,4 +1,5 @@
 import markdownIt from 'markdown-it';
+import markdownItAbbr from 'markdown-it-abbr';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItPrism from 'markdown-it-prism';
 import markdownItAnchor from 'markdown-it-anchor';
@@ -7,7 +8,6 @@ import markdownItLinkAttributes from 'markdown-it-link-attributes';
 import {full as markdownItEmoji} from 'markdown-it-emoji';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
-import markdownitAbbr from 'markdown-it-abbr';
 import markdownItTocDoneRight from 'markdown-it-toc-done-right';
 import {slugifyString} from '../filters/slugify.js';
 
@@ -22,6 +22,7 @@ export const markdownLib = markdownIt({
   .use(markdownItPrism, {
     defaultLanguage: 'plaintext'
   })
+  .use(markdownItAbbr)
   .use(markdownItAnchor, {
     slugify: slugifyString,
     tabIndex: false,
@@ -56,7 +57,6 @@ export const markdownLib = markdownIt({
   .use(markdownItEmoji)
   .use(markdownItFootnote)
   .use(markdownitMark)
-  .use(markdownitAbbr)
   .use(md => {
     md.renderer.rules.image = (tokens, idx) => {
       const token = tokens[idx];

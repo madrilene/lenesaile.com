@@ -10,20 +10,19 @@ alt: 'Lene sitzt auf einem Gymnastikball vor ihrem Schreibtisch und scheint zu a
 breakout:
   title: 'Ich lebe und arbeite in Madrid'
   intro: 'Seit 2010 lebe und arbeite ich in Madrid, im Stadtteil La Latina. Ich mache Projekte für Kunden aus aller Welt.'
-finalWords: 'Ich lese und lerne permanent. Besonders antegtan bin ich von allem, was in den Bereichen Webplattform, Barrierefreiheit und Performance passiert. Ich betrachte mich nirgendwo als Expertin, da ich ständig optimiere und jeder Bereich groß ist - ich lerne schnell und bin flexibel.'
+finalWords: 'Ich bin ständig dabei, meine Perspektiven neu zu definieren und die Art und Weise, wie ich arbeite, zu verbessern. Mit jedem neuen Projekt lerne ich etwas Neues, und jede neue Website ist die beste, die ich je gemacht habe. Meine Projekte zielen darauf ab, das Web (die Welt?) ein bisschen besser zu machen, für die Menschen, und für den Planeten.'
 cta:
   title: 'Lass uns reden!'
   desktop: 'Ein Projekt wird im Internet erfolgreich, wenn es gut aussieht, sich gut anfühlt und mit sauberer, sicherer Technik arbeitet. Seit 2008 kreiere ich überzeugende Web-Erlebnisse mit Liebe zum Detail.'
   lead: 'Schick mir eine Mail an [hola@lenesaile.com](mailto:hola@lenesaile.com) und erzähl mir von deinem Projekt oder was auch immer du im Sinn hast! Ich bin stets für ein Gespräch zu haben.'
 ---
 
-Ich habe schon immer gerne mit Computern experimentiert. Im Jahr 2004 habe ich versucht, meine ersten Websites mit HTML und CSS zu erstellen. Vier Jahre später begann ich, meinen Lebensunterhalt mit meinem Hobby zu verdienen.
+Ich habe schon immer gerne an Computern herumgebastelt. Im Jahr 2004 begann ich, meine ersten Websites mit HTML und CSS zu erstellen.
 
-Nachdem ich mit statischen Websites an meine Grenzen stieß, entdeckte ich [WordPress](/de/blog/einige-gedanken-zu-wordpress-im-jahr-2022/) und lernte PHP, um meine Möglichkeiten zu erweitern.
+Am Anfang waren es einfache miteinander verlinkte HTML-Dokumente, die ich direkt auf den Server hochgeladen habe. Sobald eine Website wuchs, wurde das aber umständlich, weil manche Änderungen an jedem einzelnen HTML Dokument einzeln gemacht werden mussten. Außerdem gab es keine CMS (Content-Management-Systeme) für diese Art von Webseiten. Ich entdeckte _WordPress_ und lernte dann PHP, um meine Möglichkeiten zu erweitern.
 
-Im Jahr 2018 bin ich auf den Jamstack-Ansatz gestoßen und habe daraufhin alle meine Arbeitsabläufe umgestellt.
-Nach einem kurzen Abstecher zu verschiedenen JavaScript-Frameworks und Tailwind CSS ziehe ich es nun vor, direkt mit den Technologien der Webplattform zu arbeiten, ohne Abstraktionsebenen.
+Damals war ich Generalistin in allen Facetten und habe neben der Programmierung auch Design (und Grafikdesign für Printmedien!), Text, Marketing und Suchmaschinenoptimierung gemacht. Programmierung und digitales Design habe ich bis heute beibehalten, mit einer besonderen Liebe für Typografie. außerdem stehe ich bei der Erstellung und Organisation großartiger Inhalte beratend zur Seite.
 
-==Ich liebe es, schnelle Websites mit minimalem Einsatz von Javascript sowie allen Möglichkeiten des modernen CSS zu erstellen.==
+2018 bin ich auf den Jamstack-Ansatz gestoßen (vorgerenderte Inhalte + clientseitige Erweiterungen, die über ein CDN ausgeliefert werden) und habe daraufhin alle meine bisherigen Prozesse umgestellt. Zurück zu statischen Websites, wenn man so will! Mit _Eleventy_ fand ich das perfekte Generator-Tool, und es stand mir nun eine ganze Infrastruktur mit Hosting- und CMS-Lösungen zur Verfügung.
 
-Besonders begeistert bin ich von modernem CSS, Barrierefreiheit und Performance. Dies sind die Bereiche, in denen ich mich kontinuierlich und leidenschaftlich weiterbilde.
+Mein Fokus lag schon immer auf persönlichen Websites, Marketing- und Business-Websites oder kleinen Apps. Ich möchte sinnvolle Erlebnisse schaffen, die die Persönlichkeit von Menschen und die Besonderheiten von Produkten widerspiegeln und <sparkly-text number-of-sparkles="5" style="--sparkly-text-color: var(--color-accent)">**Freude bringen**.</sparkly-text>
