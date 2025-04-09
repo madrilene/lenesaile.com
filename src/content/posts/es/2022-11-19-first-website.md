@@ -8,7 +8,7 @@ fecha: 2022-11-19
 cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'He aprendido un par de cosas desde 2008. Sin embargo, sigo haciendo páginas web que son sencillas y duraderas.'
-  lead: 'Trabajo con WordPress utilizando [la plataforma Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033). '
+  lead: 'Trabajo con WordPress utilizando [la plataforma Codeable](https://codeable.io/?ref=ebTXq). '
 redirectFrom: ['/es/blog/mi-primer-pagina-web/']
 ---
 

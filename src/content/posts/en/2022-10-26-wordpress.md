@@ -9,7 +9,7 @@ show_cta: true
 cta:
   title: 'You want a WordPress site?'
   desktop: "I have been working with WordPress for many years. Want a custom, optimized theme? Happy to talk! I absolutely won't be able (don't want to 😇) to help with premium themes, page builders or third party plugin issues, though."
-  lead: "For any WordPress issue I can't help you with, I recommend the people working at the [Codeable platform](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033)."
+  lead: "For any WordPress issue I can't help you with, I recommend the people working at the [Codeable platform](https://codeable.io/?ref=ebTXq)."
 ---
 
 Back in 2007, I was looking for a CMS that I could understand so I could use it to create my own websites. After trying [Joomla](https://www.joomla.org/) and [TYPO3](https://typo3.org/) (and hating it), I discovered [WordPress](https://wordpress.org/). It was a revelation.

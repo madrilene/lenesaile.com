@@ -9,7 +9,7 @@ show_cta: true
 cta:
   title: '¿Quieres una página web con WordPress?'
   desktop: 'Llevo muchos años trabajando con WordPress. ¿Quieres un tema personalizado y optimizado? ¡Encantada de hablar! Sin embargo, no podré ayudarte (no quiero 😇) con temas premium, page builders o problemas con plugins de terceros.'
-  lead: 'Para cualquier problema con WordPress en el que no pueda ayudarte, te recomiendo a la gente que trabaja en la plataforma [Codeable](https://app.codeable.io/tasks/new?ref=ebTXq&preferredContractor=109033).'
+  lead: 'Para cualquier problema con WordPress en el que no pueda ayudarte, te recomiendo a la gente que trabaja en la plataforma [Codeable](https://codeable.io/?ref=ebTXq).'
 ---
 
 En 2007 buscaba un CMS que tuviera sentido para mí. Tras probar [Joomla](https://www.joomla.org/) y [TYPO3](https://typo3.org/) (y odiarlo), descubrí [WordPress](https://wordpress.org/). Fue una revelación.
