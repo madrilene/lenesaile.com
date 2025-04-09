@@ -1,5 +1,7 @@
 
-	{%- if eleventy.env.runMode === "serve" %}
+{%- if not easterEggs.nakedCssDay %}
+
+ {%- if eleventy.env.runMode === "serve" %}
 		<!-- External CSS for local dev (refresh without page reload) -->
 		<link rel="stylesheet" href="{% getBundleFileUrl "css", "global" %}">
 		<link rel="stylesheet" href="{% getBundleFileUrl "css", "local" %}">
@@ -10,3 +12,7 @@
 	{%- endif %}
 
 	{% css "global" %}{% include "css/global.css" %}{% endcss %}
+
+  {%- else %}
+	<!-- It's April 9th, Naked CSS Day! -->
+{%- endif %}

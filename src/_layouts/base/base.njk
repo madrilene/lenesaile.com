@@ -43,6 +43,8 @@
   </head>
 
   <body class="wrapper {{ layout }} {{ bodyClass }}">
+    {%- if easterEggs.nakedCssDay %}{% include "easter-eggs/naked-css-day.njk" %}{% endif %}
+
     {% set indicateActive %}
       {% if page.url == "/" + page.lang + "/" %}
         aria-current=page

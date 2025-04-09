@@ -67,9 +67,16 @@ export default {
     },
     theme: {
       title: 'Change theme',
-      current: 'Current theme: ',
+      current: 'Current theme',
       light: 'light',
       dark: 'dark'
+    },
+    easterEggs: {
+      cssNakedDay: {
+        title: 'CSS Naked Day',
+        description: "(I don't cheat, this is table with HTML presentational attributes)",
+        link: 'https://css-naked-day.org/'
+      }
     }
   },
   de: {
@@ -117,7 +124,6 @@ export default {
       },
       codepen: 'Code auf Codepen'
     },
-
     webmentions: {
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
       buttonValue: 'Webmention senden'
@@ -144,6 +150,13 @@ export default {
       current: 'Aktuelles Thema: ',
       light: 'hell',
       dark: 'dunkel'
+    },
+    easterEggs: {
+      cssNakedDay: {
+        title: 'CSS Naked Day',
+        description: '(Ich schummle nicht, das ist eine Tabelle mit HTML-Attributen)',
+        link: 'https://css-naked-day.org/'
+      }
     }
   },
   es: {
@@ -217,6 +230,13 @@ export default {
       current: 'Tema actual: ',
       light: 'claro',
       dark: 'oscuro'
+    },
+    easterEggs: {
+      cssNakedDay: {
+        title: 'CSS Naked Day',
+        description: '(No hago trampa, esta es una tabla con atributos de presentación HTML)',
+        link: 'https://css-naked-day.org/'
+      }
     }
   }
 };
