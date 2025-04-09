@@ -1,9 +1,9 @@
-<svg width="1em" height="2em" viewBox="0 0 24 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--header-color-override, var(--color-text))">
+<svg width="1em" height="2em" viewBox="0 0 24 48" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--header-color-override, currentColor)">
 <path id="ray-left" class="light-on" d="M7.41797 43L5.99995 44.4104"  />
 <path id="ray-center" class="light-on" d="M12.0187 47L12.0001 45.0001"  />
 <path id="ray-right" class="light-on" d="M18.4142 44.4143L17 43.0001"  />
 <path id="shade" d="M6 28H18L22 38H2L6 28Z"  />
 <path id="cable" d="M12 0L12 28"  stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
 <path id="bulb-outer" d="M9.17 38C9.01087 38.4524 8.96249 38.9363 9.02894 39.4112C9.09538 39.8861 9.2747 40.3382 9.55188 40.7295C9.82905 41.1208 10.196 41.44 10.6219 41.6603C11.0479 41.8806 11.5205 41.9955 12 41.9955C12.4795 41.9955 12.9521 41.8806 13.3781 41.6603C13.804 41.44 14.171 41.1208 14.4481 40.7295C14.7253 40.3382 14.9046 39.8861 14.9711 39.4112C15.0375 38.9363 14.9891 38.4524 14.83 38"  />
-<ellipse id="bulb-filled" class="light-on" cx="12" cy="40.5" rx="3" ry="2.5" fill="var(--header-color-override, var(--color-text))"/>
+<ellipse id="bulb-filled" class="light-on" cx="12" cy="40.5" rx="3" ry="2.5" fill="var(--header-color-override, currentColor)"/>
 </svg>
