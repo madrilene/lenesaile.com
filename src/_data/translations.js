@@ -67,7 +67,7 @@ export default {
     },
     theme: {
       title: 'Change theme',
-      current: 'Current theme',
+      current: 'Current theme: ',
       light: 'light',
       dark: 'dark'
     },
