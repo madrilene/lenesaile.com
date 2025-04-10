@@ -1,5 +1,7 @@
 ---
 title: Sustainability
+description: This Website has a A+ Carbon Rating.
+permalink: /{{ lang }}/en/index.html
 layout: page
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true

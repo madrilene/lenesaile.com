@@ -101,6 +101,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('striptags', filters.striptags);
   eleventyConfig.addFilter('shuffle', filters.shuffleArray);
   eleventyConfig.addFilter('alphabetic', filters.sortAlphabetically);
+  eleventyConfig.addFilter('split', filters.splitStrings);
   eleventyConfig.addFilter('slugify', filters.slugifyString);
   eleventyConfig.addFilter('webmentionGetForUrl', filters.webmentionGetForUrl);
   eleventyConfig.addFilter('webmentionSize', filters.webmentionSize);

@@ -5,6 +5,7 @@ import {markdownFormat} from './filters/markdown-format.js';
 import {readingTime} from './filters/reading-time.js';
 import {shuffleArray} from './filters/sort-random.js';
 import {sortAlphabetically} from './filters/sort-alphabetic.js';
+import {splitStrings} from './filters/split-strings.js';
 import {splitlines} from './filters/splitlines.js';
 import {striptags} from './filters/striptags.js';
 import {slugifyString} from './filters/slugify.js';
@@ -27,6 +28,7 @@ export default {
   striptags,
   shuffleArray,
   sortAlphabetically,
+  splitStrings,
   slugifyString,
   webmentionGetForUrl,
   webmentionSize,

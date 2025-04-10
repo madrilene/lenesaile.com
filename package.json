@@ -10,6 +10,7 @@
   "scripts": {
     "clean": "rimraf dist src/_includes/css src/_includes/scripts",
     "clean:og": "rimraf src/assets/og-images",
+    "clean:cache": "rm -rf .cache node_modules/.cache",
     "favicons": "node ./src/_config/setup/generate-favicons.js",
     "colors": "node ./src/_config/setup/create-colors.js",
     "dev:11ty": "cross-env ELEVENTY_ENV=development eleventy --serve --quiet",

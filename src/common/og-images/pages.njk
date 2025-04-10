@@ -3,17 +3,19 @@ offSetLeft: 120
 fontDisplay: "'Outfit', Ubuntu" # needed created in local development, font must be installed on your system.
 fontBody: "'Atkinson Hyperlegible', Ubuntu" # needed created in local development, font must be installed on your system.
 fontDisplayWidth: 700
-fontDisplaySize: 70
+fontDisplaySize: 90
 fontBodyWidth: 400
-fontBodySize: 20
-background: '#F5CF38'
+fontBodySize: 26
+fontBodyMetaSize: 20
+background: '#f8f8f8'
 text: '#2e2e2e'
 siteUrl: 'lenesaile.com'
 pagination:
-  data: collections.posts
+  data: collections.pages
   size: 1
-  alias: ogPost
-permalink: '/assets/og-images/post-{{ ogPost.data.lang }}-{{ ogPost.fileSlug }}-preview.svg'
+  alias: ogPage
+permalink: '/assets/og-images/page-{{ ogPage.data.lang }}-{{ ogPage.fileSlug }}-preview.svg'
+layout: null
 eleventyExcludeFromCollections: true
 ---
 
@@ -25,34 +27,42 @@ eleventyExcludeFromCollections: true
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  <rect id="bg" width="100%" height="100%" opacity="1" fill="{{ background }}" />
-  <!-- date -->
+
+  <!-- background -->
+  {% set themeParts = ogPage.data.theme | replace('-', ' ') | split(' ') %}
+  {% if themeParts.length == 2 %}
+    {% set theme = themeParts[0] | capitalize ~ ' ' ~ themeParts[1] | capitalize %}
+  {% else %}
+    {% set theme = themeParts[0] | capitalize %}
+  {% endif %}
+
+  {% set themeBg = "" %}
+  {% for color in designTokens.colors.items %}
+    {% if color.name == theme %}
+      {% set themeBg = color.value %}
+    {% endif %}
+  {% endfor %}
+  {% set backgroundColor = themeBg or background %}
+
+  <rect id="bg" width="100%" height="100%" opacity="1" fill="{{ backgroundColor }}" />
+
+  <!-- date
+  {% set dateVerticalStartingPoint = 200 %}
   <text
     font-family="{{ fontBody }}, sans-serif"
-    font-size="{{ fontBodySize }}"
+    font-size="{{ fontBodyMetaSize }}"
     font-weight="{{ fontBodyWidth }}"
     fill="{{ text }}"
     letter-spacing="-1"
   >
-    <tspan x="{{ offSetLeft }}" y="{{ verticalStartingPoint - 120 }}">
-      {{ ogPost.date | formatDate('DD / MM / YYYY') }}
+    <tspan x="{{ offSetLeft }}" y="{{ dateVerticalStartingPoint - 120 }}">
+      {{ theme }}
     </tspan>
-  </text>
+  </text> -->
 
   <!-- title -->
-  {% set titleInLines = ogPost.data.title | splitlines(20) %}
-  {% set numberOfLines = titleInLines.length %}
-  {% if numberOfLines == 1 %}
-    {% set verticalStartingPoint = 340 %}
-    {% elseif numberOfLines == 2 %}
-    {% set verticalStartingPoint = 290 %}
-    {% elseif numberOfLines == 3 %}
-    {% set verticalStartingPoint = 250 %}
-    {% elseif numberOfLines == 4 %}
-    {% set verticalStartingPoint = 210 %}
-    {% elseif numberOfLines == 5 %}
-    {% set verticalStartingPoint = 170 %}
-  {% endif %}
+  {% set titleInLines = ogPage.data.title | splitlines(24) %}
+  {% set titleVerticalStartingPoint = 210 %}
   <text
     id="text"
     font-family="{{ fontDisplay }}, sans-serif"
@@ -62,14 +72,30 @@ eleventyExcludeFromCollections: true
     letter-spacing="-3"
   >
     {% for line in titleInLines %}
-      <tspan x="{{ offSetLeft }}" y="{{ verticalStartingPoint - 20 + loop.index0 * 80 }}"> {{ line }} </tspan>
+      <tspan x="{{ offSetLeft }}" y="{{ titleVerticalStartingPoint - 20 + loop.index0 * 80 }}"> {{ line }} </tspan>
+    {% endfor %}
+  </text>
+
+  <!-- excerpt -->
+  {% set excerptInLines = (ogPage.data.description or translations[page.lang].siteDescription) | splitlines(50) %}
+  {% set excerptVerticalStartingPoint = 290 %}
+  <text
+    id="text"
+    font-family="{{ fontBody }}, sans-serif"
+    font-size="{{ fontBodySize }}"
+    font-weight="{{ fontBodyWidth }}"
+    fill="{{ text }}"
+    letter-spacing="-0.5"
+  >
+    {% for line in excerptInLines %}
+      <tspan x="{{ offSetLeft }}" y="{{ excerptVerticalStartingPoint - 20 + loop.index0 * 40 }}"> {{ line }} </tspan>
     {% endfor %}
   </text>
 
   <!-- url -->
   <text
     font-family="{{ fontDisplay }}, sans-serif"
-    font-size="{{ fontBodySize }}"
+    font-size="{{ fontBodyMetaSize }}"
     font-weight="{{ fontDisplayWidth }}"
     fill="{{ text }}"
     letter-spacing="-0.5"
