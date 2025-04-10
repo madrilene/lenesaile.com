@@ -91,6 +91,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
 
   // --------------------- Filters
+  eleventyConfig.addFilter('base64Format', filters.base64Format);
   eleventyConfig.addFilter('categoryFilter', filters.categoryFilter);
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
   eleventyConfig.addFilter('formatDate', filters.formatDate);

@@ -1,4 +1,5 @@
 import {categoryFilter} from './filters/category-filter.js';
+import {base64Format} from './filters/base64-format.js';
 import {toISOString, formatDate} from './filters/dates.js';
 import {markdownFormat} from './filters/markdown-format.js';
 import {readingTime} from './filters/reading-time.js';
@@ -17,6 +18,7 @@ import {
 
 export default {
   categoryFilter,
+  base64Format,
   toISOString,
   formatDate,
   markdownFormat,
