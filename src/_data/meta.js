@@ -69,7 +69,7 @@ export const greenweb = {
   disclosures: [
     {
       docType: 'sustainability-page',
-      url: `${url}/sustainability/`,
+      url: `${url}/en/sustainability/`,
       domain: domain
     }
   ],
