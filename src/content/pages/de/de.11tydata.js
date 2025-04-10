@@ -1,6 +1,7 @@
 export default {
   lang: 'de',
   layout: 'page',
+  tags: 'pages',
   eleventyComputed: {
     translationKey: data => {
       if (data.translationKey) {
