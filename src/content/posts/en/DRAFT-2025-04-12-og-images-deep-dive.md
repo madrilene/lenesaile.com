@@ -40,6 +40,8 @@ https://www.zachleat.com/web/automatic-opengraph/
 
 ## Technique 3: Canvas.
 
+This is a technique I explored years ago a bit, but it didn't stick with me. So I just want to mention that it exists:
+
 https://freedium.cfd/@Choco23/how-to-create-dynamic-open-graphic-images-3c49f4fc287
 
 ## The alias trap
