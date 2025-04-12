@@ -1,12 +1,16 @@
 <div class="details flow">
-  <div class="control | cluster" aria-label="{{ meta.details.aria }}">
-    <button id="expandAll" class="button" data-small-button>{{ meta.details.expand }}</button>
-    <button id="collapseAll" class="button" data-small-button>{{ meta.details.collapse }}</button>
+  <div class="control | cluster" aria-label="{{ translations[page.lang].details.aria }}">
+    <button id="expandAll" class="button" data-small-button>
+      {{ translations[page.lang].details.expand }}
+    </button>
+    <button id="collapseAll" class="button" data-small-button>
+      {{ translations[page.lang].details.collapse }}
+    </button>
   </div>
-  {%- for item in itemList | alphabetic -%}
-    <details id="{{ item.data.title | slugify }}">
-      <summary>{{ item.data.title }}</summary>
-      {{- item.templateContent | safe -}}
+  {%- for item in itemList | alphabetic(items, 'summary') -%}
+    <details id="{{ item.summary | slugify }}">
+      <summary>{{ item.summary }}</summary>
+      {{- item.contents | markdownFormat | safe -}}
     </details>
   {%- endfor -%}
 </div>

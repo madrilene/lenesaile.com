@@ -1,7 +1,7 @@
-export const sortAlphabetically = array => {
+export const sortAlphabetically = (array, key = 'title') => {
   return array.sort((a, b) => {
-    if (a.data.title < b.data.title) return -1;
-    if (a.data.title > b.data.title) return 1;
-    return 0;
+    const aVal = a?.[key] || '';
+    const bVal = b?.[key] || '';
+    return aVal.toString().localeCompare(bVal.toString());
   });
 };

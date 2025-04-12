@@ -1,7 +1,6 @@
 .details .control {
   --gutter: var(--space-xs-s);
   --cluster-horizontal-alignment: flex-end;
-  border-block-start: var(--stroke);
   padding-block-start: var(--space-xs);
 }
 
