@@ -89,7 +89,7 @@
   background-size: 90% auto;
   margin-block-start: 0em;
   inset-inline-start: calc(var(--space-xl) * -1);
-  translate: -0.2em -0.4em;
+  translate: -0.2em -0.5em;
 }
 
 .post .toc-toggle details[open] summary::before {
@@ -98,10 +98,6 @@
 }
 
 @media screen(wrapper) {
-  .post .toc-toggle summary::before {
-    translate: -0.2em -0.4em;
-  }
-
   .post .toc-toggle summary {
     margin-inline-start: 0;
     gap: 0;
