@@ -53,7 +53,7 @@ Das Menü hatte ich damals so gebaut:
 
 So richtig weiß ich nicht was ich mir dabei gedacht habe. Was macht diese $homeActive-Variable da oben? Die WordPress-Funktion is_home() gibt es seit Version 1.5.0. In diesem Fall wollte ich, dass sie die Klasse `current_page_item` zu "Home" hinzufügt, wenn diese Seite aktiv ist. Das ruft einen visuellen Indikator auf, der anzeigt, wo wir uns befinden. Das hat nicht funktioniert! Sicherlich habe ich einige Stunden damit verbracht, herauszufinden, warum das so ist, bis ich schließlich aufgegeben habe.
 
-{% aside %}Es gibt einige nicht intuitive Eigenarten in WordPress, die man, ähnlich wie bei JavaScript, nicht einfach in zukünftigen Versionen beheben kann, da das Fehler bei Websites hervorrufen würde, die die Funktion nutzen. `is_home()` bezieht sich nicht bedingungslos auf deine Startseite, sondern gibt `true` zurück, wenn die Leseeinstellungen im WordPress backend auf "blog posts" statt auf eine statische Seite gesetzt sind.{% endaside %}
+{% asideInfo %}Es gibt einige nicht intuitive Eigenarten in WordPress, die man, ähnlich wie bei JavaScript, nicht einfach in zukünftigen Versionen beheben kann, da das Fehler bei Websites hervorrufen würde, die die Funktion nutzen. `is_home()` bezieht sich nicht bedingungslos auf deine Startseite, sondern gibt `true` zurück, wenn die Leseeinstellungen im WordPress backend auf "blog posts" statt auf eine statische Seite gesetzt sind.{% endasideInfo %}
 
 Dann habe ich die Links zu den Seiten mit den IDs 51, 53, 18 und 289 fest einprogrammiert.
 Fertig ist das WordPress-Menü made in 2008!

@@ -55,7 +55,7 @@ En aquella época había construido el menú principal así:
 
 No sé realmente lo que estaba haciendo. ¿Qué es lo que intenta conseguir esa variable `$homeActive` ahí arriba? La función de WordPress `is_home()` existe desde la versión 1.5.0, y en ese caso obviamente quería que añadiera la clase `current_page_item` a "Home" si estaba activa, para poder mostrar un indicador visual de dónde estamos. ¡Eso no funcionó! Seguramente perdí algunas horas tratando de averiguar por qué, hasta que finalmente me rendí.
 
-{% aside %}Hay algunas peculiaridades contraintuitivas en WordPress que, al igual que en JavaScript, no se pueden arreglar fácilmente en futuras versiones, ya que esto rompería incontables páginas web. La función `is_home()` no se refiere incondicionalmente a tu página de inicio, sino que devuelve `true` si la configuración de lectura en el backend de WordPress está configurada como "blog posts" en lugar de una página estática.{% endaside %}
+{% asideInfo %}Hay algunas peculiaridades contraintuitivas en WordPress que, al igual que en JavaScript, no se pueden arreglar fácilmente en futuras versiones, ya que esto rompería incontables páginas web. La función `is_home()` no se refiere incondicionalmente a tu página de inicio, sino que devuelve `true` si la configuración de lectura en el backend de WordPress está configurada como "blog posts" en lugar de una página estática.{% endasideInfo %}
 
 Luego codifiqué los enlaces a las páginas con los IDs 51, 53, 18 y 289 directamente en el template.
 ¡Terminado es el menú de WordPress hecho en 2008!

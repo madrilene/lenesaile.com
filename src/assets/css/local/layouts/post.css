@@ -53,7 +53,7 @@
   font-size: var(--size-step-0);
 }
 
-.post :is(.note, .table-of-contents) {
+.post :is(.info, .readmore, .table-of-contents) {
   border: var(--stroke);
   border-radius: var(--border-radius-medium);
   padding-inline: var(--space-xl);
@@ -61,7 +61,12 @@
   position: relative;
 }
 
-.post :is(.note, .table-of-contents):before {
+.post .readmore h2 {
+  font-size: var(--size-step-1);
+  margin-block-start: var(--space-m);
+}
+
+.post :is(.info, .readmore, .table-of-contents):before {
   --size: var(--space-2xl);
   content: '';
   border-radius: 100%;
@@ -79,8 +84,12 @@
   background-size: 90% auto;
 }
 
-.post .note:before {
+.post .info:before {
   background-image: url('/assets/images/template/info.svg');
+}
+
+.post .readmore:before {
+  background-image: url('/assets/images/template/book.svg');
 }
 
 .post .table-of-contents:before {

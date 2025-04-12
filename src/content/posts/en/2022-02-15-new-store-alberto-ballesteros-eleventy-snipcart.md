@@ -35,7 +35,7 @@ So far, we have maintained a direct connection to Stripe for a shop function.
 
 On our end, however, we're going to expand the product range a bit and a shopper may want to buy more than one item at a time. And so a third vendor comes into play: [Snipcart](https://snipcart.com/).
 
-{% aside %}**Disclaimer:** We have returned to the Stripe solution a few months after publishing this text. Not because Snipcart is not good, on the contrary. It's a great solution, especially for stores with reliable monthly sales. But if you only sell a product once in a while, [it's not really worth it](https://snipcart.com/faq#Pricing): If you sell more than $500 a month, Snipcart keeps 2% commission. If you sell less than $500 per month, Snipcart charges a flat fee of $10 per month. This also applies if you don't sell anything at all. I will also describe the Stripe integration soon on the blog.{% endaside %}
+{% asideInfo %}**Disclaimer:** We have returned to the Stripe solution a few months after publishing this text. Not because Snipcart is not good, on the contrary. It's a great solution, especially for stores with reliable monthly sales. But if you only sell a product once in a while, [it's not really worth it](https://snipcart.com/faq#Pricing): If you sell more than $500 a month, Snipcart keeps 2% commission. If you sell less than $500 per month, Snipcart charges a flat fee of $10 per month. This also applies if you don't sell anything at all. I will also describe the Stripe integration soon on the blog.{% endasideInfo %}
 
 ## Technical integration of Snipcart with Eleventy
 

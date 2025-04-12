@@ -30,7 +30,7 @@ Bisher haben wir für die Shop-Funktion eine direkte Verbindung zu Stripe unterh
 
 In unserem Fall werden wir jedoch die Produktpalette etwas erweitern, und ein Kunde möchte vielleicht mehr als einen Artikel auf einmal kaufen. Und so kommt ein dritter Anbieter ins Spiel: [Snipcart](https://snipcart.com/).
 
-{% aside %}**Hinweis:** Wir sind einige Monate nach der Veröffentlichung dieses Textes wieder zur Stripe-Lösung gewechselt. Nicht, weil Snipcart nicht gut ist, im Gegenteil. Es ist eine großartige Lösung, vor allem für Shops mit zuverlässigen monatlichen Umsätzen. Aber wenn du nur hin und wieder ein Produkt verkaufst, [lohnt es sich nicht](https://snipcart.com/faq#Pricing): Wenn du mehr als 500 $ im Monat verkaufst, kostet die Nutzung von Snipcart 2 % Provision. Bei weniger als 500 Dollar im Monat kostet Snipcart ein Fixpreis von 10 Dollar pro Monat. Das gilt auch wenn man einen Monat lang gar nichts verkauft. Ich werde demnächst hier auch die Lösung mit Stripe beschreiben.{% endaside %}
+{% asideInfo %}**Hinweis:** Wir sind einige Monate nach der Veröffentlichung dieses Textes wieder zur Stripe-Lösung gewechselt. Nicht, weil Snipcart nicht gut ist, im Gegenteil. Es ist eine großartige Lösung, vor allem für Shops mit zuverlässigen monatlichen Umsätzen. Aber wenn du nur hin und wieder ein Produkt verkaufst, [lohnt es sich nicht](https://snipcart.com/faq#Pricing): Wenn du mehr als 500 $ im Monat verkaufst, kostet die Nutzung von Snipcart 2 % Provision. Bei weniger als 500 Dollar im Monat kostet Snipcart ein Fixpreis von 10 Dollar pro Monat. Das gilt auch wenn man einen Monat lang gar nichts verkauft. Ich werde demnächst hier auch die Lösung mit Stripe beschreiben.{% endasideInfo %}
 
 ## Technische Integration von Snipcart mit Eleventy
 

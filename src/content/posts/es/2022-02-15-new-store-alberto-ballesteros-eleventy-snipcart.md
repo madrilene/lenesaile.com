@@ -31,7 +31,7 @@ Hasta ahora, hemos mantenido una conexión directa con Stripe para una función 
 
 Por nuestra parte, sin embargo, vamos a ampliar la gama de productos un poco y es posible que un comprador quiera comprar más de un artículo a la vez. Y así entra en juego un tercer proveedor: [Snipcart](https://snipcart.com/).
 
-{% aside %}**Nota:** Hemos vuelto a la solución de Stripe unos meses después de publicar este texto. No porque Snipcart no sea bueno, al contrario. Es una gran solución, especialmente para las tiendas con ventas mensuales fiables. Pero si sólo vendes un producto de vez en cuando, [no merece la pena](https://snipcart.com/faq#Pricing): Si vendes más de 500 dólares al mes, Snipcart cuesta un 2% de comisión. Si vendes menos de 500 dólares al mes, Snipcart cobra una tarifa fija de 10 dólares al mes. Esto también se aplica si no vendes nada durante un mes. También describiré la solución con Stripe pronto en el blog.{% endaside %}
+{% asideInfo %}**Nota:** Hemos vuelto a la solución de Stripe unos meses después de publicar este texto. No porque Snipcart no sea bueno, al contrario. Es una gran solución, especialmente para las tiendas con ventas mensuales fiables. Pero si sólo vendes un producto de vez en cuando, [no merece la pena](https://snipcart.com/faq#Pricing): Si vendes más de 500 dólares al mes, Snipcart cuesta un 2% de comisión. Si vendes menos de 500 dólares al mes, Snipcart cobra una tarifa fija de 10 dólares al mes. Esto también se aplica si no vendes nada durante un mes. También describiré la solución con Stripe pronto en el blog.{% endasideInfo %}
 
 ## Integración técnica de Snipcart con Eleventy
 

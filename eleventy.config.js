@@ -110,7 +110,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('webmentionSort', filters.webmentionSort);
 
   // --------------------- Shortcodes
-  eleventyConfig.addPairedShortcode('aside', shortcodes.aside);
+  eleventyConfig.addPairedShortcode('asideInfo', shortcodes.asideInfo);
+  eleventyConfig.addPairedShortcode('asideReadmore', shortcodes.asideReadmore);
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('image', shortcodes.image);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);

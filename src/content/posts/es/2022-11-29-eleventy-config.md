@@ -67,7 +67,7 @@ Aunque no vamos a tocar la mayoría de las carpetas, este es el aspecto que podr
 
 ... Porque _puedes_ configurar todas tus _collections_, _shortcodes_ y _filters_ ahí mismo.
 
-{% aside %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endaside %}
+{% asideInfo %}Si aún no lo has hecho, deberías dirigirte a la [documentación de Eleventy](https://www.11ty.dev/docs/config/) para familiarizarte con todas las opciones de configuración disponibles.{% endasideInfo %}
 
 ## Externalización de las personalizaciónes
 
@@ -98,8 +98,8 @@ module.exports = {
 };
 ```
 
-{% aside %}`/**/*` coincide con cualquier número de directorios entre `/src/posts/` y tus archivos `.md`. De esta manera podemos asegurarnos de que Eleventy encuentra todos los archivos markdown por muy anidados que estén, y podemos seguir ordenando los contenidos por año, luego por mes, etc. **Organize all the things!**
-{% endaside %}
+{% asideInfo %}`/**/*` coincide con cualquier número de directorios entre `/src/posts/` y tus archivos `.md`. De esta manera podemos asegurarnos de que Eleventy encuentra todos los archivos markdown por muy anidados que estén, y podemos seguir ordenando los contenidos por año, luego por mes, etc. **Organize all the things!**
+{% endasideInfo %}
 
 Tu `eleventy.js` ahora se ve así:
 
