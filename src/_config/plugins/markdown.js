@@ -30,10 +30,7 @@ export const markdownLib = markdownIt({
       class: 'heading-anchor'
     })
   })
-  .use(markdownItClass, {
-    ol: 'list',
-    ul: 'list'
-  })
+  .use(markdownItClass, {})
   .use(markdownItTocDoneRight, {
     placeholder: `{:toc}`,
     slugify: slugifyString,

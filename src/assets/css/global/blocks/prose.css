@@ -49,12 +49,16 @@
 /* block space only for "regular lists" and sublists */
 .prose :is(ul, ol):not([class]) li + li,
 .prose :is(ul, ol):not([class]) li > :is(ol, ul) {
-  --flow-space: var(--space-s-m);
+  padding-block-start: var(--space-s);
 }
 
 /* inline space only for "regular lists" */
-.prose :is(ul:not([class]), ol:not(.grid)) {
-  padding-inline-start: 1.2ch;
+.prose ul:not([class]) {
+  padding-inline-start: 1.3ch;
+}
+
+.prose ol:not([class]) {
+  padding-inline-start: 1.8ch;
 }
 
 /* marker only for "regular lists" */
