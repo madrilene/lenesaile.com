@@ -1,3 +1,11 @@
+.webmentions h3 {
+  font-size: var(--size-step-0);
+}
+
+.webmentions h2 + p {
+  font-size: var(--size-step-min-1);
+}
+
 .webmentions .avatars {
   max-inline-size: 40ch;
 }

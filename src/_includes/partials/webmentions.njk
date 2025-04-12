@@ -1,5 +1,7 @@
-<section class="webmentions | flow content region" style="--region-space-top: var(--space-xl)">
+<aside class="webmentions | flow region prose">
   <h2 id="webmentions">Webmentions</h2>
+
+  {{ translations[page.lang].webmentions.about | markdownFormat | safe }}
 
   <!-- only needed for local testing -->
   {% set webmentionUrl = "https://www.lenesaile.com" + page.url %}
@@ -49,7 +51,7 @@
     </div>
   {% endif %}
 
-  <aside class="flow">
+  <div class="flow">
     <p>{{ translations[page.lang].webmentions.formTitle }}</p>
     <form action="https://webmention.io/www.lenesaile.com/webmention" method="post" class="form-webmention">
       <label for="form-webmention-source">URL</label>
@@ -68,5 +70,5 @@
         <input type="submit" class="button" value="{{ translations[page.lang].webmentions.buttonValue }}" />
       </div>
     </form>
-  </aside>
-</section>
+  </div>
+</aside>
