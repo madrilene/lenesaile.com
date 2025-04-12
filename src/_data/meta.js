@@ -42,26 +42,10 @@ export const blog = {
       type: 'application/json'
     }
   ],
-  // Tags
-  tagSingle: 'Tag',
-  tagPlural: 'Tags',
-  tagMore: 'More tags:',
   // pagination
   paginationNumbers: true
 };
-export const details = {
-  aria: 'section controls',
-  expand: 'expand all',
-  collapse: 'collapse all'
-};
-export const dialog = {
-  close: 'Close'
-};
 export const navigation = {
-  navLabel: 'Menu',
-  ariaTop: 'Main',
-  ariaBottom: 'Complementary',
-  ariaPlatforms: 'Platforms',
   drawerNav: false
 };
 export const greenweb = {

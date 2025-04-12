@@ -2,7 +2,7 @@
 layout: tags
 permalink: /tags/index.html
 eleventyComputed:
-  title: '{{ meta.blog.tagPlural }}'
+  title: '{{ translations[page.lang].blog.tagPlural }}'
 ---
 
 <div class="taglist | mt-s-m cluster">
@@ -14,7 +14,6 @@ eleventyComputed:
 <custom-masonry layout="50-50">
   {% set itemlist = collections.posts %}
   {% for item in itemlist %}
-
 		{% include "partials/card-tag.njk" %}
   {% endfor %}
 </custom-masonry>

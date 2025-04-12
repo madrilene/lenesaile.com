@@ -8,9 +8,10 @@ export default {
     a11y: {
       skipMain: 'Jump to main content',
       skipSection: 'Jump to next section',
+      navMainLabel: 'Menu',
       navMainAria: 'Main',
       navFooterAria: 'Legal information',
-      navMainLabel: 'Menu',
+      navPlatformAria: 'Platforms',
       navLangAria: 'Change language',
       navBreadcrump: 'breadcrump',
       projectSidebarMeta: 'Meta information',
@@ -42,7 +43,10 @@ export default {
         previous: 'Previous',
         next: 'Next'
       },
-      codepen: 'See on Codepen'
+      codepen: 'See on Codepen',
+      tagSingle: 'Tag',
+      tagPlural: 'Tags',
+      tagMore: 'More tags:'
     },
     webmentions: {
       about:
@@ -60,6 +64,9 @@ export default {
       aria: 'section controls',
       expand: 'expand all',
       collapse: 'collapse all'
+    },
+    dialog: {
+      close: 'close'
     },
     cta: {
       title: "Let's talk!",
@@ -90,9 +97,10 @@ export default {
     a11y: {
       skipMain: 'Zum Hauptinhalt springen',
       skipSection: 'Zum nächsten Abschnitt springen',
+      navMainLabel: 'Menü',
       navMainAria: 'Haupt',
       navFooterAria: 'Rechtliche Informationen',
-      navMainLabel: 'Menü',
+      navPlatformAria: 'Plattformen',
       navLangAria: 'Sprache ändern',
       navBreadcrump: 'breadcrump',
       projectSidebarMeta: 'Meta-Informationen',
@@ -124,7 +132,10 @@ export default {
         previous: 'Vorherige',
         next: 'Nächste'
       },
-      codepen: 'Code auf Codepen'
+      codepen: 'Code auf Codepen',
+      tagSingle: 'Tag',
+      tagPlural: 'Tags',
+      tagMore: 'Mehr tags:'
     },
     webmentions: {
       about:
@@ -140,8 +151,11 @@ export default {
     },
     details: {
       aria: 'Abschnittssteuerung',
-      expand: 'Alles erweitern',
-      collapse: 'Alles reduzieren'
+      expand: 'Alle öffnen',
+      collapse: 'Alle schließen'
+    },
+    dialog: {
+      close: 'schließen'
     },
     cta: {
       title: 'Lass uns reden!',
@@ -172,9 +186,10 @@ export default {
     a11y: {
       skipMain: 'Saltar al contenido principal',
       skipSection: 'Saltar a la siguiente sección',
+      navMainLabel: 'Menú',
       navMainAria: 'Principal',
       navFooterAria: 'Información legal',
-      navMainLabel: 'Menú',
+      navPlatformAria: 'Plataformas',
       navLangAria: 'Cambiar idioma',
       navBreadcrump: 'miga de pan',
       projectSidebarMeta: 'Información meta',
@@ -206,7 +221,10 @@ export default {
         previous: 'Anterior',
         next: 'Siguiente'
       },
-      codepen: 'Ver en Codepen'
+      codepen: 'Ver en Codepen',
+      tagSingle: 'Tag',
+      tagPlural: 'Tags',
+      tagMore: 'Más tags:'
     },
     webmentions: {
       about:
@@ -222,8 +240,11 @@ export default {
     },
     details: {
       aria: 'controles de sección',
-      expand: 'expandir todo',
-      collapse: 'colapsar todo'
+      expand: 'expandir todos',
+      collapse: 'colapsar todos'
+    },
+    dialog: {
+      close: 'cerrar'
     },
     cta: {
       title: '¡Hablemos!',

@@ -6,7 +6,7 @@ pagination:
   alias: tag
 permalink: /tags/{{ tag }}/
 eleventyComputed:
-  title: '{{ meta.blog.tagSingle }}: {{ tag }}'
+  title: '{{ translations[page.lang].blog.tagSingle }}: {{ tag }}'
 ---
 
 <custom-masonry layout="50-50">
@@ -17,7 +17,7 @@ eleventyComputed:
   {% endfor %}
 </custom-masonry>
 
-<h2 class="text-step-2">{{ meta.blog.tagMore }}</h2>
+<h2 class="text-step-2">{{ translations[page.lang].blog.tagMore }}</h2>
 
 <ul class="taglist | my-s-m cluster gutter-s" role="list">
   {% for tag in collections.tagList %}

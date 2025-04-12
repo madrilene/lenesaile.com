@@ -1,7 +1,7 @@
 <footer class="site-footer {{ footerClass }} p-s-m">
   <div class="wrapper">
     <div class="cluster gutter-xs">
-      <nav class="cluster text-step-min-1" aria-label="{{ meta.navigation.ariaBottom }}">
+      <nav class="cluster text-step-min-1" aria-label="{{ translations[page.lang].a11y.navFooterAria }}">
         &copy; {% year %}
         <a href="/{{ page.lang }}/" {{ indicateActive }}
           ><span class="font-display">{{ meta.siteName }}</span> <small>{{ pkg.version }}</small>
@@ -21,7 +21,7 @@
         {% endfor %}
       </nav>
 
-      <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
+      <nav class="cluster" aria-label="{{ translations[page.lang].a11y.navPlatformAria }}">
         <!-- gets the first item from the feed loop set in meta -->
         <a
           href="/{{ page.lang }}{{ meta.blog.feedLinks[0].url }}"

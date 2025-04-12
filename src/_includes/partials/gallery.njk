@@ -2,7 +2,7 @@
   <div class="gallery | grid mt-l-xl" role="list">
     {%- for item in gallery -%}
       <dialog class="flow modal{{ loop.index }}">
-        <button class="button" autofocus>{{ meta.dialog.close }}</button>
+        <button class="button" autofocus>{{ translations[page.lang].dialog.close }}</button>
         {%- image item.image, item.alt, item.caption -%}
       </dialog>
       <button data-index="{{ loop.index }}">{%- image item.image, item.alt -%}</button>
