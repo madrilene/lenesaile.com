@@ -51,7 +51,6 @@
 
 .post .toc-toggle {
   --flow-space: var(--space-2xl);
-  grid-column: popout;
 }
 
 .post .toc-toggle summary {
@@ -63,6 +62,7 @@
   font-size: var(--size-step-1);
   gap: 0 0.5ch;
   border-radius: var(--border-radius-small);
+  margin-inline-start: var(--space-xl);
 }
 
 .post .toc-toggle :is(summary:hover, summary:focus-visible) {
@@ -74,10 +74,9 @@
 }
 
 .post .toc-toggle summary::before {
-  --size: var(--space-l);
+  --size: var(--space-xl);
   content: '';
-  scale: 1.2;
-  content: '';
+  background-image: url('/assets/images/template/eye-close.svg');
   border-radius: 100%;
   display: flex;
   block-size: var(--size);
@@ -87,11 +86,9 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 90% auto;
-  margin-block-start: 0.3em;
-}
-
-.post .toc-toggle summary::before {
-  background-image: url('/assets/images/template/eye-close.svg');
+  margin-block-start: 0em;
+  inset-inline-start: calc(var(--space-xl) * -1);
+  translate: -0.2em -0.4em;
 }
 
 .post .toc-toggle details[open] summary::before {
@@ -101,16 +98,12 @@
 
 @media screen(wrapper) {
   .post .toc-toggle summary::before {
-    translate: -0.5em 0.2em;
-    margin-block-start: 0.1em;
+    translate: -0.2em -0.4em;
   }
 
   .post .toc-toggle summary {
+    margin-inline-start: 0;
     gap: 0;
-  }
-
-  .post .toc-toggle details > * + * {
-    margin-inline-start: 2.4ch;
   }
 }
 
