@@ -50,7 +50,7 @@ export default {
     },
     webmentions: {
       about:
-        '_Webmention_ is an open web standard (W3C Recommendation). It is are a way for websites to notify each other when they link. A webmention can represent a comment, reply, like, or other interaction. It’s part of the IndieWeb movement for decentralized communication. [Learn more about Webmentions on indieweb.org](https://indieweb.org/Webmention).',
+        '_Webmention_ is an open web standard (W3C Recommendation). It is a way for websites to notify each other when they link. A webmention can represent a comment, reply, like, or other interaction. It’s part of the IndieWeb movement for decentralized communication. [Learn more about Webmentions on indieweb.org](https://indieweb.org/Webmention).',
       formTitle: 'Have you published a response? Let me know where:',
       buttonValue: 'Send Webmention'
     },
@@ -139,7 +139,7 @@ export default {
     },
     webmentions: {
       about:
-        '_Webmention_ ist ein offener Webstandard (W3C-Empfehlung). Es ist eine Möglichkeit für Websites, sich gegenseitig zu benachrichtigen, wenn sie verlinkt werden. Eine _Webmention_ kann einen Kommentar, eine Antwort, ein Like oder eine andere Interaktion darstellen. Es ist Teil der IndieWeb-Bewegung für dezentrale Kommunikation. [Erfahre mehr über Webmentions auf indieweb.org](https://indieweb.org/Webmention).',
+        '_Webmention_ ist ein offener Webstandard (W3C-Empfehlung). Es ist eine Möglichkeit für Websites, sich zu benachrichtigen, wenn sie verlinkt werden. Eine _Webmention_ kann einen Kommentar, eine Antwort, ein Like oder eine andere Interaktion darstellen. Es ist Teil der IndieWeb-Bewegung für dezentrale Kommunikation. [Erfahre mehr über Webmentions auf indieweb.org](https://indieweb.org/Webmention).',
       formTitle: 'Hast du eine Antwort veröffentlicht? Lass mich wissen, wo:',
       buttonValue: 'Webmention senden'
     },

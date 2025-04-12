@@ -19,7 +19,7 @@ faq:
     - summary: "Why do you write in American English?"
       contents: "I've lived in Spain for a long time, and there are many words in Spanish that are spelled similarly to American English: ‘color’ / ‘color’, ‘organize’ / ‘organizar’. Spanish has become like a native language for me, and the American spelling just feels more natural. That said, I'm certainly not consistent with it, and British spelling likely appears somewhere."
     - summary: "How did you learn web development and design? "
-      contents: "I'm still learning, certainly for a lifetime. It's the eternal repetition of learning and applying: building something. I always read some book about bash scripts, typography, grid layouts, JavaScript, web components. I read articles that people from the community so lovingly provide. When I build a new project, I always try to use any new thing I can learn in the process without getting held up in the flow of work. And so everything becomes more and more natural, logical, easy, and better, over time."
+      contents: "I'm still learning, certainly for a lifetime. It's the eternal repetition of learning and applying: building something. I always read some book about bash scripts, typography, grid layouts, JavaScript, web components. I read articles that people from the community so lovingly provide. When I build a new project, I always try to learn something new in the process. And so everything becomes more and more natural, logical, easy, and better, over time."
 cta:
   title: "Let's talk!"
   desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'
