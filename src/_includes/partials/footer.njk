@@ -3,13 +3,14 @@
     <div class="cluster gutter-xs">
       <nav class="cluster text-step-min-1" aria-label="{{ translations[page.lang].a11y.navFooterAria }}">
         &copy; {% year %}
-        <a href="/{{ page.lang }}/" {{ indicateActive }}
+        <a class="rounded-small" href="/{{ page.lang }}/" {{ indicateActive }}
           ><span class="font-display">{{ meta.siteName }}</span> <small>{{ pkg.version }}</small>
         </a>
 
         {% for item in navigation[page.lang].bottom %}
           <a
             href="{{ item.url }}"
+            class="rounded-small"
             {{
               helpers.getLinkActiveState(item.url,
               page.url)
@@ -27,6 +28,7 @@
           href="/{{ page.lang }}{{ meta.blog.feedLinks[0].url }}"
           rel="alternate"
           type="{{ meta.blog.feedLinks[0].type }}"
+          class="icon-center"
         >
           <span class="visually-hidden">{{ meta.blog.feedLinks[0].title }}</span>
           {% svg "misc/rss" %}
@@ -35,7 +37,7 @@
         {% for key, value in personal.platforms %}
           {% if value != "" %}
             <!-- regular platforms -->
-            <a class="no-indicator" href="{{ value }}" rel="me">
+            <a class="no-indicator icon-center" href="{{ value }}" rel="me">
               <span class="visually-hidden">{{ key | capitalize }}</span>
               {% svg 'platform/' + key %}
             </a>
