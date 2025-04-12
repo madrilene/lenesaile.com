@@ -12,6 +12,15 @@ breakout:
   title: 'Vivo y trabajo en Madrid'
   intro: 'Desde 2010, vivo y trabajo en Madrid, La Latina. Muchos de mis clientes se encuentran en España, pero realizo proyectos con gente de todas partes del mundo.'
 finalWords: 'Reajusto constantemente mis perspectivas y optimizo mi forma de trabajar. Con cada nuevo proyecto aprendo algo nuevo, y cada nueva página web se convierte en la mejor que he hecho nunca. Mis proyectos tratan de hacer la web (¿el mundo?) un poco mejor, para la gente, y para el planeta.'
+faq:
+  title: "FAQ"
+  abbr: "(Preguntas Frecuentes)"
+  intro: "OK, en realidad nadie me pregunta estas cosas _frecuentemente_, pero pensé que las explicaría de todos modos."
+  items:
+  - summary: "¿Por qué escribes en inglés americano?"
+    contents: "Llevo mucho tiempo viviendo en España, y hay muchas palabras en español que se escriben de forma similar al inglés americano: 'color' / 'color', 'organize' / 'organizar'. El español se ha convertido en mi segunda lengua materna, y la ortografía americana me resulta más natural. Dicho esto, probablemente no soy muy constante, y la ortografía británica puede colarse por algún lado."
+  - summary: "¿Cómo aprendiste desarrollo y diseño web? "
+    contents: "Sigo aprendiendo, sin duda para toda la vida. Es la eterna repetición de aprender y aplicar: construir algo. Y repetirlo una y otra vez. Siempre leo algún libro sobre bash scripts, tipografía, diseños de cuadrículas, JavaScript, componentes web. Leo artículos que la gente de la comunidad proporciona con tanto cariño. Luego construyo un nuevo proyecto, y siempre intento utilizar alguna cosa nueva que pueda aprender en el proceso sin que me detenga el flujo de trabajo. Y así, con el tiempo, todo se vuelve cada vez más natural, lógico, sencillo y mejor."
 cta:
   title: '¡Hablemos!'
   desktop: 'Un proyecto tiene éxito en Internet cuando se ve bien, se siente bien y funciona con tecnología limpia y segura. Desde 2008 creo experiencias web atractivas con atención al detalle.'

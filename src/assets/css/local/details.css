@@ -34,6 +34,8 @@ is-land:not(:defined) .details .control {
   list-style: none;
   font-weight: var(--font-bold);
   font-size: var(--size-step-1);
+  position: relative;
+  margin-inline-start: var(--space-l);
 
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
@@ -48,15 +50,15 @@ is-land:not(:defined) .details .control {
 
 .details summary::before {
   content: '+';
-  display: block;
+  position: absolute;
+  inset-block-start: 0.3em;
+  inset-inline-start: calc(var(--space-l) * -1);
   color: var(--color-accent);
   font-family: var(--font-mono);
-  font-size: var(--size-step-0);
+  font-size: var(--size-step-1);
   font-weight: var(--font-regular);
   line-height: 0.5;
-  transform: scale(1.4);
   transform-origin: right bottom;
-  margin-inline-start: 0.2ch;
 }
 
 .details details[open] summary::before {
@@ -89,5 +91,5 @@ is-land:not(:defined) .details .control {
 }
 
 .details details > * + * {
-  margin-inline-start: 2.4ch;
+  margin-inline-start: var(--space-l);
 }

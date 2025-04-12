@@ -11,6 +11,15 @@ breakout:
   title: 'I live and work in Madrid'
   intro: 'Since 2010, I have been living and working in Madrid, La Latina. I work with people all over the world.'
 finalWords: "I am constantly readjusting my perspectives and optimizing the way I work. With every new project I learn something new, and every new website becomes the best I have ever made. My projects strive to make the web (the world?) a bit better, for the people, and for the planet."
+faq:
+  title: "FAQ"
+  abbr: "(Frequently Asked Questions)"
+  intro: "OK, no one actually asks any of these things _frequently_, but I figured I'll answer them anyway."
+  items:
+    - summary: "Why do you write in American English?"
+      contents: "I've lived in Spain for a long time, and there are many words in Spanish that are spelled similarly to American English: ‘color’ / ‘color’, ‘organize’ / ‘organizar’. Spanish has become like a native language for me, and the American spelling just feels more natural to me. That said, I'm certainly not consistent with it, and British spelling can creep in somewhere."
+    - summary: "How did you learn web development and design? "
+      contents: "I'm still learning, certainly for a lifetime. It's the eternal repetition of learning and applying - building something. I always read some book about bash scripts, typography, grid layouts, JavaScript, web components. I read articles that people from the community so lovingly provide. Then I build a new project, and I always try to use any new thing I can learn in the process without getting held up in the flow of work. And so everything becomes more and more natural, logical, easy, and better, over time."
 cta:
   title: "Let's talk!"
   desktop: 'A project becomes successful on the Internet when it looks good, feels good and works with clean, secure technology. Since 2008 I create compelling web experiences with attention to detail.'

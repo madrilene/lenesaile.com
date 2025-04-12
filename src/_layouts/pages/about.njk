@@ -33,4 +33,14 @@ sparkle: true
   <div class="full wrapper flow prose">
     <p class="prose">{{ finalWords | markdownFormat | safe }}</p>
   </div>
+
+  <div class="full wrapper flow prose region">
+    <header class="cluster">
+      <h2>{{ faq.title }}</h2>
+      <p class="text-step-0">{{ faq.abbr }}</p>
+    </header>
+    {{ faq.intro | markdownFormat | safe }}
+    {% set itemList = faq.items %}
+    {% include 'partials/details.njk' %}
+  </div>
 </article>
