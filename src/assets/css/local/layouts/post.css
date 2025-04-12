@@ -57,6 +57,7 @@
   text-decoration-line: underline;
   text-decoration-color: gray;
   text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.1em;
   font-weight: var(--font-bold);
   font-family: var(--font-display);
   font-size: var(--size-step-1);

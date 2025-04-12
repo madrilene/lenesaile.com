@@ -46,6 +46,7 @@ is-land:not(:defined) .details .control {
   text-decoration-line: underline;
   text-decoration-color: gray;
   text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.1em;
 }
 
 .details summary::before {
