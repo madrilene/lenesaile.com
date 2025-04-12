@@ -69,6 +69,7 @@
 
 .prose ol li::marker {
   color: var(--color-accent);
+  font-weight: var(--font-bold);
 }
 
 .prose img {

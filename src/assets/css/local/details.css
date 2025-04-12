@@ -35,14 +35,16 @@ is-land:not(:defined) .details .control {
   list-style: none;
   font-weight: var(--font-bold);
   font-size: var(--size-step-1);
+
   text-box-trim: trim-both;
   text-box-edge: cap alphabetic;
 }
 
 .details summary:hover,
-.details summary:focus-visible,
 .details[open] > summary {
-  color: var(--color-accent);
+  text-decoration-line: underline;
+  text-decoration-color: gray;
+  text-decoration-thickness: 0.05em;
 }
 
 .details summary::before {

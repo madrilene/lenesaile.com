@@ -4,4 +4,5 @@
   font-size: var(--size-step-0);
   text-decoration: none;
   color: var(--header-color-override, var(--color-text));
+  border-radius: var(--border-radius-medium);
 }
