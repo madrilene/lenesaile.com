@@ -32,14 +32,15 @@ code {
 pre {
   grid-column: full;
   overflow-x: auto;
-  padding: var(--space-l) calc(var(--gap));
+  padding-inline: calc(var(--gap));
+  padding-block: calc(var(--space-l) + 0.7em);
 }
 
 @media screen(md) {
   pre {
     grid-column: popout;
     border-radius: var(--border-radius-medium);
-    padding: var(--space-m) calc(var(--space-l) + 0.2em);
+    padding-inline: calc(var(--space-l) + 0.2em);
   }
 }
 
@@ -57,15 +58,78 @@ pre[class*='language-'] {
   word-break: normal;
   word-wrap: normal;
   hyphens: none;
+  line-height: var(--leading-loose);
 }
 
 pre[class*='language-'] {
-  overflow: auto;
   position: relative;
 }
 
 [class*='language-'] .namespace {
   opacity: 0.7;
+}
+
+/* language indicator */
+pre[class^='language-']::before {
+  content: attr(class);
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  background: var(--color-bg-accent);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: var(--size-step-min-2);
+  padding: 0.1em 0.4em;
+  border-radius: var(--border-radius-small);
+  text-transform: uppercase;
+  pointer-events: none;
+  border: 1px solid var(--color-bg-accent-2);
+  translate: -2px 1px;
+  line-height: var(--leading-flat);
+}
+
+@media screen(md) {
+  pre[class^='language-']::before {
+    inset-block-start: var(--space-xs);
+    inset-inline-end: var(--space-xs);
+  }
+}
+
+pre[class^='language-'] {
+  position: relative;
+}
+
+pre[class^='language-']::before {
+  content: attr(class);
+  content: attr(class attr-replace);
+}
+
+pre.language-html::before {
+  content: 'HTML';
+}
+
+pre.language-css::before {
+  content: 'CSS';
+}
+
+pre:is(.language-javascript, .language-js)::before {
+  content: 'JS';
+}
+
+pre.language-json::before {
+  content: 'JSON';
+}
+
+pre:is(.language-md, .language-markdown)::before {
+  content: 'MD';
+}
+
+pre.language-bash::before {
+  content: 'BASH';
+}
+
+pre.language-yaml::before {
+  content: 'YAML';
 }
 
 .token.atrule,
