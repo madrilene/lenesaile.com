@@ -83,8 +83,9 @@ eleventyExcludeFromCollections: true
     {% endfor %}
   </text>
 
+
   <!-- excerpt -->
-  {% set excerptInLines = (ogPage.data.description or translations[page.lang].siteDescription) | splitlines(50) %}
+  {% set excerptInLines = (ogPage.data.lead or ogPage.data.description or translations[page.lang].siteDescription) | splitlines(50) %}
   {% set excerptVerticalStartingPoint = 290 %}
   <text
     id="text"
