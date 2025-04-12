@@ -13,6 +13,8 @@ Subgrids use the grid tracks of an ancestor grid to align their grid items. For 
 
 So if I create a layout on the `<body>` element, I can transfer it to the landmarks `<header>`, `<main>` and `<footer>`, which will then effect their children.
 
+{% include "partials/toc.njk" %}
+
 ## Can the actual dimensions of the grid be defined by a sibling?
 
 What I want to achieve is aligning siblings vertically: the dynamic dimensions of elements inside the `<header>` landmark shall implement the grid column template defined on the `<body>` element. The grid lines should "nestle" against the SVG logo and the site name next to it. Elements inside of `<main>` and `<footer>` should be able to participate in this grid, placing their own children alongside the dimensions of the logo and the site name.

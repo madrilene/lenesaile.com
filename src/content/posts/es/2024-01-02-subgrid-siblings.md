@@ -13,6 +13,8 @@ Subgrids utiliza las pistas de rejilla de una rejilla predecesora para alinear s
 
 Así que si creo un layout en el elemento `<body>`, puedo transferirlo a los landmarks `<header>`, `<main>` y `<footer>`, que entonces afecta a sus hijos.
 
+{% include "partials/toc.njk" %}
+
 ## ¿Podemos definir las dimensiones de la rejilla en un elemento hermano?
 
 Lo que quiero conseguir es la alineación vertical de los hermanos: las dimensiones dinámicas de los elementos dentro del `<header>` landmark deberían implementar la plantilla de columna de rejilla definida para el elemento `<body>`. Las líneas de la cuadrícula deben "anidarse" contra el logotipo SVG y el nombre del sitio web junto a él. Los elementos dentro de `<main>` y `<footer>` deben poder participar en esta cuadrícula colocándose a lo largo de las dimensiones del logotipo y el nombre de la página.

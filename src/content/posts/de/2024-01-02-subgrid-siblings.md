@@ -13,6 +13,8 @@ Subgrids verwenden die Gitterspuren eines Vorgänger-Grids, um ihre Grid-Element
 
 Wenn ich also ein Layout auf dem `<body>` Element erstelle, kann ich es auf die landmarks `<header>`, `<main>` und `<footer>` übertragen, was sich dann auf deren Kinder auswirkt.
 
+{% include "partials/toc.njk" %}
+
 ## Können wir die Abmessungen des Grids auf einem Geschwister-Element definieren?
 
 Was ich erreichen möchte, ist die vertikale Ausrichtung der Geschwister: Die dynamischen Abmessungen der Elemente innerhalb der `<header>` landmark sollen die Gitterspaltenvorlage implementieren, die für das Element `<body>` definiert wurde. Die Rasterlinien sollten sich an das SVG-Logo und den Website-Namen daneben "anschmiegen". Elemente innerhalb von `<main>` und `<footer>` sollten in der Lage sein, an diesem Raster teilzunehmen, indem sie sich entlang der Dimensionen des Logos und des Seitennamens platzieren.
