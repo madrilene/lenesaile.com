@@ -30,6 +30,7 @@ code {
 }
 
 pre {
+  --popout-distance: calc(var(--space-l) + 0.2em);
   grid-column: full;
   overflow-x: auto;
   padding-inline: calc(var(--gap));
@@ -40,7 +41,7 @@ pre {
   pre {
     grid-column: popout;
     border-radius: var(--border-radius-medium);
-    padding-inline: calc(var(--space-l) + 0.2em);
+    padding-inline: var(--popout-distance);
   }
 }
 
@@ -74,29 +75,24 @@ pre[class^='language-']::before {
   content: attr(class);
   position: absolute;
   inset-block-start: 0;
-  inset-inline-end: 0;
+  inset-inline-start: var(--gap);
   background: var(--color-bg-accent);
   color: var(--color-text);
   font-family: var(--font-mono);
   font-size: var(--size-step-min-2);
   padding: 0.1em 0.4em;
-  border-radius: var(--border-radius-small);
+  border-end-start-radius: var(--border-radius-small);
+  border-end-end-radius: var(--border-radius-small);
   text-transform: uppercase;
   pointer-events: none;
   border: 1px solid var(--color-bg-accent-2);
-  translate: -2px 1px;
   line-height: var(--leading-flat);
 }
 
 @media screen(md) {
   pre[class^='language-']::before {
-    inset-block-start: var(--space-xs);
-    inset-inline-end: var(--space-xs);
+    inset-inline-start: var(--popout-distance);
   }
-}
-
-pre[class^='language-'] {
-  position: relative;
 }
 
 pre[class^='language-']::before {

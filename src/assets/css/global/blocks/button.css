@@ -94,7 +94,7 @@
   --button-border-width: 2px;
   --button-radius: var(--border-radius-small);
   --button-font-size: var(--size-step-min-1);
-  --button-padding: var(--space-2xs) var(--space-s);
+  --button-padding: var(--space-3xs) var(--space-xs);
   --button-text-transform: uppercase;
   --button-tracking: var(--tracking-wide);
 }
