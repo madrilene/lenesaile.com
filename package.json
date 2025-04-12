@@ -21,7 +21,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/madrilene/lenesaile.com.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
