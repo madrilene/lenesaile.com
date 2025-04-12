@@ -2,7 +2,7 @@
 title: Impressum
 permalink: /{{ lang }}/impressum/index.html
 key: 'legal'
-description: Verpflichtende Infos zu Eigentümer und Verantworktlichkeit für meine Website
+description: Verpflichtende Infos zu Eigentümer und Verantworktlichkeit für meine Website.
 layout: page
 ---
 

@@ -2,7 +2,7 @@
 title: Legal notice
 permalink: /{{ lang }}/imprint/index.html
 key: 'legal'
-description: I am issuer, owner and responsible for the web site
+description: I am issuer, owner and responsible for this web site.
 layout: page
 ---
 

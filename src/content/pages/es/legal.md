@@ -3,7 +3,7 @@ title: Aviso legal
 permalink: /{{ lang }}/aviso-legal/index.html
 redirectFrom: [/aviso-legal/]
 key: 'legal'
-description: Emisor, titular y responsable de la página web y información sobre las técnicas usadas en desarrollo y producción
+description: Emisor, titular y responsable de mi página web.
 layout: page
 ---
 
