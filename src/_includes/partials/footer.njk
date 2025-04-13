@@ -22,6 +22,45 @@
         {% endfor %}
       </nav>
 
+      <is-land on:idle>
+        <!-- fallback for languages if no JS -->
+        <nav class="language-nojs" aria-label="{{ translations[page.lang].a11y.navLangAria }}">
+          <ul role="list" class="cluster text-step-min-1">
+            {% for lang, details in translations %}
+              {%
+                set
+                translatedUrl = "/" + lang + "/"
+              %}
+              {%
+                set selectedState = "true" if lang == page.lang else
+                "false"
+              %}
+
+              {% for item in collections.all %}
+                {%
+                  if item.data.translationKey == translationKey and item.data.page.lang ==
+                  lang
+                %}
+                  {% set translatedUrl = item.url %}
+                {% endif %}
+              {% endfor %}
+              <li>
+                <a
+                  id="lang-{{ lang }}"
+                  href="{{ translatedUrl }}"
+                  hreflang="{{ lang }}"
+                  rel="alternate"
+                  aria-selected="{{ selectedState }}"
+                >
+                  <span lang="{{ lang }}"> {{ details.name }} </span>
+                </a>
+              </li>
+              {% if loop.last %}{% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+      </is-land>
+
       <nav class="cluster" aria-label="{{ translations[page.lang].a11y.navPlatformAria }}">
         <!-- gets the first item from the feed loop set in meta -->
         <a

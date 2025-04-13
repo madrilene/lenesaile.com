@@ -1,52 +1,54 @@
-<div class="language-select | self-start my-s me-l relative" data-lang-switcher>
-  <button
-    type="button"
-    aria-expanded="false"
-    aria-controls="language-items"
-    class="language-nav-button icon-center p-xs relative"
-    data-sound-pop
-  >
-    {% svg "misc/globe" %}
-    <span class="visually-hidden">{{ translations[page.lang].a11y.navLangAria }}</span>
-  </button>
+<is-land on:idle>
+  <div class="language-select | self-start my-s me-l relative" data-lang-switcher>
+    <button
+      type="button"
+      aria-expanded="false"
+      aria-controls="language-items"
+      class="language-nav-button icon-center p-xs relative"
+      data-sound-pop
+    >
+      {% svg "misc/globe" %}
+      <span class="visually-hidden">{{ translations[page.lang].a11y.navLangAria }}</span>
+    </button>
 
-  <ul id="languagenav" class="language-items" role="list">
-    {% for lang, details in translations %}
-      {%
-        set
-        translatedUrl = "/" + lang + "/"
-      %}
-      {%
-        set selectedState = "true" if lang == page.lang else
-        "false"
-      %}
-
-      {% for item in collections.all %}
+    <ul id="languagenav" class="language-items" role="list">
+      {% for lang, details in translations %}
         {%
-          if item.data.translationKey == translationKey and item.data.page.lang ==
-          lang
+          set
+          translatedUrl = "/" + lang + "/"
         %}
-          {% set translatedUrl = item.url %}
-        {% endif %}
+        {%
+          set selectedState = "true" if lang == page.lang else
+          "false"
+        %}
+
+        {% for item in collections.all %}
+          {%
+            if item.data.translationKey == translationKey and item.data.page.lang ==
+            lang
+          %}
+            {% set translatedUrl = item.url %}
+          {% endif %}
+        {% endfor %}
+        <li>
+          <a
+            id="lang-{{ lang }}"
+            href="{{ translatedUrl }}"
+            hreflang="{{ lang }}"
+            rel="alternate"
+            style="--offset: {{ loop.index }}"
+            aria-selected="{{ selectedState }}"
+            class="button"
+            role="option"
+          >
+            <span lang="{{ lang }}"> {{ details.name }} </span>
+          </a>
+        </li>
+        {% if loop.last %}{% endif %}
       {% endfor %}
-      <li>
-        <a
-          id="lang-{{ lang }}"
-          href="{{ translatedUrl }}"
-          hreflang="{{ lang }}"
-          rel="alternate"
-          style="--offset: {{ loop.index }}"
-          aria-selected="{{ selectedState }}"
-          class="button"
-          role="option"
-        >
-          <span lang="{{ lang }}"> {{ details.name }} </span>
-        </a>
-      </li>
-      {% if loop.last %}{% endif %}
-    {% endfor %}
-  </ul>
-</div>
+    </ul>
+  </div>
+</is-land>
 
 {% js "defer" %}
   {% include "scripts/lang-select.js" %}
