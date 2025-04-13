@@ -85,6 +85,11 @@ export default {
         title: 'CSS Naked Day',
         description: "(I don't cheat, this is a table with HTML presentational attributes)",
         link: 'https://css-naked-day.org/'
+      },
+      jsNakedDay: {
+        title: 'JS Naked Day',
+        description: 'Today this page does not use JavaScript.',
+        link: 'https://js-naked-day.org/'
       }
     }
   },
@@ -174,6 +179,11 @@ export default {
         title: 'CSS Naked Day',
         description: '(Ich schummle nicht, das ist eine Tabelle mit HTML-Attributen)',
         link: 'https://css-naked-day.org/'
+      },
+      jsNakedDay: {
+        title: 'JS Naked Day',
+        description: 'Heute wird auf dieser Seite kein JavaScript verwendet.',
+        link: 'https://js-naked-day.org/'
       }
     }
   },
@@ -263,6 +273,11 @@ export default {
         title: 'CSS Naked Day',
         description: '(No hago trampa, esta es una tabla con atributos de presentación HTML)',
         link: 'https://css-naked-day.org/'
+      },
+      jsNakedDay: {
+        title: 'JS Naked Day',
+        description: 'Hoy no utilizo JavaScript en esta página.',
+        link: 'https://js-naked-day.org/'
       }
     }
   }

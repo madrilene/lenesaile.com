@@ -1,7 +1,11 @@
 
-<script>{% getBundle "js", "inline" %}</script>
+{% if not easterEggs.nakedJsDay %}
+  <script>{% getBundle "js", "inline" %}</script>
+  {%- js "inline" %}
+    {% include "scripts/is-land.js" %}
+    {% include "scripts/theme-toggle.js" %}
+  {% endjs %}
 
-{%- js "inline" %} <!-- inlined for all pages -->
-{% include "scripts/is-land.js" %}
-{% include "scripts/theme-toggle.js" %}
-{% endjs %}
+  {% else %}
+  {% include "easter-eggs/naked-js-day.njk" %}
+{% endif %}
