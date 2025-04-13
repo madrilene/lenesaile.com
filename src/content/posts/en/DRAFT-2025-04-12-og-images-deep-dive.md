@@ -1,5 +1,5 @@
 ---
-title: 'OG images deep dive'
+title: 'Creative OG images with Eleventy'
 description: ''
 discover:
   description: ''
@@ -11,9 +11,24 @@ codepen: false
 draft: true
 ---
 
-## Technique 1: Template --> SVG --> JPEG
+I can't really say why I enjoy creating custom Open Graph images so much, as I don't write many blog posts and rarely share my website.
+OG images are visual previews shown when your link is shared. They're defined with:
 
-https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
+```html
+<meta property="og:image" content="https://example.com/image.jpg">
+```
+
+Classically, they show up on social media like Mastodon or Bluesky, also on WhatsApp, Slack or Discord. Also, some RSS readers use those previews. You can build OG images in design tools like Penpot or Figma manually, or you can fall back to a featured image of your blog post. Or, you can build them dynamically, using your colors, shapes and photos, template strings like titles and description, and make the OG images automatically adapt as you change those values. This is all I need to hear really, to be on board. You could also argue with more engagement, total control to how your content looks when it is shared. As I said, I just enjoy creating them. So let's see how we can do that.
+
+## Technique 1: Canvas
+
+This is a technique I explored years ago a bit, but it didn't stick with me. I just want to mention that it exists, in case it resonates with you. Basically, you use a  HTML `<canvas>`  to draw graphics. Here is an article that explains how to do that: https://freedium.cfd/@Choco23/how-to-create-dynamic-open-graphic-images-3c49f4fc287
+
+## Technique 2: Template --> SVG --> raster graphic
+
+My approach is heavily based on [an article by Bernard Nijenhuis](https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/).
+
+
 
 ## OG image ideas
 
@@ -38,11 +53,8 @@ Sophies question on Mastodon: https://front-end.social/@sophie@social.lol/113373
 https://github.com/11ty/api-screenshot/
 https://www.zachleat.com/web/automatic-opengraph/
 
-## Technique 3: Canvas.
 
-This is a technique I explored years ago a bit, but it didn't stick with me. So I just want to mention that it exists:
 
-https://freedium.cfd/@Choco23/how-to-create-dynamic-open-graphic-images-3c49f4fc287
 
 ## The alias trap
 
