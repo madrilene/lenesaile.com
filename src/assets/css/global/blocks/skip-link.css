@@ -20,6 +20,7 @@
   padding: var(--space-xs) var(--space-s-m);
   border-radius: var(--border-radius-medium);
   line-height: 1;
+  text-decoration: none;
 }
 
 .skip-link:not(:focus) {

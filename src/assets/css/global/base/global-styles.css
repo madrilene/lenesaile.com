@@ -99,6 +99,7 @@ figcaption:not(.repel) {
 a {
   text-decoration-thickness: 0.15ex;
   text-underline-offset: 0.2ch;
+  border-radius: var(--border-radius-small);
 }
 
 a:not([class]):hover {
@@ -110,7 +111,7 @@ a:not([class]):hover {
 }
 
 :focus-visible {
-  outline: 3px solid var(--focus-color, currentColor);
+  outline: 4px solid var(--focus-color, currentColor);
   outline-offset: var(--focus-offset, 0.3ch);
 }
 
