@@ -12,9 +12,9 @@ is-land:not(:defined) .theme-switch {
 
 .theme-switch button {
   padding-inline: var(--space-s);
-  padding-block-end: var(--space-s);
 }
 
 .theme-switch svg {
-  scale: 2.3;
+  margin-block-start: calc(var(--space-l) * -1);
+  scale: 2.2;
 }
