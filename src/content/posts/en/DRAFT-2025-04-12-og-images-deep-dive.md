@@ -35,12 +35,56 @@ This is a technique I explored years ago a bit, but it didn't stick with me. I j
 
 My approach is heavily based on [an article by Bernard Nijenhuis](https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/). I am going to repeat some things the article mentiones, because of slight changes I made and other thngs that became deprecated in Eleventy in the meantime.
 
-You'll need at least one template, a splitlines filter to support multiple lines of text in SVG, and [an `eleventy.after` event](https://www.11ty.dev/docs/events/#eleventy-after).
+You'll need at least one template, a splitlines filter to support multiple lines of text in SVG, and [an `eleventy.after` event](https://www.11ty.dev/docs/events/#eleventy-after). The only dependency we have to add is Eleventy Image: `npm install @11ty/eleventy-img`.
+
+### The template
+
+To create an SVG in the ourput image in Eleventy, you can build this with the templating language of your choice, in my case that's Nunjucks. Let's call it `simple.njk` and place it somewhere in your input folder.
+
+{% raw %}
+
+```jinja2
+---
+hardCodedString: 'I am a text!'
+backgroundColor: 'goldenrod'
+pagination:
+  data: collections.allPosts
+  size: 1
+  alias: ogPosts
+permalink: '/assets/og-images/{{ ogPosts.fileSlug }}-preview.svg'
+eleventyExcludeFromCollections: true
+---
+
+<svg width="1200" height="630" viewBox="0 0 1200 628" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="{{ backgroundColor }}" />
+  <text x="400" y="580">
+    {{ hardCodedString }}
+  </text>
+</svg>
+```
+
+{% endraw %}
+
+This creates a solid yellow-orange SVG with a hard coded 16px tall text in Times New Roman, more or less in the middle (starting at 400 on the x coordinate, 580 on the y coordinate). Note that SVG paints one layer after the other: every element gets painted on top of the previous, so the text must come after the solid background, or it will be invisible.
+
+{% image "./src/assets/images/blog/ogimage-simple.jpeg", "a solid yellow-orange rectangle with 'I am a text!' in small letters" %}
+
+We also select a collection that this template acts upon. In my case that's a custom collection, that match the filesystem pattern `'./src/posts/**/*.md'`. One file per collection item is created (`size: 1`), and the `alias` serves as a reference to a single item, which we will rely on more often later on (See also _The alias trap_).
+
+{% asideInfo %}[Collections](https://www.11ty.dev/docs/collections/) is a core concept in Eleventy, and not an easy one to understand. They are generally created by assigning a string value to the `tags` key in the front matter. They are not equal to keyword labels for blogging, though you can eventually use them for that purpose. The [Collections API](https://www.11ty.dev/docs/collections-api/) allows for very fine-tuned collections. I prefer creating them like that.{% endasideInfo %}
+
+The permalink acts upon all files of the selected collection, and creates a unique path for all of them, using the file slug. If you get an error that indicates a duplicate permalink, then you are probably using the same file slug for multiple files. This is why creating controlled collections come in handy.
+
+Since we don't need these images to be part of collection, we set the `eleventyExcludeFromCollections` option to true.
 
 ### The event
 
-Eleventy Events run at different times during the build process.
-The `eleventy.after` event is triggered after the build process is finished. Add to your Eleventy config file:
+If everything went well, we now have a folder full of SVG files in `dist/assets/og-images/`, that sadly all look the same and are not very creative, but we'll get to that later. For now we need to solve the issue that we cannot use SVG files as Open Graph images. We need Eleventy to pick those SVG files up and convert them to raster images, JPEG or PNG.
+
+[Eleventy Events](https://www.11ty.dev/docs/events/) run at different times during the build process.
+The `eleventy.after` event is triggered after the build process is finished, so we know that our SVG files are ready in the output folder.
+
+We have to add this to our `eleventy.config.js` file:
 
 ```js
 import {promises as fsPromises, existsSync} from 'node:fs';
@@ -75,11 +119,46 @@ import Image from '@11ty/eleventy-img';
 };
 ```
 
-The script looks into the dir where we sent the SVG images via the Nunjucks template. It checks if a  corresponding `.jpeg` already exists for the same file name, and if yes, skips. Otherwise it creates the JPEG version using _Eleventy Image_.
+The script looks into the directory where we sent the SVG images, checks if a  corresponding `.jpeg` already exists for the same file name, and if yes, skips. Otherwise it creates the JPEG version using _Eleventy Image_.
+
+Done! We have a predictable path for our images, so we can reference in our metadata:
+
+{% raw %}
+```html
+<meta
+  property="og:image"
+  content="{{- meta.url -}}/assets/og-images/{{ page.fileSlug }}-preview.jpeg"
+/>
+```
+{% endraw %}
+
+At this point we have no access to our custom collection alias, we are using the `page` variable instead that holds information about the current page, among other things, the fileSlug. If you created your collection wide enough to serve all pages, you can leave it like that, but if you only target blog posts for example, it makes sense to have something to fall back upon.
+
+`meta.url` is the base URL of the site, which I set as globally available data `src/_data/meta.js`. OG images expect absolute urls, so we need to add the domain name.
+
+## So much we can do with SVG
+
+Let's take care of the text first. `<text>` in SVG is an element that draws a text.
+You can set some attributes directly on that element, just like w  did with the x and y coordinates.
+
+```
+  <text x="100" y="300"
+  font-family="Arial, sans-serif"
+  font-size="200"
+  font-weight="500"
+  font-variant="small-caps"
+  fill="white"
+  letter-spacing="-5">
+    {{ hardCodedString }}
+  </text>
+```
 
 ## The font-face problem
 
 Sophies question on Mastodon: https://front-end.social/@sophie@social.lol/113373291207231296
+
+
+apply via css: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Using_fonts
 
 ### Failed solutions
 
