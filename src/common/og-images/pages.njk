@@ -1,4 +1,8 @@
 ---
+# dimensions
+width: 1200
+height: 630
+
 # offests
 offsetX: 120
 offsetY_title: 210
@@ -36,13 +40,13 @@ pagination:
   alias: ogPage
 permalink: '/assets/og-images/page-{{ ogPage.data.lang }}-{{ ogPage.fileSlug }}-preview.svg'
 layout: null
-eleventyExcludeFromCollections: true
+draft: true
 ---
 
 <svg
-  width="1200"
-  height="630"
-  viewBox="0 0 1200 630"
+  width="{{ width }}"
+  height="{{ height }}"
+  viewBox="0 0 {{ width }} {{ height }}"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"

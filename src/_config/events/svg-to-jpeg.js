@@ -4,30 +4,27 @@ import Image from '@11ty/eleventy-img';
 
 const ogImagesDir = './src/assets/og-images';
 
-export const svgToJpeg = async function () {
+export const svgToJpeg = async () => {
   const socialPreviewImagesDir = 'dist/assets/og-images/';
+  const files = await fsPromises.readdir(socialPreviewImagesDir);
 
-  if (!existsSync(socialPreviewImagesDir)) {
-    console.log('⚠ No OG images dir found');
+  if (files.length === 0) {
     return;
   }
 
-  const files = await fsPromises.readdir(socialPreviewImagesDir);
-  if (files.length > 0) {
-    files.forEach(async function (filename) {
-      const outputFilename = filename.substring(0, filename.length - 4);
-      if (filename.endsWith('.svg') & !existsSync(path.join(ogImagesDir, outputFilename))) {
-        const imageUrl = socialPreviewImagesDir + filename;
-        await Image(imageUrl, {
-          formats: ['jpeg'],
-          outputDir: ogImagesDir,
-          filenameFormat: function (id, src, width, format, options) {
-            return `${outputFilename}.${format}`;
-          }
-        });
-      }
+  for (const filename of files) {
+    if (!filename.endsWith('.svg')) continue;
+    const outputFilename = filename.slice(0, -4); // removes '.svg'
+    const outputPath = path.join(ogImagesDir, `${outputFilename}.jpeg`);
+
+    if (existsSync(outputPath)) continue;
+
+    const imageUrl = path.join(socialPreviewImagesDir, filename);
+
+    await Image(imageUrl, {
+      formats: ['jpeg'],
+      outputDir: ogImagesDir,
+      filenameFormat: (id, src, width, format) => `${outputFilename}.${format}`
     });
-  } else {
-    console.log('⚠ No images found on OG images dir');
   }
 };
