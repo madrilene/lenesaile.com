@@ -39,19 +39,19 @@ You'll need at least one template, a splitlines filter to support multiple lines
 
 ### The template
 
-To create an SVG in the ourput image in Eleventy, you can build this with the templating language of your choice, in my case that's Nunjucks. Let's call it `simple.njk` and place it somewhere in your input folder.
+To create an SVG in the ourput image in Eleventy, you can build this with the templating language of your choice, in my case that's Nunjucks. Place it somewhere in your input folder.
 
 {% raw %}
 
 ```jinja2
 ---
 hardCodedString: 'I am a text!'
-backgroundColor: 'goldenrod'
+backgroundColor: 'aliceblue'
 pagination:
   data: collections.allPosts
   size: 1
-  alias: ogPosts
-permalink: '/assets/og-images/{{ ogPosts.fileSlug }}-preview.svg'
+  alias: ogPost
+permalink: '/assets/og-images/{{ ogPost.fileSlug }}-preview.svg'
 eleventyExcludeFromCollections: true
 ---
 
@@ -65,9 +65,9 @@ eleventyExcludeFromCollections: true
 
 {% endraw %}
 
-This creates a solid yellow-orange SVG with a hard coded 16px tall text in Times New Roman, more or less in the middle (starting at 400 on the x coordinate, 580 on the y coordinate). Note that SVG paints one layer after the other: every element gets painted on top of the previous, so the text must come after the solid background, or it will be invisible.
+This creates a solid light gray SVG with a hard coded 16px tall text in Times New Roman, more or less in the middle (starting at 400 on the x coordinate, 580 on the y coordinate). Note that SVG paints one layer after the other: every element gets painted on top of the previous, so the text must come after the solid background, or it will be invisible.
 
-{% image "./src/assets/images/blog/ogimage-simple.jpeg", "a solid yellow-orange rectangle with 'I am a text!' in small letters" %}
+{% image "./src/assets/images/blog/ogimage-simple.jpeg", "a solid light gray rectangle with 'I am a text!' in small letters" %}
 
 We also select a collection that this template acts upon. In my case that's a custom collection, that match the filesystem pattern `'./src/posts/**/*.md'`. One file per collection item is created (`size: 1`), and the `alias` serves as a reference to a single item, which we will rely on more often later on (See also _The alias trap_).
 
@@ -136,22 +136,185 @@ At this point we have no access to our custom collection alias, we are using the
 
 `meta.url` is the base URL of the site, which I set as globally available data `src/_data/meta.js`. OG images expect absolute urls, so we need to add the domain name.
 
-## So much we can do with SVG
+## Use post specific data
 
-Let's take care of the text first. `<text>` in SVG is an element that draws a text.
-You can set some attributes directly on that element, just like w  did with the x and y coordinates.
+Using a hard coded string works fine if you want to generate just one global fallback image, but we are creating a dedicated image per post. Let's show the post title instead.
 
+You can't tell SVG to break lines of text if they don't fit, so we need a filter that receives a string and a maximum character per lines value.
+The filter is from [Stefan Baumgartner](https://fettblog.eu/11ty-automatic-twitter-cards/#creating-an-svg)'s article.
+
+Add this filter to your Eleventy config file:
+
+```js
+export default async function (eleventyConfig) {
+  eleventyConfig.addFilter('splitLines', (input, maxCharLength) => {
+    const parts = input.split(' ');
+    const lines = parts.reduce(function (acc, cur) {
+      if (!acc.length) {
+        return [cur];
+      }
+      let lastOne = acc[acc.length - 1];
+      if (lastOne.length + cur.length > maxCharLength) {
+        return [...acc, cur];
+      }
+      acc[acc.length - 1] = lastOne + ' ' + cur;
+      return acc;
+    }, []);
+    return lines;
+  });
+}
 ```
-  <text x="100" y="300"
-  font-family="Arial, sans-serif"
-  font-size="200"
-  font-weight="500"
-  font-variant="small-caps"
-  fill="white"
-  letter-spacing="-5">
-    {{ hardCodedString }}
+
+We split the input into an array of words. We assume that the words are separated by an empty space. If the combined length of the current line and next word exceeds `maxCharLength`, start a new line. Otherwise, we append the current part to the last line.
+
+```bash
+console.log(splitLines("This string will split into two lines.", 20));
+// ["This string will","split into two lines."]
+```
+
+Modify the template:
+
+{% raw %}
+```jinja2
+---
+width: 1200
+height: 630
+offsetX: 120
+fontSizeBig: 90
+leadingFine: 1.2
+titleCharsPerLine: 20
+backgroundColor: 'aliceblue'
+textColor: 'navy'
+pagination:
+  data: collections.allPosts
+  size: 1
+  alias: ogPost
+permalink: '/assets/og-images/{{ ogPost.fileSlug }}-preview.svg'
+eleventyExcludeFromCollections: true
+---
+
+<svg
+  width="{{ width }}"
+  height="{{ height }}"
+  viewBox="0 0 {{ width }} {{ height }}"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="100%" height="100%" fill="{{ backgroundColor }}" />
+
+  {% set titleInLines = ogPost.data.title | splitLines(titleCharsPerLine) %}
+  {% set numberOfLines = titleInLines.length %}
+  {% set titleLeading = fontSizeBig * leadingFine %}
+  {% set totalHeight = (numberOfLines - 1) * titleLeading %}
+  {% set offsetY_title = (height / 2) - totalHeight / 2 %}
+
+  <text
+    font-size="{{ fontSizeBig }}"
+    fill="{{ textColor }}"
+  >
+    {% for line in titleInLines %}
+      <tspan x="{{ offsetX }}" y="{{ offsetY_title + loop.index0 * titleLeading }}"> {{ line }} </tspan>
+    {% endfor %}
   </text>
+</svg>
 ```
+{% endraw %}
+
+I get the posts's title and split it into a new line whenever it exceeds 20 characters. I determine the line height by multiplying the font size with a leading factor. The `offsetY_title` is calculated by taking the height of the SVG and subtracting the total height of all lines divided by 2, so that the text is (more or less) centered vertically, independent of the number of lines.
+
+This allows for a flexible base, that you can reuse for strings of display and body text. I also set _all_ variables in the front matter, so I can reuse them, and keep organized as the template grows.
+
+{% asideInfo %} Tip: Work directly in the browser with the SVG in the output folder to see how your settings turn out. It will update on every new serve cycle, while the JPEG stays the same unless you recreate the whole output folder.{% endasideInfo %}
+
+{% image "./src/assets/images/blog/ogimage-lines.jpeg", "April tree covered with delicate white blossoms in Madrid in big letters centered on a light blue background", "What this looks like now for every post" %}
+
+
+## Add the featured image
+
+The `<image>` SVG element lets you embed bitmap images inside an SVG. To make this work, you'll need to add the `xmlns:xlink` namespace declaration to the `<svg>` element: `xmlns:xlink="http://www.w3.org/1999/xlink"`. An image is referenced like this: `<image xlink:href="/image.jpg" width="50%" height="50%" x="0" y="0" />`
+
+Long story short, this won't work, because Eleventy Image uses Sharp, which itself uses `libvips`/`librsvg`, that needs a base URL to resolve relative image references. When loading an SVG from a buffer (how Eleventy Image reads SVGs)), no base URL is set. So any `<image>` using a relative or absolute path fails because `librsvg` won't know where to load the image from.
+
+But there is a solution to that: Base64 inlining is self-contained.
+
+### Base64 filter
+
+Add this new filter to the Eleventy config file:
+
+```js
+import fs from 'node:fs';
+
+export default async function (eleventyConfig) {
+ export const base64Format = async imagePath => {
+   try {
+     const mimeTypes = {
+       jpg: 'image/jpeg',
+       jpeg: 'image/jpeg',
+       png: 'image/png',
+       webp: 'image/webp'
+     };
+
+     const ext = imagePath.split('.').pop().toLowerCase();
+
+     if (!mimeTypes[ext]) {
+       console.error('Unsupported image format:', ext);
+       return null;
+     }
+
+     const image = fs.readFileSync(imagePath);
+     const base64 = Buffer.from(image).toString('base64');
+
+     return `data:${mimeTypes[ext]};base64,${base64}`;
+   } catch (error) {
+     console.error('Error encoding image:', error);
+     return null;
+   }
+ };
+}
+```
+
+This filter takes a path to an image, reads it, and returns a base64 encoded string. To use it in the template (before the text element):
+
+{% raw %}
+```jinja2
+  {% set base64Image = ogPost.data.image | base64Format %}
+
+  <image
+    x="0"
+    y="0"
+    width="100%"
+    height="100%"
+    href="{{ base64Image }}"
+    preserveAspectRatio="xMidYMid slice"
+  />
+```
+{% endraw %}
+
+To make the `<text>` element stand out better, you can add a background rectangle behind it:
+
+{% raw %}
+```jinja2
+  {% for line in titleInLines %}
+    <rect
+      x="0"
+      y="{{ offsetY_title + loop.index0 * titleLeading - fontSizeBig }}"
+      width="1100"
+      height="{{ fontSizeBig * leadingFine }}"
+      fill="{{ backgroundColor }}"
+    />
+  {% endfor %}
+  {% for line in titleInLines %}
+    <text
+      font-size="{{ fontSizeBig }}"
+      fill="{{ textColor }}"
+      x="{{ offsetX }}"
+      y="{{ offsetY_title + loop.index0 * titleLeading }}"
+    >
+      {{ line }}
+    </text>
+  {% endfor %}
+```
+{% endraw %}
 
 ## The font-face problem
 
