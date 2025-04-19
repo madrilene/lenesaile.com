@@ -2,20 +2,23 @@ import fs from 'node:fs';
 
 export const base64Format = async imagePath => {
   try {
-    let base64Image;
+    const mimeTypes = {
+      jpg: 'image/jpeg',
+      jpeg: 'image/jpeg',
+      png: 'image/png'
+    };
 
-    if (imagePath.endsWith('.jpeg') || imagePath.endsWith('.jpg')) {
-      const image = fs.readFileSync(imagePath);
-      base64Image = Buffer.from(image).toString('base64');
-      return `data:image/jpeg;base64,${base64Image}`;
-    } else if (imagePath.endsWith('.png')) {
-      const image = fs.readFileSync(imagePath);
-      base64Image = Buffer.from(image).toString('base64');
-      return `data:image/png;base64,${base64Image}`;
-    } else {
-      console.error('Unsupported image format');
+    const ext = imagePath.split('.').pop().toLowerCase();
+
+    if (!mimeTypes[ext]) {
+      console.error('Unsupported image format:', ext);
       return null;
     }
+
+    const image = fs.readFileSync(imagePath);
+    const base64 = Buffer.from(image).toString('base64');
+
+    return `data:${mimeTypes[ext]};base64,${base64}`;
   } catch (error) {
     console.error('Error encoding image:', error);
     return null;
