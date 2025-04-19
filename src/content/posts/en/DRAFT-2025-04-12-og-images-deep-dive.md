@@ -65,7 +65,7 @@ eleventyExcludeFromCollections: true
 
 {% endraw %}
 
-This creates a solid light gray SVG with a hard coded 16px tall text in Times New Roman, more or less in the middle (starting at 400 on the x coordinate, 580 on the y coordinate). Note that SVG paints one layer after the other: every element gets painted on top of the previous, so the text must come after the solid background, or it will be invisible.
+This creates a solid light gray SVG with a hard coded 16px tall text in Times New Roman, starting at 400 on the x coordinate, 580 on the y coordinate. Note that SVG paints one layer after the other: every element gets painted on top of the previous, so the text must come after the solid background, or it will be invisible.
 
 {% image "./src/assets/images/blog/ogimage-simple.jpeg", "a solid light gray rectangle with 'I am a text!' in small letters" %}
 
@@ -120,6 +120,8 @@ import Image from '@11ty/eleventy-img';
 ```
 
 The script looks into the directory where we sent the SVG images, checks if a  corresponding `.jpeg` already exists for the same file name, and if yes, skips. Otherwise it creates the JPEG version using _Eleventy Image_.
+
+If you are working in your OG images, it makes sense to comment `      if (existsSync(outputPath)) continue;` out, so both the JPEG and the SVG change on every build cycle - always check the final raster image, as they don't look always the same.
 
 Done! We have a predictable path for our images, so we can reference in our metadata:
 
@@ -206,25 +208,29 @@ eleventyExcludeFromCollections: true
   {% set numberOfLines = titleInLines.length %}
   {% set titleLeading = fontSizeBig * leadingFine %}
   {% set totalHeight = (numberOfLines - 1) * titleLeading %}
-  {% set offsetY_title = (height / 2) - totalHeight / 2 %}
+  {% set offsetY_title = ((height / 2) + (fontSizeBig * 0.3)) - totalHeight / 2 %}
 
-  <text
-    font-size="{{ fontSizeBig }}"
-    fill="{{ textColor }}"
-  >
-    {% for line in titleInLines %}
-      <tspan x="{{ offsetX }}" y="{{ offsetY_title + loop.index0 * titleLeading }}"> {{ line }} </tspan>
-    {% endfor %}
-  </text>
+  {% for line in titleInLines %}
+    <text
+      x="{{ offsetX }}"
+      y="{{ offsetY_title + loop.index0 * titleLeading }}"
+      font-size="{{ fontSizeBig }}"
+      fill="{{ textColor }}"
+    >
+      {{ line }}
+    </text>
+  {% endfor %}
 </svg>
 ```
 {% endraw %}
 
-I get the posts's title and split it into a new line whenever it exceeds 20 characters. I determine the line height by multiplying the font size with a leading factor. The `offsetY_title` is calculated by taking the height of the SVG and subtracting the total height of all lines divided by 2, so that the text is (more or less) centered vertically, independent of the number of lines.
+I get the posts's title and split it into a new line whenever it exceeds 20 characters. I determine the line height by multiplying the font size with a leading factor. The `offsetY_title` is calculated by taking the height of the SVG and subtracting the total height of all lines divided by 2, so that the text is centered vertically, independent of the number of lines.
 
-This allows for a flexible base, that you can reuse for strings of display and body text. I also set _all_ variables in the front matter, so I can reuse them, and keep organized as the template grows.
+To perfectly position the text in the vertical center, it would be great if we could the [`dominant-baseline` attribute ](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/dominant-baseline), but it seems this is not supported by `librsvg`. So it wiöl look great in the SVG, but get lost as soon as the raster image is created. Instead we'll shift the text up by shift text up by ~30% of the font size: `{% set offsetY_title = ((height / 2) + (fontSizeBig * 0.3)) - totalHeight / 2 %}` centers the whole group slightly higher.
 
-{% asideInfo %} Tip: Work directly in the browser with the SVG in the output folder to see how your settings turn out. It will update on every new serve cycle, while the JPEG stays the same unless you recreate the whole output folder.{% endasideInfo %}
+Phew! Good thing we don't have to figure this out again in the future, cause this allows for a flexible base, that we can reuse for strings of display and body text. I also set _all_ variables in the front matter, so I can reuse them, and keep organized as the template grows.
+
+{% asideInfo %} Tip: Work directly in the browser with the SVG in the output folder to see how your settings turn out.{% endasideInfo %}
 
 {% image "./src/assets/images/blog/ogimage-lines.jpeg", "April tree covered with delicate white blossoms in Madrid in big letters centered on a light blue background", "What this looks like now for every post" %}
 
@@ -290,33 +296,57 @@ This filter takes a path to an image, reads it, and returns a base64 encoded str
 ```
 {% endraw %}
 
-To make the `<text>` element stand out better, you can add a background rectangle behind it:
+To make the image preserve its aspect ration while also covering the SVG's viewBox, I use the [`preserveAspectRatio` attribute](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference/Attribute/preserveAspectRatio). While `xMidYMid` (think of `object-position: center`) is the default value, `slice` behaves similar to `object-fit: cover` in CSS.
+
+To make the `<text>` element stand out better, you can add some background rectangles behind it:
 
 {% raw %}
 ```jinja2
-  {% for line in titleInLines %}
-    <rect
-      x="0"
-      y="{{ offsetY_title + loop.index0 * titleLeading - fontSizeBig }}"
-      width="1100"
-      height="{{ fontSizeBig * leadingFine }}"
-      fill="{{ backgroundColor }}"
-    />
-  {% endfor %}
-  {% for line in titleInLines %}
-    <text
-      font-size="{{ fontSizeBig }}"
-      fill="{{ textColor }}"
-      x="{{ offsetX }}"
-      y="{{ offsetY_title + loop.index0 * titleLeading }}"
-    >
-      {{ line }}
-    </text>
-  {% endfor %}
+{% for line in titleInLines %}
+  <rect
+    x="{{ offsetX }}"
+    y="{{ offsetY_title + loop.index0 * titleLeading - (fontSizeBig * 0.8) }}"
+    width="{{ width - offsetX }}"
+    height="{{ fontSizeBig }}"
+    fill="{{ backgroundColor }}"
+    opacity="0.8"
+  />
+  <text
+    font-size="{{ fontSizeBig }}"
+    fill="{{ textColor }}"
+    x="{{ offsetX }}"
+    y="{{ offsetY_title + loop.index0 * titleLeading }}"
+  >
+    {{ line }}
+  </text>
+{% endfor %}
 ```
 {% endraw %}
 
+{% image "./src/assets/images/blog/ogimage-image.jpeg", "April tree covered with delicate white blossoms in Madrid in big letters centered on a photo of delicate white blossoms on thin branches. There are slightly transparent boxes behind the text to make it readable", "Aligning boxes with some magic numbers until I am happy with it" %}
+
 ## The font-face problem
+
+Ebough now with Times new Roman, let's get a custom font! You can add your font stack in the front matter:
+
+```yaml
+---
+fontFamily: 'Arial, Helvetica, sans-serif'
+---
+```
+and add it to your `<text>` element: `font-family="{{ fontFamily }}"`. But Arial might not be your font of choice. Of course, you can use the `<style>` attribute in SVG!
+
+
+  <style>
+
+    @font-face {
+  font-family: "Martian Mono";
+  src: url("https://github.com/evilmartians/mono/blob/main/fonts/otf/MartianMono-Regular.otf");
+}
+  .text {
+        font: 28px "Martian Mono", Arial, sans-serif;
+      }
+  </style>
 
 Sophies question on Mastodon: https://front-end.social/@sophie@social.lol/113373291207231296
 
@@ -413,22 +443,26 @@ The template now still creates the SVG files though. If you want to prevent this
 	});
 ```
 
-## OG image ideas
+## Some more OG image ideas
 
 ### Random backgrounds
 
 ...
 
+### Image in shape, get color from image
+
+...
+
 ### Reusing layout / template colors or themes
-
-### Using actual images
-
-base64 filter
 
 
 
 
 ## Technique 2: Using the Eleventy Screenshot API
+
+What, after all that, another technique?
+
+As we have seen, my favourite methods, as much as I like it, has its limits. There is a worry-free solution, ...
 
 https://github.com/11ty/api-screenshot/
 https://www.zachleat.com/web/automatic-opengraph/
@@ -438,7 +472,7 @@ https://www.zachleat.com/web/automatic-opengraph/
 
 ## The alias trap
 
-if you create more than one template for og images, don’t make the mistake I did (more than once! Lolsing hours of time trying to figure out what's going on. So this is probably above all, a reminder to myself).
+As create templates for OG images, don’t make the mistake I did (more than once.
 
 ```yaml
 ---
@@ -446,17 +480,17 @@ pagination:
   data: collections.pages
   size: 1
   alias: page
-permalink: '/assets/og-images/page-{{ page.data.lang }}-{{ page.fileSlug | slugify }}.html'
+permalink: '/assets/og-images/page-{{ page.fileSlug | slugify }}.html'
 ---
 ```
 
-See the problem? It's the alias. Now I am messing with Eleventy, probably with the global page object. You’ll get the weird issue where there is a duplicate permalink:
+See the problem? It's the alias. Now I am messing with Eleventy's `page` variable. You’ll get the weird issue where there is a duplicate permalink:
 
 ```bash
-[11ty] Output conflict: multiple input files are writing to `./dist/assets/og-images/page-en-about.html`. Use distinct `permalink` values to resolve this conflict.
+[11ty] Output conflict: multiple input files are writing to `./dist/assets/og-images/page-about.html`. Use distinct `permalink` values to resolve this conflict.
 [11ty]   1. ./src/content/pages/en/about.md
 [11ty]   2. ./src/common/og-images/pages.njk (via DuplicatePermalinkOutputError)
 ```
 
-So always go the safe route and use keys that almost certainly not reserved.
+So always go the safe route and use an alias that is almost certainly not reserved, like `ogPage`.
 
