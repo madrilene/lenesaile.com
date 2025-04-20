@@ -27,9 +27,11 @@ In the past, I usually built one dedicated side-wide OG image to fall back on, w
 
 But: You can build them dynamically, using your colors, shapes and photos, template strings like titles and description, and make the images automatically adapt as you change go and those values. Let's see how we can do that.
 
-## With Canvas
+## With the Eleventy Screenshot API
 
-This is a technique I explored years ago a bit, but it didn't stick with me. I just want to mention that it exists, in case it resonates with you. Basically, you use a  HTML `<canvas>`  to draw graphics. I am sure there are some articles about that technique out there.
+I want to mention this first, because it is much easier to set up and run.
+It uses the [Eleventy Screenshot API](https://github.com/11ty/api-screenshot), which you can self host. It uses Puppeteer to create a screenshot of an HTML template we create for every post.
+
 
 ## Template --> SVG --> raster graphic
 
@@ -239,7 +241,7 @@ Phew! Good thing we don't have to figure this out again in the future, cause thi
 
 The `<image>` SVG element lets you embed bitmap images inside an SVG. To make this work, you'll need to add the `xmlns:xlink` namespace declaration to the `<svg>` element: `xmlns:xlink="http://www.w3.org/1999/xlink"`. An image is referenced like this: `<image xlink:href="/image.jpg" width="50%" height="50%" x="0" y="0" />`
 
-Long story short, this won't work, because Eleventy Image uses Sharp, which itself uses `libvips`/`librsvg`, that needs a base URL to resolve relative image references. When loading an SVG from a buffer (how Eleventy Image reads SVGs)), no base URL is set. So any `<image>` using a relative or absolute path fails because `librsvg` won't know where to load the image from.
+Long story short, this won't work, because Eleventy Image uses Sharp, which itself uses `libvips`/`librsvg`, that needs a base URL to resolve relative image references. When loading an SVG from a buffer (how Eleventy Image reads SVGs), no base URL is set. So any `<image>` using a relative or absolute path fails because `librsvg` won't know where to load the image from. Please feel free to correct me here, this is just how I understood the issue, very broken down.
 
 But there is a solution to that: Base64 inlining is self-contained.
 
