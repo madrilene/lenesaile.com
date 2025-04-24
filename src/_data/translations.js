@@ -89,7 +89,7 @@ export default {
       jsNakedDay: {
         title: 'JS Naked Day',
         description: 'Today this page does not use JavaScript.',
-        link: 'https://js-naked-day.org/'
+        link: ''
       }
     }
   },
@@ -183,7 +183,7 @@ export default {
       jsNakedDay: {
         title: 'JS Naked Day',
         description: 'Heute wird auf dieser Seite kein JavaScript verwendet.',
-        link: 'https://js-naked-day.org/'
+        link: ''
       }
     }
   },
@@ -277,7 +277,7 @@ export default {
       jsNakedDay: {
         title: 'JS Naked Day',
         description: 'Hoy no utilizo JavaScript en esta página.',
-        link: 'https://js-naked-day.org/'
+        link: ''
       }
     }
   }
