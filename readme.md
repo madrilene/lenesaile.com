@@ -85,6 +85,6 @@ Aleksandr is an inspiration for good code organization. The 301 redirect solutio
 
 **Vadim Makeev**
 
-I built my light switch based on Vadim's article.
+I built my light switch based on Vadim's article. 
 
 - https://pepelsbey.dev/articles/native-light-dark/
