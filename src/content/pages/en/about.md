@@ -17,7 +17,7 @@ faq:
   intro: "OK, no one actually asks any of these things _frequently_, but I figured I'll answer them anyway."
   items:
     - summary: "Why do you write in American English?"
-      contents: "I have been living in Spain for a long time, There are many words in Spanish that are spelled similarly to American English: ‘color’ / ‘color’ or ‘organize’ / ‘organizar’, for example. Spanish has become like a native language for me, and the American spelling just feels more natural. That said, I'm certainly not consistent with it, and British spelling very likely appears somewhere."
+      contents: "I have been living in Spain for a long time. There are many words in Spanish that are spelled similarly to American English: ‘color’ / ‘color’ or ‘organize’ / ‘organizar’, for example. Spanish has become like a native language for me, and the American spelling just feels more natural. That said, I'm certainly not consistent with it, and British spelling very likely appears somewhere."
     - summary: "How did you learn web development and design? "
       contents: "I'm still learning, every day. I always read some book about bash scripts, typography, grid layouts, JavaScript, web components; or articles that people from the community so lovingly provide. When I build a new project, I always try to learn something new in the process. Just like that, everything becomes more and more natural, logical, easy, and better, over time."
 cta:
