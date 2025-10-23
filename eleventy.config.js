@@ -119,6 +119,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPairedShortcode('asideReadmore', shortcodes.asideReadmore);
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('image', shortcodes.image);
+  eleventyConfig.addShortcode('imageKeys', shortcodes.imageKeys);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
 
   // --------------------- Events: after build
