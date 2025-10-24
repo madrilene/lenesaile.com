@@ -143,9 +143,13 @@ export default async function (eleventyConfig) {
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`,
     'node_modules/@zachleat/table-saw/table-saw.js': `assets/components/table-saw.js`
   });
-
   // --------------------- Build Settings
   eleventyConfig.setDataDeepMerge(true);
+
+  // ----------------------  ignore test files
+  if (process.env.ELEVENTY_ENV != 'test') {
+    eleventyConfig.ignores.add('src/common/pa11y.njk');
+  }
 
   // --------------------- general config
   return {

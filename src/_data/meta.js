@@ -59,6 +59,13 @@ export const greenweb = {
   ],
   services: [{domain: 'netlify.com', serviceType: 'cdn'}]
 };
+export const tests = {
+  pa11y: {
+    // keep customPaths empty if you want to test all pages
+    customPaths: [],
+    globalIgnore: []
+  }
+};
 export const viewRepo = {
   allow: true
 };
