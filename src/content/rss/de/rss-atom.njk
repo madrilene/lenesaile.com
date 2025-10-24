@@ -1,6 +1,7 @@
 ---
 eleventyComputed:
   permalink: '/{{ lang }}/feed.xml'
+excludeFromSitemap: true
 ---
 
 {%- set postlist = collections["blog_" + lang] -%}
