@@ -8,9 +8,9 @@ sparkle: true
 
 <!-- DEBUG: {{ permalink }} -->
 
-<header class="section overflow-hidden full" data-color="cinnabar">
+<header class="overflow-hidden section full" data-color="cinnabar">
   <div class="section__inner">
-    <div class="flow region wrapper prose" style="--region-space-top: var(--space-header-distance)">
+    <div class="prose flow region wrapper" style="--region-space-top: var(--space-header-distance)">
       <h1 class="fade-in-bottom">{{ title }}</h1>
       <p>{{ lead }}</p>
     </div>
@@ -20,9 +20,9 @@ sparkle: true
 </header>
 
 <article class="full region">
-  <div class="wrapper flow prose">{{ content | safe }}</div>
+  <div class="prose wrapper flow">{{ content | safe }}</div>
   <div class="wrapper region">
-    <div class="feature sidebar items-center flow ">
+    <div class="items-center feature sidebar flow ">
       <header class="flow mr-xs">
         <h2>{{ breakout.title }}</h2>
         <p>{{ breakout.intro }}</p>
@@ -30,17 +30,18 @@ sparkle: true
       {% image image %}
     </div>
   </div>
-  <div class="full wrapper flow prose">
+  <div class="prose full wrapper flow">
     <p class="prose">{{ finalWords | markdownFormat | safe }}</p>
   </div>
 
-  <div class="full wrapper flow prose region">
+  <div class="prose full wrapper flow region">
     <header class="cluster">
       <h2>{{ faq.title }}</h2>
       <p class="text-step-0">{{ faq.abbr }}</p>
     </header>
     {{ faq.intro | markdownFormat | safe }}
     {% set itemList = faq.items %}
+    {% set headingLevel = "h3" %}
     {% include 'partials/details.njk' %}
   </div>
 </article>

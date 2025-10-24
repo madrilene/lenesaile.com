@@ -1,3 +1,5 @@
+{% set headingLevel = headingLevel | default(false) %}
+
 <div class="details flow">
   <div class="control | cluster" aria-label="{{ translations[page.lang].details.aria }}">
     <button id="expandAll" class="button" data-small-button>
@@ -9,8 +11,14 @@
   </div>
   {%- for item in itemList | alphabetic(items, 'summary') -%}
     <details id="{{ item.summary | slugify }}">
-      <summary>{{ item.summary }}</summary>
-      {{- item.contents | markdownFormat | safe -}}
+      <summary>
+        {%- if headingLevel -%}
+          <{{ headingLevel }}>{{ item.summary }}</{{ headingLevel }}>
+        {%- else -%}
+          {{ item.summary }}
+        {%- endif -%}
+      </summary>
+  {{- item.contents | markdownFormat | safe -}}
     </details>
   {%- endfor -%}
 </div>
