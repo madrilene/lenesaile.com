@@ -18,7 +18,7 @@
     "start": "npm run dev:11ty",
     "build": "npm run clean && npm run build:11ty",
     "pa11y:build": "npm run clean && cross-env ELEVENTY_ENV=test eleventy",
-    "pa11y:test": "sleep 3 && pa11y-ci --config ./dist/pa11y.json",
+    "pa11y:test": "sleep 3 && pa11y-ci --config ./dist/pa11y.json 2>&1 | tee pa11y-errors.txt",
     "pa11y:serve": "ELEVENTY_ENV=test eleventy --serve --ignore-initial",
     "test:a11y": "npm run pa11y:build && (npm run pa11y:serve &) && sleep 5 && npm run pa11y:test"
   },
