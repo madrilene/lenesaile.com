@@ -25,7 +25,7 @@ const processImage = async options => {
     imageClass,
     widths = [650, 960, 1400],
     sizes = 'auto',
-    formats = ['avif', 'webp', 'jpeg']
+    formats = ['webp', 'jpeg']
   } = options;
 
   // Prepend "./src" if not present
