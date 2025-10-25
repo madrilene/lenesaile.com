@@ -16,8 +16,8 @@ www.lenesaile.com strebt an, konform mit [WCAG 2.1 Level AA.](https://www.w3.org
 
 ## Feedback
 
-I very much welcome your feedback and suggestions on the accessibility of my website.
-Please let me know if you encounter any barriers:
+Ich freue mich sehr über Feedback und Vorschläge um die Barrierefreiheit meiner Website zu verbessern.
+Bitte teile mir mit, wenn du auf Hindernisse stößt:
 
 - **GitHub Issues**: [Barrierefreiheitsprobleme melden](https://github.com/madrilene/lenesaile.com/issues)
 - **Email**: {{ meta.creator.email }}
