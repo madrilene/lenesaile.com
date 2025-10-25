@@ -1,6 +1,6 @@
 import {categoryFilter} from './filters/category-filter.js';
 import {base64Format} from './filters/base64-format.js';
-import {toISOString, formatDate} from './filters/dates.js';
+import {toISOString, formatDate, formatDateDE, formatDateES} from './filters/dates.js';
 import {markdownFormat} from './filters/markdown-format.js';
 import {readingTime} from './filters/reading-time.js';
 import {shuffleArray} from './filters/sort-random.js';
@@ -22,6 +22,8 @@ export default {
   base64Format,
   toISOString,
   formatDate,
+  formatDateDE,
+  formatDateES,
   markdownFormat,
   readingTime,
   splitlines,

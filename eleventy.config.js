@@ -100,6 +100,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('categoryFilter', filters.categoryFilter);
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
   eleventyConfig.addFilter('formatDate', filters.formatDate);
+  eleventyConfig.addFilter('formatDateDE', filters.formatDateDE);
+  eleventyConfig.addFilter('formatDateES', filters.formatDateES);
   eleventyConfig.addFilter('markdownFormat', filters.markdownFormat);
   eleventyConfig.addFilter('readingTime', filters.readingTime);
   eleventyConfig.addFilter('splitlines', filters.splitlines);

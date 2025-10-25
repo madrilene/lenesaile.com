@@ -1,1 +1,9 @@
-<time datetime="{{ definedDate | toIsoString }}"> {{ definedDate | formatDate('MMMM D, YYYY') }} </time>
+<time datetime="{{ definedDate | toIsoString }}">
+  {% if page.lang == "de" %}
+    {{ definedDate | formatDateDE('D. MMMM YYYY') }}
+  {% elif page.lang == "es" %}
+    {{ definedDate | formatDateES('D [de] MMMM [de] YYYY') }}
+  {% else %}
+    {{ definedDate | formatDate('MMMM D, YYYY') }}
+  {% endif %}
+</time>
