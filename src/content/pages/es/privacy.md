@@ -5,6 +5,7 @@ redirectFrom: [/privacidad/]
 key: 'privacy'
 description: Respeto la Regulación General de Protección de Datos de la UE (RGPD) y este documento de política explica cómo recopilar y manejar cualquier información.
 layout: page
+date: Last Modified
 ---
 
 Respeto la Regulación General de Protección de Datos de la UE (RGPD) y este documento de política explica cómo recopilar y manejar cualquier información que me proporcione.
@@ -33,4 +34,4 @@ Si cambio el contenido de esta política, esos cambios serán efectivos en el mo
 
 Si tienes alguna razón para quejarte de la forma en que manejo su privacidad, por favor contácteme (Lene Saile) por correo electrónico a {{ personal.email }}.
 
-Última actualización: 25 de octubre de 2022
+Última actualización: {{ page.date | formatDateES('D [de] MMMM [de] YYYY') }}

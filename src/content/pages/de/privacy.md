@@ -41,4 +41,4 @@ Wenn ich den Inhalt dieser Richtlinie ändere, treten diese Änderungen zu dem Z
 
 Hast du Fragen oder Beschwerden? Wende dich gerne per E-Mail an mich: {{ personal.email }}.
 
-Zuletzt aktualisiert am: 25. Oktober 2022  {{ page.date | formatDate('MMMM D, YYYY') }}
+Zuletzt aktualisiert am {{ page.date | formatDateDE('D. MMMM YYYY') }}
