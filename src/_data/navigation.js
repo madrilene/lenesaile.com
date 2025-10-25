@@ -26,6 +26,10 @@ export default {
       {
         text: 'Privacy',
         url: '/en/privacy/'
+      },
+      {
+        text: 'Accessibility',
+        url: '/en/accessibility/'
       }
     ]
   },
@@ -57,6 +61,10 @@ export default {
       {
         text: 'Política de privacidad',
         url: '/es/privacidad/'
+      },
+      {
+        text: 'Accesibilidad',
+        url: '/es/accesibilidad/'
       }
     ]
   },
@@ -88,6 +96,10 @@ export default {
       {
         text: 'Datenschutz',
         url: '/de/datenschutz/'
+      },
+      {
+        text: 'Barrierefreiheit',
+        url: '/de/barrierefreiheit/'
       }
     ]
   }
