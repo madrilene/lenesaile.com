@@ -5,6 +5,7 @@ node_modules
 dist
 src/_includes/css
 src/_includes/scripts
+pa11y-errors.txt
 
 # cache
 .cache
