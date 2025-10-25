@@ -4,6 +4,7 @@ permalink: /{{ lang }}/datenschutz/index.html
 key: 'privacy'
 description: Ich respektiere die EU-Datenschutzgrundverordnung (GDPR). Dieses Dokument erklärt, wie ich alle Informationen sammle und behandle.
 layout: page
+date: Last Modified
 ---
 
 Ich respektiere die EU-Datenschutzgrundverordnung (GDPR) und dieses Dokument erklärt, wie ich die von dir zur Verfügung gestellten Informationen sammle und behandle.
@@ -40,4 +41,4 @@ Wenn ich den Inhalt dieser Richtlinie ändere, treten diese Änderungen zu dem Z
 
 Hast du Fragen oder Beschwerden? Wende dich gerne per E-Mail an mich: {{ personal.email }}.
 
-Zuletzt aktualisiert am: 25. Oktober 2022
+Zuletzt aktualisiert am: 25. Oktober 2022  {{ page.date | formatDate('MMMM D, YYYY') }}

@@ -13,7 +13,7 @@
   text-decoration: none;
   padding: 0.3ch;
   border-radius: 50%;
-  background-color: var(--color-accent);
+  background-color: var(--color-bg-accent);
   font-weight: var(--font-bold);
 }
 

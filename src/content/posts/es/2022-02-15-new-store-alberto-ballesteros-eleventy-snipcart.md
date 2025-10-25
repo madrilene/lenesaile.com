@@ -4,8 +4,6 @@ description: 'Una páginaweb rápida y segura - ¡y con una apariencia que lo re
 category: blogpost
 key: 'storealberto'
 date: 2022-02-15
-image: './src/assets/images/blog/shop.jpg'
-alt: 'Pantallazo del shop de albertoballesteros.com'
 cta:
   title: '¿Necesitas un shop rapido?'
   desktop: 'Los tiempos de carga y la preocupación por la seguridad de la tienda hacen que los visitantes la abandonen sin comprar nada.'

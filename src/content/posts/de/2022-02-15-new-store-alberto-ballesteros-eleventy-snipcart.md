@@ -4,8 +4,6 @@ description: 'Eine schnelle und sichere Website - und ein Look and Feel, das die
 category: blogpost
 key: 'storealberto'
 date: 2022-02-15
-image: './src/assets/images/blog/shop.jpg'
-alt: 'Screenshot vom Shop auf albertoballesteros.com.'
 cta:
   title: 'Willst du einen schnellen Shop?'
   desktop: 'Ladezeiten und Bedenken über die Sicherheit des shops führen dazu, dass Besucher deinen Shop verlassen ohne etwas zu kaufen.'

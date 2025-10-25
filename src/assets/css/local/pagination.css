@@ -30,7 +30,7 @@
 
 .pagination li:not(:has(a)) {
   padding: var(--space-xs) var(--space-s-m);
-  opacity: 0.6;
+  --pagination-border: color-mix(in oklab, var(--color-bg-accent) 70%, var(--color-bg));
 }
 
 .pagination li:has(a:hover) {

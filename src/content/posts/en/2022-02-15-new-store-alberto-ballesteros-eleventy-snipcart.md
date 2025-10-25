@@ -7,8 +7,6 @@ discover:
 category: blogpost
 key: 'storealberto'
 date: 2022-02-15
-image: './src/assets/images/blog/shop.jpg'
-alt: "Screenshot of albertoballesteros.com's shop."
 cta:
   title: 'Need a fast shop?'
   desktop: 'Visitors to a shop are about to decide if they want a product and if they are willing to pay money for it. Loading times and concerns about store security can cause them to abandon that plan.'

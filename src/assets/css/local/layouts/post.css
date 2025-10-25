@@ -89,7 +89,7 @@
   background-size: 90% auto;
   margin-block-start: 0em;
   inset-inline-start: calc(var(--space-xl) * -1);
-  translate: -0.2em -0.5em;
+  translate: -0.5em 0.3em;
 }
 
 .post .toc-toggle details[open] summary::before {
