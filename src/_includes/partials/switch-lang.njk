@@ -1,5 +1,10 @@
 <is-land on:idle>
-  <div class="language-select | self-start my-s me-l relative" data-lang-switcher>
+  <div
+    data-lang-switcher
+    role="region"
+    class="language-select | self-start my-s me-l relative"
+    aria-labelledby="language-switcher-label"
+  >
     <button
       type="button"
       aria-expanded="false"
@@ -8,7 +13,9 @@
       data-sound-pop
     >
       {% svg "misc/globe" %}
-      <span class="visually-hidden">{{ translations[page.lang].a11y.navLangAria }}</span>
+      <span id="language-switcher-label" class="visually-hidden"
+        >{{ translations[page.lang].a11y.navLangAria }}</span
+      >
     </button>
 
     <ul id="languagenav" class="language-items" role="list">
