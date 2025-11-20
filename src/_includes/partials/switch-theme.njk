@@ -1,15 +1,20 @@
-<is-land on:idle
-  ><div
+<is-land on:idle>
+  <div
     data-theme-switcher
     role="region"
     class="theme-switch | self-start"
     aria-labelledby="theme-switcher-label"
-    data-sound-switch
   >
-    <h2 id="theme-switcher-label" class="visually-hidden">{{ translations[page.lang].theme.title }}</h2>
+    <span id="theme-switcher-label" class="visually-hidden">{{ translations[page.lang].theme.title }}</span>
 
-    <button class="rounded-small" aria-pressed="false">
-      <div class="visually-hidden">
+    <button
+      type="button"
+      class="rounded-small"
+      aria-pressed="false"
+      aria-labelledby="theme-button-label"
+      data-sound-switch
+    >
+      <div id="theme-button-label" class="visually-hidden">
         {{ translations[page.lang].theme.current }}
         <span class="light-on">{{ translations[page.lang].theme.light }}</span>
         <span class="light-off">{{ translations[page.lang].theme.dark }}</span>
