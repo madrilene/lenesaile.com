@@ -25,6 +25,7 @@ import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 
 export default async function (eleventyConfig) {
+  eleventyConfig.setQuietMode(true);
   // --------------------- Events: before build
   eleventyConfig.on('eleventy.before', async () => {
     await events.buildAllCss();
@@ -59,6 +60,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.drafts);
 
+  eleventyConfig.addPlugin(plugins.dirOutputPlugin);
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
