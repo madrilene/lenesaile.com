@@ -152,3 +152,7 @@ html:has(dialog[open]:modal) {
     transition-duration: 0.01ms !important;
   }
 }
+
+@view-transition {
+  navigation: auto;
+}
