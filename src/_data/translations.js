@@ -82,8 +82,8 @@ export default {
     },
     easterEggs: {
       cssNakedDay: {
-        title: 'CSS Naked Day',
-        description: "(I don't cheat, this is a table with HTML presentational attributes)",
+        title: 'CSS Naked Day!',
+        description: '(This is a table with HTML presentational attributes)',
         link: 'https://css-naked-day.org/'
       },
       jsNakedDay: {

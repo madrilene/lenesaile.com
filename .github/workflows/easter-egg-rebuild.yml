@@ -1,0 +1,62 @@
+name: Rebuild site for easter eggs
+
+on:
+  schedule:
+    - cron: '5 22 8,9,23,24 4 *'
+  workflow_dispatch:
+
+jobs:
+  trigger-rebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Calculate easter egg status (Europe/Madrid)
+        id: state
+        env:
+          TZ: Europe/Madrid
+        run: |
+          set -euo pipefail
+
+          month="$(date +%m)"
+          day="$(date +%d)"
+
+          is_active="false"
+          if [ "$month" = "04" ] && { [ "$day" = "09" ] || [ "$day" = "24" ]; }; then
+            is_active="true"
+          fi
+
+          previous_active="$(node -e "const fs=require('fs');const p='.github/easter-egg-state.json';if(!fs.existsSync(p)){console.log('unknown');process.exit(0)};const data=JSON.parse(fs.readFileSync(p,'utf8'));console.log(String(data.isActive));")"
+
+          if [ "$previous_active" != "$is_active" ]; then
+            changed="true"
+          else
+            changed="false"
+          fi
+
+          iso_now="$(date -Iseconds)"
+
+          cat > .github/easter-egg-state.json <<EOF
+          {
+            "isActive": ${is_active},
+            "updatedAt": "${iso_now}",
+            "timezone": "Europe/Madrid"
+          }
+          EOF
+
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+          echo "is_active=$is_active" >> "$GITHUB_OUTPUT"
+
+      - name: Commit rebuild trigger
+        if: steps.state.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/easter-egg-state.json
+          git commit -m "chore: toggle easter egg rebuild state (${{ steps.state.outputs.is_active }})"
+          git push
