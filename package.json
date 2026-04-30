@@ -67,7 +67,7 @@
     "markdown-it-toc-done-right": "^4.2.0",
     "netlify-plugin-cache": "^1.0.3",
     "pa11y-ci": "^4.1.0",
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.12",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1",
     "postcss-import-ext-glob": "^2.1.1",
