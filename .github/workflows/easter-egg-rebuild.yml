@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Calculate easter egg status (Europe/Madrid)
         id: state
@@ -51,12 +52,10 @@ jobs:
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
           echo "is_active=$is_active" >> "$GITHUB_OUTPUT"
 
-      - name: Commit rebuild trigger
+      - name: Create pull request for rebuild trigger
         if: steps.state.outputs.changed == 'true'
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/easter-egg-state.json
-          git commit -m "chore: toggle easter egg rebuild state (${{ steps.state.outputs.is_active }})"
-          git push
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: 'chore: toggle easter egg rebuild (${{ steps.state.outputs.is_active }})'
+          branch: 'bot/easter-egg-rebuild'
+          delete-branch: true
