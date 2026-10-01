@@ -15,7 +15,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 // add yaml support
-import yaml from 'js-yaml';
+import {load as yamlLoad} from 'js-yaml';
 
 //  config import
 import {postsByLang, showInSitemap, tagList} from './src/_config/collections.js';
@@ -95,7 +95,7 @@ export default async function (eleventyConfig) {
 
   // 	--------------------- Library and Data
   eleventyConfig.setLibrary('md', plugins.markdownLib);
-  eleventyConfig.addDataExtension('yaml', contents => yaml.load(contents));
+  eleventyConfig.addDataExtension('yaml', contents => yamlLoad(contents));
 
   // --------------------- Filters
   eleventyConfig.addFilter('base64Format', filters.base64Format);
