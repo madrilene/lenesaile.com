@@ -2,7 +2,6 @@
 {% if not easterEggs.nakedJsDay %}
   <script>{% getBundle "js", "inline" %}</script>
   {%- js "inline" %}
-    {% include "scripts/is-land.js" %}
     {% include "scripts/theme-toggle.js" %}
   {% endjs %}
 

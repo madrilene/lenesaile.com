@@ -1,3 +1,4 @@
 {%- if not easterEggs.nakedJsDay %}
-<script src="{% getBundleFileUrl "js", "defer" %}" type="module"></script>
+  <script type="module" src="/assets/components/is-land.min.js"></script>
+  <script src="{% getBundleFileUrl 'js', 'defer' %}" defer></script>
 {%- endif %}
